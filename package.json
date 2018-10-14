@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "scripts": {
+    "test": "npm run lint && mocha ./node_modules/html-tests/task-stub/test",
+    "lint": "stylelint *.css **/*.css && html-validator --file index.html --verbose && htmllint *.html"
+  },
+  "dependencies": {
+    "html-tests": "2.0.0",
+    "html-validator-cli": "4.1.3",
+    "htmllint-cli": "0.0.7",
+    "stylelint": "9.6.0",
+    "stylelint-config-hrundel": "2.0.0"
+  }
+}
