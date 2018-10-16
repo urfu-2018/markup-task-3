@@ -1,0 +1,44 @@
+body
+{
+    background: wheat;
+    /*replace with Noise Texture CSS for old newspaper*/
+}
+
+.title-section
+{
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    padding: 0 0 10px;
+    text-align: center;
+}
+
+.red-ad
+{
+    color: #900;
+}
+
+.newspaper-title
+{
+    /* replace with actual image?*/
+    font: 40px 'Times New Roman', Times, serif;
+}
+
+.undertitle
+{
+    text-align: center;
+    margin: 10px 20px 0;
+    padding: 0 0 20px;
+}
+
+.thicc-hr
+{
+    border: 2px solid #000;
+    margin: -10px -20px 0;
+    padding: 0;
+}
+
+.thinn-hr
+{
+    border: 1px solid #111;
+    margin: 5px -20px 0;
+}
