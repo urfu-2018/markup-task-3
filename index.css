@@ -1,0 +1,49 @@
+input.swap:checked ~ table
+{
+    background-color: brown;
+}
+
+table,
+th,
+td
+{
+    width: auto;
+    max-width: 1200px;
+    border: 1px outset black;
+    border-spacing: 1px;
+    background-color: antiquewhite;
+}
+
+th.big-title
+{
+    font-family: 'UnifrakturMaguntia';
+    font-size: 22px;
+}
+
+div::first-letter
+{
+    font-family: 'Rye';
+    font-size: 18px;
+}
+
+.small-title
+{
+    font-family: 'Sancreek';
+    font-size: 15px;
+    text-align: center;
+}
+
+.plain-text
+{
+    font-family: 'Uncial Antiqua';
+    font-size: 13px;
+    text-align: center;
+}
+
+img.leo
+{
+    width: 250px;
+    height: 150px;
+    float: left;
+    margin: 7px;
+}
