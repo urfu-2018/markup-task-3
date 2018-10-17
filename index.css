@@ -1,6 +1,6 @@
 body
 {
-    padding: 10px;
+    margin: 0;
 }
 
 h1,
@@ -20,10 +20,85 @@ p
     margin-top: 0;
 }
 
+abbr
+{
+    text-decoration: none;
+}
+
+input
+{
+    display: none;
+}
+
+main
+{
+    overflow: auto;
+}
+
+input[id='zoom-normal']:checked ~ main
+{
+    font-size: 1em;
+}
+
+input[id='zoom-large']:checked ~ main
+{
+    font-size: 1.5em;
+}
+
+input[id='light-theme']:checked ~ main
+{
+    background-color: white;
+    color: #000;
+}
+
+input[id='dark-theme']:checked ~ main
+{
+    background-color: #000;
+    color: white;
+}
+
+input[id='serif-font']:checked ~ main
+{
+    font-family: 'Podkova', serif;
+}
+
+input[id='sanserif-font']:checked ~ main
+{
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.manipulation
+{
+    padding: 10px;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    background-color: rgba(178, 178, 178, .5);
+}
+
+.manipulation-item-label
+{
+    margin-top: 10px;
+    text-align: center;
+}
+
 .header-title
 {
     padding: 10px;
     border: grey 1px dashed;
+}
+
+.paper-info
+{
+    font-size: 13px;
+    border-bottom: 1px grey solid;
+    font-style: italic;
+    padding: 5px;
+}
+
+.paper-info-sponsor
+{
+    margin-left: 30%;
 }
 
 .divider
@@ -66,12 +141,16 @@ p
     font-size: 2em;
 }
 
+.paper-colon:last-of-type
+{
+    border-right: grey 1px solid;
+}
+
 .ads
 {
-    padding: 5px;
+    padding: 30px;
     float: right;
     height: 100%;
-    border-left: grey 1px solid;
 }
 
 .banner
