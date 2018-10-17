@@ -1,14 +1,29 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <title>Задача «DeLorean DMC-12»</title>
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-    <div class="title-section">
-        <div class="red-ad">
-            ad to the left
+    <input type="checkbox" id="night-mode-checkbox" class="night-mode">
+    <label for="night-mode-checkbox">Night Mode</label>
+    |
+    <label for="font-size">Font Size</label>
+    <input type="range" min='8' max='40' id="font-size" class="input">
+    |
+    <label for="font-selector">Font</label>
+    <select id="font-selector" class="input">
+        <option value="Arial">Arial</option>
+        <option value="Times New Roman">Times New Roman</option>
+        <option value="Times" selected="selected">Times</option>
+        <option value="Helvetica">Helvetica</option>
+        <option value="Verdana">Verdana</option>
+    </select>
+    <section class="title-section">
+        <div class="red-ad red-ad-left">
+            Yes, I know, night mode looks afwul. <br>
+            It would've looked great with a just a sprinkle of js, but you didn't allow it, guys. <br>
         </div>
         <div class="title">
             <h1 class="newspaper-title">Daily News & Reader</h1>
@@ -18,12 +33,69 @@
                 No. 21.343. LONDON & MANCHESTER, WEDNESDAY, AUGUST 3. 1914. ONE HALF-PENNY
             </span>
         </div>
-        <div class="red-ad">
-            ad to the right
+        <div class="red-ad red-ad-right">
+            <span class="thicc-text">BRAND'S ESSENCE</span><br>
+            of <span class="underlined-text">BEEF</span><br>
+            and of <span class="underlined-text">CHICKEN</span><br>
+            <span class="small-text">some small text I cant actually see</span> <br>
+            <span class="small-text">from the example, sorry.</span>
         </div>
-    </div>
+    </section>
     <!-- now everything is full-width -->
-    <hr class="thicc-hr">
-    <hr class="thinn-hr">
+    <section class="main-title-section">
+        <hr class="thicc-hr">
+        <hr class="thinn-hr">
+        <h1 class="main-title">GREAT BRITAIN AT WAR WITH GERMANY.</h1>
+        <hr class="thinn-hr">
+        <hr class="thinn-hr">
+    </section>
+    <section class="newspaper-text">
+        <div class="first-column">
+            <div class="first-column-titles">
+                <span>WAR WITH GERMANY.</span>
+                <hr class="short-hr">
+                <span>Reported Sinking of a British Ship.</span>
+                <hr class="short-hr">
+                <span>OUR ULTIMATUM.</span>
+                <hr class="short-hr">
+                <span>Demand for Withdrawal from Belgium</span>
+                <hr class="short-hr">
+                <span>KING'S MESSAGE TO NAVY</span>
+                <hr class="short-hr">
+            </div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean augue lectus, tempor ut est ac, tempor
+            sodales libero. Etiam eget sapien libero. Nulla mollis, sapien in porta molestie, enim turpis efficitur.
+        </div>
+        <div class="column">
+            <div class="column-titles">
+                <span>GERMANS SUNK BRITISH SHIP</span>
+                <hr class="short-hr">
+                <span>Reported loss of Mine-Layer.</span>
+                <hr class="short-hr">
+            </div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean augue lectus, tempor ut est ac, tempor
+            sodales libero. Etiam eget sapien libero. Nulla mollis, sapien in porta molestie, enim turpis efficitur.
+        </div>
+        <div class="column">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean augue lectus, tempor ut est ac, tempor
+            sodales libero. Etiam eget sapien libero. Nulla mollis, sapien in porta molestie, enim turpis efficitur.
+            <div class="bottom-picture">
+                <img src="German_advance.png" title="German advance trough Belgium." alt="German advance trough Belgium."
+                     class="picture">
+            </div>
+        </div>
+        <div class="column">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean augue lectus, tempor ut est ac, tempor
+            sodales libero. Etiam eget sapien libero. Nulla mollis, sapien in porta molestie, enim turpis efficitur.
+        </div>
+        <div class="column">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean augue lectus, tempor ut est ac, tempor
+            sodales libero. Etiam eget sapien libero. Nulla mollis, sapien in porta molestie, enim turpis efficitur.
+        </div>
+        <div class="last-column">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean augue lectus, tempor ut est ac, tempor
+            sodales libero. Etiam eget sapien libero. Nulla mollis, sapien in porta molestie, enim turpis efficitur.
+        </div>
+    </section>
 </body>
 </html>

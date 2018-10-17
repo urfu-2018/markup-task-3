@@ -1,7 +1,29 @@
 body
 {
-    background: wheat;
-    /*replace with Noise Texture CSS for old newspaper*/
+    background: #f5deb3;
+    color: #222;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+
+}
+
+.night-mode:checked ~ section,
+.night-mode:checked ~ section > div
+{
+    color: #f5deb3 !important;
+    background: #222 !important;
+}
+
+.night-mode:checked ~ section > .red-ad,
+.night-mode:checked ~ section hr
+{
+    border-color: #f5deb3;
+}
+
+.input
+{
+    width: 100px;
 }
 
 .title-section
@@ -14,13 +36,41 @@ body
 
 .red-ad
 {
-    color: #900;
+    border: 3px double #333;
+    color: #333;
+}
+
+.red-ad-left
+{
+    text-align: left;
+}
+
+.display-setting
+{
+    color: #000;
+}
+
+.font-size-range
+{
+    width: 50%;
+}
+
+.font-selection
+{
+    width: 50%;
+}
+
+.red-ad-right
+{
+    font: 20px bold impact, sans-serif;
+    line-height: 19px;
 }
 
 .newspaper-title
 {
     /* replace with actual image?*/
-    font: 40px 'Times New Roman', Times, serif;
+    font: 60px 'Times New Roman', Times, serif;
+    margin: 1rem;
 }
 
 .undertitle
@@ -32,13 +82,86 @@ body
 
 .thicc-hr
 {
-    border: 2px solid #000;
-    margin: -10px -20px 0;
+    border: 2px solid #222;
+    margin: -10px 0 0;
     padding: 0;
 }
 
 .thinn-hr
 {
-    border: 1px solid #111;
-    margin: 5px -20px 0;
+    border: 1px solid #222;
+    margin: 5px 0 0;
+}
+
+.thicc-text
+{
+    font-weight: bolder;
+}
+
+.underlined-text
+{
+    text-decoration: underline;
+}
+
+.small-text
+{
+    font-size: 9px;
+}
+
+.main-title
+{
+    padding: 0 10%;
+    margin: .25rem;
+    font: 40px bold Didot, serif;
+    word-spacing: 1.25rem;
+    text-align: center;
+}
+
+.newspaper-text
+{
+    display: grid;
+    grid-template-columns: 30% 14% 14% 14% 14% 14%;
+}
+
+.column,
+.first-column,
+.last-column
+{
+    border: 2px #222;
+    border-right-style: solid;
+    font-size: 12px;
+}
+
+.last-column
+{
+    border: none;
+}
+
+.first-column-titles
+{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.column-titles
+{
+    font-size: 16px;
+    text-align: center;
+}
+
+.short-hr
+{
+    border: 1px solid #222;
+    width: 25%;
+}
+
+.picture
+{
+    margin-left: 1px;
+    width: 200%;
+}
+
+.bottom-picture
+{
+    vertical-align: bottom;
 }

@@ -10,5 +10,9 @@
     "htmllint-cli": "0.0.7",
     "stylelint": "9.6.0",
     "stylelint-config-hrundel": "2.0.0"
+  },
+  "devDependencies": {
+    "stylelint": "9.6.0",
+    "stylelint-config-hrundel": "2.0.0"
   }
 }
