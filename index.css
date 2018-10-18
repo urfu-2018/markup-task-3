@@ -3,7 +3,17 @@ input.swap:checked ~ table
     background-color: brown;
 }
 
-table,
+input.zoom:not(:checked) ~ table
+{
+    font-size: 1em;
+}
+
+input.zoom:checked ~ table
+{
+    font-size: 1.25em;
+}
+
+table.outer-table,
 th,
 td
 {
@@ -12,6 +22,41 @@ td
     border: 1px outset black;
     border-spacing: 1px;
     background-color: antiquewhite;
+    position: relative;
+}
+
+table.inside-table
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    text-align: center;
+    border: 0;
+    max-width: 300px;
+}
+
+table.inside-table td
+{
+    text-align: center;
+    border: 0;
+    margin-top: 10px;
+}
+
+table.weather
+{
+    width: 75%;
+    border: black 1px dotted;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
+table.weather th,
+table.weather tr,
+table.weather td
+{
+    border: 0;
 }
 
 th.big-title
@@ -44,6 +89,24 @@ img.leo
 {
     width: 250px;
     height: 150px;
+}
+
+figure.image
+{
     float: left;
     margin: 7px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.article
+{
+    margin: 10px;
+}
+
+div.aside-article
+{
+    font-family: 'Uncial Antiqua';
+    font-size: 12px;
+    text-align: center;
 }
