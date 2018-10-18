@@ -1,112 +1,113 @@
-input.swap:checked ~ table
+input.swap:checked ~ main
 {
-    background-color: brown;
+    background-color: black;
+    color: bisque;
 }
 
-input.zoom:not(:checked) ~ table
+input.swap:not(:checked) ~ main
+{
+    background-color: antiquewhite;
+    color: black;
+}
+
+input.zoom:not(:checked) ~ main
 {
     font-size: 1em;
 }
 
-input.zoom:checked ~ table
+input.zoom:checked ~ main
 {
     font-size: 1.25em;
 }
 
-table.outer-table,
-th,
-td
+main
 {
-    width: auto;
     max-width: 1200px;
-    border: 1px outset black;
-    border-spacing: 1px;
-    background-color: antiquewhite;
-    position: relative;
+    border: 1px solid brown;
 }
 
-table.inside-table
+header
 {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
+    border-bottom: 1px solid brown;
+}
+
+.paper-name
+{
+    font-family: UnifrakturMaguntia;
+    font-size: 30px;
     text-align: center;
-    border: 0;
-    max-width: 300px;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
-table.inside-table td
+.article::first-letter
 {
-    text-align: center;
-    border: 0;
-    margin-top: 10px;
+    font-family: Rye;
 }
 
-table.weather
+.article
 {
-    width: 75%;
-    border: black 1px dotted;
-    font-size: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 5px;
+}
+
+article.two-columns
+{
+    column-count: 2;
+    column-rule: 3px dotted brown;
+    max-width: 60%;
+    display: inline-block;
     margin-bottom: 15px;
 }
 
-table.weather th,
-table.weather tr,
-table.weather td
+.two-columns-header
 {
-    border: 0;
+    column-span: all;
+    margin-bottom: 5px;
 }
 
-th.big-title
+article.one-column
 {
-    font-family: 'UnifrakturMaguntia';
-    font-size: 22px;
+    max-width: 60%;
+    display: inline-block;
 }
 
-div::first-letter
+.one-column-header
 {
-    font-family: 'Rye';
+    font-family: Uncial Antiqua;
+    font-size: 20px;
+    text-align: center;
+}
+ 
+aside
+{
+    height: 100%;
+    width: 35%;
+    float: left;
+}
+
+article.aside
+{
+    margin: 15px;
+}
+
+.aside-header
+{
+    font-family: Rye;
+    font-size: 17px;
+    text-align: center;
+}
+
+h2
+{
+    font-family: Sancreek;
     font-size: 18px;
-}
-
-.small-title
-{
-    font-family: 'Sancreek';
-    font-size: 15px;
     text-align: center;
 }
 
-.plain-text
-{
-    font-family: 'Uncial Antiqua';
-    font-size: 13px;
-    text-align: center;
-}
-
-img.leo
-{
-    width: 250px;
-    height: 150px;
-}
-
-figure.image
+.image
 {
     float: left;
     margin: 7px;
     text-align: center;
     font-size: 12px;
-}
-
-.article
-{
-    margin: 10px;
-}
-
-div.aside-article
-{
-    font-family: 'Uncial Antiqua';
-    font-size: 12px;
-    text-align: center;
 }
