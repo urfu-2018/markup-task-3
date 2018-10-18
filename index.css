@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css?family=Fascinate+Inline');
+@import url('https://fonts.googleapis.com/css?family=Monda');
+@import url('https://fonts.googleapis.com/css?family=Bangers');
+@import url('https://fonts.googleapis.com/css?family=Squada+One');
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
+@import url('https://fonts.googleapis.com/css?family=Mitr');
+@import url('https://fonts.googleapis.com/css?family=Alef');
+@import url('https://fonts.googleapis.com/css?family=Hanalei+Fill');
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
+@import url('https://fonts.googleapis.com/css?family=Skranji');
+@import url('https://fonts.googleapis.com/css?family=Bahiana');
+@import url('https://fonts.googleapis.com/css?family=Limelight');
+@import url('https://fonts.googleapis.com/css?family=Itim');
+
+html
+{
+    margin: 0;
+    padding: 0;
+}
+
+/*Шапка*/
+
+main
+{
+    background: url(img/background.jpg) no-repeat;
+    background-size: cover;
+    z-index: -2;
+
+}
+
+.header_newspaper,
+.main_newspaper
+{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1920px;
+}
+
+h3,
+h2,
+h1
+{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.name_header
+{
+    display: grid;
+    grid-template-areas: 'a b c';
+    grid-auto-rows: minmax(100px, auto);
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 10px double #000;
+}
+
+.text_header
+{
+    display: grid;
+    grid-auto-rows: minmax(50px, auto);
+    grid-template-areas: 'a b c d';
+    justify-items: center;
+    align-items: center;
+    border-bottom: 5px dotted #000;
+    margin-bottom: 20px;
+}
+
+/*Настройки текса header*/
+
+.header_h1
+{
+    font-size: 60px;
+    font-family: 'Fascinate Inline', cursive;
+    letter-spacing: 20px;
+}
+
+.name_header p
+{
+    font-size: 30px;
+    font-family: 'Monda', sans-serif;
+}
+
+.text_header p
+{
+    font-size: 40px;
+    font-family: 'Bangers', cursive;
+}
+
+/*Блог новостей*/
+
+.main_newspaper
+{
+    display: grid;
+    grid-template: 'a b' 'c d' 'e e' /1fr 1fr;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.first_columns
+{
+    grid-area: a;
+}
+
+/*Первая новость*/
+
+.first_news
+{
+    text-align: center;
+}
+
+.first_news_caption
+{
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/*Настройка текса первой новости*/
+
+.news_h2
+{
+    font-size: 40px;
+    font-family: 'Squada One', cursive;
+    letter-spacing: 10px;
+}
+
+.news_h3
+{
+    font-size: 25px;
+    font-family: 'Bowlby One SC', cursive;
+}
+
+.news_p
+{
+    font-size: 16px;
+    font-family: 'Mitr', sans-serif;
+}
+
+/*Вторая новость*/
+
+.second_news
+{
+    grid-area: b;
+    text-indent: 20px;
+    text-align: center;
+}
+
+.second_news_text
+{
+    columns: 200px 3;
+    column-rule-style: solid;
+    text-align: justify;
+    word-break: break-all;
+    word-spacing: normal;
+}
+
+.second_news figure
+{
+    text-align: center;
+}
+
+.second_news_img
+{
+    max-width: 600px;
+    width: 100%;
+    column-span: all;
+}
+
+/*Третья новость*/
+
+.third_news
+{
+    grid-area: c;
+    text-align: center;
+    border-top: 10px outset #6f787a;
+    border-bottom: 10px outset #6f787a;
+    columns: 300px 2;
+    word-break: break-word;
+    word-spacing: normal;
+    padding-top: 20px;
+}
+
+.third_news_header
+{
+    border-bottom: 5px dotted #000;
+}
+
+/*Настройка текса третья новость*/
+
+.news_p_second
+{
+    font-size: 20px;
+    font-family: 'Alef', sans-serif;
+}
+
+/*Четвертая новость*/
+
+.fourth_news
+{
+    grid-area: d;
+    border-bottom: 20px double #000;
+    border-top: 20px double #000;
+    position: relative;
+    z-index: 1;
+}
+
+.fourth_news img
+{
+    filter: blur(5px);
+    position: absolute;
+    z-index: -1;
+    top: 1px;
+    width: 100%;
+    height: 100%;
+}
+
+.fourth_news_h3
+{
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: 25px;
+}
+
+.fourth_news_p,
+.fourth_news_h2
+{
+    text-align: center;
+}
+
+/*Пятая новость*/
+
+.fifth_news
+{
+    text-indent: 20px;
+    border: 1px solid black;
+    padding: 5px;
+    columns: 300px 4;
+    text-align: justify;
+    word-break: break-all;
+}
+
+/*Шестая новость*/
+
+.sixth_news
+{
+    grid-area: e;
+    display: grid;
+    grid-template: 'a b c d' /1fr 1fr 1fr 2fr;
+    grid-gap: 20px;
+}
+
+.sixth_news_wanted
+{
+    text-align: center;
+    max-width: 300px;
+}
+
+.sixth_news_wanted img
+{
+    max-width: 300px;
+    height: 300px;
+}
+
+.sixth_news_ted
+{
+    max-width: 800px;
+    position: relative;
+}
+
+.sixth_news_ted h2
+{
+    margin: 0;
+    text-align: right;
+    font-size: 50px;
+}
+
+.sixth_news_ted h3
+{
+    margin: 0;
+    text-align: right;
+    border-bottom: 1px solid black;
+    font-size: 30px;
+}
+
+.sixth_news_ted .sixth_news_h2
+{
+    text-align: justify;
+}
+
+.sixth_news_ted > img
+{
+    position: absolute;
+    top: 0;
+    max-width: 450px;
+    filter: contrast(85%) brightness(68%) saturate(200%) sepia(100%);
+}
+
+/*Переключатели фона*/
+
+/*Уменьшение размеров*/
+
+input[class='input2']:checked ~ main .news_p
+{
+    font-size: 12px;
+}
+
+input[class='input2']:checked ~ main .news_p_second
+{
+    font-size: 12px;
+}
+
+input[class='input2']:checked ~ main .news_h2
+{
+    font-size: 20px;
+}
+
+input[class='input2']:checked ~ main .news_h3
+{
+    font-size: 15px;
+}
+
+input[class='input2']:checked ~ main .sixth_news_wanted img
+{
+    width: 200px;
+    height: 200px;
+}
+
+input[class='input2']:checked ~ main .sixth_news_ted > img
+{
+    width: 300px;
+}
+
+input[class='input2']:checked ~ main .second_news_img
+{
+    width: 400px;
+}
+
+input[class='input2']:checked ~ main .first_columns img
+{
+    width: 250px;
+}
+
+input[class='input2']:checked ~ main .header_h1
+{
+    font-size: 30px;
+}
+
+input[class='input2']:checked ~ main p
+{
+    font-size: 20px;
+}
+
+/*Увеличение размеров*/
+
+input[class='input3']:checked ~ main .news_p
+{
+    font-size: 22px;
+}
+
+input[class='input3']:checked ~ main .news_p_second
+{
+    font-size: 26px;
+}
+
+input[class='input3']:checked ~ main .news_h2
+{
+    font-size: 50px;
+}
+
+input[class='input3']:checked ~ main .news_h3
+{
+    font-size: 40px;
+}
+
+input[class='input3']:checked ~ main .sixth_news_wanted img
+{
+    width: 500px;
+
+}
+
+input[class='input3']:checked ~ main .sixth_news_ted > img
+{
+    width: 800px;
+}
+
+input[class='input3']:checked ~ main .second_news_img
+{
+    width: 800px;
+}
+
+input[class='input3']:checked ~ main .first_columns img
+{
+    width: 500px;
+}
+
+input[class='input3']:checked ~ main .header_h1
+{
+    font-size: 70px;
+}
+
+input[class='input3']:checked ~ main p
+{
+    font-size: 50px;
+}
+
+/*Изменение шрифта*/
+
+input[class='input5']:checked ~ main p
+{
+    font-family: 'Berkshire Swash', cursive;
+}
+
+input[class='input5']:checked ~ main .header_h1
+{
+    font-family: 'Hanalei Fill', cursive;
+}
+
+input[class='input5']:checked ~ main .news_p
+{
+    font-family: 'Skranji', cursive;
+}
+
+input[class='input5']:checked ~ main .news_p_second
+{
+    font-family: 'Bahiana', cursive;
+}
+
+input[class='input5']:checked ~ main .news_h2
+{
+    font-family: 'Itim', cursive;
+}
+
+input[class='input5']:checked ~ main .news_h3
+{
+    font-family: 'Limelight', cursive;
+}
+
+/*Цветовая схема*/
+
+input[class='input7']:checked ~ main img
+{
+    filter: grayscale(1);
+}
+
+input[class='input7']:checked ~ main
+{
+    color: white;
+    background: black none;
+}
+
+/*Инпуты*/
+
+input
+{
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+}
+
+label
+{
+    margin-left: 20px;
+}

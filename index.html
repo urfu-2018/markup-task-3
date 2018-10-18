@@ -1,9 +1,225 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <title>Задача «DeLorean DMC-12»</title>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
+    <label class="input1" for="name6">Основной размер</label>
+    <input class="input1" type="radio" id="name6" name="news_size" checked>
+    <label class="input2" for="name5">Маленький размер</label>
+    <input class="input2" type="radio" id="name5" name="news_size">
+    <label class="input3" for="name4">Большой размер</label>
+    <input class="input3" type="radio" id="name4" name="news_size">
+    <label class="input4" for="name3">Основной тип шрифта</label>
+    <input class="input4" type="radio" id="name3" name="news_font" checked>
+    <label class="input5" for="name2">Запасной тип шрифта</label>
+    <input class="input5" type="radio" id="name2" name="news_font">
+    <label class="input6" for="name1">Черно цветовая схема</label>
+    <input class="input6" type="radio" id="name1" name="news_back" checked>
+    <label class="input7" for="name">Черно цветовая схема</label>
+    <input class="input7" type="radio" id="name" name="news_back">
+    <main>
+    <header class="header_newspaper">
+        <div class="name_header">
+            <p>1800 y</p>
+            <h1 class="header_h1">Wild west</h1>
+            <p>3.30</p>
+        </div>
+        <div class="text_header">
+            <p>Amazing adventure</p>
+            <p>Fast and alive</p>
+            <p>Rodeo</p>
+            <p>Race</p>
+        </div>
+    </header>
+    <!--    Блог новостей-->
+    <div class="main_newspaper">
+        <div class="first_columns">
+            <article class="first_news">
+                <h2 class="news_h2">Lucky horseshoe
+                </h2>
+                <h3 class="news_h3">legend of the Wild West</h3>
+                <img src="img/horseshoe.jpg" alt="horseshoe">
+                <p class="news_p">One day a black horseman came to a Texas ranch with a
+                    black stallion. He appealed to the local blacksmith Dukkan with a request to shoe.</p>
+                <h3 class="news_h3 first_news_caption">But his request was very unusual:
+                    he asked to shoe not his horse, but himself</h3>
+                <p class="news_p">The old blacksmith immediately realized that we were
+                    dealing with the "unclean" himself. He took the longest nails and
+                    began to nail horseshoes. Every nail has caused the devil such
+                    suffering that he pleaded for mercy. Then Dukkan took a bullet
+                    from him to never enter the house where a horseshoe hangs above the door.</p>
+                <h3 class="news_h3">Ever since, horseshoe is considered a symbol of
+                    good luck and a talisman against evil forces.
+                </h3>
+            </article>
+            <article class="third_news">
+                <h2 class="third_news_header news_h2">Cowboy tales</h2>
+                <img src="img/8.jpg" alt="horse">
+                <blockquote>
+                    <p class="news_p">The image of a cowboy, a courageous and
+                        eternally drunk "tough guy", a freedom-loving conqueror
+                        of the Wild West, the instigator of the fights, for any
+                        reason clutching at the right Colt and without any words
+                        ending the debate by shooting, has been shaped by numerous
+                        Westerns. But was it really that way?</p>
+                    <cite class="news_p_second">Lewis</cite>
+                </blockquote>
+                <blockquote>
+                    <p class="news_p">In fact, neither in America nor in the Wild
+                        West, cowboys never made up the majority of the population.
+                        According to statistics, over the past hundred years in the
+                        country there were no more than 20 thousand representatives
+                        of the profession.
+                    </p>
+                    <cite class="news_p_second">Fedor</cite>
+                </blockquote>
+                <blockquote>
+                    <p class="news_p">Cowboys led a hard nomadic life. After all,
+                        moving cattle, which sometimes lasts more than a year, on
+                        dusty, exhausting roads is not an easy thing. Every third
+                        cowboy was black, and every fourth was an Indian. A lot
+                        was among the representatives of this profession and the
+                        Mexicans. And in the rodeo the winners were not only “white”.</p>
+                    <cite class="news_p_second">Misha</cite>
+                </blockquote>
+            </article>
+        </div>
+        <article class="second_news">
+            <h2 class="news_h2">In the bag</h2>
+            <p class="second_news_text news_p_second">
+                Indians had little reason to love white people. The "pale-faced"
+                drove the Redskins from their lands, providing in exchange fruitless
+                reservations. White hunters ruthlessly exterminated the buffalo, the
+                hunt for which was for many tribes the main source of food. For the
+                warlike Indians of the West, war seemed the easiest and most natural
+                way to end the “white threat”. The Indians did not realize how unequal
+                the forces were. Each tribe was in contact with a very limited number
+                of “pale faces”, and few Indians visited cities on the Atlantic coast.
+                The number of American soldiers who participated in the wars with the
+                Indians has also always been very small. As a result, the Indians were
+                inclined to downplay the total number of white people, considering them
+                to be a relatively small, albeit very powerful tribe. Therefore, even
+                small Indian tribes often declared war on the United States, counting
+                on a favorable outcome for themselves. The American government seized
+                upon every opportunity to rid the western lands of their native inhabitants,
+                which caused so much inconvenience to the white settlers. Most whites were
+                in complete agreement with General Sheridan’s statement in the epigraph of
+                this chapter.</p><br>
+            <figure>
+                <img class="second_news_img" src="img/2.jpg" alt="man at the car">
+                <figcaption class="news_p_second">man at the car</figcaption>
+            </figure> <br>
+            <p class="second_news_text news_p_second">Thus, wars between whites and Indians
+                were inevitable. In 1862, the troops of Colonel Christopher "Whale" Carson
+                attacked the Apaches in their reservations. This war continued intermittently
+                until 1886, when the Apaches finally ceased resistance, and their leader
+                Geronimo surrendered to captivity. Keith Carson, acting together with the
+                Utah Indians, campaigned against the Navajo. He burned the Navajo settlements
+                and stole their livestock. Somewhat later, he failed to defeat the combined
+                forces of the Kiowa, Cheyenne and Comanche in the battle of Edowie Walls.
+                Colonel Carson was killed by the Indians in 1868. The most successful war
+                for the Indians was the Red Cloud War, named after the Lakota leader.
+                According to the peace treaty in Fort Larami in 1868, the Lakota
+                received a huge reservation, in the territory of which there should
+                not have been American troops, settlements and roads. American soldiers,
+                having at their disposal only 53 warriors. After gold was discovered on
+                the Lakota reservation territory, the contract at Fort Laramie turned
+                into an empty piece of paper. Numerous violations of this agreement by
+                whites forced the Indians in 1876 to re-enter the warpath. In the first
+                major battle of Little Bighorn, the combined forces of the Lakota and
+                Cheyennes, commanded by the leaders of Sitting Bull and Crazy Horse,
+                defeated the 7th Cavalry Regiment of the US Army. The hero of the Civil
+                War, commanded by American troops, General George Custer was surrounded
+                with a small detachment of his soldiers during the battle and was killed
+                in battle. The American cavalrymen lost more than 300 people killed and
+                wounded, the Indians a little less.</p>
+        </article>
+        <article class="fourth_news">
+            <h2 class="fourth_news_h2 news_h2">True<br>bargains.</h2>
+            <p class="fourth_news_p news_p">anything in the large stocks of</p>
+            <h3 class="fourth_news_h3 news_h3">Children`s<br>clothing or ladies
+                oxfords<br>to go at</h3>
+            <h2 class="fourth_news_h2 news_h2">Cost.<br>Shaws.</h2>
+            <img src="img/6.jpg" alt="man">
+        </article>
+        <article class="fifth_news">
+            <h2 class="news_h3">Drying Creek</h2>
+            <p class="news_p_second">Cowboy is the name used in the Wild West of
+                the United States in relation to herdsmen. The era of cowboys began
+                in 1865, when it was necessary to drive into the hijackings of the
+                gigantic wild herds of bulls, mainly in the territory of Texas.
+                This era ended about twenty years later. After the 1930s, a nostalgic,
+                glorifying look at cowboys became fashionable in America. He is
+                reflected in the musical style of country music, comics, advertising,
+                clothing, as well as in cinema. The indispensable attributes of a
+                cowboy are cowboy hat, boots, vest, plaid shirt with double yoke,
+                a lasso, a revolver A lot was among the representatives of this
+                profession and the Mexicans.A lot was among the representatives
+                of this profession and the Mexicans.</p>
+            <h2 class="news_h3">Million Baby</h2>
+            <p class="news_p_second">The best shooter in the Cowboys could not
+                shoot two pistols at once. First, at the time of the cowboys,
+                two revolvers were worn at once, either eccentric people, or
+                novices, or Texas riders and military men. Secondly, no one shot
+                at the same time from two Colts, preferring to make twelve accurate
+                shots without reloading first from one pistol, and then from
+                the other.</p><blockquote class="news_p_second">"Laborum et repellendus deleniti
+                nemo tempora, ducimus explicabo, blanditiis, fugiat rem temporibus
+                aliquid aperiam dolorem aliquam est perspiciatis."
+            </blockquote><cite>Carol Lewis</cite> <br>
+            <p class="news_p_second">Cowboys constantly organized shootouts in
+                homes and in saloons. This is fiction. It should be remembered
+                that in those days gunpowder was used, which, when burned,
+                emitted a large amount of smoke. So, the very first shot filled
+                the room with a suffocating black cloud, and the coughing arrows
+                were forced to leave the smoky building as soon as possible.</p>
+            <h2 class="news_h3">Terrible and scary</h2>
+            <p class="news_p_second">Cowboys led a hard nomadic life. After all,
+                moving cattle, which sometimes lasts more than a year, on dusty,
+                exhausting roads is not an easy thing. Every third cowboy was
+                black, and every fourth was an Indian. A lot was among the
+                representatives of this profession and the Mexicans. And in
+                the rodeo the winners were not only “white”. For example,
+                Net Love, well managed with a lasso, and John Ouar, who had
+                no equal among wild horse tamers — blacks.</p>
+        </article>
+        <article class="sixth_news">
+            <div class="sixth_news_wanted">
+                <h2 class="news_h2">Wanted!</h2>
+                <p class="news_p">Wanted by a cowboy named Hungry Frank</p>
+                <img src="img/5.jpg" alt="young offender">
+                <p class="news_p">Charged with robbing two sweet shops in Texas.</p>
+            </div>
+            <div class="sixth_news_wanted">
+                <h2 class="news_h2">Wanted!</h2>
+                <p class="news_p">Wanted by a cowboy named "Eahle" Washington</p>
+                <img src="img/wanted2.jpg" alt="young offender">
+                <p class="news_p">Charged with robbery of trains and passengers in Texas.</p>
+            </div>
+            <div class="sixth_news_wanted">
+                <h2 class="news_h2">Wanted!</h2>
+                <p class="news_p">Wanted by a mare named named Tequila</p>
+                <img src="img/wanted3.jpg" alt="young offender">
+                <p class="news_p">Loves carrots and sugar, loses his composure at the sight of a lasso.</p>
+            </div>
+            <div class="sixth_news_ted">
+                <h2 class="news_h2">Amazing Adventures
+                </h2>
+                <h3 class="news_h3">And incredible stories</h3>
+                <h2 class="news_h2">Elusive ted</h2>
+                <h3 class="news_h3">And his companion Bebop</h3>
+                <h2 class="news_h2 sixth_news_h2">The best cowboys in the wild west</h2>
+                <h3 class="news_h3">The best shooter in Teahsa</h3>
+                <img src="img/cowboy_PNG10.png" alt="cowboy">
+            </div>
+        </article>
+    </div>
+</main>
 </body>
 </html>
+
