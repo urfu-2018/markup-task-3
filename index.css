@@ -1,0 +1,172 @@
+input[id='light']:checked ~ main,
+input[id='light']:checked ~ .main_title
+{
+    background: #ffe4c4;
+    column-rule: 2px solid #2b1401;
+    color: #2b1401;
+}
+
+input[id='light']:checked ~ main > hr
+{
+    color: #2b1401;
+}
+
+input[id='light']:checked ~ .settings > .settings-item > label[for='light']
+{
+    background: rgba(56, 56, 56, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+input[id='dark']:checked ~ main,
+input[id='dark']:checked ~ .main_title
+{
+    background: #2b1401;
+    column-rule: 2px solid #ffe4c4;
+    color: #ffe4c4;
+}
+
+input[id='dark']:checked ~ .settings > .settings-item > label[for='dark']
+{
+    background: rgba(56, 56, 56, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+input[id='dark']:checked ~ main > hr
+{
+    color: #ffe4c4;
+}
+
+input[id='normal']:checked ~ main
+{
+    font-size: 16px;
+}
+
+input[id='normal']:checked ~ .settings > .settings-item > label[for='normal']
+{
+    background: rgba(56, 56, 56, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+input[id='big']:checked ~ main
+{
+    font-size: 25px;
+}
+
+input[id='big']:checked ~ .settings > .settings-item > label[for='big']
+{
+    background: rgba(56, 56, 56, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+input[id='small']:checked ~ main
+{
+    font-size: 10px;
+}
+
+input[id='small']:checked ~ .settings > .settings-item > label[for='small']
+{
+    background: rgba(56, 56, 56, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+input[id='standard']:checked ~ main
+{
+    font-family: sans-serif;
+}
+
+input[id='standard']:checked ~ .settings > label[for='standard']
+{
+    background: rgba(56, 56, 56, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+input[id='design']:checked ~ main
+{
+    font-family: 'Cormorant Infant', serif;
+}
+
+input[id='design']:checked ~ .settings > .settings-item > label[for='design']
+{
+    background: rgba(56, 56, 56, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.switch
+{
+    height: 30px;
+    width: 100px;
+    padding: 5px;
+    cursor: pointer;
+    background: rgba(56, 56, 56, .8);
+    border: #aaa;
+    color: rgba(255, 255, 255, .8);
+    transition: all .5s ease-out;
+}
+
+.switch:hover
+{
+    background: rgba(56, 56, 56, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+input
+{
+    display: none;
+}
+
+html
+{
+    margin: 0;
+    text-align: justify;
+}
+
+.settings-item
+{
+    display: inline-block;
+    text-align: left;
+}
+
+.settings-title
+{
+    margin: 0;
+}
+
+.main_title
+{
+    font-family: 'Ruslan Display', cursive;
+    margin: 0;
+    padding: 20px;
+}
+
+.title
+{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+.subtitle
+{
+    text-align: center;
+    font-family: 'Courier New', monospace;
+}
+
+blockquote
+{
+    font-style: italic;
+    hyphens: auto;
+}
+
+p
+{
+    hyphens: auto;
+}
+
+.advert
+{
+    column-count: 5;
+}
+
+img
+{
+    width: 100%;
+}
