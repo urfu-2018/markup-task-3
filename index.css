@@ -1,0 +1,49 @@
+article{
+    background: gray;
+    margin: 15px;
+}
+.column{
+    width: 23%;
+    background: aqua;
+    display: inline-block;
+}
+
+.column p:first-child::first-letter{
+    color:red;
+    font-size: 20px;
+}
+
+.top{
+    height: 500px;
+    background: aquamarine;
+}
+.specialColumn{
+    width: 23%;
+    background: beige;
+    display: inline-block;
+}
+
+.separator
+{
+    font-family: Arial ;
+}
+
+.specialColumn.bottom{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+.specialColumn.bottom p{
+    width: 10%;
+}
+.specialColumn.bottom img{
+    width: 80%;
+}
+
+header{
+    width: 100%;
+}
+
+img {
+    display: inline;
+}
