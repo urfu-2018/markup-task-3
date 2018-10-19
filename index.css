@@ -104,7 +104,7 @@ th
 .left-under-column-2,
 .left-under-column-3
 {
-    width: 13.3%;
+    width: 14%;
 }
 
 .right-under-column-1.row-3
@@ -232,6 +232,47 @@ a
 {
     font-size: 40px;
 }
+/*for resizable*/
+
+input[class='large']:checked ~ main
+{
+    zoom: 1.1;
+}
+
+input[class='large']:checked ~ main .headline
+{
+    zoom: 1.1;
+}
+
+input[class='large']:checked ~ main .horoscope-field
+{
+    zoom: 1.1;
+}
+
+input[class='large']:checked ~ main .weather-forecast
+{
+    zoom: 1.1;
+}
+
+input[class='large']:checked ~ main .anecdotes
+{
+    zoom: 1.1;
+}
+
+input[class='large']:checked ~ main a
+{
+    zoom: 1.1;
+}
+
+input[class='large']:checked ~ main legend
+{
+    zoom: 1.1;
+}
+
+input[class='large']:checked ~ main aside .recommended__title
+{
+    zoom: 1.1;
+}
 
 /*for  changing sans*/
 
@@ -241,6 +282,21 @@ input[class='sans-serif']:checked ~ main
 }
 
 input[class='sans-serif']:checked ~ main .headline
+{
+    font-family: 'DIN Alternate', sans-serif;
+}
+
+input[class='sans-serif']:checked ~ main .horoscope-field
+{
+    font-family: 'DIN Alternate', sans-serif;
+}
+
+input[class='sans-serif']:checked ~ main .weather-forecast
+{
+    font-family: 'DIN Alternate', sans-serif;
+}
+
+input[class='sans-serif']:checked ~ main .anecdotes
 {
     font-family: 'DIN Alternate', sans-serif;
 }
