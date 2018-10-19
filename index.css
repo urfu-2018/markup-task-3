@@ -1,0 +1,218 @@
+body 
+{
+    height: 100%;
+    hyphens: auto;
+
+}
+
+input[value='night']:checked ~ section 
+{
+    background: black;
+    color: white;
+    column-rule: 1px solid white;
+
+}
+
+input[value='night']:checked ~ section h1 
+{
+    border-bottom: 1px solid white;
+}
+
+input[value='day']:checked ~ section
+{
+    background: white;
+    color: black;
+    column-rule: 1px solid black;
+}
+
+input[value='medium']:checked ~ section
+{
+    font-size: 16px;
+}
+
+input[value='small']:checked ~ section
+{
+    font-size: 14px;
+}
+
+input[value='big']:checked ~ section
+{
+    font-size: 18px;
+}
+
+input[value='Arial']:checked ~ section
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[value='NewCour']:checked ~ section 
+{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input[value='Times']:checked ~ section 
+{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.articles 
+{
+    column-count: 4;
+    margin-top: 5px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+p 
+{
+    padding: 2px;
+}
+
+p::first-letter
+{
+    font-weight: bolder;
+    font-size: 1.3em;
+    color: brown;
+}
+
+.verticalLabel
+{
+    font-size: 2em;
+    padding: 15px 0;
+    margin: 0 5px 5px 0;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    letter-spacing: -10px;
+    border: 1px solid black;
+}
+
+.italyVertical
+{
+    float: left;
+}
+
+.franceVertical
+{
+    float: right;
+}
+
+.italy 
+{
+    column-count: 2;
+}
+
+.italy_header 
+{
+    column-span: all;
+    text-align: center;
+    border-bottom: .5px solid black;
+    border-top: .5px solid black;
+    font-family: Georgia, serif;
+    font-size: 2.5em;
+    font-variant: small-caps;
+    padding: 5px 0;
+}
+
+.spain_header 
+{
+    font-family: 'Adobe Caslon Pro', Georgia, Garamond, Times, serif;
+    letter-spacing: .1em;
+    text-align: center;
+    text-transform: lowercase;
+    font-size: 1.8em;
+    font-variant: small-caps;
+    column-span: all;
+    font-style: italic;
+    padding: 5px 0;
+    border-bottom: .5px solid black;
+    border-top: .5px solid black;
+}
+
+.france_header 
+{
+    font: bold 2em 'Century Schoolbook', Georgia, Times, serif;
+    line-height: 90%;
+    text-align: center;
+    padding: 5px 0;
+    border-bottom: .5px solid black;
+    border-top: .5px solid black;
+    letter-spacing: -2px;
+
+}
+
+.ending
+{
+    font-family: georgia, serif;
+    font-size: 1.6em;
+    font-weight: bold;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    padding: 5px 0;
+    border-bottom: .5px solid black;
+    border-top: .5px solid black;
+    text-align: center;
+
+}
+
+.spain
+{
+    column-count: 2;
+}
+
+h1
+{
+    column-span: all;
+    text-align: center;
+    border-bottom: 1px solid black;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 75px;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+}
+
+img
+{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.banner
+{
+    width: 100%;
+    height: 200px;
+}
+
+.end
+{
+    margin-top: 10px;
+}
+
+.cite_cont
+{
+    border-top: 5px double black;
+    border-bottom: 5px double black;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+cite 
+{
+    display: block;
+    font-size: 2em;
+    text-align: center;
+    width: 150px;
+    margin: auto;
+}
+
+cite::before 
+{
+    content: '«';
+}
+
+cite::after 
+{
+    content: '»';
+}
