@@ -1,0 +1,281 @@
+.recommended
+{
+    position: relative;
+    background-color: #ebebeb;
+    width: 230px;
+    margin-left: 10px;
+}
+
+.recommended__image
+{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.recommended__title
+{
+    margin: 10px;
+    font-size: 15px;
+    word-break: break-word;
+}
+
+.recommended:before
+{
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    content: 'Related';
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.recommended:after
+{
+    content: '';
+    position: absolute;
+    top: 35px;
+    left: -10px;
+    border-style: solid;
+    border-width: 0 10px 10px 0;
+    border-color: transparent #828282;
+}
+
+.triple-line
+{
+    border: 1px solid #000;
+}
+
+.triple-line.middle-line
+{
+    border: 2px solid #000;
+}
+
+.headline
+{
+    width: 83%;
+    color: rgba(0,0,0,.2);
+    font-family: 'Carrois Gothic', sans-serif;
+    text-align: center;
+    transform: translate(200px, 0);
+    font-size: 25px;
+    white-space: nowrap;
+}
+
+.nature
+{
+    text-shadow: 0 1px 0 #a10012, 0 2px  0 #000, 0 3px 0 #000;
+    font-family: 'Didact Gothic', sans-serif;
+    letter-spacing: -2px;
+    font-size: 100px;
+    background-color: transparent;
+    color: #a10012;
+}
+
+.sign
+{
+    font-family: 'Carrois Gothic', sans-serif;
+    text-align: center;
+    font-size: 25px;
+}
+
+.copyright
+{
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    background-color: transparent;
+    opacity: .4;
+}
+
+.main-space,
+td,
+th
+{
+    position: relative;
+}
+
+.main-space
+{
+    width: 100%;
+}
+
+.left-under-column-1,
+.left-under-column-2,
+.left-under-column-3
+{
+    width: 13.3%;
+}
+
+.right-under-column-1.row-3
+{
+    font-family: 'DIN Alternate', sans-serif;
+    text-align: justify;
+    width: 36%;
+}
+
+.right-under-column-1.right-under-column-2.row-5.row-6
+{
+    column-count: 3;
+    column-rule-style: solid;
+    column-rule-color: black;
+    position: relative;
+    word-break: break-all;
+    text-align: left;
+}
+
+.big-picture
+{
+    width: 100%;
+    height: 100%;
+}
+
+.big-picture-sign
+{
+    text-align: justify;
+    opacity: .5;
+}
+
+li.weather:not(:first-child)
+{
+    padding-top: 25%;
+}
+
+li.weather
+{
+    margin-left: 20%;
+    list-style-image: url('w.png');
+}
+
+li.horoscope
+{
+    margin-left: 20%;
+    list-style-image: url('h.png');
+}
+
+li.horoscope:not(:first-child)
+{
+    padding-top: 25%;
+}
+
+.left-under-column-3.row-1.row-2.row-3.row-4.row-5
+{
+    position: relative;
+    font-family: 'Hiragino Kaku Gothic ProN', sans-serif;
+}
+
+.anecdotes
+{
+    overflow: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.left-under-column-2.row-1.row-2.row-3.row-4.row-5
+{
+    position: relative;
+    font-family: 'Hiragino Kaku Gothic ProN', sans-serif;
+}
+
+.horoscope-field
+{
+    overflow: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.left-under-column-1.row-1.row-2.row-3.row-4.row-5
+{
+    position: relative;
+    font-family: 'Hiragino Kaku Gothic ProN', sans-serif;
+}
+
+.weather-forecast
+{
+    overflow: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.links
+{
+    font-family: 'Anton', sans-serif;
+    font-size: 15px;
+}
+
+.author
+{
+    white-space: nowrap;
+}
+
+.right-under-column-1.right-under-column-2.row-1
+{
+    font-size: 25px;
+}
+
+.right-under-column-1.right-under-column-2.row-1::first-letter
+{
+    font-size: 40px;
+}
+
+/*for  changing sans*/
+
+input[class='sans-serif']:checked ~ main
+{
+    font-family: 'DIN Alternate', sans-serif;
+}
+
+input[class='sans-serif']:checked ~ main .headline
+{
+    font-family: 'DIN Alternate', sans-serif;
+}
+
+input[class='sans-serif']:checked ~ main a
+{
+    font-family: 'DIN Alternate', sans-serif;
+}
+
+input[class='sans-serif']:checked ~ main .nature
+{
+    font-family: 'DIN Alternate', sans-serif;
+}
+
+input[class='sans-serif']:checked ~ main legend
+{
+    font-family: 'DIN Alternate', sans-serif;
+}
+
+/*for coloring*/
+
+input[class='black-white']:checked ~ main
+{
+    color: white;
+    background: black;
+}
+
+input[class='black-white']:checked ~ main .headline
+{
+    color: white;
+    background: black;
+}
+
+input[class='black-white']:checked ~ main a
+{
+    color: white;
+    background: black;
+}
