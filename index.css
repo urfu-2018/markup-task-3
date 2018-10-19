@@ -47,3 +47,76 @@ body
 {
     text-align: right;
 }
+
+.contents
+{
+    width: 100%;
+}
+
+.contents img
+{
+    width: 100%;
+}
+
+.rightmost-article
+{
+    width: 40%;
+}
+
+.leftmost-article
+{
+    width: 20%;
+}
+
+.rightmost-article figcaption
+{
+    font-style: italic;
+    text-align: justify;
+}
+
+.rightmost-article .article-contents
+{
+    column-count: 3;
+    column-rule: 1px dotted black;
+}
+
+.article-contents p:not(.quote)
+{
+    hyphens: auto;
+    text-align: justify;
+    text-indent: 1.5em;
+    margin: 0;
+}
+
+.quote
+{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    column-span: all;
+}
+
+.leftmost-article .article-name
+{
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+    font-stretch: condensed;
+}
+
+.contents td
+{
+    vertical-align: top;
+}
+
+.article-name
+{
+    text-align: center;
+    margin: 10px;
+}
+
+.contents td:not(:last-of-type)
+{
+    padding: 10px;
+    border-right: 1px solid gray;
+}
