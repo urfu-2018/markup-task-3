@@ -51,6 +51,7 @@ body
 .contents
 {
     width: 100%;
+    border-collapse: collapse;
 }
 
 .contents img
@@ -100,7 +101,6 @@ body
 {
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
     font-style: italic;
-    text-transform: uppercase;
     font-stretch: condensed;
 }
 
@@ -111,12 +111,22 @@ body
 
 .article-name
 {
+    text-transform: uppercase;
     text-align: center;
     margin: 10px;
 }
 
-.contents td:not(:last-of-type)
+.contents td
 {
     padding: 10px;
+}
+
+.contents td:not(.rightmost-article)
+{
     border-right: 1px solid gray;
+}
+
+.contents .center-bottom-article
+{
+    border-top: 1px solid gray;
 }
