@@ -56,19 +56,25 @@ article.two-columns
     column-rule: 3px dotted brown;
     max-width: 60%;
     display: inline-block;
-    margin-bottom: 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: justify;
 }
 
 .two-columns-header
 {
     column-span: all;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    font-family: Sancreek;
+    font-size: 18px;
+    text-align: center;
 }
 
 article.one-column
 {
     max-width: 60%;
     display: inline-block;
+    text-align: justify;
 }
 
 .one-column-header
@@ -88,19 +94,14 @@ aside
 article.aside
 {
     margin: 15px;
+    word-spacing: -2px;
+    text-align: center;
 }
 
 .aside-header
 {
     font-family: Rye;
     font-size: 17px;
-    text-align: center;
-}
-
-h2
-{
-    font-family: Sancreek;
-    font-size: 18px;
     text-align: center;
 }
 
