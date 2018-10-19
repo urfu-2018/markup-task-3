@@ -168,15 +168,20 @@ input[class='big_size']:checked ~ .newspaper
     font-size: 1.5em;
 }
 
-input[class='arial_font']:checked ~ .newspaper,
-input[class='arial_font']:checked ~ div > .dw_article
+input[class='arial_font']:checked ~ div,
+input[class='arial_font']:checked ~ div div .dw_article,
+input[class='arial_font']:checked ~ div div .second_article,
+input[class='arial_font']:checked ~ div div .third_article
 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-input[class='BWhite_font']:checked
+input[class='BWhite_font']:checked ~ div,
+input[class='BWhite_font']:checked ~ div div .dw_article,
+input[class='BWhite_font']:checked ~ div div .second_article,
+input[class='BWhite_font']:checked ~ div div .third_article
 {
-    font-family: 'Black And White Picture', sans-serif !important;
+    font-family: 'Black And White Picture', sans-serif;
 }
 
 label:hover
