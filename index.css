@@ -1,0 +1,197 @@
+.main-header
+{
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    letter-spacing: 1px;
+    column-span: all;
+    text-align: right;
+    display: inline-block;
+    width: 100%;
+    margin: 15px 0;
+    font-size: 4em;
+}
+
+.logo-and-name
+{
+    column-span: all;
+    column-count: 2;
+    padding: 10px;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+}
+
+.catalog
+{
+    float: left;
+}
+
+.caption
+{
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-style: italic;
+    font-size: 10px;
+    margin-top: 40px;
+    float: left;
+    display: inline;
+    text-align: center;
+}
+
+.upper-case
+{
+    text-transform: uppercase;
+}
+
+.newspaper
+{
+    column-gap: 2em;
+    column-count: 5;
+    column-rule: 1px solid black;
+    background-color: #edeae8;
+}
+
+.clearfix::after
+{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.cat-facts-header
+{
+    column-span: all;
+}
+
+.header-center
+{
+    text-align: center;
+}
+
+.cat-facts
+{
+    column-count: 2;
+    column-rule: 1px solid black;
+    column-gap: 1em;
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+
+.cat-facts p::first-letter
+{
+    color: red;
+}
+
+.cat-facts-1
+{
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.cat-facts-2
+{
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+.cat-facts-3
+{
+    font-family: 'Lucida Console', Monaco, monospace;
+    font-size: 15px;
+}
+
+.house
+{
+    height: 175px;
+    padding: 5px;
+}
+
+.meow
+{
+    font-style: italic;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 10px;
+}
+
+.trump
+{
+    height: 170px;
+}
+
+.human-politics
+{
+    border-bottom: 1px solid black;
+}
+
+.error
+{
+    text-align: center;
+    color: indianred;
+}
+
+.quote
+{
+    font-style: italic;
+    font-size: 14px;
+}
+
+.quote::before
+{
+    content: '"';
+}
+
+a
+{
+    font-style: italic;
+}
+
+.cars
+{
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+.other-news
+{
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.quote::after
+{
+    content: '"';
+}
+
+.ms-learn
+{
+    font-family: 'Lucida Console', Monaco, monospace;
+    font-size: 13px;
+}
+
+.adv
+{
+    border: 1px solid saddlebrown;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    display: table;
+    word-spacing: 100vw;
+}
+
+.adv-inner
+{
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 10px;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.management
+{
+    text-align: right;
+    font-size: 12px;
+}
+
+input
+{
+    vertical-align: middle;
+    margin: 10px;
+}
+
+input:checked + section
+{
+    background-color: aqua;
+}
