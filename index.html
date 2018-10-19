@@ -1,9 +1,151 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>Задача «DeLorean DMC-12»</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
+
 <body>
+    <input type="checkbox" id="color_selector" hidden>
+    <input type="radio" id="small_size_selector" hidden>
+    <input type="radio" id="normal_size_selector" hidden>
+    <input type="radio" id="big_size_selector" hidden>
+    <div class="newspaper">
+        <header>
+            <h1>TODAY NEWS</h1>
+        </header>
+        <h3>NEW&emsp;YORK,&emsp;MONDAY,&emsp;JUNE&emsp;29,&emsp;2016</h3>
+        <div class="content">
+
+            <h2 class="subHeader1">Jodie Whittaker Brings ‘Doctor Who’ Its Biggest Change in 55 Years</h2>
+            <article class="first_article">
+                <p>SAN DIEGO — When Jodie Whit&shy;tak&shy;er got the news some months ago that she had been cast as the pro&shy;tag&shy;o&shy;nist
+                    of “Doc&shy;tor Who,” the long-run&shy;ning BBC se&shy;ries, she went through a range of over&shy;whelmed
+                    re&shy;ac&shy;tions. She cried; she caught her breath; she ex&shy;cit&shy;ed&shy;ly squeezed the knee
+                    of a col&shy;league sit&shy;ting next to her. To be told that she would in&shy;her&shy;it the role of
+                    the Doc&shy;tor, a time-trav&shy;el&shy;ing, space-far&shy;ing ad&shy;ven&shy;tur&shy;er who is per&shy;haps
+                    one of the most rec&shy;og&shy;niz&shy;able heroes in sci&shy;ence fic&shy;tion, Ms. Whit&shy;tak&shy;er
+                    said, wasn’t part of my mind-set as an ac&shy;tress, that it was pos&shy;si&shy;ble.
+                </p>
+                <p>
+                    For Ms. Whit&shy;ta&shy;ker, 36, who un&shy;til now was best known for her work on the Brit&shy;ish crime dra&shy;ma “Broadchurch,”
+                    the cast&shy;ing de&shy;ci&shy;sion was life&shy;al&shy;ter&shy;ing, as it would be for an&shy;y per&shy;form&shy;er
+                    — a guar&shy;an&shy;tee that, when it was an&shy;nounced to the pub&shy;lic, she would be&shy;come in&shy;stant&shy;ly
+                    fa&shy;mil&shy;i&shy;ar to a glob&shy;al au&shy;di&shy;ence of mil&shy;lions.
+                    <br>
+                </p>
+
+            </article>
+            <figure class="doctor_who_figure">
+                <img class="image" src='im.jpg' alt='missing' />
+                <figcaption>Doctor Who art</figcaption>
+            </figure>
+
+            <article>
+                <p>
+                    Re&shy;cent sales may have been purring, but Soft&shy;cat struck an un&shy;ex&shy;pect&shy;ed&shy;ly cau&shy;tious note about
+                    its prospects for the com&shy;ing year yes&shy;ter&shy;day, prompt&shy;ing an 11.5 cent fall in its share
+                    price. The com&shy;pa&shy;ny, one of Britain’s biggest com&shy;put&shy;er and soft&shy;ware re&shy;sellers,
+                    said that rev&shy;enue growth would slow from its pre&shy;sent strong lev&shy;els, with un&shy;cer&shy;tain&shy;ties
+                    around Brex&shy;it po&shy;ten&shy;tial&shy;ly putting the brakes on busi&shy;ness con&shy;fi&shy;dence.
+
+                </p>
+            </article>
+            <article class="second_article not_splitted">
+                <p>
+                    Will the so&shy;cial&shy;ly re&shy;spon&shy;si&shy;ble in&shy;vestors of the fu&shy;ture shun food and drinks com&shy;pa&shy;nies
+                    in the way that they avoid to&shy;bac&shy;co com&shy;pa&shy;nies to&shy;day? In&shy;vestors hold big
+                    to&shy;bac&shy;co re&shy;spon&shy;si&shy;ble for sell&shy;ing a prod&shy;uct that is proven to dam&shy;age
+                    the health of the peo&shy;ple who buy it. The high quan&shy;ti&shy;ty of sug&shy;ar in many of the food
+                    and drinks prod&shy;ucts that we buy means man&shy;u&shy;fac&shy;tur&shy;ers could be ac&shy;cused of
+                    be&shy;hav&shy;ing in the sa&shy;me way.
+
+                </p>
+            </article>
+            <h4>medicine news</h4>
+            <article class="not_splitted">
+
+                <p>
+                    Pa&shy;tients in emer&shy;gen&shy;cy de&shy;part&shy;ments will be scored on the sever&shy;i&shy;ty of their con&shy;di&shy;tion
+                    to en&shy;sure they re&shy;ceive time&shy;ly treat&shy;ment, it was an&shy;nounced yes&shy;ter&shy;day.
+                    A pro&shy;ce&shy;dure known as the emer&shy;gen&shy;cy medicine ear&shy;ly warn&shy;ing sys&shy;tem (EMEWS)
+                    was launched yes&shy;ter&shy;day by Si&shy;mon Har&shy;ris, the health min&shy;is&shy;ter. Un&shy;der
+                    the ini&shy;tia&shy;tive, the sever&shy;i&shy;ty of a pa&shy;tient’s ail&shy;ment will be scored and
+                    their rank&shy;ing will prompt nurs&shy;es to re&shy;quest a re&shy;view at agreed in&shy;ter&shy;vals
+                    while the pa&shy;tient is wait&shy;ing to be seen by a doc&shy;tor. The sys&shy;tem is in&shy;tend&shy;ed
+                    to de&shy;tect a pa&shy;tient’s con&shy;di&shy;tion be&shy;fore it wors&shy;ens.
+
+                </p>
+
+                <figure>
+                    <img class="md_image image" src='md.jpg' alt='missing' />
+                    <figcaption class="md_figure ">medicine news</figcaption>
+                </figure>
+            </article>
+
+            <hr class="decor_line">
+
+
+            <article>
+                Come cel&shy;e&shy;brate the new year at Wash&shy;ing&shy;ton Skat&shy;ing Park, where skates are avail&shy;able for rent.
+                Just take a Ran&shy;dolph Street car for ac&shy;cess to the park
+                <hr class="decor_line">
+            </article>
+
+            <article class="not_splitted">
+                Corbin's "segars" are made from Havana tobacco. Get them today, errrr yesterday, at the corner of Clark and Randolph
+                <img class="sigare_image" src='si.png' alt='missing' />
+                <hr class="decor_line">
+            </article>
+
+            <article class="third_article not_splitted">
+                <p>
+                    <span class="vertical_header">tourism News</span>
+                    The city of Ed&shy;in&shy;burgh has opened a pub&shy;lic con&shy;sul&shy;ta&shy;tion in&shy;to a pro&shy;posed tourist tax.
+                    The city coun&shy;cil’s con&shy;sul&shy;ta&shy;tion will run un&shy;til De&shy;cem&shy;ber 10 and seeks
+                    feed&shy;back from busi&shy;ness&shy;es, res&shy;i&shy;dents and vis&shy;i&shy;tors on the de&shy;tails
+                    of the pro&shy;posed tax and the best us&shy;es for the mon&shy;ey raised. The au&shy;thor&shy;i&shy;ty
+                    has said that it wants to hear, in par&shy;tic&shy;u&shy;lar, from the hos&shy;pi&shy;tal&shy;i&shy;ty
+                    and tourism in&shy;dus&shy;try, which op&shy;pos&shy;es such a levy. Ed&shy;in&shy;burgh is look&shy;ing
+                    to fol&shy;low the ex&shy;am&shy;ple of tourist des&shy;ti&shy;na&shy;tions such as Barcelona, Paris
+                    and Berlin with a tax on overnight stays. In turn, it could lead the way for oth&shy;er lo&shy;cal au&shy;thor&shy;i&shy;ties
+                    across Scot&shy;land, which are al&shy;so seek&shy;ing pow&shy;ers from the Scot&shy;tish gov&shy;ern&shy;ment
+                    to raise a tourist tax. Ed&shy;in&shy;burgh coun&shy;cil says that its planned “tran&shy;sient vis&shy;i&shy;tor…
+
+
+
+                </p>
+            </article>
+
+
+
+            <hr class="decor_line">
+
+            <article class="not_splitted">
+                And you think you have it bad on the CTA? Rapid transit to New York in just 28 hours, 30 to Boston
+                <hr class="decor_line">
+            </article>
+            <article class="not_splitted">
+                The original and genuine Lea Perrins worcestershire sauce. Great in soups, gravies, fish and game.
+                <hr class="decor_line">
+            </article>
+        </div>
+    </div>
+    <fieldset>
+        <legend>Шрифт</legend>
+        <label for="small_size_selector">Меньше</label>
+        <br>
+        <label for="normal_size_selector">Нормально</label>
+        <br>
+        <label for="big_size_selector">Больше</label>
+        <br>
+    </fieldset>
+    <fieldset>
+        <legend>Цветовая гамма</legend>
+        <label for="color_selector">Черно-белый</label>
+    </fieldset>
 </body>
+
 </html>

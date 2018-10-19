@@ -1,0 +1,183 @@
+.newspaper
+{
+    background-image: url('bk.jpg');
+    border: black solid .3em;
+    margin: 1em;
+    margin-top: 4em;
+}
+
+.content
+{
+    margin-top: -1.5em;
+    column-count: 3;
+    column-rule: .2em dotted #000;
+    column-gap: 2em;
+    padding: 1em;
+    font-size: 1.6em;
+    hyphens: manual;
+    text-shadow: #000 0 0 2px;
+}
+
+.not_splitted
+{
+    -webkit-column-break-inside: avoid;
+}
+
+.md_figure
+{
+    font-size: .8em;
+    text-align: center;
+}
+
+h1
+{
+    font-size: 5em;
+    text-align: center;
+    text-shadow: #000 0 0 2px;
+}
+
+p
+{
+    font-family: 'Journal Cyrillic';
+}
+
+h3
+{
+    border-top: .2em double black;
+    border-bottom: .2em double black;
+    text-align: center;
+    font-size: 3em;
+    text-shadow: #000 0 0 2px;
+}
+
+.image
+{
+    width: 100%;
+    position: relative;
+    margin: auto;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
+h4
+{
+    margin-bottom: -1.3em;
+}
+
+.md_image
+{
+    -webkit-border-radius: 50em;
+    border-radius: 50em;
+}
+
+.vertical_header
+{
+    writing-mode: vertical-rl;
+    float: left;
+    text-transform: uppercase;
+    text-orientation: upright;
+    font: 1em italic;
+    padding-right: .5em;
+    height: 90%;
+    width: 10%;
+}
+
+.second_article
+{
+    border: black .1em solid;
+    padding: .3em;
+}
+
+.decor_line
+{
+    width: 50%;
+    align-content: left;
+}
+
+.doctor_who_figure
+{
+    text-align: center;
+    padding-left: -1em;
+}
+
+.sigare_image
+{
+    width: 10%;
+    margin: 0 1.5%;
+    max-width: 37%;
+}
+
+p::first-letter
+{
+    font-size: 2em;
+}
+
+article::first-letter
+{
+    font-size: 2em;
+}
+
+.first_article
+{
+    columns: 2;
+}
+
+.third_article
+{
+
+    border: black .1em dotted;
+    padding: .3em;
+}
+
+.info_block
+{
+    float: right;
+    vertical-align: center;
+}
+
+label
+{
+    font-size: 2em;
+}
+
+#color_selector:checked ~ .newspaper
+{
+    background-image: url('https://srca.oboi.ws/wallpapers/big_11976_oboi_seryj_fon_mac.jpg');
+    color: white;
+    text-shadow: #fff 0 0 2px;
+}
+
+#small_size_selector:checked ~ .newspaper
+{
+    font-size: .5em;
+}
+
+#normal_size_selector:checked ~ .newspaper
+{
+    font-size: 1em;
+}
+
+#big_size_selector:checked ~ .newspaper
+{
+    font-size: 1.5em;
+}
+
+label:hover
+{
+    background: gray;
+}
+
+fieldset
+{
+    display: inline;
+    position: relative;
+    width: 20em;
+    padding: 1em;
+}
+
+legend
+{
+    font-size: 2em;
+    align-self: auto;
+}
