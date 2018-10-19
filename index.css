@@ -1,112 +1,114 @@
-input.swap:checked ~ table
+input.swap:checked ~ main
 {
-    background-color: brown;
+    background-color: black;
+    color: bisque;
 }
 
-input.zoom:not(:checked) ~ table
+input.swap:not(:checked) ~ main
+{
+    background-color: antiquewhite;
+    color: black;
+}
+
+input.zoom:not(:checked) ~ main
 {
     font-size: 1em;
 }
 
-input.zoom:checked ~ table
+input.zoom:checked ~ main
 {
     font-size: 1.25em;
 }
 
-table.outer-table,
-th,
-td
+main
 {
-    width: auto;
     max-width: 1200px;
-    border: 1px outset black;
-    border-spacing: 1px;
-    background-color: antiquewhite;
-    position: relative;
+    border: 1px solid brown;
 }
 
-table.inside-table
+header
 {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    text-align: center;
-    border: 0;
-    max-width: 300px;
+    border-bottom: 1px solid brown;
 }
 
-table.inside-table td
+.paper-name
 {
+    font-family: UnifrakturMaguntia;
+    font-size: 30px;
     text-align: center;
-    border: 0;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.article::first-letter
+{
+    font-family: Rye;
+}
+
+.article
+{
+    margin: 5px;
+}
+
+article.two-columns
+{
+    column-count: 2;
+    column-rule: 3px dotted brown;
+    max-width: 60%;
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.two-columns-header
+{
+    column-span: all;
     margin-top: 10px;
-}
-
-table.weather
-{
-    width: 75%;
-    border: black 1px dotted;
-    font-size: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 15px;
-}
-
-table.weather th,
-table.weather tr,
-table.weather td
-{
-    border: 0;
-}
-
-th.big-title
-{
-    font-family: 'UnifrakturMaguntia';
-    font-size: 22px;
-}
-
-div::first-letter
-{
-    font-family: 'Rye';
+    font-family: Sancreek;
     font-size: 18px;
-}
-
-.small-title
-{
-    font-family: 'Sancreek';
-    font-size: 15px;
     text-align: center;
 }
 
-.plain-text
+article.one-column
 {
-    font-family: 'Uncial Antiqua';
-    font-size: 13px;
+    max-width: 60%;
+    display: inline-block;
+    text-align: justify;
+}
+
+.one-column-header
+{
+    font-family: Uncial Antiqua;
+    font-size: 20px;
+    text-align: center;
+}
+ 
+aside
+{
+    height: 100%;
+    width: 35%;
+    float: left;
+}
+
+article.aside
+{
+    margin: 15px;
+    word-spacing: -2px;
     text-align: center;
 }
 
-img.leo
+.aside-header
 {
-    width: 250px;
-    height: 150px;
+    font-family: Rye;
+    font-size: 17px;
+    text-align: center;
 }
 
-figure.image
+.image
 {
     float: left;
     margin: 7px;
     text-align: center;
     font-size: 12px;
-}
-
-.article
-{
-    margin: 10px;
-}
-
-div.aside-article
-{
-    font-family: 'Uncial Antiqua';
-    font-size: 12px;
-    text-align: center;
 }
