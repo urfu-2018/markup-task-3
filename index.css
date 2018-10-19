@@ -3,11 +3,24 @@ body
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.paper-info
+{
+    text-align: center;
+}
+
 .paper-name
 {
     font-size: 45px;
     font-variant: small-caps;
-    text-align: center;
+    margin: 10px;
+}
+
+.slogan
+{
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 .issue-info
@@ -16,20 +29,21 @@ body
     width: 100%;
 }
 
+.issue-info * {
+    width: 33%;
+}
+
 .issue-no
 {
     text-align: left;
-    width: 33%;
 }
 
 .issue-date
 {
     text-align: center;
-    width: 34%;
 }
 
 .issue-type
 {
     text-align: right;
-    width: 33%;
 }
