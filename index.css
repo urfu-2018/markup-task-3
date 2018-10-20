@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&subset=cyrillic');
+
 body
 {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -54,34 +56,23 @@ body
     border-collapse: collapse;
 }
 
+.contents td
+{
+    vertical-align: top;
+    padding: 10px;
+}
+
+.contents td:not(.rightmost-article)
+{
+    border-right: 1px solid gray;
+}
+
 .contents img
 {
     width: 100%;
 }
 
-.rightmost-article
-{
-    width: 40%;
-}
-
-.leftmost-article
-{
-    width: 20%;
-}
-
-.rightmost-article figcaption
-{
-    font-style: italic;
-    text-align: justify;
-}
-
-.rightmost-article .article-contents
-{
-    column-count: 3;
-    column-rule: 1px dotted black;
-}
-
-.article-contents p:not(.quote)
+.article-contents p:not(.quote):not(.spanning)
 {
     hyphens: auto;
     text-align: justify;
@@ -89,18 +80,15 @@ body
     margin: 0;
 }
 
-.rightmost-article .article-contents .quote
+.article-contents p:first-of-type::first-letter
 {
-    font-size: 20px;
-    font-style: italic;
-    font-weight: bold;
-    column-span: all;
+    font-size: 30px;
+    margin-right: 2px;
 }
 
-.leftmost-article img
+.leftmost-article
 {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    width: 20%;
 }
 
 .leftmost-article .article-name
@@ -110,9 +98,49 @@ body
     font-stretch: condensed;
 }
 
+.center-top-article .upright
+{
+    font-size: 34px;
+    font-family: Arial, Helvetica, sans-serif;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-transform: uppercase;
+    font-weight: bold;
+    float: right;
+    padding: 10px;
+    border: 1px dashed black;
+    margin: 10px;
+}
+
+.article-name
+{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px;
+}
+
+figcaption
+{
+    hyphens: auto;
+    font-style: italic;
+    text-align: justify;
+}
+
+.spanning
+{
+    column-span: all;
+}
+
+.quote
+{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+
 .center-top-article
 {
-    height: 0;
+    height: 1px;
 }
 
 .center-top-article .article-name
@@ -130,35 +158,31 @@ body
     column-rule: 1px dotted black;
 }
 
-.article-contents p:first-of-type::first-letter
-{
-    font-size: 30px;
-    margin-right: 2px;
-}
-
-.contents td
-{
-    vertical-align: top;
-}
-
-.article-name
-{
-    text-transform: uppercase;
-    text-align: center;
-    margin: 10px;
-}
-
-.contents td
-{
-    padding: 10px;
-}
-
-.contents td:not(.rightmost-article)
-{
-    border-right: 1px solid gray;
-}
-
-.contents .center-bottom-article
+.center-bottom-article
 {
     border-top: 1px solid gray;
+}
+
+.center-bottom-article .article-name
+{
+    font-family: 'Roboto Slab', serif;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.center-bottom-article .article-contents
+{
+    column-count: 2;
+    column-rule: 1px dotted black;
+}
+
+.rightmost-article
+{
+    width: 40%;
+}
+
+.rightmost-article .article-contents
+{
+    column-count: 3;
+    column-rule: 1px dotted black;
 }
