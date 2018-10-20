@@ -23,12 +23,24 @@
             src: url(fonts/td-neumann.otf) format('opentype');
         }
 
+        @font-face
+        {
+            font-family: NewspaperInfoLargeHeaderFont;
+            src: url(fonts/texgyreschola-regular.otf) format('opentype');
+        }
+
+        @font-face
+        {
+            font-family: NewspaperInfoPersonHeaderFont;
+            src: url(fonts/Forum-Regular.otf) format('opentype');
+        }
+
         body
         {
             margin: 0 auto;
             width: 750px;
             min-width: 400px;
-            background-color: #f9f7f1;
+            background-color: #ECDDBC;
         }
 
         p
@@ -166,6 +178,37 @@
             margin-top: -20px;
         }
 
+        .right-side-header-info .headers > h4
+        {
+            font-family: 'NewspaperInfoLargeHeaderFont', serif;
+            font-size: 35px;
+            word-spacing: 7px;
+            letter-spacing: 6px;
+            margin: 20px 0;
+            line-height: 1em;
+        }
+
+        .right-side-header-info .headers > h5
+        {
+            margin: 0;
+            line-height: 3em;
+        }
+
+        .right-side-header-info .headers h5 > span
+        {
+            font-family: 'NewspaperInfoPersonHeaderFont', serif;
+            font-size: 40px;
+            font-style: italic;
+            font-weight: 300;
+            word-spacing: 10px;
+            float: left;
+        }
+
+        .right-side-header-info .headers h5 .person-name
+        {
+            float: right;
+        }
+
         .newspaper-info figure figcaption
         {
             display: inline-block;
@@ -203,7 +246,7 @@
 <main>
     <div class="main-left-side">
         <figure>
-            <img src="https://www.oldgazette.ru/kopravda/13041961/01-1.jpg" class="main-image"/>
+            <img src="img/mainPhoto.jpg" class="main-image"/>
             <figcaption>ЮРИЙ АЛЕКСЕЕВИЧ ГАГАРИН</figcaption>
         </figure>
         <div class="left-side-text-content">
@@ -257,12 +300,15 @@
     <div class="main-right-side">
         <div class="right-side-header-info">
             <div class="headers">
-                <h4>ВЕЛИКАЯ ПОБЕДА РАЗУМА И ТРУДА</h4>
-                <h5>МИР РУКОПЛЕЩЕТ ЮРИЮ ГАГАРИНУ</h5>
+                <h4>Великая победа разума и труда</h4>
+                <h5><span>МИР РУКОПЛЕЩЕТ</span>
+                    <br>
+                    <span class="person-name">ЮРИЮ ГАГАРИНУ</span>
+                </h5>
             </div>
             <div class="newspaper-info">
                 <figure>
-                    <img src="http://publ.lib.ru/ARCHIVES/P/''Pionerskaya_pravda''/.Online/''Pionerskaya_pravda''-L001.jpg" height="100" width="200" class="newspaper-image"/>
+                    <img src="img/newspaperPhoto.jpg" height="150" class="newspaper-image"/>
                     <figcaption><u>ПРОЛЕТАРИИ ВСЕХ СТРАН, СОЕДИНЯЙТЕСЬ!</u></figcaption>
                 </figure>
                 <h3>
