@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Skranji');
+@import url('https://fonts.googleapis.com/css?family=Itim');
+
+body
+{
+    margin: 0 5px;
+    font-family: Itim, Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    hyphens: manual;
+}
+
+.toolbar
+{
+    overflow: hidden;
+    background-color: whitesmoke;
+}
+
+.toolbar .tool-label
+{
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.toolbar .tool-label:hover
+{
+    background: #ddd;
+    color: black;
+}
+
+input[id='theme_switch']:checked ~ .toolbar .tool-label[for='theme_switch'],
+input[id='font_switch']:checked ~ .toolbar .tool-label[for='font_switch'],
+input[id='size_switch']:checked ~ .toolbar .tool-label[for='size_switch']
+{
+    color: white;
+    background: seagreen;
+}
+
+.tool-input[id='theme_switch']:checked ~ main > .changeable
+{
+    color: white;
+    background: black;
+    border-color: white;
+}
+
+.tool-input[id='font_switch']:checked ~ main > .changeable
+{
+    font-family: 'Skranji', cursive;
+}
+
+.tool-input[id='size_switch']:checked ~ main > .changeable
+{
+    font-size: .7em;
+}
+
+.left
+{
+    text-align: left;
+}
+
+.f-left
+{
+    float: left;
+}
+
+.right
+{
+    text-align: right;
+}
+
+.f-right
+{
+    float: right;
+}
+
+.center
+{
+    text-align: center;
+}
+
+.large
+{
+    font-size: 6em;
+}
+
+p:first-letter
+{
+    font-size: 2em;
+}
+
+.pre-header
+{
+    border-top: 1px darkgrey solid;
+    border-bottom: 3px black solid;
+}
+
+.pre-header > table
+{
+    width: 100%;
+}
+
+.pre-header-img
+{
+    height: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.name
+{
+    border-bottom: 5px black solid;
+}
+
+header
+{
+    font-size: 5em;
+    font-weight: normal;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
+}
+
+header::first-line
+{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.pre-article
+{
+    font-size: 2em;
+    font-weight: bold;
+    border-top: 5px black solid;
+    border-bottom: 2px black solid;
+}
+
+.newspaper
+{
+    display: grid;
+
+    grid-template-columns: 7fr 7fr 1fr 4fr;
+    grid-template-areas: 'h1 h2 vm adv'
+        'm1 m2 vm adv'
+        'm1 m2 vm adv'
+        'ft ft ft ft';
+
+    border: black 2px solid;
+    margin: 5px;
+}
+
+.head1
+{
+    grid-area: h1;
+    margin: 5px;
+}
+
+.head2
+{
+    grid-area: h2;
+    margin: 5px;
+}
+
+.main1
+{
+    grid-area: m1;
+    column-count: 2;
+    column-rule: 2px solid black;
+    margin: 10px;
+}
+
+.main-img-box
+{
+    padding: 5px;
+    background: darkgrey;
+}
+
+.main-img
+{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.main2
+{
+    grid-area: m2;
+    margin: 10px;
+}
+
+.adv
+{
+    grid-area: adv;
+    border-left: lightgray 3px dotted;
+    padding: 10px;
+}
+
+.extra
+{
+    grid-area: ft;
+    margin: 5px;
+}
+
+.vertical
+{
+    text-align: center;
+    grid-area: vm;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-transform: uppercase;
+}
+
+.border-right
+{
+    border-right: lightgray 3px dotted;
+}
+
+hr
+{
+    width: 40%;
+}
+
+footer
+{
+    border-top: lightgray 5px dotted;
+}
+
+blockquote
+{
+    margin: 0;
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+blockquote p
+{
+    font-size: 22px;
+    letter-spacing: .05em;
+    line-height: 1.4;
+}
+
+blockquote cite:before
+{
+    content: '> ';
+}

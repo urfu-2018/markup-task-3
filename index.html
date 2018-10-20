@@ -1,9 +1,144 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <title>Задача «DeLorean DMC-12»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+<input type="checkbox" class="tool-input" id="theme_switch" hidden>
+<input type="checkbox" class="tool-input" id="size_switch" hidden>
+<input type="checkbox" class="tool-input" id="font_switch" hidden>
+
+<section class="toolbar">
+    <label class="tool-label" for="theme_switch">Change Theme</label>
+    <label class="tool-label" for="size_switch">Change Size</label>
+    <label class="tool-label" for="font_switch">Change Font</label>
+</section>
+
+<main>
+    <div class="pre-header changeable">
+        <table>
+            <tr>
+                <td class="center">Special lifetime of smth</td>
+                <td><img class="pre-header-img" src="Img/Orn.png" alt="Cool"></td>
+                <td class="center">www.awesome-link.com</td>
+            </tr>
+        </table>
+    </div>
+    <div class="name changeable center large">The SMTH Journal</div>
+    <header class="center changeable">BREAKING NEWS<br>FOR THIS AWESOME DAY</header>
+    <div class="pre-article center changeable">
+        It's supposed to be a &lt;marquee&gt;, but lint blocked it! =[
+    </div>
+    <div class="newspaper changeable">
+        <article class="border-right">
+            <div class="head1 center">
+                <h2>The classic California town of Pismo Beach</h2>
+            </div>
+            <figure class="main-img-box">
+                <p><img class="main-img" src="Img/pelican.jpg" alt="Pelican"></p>
+                <figcaption class="center">Pelican</figcaption>
+            </figure>
+            <div class="main1">
+                <p>
+                    PIS&shy;MO BEACH, Calif. — For 72 years, folks here have cel&shy;e&shy;brat&shy;ed
+                    the town once known as the "Clam Capi&shy;tol of the World" with a pa&shy;rade,
+                    vis&shy;it&shy;ing dig&shy;ni&shy;taries and a big Clam Fes&shy;ti&shy;val.
+                </p>
+                <p>
+                    So what if clams dried up here in the 1990s, when fish&shy;ing en&shy;thu&shy;si&shy;
+                    asts caught so many that lo&shy;cal restau&shy;rants spe&shy;cial&shy;iz&shy;ing in
+                    clam chow&shy;der had to re&shy;sort to im&shy;port&shy;ing in&shy;gre&shy;di&shy;
+                    ents from Ore&shy;gon and Wash&shy;ing&shy;ton State?
+                </p>
+                <p>
+                    Hat hasn't stopped lit&shy;tle Pis&shy;mo from con&shy;tin&shy;u&shy;ing the
+                    tra&shy;di&shy;tion with a big two-day Oc&shy;to&shy;ber fes&shy;ti&shy;val
+                    de&shy;vot&shy;ed to clams.
+                </p>
+                <p>
+                    "It's a his&shy;tor&shy;i&shy;cal cel&shy;e&shy;bra&shy;tion, and peo&shy;ple
+                    look for&shy;ward to it all year," says Gor&shy;don Jack&shy;son, the
+                    ex&shy;ec&shy;u&shy;tive di&shy;rec&shy;tor of the Pis&shy;mo Beach Con&shy;fer&shy;ence
+                    and Vis&shy;i&shy;tors Bu&shy;reau.
+                </p>
+                <p>
+                    Pis&shy;mo has a lot go&shy;ing for it be&shy;yond the his&shy;to&shy;ry of clams.
+                </p>
+                <p>
+                    A jew&shy;el of cen&shy;tral Cal&shy;i&shy;for&shy;nia, about halfway
+                    be&shy;tween Los An&shy;ge&shy;les and San Fran&shy;cis&shy;co and just
+                    down the road from San Luis Obis&shy;po and Hearst Cas&shy;tle, Pis&shy;mo
+                    has some of the widest, un-de&shy;vel&shy;oped beach&shy;es on the coast.
+                </p>
+            </div>
+        </article>
+        <article class="border-right">
+            <div class="head2 center">
+                <h2>Halloween spending: 25 U.S. cities that invest heavily in this haunted holiday</h2>
+            </div>
+            <div class="main2">
+                <p>
+                    Hal&shy;loween has be&shy;come a bil&shy;lion-dol&shy;lar in&shy;dus&shy;try
+                    in the Unit&shy;ed States. Amer&shy;i&shy;cans are pro&shy;ject&shy;ed to spend
+                    $9 bil&shy;lion this year on Hal&shy;loween-re&shy;lat&shy;ed items and
+                    ac&shy;tiv&shy;i&shy;ties, down from $9.1 bil&shy;lion last year, ac&shy;cord&shy;ing
+                    to the Na&shy;tion&shy;al Re&shy;tail Fed&shy;er&shy;a&shy;tion’s an&shy;nu&shy;al
+                    sur&shy;vey Pros&shy;per In&shy;sights and An&shy;a&shy;lyt&shy;ics.
+                </p>
+                <p>
+                    While more than 175 mil&shy;lion Amer&shy;i&shy;cans are ex&shy;pect&shy;ed
+                    to par&shy;take in Hal&shy;loween fes&shy;tiv&shy;i&shy;ties, the
+                    pop&shy;u&shy;la&shy;tion that spends the most on the cel&shy;e&shy;bra&shy;tion
+                    is not even&shy;ly dis&shy;tribut&shy;ed through&shy;out the coun&shy;try. There
+                    are sev&shy;er&shy;al re&shy;gions that are re&shy;port&shy;ing high&shy;er
+                    spend&shy;ing than oth&shy;ers.
+                </p>
+                <p>
+                    States in the South and North&shy;east are pro&shy;ject&shy;ed to spend the most
+                    on cos&shy;tumes, can&shy;dy, dec&shy;o&shy;ra&shy;tions, and greet&shy;ing
+                    cards com&shy;bined than states in the Mid&shy;west and West. For ex&shy;am&shy;ple,
+                    those liv&shy;ing in the South are pro&shy;ject&shy;ed to spend, on av&shy;er&shy;age,
+                    $90.35 per per&shy;son this year on these items. This is much greater than
+                    the av&shy;er&shy;age pro&shy;ject&shy;ed ex&shy;pen&shy;di&shy;ture on
+                </p>
+            </div>
+            <img class="main-img" src="Img/pumpkin.jpg" alt="Pumpkins">
+        </article>
+        <div class="adv">
+            <article class="center">
+                <p>Advertisement with external Picture</p>
+                <img src="https://cloudfour.com/examples/img-currentsrc/images/kitten-small.png" alt="Kitty">
+                <hr>
+            </article>
+            <article class="center">
+                <p>
+                    The de&shy;ci&shy;sion came af&shy;ter Mr. Mnuchin met with Pres&shy;i&shy;dent
+                    Trump and Mike Pom&shy;peo, the sec&shy;re&shy;tary of state, at the White House
+                    on Thurs&shy;day morn&shy;ing, ac&shy;cord&shy;ing to a Trea&shy;sury.
+                    The na&shy;tion's lead&shy;ing wed&shy;ding re&shy;tail&shy;er is flirt&shy;ing
+                    with the pos&shy;si&shy;bil&shy;i&shy;ty of bankrupt&shy;cy pro&shy;tec&shy;tion,
+                    which of&shy;ten in&shy;volves some store clo&shy;sures, af&shy;ter skip&shy;ping
+                    a key debt pay&shy;ment.
+                </p>
+                <hr>
+            </article>
+            <article class="center">
+                <p>Цитатка:</p>
+                <blockquote>
+                    <p>Фэшин из май профешин</p>
+                    <cite>Coco Chanel</cite>
+                </blockquote>
+                <hr>
+            </article>
+        </div>
+        <p class="vertical">This is VERY AWESOME STYLISH Vertical text</p>
+        <footer class="extra">
+            <span class="f-left">Awesome foooooooooooooter</span>
+            <span class="f-right">Lifanov Sava 2018</span>
+        </footer>
+    </div>
+</main>
 </body>
 </html>
