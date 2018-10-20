@@ -1,0 +1,90 @@
+h1
+{
+    font-family: "Times New Roman", Georgia, Serif;
+    text-align: center;
+    font-size: 60px;
+    font-family: henriette-black, serif;
+    text-shadow: 4px 4px gray;
+}
+
+h2
+{
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkred;
+}
+
+h3
+{
+    font-size: 20px;
+    font-style: italic;
+}
+
+hr
+{
+    opacity: 0;
+}
+
+p
+{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p::first-letter
+{
+    font: italic 25px Times New Roman;
+    color: #f00;
+}
+
+@font-face
+{
+    font-family: 'henriette-black';
+    src: url('henriette-black-webfont.woff2') format('woff2'),
+         url('henriette-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body
+{
+    background-color: dimgray;
+}
+
+.News
+{
+    width: 50%;
+    float: left;
+    column-count: 2;
+    column-rule: 2px solid black;
+}
+
+.Humor
+{
+    width: 45%;
+    float: right;
+    column-count: 2;
+    column-rule: 2px solid black;
+}
+
+.sign
+{
+    float: right;
+    border: 1px solid #333;
+    padding: 7px;
+    margin: 10px 0 5px 5px;
+    background: gray; /* Цвет фона */ 
+}
+
+.sign figcaption
+{
+    margin: 0 auto 5px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.img
+{
+       margin-left: auto;
+       margin-right: auto;
+       display: block;
+}
