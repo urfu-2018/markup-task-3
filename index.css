@@ -6,32 +6,86 @@
 
 body
 {
+    background-color: #FFF3D3;
     min-width: 1200px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: sans-serif;
 }
+
+article
+{
+    font-size: 1em; 
+    column-count: 3;
+    column-rule: 2px solid black;
+    column-fill: auto;
+    column-gap: 20px;
+    height: 800;
+}
+
+section
+{
+    display: block;
+    height: 780;
+}
+
+article > section
+{
+    column-count: 2;
+    column-rule: 2px solid black;
+    column-gap: 20px;
+}
+
+.baseball
+{
+    padding: 11px;
+    border: 2px solid black;
+    margin-bottom: 15px;
+}
+
+.baseball_header
+{
+    font-size: 1.4em;
+    font-style: oblique;
+    column-span: all;
+    margin-block-end: 0.4em;
+}
+
+.nobel_image
+{
+    column-span: all;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.headline1
+{
+    text-align: center;
+}
+
+.other
+{
+    column-count: 2;
+    column-rule: 2px solid black;
+    column-gap: 20px;
+}
+
+
 
 .layout
 {
     background-image: url('pictures/texture.png');
     background-repeat: repeat;
-    width: 95%;
+    width: 93%;
     margin: auto;
     padding: 50px 30px;
-    box-shadow: 0 0 28px 7px rgba(0,0,0,.25), 0 0 10px rgba(0,0,0,.22);
+    box-shadow: 0 0 28px 14px rgba(0,0,0,.25), 0 0 10px rgba(0,0,0,.22);
 }
 
 .wrapper
 {
     width: 100%;
     height: 110px;
-    text-align: center;
-}
-
-.headline
-{
-    display: inline;
-    font-family: customHeaderFont, sans-serif;
-    font-size: 4.5em;
     text-align: center;
 }
 
@@ -51,8 +105,8 @@ body
 
 .block.right
 {
-    font-size: .8em;
-    font-weight: 700;
+    font-size: .75em;
+    font-weight: bold;
 }
 
 .right
@@ -65,19 +119,63 @@ body
     padding: 2.5px 0;
     width: 100%;
     text-align: center;
-    border-top: 2px double black;
-    border-bottom: 2px double black;
+    border-top: 5px double black;
+    border-bottom: 5px double black;
     font-style: oblique;
     font-weight: 600;
+    margin-bottom: 20px;
 }
 
-h2
+h1
+{
+    display: inline;
+    font-family: customHeaderFont, sans-serif;
+    font-size: 4.3em;
+}
+
+h2,
+h3
 {
     margin-block-start: 0;
     margin-block-end: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+h3
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 p
 {
+    hyphens: auto;
+    margin-block-start: .3em;
+    margin-block-end: .3em;
+    font-weight: bold;
+    font-size: .9em;
     text-align: justify;
+    text-indent: 1em;
+}
+
+p::first-letter
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+hr
+{
+    border-style: solid;
+    color: black;
+    width: 60%;
+}
+
+img
+{
+    display: block;
+    width: 100%;
+    height: auto;
+    column-span: all;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
