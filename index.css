@@ -1,0 +1,120 @@
+body
+{
+    background: url('old-paper-texture.jpg');
+    background-repeat: repeat;
+}
+
+article
+{
+    column-count: 5;
+    padding: 10px;
+}
+
+@font-face
+{
+    font-family: DeutschGothic;
+    src: url(deutsch-gothic.ttf);
+}
+
+@font-face
+{
+    font-family: BirchStd;
+    src: url(birch-std.ttf);
+}
+
+h1
+{
+    font-size: 2.5em;
+    column-span: all;
+    font-family: DeutschGothic, serif;
+}
+
+p
+{
+    font-family: BirchStd, serif;
+}
+
+.first-paragraph::first-letter
+{
+    font-size: 3em;
+}
+
+blockquote
+{
+    color: rgb(95, 54, 3);
+    font-style: italic;
+}
+
+p[id='advertisement']
+{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    float: right;
+}
+
+input
+{
+    display: none;
+}
+
+/* Input decoration */
+
+label
+{
+    display: inline-block;
+    width: 100px;
+    border: 1px solid black;
+    padding: 2px 10px;
+    margin: 5px;
+}
+
+/* Изменение размера шрифта */
+
+input[id='small']:checked ~ article section p,
+input[id='small']:checked ~ article section blockquote
+{
+    font-size: 12px;
+}
+
+input[id='large']:checked ~ article section p,
+input[id='large']:checked ~ article section blockquote
+{
+    font-size: 20px;
+}
+
+/* Изменение шрифта */
+
+input[id='arial']:checked ~ article section p,
+input[id='arial']:checked ~ article section blockquote
+{
+    font-family: Arial, sans-serif;
+}
+
+input[id='deutsch-gothic']:checked ~ article section p,
+input[id='deutsch-gothic']:checked ~ article section blockquote
+{
+    font-family: DeutschGothic, serif;
+}
+
+/* Изменение темы */
+
+input[id='dark']:checked ~ article section h2
+{
+    color: antiquewhite;
+}
+
+input[id='dark']:checked ~ article section p
+{
+    color: antiquewhite;
+}
+
+input[id='dark']:checked ~ article section blockquote
+{
+    color: rgba(255, 218, 170, .66);
+}
+
+input[id='dark']:checked ~ article
+{
+    background: url('old-paper-texture-night.jpg');
+    background-repeat: repeat;
+}

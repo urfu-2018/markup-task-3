@@ -2,8 +2,146 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
     <title>Задача «DeLorean DMC-12»</title>
 </head>
 <body>
+    <!--Изменение размера шрифта-->
+    <label for="small">Мелкий</label>
+    <input id="small" type="radio" name="font-size">
+    <label for="medium">Средний</label>
+    <input id="medium" type="radio" name="font-size" checked>
+    <label for="large">Крупный</label>
+    <input id="large" type="radio" name="font-size">
+    <!--Изменение шрифта-->
+    <label for="birch-std">Birch Std</label>
+    <input id="birch-std" type="radio" name="font" checked>
+    <label for="deutsch-gothic">Deutsch Gothic</label>
+    <input id="deutsch-gothic" type="radio" name="font">
+    <label for="arial">Arial</label>
+    <input id="arial" type="radio" name="font">
+    <!--Изменение темы-->
+    <label for="light">Светлая тема</label>
+    <input id="light" type="radio" name="theme" checked>
+    <label for="dark">Темная тема</label>
+    <input id="dark" type="radio" name="theme">
+    <!--Содержимое-->
+    <article>
+        <h1>Когда в России закончится нефть?</h1>
+        <section>
+            <h2>ВМЕСТО НЕФТИ - ВОДА</h2>
+            <p class="first-paragraph">
+                Рос&shy;сий&shy;ская Фе&shy;де&shy;ра&shy;ция и Са&shy;у&shy;дов&shy;ское ко&shy;ро&shy;
+                лев&shy;ство - дав&shy;ние кон&shy;ку&shy;рен&shy;ты по неф&shy;те&shy;до&shy;бы&shy;че.
+                РФ не раз вы&shy;хо&shy;ди&shy;ла на 1-е ме&shy;сто в ми&shy;ре, из&shy;вле&shy;кая из
+                недр до 11 млн бар&shy;ре&shy;лей в сут&shy;ки. А вто&shy;рую и тре&shy;тью по&shy;зи&shy;
+                ции за&shy;ни&shy;ма&shy;ли са&shy;уди&shy;ты или аме&shy;ри&shy;кан&shy;цы. Но стра&shy;
+                ны-со&shy;пер&shy;ни&shy;ки до&shy;би&shy;ва&shy;ют&shy;ся пре&shy;об&shy;ла&shy;да&shy;
+                ния на рын&shy;ке раз&shy;ны&shy;ми ме&shy;то&shy;да&shy;ми и пла&shy;тят за не&shy;го раз
+                &shy;ную це&shy;ну.
+            </p>
+            <p>
+                Ара&shy;вий&shy;ский по&shy;лу&shy;ост&shy;ров бо&shy;гат нефтью, как ни&shy;ка&shy;кое дру
+                &shy;гое ме&shy;сто. До&shy;бы&shy;ча «чёр&shy;но&shy;го зо&shy;ло&shy;та» об&shy;хо&shy;дит
+                &shy;ся мест&shy;ным прин&shy;цам не&shy;до&shy;ро&shy;го - мак&shy;си&shy;мум в 10 долл. за
+                «боч&shy;ку». В США за&shy;па&shy;сов неф&shy;ти в ра&shy;зы мень&shy;ше, по&shy;это&shy;му
+                здесь её бе&shy;ре&shy;гут: ка&shy;че&shy;ствен&shy;ные ме&shy;сто&shy;рож&shy;де&shy;ния за
+                &shy;кон&shy;сер&shy;ви&shy;ро&shy;ва&shy;ли и вкла&shy;ды&shy;ва&shy;ют огром&shy;ные день
+                &shy;ги в раз&shy;ра&shy;бот&shy;ку до&shy;ро&shy;гих слан&shy;це&shy;вых уг&shy;ле&shy;во
+                &shy;до&shy;ро&shy;дов.
+            </p>
+            <p>
+                Рос&shy;сия же по&shy;беж&shy;да&shy;ет бла&shy;го&shy;да&shy;ря ин&shy;тен&shy;сив&shy;но
+                &shy;му осво&shy;е&shy;нию круп&shy;ных ме&shy;сто&shy;рож&shy;де&shy;ний в За&shy;пад&shy;
+                ной Си&shy;би&shy;ри. Нефть у нас не ху&shy;же, чем в рай&shy;о&shy;не Пер&shy;сид&shy;ско
+                &shy;го за&shy;ли&shy;ва, но об&shy;хо&shy;дит&shy;ся до&shy;ро&shy;же. И глав&shy;ное -
+                луч&shy;шие ме&shy;сто&shy;рож&shy;де&shy;ния ис&shy;то&shy;ща&shy;ют&shy;ся. Зна&shy;ме
+                &shy;ни&shy;тый Са&shy;мот&shy;лор вы&shy;ра&shy;бо&shy;тан уже на 75%. В жид&shy;ко&shy;
+                сти, ко&shy;то&shy;рая бьёт здесь из сква&shy;жин, неф&shy;ти толь&shy;ко 5%, осталь&shy;ное
+                - во&shy;да. Не это ли имел в ви&shy;ду са&shy;у&shy;дов&shy;ский принц?
+            </p>
+            <img id="oil-production" src="oil-production.jpg" alt="Нефтедобыча" title="Нефтедобыча">
+            <blockquote>
+                «Че&shy;рез 19 лет мо&shy;гут за&shy;кон&shy;чить&shy;ся толь&shy;ко за&shy;па&shy;сы лег
+                &shy;ко до&shy;бы&shy;ва&shy;е&shy;мой ма&shy;ло&shy;вяз&shy;кой неф&shy;ти, раз&shy;ве&shy;
+                дан&shy;ные ещё в со&shy;вет&shy;ское вре&shy;мя, - вно&shy;сит яс&shy;ность на&shy;уч&shy;
+                ный ру&shy;ко&shy;во&shy;ди&shy;тель Ин&shy;сти&shy;ту&shy;та про&shy;блем неф&shy;ти и га
+                &shy;за РАН, ака&shy;де&shy;мик Ана&shy;то&shy;лий Дмит&shy;ри&shy;ев&shy;ский. - Но, во-пер
+                &shy;вых, это про&shy;изой&shy;дёт, толь&shy;ко ес&shy;ли ис&shy;поль&shy;зо&shy;вать тра
+                &shy;ди&shy;ци&shy;он&shy;ные ме&shy;то&shy;ды до&shy;бы&shy;чи. А наш ин&shy;сти&shy;тут раз
+                &shy;ра&shy;бо&shy;тал и уже опро&shy;бо&shy;вал тех&shy;но&shy;ло&shy;гию, ко&shy;то&shy;рая
+                 поз&shy;во&shy;ля&shy;ет экс&shy;плу&shy;а&shy;ти&shy;ро&shy;вать ме&shy;сто&shy;рож&shy;де
+                 &shy;ния с об&shy;вод&shy;нён&shy;но&shy;стью боль&shy;ше 80% и до&shy;би&shy;вать&shy;ся
+                 се&shy;бе&shy;сто&shy;и&shy;мо&shy;сти неф&shy;ти в 1,2 долл. за бар&shy;рель. На Са&shy;мот
+                 &shy;ло&shy;ре эта тех&shy;но&shy;ло&shy;гия поз&shy;во&shy;лит ра&shy;бо&shy;тать ещё 150
+                 лет. А в дру&shy;гих рай&shy;о&shy;нах уве&shy;ли&shy;чить до&shy;бы&shy;чу бо&shy;лее вяз
+                 &shy;кой, чем в Си&shy;би&shy;ри, неф&shy;ти по&shy;мо&shy;гут ин&shy;но&shy;ва&shy;ции.
+                 Толь&shy;ко Та&shy;тар&shy;стан по&shy;лу&shy;чил 200 па&shy;тен&shy;тов в этой об&shy;ла
+                 &shy;сти. Так вот, ес&shy;ли учесть всю эту труд&shy;но&shy;до&shy;ступ&shy;ную нефть, то
+                 её в Рос&shy;сии боль&shy;ше, чем на 50 лет».
+            </blockquote>
+            <p id="advertisement">Место для рекламы</p>
+            <p>
+                И это ещё не всё. Да&shy;же в За&shy;пад&shy;ной Си&shy;би&shy;ри за по&shy;лу&shy;ве&shy;ко
+                &shy;вое осво&shy;е&shy;ние раз&shy;ве&shy;да&shy;но лишь 44% на&shy;чаль&shy;ных сум&shy;мар
+                &shy;ных ре&shy;сур&shy;сов неф&shy;ти, а на шель&shy;фах рос&shy;сий&shy;ских мо&shy;рей -
+                все&shy;го 4,6%. Ес&shy;ли уси&shy;лить изу&shy;че&shy;ние недр, за&shy;па&shy;сы мож&shy;но
+                на&shy;рас&shy;тить.
+            </p>
+        </section>
+        <section>
+            <h2>ГАЗ: РЕСУРС № 1</h2>
+            <p>
+                Ак&shy;тив&shy;нее все&shy;го из&shy;вле&shy;ка&shy;ют&shy;ся те бо&shy;гат&shy;ства, на ко
+                &shy;то&shy;рые есть устой&shy;чи&shy;вый спрос, - к при&shy;ме&shy;ру, газ. По за&shy;па
+                &shy;сам «го&shy;лу&shy;бо&shy;го топ&shy;ли&shy;ва» РФ на 1-м ме&shy;сте в ми&shy;ре, а по
+                до&shy;бы&shy;че - на 2-м по&shy;сле США. Две тре&shy;ти га&shy;зо&shy;вых ре&shy;сур&shy;
+                сов со&shy;сре&shy;до&shy;то&shy;че&shy;но в За&shy;пад&shy;но-Си&shy;бир&shy;ском бас&shy;
+                сей&shy;не, ко&shy;то&shy;рый вы&shy;ра&shy;бо&shy;тан по&shy;ка толь&shy;ко на 37%. Боль
+                &shy;шие пер&shy;спек&shy;ти&shy;вы в Во&shy;сточ&shy;ной Си&shy;би&shy;ри, ко&shy;то&shy;
+                рую в 2019 г. дол&shy;жен со&shy;еди&shy;нить с Ки&shy;та&shy;ем но&shy;вый га&shy;зо&shy;про
+                &shy;вод. По&shy;сле это&shy;го пла&shy;ни&shy;ру&shy;ет&shy;ся на&shy;чать раз&shy;ра&shy;
+                бот&shy;ку круп&shy;ней&shy;ших ме&shy;сто&shy;рож&shy;де&shy;ний в Яку&shy;тии и Ир&shy;кут
+                &shy;ской об&shy;ла&shy;сти. Од&shy;на&shy;ко в 2016-2017 гг. ни од&shy;но&shy;го за&shy;мет
+                &shy;но&shy;го га&shy;зо&shy;во&shy;го ме&shy;сто&shy;рож&shy;де&shy;ния в экс&shy;плу&shy;а
+                &shy;та&shy;цию не вве&shy;де&shy;но. Но&shy;вые про&shy;ек&shy;ты тор&shy;мо&shy;зят за&shy;
+                пад&shy;ные санк&shy;ции, огра&shy;ни&shy;чив&shy;шие при&shy;ток в Рос&shy;сию ин&shy;ве
+                &shy;сти&shy;ций и обо&shy;ру&shy;до&shy;ва&shy;ния.
+            </p>
+            <p>
+                Дру&shy;гая рос&shy;сий&shy;ская гор&shy;дость - ни&shy;кель: 3-е ме&shy;сто по за&shy;па
+                &shy;сам по&shy;сле Ин&shy;до&shy;не&shy;зии и Ав&shy;стра&shy;лии, 2-е ме&shy;сто по до
+                &shy;бы&shy;че по&shy;сле Фи&shy;лип&shy;пин. 85% руд, со&shy;дер&shy;жа&shy;щих ни&shy;
+                кель, за&shy;ле&shy;га&shy;ют на Тай&shy;мы&shy;ре, Коль&shy;ском по&shy;лу&shy;ост&shy;
+                ро&shy;ве и в Ка&shy;ре&shy;лии. Ин&shy;фор&shy;ма&shy;ция об об&shy;щих за&shy;па&shy;сах
+                 это&shy;го ми&shy;не&shy;ра&shy;ла за&shy;кры&shy;та. Но из&shy;вест&shy;но, что ком&shy;
+                 па&shy;ния «Но&shy;риль&shy;ский ни&shy;кель» обес&shy;пе&shy;че&shy;на сы&shy;рьём на 50
+                 лет. В це&shy;лом в стра&shy;не раз&shy;ра&shy;ба&shy;ты&shy;ва&shy;ет&shy;ся по&shy;ка
+                 лишь 58% за&shy;па&shy;сов ни&shy;ке&shy;ля, по&shy;став&shy;лен&shy;ных на гос&shy;ба&shy;
+                 ланс. В 2016 г. при&shy;рост ре&shy;сур&shy;сов, год&shy;ных для раз&shy;ра&shy;бот&shy;ки,
+                 в ни&shy;ке&shy;ле&shy;вой от&shy;рас&shy;ли в 3 ра&shy;за пре&shy;вы&shy;сил до&shy;бы&shy;
+                 чу.
+            </p>
+            <p>
+                И на&shy;ко&shy;нец, зо&shy;ло&shy;то, по ко&shy;то&shy;ро&shy;му РФ ста&shy;биль&shy;но на
+                3-м ме&shy;сте в ми&shy;ре как по за&shy;па&shy;сам (по&shy;сле ЮАР и Ка&shy;на&shy;ды), так
+                и по про&shy;из&shy;вод&shy;ству (по&shy;сле КНР и Ав&shy;стра&shy;лии). По дан&shy;ным Со
+                &shy;ю&shy;за зо&shy;ло&shy;то&shy;про&shy;мыш&shy;лен&shy;ни&shy;ков Рос&shy;сии, в 2017 г.
+                был по&shy;став&shy;лен ре&shy;корд: до&shy;бы&shy;то 280,68 т дра&shy;го&shy;цен&shy;но&shy;
+                го ме&shy;тал&shy;ла. Зо&shy;ло&shy;тые ре&shy;сур&shy;сы ис&shy;поль&shy;зу&shy;ют&shy;ся
+                очень ак&shy;тив&shy;но. Меж&shy;ду до&shy;бы&shy;ва&shy;ю&shy;щи&shy;ми пред&shy;при&shy;я
+                &shy;ти&shy;я&shy;ми рас&shy;пре&shy;де&shy;ле&shy;но 87% за&shy;па&shy;сов, при&shy;год&shy;
+                ных для раз&shy;ра&shy;бот&shy;ки и раз&shy;вед&shy;ки. Для срав&shy;не&shy;ния: по же&shy;
+                лез&shy;ным ру&shy;дам этот по&shy;ка&shy;за&shy;тель - 55%, по уг&shy;лю - толь&shy;ко 17%.
+                Наи&shy;бо&shy;лее ве&shy;ли&shy;ки за&shy;па&shy;сы зо&shy;ло&shy;тых руд. А вот с рос&shy;
+                сып&shy;ным зо&shy;ло&shy;том есть про&shy;бле&shy;ма: рен&shy;та&shy;бель&shy;ных за&shy;па
+                &shy;сов оста&shy;лось толь&shy;ко на 6-8 лет.
+            </p>
+        </section>
+        <section>
+            <h2></h2>
+        </section>
+    </article>
 </body>
 </html>
