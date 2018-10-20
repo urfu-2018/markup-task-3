@@ -1,9 +1,404 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>Задача «DeLorean DMC-12»</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="fonts/Names.otf">
+    <link rel="stylesheet" href="fonts/Quotes.otf">
+    <link rel="stylesheet" href="fonts/HeadLine1.ttf">
+    <link rel="stylesheet" href="fonts/HeadLine2.ttf">
+    <link rel="stylesheet" href="fonts/Text.ttf">
 </head>
+
 <body>
+    <input type="checkbox" id="size" class="size">
+    <label for="size">Увеличить шрифт</label><br>
+    <input type="checkbox" id="font" class="font">
+    <label for="font">Поставить нормальный шрифт</label><br>
+    <input type="checkbox" id="theme" class="theme">
+    <label for="theme">Темная тема</label><br>
+    <main>
+        <header>
+            <div class="weather">
+                <img src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png" alt="clouds">
+                7<span class="degrees">&deg;С</span>
+            </div>
+            <div class="vertical">
+                Аниме<br>это<br>круто
+            </div>
+            <h1 class="title">The Gazeta</h1>
+        </header>
+        <section class="latest-news">
+            <h2 class="title">Последние новости</h2>
+            <div class="first-part">
+                <article class="information">
+                    <h3 class="title">РПЦ разорвала отношения с Константинополем</h3>
+                    <p>
+                        В Мин&shy;ске про&shy;шло за&shy;се&shy;да&shy;ние Си&shy;но&shy;да РПЦ, на
+                        ко&shy;то&shy;ром выс&shy;шие иерар&shy;хи церк&shy;ви при&shy;ня&shy;ли
+                        ре&shy;ше&shy;ние разо&shy;рвать от&shy;но&shy;ше&shy;ния с
+                        Кон&shy;стан&shy;ти&shy;но&shy;по&shy;лем в ка&shy;че&shy;стве от&shy;ве&shy;та
+                        на ша&shy;ги Все&shy;лен&shy;ско&shy;го пат&shy;ри&shy;ар&shy;ха&shy;та,
+                        ко&shy;то&shy;рый ра&shy;нее при&shy;знал ка&shy;но&shy;нич&shy;ны&shy;ми
+                        рас&shy;коль&shy;ни&shy;че&shy;ские ре&shy;ли&shy;ги&shy;оз&shy;ные
+                        ор&shy;га&shy;ни&shy;за&shy;ции Укра&shy;и&shy;ны. Ми&shy;ро&shy;вое
+                        пра&shy;во&shy;сла&shy;вие рас&shy;ко&shy;ло&shy;лось на две ча&shy;сти,
+                        од&shy;на&shy;ко в РПЦ на&shy;де&shy;ют&shy;ся, что ком&shy;про&shy;мисс все еще
+                        воз&shy;мо&shy;жен.
+                    </p>
+                    <hr>
+                </article>
+                <article class="information">
+                    <h3 class="title">Футбол на уровне</h3>
+                    <p>
+                        Сбор&shy;ная Рос&shy;сии по фут&shy;бо&shy;лу на ста&shy;ди&shy;о&shy;не
+                        <span class="name">Фишт</span> в Со&shy;чи на&shy;нес&shy;ла
+                        по&shy;ра&shy;же&shy;ние на&shy;ци&shy;о&shy;наль&shy;ной ко&shy;ман&shy;де
+                        Тур&shy;ции в рам&shy;ках Ли&shy;ги на&shy;ций УЕФА. Ко&shy;ман&shy;да
+                        Ста&shy;ни&shy;сла&shy;ва Чер&shy;че&shy;со&shy;ва те&shy;перь в ша&shy;ге от
+                        за&shy;во&shy;е&shy;ва&shy;ния пер&shy;во&shy;го ме&shy;ста в груп&shy;пе,
+                        ко&shy;то&shy;рое поз&shy;во&shy;лит вый&shy;ти в ди&shy;ви&shy;зи&shy;он А, где
+                        вы&shy;сту&shy;па&shy;ют силь&shy;ней&shy;шие ко&shy;ман&shy;ды Ев&shy;ро&shy;пы.
+                    </p>
+                    <figure class="picture">
+                        <img src="http://catcut.net/f1Yw" alt="Сборная России">
+                        <figcaption>Сборная России по футболу</figcaption>
+                    </figure>
+                    <hr>
+                </article>
+                <article class="information">
+                    <h3 class="title">Последнее послание Хокинга</h3>
+                    <p>
+                        Бри&shy;тан&shy;ский фи&shy;зик-тео&shy;ре&shy;тик Сти&shy;вен Хокинг в
+                        сво&shy;ей по&shy;след&shy;ней кни&shy;ге <span class="name">Крат&shy;кие
+                        от&shy;ве&shy;ты на боль&shy;шие во&shy;про&shy;сы</span> за&shy;явил, что Бо&shy;га
+                        не су&shy;ще&shy;ству&shy;ет. Об этом со&shy;об&shy;ща&shy;ет CNN. Уче&shy;ный
+                        не&shy;од&shy;но&shy;крат&shy;но за&shy;яв&shy;лял, что яв&shy;ля&shy;ет&shy;ся
+                        ате&shy;и&shy;стом. По его сло&shy;вам, все ве&shy;щи,
+                        про&shy;ис&shy;хо&shy;дя&shy;щие в ми&shy;ре, мож&shy;но объ&shy;яс&shy;нить
+                        фи&shy;зи&shy;че&shy;ски&shy;ми за&shy;ко&shy;на&shy;ми.
+                        <span class="quote">Бо&shy;га нет, ни&shy;кто не управ&shy;ля&shy;ет
+                        Все&shy;лен&shy;ной</span>, — го&shy;во&shy;рит&shy;ся в тек&shy;сте кни&shy;ги.
+                        Как от&shy;ме&shy;ча&shy;ет те&shy;ле&shy;ка&shy;нал, уче&shy;ный сде&shy;лал в
+                        кни&shy;ге не&shy;сколь&shy;ко дру&shy;гих за&shy;яв&shy;ле&shy;ний, в том
+                        чис&shy;ле, Хокинг на&shy;пи&shy;сал, что жизнь за пре&shy;де&shy;ла&shy;ми
+                        Зем&shy;ли су&shy;ще&shy;ству&shy;ет, и пред&shy;ска&shy;зал, что в те&shy;че&shy;ние
+                        100 лет че&shy;ло&shy;ве&shy;че&shy;ство смо&shy;жет
+                        пу&shy;те&shy;ше&shy;ство&shy;вать в лю&shy;бую точ&shy;ку Сол&shy;неч&shy;ной
+                        си&shy;сте&shy;мы.
+                    </p>
+                    <hr>
+                </article>
+                <article class="information">
+                    <h3 class="title">
+                        Китай запустит на орбиту
+                        <span class="name">искусственную луну</span> в 2020 году
+                    </h3>
+                    <p>
+                        В Ки&shy;тае спе&shy;ци&shy;а&shy;ли&shy;сты из
+                        Ис&shy;сле&shy;до&shy;ва&shy;тель&shy;ско&shy;го ин&shy;сти&shy;ту&shy;та
+                        аэро&shy;кос&shy;ми&shy;че&shy;ских на&shy;ук и
+                        мик&shy;ро&shy;элек&shy;тро&shy;ни&shy;ки го&shy;ро&shy;да Чэн&shy;ду
+                        раз&shy;ра&shy;бо&shy;та&shy;ли пред&shy;на&shy;зна&shy;чен&shy;ный для
+                        осве&shy;ще&shy;ния спут&shy;ник — <span class="name">ис&shy;кус&shy;ствен&shy;ную
+                        лу&shy;ну</span>. По сло&shy;вам пред&shy;се&shy;да&shy;те&shy;ля
+                        ин&shy;сти&shy;ту&shy;та Ву Чун&shy;фэня, спут&shy;ник бу&shy;дет
+                        за&shy;пу&shy;щен в 2020 го&shy;ду, со&shy;об&shy;ща&shy;ет из&shy;да&shy;ние
+                        People. Яр&shy;кость спут&shy;ни&shy;ка
+                        в во&shy;семь раз вы&shy;ше, чем у на&shy;сто&shy;я&shy;щей Лу&shy;ны,
+                        от&shy;ме&shy;ча&shy;ет Чун&shy;фэнь. Он смо&shy;жет осве&shy;щать
+                        рай&shy;о&shy;ны диа&shy;мет&shy;ром 10-80км и ста&shy;нет
+                        аль&shy;тер&shy;на&shy;ти&shy;вой улич&shy;ным фо&shy;на&shy;рям.
+                        Те&shy;сти&shy;ро&shy;ва&shy;ние спут&shy;ни&shy;ка на&shy;ча&shy;лось еще
+                        не&shy;сколь&shy;ко лет на&shy;зад и те&shy;перь он уже по&shy;чти го&shy;тов к
+                        за&shy;пус&shy;ку. Раз&shy;ра&shy;бот&shy;чи&shy;ки не рас&shy;кры&shy;ва&shy;ют
+                        по&shy;дроб&shy;но&shy;сти тех&shy;но&shy;ло&shy;гии, но от&shy;ме&shy;ча&shy;ют,
+                        что на со&shy;зда&shy;ние спут&shy;ни&shy;ка их вдох&shy;но&shy;ви&shy;ла
+                        ра&shy;бо&shy;та фран&shy;цуз&shy;ско&shy;го ху&shy;дож&shy;ни&shy;ка,
+                        изоб&shy;ра&shy;зив&shy;ше&shy;го це&shy;поч&shy;ку зер&shy;кал,
+                        окру&shy;жа&shy;ю&shy;щих Зем&shy;лю и от&shy;ра&shy;жа&shy;ю&shy;щих
+                        свет. Бес&shy;по&shy;ко&shy;ить&shy;ся о том, что ис&shy;кус&shy;ствен&shy;ная
+                        лу&shy;на по&shy;ме&shy;ша&shy;ет жи&shy;те&shy;лям или ноч&shy;ным
+                        жи&shy;вот&shy;ным, не сто&shy;ит, за&shy;ве&shy;ря&shy;ют
+                        раз&shy;ра&shy;бот&shy;чи&shy;ки. Его све&shy;че&shy;ние бу&shy;дет мяг&shy;ким
+                        и рас&shy;се&shy;ян&shy;ным, по&shy;это&shy;му не долж&shy;но ока&shy;зать
+                        не&shy;га&shy;тив&shy;но&shy;го вли&shy;я&shy;ния, счи&shy;та&shy;ют они.
+                    </p>
+                    <hr>
+                </article>
+            </div>
+            <div class="second-part">
+                <article class="information">
+                    <h3 class="title">
+                        Выбора нет: Twitter раскрыл
+                        <span class="name">российских троллей</span>
+                    </h3>
+                    <p>
+                        Ком&shy;па&shy;ния Twitter опуб&shy;ли&shy;ко&shy;ва&shy;ла ар&shy;хив
+                        со&shy;об&shy;ще&shy;ний, ко&shy;то&shy;рые яко&shy;бы бы&shy;ли
+                        от&shy;прав&shy;ле&shy;ны рос&shy;сий&shy;ской и иран&shy;ской
+                        <span class="name">фаб&shy;ри&shy;ка&shy;ми трол&shy;лей</span> за
+                        по&shy;след&shy;ние пять лет с це&shy;лью рас&shy;про&shy;стра&shy;не&shy;ния
+                        по&shy;ли&shy;ти&shy;че&shy;ской про&shy;па&shy;ган&shy;ды.
+                        Со&shy;об&shy;ща&shy;ет&shy;ся, что трол&shy;ли пы&shy;та&shy;лись по&shy;вли&shy;ять
+                        не толь&shy;ко на ис&shy;ход пре&shy;зи&shy;дент&shy;ских вы&shy;бо&shy;ров в США, но
+                        и на ре&shy;фе&shy;рен&shy;дум по Brexit, ко&shy;гда
+                        Ве&shy;ли&shy;ко&shy;бри&shy;та&shy;ния про&shy;го&shy;ло&shy;со&shy;ва&shy;ла
+                        за вы&shy;ход из Ев&shy;ро&shy;пей&shy;ско&shy;го со&shy;ю&shy;за. За пять лет
+                        сов&shy;мест&shy;ны&shy;ми си&shy;ла&shy;ми они вы&shy;ло&shy;жи&shy;ли 10 млн
+                        тви&shy;тов, вклю&shy;ча&shy;ю&shy;щих в се&shy;бя 2млн изоб&shy;ра&shy;же&shy;ний,
+                        ви&shy;део и дру&shy;гих еди&shy;ниц ме&shy;диа-кон&shy;тен&shy;та. Три
+                        клю&shy;че&shy;вых сло&shy;ва, ко&shy;то&shy;рые ча&shy;ще все&shy;го
+                        встре&shy;ча&shy;ют&shy;ся в пуб&shy;ли&shy;ка&shy;ци&shy;ях этих бо&shy;тов
+                        са&shy;уди&shy;ты, Иран и Трамп. От&shy;дель&shy;ное вни&shy;ма&shy;ние
+                        уде&shy;ля&shy;лось и ев&shy;ро&shy;пей&shy;ским ли&shy;де&shy;рам,
+                        на&shy;при&shy;мер, Те&shy;ре&shy;зе Мэй, Эм&shy;ма&shy;ну&shy;э&shy;лю
+                        Мак&shy;ро&shy;ну и Ан&shy;ге&shy;ле Мер&shy;кель. Кро&shy;ме то&shy;го,
+                        мно&shy;гие трол&shy;ли, пи&shy;шу&shy;щие на ан&shy;глий&shy;ском язы&shy;ке,
+                        всту&shy;па&shy;лись за Рос&shy;сию, на&shy;зы&shy;вая
+                        рас&shy;сле&shy;до&shy;ва&shy;ние <span class="quote">рос&shy;сий&shy;ско&shy;го
+                        де&shy;ла</span> спец&shy;про&shy;ку&shy;ро&shy;ра США Ро&shy;бер&shy;та
+                        Мюл&shy;ле&shy;ра <span class="quote">охо&shy;той на ведьм</span>.
+                    </p>
+                    <hr>
+                </article>
+                <article class="information">
+                    <figure class="aeroflot">
+                        <img src="http://catcut.net/NuYw" alt="Аэрофлот">
+                        <figcaption>Аэрофлот</figcaption>
+                    </figure>
+                    <h3 class="title">
+                        Аэрофлот совместно с Минтрансом прорабатывают вопрос
+                        о выделении допсредств на субсидируемые авиаперевозки
+                    </h3>
+                    <p>
+                        Аэро&shy;флот сов&shy;мест&shy;но с Мин&shy;тран&shy;сом РФ
+                        про&shy;ра&shy;ба&shy;ты&shy;ва&shy;ет во&shy;прос о вы&shy;де&shy;ле&shy;нии
+                        до&shy;пол&shy;ни&shy;тель&shy;ных средств на пе&shy;ре&shy;воз&shy;ки по
+                        суб&shy;си&shy;ди&shy;ру&shy;е&shy;мым та&shy;ри&shy;фам в го&shy;ро&shy;да
+                        Даль&shy;не&shy;го Во&shy;сто&shy;ка, Крым и Ка&shy;ли&shy;нин&shy;град.
+                        Ожи&shy;да&shy;ет&shy;ся, что до кон&shy;ца 2018 го&shy;да со сто&shy;ро&shy;ны
+                        Мин&shy;тран&shy;са бу&shy;дет до&shy;пол&shy;ни&shy;тель&shy;но
+                        вы&shy;де&shy;ле&shy;но 300 млн руб&shy;лей. Про&shy;да&shy;жи
+                        пла&shy;ни&shy;ру&shy;ет&shy;ся от&shy;крыть в бли&shy;жай&shy;шее вре&shy;мя.
+                        Вос&shy;поль&shy;зо&shy;вать&shy;ся суб&shy;си&shy;ди&shy;ру&shy;е&shy;мы&shy;ми
+                        пе&shy;ре&shy;воз&shy;ка&shy;ми в пунк&shy;ты Даль&shy;не&shy;го
+                        Во&shy;сто&shy;ка, Кры&shy;ма и Ка&shy;ли&shy;нин&shy;град в
+                        эко&shy;но&shy;ми&shy;че&shy;ском клас&shy;се мо&shy;гут граж&shy;да&shy;не
+                        Рос&shy;сий&shy;ской Фе&shy;де&shy;ра&shy;ции в воз&shy;расте до 23 лет и
+                        свы&shy;ше 60 лет (для жен&shy;щин — свы&shy;ше 55 лет), ин&shy;ва&shy;ли&shy;ды
+                        1-й груп&shy;пы, ин&shy;ва&shy;ли&shy;ды с дет&shy;ства II и III груп&shy;пы,
+                        со&shy;про&shy;вож&shy;да&shy;ю&shy;щие ин&shy;ва&shy;ли&shy;да 1-й груп&shy;пы
+                        или ре&shy;бен&shy;ка-ин&shy;ва&shy;ли&shy;да. Пе&shy;ри&shy;од
+                        окон&shy;ча&shy;ния пе&shy;ре&shy;во&shy;зок в со&shy;от&shy;вет&shy;ствии с
+                        дей&shy;ству&shy;ю&shy;щей ре&shy;дак&shy;ци&shy;ей
+                        По&shy;ста&shy;нов&shy;ле&shy;ния Пра&shy;ви&shy;тель&shy;ства РФ 215
+                        опре&shy;де&shy;лён да&shy;той 1 де&shy;каб&shy;ря. По&shy;ми&shy;мо
+                        про&shy;грам&shy;мы суб&shy;си&shy;ди&shy;ру&shy;е&shy;мых та&shy;ри&shy;фов,
+                        авиа&shy;ком&shy;па&shy;ния Аэро&shy;флот про&shy;дол&shy;жа&shy;ет
+                        про&shy;да&shy;жу авиа&shy;би&shy;ле&shy;тов в рам&shy;ках соб&shy;ствен&shy;ной
+                        про&shy;грам&shy;мы <span class="name">плос&shy;ких та&shy;ри&shy;фов</span>.
+                        Би&shy;лет по фик&shy;си&shy;ро&shy;ван&shy;но&shy;му —
+                        <span class="name">плос&shy;ко&shy;му</span> та&shy;ри&shy;фу в
+                        эко&shy;но&shy;ми&shy;че&shy;ский класс мо&shy;жет при&shy;об&shy;ре&shy;сти
+                        лю&shy;бой пас&shy;са&shy;жир без ка&shy;ких-ли&shy;бо
+                        огра&shy;ни&shy;че&shy;ний. В на&shy;сто&shy;я&shy;щее вре&shy;мя
+                        <span class="name">плос&shy;кие</span> та&shy;ри&shy;фы дей&shy;ству&shy;ют на
+                        рей&shy;сах Аэро&shy;фло&shy;та из Моск&shy;вы во Вла&shy;ди&shy;во&shy;сток,
+                        Юж&shy;но-Са&shy;ха&shy;линск, Ха&shy;ба&shy;ровск,
+                        Пет&shy;ро&shy;пав&shy;ловск-Кам&shy;чат&shy;ский, Ма&shy;га&shy;дан,
+                        Ка&shy;ли&shy;нин&shy;град, Сим&shy;фе&shy;ро&shy;поль и в об&shy;рат&shy;ном
+                        на&shy;прав&shy;ле&shy;нии, а с 2018 го&shy;да про&shy;грам&shy;ма
+                        <span class="name">плос&shy;ких та&shy;ри&shy;фов</span> дей&shy;ству&shy;ет и на
+                        рей&shy;сах авиа&shy;ком&shy;па&shy;нии <span class="name">Рос&shy;сия</span>
+                        меж&shy;ду Моск&shy;вой и пунк&shy;та&shy;ми Даль&shy;не&shy;го
+                        Во&shy;сто&shy;ка. Так, сто&shy;и&shy;мость би&shy;ле&shy;та на рей&shy;сы
+                        Аэро&shy;фло&shy;та в Ка&shy;ли&shy;нин&shy;град со&shy;став&shy;ля&shy;ет 9350
+                        руб. или 5610 руб. в од&shy;ну сто&shy;ро&shy;ну. Во Вла&shy;ди&shy;во&shy;сток,
+                        Юж&shy;но-Са&shy;ха&shy;линск, Ха&shy;ба&shy;ровск,
+                        Пет&shy;ро&shy;пав&shy;ловск-Кам&shy;чат&shy;ский, Ма&shy;га&shy;дан и
+                        об&shy;рат&shy;но со&shy;став&shy;ля&shy;ет 25000 руб. или 15000 руб. в од&shy;ну
+                        сто&shy;ро&shy;ну, вклю&shy;чая так&shy;сы и сбо&shy;ры. Сто&shy;и&shy;мость
+                        би&shy;ле&shy;та на рей&shy;сы авиа&shy;ком&shy;па&shy;нии
+                        <span class="name">Рос&shy;сия</span> в го&shy;ро&shy;да Даль&shy;не&shy;го
+                        Во&shy;сто&shy;ка и об&shy;рат&shy;но со&shy;став&shy;ля&shy;ет 22000 руб.
+                        или 13200 руб. в од&shy;ну сто&shy;ро&shy;ну.
+                    </p>
+                    <hr>
+                </article>
+            </div>
+        </section>
+        <section class="main-news">
+            <h2 class="title">Ордена после драки: Путин наградил жертв Кокорина и Мамаева</h2>
+            <article class="main-information">
+                <h5 class="title">
+                    Пре&shy;зи&shy;дент Рос&shy;сии Вла&shy;ди&shy;мир Пу&shy;тин
+                    пред&shy;ста&shy;вил к го&shy;су&shy;дар&shy;ствен&shy;ным на&shy;гра&shy;дам
+                    гла&shy;ву де&shy;пар&shy;та&shy;мен&shy;та Мин&shy;пром&shy;тор&shy;га
+                    Де&shy;ни&shy;са Па&shy;ка и ру&shy;ко&shy;во&shy;ди&shy;те&shy;ля
+                    на&shy;уч&shy;но&shy;го цен&shy;тра НАМИ Сер&shy;гея Гай&shy;си&shy;на. 8
+                    ок&shy;тяб&shy;ря чи&shy;нов&shy;ни&shy;ки бы&shy;ли из&shy;би&shy;ты
+                    ком&shy;па&shy;ни&shy;ей на&shy;па&shy;да&shy;ю&shy;ще&shy;го
+                    <span class="name">Зе&shy;ни&shy;та</span> Алек&shy;сандра
+                    Ко&shy;ко&shy;ри&shy;на и по&shy;лу&shy;за&shy;щит&shy;ни&shy;ка
+                    <span class="name">Крас&shy;но&shy;да&shy;ра</span> Пав&shy;ла
+                    Ма&shy;ма&shy;е&shy;ва.
+                </h5>
+                <p>
+                    Из&shy;би&shy;тых Алек&shy;сан&shy;дром Ко&shy;ко&shy;ри&shy;ным и Пав&shy;лом
+                    Ма&shy;ма&shy;е&shy;вым чи&shy;нов&shy;ни&shy;ков Де&shy;ни&shy;са Па&shy;ка
+                    и Сер&shy;гея Гай&shy;си&shy;на на&shy;гра&shy;ди&shy;ли по ука&shy;зу
+                    рос&shy;сий&shy;ско&shy;го пре&shy;зи&shy;ден&shy;та Вла&shy;ди&shy;ми&shy;ра
+                    Пу&shy;ти&shy;на. Как го&shy;во&shy;рит&shy;ся в до&shy;ку&shy;мен&shy;те,
+                    раз&shy;ме&shy;щен&shy;ном на пор&shy;та&shy;ле пра&shy;во&shy;вой
+                    ин&shy;фор&shy;ма&shy;ции, Пак пред&shy;став&shy;лен к ме&shy;да&shy;ли
+                    ор&shy;де&shy;на <span class="reward">За за&shy;слу&shy;ги пе&shy;ред
+                    Оте&shy;че&shy;ством</span> II сте&shy;пе&shy;ни, а Гай&shy;син
+                    на&shy;граж&shy;ден ор&shy;де&shy;ном Алек&shy;сандра Нев&shy;ско&shy;го.
+                </p>
+                <figure class="picture">
+                    <img src="http://catcut.net/KOXw" alt="Денис Пак и Владимир Путин">
+                    <figcaption>Денис Пак и Владимир Путин</figcaption>
+                </figure>
+                <p>
+                    Из ука&shy;за сле&shy;ду&shy;ет, что оба бы&shy;ли на&shy;граж&shy;де&shy;ны
+                    <span class="quote">За боль&shy;шой вклад в ре&shy;а&shy;ли&shy;за&shy;цию
+                    про&shy;ек&shy;та <span class="name">Еди&shy;ная мо&shy;дуль&shy;ная
+                    плат&shy;фор&shy;ма</span>, поз&shy;во&shy;лив&shy;ше&shy;го со&shy;здать
+                    ши&shy;ро&shy;кий мо&shy;дель&shy;ный ряд оте&shy;че&shy;ствен&shy;ных
+                    ав&shy;то&shy;мо&shy;би&shy;лей</span>. По&shy;ми&shy;мо Па&shy;ка и
+                    Гай&shy;си&shy;на го&shy;с&shy;на&shy;гра&shy;ды по&shy;лу&shy;чи&shy;ли
+                    еще 18 че&shy;ло&shy;век. В ос&shy;нов&shy;ном это со&shy;труд&shy;ни&shy;ки
+                    Мин&shy;пром&shy;тор&shy;га и на&shy;уч&shy;но&shy;го цен&shy;тра НАМИ,
+                    ко&shy;то&shy;рый про&shy;во&shy;дит ис&shy;сле&shy;до&shy;ва&shy;ния в
+                    об&shy;ла&shy;сти ав&shy;то&shy;мо&shy;биль&shy;ных тех&shy;но&shy;ло&shy;гий.
+                </p>
+                <p>
+                    Из&shy;вест&shy;но, что НАМИ за&shy;ни&shy;ма&shy;ет&shy;ся в том чис&shy;ле и
+                    ре&shy;а&shy;ли&shy;за&shy;ци&shy;ей про&shy;ек&shy;та
+                    <span class="name">Кор&shy;теж</span>, в рам&shy;ках ко&shy;то&shy;ро&shy;го на
+                    еди&shy;ной мо&shy;дуль&shy;ной плат&shy;фор&shy;ме со&shy;зда&shy;ют&shy;ся
+                    ли&shy;му&shy;зин, вне&shy;до&shy;рож&shy;ник, се&shy;дан и ми&shy;ни&shy;вэн
+                    пред&shy;ста&shy;ви&shy;тель&shy;ско&shy;го клас&shy;са. Как ра&shy;нее
+                    со&shy;об&shy;щал ми&shy;нистр про&shy;мыш&shy;лен&shy;но&shy;сти и
+                    тор&shy;гов&shy;ли Де&shy;нис Ман&shy;ту&shy;ров, из
+                    фе&shy;де&shy;раль&shy;но&shy;го бюд&shy;же&shy;та на этот про&shy;ект
+                    бы&shy;ло вы&shy;де&shy;ле&shy;но бо&shy;лее 12 млрд руб&shy;лей.
+                    Пре&shy;зи&shy;дент&shy;ский ли&shy;му&shy;зин про&shy;ек&shy;та
+                    <span class="name">Кор&shy;теж</span> Пу&shy;тин впер&shy;вые опро&shy;бо&shy;вал
+                    на ина&shy;у&shy;гу&shy;ра&shy;ции 7 мая 2018 го&shy;да и остал&shy;ся им
+                    до&shy;во&shy;лен.
+                </p>
+                <p>
+                    Спу&shy;стя пол&shy;го&shy;да на&shy;гра&shy;да за успеш&shy;ную ра&shy;бо&shy;ту
+                    на&shy;шла сво&shy;их ге&shy;ро&shy;ев. По иро&shy;нии судь&shy;бы,
+                    это сов&shy;па&shy;ло с не са&shy;мы&shy;ми счаст&shy;ли&shy;вы&shy;ми
+                    со&shy;бы&shy;ти&shy;я&shy;ми в их жиз&shy;ни. На&shy;пом&shy;ним, Пак и
+                    Гай&shy;син по&shy;лу&shy;чи&shy;ли по&shy;вре&shy;жде&shy;ния раз&shy;ной
+                    тя&shy;же&shy;сти в дра&shy;ке с фут&shy;бо&shy;ли&shy;ста&shy;ми
+                    Ко&shy;ко&shy;ри&shy;ным и Ма&shy;ма&shy;е&shy;вым. Ин&shy;ци&shy;дент, по
+                    ито&shy;гам ко&shy;то&shy;ро&shy;го на иг&shy;ро&shy;ков бы&shy;ло
+                    за&shy;ве&shy;де&shy;но уго&shy;лов&shy;ное де&shy;ло о
+                    ху&shy;ли&shy;ган&shy;стве, а са&shy;ми они бы&shy;ли от&shy;прав&shy;ле&shy;ны
+                    в СИЗО, про&shy;изо&shy;шел 8 ок&shy;тяб&shy;ря в од&shy;ном из ка&shy;фе в
+                    цен&shy;тре Моск&shy;вы. Из&shy;вест&shy;ный спор&shy;тив&shy;ный
+                    ком&shy;мен&shy;та&shy;тор Ва&shy;си&shy;лий Ут&shy;кин по&shy;ста&shy;вил
+                    под со&shy;мне&shy;ние то, что со&shy;бы&shy;тия в ка&shy;фе и
+                    при&shy;сво&shy;е&shy;ние чи&shy;нов&shy;ни&shy;кам го&shy;с&shy;на&shy;град
+                    не свя&shy;за&shy;ны.
+                    <span class="quote">Бы&shy;ло бы смеш&shy;но, ес&shy;ли это
+                    вза&shy;и&shy;мо&shy;свя&shy;за&shy;но. Но во&shy;об&shy;ще
+                    обыч&shy;но эта бю&shy;ро&shy;кра&shy;тия за&shy;ни&shy;ма&shy;ет силь&shy;но
+                    боль&shy;ше не&shy;де&shy;ли</span>, — на&shy;пи&shy;сал жур&shy;на&shy;лист
+                    в сво&shy;ем твит&shy;те&shy;ре.
+                </p>
+                <p>
+                    Сей&shy;час Ко&shy;ко&shy;рин и Ма&shy;ма&shy;ев по ре&shy;ше&shy;нию су&shy;да
+                    со&shy;дер&shy;жат&shy;ся под стра&shy;жей в СИЗО №2
+                    <span class="name">Бу&shy;тыр&shy;ка</span>. Ес&shy;ли их апел&shy;ля&shy;ции
+                    по по&shy;во&shy;ду за&shy;клю&shy;че&shy;ния в СИЗО бу&shy;дут
+                    от&shy;кло&shy;не&shy;ны, то они про&shy;бу&shy;дут в след&shy;ствен&shy;ном
+                    изо&shy;ля&shy;то&shy;ре до 8 де&shy;каб&shy;ря. Так&shy;же се&shy;го&shy;дня
+                    ад&shy;во&shy;кат фор&shy;вар&shy;да <span class="name">Зе&shy;ни&shy;та</span>
+                    Олег По&shy;пов дал ин&shy;тер&shy;вью Пер&shy;во&shy;му ка&shy;на&shy;лу, в
+                    ко&shy;то&shy;ром за&shy;явил, что его кли&shy;ент не толь&shy;ко не
+                    участ&shy;во&shy;вал в дра&shy;ке с во&shy;ди&shy;те&shy;лем
+                    Ви&shy;та&shy;ли&shy;ем Со&shy;лов&shy;чу&shy;ком, но и во&shy;все
+                    пы&shy;тал&shy;ся пре&shy;кра&shy;тить по&shy;та&shy;сов&shy;ку.
+                    Со&shy;лов&shy;чук — это тре&shy;тий по&shy;стра&shy;дав&shy;ший
+                    от рук Ко&shy;ко&shy;ри&shy;на и Ма&shy;ма&shy;е&shy;ва, по&shy;ми&shy;мо
+                    Па&shy;ка и Гай&shy;си&shy;на. Муж&shy;чи&shy;на ра&shy;бо&shy;та&shy;ет
+                    во&shy;ди&shy;те&shy;лем ве&shy;ду&shy;щей <span class="name">Пер&shy;во&shy;го
+                    ка&shy;на&shy;ла</span> Оль&shy;ги Уша&shy;ко&shy;вой и всту&shy;пил в
+                    кон&shy;фликт с фут&shy;бо&shy;ли&shy;ста&shy;ми в цен&shy;тре Моск&shy;вы,
+                    око&shy;ло го&shy;сти&shy;ни&shy;цы <span class="name">Пе&shy;кин</span>. По
+                    его сло&shy;вам, он пы&shy;тал&shy;ся ути&shy;хо&shy;ми&shy;рить
+                    мо&shy;ло&shy;дых лю&shy;дей, ко&shy;то&shy;рые пи&shy;на&shy;ли чу&shy;жие
+                    ма&shy;ши&shy;ны.
+                </p>
+                <p>
+                    <span class="quote">Как вид&shy;но на ви&shy;део&shy;за&shy;пи&shy;си, Са&shy;ша
+                    Ко&shy;ко&shy;рин все это вре&shy;мя пы&shy;тал&shy;ся со сво&shy;ей
+                    сто&shy;ро&shy;ны раз&shy;нять кон&shy;флик&shy;ту&shy;ю&shy;щие
+                    сто&shy;ро&shy;ны и пы&shy;тал&shy;ся оста&shy;но&shy;вить вот этот
+                    весь про&shy;цесс</span>, — ска&shy;зал По&shy;пов. Од&shy;на&shy;ко в
+                    ро&shy;ли&shy;ке со&shy;дер&shy;жат&shy;ся кад&shy;ры то&shy;го, как
+                    Ко&shy;ко&shy;рин-стар&shy;ший бьет Со&shy;лов&shy;чу&shy;ка но&shy;гой.
+                    Тем не ме&shy;нее, по&shy;ка Ко&shy;ко&shy;рин и Ма&shy;ма&shy;ев без
+                    ду&shy;ша и спорт&shy;за&shy;ла про&shy;во&shy;дят дни в
+                    ка&shy;ран&shy;тин&shy;ном от&shy;де&shy;ле&shy;нии
+                    <span class="name">Бу&shy;тыр&shy;ки</span>, в чис&shy;ле их
+                    за&shy;щит&shy;ни&shy;ков на&shy;блю&shy;да&shy;ет&shy;ся
+                    су&shy;ще&shy;ствен&shy;ное по&shy;пол&shy;не&shy;ние. Так, стар&shy;ший
+                    тре&shy;нер <span class="name">Звез&shy;ды</span> Алек&shy;сей По&shy;пов
+                    вы&shy;ра&shy;зил не&shy;со&shy;гла&shy;сие с тем, что иг&shy;ро&shy;ки
+                    за&shy;слу&shy;жи&shy;ли за&shy;клю&shy;че&shy;ния в тюрь&shy;му.
+                </p>
+                <p>
+                    <span class="quote">Все мы оши&shy;ба&shy;ем&shy;ся, все мы бу&shy;ха&shy;ем и
+                    де&shy;рем&shy;ся: что-то ни&shy;кто в тюрь&shy;му из-за это&shy;го не
+                    по&shy;па&shy;да&shy;ет. А тут та&shy;кой не&shy;по&shy;нят&shy;ный
+                    ре&shy;зо&shy;нанс: есть два фут&shy;бо&shy;ли&shy;ста, ко&shy;то&shy;рые по&shy;том
+                    и кро&shy;вью день&shy;ги за&shy;ра&shy;ба&shy;ты&shy;ва&shy;ют, не во&shy;ру&shy;ют
+                    их и не от&shy;би&shy;ра&shy;ют, а их про&shy;кли&shy;на&shy;ют и
+                    счи&shy;та&shy;ют вра&shy;га&shy;ми на&shy;ро&shy;да — это то&shy;же не
+                    де&shy;ло. Да, они со&shy;вер&shy;ши&shy;ли про&shy;сту&shy;пок и
+                    долж&shy;ны за не&shy;го по&shy;не&shy;сти
+                    со&shy;от&shy;вет&shy;ству&shy;ю&shy;щее на&shy;ка&shy;за&shy;ние,
+                    но то, что сей&shy;час про&shy;ис&shy;хо&shy;дит, — это цирк, в на&shy;шей
+                    стра&shy;не ко&shy;то&shy;рый про&shy;дол&shy;жа&shy;ет&shy;ся
+                    уже на про&shy;тя&shy;же&shy;нии 20-30 лет</span>, — ска&shy;зал
+                    спе&shy;ци&shy;а&shy;лист в эфи&shy;ре ра&shy;дио&shy;стан&shy;ции
+                    <span class="name">Эхо Пер&shy;ми</span>.
+                </p>
+                <p>
+                    По&shy;ми&shy;мо По&shy;по&shy;ва под&shy;дер&shy;жал Ко&shy;ко&shy;ри&shy;на и
+                    по&shy;лу&shy;за&shy;щит&shy;ник <span class="name">Кры&shy;льев
+                    Со&shy;ве&shy;тов</span> Алан Чо&shy;чи&shy;ев, на чьей свадь&shy;бе в
+                    Се&shy;вер&shy;ной Осе&shy;тии иг&shy;рок
+                    <span class="name">Зе&shy;ни&shy;та</span> стре&shy;лял в воз&shy;дух из
+                    пи&shy;сто&shy;ле&shy;та, чем вы&shy;звал осуж&shy;де&shy;ние об&shy;ще&shy;ства.
+                    <span class="quote">Брат, те&shy;бе кое-что пе&shy;ре&shy;да&shy;ли от нас, знай,
+                    что каж&shy;дую се&shy;кун&shy;ду лю&shy;ди за те&shy;бя
+                    пе&shy;ре&shy;жи&shy;ва&shy;ют и ду&shy;ма&shy;ют о те&shy;бе! Я знаю, что ты
+                    силь&shy;ный. Сколь&shy;ко на&shy;ро&shy;ду те&shy;бя
+                    кри&shy;ти&shy;ку&shy;ет, столь&shy;ко и под&shy;дер&shy;жи&shy;ва&shy;ет!
+                    Ско&shy;ро мы уви&shy;дим&shy;ся, брат! Мы раз&shy;вер&shy;нем этот
+                    на&shy;род к се&shy;бе! Ты силь&shy;ный! Я с ва&shy;ми каж&shy;дую
+                    се&shy;кун&shy;ду</span>, — на&shy;пи&shy;сал Чо&shy;чи&shy;ев
+                    вин&shy;ста&shy;гра&shy;ме.
+                </p>
+                <p>
+                    Рас&shy;смот&shy;ре&shy;ние апел&shy;ля&shy;ций Ко&shy;ко&shy;ри&shy;на и
+                    Ма&shy;ма&shy;е&shy;ва долж&shy;но со&shy;сто&shy;ять&shy;ся 19 ок&shy;тяб&shy;ря.
+                    В слу&shy;чае их удо&shy;вле&shy;тво&shy;ре&shy;ния фут&shy;бо&shy;ли&shy;сты
+                    мо&shy;гут быть вы&shy;пу&shy;ще&shy;ны из СИЗО в те&shy;че&shy;ние трех дней.
+                </p>
+            </article>
+        </section>
+    </main>
 </body>
+
 </html>

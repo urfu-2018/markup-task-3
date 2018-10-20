@@ -1,0 +1,230 @@
+@font-face
+{
+    font-family: HeadLines;
+    src: url(fonts/HeadLine.ttf);
+}
+
+@font-face
+{
+    font-family: Quotes;
+    src: url(fonts/Quotes.otf);
+}
+
+@font-face
+{
+    font-family: Names;
+    src: url(fonts/Names.otf);
+}
+
+@font-face
+{
+    font-family: ForText;
+    src: url(fonts/Text.ttf);
+}
+
+@font-face
+{
+    font-family: FirstLetter;
+    src: url(fonts/FirstLetter.otf);
+}
+
+main
+{
+    background: #d8d3af;
+}
+
+.first-part
+{
+    columns: 1;
+    width: 39%;
+}
+
+.second-part
+{
+    columns: 2;
+    width: 60%;
+}
+
+.main-news
+{
+    column-rule: 2px solid #fea;
+    width: 100%;
+}
+
+.first-part,
+.weather img,
+.weather
+{
+    float: left;
+}
+
+.second-part,
+.vertical
+{
+    float: right;
+}
+
+.main-news
+{
+    width: 100%;
+    columns: 4;
+}
+
+figure img
+{
+    width: 100%;
+    filter: grayscale(100);
+}
+
+.aeroflot img
+{
+    width: 100%;
+}
+
+.aeroflot
+{
+    column-span: all;
+    width: 85%;
+}
+
+div,
+p
+{
+    font-family: ForText;
+    text-align: justify;
+}
+
+.weather
+{
+    font-size: 3.5em;
+}
+
+h1,
+.weather
+{
+    margin: auto;
+    width: 30%;
+}
+
+h2
+{
+    margin-top: 3%;
+}
+
+section,
+figure,
+hr,
+h3,
+h1
+{
+    text-align: center;
+    font-family: HeadLines;
+}
+
+hr
+{
+    margin-bottom: 5%;
+    border: 0;
+    height: 1px;
+    background: #808080;
+    width: 15%;
+}
+
+h3
+{
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+h5,
+h2,
+hr
+{
+    column-span: all;
+}
+
+h3,
+h5
+{
+    border: #000 1px solid;
+}
+
+h5,
+{
+    padding: 0 5%;
+}
+
+.vertical
+{
+    text-orientation: upright;
+    writing-mode: vertical-lr;
+    letter-spacing: -5px;
+}
+
+label
+{
+    writing-mode: horizontal-tb;
+}
+
+span:not(.degrees)::before
+{
+    content: '\00AB';
+}
+
+span:not(.degrees)::after
+{
+    content: '\00BB';
+}
+
+span span::before
+{
+    content: '\201C';
+}
+
+span span::after
+{
+    content: '\201D';
+}
+
+.quote
+{
+    font-family: Quotes;
+}
+
+.name
+{
+    font-family: Names;
+}
+
+.latest-news p::first-letter,
+.main-information p:first-of-type::first-letter
+{
+    font-family: FirstLetter;
+    font-size: 3em;
+}
+
+.theme:checked ~ main
+{
+    background: #835454;
+    color: #eadcdc;
+}
+
+.font:checked ~ main figcaption,
+.font:checked ~ main .title,
+.font:checked ~ main p,
+.font:checked ~ main span:not(.quote),
+.font:checked ~ main div,
+.font:checked ~ main p::first-letter
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.font:checked ~ main .quote
+{
+    font-family: cursive;
+}
+
+.size:checked ~ main
+{
+    font-size: 1.3em;
+}
