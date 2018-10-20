@@ -1,0 +1,184 @@
+@font-face
+{
+    font-family: machina;
+    src: local('DEUX'), url(DEUX.ttf);
+}
+
+@font-face
+{
+    font-family: augusta;
+    src: local('Augusta One'), url(Augusta_One.ttf);
+}
+
+@font-face
+{
+    font-family: turandot;
+    src: local('Turandot'), url(Turandot.ttf);
+}
+
+@font-face
+{
+    font-family: valentina;
+    src: local('Valentina'), url(Valentina.ttf);
+}
+
+@font-face
+{
+    font-family: alice;
+    src: local('Alice'), url(Alice.ttf);
+}
+
+@font-face
+{
+    font-family: violett;
+    src: local('Violet'), url(Violet.ttf);
+}
+
+@font-face
+{
+    font-family: red_banner;
+    src: local('Red Banner'), url(red_banner.ttf);
+}
+
+@font-face
+{
+    font-family: graffiti;
+    src: local('Graffiti1C'), url(Graffiti1C.ttf);
+}
+
+@font-face
+{
+    font-family: comic;
+    src: local('Comic Sans'), url(comic.ttf);
+}
+
+main 
+{
+    padding: 5px 20px;
+    background-color: hsl(53, 70%, 88%);
+    -webkit-column-count: 5;
+    column-count: 5;
+    -webkit-column-rule: 3px outset #000;
+    column-rule: 3px outset #000;
+}
+
+header
+{
+    font-family: machina, Lucida Grande, monospace;
+    -webkit-column-span: all;
+    column-span: all;
+    text-align: center;
+    font-size: 450%;
+}
+
+blockquote
+{
+    font-weight: bold;
+    font-size: 80%;
+    text-decoration: underline;
+}
+
+img
+{
+    width: 60%;
+}
+
+figure
+{
+    -webkit-column-span: all;
+    column-span: all;
+    text-align: center;
+    font-size: 120%;
+}
+
+.side
+{
+    font-size: 200%;
+    margin-right: 2px;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    font-family: augusta, turandot, monospace;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+}
+
+.news-1
+{
+    font-family: turandot, Lucida Grande, monospace;
+    font-size: 140%;
+}
+
+.news-2
+{
+    font-family: valentina, Lucida Grande, monospace;
+    font-size: 110%;
+}
+
+.news-3
+{
+    font-family: alice, Lucida Grande, monospace;
+    font-size: 120%;
+}
+
+.news-4
+{
+    font-family: violett, Lucida Grande, monospace;
+    font-size: 140%;
+}
+
+.news-5
+{
+    font-family: red_banner, Lucida Grande, monospace;
+    font-size: 90%;
+}
+
+.news-6
+{
+    font-family: graffiti, Lucida Grande, monospace;
+    font-size: 120%;
+}
+
+h2
+{
+    text-align: center;
+}
+
+p:first-of-type::first-letter
+{
+    font-family: augusta;
+    font-size: 200%;
+}
+
+input[value='cursive']:checked ~ main
+{
+    font-style: italic;
+}
+
+input[value='monospace']:checked ~ main article
+{
+    font-family: monospace;
+}
+
+input[value='designer']:checked ~ main
+{
+    background-color: #000;
+    color: #7fff00;
+    text-shadow: 4px 4px 15px;
+}
+
+input[value='small']:checked ~ main
+{
+    font-size: 75%;
+}
+
+input[value='medium']:checked ~ main
+{
+    font-size: 100%;
+}
+
+input[value='large']:checked ~ main
+{
+    font-size: 125%;
+}
