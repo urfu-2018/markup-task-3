@@ -18,8 +18,7 @@ article
     column-rule: 2px solid black;
     column-fill: auto;
     margin-bottom: 10px;
-    min-height: 730px;
-    max-height: 730px;
+    max-height: 700px;
 }
 
 article > section
