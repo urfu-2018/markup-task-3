@@ -57,7 +57,7 @@
     color: rgba(0,0,0,.2);
     font-family: 'Carrois Gothic', sans-serif;
     text-align: center;
-    transform: translate(200px, 0);
+    transform: translate(15%, 0);
     font-size: 25px;
     white-space: nowrap;
 }
@@ -66,6 +66,7 @@
 {
     text-shadow: 0 1px 0 #a10012, 0 2px  0 #000, 0 3px 0 #000;
     font-family: 'Didact Gothic', sans-serif;
+    /*text-align: center;*/
     letter-spacing: -2px;
     font-size: 100px;
     background-color: transparent;
@@ -77,15 +78,6 @@
     font-family: 'Carrois Gothic', sans-serif;
     text-align: center;
     font-size: 25px;
-}
-
-.copyright
-{
-    position: absolute;
-    right: 3px;
-    top: 3px;
-    background-color: transparent;
-    opacity: .4;
 }
 
 .main-space,
@@ -104,11 +96,12 @@ th
 .left-under-column-2,
 .left-under-column-3
 {
-    width: 14%;
+    width: 14.4%;
 }
 
 .right-under-column-1.row-3
 {
+    hyphens: auto;
     font-family: 'DIN Alternate', sans-serif;
     text-align: justify;
     width: 36%;
@@ -116,12 +109,13 @@ th
 
 .right-under-column-1.right-under-column-2.row-5.row-6
 {
+    hyphens: auto;
     column-count: 3;
     column-rule-style: solid;
     column-rule-color: black;
     position: relative;
-    word-break: break-all;
-    text-align: left;
+    /*word-break: break-word;*/
+    text-align: justify;
 }
 
 .big-picture
@@ -133,6 +127,7 @@ th
 .big-picture-sign
 {
     text-align: justify;
+    hyphens: auto;
     opacity: .5;
 }
 
@@ -166,6 +161,7 @@ li.horoscope:not(:first-child)
 
 .anecdotes
 {
+    hyphens: auto;
     overflow: auto;
     position: absolute;
     left: 0;
@@ -318,10 +314,20 @@ input[class='sans-serif']:checked ~ main legend
 
 /*for coloring*/
 
+input[class='black-white']:checked ~ main .recommended
+{
+    background: #404040;
+}
+
 input[class='black-white']:checked ~ main
 {
     color: white;
     background: black;
+}
+
+input[class='black-white']:checked ~ aside
+{
+    background-color: rgba(72, 72, 72, .98);
 }
 
 input[class='black-white']:checked ~ main .headline
@@ -334,4 +340,15 @@ input[class='black-white']:checked ~ main a
 {
     color: white;
     background: black;
+}
+
+body
+{
+    background-image: url('bg.jpg');
+    background-size: 100% 100%;
+}
+
+.legend
+{
+    text-align: left;
 }
