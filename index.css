@@ -27,12 +27,15 @@ body
 
 .issue-info
 {
+    column-count: 3;
     border: 1px solid black;
-    width: 100%;
+    margin-bottom: 5px;
 }
 
-.issue-info * {
-    width: 33%;
+.issue-info p
+{
+    margin: 0%;
+    padding: 5px;
 }
 
 .issue-no
@@ -50,26 +53,22 @@ body
     text-align: right;
 }
 
-.contents
+main
 {
-    width: 100%;
-    border-collapse: collapse;
+    column-count: 3;
+    column-rule: 1px solid gray;
 }
 
-.contents td
+.article-name
 {
-    vertical-align: top;
-    padding: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px;
 }
 
-.contents td:not(.rightmost-article)
+.article-contents
 {
-    border-right: 1px solid gray;
-}
-
-.contents img
-{
-    width: 100%;
+    column-rule: 1px dotted black;
 }
 
 .article-contents p:not(.quote):not(.spanning)
@@ -77,7 +76,7 @@ body
     hyphens: auto;
     text-align: justify;
     text-indent: 1.5em;
-    margin: 0;
+    margin: 0%;
 }
 
 .article-contents p:first-of-type::first-letter
@@ -86,37 +85,9 @@ body
     margin-right: 2px;
 }
 
-.leftmost-article
+figure img
 {
-    width: 20%;
-}
-
-.leftmost-article .article-name
-{
-    font-family: Impact, 'Arial Narrow Bold', sans-serif;
-    font-style: italic;
-    font-stretch: condensed;
-}
-
-.center-top-article .upright
-{
-    font-size: 34px;
-    font-family: Arial, Helvetica, sans-serif;
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-    text-transform: uppercase;
-    font-weight: bold;
-    float: right;
-    padding: 10px;
-    border: 1px dashed black;
-    margin: 10px;
-}
-
-.article-name
-{
-    text-transform: uppercase;
-    text-align: center;
-    margin: 10px;
+    width: 100%;
 }
 
 figcaption
@@ -136,53 +107,57 @@ figcaption
     font-size: 20px;
     font-style: italic;
     font-weight: bold;
+    text-align: center;
 }
 
-.center-top-article
+.upright
 {
-    height: 1px;
+    font-size: 34px;
+    font-family: Arial, Helvetica, sans-serif;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-transform: uppercase;
+    font-weight: bold;
+    float: right;
+    padding: 10px;
+    border: 1px dashed black;
+    margin: 10px;
 }
 
-.center-top-article .article-name
+.article1 .article-name
 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    font-stretch: condensed;
+}
+
+.article2 .article-name
+{
+    font-family: Cambria, 'Times New Roman', serif;
     font-style: oblique;
     font-weight: 100;
     border-top: 1px dashed black;
     border-bottom: 1px dashed black;
 }
 
-.center-top-article .article-contents
+.article2 .article-contents
 {
     column-count: 2;
-    column-rule: 1px dotted black;
 }
 
-.center-bottom-article
+.article3 .article-contents
 {
-    border-top: 1px solid gray;
+    column-count: 3;
 }
 
-.center-bottom-article .article-name
+.article4 .article-name
 {
     font-family: 'Roboto Slab', serif;
     padding: 10px;
     border: 2px solid black;
 }
 
-.center-bottom-article .article-contents
+.article4 .article-contents
 {
     column-count: 2;
-    column-rule: 1px dotted black;
-}
-
-.rightmost-article
-{
-    width: 40%;
-}
-
-.rightmost-article .article-contents
-{
-    column-count: 3;
-    column-rule: 1px dotted black;
 }
