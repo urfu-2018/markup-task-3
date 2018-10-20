@@ -1,0 +1,116 @@
+body
+{
+    background: url('http://www.anasfim.com/p/2018/03/blank-old-newspaper-background-templates-corner-with-blank-old-newspaper-background.jpg') repeat;
+}
+
+article
+{
+    position: relative;
+}
+
+.main-header,
+figure
+{
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+}
+
+figure
+{
+    width: 300px;
+}
+
+section
+{
+    display: block;
+    padding: 5px 15px;
+}
+
+.first-article
+{
+    position: absolute;
+    width: 300px;
+    margin: -25px 0 0 0;
+    
+}
+
+.first-picture
+{
+    position: absolute;
+    margin: -960px 0 0 330px;
+    width: 600px;
+}
+
+.two-article
+{
+    position: absolute;
+    margin: 410px 0 0 960px;
+    width: 390px;
+}
+
+.two-picture
+{
+    margin: -800px 0 0 -630px;
+    width: 600px;
+}
+
+.three-article
+{
+    position: absolute;
+    margin: 1000px 0 0;
+    width: 910px;
+    column-count: 2;
+}
+
+.in-the-next-series
+{
+    position: absolute;
+    margin: 0 0 0 970px;
+    width: 400px;
+}
+
+.info
+{
+    position: absolute;
+    margin: 0 0 0 1300px;
+    height: 1100px;
+    writing-mode: vertical-rl; 
+    text-orientation: upright; 
+    letter-spacing: -10px;
+}
+
+h2
+{
+    text-align: center;
+    column-span: all;
+    font-family: 'Pacifico', cursive;
+}
+
+img
+{
+    width: inherit;
+}
+
+p::first-letter
+{
+    font: 25px 'Lobster', cursive;
+    color: #f00;
+}
+
+p
+{
+    hyphens: manual;
+    font-family: 'Lobster', cursive;
+}
+
+.info > p 
+{
+    font: 20px 'Oswald', cursive !important;
+    color: #99088d !important;
+    font-family: 'Oswald', sans-serif; 
+}
+
+a
+{
+    color: #8a3802;
+}
