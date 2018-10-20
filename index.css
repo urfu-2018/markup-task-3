@@ -89,7 +89,7 @@ body
     margin: 0;
 }
 
-.quote
+.rightmost-article .article-contents .quote
 {
     font-size: 20px;
     font-style: italic;
@@ -97,11 +97,43 @@ body
     column-span: all;
 }
 
+.leftmost-article img
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .leftmost-article .article-name
 {
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
     font-style: italic;
     font-stretch: condensed;
+}
+
+.center-top-article
+{
+    height: 0;
+}
+
+.center-top-article .article-name
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+    font-weight: 100;
+    border-top: 1px dashed black;
+    border-bottom: 1px dashed black;
+}
+
+.center-top-article .article-contents
+{
+    column-count: 2;
+    column-rule: 1px dotted black;
+}
+
+.article-contents p:first-of-type::first-letter
+{
+    font-size: 30px;
+    margin-right: 2px;
 }
 
 .contents td
