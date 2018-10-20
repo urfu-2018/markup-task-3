@@ -1,45 +1,53 @@
-@font-face {
-    font-family: "FBI Report";
-    src: url("fonts/FBIOldReport.ttf");
+@font-face
+{
+    font-family: 'FBI Report';
+    src: url('fonts/FBIOldReport.ttf');
 }
 
-@font-face {
+@font-face
+{
     font-family: HandShop;
-    src: url("fonts/HandShopTypography.ttf");
+    src: url('fonts/HandShopTypography.ttf');
 }
 
-@font-face {
+@font-face
+{
     font-family: OldNewspaper;
-    src: url("fonts/OldNewspaper.ttf");
+    src: url('fonts/OldNewspaper.ttf');
 }
 
-@font-face {
+@font-face
+{
     font-family: TheOldEnglish;
-    src: url("fonts/TheOldEnglish.ttf");
+    src: url('fonts/TheOldEnglish.ttf');
 }
 
-body {
+body
+{
     margin: 0;
     padding: 0;
 }
 
-main {
-    width:100%;
+main
+{
+    width: 100%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     padding: 0 5px 10px 10px;
     box-sizing: border-box;
     font-family: OldNewspaper, Verdana, Geneva, Tahoma, sans-serif;
-    background: url("img/background.jpg") no-repeat #F5CB69 center center;
+    background: url('img/background.jpg') no-repeat #f5cb69 center center;
 }
 
-header {
+header
+{
     flex-basis: 50px;
     margin-bottom: 5px;
 }
 
-header h1 {
+header h1
+{
     text-align: center;
     margin: 10px 0;
     font-family: TheOldEnglish;
@@ -47,7 +55,8 @@ header h1 {
     text-transform: capitalize;
 }
 
-.date-and-exchange-rate {
+.date-and-exchange-rate
+{
     width: 100%;
     overflow: hidden;
     text-transform: uppercase;
@@ -55,72 +64,87 @@ header h1 {
     border-bottom: 2px solid black;
 }
 
-.page {
+.page
+{
     float: left;
     width: 50%;
 }
 
-.date {
+.date
+{
     float: right;
     width: 50%;
     text-align: right;
 }
 
-.delimiter {
+.delimiter
+{
     border: 1px solid black;
     margin: 5px auto;
 }
 
-.delimiter-big {
+.delimiter-big
+{
     width: 70%;
 }
 
-.delimiter-small {
+.delimiter-small
+{
     width: 30%;
 }
 
-.layout {
+.layout
+{
     flex-grow: 1;
     hyphens: auto;
-    font-family: "FBI Report", Verdana, Geneva, Tahoma, sans-serif;
+    font-family: OldNewspaper, Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.layout section {
+.layout section
+{
     margin-bottom: 5px;
 }
 
-.layout section:last-child {
+.layout section:last-child
+{
     margin: 0;
 }
 
-.bordered {
+.bordered
+{
     border: 3px solid black;
 }
 
-.quote {
+.quote
+{
     padding: 2px 5px;
 }
 
-.quote .text::before {
-    content: "\201D";
+.quote .text::before
+{
+    content: '\201D';
 }
 
-.quote .text::after {
-    content: "\201E";
+.quote .text::after
+{
+    content: '\201E';
 }
 
-.quote .author {
+.quote .author
+{
     text-align: right;
     font-style: italic;
 }
 
-.phrase p {
+.phrase p
+{
     text-align: center;
     text-transform: capitalize;
     font-weight: bold;
 }
 
-.guide h3 {
+.guide h3
+{
     text-align: left;
     margin: 2px 0 2px 5px;
     font-size: 16px;
@@ -128,18 +152,21 @@ header h1 {
     font-style: italic;
 }
 
-.guide ul {
+.guide ul
+{
     margin: 3px 0;
     padding-left: 10px;
     list-style-position: inside;
 }
 
-.two-columns-text {
+.two-columns-text
+{
     column-count: 2;
     column-rule: 2px dotted black;
 }
 
-.layout section h2 {
+.layout section h2
+{
     margin: 10px 0;
     text-align: center;
     font-family: HandShop, Verdana, Geneva, Tahoma, sans-serif;
@@ -147,7 +174,8 @@ header h1 {
     font-variant: small-caps;
 }
 
-.layout section p {
+.layout section p
+{
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
     -moz-hyphens: auto;
@@ -156,43 +184,50 @@ header h1 {
     margin: 5px 0;
 }
 
-.layout section p.caption {
+.layout section p.caption
+{
     text-align: center;
     text-transform: lowercase;
     margin: 0;
-    font-size:14px;
+    font-size: 14px;
 }
 
-.layout section p.caption::first-letter {
+.layout section p.caption::first-letter
+{
     font-size: inherit;
 }
 
-.layout section img {
+.layout section img
+{
     width: 100%;
 }
 
-.layout p::first-letter {
+.layout p::first-letter
+{
     font-size: 24px;
 }
 
-.layout > div {
-    height:100%;
-    float:left;
-    text-align: justify;    
+.layout > div
+{
+    height: 100%;
+    float: left;
+    text-align: justify;
     padding: 3px 6px;
     box-sizing: border-box;
     border-right: 2px solid black;
 }
 
-.layout > div:last-child {
+.layout > div:last-child
+{
     border: none;
 }
 
-.width-normal {
-    width:20%;
+.width-normal 
+{
+    width: 20%;
 }
 
-.width-wide {
+.width-wide 
+{
     width: 40%;
 }
-
