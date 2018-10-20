@@ -1,6 +1,5 @@
 h1
 {
-    font-family: "Times New Roman", Georgia, Serif;
     text-align: center;
     font-size: 60px;
     font-family: henriette-black, serif;
@@ -40,11 +39,11 @@ p::first-letter
 @font-face
 {
     font-family: 'henriette-black';
-    src: url('henriette-black-webfont.woff2') format('woff2'),
-         url('henriette-black-webfont.woff') format('woff');
+    src: url('henriette-black-webfont.woff2') format('woff2'), url('henriette-black-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
 body
 {
     background-color: dimgray;
@@ -72,7 +71,7 @@ body
     border: 1px solid #333;
     padding: 7px;
     margin: 10px 0 5px 5px;
-    background: gray; /* Цвет фона */ 
+    background: gray;
 }
 
 .sign figcaption
@@ -84,7 +83,7 @@ body
 
 .img
 {
-       margin-left: auto;
-       margin-right: auto;
-       display: block;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
