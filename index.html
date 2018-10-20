@@ -5,37 +5,68 @@
     <title>Задача «DeLorean DMC-12»</title>
     <link href='https://fonts.googleapis.com/css' rel='stylesheet'>
     <style>
+        @font-face
+        {
+            font-family: MainHeaderFont;
+            src: url(fonts/Molot.otf) format('opentype');
+        }
+
+        @font-face
+        {
+            font-family: UnderMainHeaderFont;
+            src: url(fonts/Heuristica-Regular.otf) format('opentype');
+        }
+
         body
         {
             margin: 0 auto;
-            width: 1200px;
+            width: 750px;
             min-width: 400px;
             background-color: #f9f7f1;
         }
 
-        header h2,
-        header h3 {
+        h4,
+        h5
+        {
             text-align: center;
         }
 
         header h2
         {
-            font-family: 'Sofia';
-            font-weight: 900;
-            font-size: 60px;
+            font-family: 'MainHeaderFont', sans-serif;
+            word-spacing: 8px;
+            letter-spacing: 11px;
+            font-weight: 500;
+            font-size: 53px;
             text-transform: uppercase;
+            margin: -8px 0;
+        }
+
+        header h3
+        {
+            font-family: 'UnderMainHeaderFont', serif;
+            font-size: 29px;
+            font-weight: 500;
+            margin: -7px 0;
+        }
+
+        main
+        {
+            margin-top: 10px;
         }
 
         .main-left-side,
         .main-right-side
         {
             display: inline-block;
-            max-width: 600px;
+            max-width: 370px;
         }
 
         .main-left-side
         {
             float: left;
+            margin-right: 5px;
+            border-right: 1px solid gray;
         }
 
         .main-right-side
@@ -43,25 +74,69 @@
             float: right;
         }
 
+        .newspaper-release-info
+        {
+            column-count: 3;
+            font-size: 10px;
+        }
+
+        .right-side-text-content .right-side-info
+        {
+            column-count: 2; column-rule: 1px solid gray
+        }
+
+        .right-side-info .message h4
+        {
+            column-span: all
+        }
+
+        .message-sign
+        {
+            text-align: right;
+        }
+
+        .right-side-header-info .headers
+        {
+            margin-top: -20px;
+        }
+
+        .newspaper-info figure figcaption
+        {
+            display: inline-block;
+            font-size: 8px;
+            vertical-align: top;
+        }
+
+        .main-left-side figure
+        {
+            width: 100%;
+            text-align: center;
+        }
+
+        /*.main-left-side figure > img
+        {
+            margin: auto;
+        }*/
+
         figure
         {
-            margin: 6px;
+            margin: 6px 6px 6px 0;
         }
     </style>
 </head>
 <body>
 <header>
     <h2>
-        ЧЕЛОВЕК В КОСМОСЕ
+        ЧЕЛОВЕК В КОСМОСЕ!
     </h2>
     <h3>
-        КАПИТАН ПЕРВОГО ЗВЕЗДОЛЕТА-НАШ, СОВЕТСКИЙ
+        КАПИТАН ПЕРВОГО ЗВЕЗДОЛЕТА-НАШ, СОВЕТСКИЙ!
     </h3>
 </header>
 <main>
     <div class="main-left-side">
         <figure>
-            <img src="http://niskgd.ru/mix/p29/a07/small/102256754.jpg" class="main-image"/>
+            <img src="https://www.oldgazette.ru/kopravda/13041961/01-1.jpg" class="main-image"/>
             <figcaption>ЮРИЙ АЛЕКСЕЕВИЧ ГАГАРИН</figcaption>
         </figure>
         <div class="left-side-text-content">
@@ -120,22 +195,16 @@
             </div>
             <div class="newspaper-info">
                 <figure>
-                    <img src="http://publ.lib.ru/ARCHIVES/P/''Pionerskaya_pravda''/.Online/''Pionerskaya_pravda''-L001.jpg" class="newspaper-image"/>
+                    <img src="http://publ.lib.ru/ARCHIVES/P/''Pionerskaya_pravda''/.Online/''Pionerskaya_pravda''-L001.jpg" height="100" width="200" class="newspaper-image"/>
                     <figcaption><u>ПРОЛЕТАРИИ ВСЕХ СТРАН, СОЕДИНЯЙТЕСЬ!</u></figcaption>
                 </figure>
                 <h3>
                     КОМСОМОЛЬСКАЯ ПРАВДА
                 </h3>
                 <div class="newspaper-release-info">
-                    <div class="newspaper-release-content">
                         <p>№ 88(11028)</p>
-                    </div>
-                    <div class="newspaper-release-content">
                         <p>Четверг, 18 апреля 1961 г.</p>
-                    </div>
-                    <div class="newspaper-release-content">
                         <p>Цена 2 коп.</p>
-                    </div>
                 </div>
             </div>
         </div>
@@ -152,8 +221,8 @@
                 Центрального Комитета КПСС, Президиума Верховного
                 Совета СССР и правительства Советского Союза
             </h5>
-            <div style="column-count: 2; column-rule: 1px solid gray">
-                <div class="general-info" >
+            <div class="right-side-info">
+                <div class="general-text" >
                     <div class="info-container">
                         <p> Свершилось великое событие. Впервые в истории человек осуществил полет в космос. </p>
                         <p>12 апреля 1961 года в 9 часов 7 минут по московскому времени космический корабль-спутник "Восток" с человеком на борту поднялся в космос и,
@@ -196,7 +265,7 @@
                     </div>
                 </div>
                 <div class="message">
-                    <h4 style="column-span: all">
+                    <h4>
                         Советсвкому космонавту, впервые в мире совершившему космический полет,
                         <span>майору ГАГАРИНУ Юрию Алексеевичу</span>
                     </h4>
@@ -211,7 +280,7 @@
                                 и наполняет сердца советских людей великой радостью и гордостью за свою социалистическую Родину. </p>
                             <p>От всего сердца поздравляю Вас со счастливым возвращением из космического путешествия на родную землю. Обнимаю Вас.</p>
                             <p>До скорой встречи в Москве.</p>
-                            <div class="message-sign" style="text-align: right;">
+                            <div class="message-sign">
                                 <p>
                                     <span class="sign-name">Н.ХРУЩЕВ</span>
                                     <br>
