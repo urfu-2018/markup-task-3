@@ -18,6 +18,7 @@ figure
 figure
 {
     width: 300px;
+    font: 27px 'Amatic SC', cursive;
 }
 
 section
@@ -37,14 +38,14 @@ section
 .first-picture
 {
     position: absolute;
-    margin: -960px 0 0 330px;
+    margin: -900px 0 0 330px;
     width: 600px;
 }
 
 .two-article
 {
     position: absolute;
-    margin: 410px 0 0 960px;
+    margin: 450px 0 0 960px;
     width: 390px;
 }
 
@@ -57,7 +58,7 @@ section
 .three-article
 {
     position: absolute;
-    margin: 1000px 0 0;
+    margin: 1020px 0 0;
     width: 910px;
     column-count: 2;
 }
@@ -66,16 +67,16 @@ section
 {
     position: absolute;
     margin: 0 0 0 970px;
-    width: 400px;
+    width: 370px;
 }
 
 .info
 {
     position: absolute;
-    margin: 0 0 0 1300px;
+    float: right;
     height: 1100px;
-    writing-mode: vertical-rl; 
-    text-orientation: upright; 
+    writing-mode: vertical-rl;
+    text-orientation: upright;
     letter-spacing: -10px;
 }
 
@@ -107,7 +108,7 @@ p
 {
     font: 20px 'Oswald', cursive !important;
     color: #99088d !important;
-    font-family: 'Oswald', sans-serif; 
+    font-family: 'Oswald', sans-serif;
 }
 
 a
