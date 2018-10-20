@@ -7,7 +7,7 @@
     display: inline-block;
     width: 100%;
     margin: 15px 0;
-    font-size: 4em;
+    font-size: 50px;
 }
 
 .logo-and-name
@@ -46,6 +46,7 @@
     column-count: 5;
     column-rule: 1px solid black;
     background-color: #edeae8;
+    word-wrap: break-word;
 }
 
 .clearfix::after
@@ -92,12 +93,11 @@
 .cat-facts-3
 {
     font-family: 'Lucida Console', Monaco, monospace;
-    font-size: 15px;
 }
 
 .house
 {
-    height: 175px;
+    width: 100%;
     padding: 5px;
 }
 
@@ -110,7 +110,7 @@
 
 .trump
 {
-    height: 170px;
+    width: 100%;
 }
 
 .human-politics
@@ -127,10 +127,14 @@
 .quote
 {
     font-style: italic;
-    font-size: 14px;
 }
 
 .quote::before
+{
+    content: '"';
+}
+
+.quote::after
 {
     content: '"';
 }
@@ -150,21 +154,15 @@ a
     font-family: 'Comic Sans MS', cursive, sans-serif;
 }
 
-.quote::after
-{
-    content: '"';
-}
-
 .ms-learn
 {
     font-family: 'Lucida Console', Monaco, monospace;
-    font-size: 13px;
 }
 
 .adv
 {
     border: 1px solid saddlebrown;
-    width: 300px;
+    width: 95%;
     height: 300px;
     text-align: center;
     display: table;
@@ -191,7 +189,44 @@ input
     margin: 10px;
 }
 
-input:checked + section
+input[value='future']:checked ~ .newspaper
 {
-    background-color: aqua;
+    background-color: #91a0ba;
+    column-rule: 3px dashed white;
+    font-size: 13px;
+    column-count: 3;
+}
+
+input[value='future']:checked ~ .newspaper .logo-and-name .main-header
+{
+    font-style: italic;
+    color: #51617c;
+}
+
+input[value='future']:checked ~ .newspaper .logo-and-name .catalog
+{
+    content: url('pics/f-catalog.png');
+}
+
+input[value='past']:checked ~ .newspaper .logo-and-name .catalog
+{
+    content: url('pics/catalog.png');
+}
+
+input[value='past']:checked ~ .newspaper .logo-and-name .caption span
+{
+    display: none;
+}
+
+input[value='small']:checked ~ .newspaper
+{
+    font-size: 9px;
+}
+
+input[value='huge']:checked ~ .newspaper
+{
+    font-size: 60px;
+    word-spacing: 50vw;
+    column-count: 1;
+    text-align: center;
 }
