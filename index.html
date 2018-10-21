@@ -41,6 +41,12 @@
             src: url(fonts/Arsenal-Regular.otf) format('opentype');
         }
 
+        @font-face
+        {
+            font-family: RightSideTextHeaderFont;
+            src: url(fonts/Kelvinch-Bold.otf) format('opentype');
+        }
+
         body
         {
             margin: 0 auto;
@@ -171,6 +177,15 @@
         {
             column-count: 3;
             font-size: 10px;
+        }
+
+        .right-side-text-content h3
+        {
+            font-family: 'RightSideTextHeaderFont', serif;
+            text-align: center;
+            font-size: 30px;
+            letter-spacing: 15px;
+            margin: 10px 0;
         }
 
         .right-side-text-content .right-side-info
