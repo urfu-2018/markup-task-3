@@ -1,0 +1,141 @@
+body
+{
+    background-color: #f4f4e2;
+}
+
+.paper-name
+{
+    font-family: 'Old English Text MT', fantasy;
+    text-align: center;
+    font-size: 80px;
+    margin: 20px;
+}
+
+.subhead
+{
+    border-top: 2px double #2f2f2f;
+    border-bottom: 2px double #2f2f2f;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+article:first-letter
+{
+    font-weight: bold;
+    font-style: oblique;
+    font-size: 40px;
+    font-family: 'Fira Code', cursive;
+}
+
+article
+{
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    font-family: 'Courier New', serif;
+}
+
+input[id='new-font']:checked ~ div article
+{
+    font-family: 'Arial Black', cursive;
+}
+
+input[id='bigger-font']:checked ~ div article
+{
+    font-size: 120%;
+}
+
+input[id='lower-font']:checked ~ div article
+{
+    font-size: 80%;
+}
+
+input[id='white-font']:checked ~ div
+{
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+.Mnuchin h2
+{
+    font-family: 'Baskerville Old Face', serif;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+.Africa h2
+{
+    font-family: 'Segoe UI Historic', monospace;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+.Mnuchin article
+{
+    column-count: 3;
+    column-rule: 2px solid black;
+}
+
+.Africa article
+{
+    column-count: 2;
+    column-rule: 2px solid black;
+}
+
+img
+{
+    box-sizing: border-box;
+    float: right;
+    filter: grayscale(100%);
+    width: 100%;
+}
+
+h3
+{
+    column-span: all;
+    font-style: normal;
+    font-family: initial;
+}
+
+.left
+{
+    float: left;
+    width: 49%;
+    border-right: 2px solid black;
+}
+
+.left-span
+{
+    float: left;
+}
+
+.right-span
+{
+    float: right;
+}
+
+.right
+{
+    float: right;
+    width: calc(50% - 30px);
+    border-left: 2px solid black;
+}
+
+.quote
+{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.vertical
+{
+    height: 160%;
+    float: left;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-family: 'Goudy Old Style', fantasy;
+    font-size: 30px;
+    font-weight: 900;
+}
