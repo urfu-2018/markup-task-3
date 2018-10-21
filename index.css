@@ -1,6 +1,5 @@
 .main-header
 {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
     letter-spacing: 1px;
     column-span: all;
     text-align: right;
@@ -8,6 +7,11 @@
     width: 100%;
     margin: 15px 0;
     font-size: 50px;
+}
+
+.comic
+{
+    font-family: 'Comic Sans MS', cursive, sans-serif;
 }
 
 .logo-and-name
@@ -26,7 +30,6 @@
 
 .caption
 {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
     font-style: italic;
     font-size: 10px;
     margin-top: 40px;
@@ -80,11 +83,6 @@
     color: red;
 }
 
-.cat-facts-1
-{
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-}
-
 .cat-facts-2
 {
     font-family: Tahoma, Geneva, sans-serif;
@@ -104,7 +102,6 @@
 .meow
 {
     font-style: italic;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
     font-size: 10px;
 }
 
@@ -144,22 +141,12 @@ a
     font-style: italic;
 }
 
-.cars
-{
-    font-family: Comic Sans MS, Comic Sans, cursive;
-}
-
-.other-news
-{
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-}
-
 .ms-learn
 {
     font-family: 'Lucida Console', Monaco, monospace;
 }
 
-.adv
+.offer
 {
     border: 1px solid saddlebrown;
     width: 95%;
@@ -169,7 +156,7 @@ a
     word-spacing: 100vw;
 }
 
-.adv-inner
+.offer-inner
 {
     font-family: 'Comic Sans MS', cursive, sans-serif;
     font-size: 10px;
