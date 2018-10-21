@@ -22,6 +22,12 @@
     src: url('fonts/TheOldEnglish.ttf');
 }
 
+@font-face
+{
+    font-family: SerialPublication;
+    src: url('fonts/SerialPublication.ttf');
+}
+
 body
 {
     margin: 0;
@@ -113,6 +119,16 @@ header h1
 .bordered
 {
     border: 3px solid black;
+}
+
+.advert
+{
+    padding: 5px;
+}
+
+.advert p
+{
+    text-align: left;
 }
 
 .quote
@@ -230,4 +246,60 @@ header h1
 .width-wide 
 {
     width: 40%;
+}
+
+.font-bigger:checked ~ main .layout
+{
+    font-size: 18px;
+}
+
+.font-bigger:checked ~ main .layout p
+{
+    font-size: 18px;
+}
+
+.font-bigger:checked ~ main .layout h2
+{
+    font-size: 28px;
+}
+
+.font-change:checked ~ main .layout
+{
+    font-family: 'FBI Report', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.font-change:checked ~ main .layout h2
+{
+    font-family: SerialPublication, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.dark-theme:checked ~ main
+{
+    color: #f0dc9a;
+    background: #3e2f2a;
+}
+
+.dark-theme:checked ~ main header .date-and-exchange-rate
+{
+    border-color: #f0dc9a;
+}
+
+.dark-theme:checked ~ main .layout > div
+{
+    border-right-color: #f0dc9a;
+}
+
+.dark-theme:checked ~ main .layout .two-columns-text
+{
+    column-rule-color: #f0dc9a;
+}
+
+.dark-theme:checked ~ main .delimiter
+{
+    border-color: #f0dc9a;
+}
+
+.dark-theme:checked ~ main .bordered
+{
+    border-color: #f0dc9a;
 }
