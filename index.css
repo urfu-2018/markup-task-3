@@ -1,0 +1,117 @@
+article > section
+{
+    padding: 1px;
+    border: dashed 2px #000;
+}
+
+article
+{
+    padding: 2px;
+    border: solid 3px #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5
+{
+    font-family: 'Cinzel', 'Times New Roman', serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+p
+{
+    font-family: 'Rokkitt', 'Times New Roman', serif;
+    hyphens: auto;
+    text-align: justify;
+    text-indent: 5%;
+}
+
+.multicolumn
+{
+    column-rule: 5px solid #000;
+}
+
+.twocolumn
+{
+    column-count: 2;
+}
+
+.threecolumn
+{
+    column-count: 3;
+}
+
+.columnbreaker
+{
+    border: solid 2px #000;
+    padding: 1px;
+    column-span: all;
+}
+
+.columnbreaker > img
+{
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.columnbreaker > p
+{
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+.description
+{
+    font-family: 'IM Fell English', 'Times New Roman', serif;
+    font-style: italic;
+}
+
+.speaker
+{
+    text-decoration: underline;
+}
+
+.vertical
+{
+    letter-spacing: -.2em;
+    text-indent: 0;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+
+article section:first-of-type > p:first-of-type:first-letter
+{
+    font-size: 2em;
+    border: solid 2px #000;
+    padding: 4px;
+    margin: 10px;
+}
+
+article section:first-of-type > p:first-of-type:first-line
+{
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+.speech
+{
+    font: normal bold 14px 'Titillium Web', 'Arial', sans-serif;
+}
+
+header
+{
+    border-top: solid 10px #000;
+    border-bottom: solid 2px #000;
+    margin-bottom: 1px;
+}
+
+footer
+{
+    border-top: solid 30px #000;
+}
