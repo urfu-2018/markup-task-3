@@ -1,18 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&subset=cyrillic');
+
 body
 {
 	font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 .paper-name
 {
 	font-size: 45px;
 	text-align: center;
 }
+
 .paper-slogan
 {
 	text-align: center;
 	border: 1px solid;
 }
+
 .paper-info
 {
 	-moz-column-count: 3;
@@ -22,6 +26,7 @@ body
     border: 1px solid ;
     font: 12pt sans-serif; 
 }
+
 .paper-header
 {
     -moz-column-count: 3;
@@ -33,9 +38,9 @@ body
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
-    
     font: 12pt Georgia; 
 }
+
 main
 {
 	-moz-column-count: 3;
@@ -49,10 +54,12 @@ main
     padding: 10px;
     font-size: 90%;
 }
+
 article
 {
 	height: 1000px;
 }
+
 .news-colum-2-2
 {
 	-moz-column-count: 2;
@@ -60,11 +67,13 @@ article
     column-count: 2;
     column-rule: 1px solid gray;
 }
+
 p:first-letter
 {
     font-family: "Times New Roman", Times, serif;
     font-size: 200%;
-   }
+}
+
 .verical-txt
 {
     font-size: 34px;
@@ -78,6 +87,7 @@ p:first-letter
     border: 1px dashed;
 	margin: 10px;
 }
+
 .name-paper-state
 {
 	font-family: Impact, 'Arial Narrow Bold', sans-serif;
@@ -95,42 +105,47 @@ p:first-letter
 	border: 4px double;
 	padding: 5px;
 }
+
 input[class='input-night']:checked ~ main
 {
     color: #FFF;
     background: #000;
 }
+
 input[class='input-night']:checked ~ header
 {
     color: #FFF;
     background: #000;
 }
+
 input[class='input-day']:checked ~ main
 {
     color: #000;
     background: #EEE8AA;
 }
+
 input[class='input-day']:checked ~ header
 {
     color: #000;
     background: #EEE8AA;
 }
+
 input[class='input-night']:checked ~ h1
 {
     border: 4px double #FFF;
 }
+
 input[class='input-default-font-size']:checked ~ main
 {
     font-size: 90%;
 }
+
 input[class='input-average-font-size']:checked ~ main
 {
     font-size: 100%;
 }
+
 input[class='input-big-font-size']:checked ~ main
 {
     font-size: 110%;
 }
-
-
-
