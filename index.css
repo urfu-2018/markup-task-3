@@ -22,11 +22,15 @@ article
     src: url(birch-std.ttf);
 }
 
-h1
+header h1
 {
-    font-size: 2.5em;
-    column-span: all;
-    font-family: DeutschGothic, serif;
+    font: 2.5em DeutschGothic, serif;
+    margin-bottom: -15px;
+}
+
+header h2
+{
+    font: 1.2em DeutschGothic, serif;
 }
 
 p
@@ -45,7 +49,7 @@ blockquote
     font-style: italic;
 }
 
-p[id='advertisement']
+p[id='some-doubtful-content']
 {
     writing-mode: vertical-rl;
     text-orientation: upright;
@@ -55,6 +59,12 @@ p[id='advertisement']
 input
 {
     display: none;
+}
+
+footer p
+{
+    font-family: DeutschGothic, serif;
+    font-weight: 100;
 }
 
 /* Input decoration */
@@ -111,16 +121,19 @@ input[name='font']:checked + label
 input[id='dark']:checked ~ article section h2
 {
     color: antiquewhite;
+    text-shadow: 1px 1px 2px black;
 }
 
 input[id='dark']:checked ~ article section p
 {
     color: antiquewhite;
+    text-shadow: 1px 1px 2px black;
 }
 
 input[id='dark']:checked ~ article section blockquote
 {
-    color: rgba(255, 218, 170, .66);
+    color: rgb(255, 218, 170);
+    text-shadow: 1px 1px 2px black;
 }
 
 input[id='dark']:checked ~ article
