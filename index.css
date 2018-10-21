@@ -1,0 +1,57 @@
+header
+ {
+    /* font-family: 'Diplomata', cursive; */
+    font-family: 'Monoton', cursive;
+
+    font-size: 40px;
+    border-bottom: 2px solid #666;
+    text-align: center;
+    margin-top: -30px;
+}
+
+header img
+ {
+    width: 98px;
+    position: relative;
+    left: 35px;
+    top: 28px;
+}
+
+main
+ {
+    border-top: 2px solid #666;
+}
+
+h1
+ {
+    /* font-family: 'Rubik Mono One', sans-serif; */
+    /* font-style: black; */
+    /* font-family: 'Alegreya Sans SC', sans-serif; */
+    /* font-family: 'Playfair Display SC', serif; */
+    font-family: 'Limelight', cursive;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 80px;
+    text-align: center;
+}
+
+h1 + section
+ {
+    margin-top: -15px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.headlineBreak
+ {
+    width: 60%;
+    border-top: 2px solid #666;
+}
+
+body
+ {
+    width: 95%;
+    margin: auto;
+    height: 1000px;
+    background-color: #fff5d9;
+    /* background-image: url(https://img.freepik.com/free-photo/brown-paper-texture-for-background_1373-528.jpg?size=338&ext=jpg); */
+}
