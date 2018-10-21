@@ -26,7 +26,7 @@ input[id='cs1']:checked ~ main,
 input[id='cs1']:checked ~ header
 {
     color: black;
-    background: white
+    background: white;
 }
 
 input[id='cs2']:checked ~ main,
@@ -101,7 +101,7 @@ figure
     border: 1px solid black;
 }
 
-#L39
+figure.L39
 {
     height: 50%;
     width: 50%;
@@ -109,7 +109,7 @@ figure
     float: right;
 }
 
-#cyber-security
+figure.cyber-security
 {
     column-span: all;
 }
