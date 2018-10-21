@@ -179,7 +179,7 @@ input
 
 .newspaper article img
 {
-    width: 250px;
+    width: 100%;
 }
 
 .newspaper article p.question
