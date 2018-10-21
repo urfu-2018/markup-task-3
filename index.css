@@ -81,6 +81,11 @@ figure img
     width: 100%;
 }
 
+img
+{
+    display: block !important;
+}
+
 .aeroflot
 {
     column-span: all;
