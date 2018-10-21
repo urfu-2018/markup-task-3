@@ -1,0 +1,1061 @@
+@font-face
+{
+    font-family: 'Fortuna Gothic FlorishC';
+    src: url('./fonts/FortunaGothic.eot');
+    src: local('Fortuna Gothic FlorishC Regular')
+        , local('FortunaGothicFlorishC')
+        , url('./fonts/FortunaGothic.eot?#iefix') format('embedded-opentype')
+        , url('./fonts/FortunaGothic.woff2') format('woff2')
+        , url('./fonts/FortunaGothic.woff') format('woff')
+        , url('./fonts/FortunaGothic.ttf') format('truetype')
+        , url('./fonts/FortunaGothic.svg#FortunaGothicFlorishC') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'PT Serif';
+    src: url('./fonts/PTSerif-Regular.eot');
+    src: local('PT Serif'), local('PTSerif-Regular')
+        , url('./fonts/PTSerif-Regular.eot?#iefix') format('embedded-opentype')
+        , url('./fonts/PTSerif-Regular.woff2') format('woff2')
+        , url('./fonts/PTSerif-Regular.woff') format('woff')
+        , url('./fonts/PTSerif-Regular.ttf') format('truetype')
+        , url('./fonts/PTSerif-Regular.svg#PTSerif-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'PT Serif';
+    src: url('./fonts/PTSerif-Bold.eot');
+    src: local('PT Serif Bold')
+        , local('PTSerif-Bold')
+        , url('./fonts/PTSerif-Bold.eot?#iefix') format('embedded-opentype')
+        , url('./fonts/PTSerif-Bold.woff2') format('woff2')
+        , url('./fonts/PTSerif-Bold.woff') format('woff')
+        , url('./fonts/PTSerif-Bold.ttf') format('truetype')
+        , url('./fonts/PTSerif-Bold.svg#PTSerif-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat-500.eot');
+    src: local('Montserrat Medium')
+        , local('Montserrat-Medium')
+        , url('./fonts/Montserrat-500.eot?#iefix') format('embedded-opentype')
+        , url('./fonts/Montserrat-500.woff2') format('woff2')
+        , url('./fonts/Montserrat-500.woff') format('woff')
+        , url('./fonts/Montserrat-500.ttf') format('truetype')
+        , url('./fonts/Montserrat-500.svg#Montserrat-500') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: '1Isadora M';
+    src: url('./fonts/1IsadoraMBold.eot');
+    src: local('1Isadora M Bold')
+        , local('1IsadoraMBold')
+        , url('./fonts/1IsadoraMBold.eot?#iefix') format('embedded-opentype')
+        , url('./fonts/1IsadoraMBold.woff2') format('woff2')
+        , url('./fonts/1IsadoraMBold.woff') format('woff')
+        , url('./fonts/1IsadoraMBold.ttf') format('truetype')
+        , url('./fonts/1IsadoraMBold.svg#1IsadoraMBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Oswald';
+    src: url('./fonts/Oswald-Medium.eot');
+    src: local('Oswald Medium')
+        , local('Oswald-Medium')
+        , url('./fonts/Oswald-Medium.eot?#iefix') format('embedded-opentype')
+        , url('./fonts/Oswald-Medium.woff2') format('woff2')
+        , url('./fonts/Oswald-Medium.woff') format('woff')
+        , url('./fonts/Oswald-Medium.ttf') format('truetype')
+        , url('./fonts/Oswald-Medium.svg#Oswald-Medium') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Open Sans';
+    src: url('./fonts/OpenSans-Bold.eot');
+    src: local('Open Sans Bold')
+        , local('OpenSans-Bold')
+        , url('./fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype')
+        , url('./fonts/OpenSans-Bold.woff2') format('woff2')
+        , url('./fonts/OpenSans-Bold.woff') format('woff')
+        , url('./fonts/OpenSans-Bold.ttf') format('truetype')
+        , url('./fonts/OpenSans-Bold.svg#OpenSans-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Open Sans';
+    src: url('./fonts/OpenSans-400.eot');
+    src: local('Open Sans Regular')
+        , local('OpenSans-Regular')
+        , url('./fonts/OpenSans-400.eot?#iefix') format('embedded-opentype')
+        , url('./fonts/OpenSans-400.woff2') format('woff2')
+        , url('./fonts/OpenSans-400.woff') format('woff')
+        , url('./fonts/OpenSans-400.ttf') format('truetype')
+        , url('./fonts/OpenSans-400.svg#OpenSans-400') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Roboto Slab';
+    src: url('./fonts/RobotoSlab.eot');
+    src: local('Roboto Slab Regular')
+        , local('RobotoSlab-Regular')
+        , url('./fonts/RobotoSlab.eot?#iefix') format('embedded-opentype')
+        , url('./fonts/RobotoSlab.woff2') format('woff2')
+        , url('./fonts/RobotoSlab.woff') format('woff')
+        , url('./fonts/RobotoSlab.ttf') format('truetype')
+        , url('./fonts/RobotoSlab.svg#RobotoSlab-Regular') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Plainot';
+    src: url('./fonts/Plainot.eot');
+    src: local('Plainot')
+        , url('./fonts/Plainot.eot?#iefix') format('embedded-opentype')
+        , url('./fonts/Plainot.woff2') format('woff2')
+        , url('./fonts/Plainot.woff') format('woff')
+        , url('./fonts/Plainot.ttf') format('truetype')
+        , url('./fonts/Plainot.svg#Plainot') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Vesna';
+    src: url('./fonts/Vesna.eot');
+    src: local('Vesna')
+        , url('./fonts/Vesna.eot?#iefix') format('embedded-opentype')
+        , url('./fonts/Vesna.woff2') format('woff2')
+        , url('./fonts/Vesna.woff') format('woff')
+        , url('./fonts/Vesna.ttf') format('truetype')
+        , url('./fonts/Vesna.svg#Vesna') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+html,
+body
+{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    color: #000;
+    font-family: 'PT Serif', serif;
+    font-size: 16px;
+    line-height: 1.38;
+}
+
+/**
+ * Fonts
+ */
+
+h1,
+.row p::first-letter
+{
+    font-family: 'Fortuna Gothic FlorishC', serif;
+}
+
+h2,
+h3,
+.vertical
+{
+    font-family: 'Roboto Slab', serif;
+}
+
+h4,
+h5
+{
+    font-family: 'Oswald', sans-serif;
+}
+
+blockquote,
+.footer
+{
+    font-family: '1Isadora M', cursive;
+    font-weight: 700;
+}
+
+/**
+ * Base styles
+ */
+
+header,
+main,
+footer,
+figcaption,
+figure
+{
+    display: block;
+}
+
+figure
+{
+    margin: 1em 0;
+}
+
+figcaption
+{
+    font-size: .88em;
+    line-height: normal;
+    margin-top: 1em;
+    opacity: .5;
+    text-align: center;
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child
+{
+    margin-top: 0;
+}
+
+h1
+{
+    font-size: 4em;
+    font-weight: 400;
+    line-height: 1.38;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+h2
+{
+    font-size: 2em;
+    line-height: 1.06;
+    margin-top: 0;
+}
+
+h3
+{
+    border: 2px solid #000;
+    -webkit-box-shadow: 4px 4px 0 #000;
+    -moz-box-shadow: 4px 4px 0 #000;
+    box-shadow: 4px 4px 0 #000;
+    -webkit-column-span: all;
+    column-span: all;
+    font-size: 1.5em;
+    line-height: normal;
+    padding: 8px 15px;
+    text-align: center;
+}
+
+h4,
+h5
+{
+    line-height: normal;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h4
+{
+    font-size: 1.38em;
+    letter-spacing: 2px;
+}
+
+h5
+{
+    font-size: 1.13em;
+    letter-spacing: 1px;
+}
+
+h5::before,
+h5::after
+{
+    background-color: #000;
+    content: '';
+    display: block;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h5::before
+{
+    margin-bottom: 8px;
+    max-width: 75%;
+}
+
+h5:after
+{
+    margin-top: 8px;
+    max-width: 25%;
+}
+
+img
+{
+    display: block;
+    max-width: 100%;
+}
+
+p
+{
+    font-size: .88em;
+    margin-top: 0;
+}
+
+p:last-child
+{
+    margin-bottom: 0;
+}
+
+label[for]
+{
+    cursor: pointer;
+}
+
+blockquote,
+.poem .poem__author,
+.secondary-news__right h4,
+.secondary-news__right figure
+{
+    -webkit-column-span: all;
+    column-span: all;
+}
+
+blockquote
+{
+    margin: 10px;
+}
+
+blockquote::before
+{
+    content: '«';
+}
+
+blockquote::after
+{
+    content: '»';
+}
+
+.newspaper__content,
+.newspaper__header-side,
+.newspaper__date,
+.main-news__sensation,
+.main-news__text,
+.secondary-news__left,
+.secondary-news__right,
+.text-controls__content,
+.choose-font,
+.choose-font label
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.clearfix::before,
+.clearfix::after
+{
+    content: '';
+    display: table;
+    width: 100%;
+}
+
+.clearfix:after
+{
+    clear: both;
+}
+
+.row
+{
+    -webkit-columns: 3;
+    -moz-columns: 3;
+    columns: 3;
+    -webkit-column-fill: auto;
+    column-fill: auto;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    -webkit-column-rule: 1px solid #000;
+    -moz-column-rule: 1px solid #000;
+    column-rule: 1px solid #000;
+    text-align: justify;
+}
+
+.row_two-col
+{
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+}
+
+.row p::first-letter
+{
+    font-size: 3em;
+    float: left;
+    line-height: 1;
+    padding-right: 10px;
+}
+
+/**
+ * Newspaper
+ */
+
+.newspaper
+{
+    background: #e9e9e9 url('./img/texture@2x.jpg');
+    -webkit-background-size: 640px 518px;
+    -moz-background-size: 640px 518px;
+    -o-background-size: 640px 518px;
+    background-size: 640px 518px;
+    margin-top: 56px;
+    min-height: 100%;
+}
+
+.newspaper__content,
+.text-controls__content
+{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1300px;
+    padding: 0 25px 25px;
+}
+
+/**
+ * Header
+ */
+
+.newspaper__header
+{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.newspaper__header-center,
+.newspaper__header-side
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.newspaper__header-side
+{
+    padding-top: 15px;
+    padding-left: 25px;
+    width: 450px;
+}
+
+.newspaper__date
+{
+    border-top: 1px solid #000;
+    border-bottom: 3px solid #000;
+    font-size: .88em;
+    letter-spacing: .2em;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.poem
+{
+    font-size: .88em;
+    columns: 2;
+}
+
+.poem p
+{
+    line-height: 1.5;
+    margin-bottom: 0;
+    white-space: pre-line;
+}
+
+.poem .poem__author
+{
+    font-weight: 700;
+    margin-top: 12px;
+    white-space: normal;
+}
+
+/**
+ * Main news
+ */
+
+.main-news
+{
+    border-bottom: 3px dotted #000;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+.main-news__sensation,
+.main-news__text
+{
+    float: left;
+    width: 50%;
+}
+
+.main-news__sensation
+{
+    padding: 15px;
+}
+
+.main-news__sensation figure
+{
+    margin-bottom: 0;
+}
+
+.main-news__text
+{
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+.main-news figure
+{
+    margin-top: 0;
+}
+
+/**
+ * Secondary news
+ */
+
+.secondary-news
+{
+    margin-top: 30px;
+}
+
+.secondary-news__left,
+.secondary-news__right
+{
+    float: left;
+}
+
+.secondary-news__left
+{
+    padding-right: 15px;
+    width: 60%;
+}
+
+.secondary-news__right
+{
+    border-left: 1px solid #000;
+    padding-left: 15px;
+    width: 40%;
+}
+
+.vertical
+{
+    border: 3px dotted rgba(0, 0, 0, .5);
+    display: block;
+    float: right;
+    font-size: 2em;
+    line-height: 1;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    padding: 8px 15px;
+    text-align: center;
+    width: 1ch;
+    word-wrap: break-word;
+}
+
+/**
+ * Footer
+ */
+
+.footer
+{
+    border-top: 3px dotted #000;
+    margin-top: 20px;
+    margin-bottom: -1.38em; /* ::after fix, equals to line-height */
+    padding-top: 20px;
+    text-align: justify;
+}
+
+.footer:after
+{
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+.footer span
+{
+    display: inline-block;
+    text-align: left;
+}
+
+/**
+ * Custom newspaper styles
+ */
+
+body > input[type='radio']
+{
+    display: none;
+}
+
+.text-controls
+{
+    background-color: #151515;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.text-controls__content
+{
+    padding: 12px 20px;
+}
+
+/**
+ * Custom font size
+ */
+
+input[id='fontSmall']:checked ~ .text-controls .decrease-size[for='fontMedium'],
+input[id='fontSmall']:checked ~ .text-controls .increase-size[for='fontLarge'],
+input[id='fontMedium']:checked ~ .text-controls label[for='fontMedium'],
+input[id='fontLarge']:checked ~ .text-controls .decrease-size[for='fontSmall'],
+input[id='fontLarge']:checked ~ .text-controls .increase-size[for='fontMedium'],
+input[id='themeWhite']:checked ~ .text-controls .theme-color_white,
+input[id='themeBlack']:checked ~ .text-controls .theme-color_black
+{
+    display: none;
+}
+
+.current-size,
+.decrease-size,
+.increase-size
+{
+    float: left;
+}
+
+.current-size
+{
+    display: block;
+    font-size: 1.5em;
+    line-height: 32px;
+    text-align: center;
+    -webkit-transition: font-size .15s;
+    -moz-transition: font-size .15s;
+    -o-transition: font-size .15s;
+    transition: font-size .15s;
+    width: 32px;
+}
+
+input[id='fontLarge']:checked ~ .text-controls .current-size
+{
+    font-size: 1.75em;
+}
+
+input[id='fontSmall']:checked ~ .text-controls .current-size
+{
+    font-size: 1.13em;
+}
+
+.decrease-size,
+.increase-size,
+.decrease-size::before,
+.increase-size::before,
+.increase-size::after,
+.theme-color
+{
+    -webkit-transition: background-color .15s;
+    -moz-transition: background-color .15s;
+    -o-transition: background-color .15s;
+    transition: background-color .15s;
+}
+
+.decrease-size,
+.increase-size,
+.theme-color
+{
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+}
+
+.decrease-size,
+.increase-size
+{
+    background-color: #353535;
+    display: block;
+    height: 32px;
+    overflow: hidden;
+    position: relative;
+    text-indent: 64px;
+    width: 32px;
+}
+
+.decrease-size:hover,
+.increase-size:hover
+{
+    background-color: #fff;
+}
+
+.decrease-size::before,
+.increase-size::before,
+.increase-size::after
+{
+    background-color: #fff;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.decrease-size::before,
+.increase-size::before
+{
+    height: 2px;
+    margin-top: -1px;
+    margin-left: -5px;
+    width: 10px;
+}
+
+.increase-size::after
+{
+    height: 10px;
+    margin-top: -5px;
+    margin-left: -1px;
+    width: 2px;
+}
+
+.decrease-size:hover::before,
+.increase-size:hover::before,
+.increase-size:hover::after
+{
+    background-color: #000;
+}
+
+input[id='fontSmall']:checked ~ .text-controls label[for='fontSmall'],
+input[id='fontLarge']:checked ~ .text-controls label[for='fontLarge']
+{
+    background-color: #353535;
+    cursor: default;
+}
+
+input[id='fontSmall']:checked ~ .text-controls label[for='fontSmall']::before,
+input[id='fontLarge']:checked ~ .text-controls label[for='fontLarge']::before,
+input[id='fontLarge']:checked ~ .text-controls label[for='fontLarge']::after
+{
+    background-color: #757575;
+}
+
+input[id='fontSmall']:checked ~ .newspaper
+{
+    line-height: 1.75;
+}
+
+input[id='fontSmall']:checked ~ .newspaper figcaption,
+input[id='fontSmall']:checked ~ .newspaper p,
+input[id='fontSmall']:checked ~ .newspaper .newspaper__date
+{
+    font-size: .75em;
+}
+
+input[id='fontSmall']:checked ~ .newspaper h1
+{
+    font-size: 3.5em;
+}
+
+input[id='fontSmall']:checked ~ .newspaper h2
+{
+    font-size: 1.75em;
+}
+
+input[id='fontSmall']:checked ~ .newspaper h3,
+input[id='fontSmall']:checked ~ .newspaper h4
+{
+    font-size: 1.25em;
+}
+
+input[id='fontSmall']:checked ~ .newspaper h5
+{
+    font-size: 1.06em;
+}
+
+input[id='fontLarge']:checked ~ .newspaper
+{
+    line-height: 1.13;
+}
+
+input[id='fontLarge']:checked ~ .newspaper figcaption,
+input[id='fontLarge']:checked ~ .newspaper p,
+input[id='fontLarge']:checked ~ .newspaper .newspaper__date
+{
+    font-size: 1em;
+}
+
+input[id='fontLarge']:checked ~ .newspaper h1
+{
+    font-size: 4.07em;
+}
+
+input[id='fontLarge']:checked ~ .newspaper .newspaper__header-side
+{
+    letter-spacing: -1px;
+    width: 480px;
+}
+
+input[id='fontLarge']:checked ~ .newspaper .poem p
+{
+    line-height: 1.38;
+}
+
+input[id='fontLarge']:checked ~ .newspaper h2
+{
+    font-size: 2.5em;
+}
+
+input[id='fontLarge']:checked ~ .newspaper h3,
+input[id='fontLarge']:checked ~ .newspaper h4
+{
+    font-size: 1.75em;
+}
+
+input[id='fontLarge']:checked ~ .newspaper h5
+{
+    font-size: 1.5em;
+}
+
+/**
+ * Theme color
+ */
+
+.theme-color
+{
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+    float: right;
+    font-size: .88em;
+    font-family: 'Arial', sans-serif;
+    line-height: 32px;
+    padding-left: 16px;
+    padding-right: 44px;
+    position: relative;
+}
+
+.theme-color:hover
+{
+    background-color: #353535;
+}
+
+.theme-color::after
+{
+    background: url('./img/sun.svg') no-repeat 50% 50%;
+    content: '';
+    height: 24px;
+    margin-top: -12px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 24px;
+}
+
+.theme-color_black::after
+{
+    background-image: url('./img/moon.svg');
+}
+
+input[id='themeBlack']:checked ~ .newspaper
+{
+    background: #29292c;
+    color: #fff;
+}
+
+input[id='themeBlack']:checked ~ .newspaper .newspaper__date,
+input[id='themeBlack']:checked ~ .newspaper h3,
+input[id='themeBlack']:checked ~ .newspaper .main-news,
+input[id='themeBlack']:checked ~ .newspaper .secondary-news__right,
+input[id='themeBlack']:checked ~ .newspaper .vertical,
+input[id='themeBlack']:checked ~ .newspaper .footer
+{
+    border-color: #5f626e;
+}
+
+input[id='themeBlack']:checked ~ .newspaper h3
+{
+    -webkit-box-shadow: 4px 4px 0 #5f626e;
+    -moz-box-shadow: 4px 4px 0 #5f626e;
+    box-shadow: 4px 4px 0 #5f626e;
+}
+
+input[id='themeBlack']:checked ~ .newspaper .row
+{
+    -webkit-column-rule-color: #5f626e;
+    -moz-column-rule-color: #5f626e;
+    column-rule-color: #5f626e;
+}
+
+input[id='themeBlack']:checked ~ .newspaper h5::before,
+input[id='themeBlack']:checked ~ .newspaper h5::after
+{
+    background-color: #5f626e;
+}
+
+input[id='themeBlack']:checked ~ .newspaper blockquote,
+input[id='themeBlack']:checked ~ .newspaper figcaption,
+input[id='themeBlack']:checked ~ .newspaper .footer
+{
+    color: #999dad;
+}
+
+input[id='themeBlack']:checked ~ .newspaper figcaption
+{
+    opacity: 1;
+}
+
+/**
+ * Choose font-family
+ */
+
+.choose-font
+{
+    font-family: 'Arial', sans-serif;
+    font-size: .88em;
+    float: left;
+    height: 32px;
+    margin-left: 20px;
+    width: 160px;
+}
+
+.choose-font ul
+{
+    background-color: #151515;
+    border: 2px solid #353535;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.choose-font ul::after
+{
+    border-top: 5px solid #fff;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    -webkit-transition: -webkit-transform .25s;
+    -moz-transition: -moz-transform .25s;
+    -o-transition: -o-transform .25s;
+    transition: transform .25s;
+    -webkit-transform-origin: 50% 30%;
+    -moz-transform-origin: 50% 30%;
+    -ms-transform-origin: 50% 30%;
+    -o-transform-origin: 50% 30%;
+    transform-origin: 50% 30%;
+}
+
+.choose-font:hover ul::after
+{
+    -webkit-transform: rotate3d(0, 0, 1, 180deg);
+    -moz-transform: rotate3d(0, 0, 1, 180deg);
+    -ms-transform: rotate3d(0, 0, 1, 180deg);
+    -o-transform: rotate3d(0, 0, 1, 180deg);
+    transform: rotate3d(0, 0, 1, 180deg);
+}
+
+.choose-font label
+{
+    display: none;
+    line-height: 20px;
+    padding: 4px 12px;
+}
+
+.choose-font li:first-child label
+{
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+}
+
+.choose-font li:last-child label
+{
+    -webkit-border-radius: 0 0 3px 3px;
+    -moz-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
+}
+
+.choose-font:hover label:hover
+{
+    background-color: #353535;
+}
+
+.choose-font:hover label,
+input[id='familySans']:checked ~ .text-controls label[for='familySans'],
+input[id='familySerif']:checked ~ .text-controls label[for='familySerif'],
+input[id='familyCursive']:checked ~ .text-controls label[for='familyCursive']
+{
+    display: block;
+}
+
+input[id='familySans']:checked ~ .newspaper
+{
+    font-family: 'Open Sans', sans-serif;
+}
+
+input[id='familySans']:checked ~ .newspaper h2,
+input[id='familySans']:checked ~ .newspaper h3,
+input[id='familySans']:checked ~ .newspaper .vertical
+{
+    font-family: 'Montserrat', sans-serif;
+}
+
+input[id='familySans']:checked ~ .newspaper .row p::first-letter
+{
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+input[id='familyCursive']:checked ~ .newspaper
+{
+    font-family: 'Plainot', cursive;
+}
+
+input[id='familyCursive']:checked ~ .newspaper h2,
+input[id='familyCursive']:checked ~ .newspaper h3,
+input[id='familyCursive']:checked ~ .newspaper .vertical
+{
+    font-family: 'Vesna', cursive;
+}

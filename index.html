@@ -2,8 +2,316 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=1280">
     <title>Задача «DeLorean DMC-12»</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
+
+    <!-- Переключатели размера шрифтов -->
+    <input type="radio" name="fontSize" id="fontSmall">
+    <input type="radio" name="fontSize" id="fontMedium" checked="checked">
+    <input type="radio" name="fontSize" id="fontLarge">
+
+    <!-- Переключатели семейства шрифтов -->
+    <input type="radio" name="fontFamily" id="familySans">
+    <input type="radio" name="fontFamily" id="familySerif" checked="checked">
+    <input type="radio" name="fontFamily" id="familyCursive">
+
+    <!-- Переключатели цветовой темы -->
+    <input type="radio" name="theme" id="themeWhite" checked="checked">
+    <input type="radio" name="theme" id="themeBlack">
+
+    <div class="text-controls">
+        <div class="text-controls__content clearfix">
+
+            <!-- Переключатели цветовой темы -->
+            <label for="themeWhite" class="theme-color theme-color_white">Дневной режим</label>
+            <label for="themeBlack" class="theme-color theme-color_black">Ночной режим</label>
+
+            <!-- Переключатели размера шрифтов -->
+            <label for="fontSmall" class="decrease-size">-</label>
+            <label for="fontMedium" class="decrease-size">-</label>
+            <span class="current-size">A</span>
+            <label for="fontMedium" class="increase-size">+</label>
+            <label for="fontLarge" class="increase-size">+</label>
+
+            <!-- Переключатели семейства шрифтов -->
+            <div class="choose-font">
+                <ul>
+                    <li>
+                        <label for="familySans">Sans-Serif</label>
+                    </li>
+                    <li>
+                        <label for="familySerif">Serif</label>
+                    </li>
+                    <li>
+                        <label for="familyCursive">Cursive</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="newspaper">
+        <div class="newspaper__content">
+            <header class="newspaper__header">
+                <div class="newspaper__header-center">
+                    <h1>Советский напильникъ</h1>
+                    <div class="newspaper__date">
+                        <time datetime="2016-10-31 06:00">16 октября 2018 года</time>, вторник
+                    </div>
+                </div>
+                <div class="newspaper__header-side">
+                    <div class="poem">
+                        <p>В этом мире я только прохожий,
+                            Ты махни мне весёлой рукой,
+                            У осеннего месяца тоже
+                            Свет ласкающий, тихий такой.</p>
+                        <p>В первый раз я от месяца греюсь,
+                            В первый раз от прохлады согрет,
+                            И опять и живу и надеюсь
+                            На любовь, которой уж нет.</p>
+                        <p class="poem__author">
+                            Сергей Есенин<br>«В этом мире я только прохожий...»
+                        </p>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div class="main-news clearfix">
+                    <div class="main-news__sensation">
+                        <h2>
+                            Сенсация! В деревне Ивановъка крестьянскими мальчишками в переще
+                            был обнаружен странный аппаратъ
+                        </h2>
+                        <figure>
+                            <img src="./img/main-photo.jpg" alt="DeLorean DMC-12"
+                                 title="DeLorean DMC-12">
+                            <figcaption>
+                                Первымъ странный аппаратъ обнаружил Марти (не правда)
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="main-news__text row">
+                        <h3>Мемы про еду признали опасными</h3>
+                        <figure>
+                            <img src="./img/photo-1.jpg" alt="Подростки со смартфонами"
+                                 title="Подростки со смартфонами">
+                            <figcaption>Фото: Александр Подгорчук</figcaption>
+                        </figure>
+                        <p>
+                            Бри&shy;тан&shy;ские ис&shy;сле&shy;до&shy;ва&shy;те&shy;ли из
+                            уни&shy;вер&shy;си&shy;те&shy;та Лаф&shy;бо&shy;ро за&shy;яви&shy;ли,
+                            что ме&shy;мы про еду мо&shy;гут спо&shy;соб&shy;ство&shy;вать
+                            кри&shy;зи&shy;су ожи&shy;ре&shy;ния и на&shy;но&shy;сить вред
+                            под&shy;рост&shy;кам в зна&shy;чи&shy;тель&shy;ных
+                            мас&shy;шта&shy;бах. Об этом со&shy;об&shy;ща&shy;ет CNN со
+                            ссыл&shy;кой на пись&shy;мо в бри&shy;тан&shy;ский
+                            пар&shy;ла&shy;мент&shy;ский ко&shy;ми&shy;тет.
+                        </p>
+                        <p>
+                            По сло&shy;вам уче&shy;ных, мно&shy;гие ме&shy;мы не&shy;сут в
+                            се&shy;бе опас&shy;ные со&shy;об&shy;ще&shy;ния и осве&shy;ща&shy;ют
+                            не&shy;здо&shy;ро&shy;вые при&shy;выч&shy;ки в еде.
+                        </p>
+                        <p>
+                            К пись&shy;му ис&shy;сле&shy;до&shy;ва&shy;те&shy;ли
+                            при&shy;ло&shy;жи&shy;ли при&shy;мер по&shy;тен&shy;ци&shy;аль&shy;но
+                            опас&shy;но&shy;го ме&shy;ма — фо&shy;то&shy;гра&shy;фию
+                            ре&shy;бен&shy;ка с из&shy;бы&shy;точ&shy;ным ве&shy;сом и
+                            над&shy;пи&shy;сью «Бес&shy;плат&shy;ное пи&shy;та&shy;ние? Я в
+                            де&shy;ле». Кро&shy;ме то&shy;го, уче&shy;ные бы&shy;ли
+                            обес&shy;по&shy;ко&shy;е&shy;ны ме&shy;мом, на ко&shy;то&shy;ром
+                            изоб&shy;ра&shy;же&shy;но
+                            че&shy;ло&shy;ве&shy;ко&shy;по&shy;доб&shy;ное те&shy;ло,
+                            со&shy;бран&shy;ное из изоб&shy;ра&shy;же&shy;ний пицц,
+                            гам&shy;бур&shy;ге&shy;ров и со&shy;си&shy;сок вме&shy;сто
+                            ко&shy;неч&shy;но&shy;стей. Оно си&shy;де&shy;ло ря&shy;дом с
+                            обыч&shy;ны&shy;ми людь&shy;ми, а над&shy;пись под ним
+                            гла&shy;си&shy;ла «Я».
+                        </p>
+                        <blockquote>
+                            Зна&shy;чи&shy;тель&shy;ное ко&shy;ли&shy;че&shy;ство лю&shy;дей
+                            в Twitter де&shy;лят&shy;ся свя&shy;зан&shy;ны&shy;ми со
+                            здо&shy;ро&shy;вьем ин&shy;тер&shy;нет-ме&shy;ма&shy;ми как с
+                            по&shy;ло&shy;жи&shy;тель&shy;ным, так и с
+                            от&shy;ри&shy;ца&shy;тель&shy;ным по&shy;сы&shy;лом
+                        </blockquote>
+                        <p>
+                            Уче&shy;ные так&shy;же на&shy;пи&shy;са&shy;ли, что
+                            бри&shy;тан&shy;ская ме&shy;ди&shy;ци&shy;на тра&shy;тит
+                            мил&shy;ли&shy;ар&shy;ды фун&shy;тов стер&shy;лин&shy;гов на
+                            ле&shy;че&shy;ние по&shy;след&shy;ствий
+                            не&shy;здо&shy;ро&shy;во&shy;го об&shy;ра&shy;за жиз&shy;ни.
+                            Опас&shy;ность не&shy;над&shy;ле&shy;жа&shy;щих
+                            со&shy;об&shy;ще&shy;ний о здо&shy;ро&shy;вье, ко&shy;то&shy;рые
+                            со&shy;дер&shy;жат&shy;ся в ме&shy;мах, мо&shy;жет быть
+                            спо&shy;соб&shy;ству&shy;ю&shy;щим фак&shy;то&shy;ром,
+                            счи&shy;та&shy;ют экс&shy;пер&shy;ты.
+                        </p>
+                    </div>
+                </div>
+                <div class="secondary-news clearfix">
+                    <div class="secondary-news__left row">
+                        <h4>Intel представила процессоры Core девятого поколения</h4>
+                        <p>
+                            Ком&shy;па&shy;ния Intel пред&shy;ста&shy;ви&shy;ла но&shy;вые
+                            про&shy;цес&shy;со&shy;ры Core де&shy;вя&shy;то&shy;го
+                            по&shy;ко&shy;ле&shy;ния, со&shy;об&shy;ща&shy;ет The Verge.
+                        </p>
+                        <p>
+                            Флаг&shy;ма&shy;ном но&shy;вой ли&shy;ней&shy;ки стал
+                            <span class="vertical">Intel Core</span> i9-9900K, ко&shy;то&shy;рый
+                            ком&shy;па&shy;ния на&shy;зва&shy;ла &quot;луч&shy;шим
+                            иг&shy;ро&shy;вым про&shy;цес&shy;со&shy;ром&quot;. Он
+                            со&shy;сто&shy;ит из вось&shy;ми ядер и шест&shy;на&shy;дца&shy;ти
+                            по&shy;то&shy;ков с ба&shy;зо&shy;вой ча&shy;сто&shy;той в 3,6 ГГц,
+                            ко&shy;то&shy;рые мо&shy;гут быть &quot;разо&shy;гна&shy;ны&quot; до
+                            5 ГГц.
+                        </p>
+                        <p>
+                            Так&shy;же пред&shy;став&shy;ле&shy;но де&shy;вя&shy;тое
+                            по&shy;ко&shy;ле&shy;ние про&shy;цес&shy;со&shy;ров Core i7 и Core i5.
+                            Но&shy;вый i7-9700K вклю&shy;ча&shy;ет во&shy;семь ядер и
+                            во&shy;семь по&shy;то&shy;ков с ба&shy;зо&shy;вой ча&shy;сто&shy;той
+                            3,6 ГГц, а но&shy;вый i5-9600K об&shy;ла&shy;да&shy;ет ше&shy;стью
+                            яд&shy;ра&shy;ми и ше&shy;стью по&shy;то&shy;ка&shy;ми с
+                            ба&shy;зо&shy;вой ча&shy;сто&shy;той 3,7 ГГц.</p>
+                        <p>
+                            В ком&shy;па&shy;нии за&shy;яви&shy;ли, что си&shy;сте&shy;мы на
+                            но&shy;вых про&shy;цес&shy;со&shy;рах обес&shy;пе&shy;чат на 35-45%
+                            боль&shy;шие по&shy;ка&shy;за&shy;те&shy;ли ча&shy;сто&shy;ты
+                            кад&shy;ров в иг&shy;рах.
+                        </p>
+                        <p>
+                            По&shy;став&shy;ки пред&shy;за&shy;ка&shy;зов и роз&shy;нич&shy;ные
+                            про&shy;да&shy;жи но&shy;вых про&shy;цес&shy;со&shy;ров
+                            нач&shy;нут&shy;ся 19 ок&shy;тяб&shy;ря. Сто&shy;и&shy;мость
+                            Core i7-9700К обой&shy;дет&shy;ся в 374
+                            дол&shy;ла&shy;ра, а це&shy;на флаг&shy;ман&shy;ско&shy;го
+                            Core i9-9900К со&shy;став&shy;ля&shy;ет 488 дол&shy;ла&shy;ров.
+                        </p>
+                        <h5>СМИ сообщили об уязвимости в MacOS</h5>
+                        <p>
+                            Од&shy;ним из наи&shy;бо&shy;лее уяз&shy;ви&shy;мых мест в
+                            опе&shy;ра&shy;ци&shy;он&shy;ной си&shy;сте&shy;ме Mac OS
+                            яв&shy;ля&shy;ют&shy;ся уже за&shy;гру&shy;жен&shy;ные
+                            при&shy;ло&shy;же&shy;ния. К та&shy;ко&shy;му вы&shy;во&shy;ду
+                            при&shy;шел экс&shy;перт в об&shy;ла&shy;сти раз&shy;ра&shy;бот&shy;ки
+                            при&shy;ло&shy;же&shy;ний То&shy;мас Рид, со&shy;об&shy;ща&shy;ет
+                            Virus Bulletin.
+                        </p>
+                        <p>
+                            Он по&shy;яс&shy;нил, что, ко&shy;гда поль&shy;зо&shy;ва&shy;тель
+                            за&shy;гру&shy;жа&shy;ет ка&shy;кую-то про&shy;грам&shy;му, ее
+                            про&shy;ве&shy;ря&shy;ет си&shy;сте&shy;ма без&shy;опас&shy;но&shy;сти.
+                            Од&shy;на&shy;ко по&shy;сле уста&shy;нов&shy;ки
+                            при&shy;ло&shy;же&shy;ние пе&shy;ре&shy;хо&shy;дит в спи&shy;сок
+                            про&shy;ве&shy;рен&shy;ных, и ха&shy;ке&shy;ры мо&shy;гут
+                            по&shy;лу&shy;чить к не&shy;му до&shy;ступ без про&shy;вер&shy;ки
+                            под&shy;пи&shy;си ко&shy;да, по&shy;сколь&shy;ку по&shy;втор&shy;ные
+                            про&shy;вер&shy;ки ини&shy;ци&shy;и&shy;ру&shy;ют&shy;ся край&shy;не
+                            ред&shy;ко.
+                        </p>
+                        <p>
+                            Та&shy;ким об&shy;ра&shy;зом, бес&shy;чис&shy;лен&shy;ное чис&shy;ло
+                            при&shy;ло&shy;же&shy;ний MacOS ока&shy;зы&shy;ва&shy;ют&shy;ся
+                            без&shy;за&shy;щит&shy;ны&shy;ми пе&shy;ред взло&shy;мом,
+                            за&shy;клю&shy;чил Рид. По его сло&shy;вам, устра&shy;нить
+                            уяз&shy;ви&shy;мость мо&shy;гут са&shy;ми
+                            раз&shy;ра&shy;бот&shy;чи&shy;ки, до&shy;ба&shy;вив в код сво&shy;их
+                            при&shy;ло&shy;же&shy;ний ре&shy;гу&shy;ляр&shy;ные
+                            по&shy;втор&shy;ные про&shy;вер&shy;ки.
+                        </p>
+                        <h5>"Ростех" разработал "всевидящий" дрон</h5>
+                        <p>
+                            Хол&shy;динг &quot;Шва&shy;бе&quot; (вхо&shy;дит в
+                            госкор&shy;по&shy;ра&shy;цию &quot;Ро&shy;стех&quot;)
+                            раз&shy;ра&shy;бо&shy;тал дрон Orion-Drone, осна&shy;щен&shy;ный
+                            уни&shy;каль&shy;ным на&shy;бо&shy;ром оп&shy;ти&shy;че&shy;ско&shy;го
+                            обо&shy;ру&shy;до&shy;ва&shy;ния, ко&shy;то&shy;рый
+                            поз&shy;во&shy;ля&shy;ет осу&shy;ществ&shy;лять
+                            мо&shy;ни&shy;то&shy;ринг в ви&shy;ди&shy;мом,
+                            уль&shy;тра&shy;фи&shy;о&shy;ле&shy;то&shy;вом и
+                            ко&shy;рот&shy;ко&shy;вол&shy;но&shy;вом диа&shy;па&shy;зо&shy;не
+                            ин&shy;фра&shy;крас&shy;но&shy;го спек&shy;тра,
+                            го&shy;во&shy;рит&shy;ся в со&shy;об&shy;ще&shy;нии ком&shy;па&shy;нии.
+                        </p>
+                        <p>Уточ&shy;ня&shy;ет&shy;ся, что устрой&shy;ство осна&shy;ще&shy;но
+                            уль&shy;тра&shy;фи&shy;о&shy;ле&shy;то&shy;вой ка&shy;ме&shy;рой
+                            (ULTRA-ка&shy;ме&shy;ра) и ка&shy;ме&shy;рой
+                            ко&shy;рот&shy;ко&shy;вол&shy;но&shy;во&shy;го
+                            ин&shy;фра&shy;крас&shy;но&shy;го диа&shy;па&shy;зо&shy;на
+                            спек&shy;тра (SWIR-ка&shy;ме&shy;ра), с воз&shy;мож&shy;но&shy;стью
+                            пе&shy;ре&shy;клю&shy;че&shy;ния меж&shy;ду ка&shy;ме&shy;ра&shy;ми с
+                            пуль&shy;та управ&shy;ле&shy;ния. Так&shy;же
+                            утвер&shy;жда&shy;ет&shy;ся, что бла&shy;го&shy;да&shy;ря
+                            SWIR-ка&shy;ме&shy;ре дрон мо&shy;жет ве&shy;сти
+                            на&shy;блю&shy;де&shy;ние да&shy;же в усло&shy;ви&shy;ях
+                            ну&shy;ле&shy;вой ви&shy;ди&shy;мо&shy;сти.
+                        </p>
+                        <p>
+                            Ма&shy;ло&shy;га&shy;ба&shy;рит&shy;ный,
+                            лег&shy;ко&shy;управ&shy;ля&shy;е&shy;мый дрон мо&shy;жет быть
+                            ис&shy;поль&shy;зо&shy;ван для оцен&shy;ки со&shy;сто&shy;я&shy;ния
+                            до&shy;рож&shy;но&shy;го по&shy;кры&shy;тия, вы&shy;яв&shy;ле&shy;ния
+                            пра&shy;во&shy;на&shy;ру&shy;ше&shy;ний, кон&shy;тро&shy;ля
+                            энер&shy;ге&shy;ти&shy;че&shy;ско&shy;го
+                            обо&shy;ру&shy;до&shy;ва&shy;ния, об&shy;на&shy;ру&shy;же&shy;ния
+                            утеч&shy;ки га&shy;зов, а так&shy;же в усло&shy;ви&shy;ях
+                            чрез&shy;вы&shy;чай&shy;ных си&shy;ту&shy;а&shy;ций, ава&shy;рий и
+                            сти&shy;хий&shy;ных бед&shy;ствий, ука&shy;зы&shy;ва&shy;ет
+                            ком&shy;па&shy;ния.
+                        </p>
+                    </div>
+                    <div class="secondary-news__right row row_two-col">
+                        <h3>Маск показал бюджетную версию Tesla Model 3</h3>
+                        <p>
+                            Аме&shy;ри&shy;кан&shy;ский пред&shy;при&shy;ни&shy;ма&shy;тель Илон
+                            Маск пред&shy;ста&shy;вил в сво&shy;ем Twitter бюд&shy;жет&shy;ную
+                            мо&shy;ди&shy;фи&shy;ка&shy;цию элек&shy;тро&shy;мо&shy;би&shy;ля
+                            Tesla Model 3.
+                        </p>
+                        <p>
+                            Ав&shy;то&shy;мо&shy;биль бу&shy;дет иметь зад&shy;ний при&shy;вод и
+                            смо&shy;жет про&shy;ехать без под&shy;за&shy;ряд&shy;ки око&shy;ло 420
+                            ки&shy;ло&shy;мет&shy;ров.
+                        </p>
+                        <figure>
+                            <img src="./img/photo-2.jpg" alt="Илон Маск" title="Илон Маск">
+                            <figcaption>Американский предприниматель Илон Маск</figcaption>
+                        </figure>
+                        <p>
+                            По сло&shy;вам Мас&shy;ка, сто&shy;и&shy;мость но&shy;вой
+                            мо&shy;ди&shy;фи&shy;ка&shy;ции по&shy;сле всех ски&shy;док,
+                            ко&shy;то&shy;рые мож&shy;но по&shy;лу&shy;чить в
+                            Ка&shy;ли&shy;фор&shy;нии, со&shy;ста&shy;вит 35 ты&shy;сяч
+                            дол&shy;ла&shy;ров (45 ты&shy;сяч дол&shy;ла&shy;ров — до
+                            вы&shy;че&shy;та). При этом он от&shy;ме&shy;тил, что
+                            &quot;ре&shy;аль&shy;ная сто&shy;и&shy;мость вла&shy;де&shy;ния&quot;
+                            элек&shy;тро&shy;мо&shy;би&shy;лем со&shy;ста&shy;вит око&shy;ло 31
+                            ты&shy;ся&shy;чи дол&shy;ла&shy;ров, по&shy;сколь&shy;ку
+                            по&shy;ку&shy;па&shy;те&shy;лю боль&shy;ше не при&shy;дет&shy;ся
+                            тра&shy;тить сред&shy;ства на по&shy;куп&shy;ку топ&shy;ли&shy;ва.
+                        </p>
+                        <p>
+                            Как со&shy;об&shy;ща&shy;лось ра&shy;нее, Маск по&shy;ки&shy;нет пост
+                            гла&shy;вы со&shy;ве&shy;та ди&shy;рек&shy;то&shy;ров Tesla. Это
+                            ста&shy;нет ито&shy;гом уре&shy;гу&shy;ли&shy;ро&shy;ва&shy;ния его
+                            кон&shy;флик&shy;та с ко&shy;мис&shy;си&shy;ей по цен&shy;ным
+                            бу&shy;ма&shy;гам и бир&shy;жам США, об&shy;ви&shy;нив&shy;шей его в
+                            мо&shy;шен&shy;ни&shy;че&shy;стве.
+                        </p>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer">
+                <span>Выпускъ #310 (23213)</span>
+                <span>Газета выходит с марта 1911 года</span>
+                <span>цена: 4 копъ</span>
+            </footer>
+        </div>
+    </div>
 </body>
 </html>
