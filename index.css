@@ -2,13 +2,13 @@
 @font-face
 {
     font-family: OldLondon;
-    src: url("fonts/OldLondon.ttf");
+    src: url('fonts/OldLondon.ttf');
 }
 
 @font-face
 {
     font-family: OldNewspaperTypes;
-    src: url("fonts/OldNewspaperTypes.ttf");
+    src: url('fonts/OldNewspaperTypes.ttf');
 }
 
 body
@@ -21,23 +21,24 @@ main
     padding: 20px 0;
 }
 
-#small-font:checked~.paper
+.small-font:checked ~ .paper
 {
     font-size: 85%;
 }
 
-#custom-font:checked~.paper
+.custom-font:checked ~ .paper
 {
     font-family: OldNewspaperTypes, sans-serif;
 }
 
-#invert-colors:checked~.paper
+.invert-colors:checked ~ .paper
 {
     filter: invert(100%);
 }
 
-.paper {
-    background-image: url("http://www.goodrichgourmet.com/blog/wp-content/uploads/2012/01/parchment-bg1-1024x684.jpg");
+.paper
+{
+    background-image: url('http://www.goodrichgourmet.com/blog/wp-content/uploads/2012/01/parchment-bg1-1024x684.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -97,18 +98,18 @@ section.column:not(:last-child) .contents
     border-right: 1px solid black;
 }
 
-article>header
+article > header
 {
     text-align: center;
     padding: 10px;
 }
 
-article>header h2
+article > header h2
 {
     margin: 0;
 }
 
-article>header:after
+article > header:after
 {
     content: '⚚';
     font-size: 24px;
@@ -118,7 +119,7 @@ article>header:after
     margin: 10px auto 0;
 }
 
-article>p
+article > p
 {
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
@@ -128,7 +129,7 @@ article>p
     text-align: justify;
 }
 
-article>p:first-letter
+article > p:first-letter
 {
     font-size: 1.8em;
 }
