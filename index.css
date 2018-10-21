@@ -145,7 +145,7 @@ h5,
 h2,
 hr
 {
-    column-span: all;
+    column-span: all !important;
 }
 
 h3,
