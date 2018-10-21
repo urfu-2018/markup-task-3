@@ -53,6 +53,25 @@
             src: url(fonts/20db.otf) format('opentype');
         }
 
+        @font-face
+        {
+            font-family: RightSideTextHeaderFont;
+            src: url(fonts/Kelvinch-Bold.otf) format('opentype');
+        }
+
+        @font-face
+        {
+            font-family: TextContentAppealFont;
+            src: url(fonts/Merriweather-Bold.otf) format('opentype');
+        }
+
+        @font-face
+        {
+            font-family: TextContentAppealFontLight;
+            src: url(fonts/Merriweather-Light.otf) format('opentype');
+        }
+
+
         body
         {
             margin: 0 auto;
@@ -256,6 +275,8 @@
             height: 300px;
             margin-top: 50px;
             border-top: 1px solid gray;
+            text-align: end;
+            margin-bottom: -50px;
         }
 
         .right-side-header-info .newspaper-info .newspaper-description,
@@ -292,14 +313,59 @@
 
         .right-side-text-content
         {
-            margin-top: 40px;
+            margin-top: 60px;
+        }
+
+        .right-side-text-content h3,
+        .right-side-text-content h4,
+        .right-side-text-content h5
+        {
+            margin: 8px;
+        }
+
+        .right-side-text-content h3
+        {
+            font-family: 'TextContentAppealFont', serif;
+        }
+
+        .right-side-text-content h5
+        {
+            font-family: 'TextContentAppealFontLight', serif;
+            letter-spacing: 3px;
+        }
+
+        .main-right-side .newspaper-info figure
+        {
+            margin-bottom: 80px;
+        }
+
+        .newspaper-info figure img
+        {
+            display: inline-block;
+            float: left;
+            vertical-align: top;
         }
 
         .newspaper-info figure figcaption
         {
             display: inline-block;
-            font-size: 8px;
+            font-size: 13px;
             vertical-align: top;
+            text-align: end;
+            font-style: italic;
+        }
+
+        .newspaper-info .newspaper-release-info
+        {
+            border: 1px solid gray;
+            column-count: 3;
+            column-rule: 1px solid gray;
+            column-gap: 6em;
+        }
+
+        .newspaper-info .newspaper-release-info > p
+        {
+            white-space: pre;
         }
 
         .main-left-side figure
@@ -389,8 +455,8 @@
             </div>
             <div class="newspaper-info">
                 <figure>
-                    <img src="img/newspaperPhoto.jpg" height="150" class="newspaper-image"/>
-                    <figcaption><u>ПРОЛЕТАРИИ ВСЕХ СТРАН, СОЕДИНЯЙТЕСЬ!</u></figcaption>
+                    <img src="img/newspaperPhoto.jpg" height="110" class="newspaper-image"/>
+                    <figcaption><u>ПРОЛЕТАРИИ ВСЕХ СТРАН,<br> СОЕДИНЯЙТЕСЬ!</u></figcaption>
                 </figure>
                 <div class="newspaper-description">
                     <span>
