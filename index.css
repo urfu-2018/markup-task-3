@@ -1,0 +1,96 @@
+input[id="fs1"]:checked ~ main, input[id="fs1"]:checked ~ header {
+    font-size: 14px;
+}
+input[id="fs2"]:checked ~ main, input[id="fs2"]:checked ~ header {
+    font-size: 18px;
+}
+input[id="ft1"]:checked ~ main, input[id="ft1"]:checked ~ header {
+    font-family: 'Times New Roman', Times, serif;
+}
+input[id="ft2"]:checked ~ main, input[id="ft2"]:checked ~ header {
+    font-family: Arial, Helvetica, sans-serif;
+}
+input[id="cs1"]:checked ~ main, input[id="cs1"]:checked ~ header {
+    color: black;
+    background: white
+}
+input[id="cs2"]:checked ~ main, input[id="cs2"]:checked ~ header {
+    color: white;
+    background: tan;
+}
+header
+{
+    border-bottom: 3px solid black;
+    border-top: 10px double black;
+}
+main
+{
+    column-count: 4;
+    column-rule: 1px solid black;
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding: 5px 0;
+}
+section:nth-child(-n + 3)
+{
+    border-bottom: 1px solid black;
+}
+div
+{
+    column-count: 2;
+    column-rule: 1px solid black;
+    width: 100%;
+}
+h1
+{
+    column-span: all;
+    text-align: center;
+}
+h3 
+{
+    margin-top: 20px;
+}
+h4 
+{
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+p
+{
+    margin: 5px 0;
+    hyphens: auto;
+    text-align: justify;
+    column-span: 1;
+}
+p::first-letter
+{
+    font-size: 150%;
+}
+figure
+{
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+}
+figure#L39
+{
+    height: 50%;
+    width: 50%;
+    margin: 0 5px;
+    float: right;
+}
+figure#hacker
+{
+    column-span: all;
+}
+figcaption
+{
+    text-align: right;
+}
+img
+{
+    float: right;
+    height: 100%;
+    width: 100%;
+}
