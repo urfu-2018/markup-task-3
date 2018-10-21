@@ -146,10 +146,10 @@ img
 
 .big-letters:checked ~ .main h1
 {
-    font-size: 8em;
+    font-size: 6em;
 }
 
 .big-letters:checked ~ .main h3
 {
-    font-size: 4em;
+    font-size: 3em;
 }
