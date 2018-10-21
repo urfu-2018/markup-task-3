@@ -1,0 +1,82 @@
+header h1
+{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.upperColumns
+{
+    column-rule: 2px solid black;
+    column-count: 2;
+}
+
+.footerColumns
+{
+    column-count: 2;
+    column-rule: 2px solid black;
+}
+
+.additionalColumns
+{
+    column-rule: 2px solid black;
+    column-count: 2;
+}
+
+.advertisement
+{
+    margin: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    border: 1px dotted black;
+    column-span: all;
+}
+
+.upperColumns figure
+{
+    margin: 10px;
+}
+
+.upperColumns figcaption
+{
+    text-align: center;
+}
+
+.upperColumns figure img
+{
+    width: 100%;
+}
+
+.article
+{
+    break-inside: avoid-column;
+}
+
+.article p:first-of-type:first-letter
+{
+    font-size: 2em;
+    color: red;
+}
+
+q
+{
+    font-style: italic;
+}
+
+p
+{
+    hyphens: auto;
+}
+
+.verticalAdvertisement
+{
+    width: .7em;
+    height: 150px;
+    margin: 5px;
+    word-break: break-all;
+    text-align: center;
+    padding: 20px;
+    border: 1px dotted black;
+    float: right;
+    font-weight: bold;
+}
