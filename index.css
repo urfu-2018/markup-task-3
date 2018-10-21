@@ -2,53 +2,41 @@
 
 body
 {
-	font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .paper-name
 {
-	font-size: 45px;
-	text-align: center;
+    font-size: 45px;
+    text-align: center;
 }
 
 .paper-slogan
 {
-	text-align: center;
-	border: 1px solid;
+    text-align: center;
+    border: 1px solid;
 }
 
 .paper-info
 {
-	-moz-column-count: 3;
-    -webkit-column-count: 3;
     column-count: 3;
     text-align: center;
     border: 1px solid ;
-    font: 12pt sans-serif; 
+    font: 12pt sans-serif;
 }
 
 .paper-header
 {
-    -moz-column-count: 3;
-    -moz-column-width: 200px;
-    -webkit-column-count: 3;
-    -webkit-column-width: 200px;
-    column-count: 3;
-    column-width: 200px;
+    columns: 200px 3;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
-    font: 12pt Georgia; 
+    font: 12pt Georgia;
 }
 
 main
 {
-	-moz-column-count: 3;
-    -moz-column-width: 200px;
-    -webkit-column-count: 3;
-    -webkit-column-width: 200px;
-    column-count: 3;
-    column-width: 200px;
+    columns: 200px 3;
     column-rule: 1px solid gray;
     margin: auto;
     padding: 10px;
@@ -57,20 +45,18 @@ main
 
 article
 {
-	height: 1000px;
+    height: 1000px;
 }
 
 .news-colum-2-2
 {
-	-moz-column-count: 2;
-    -webkit-column-count: 2;
     column-count: 2;
     column-rule: 1px solid gray;
 }
 
 p:first-letter
 {
-    font-family: "Times New Roman", Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 200%;
 }
 
@@ -85,54 +71,54 @@ p:first-letter
     float: right;
     padding: 10px;
     border: 1px dashed;
-	margin: 10px;
+    margin: 10px;
 }
 
 .name-paper-state
 {
-	font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
     font-style: italic;
-	font-stretch: condensed;
-	border: 1px solid;
-	padding: 5px;
+    font-stretch: condensed;
+    border: 1px solid;
+    padding: 5px;
 }
 
 .name-paper-state-2
 {
-	font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Slab', serif;
     font-style: italic;
-	font-stretch: condensed;
-	border: 4px double;
-	padding: 5px;
+    font-stretch: condensed;
+    border: 4px double;
+    padding: 5px;
 }
 
 input[class='input-night']:checked ~ main
 {
-    color: #FFF;
+    color: #fff;
     background: #000;
 }
 
 input[class='input-night']:checked ~ header
 {
-    color: #FFF;
+    color: #fff;
     background: #000;
 }
 
 input[class='input-day']:checked ~ main
 {
     color: #000;
-    background: #EEE8AA;
+    background: #eee8aa;
 }
 
 input[class='input-day']:checked ~ header
 {
     color: #000;
-    background: #EEE8AA;
+    background: #eee8aa;
 }
 
 input[class='input-night']:checked ~ h1
 {
-    border: 4px double #FFF;
+    border: 4px double #fff;
 }
 
 input[class='input-default-font-size']:checked ~ main
