@@ -1,0 +1,214 @@
+@font-face
+{
+    font-family: 'Cardinal';
+    src: url(Cardinal.ttf) format('truetype');
+}
+
+@font-face
+{
+    font-family: 'DancingScript';
+    src: url('DancingScript-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'DancingScriptBold';
+    src: url('DancingScript-Bold.ttf') format('truetype');
+}
+
+body
+{
+    padding: 0;
+    margin: 0;
+    background: url('bg.jpg');
+    background-size: 100%;
+}
+
+.title
+{
+    margin: 20px auto;
+    font-family: 'Cardinal', serif;
+    font-variant: small-caps;
+    text-align: center;
+    font-size: 50pt;
+}
+
+.da-vinci-photo
+{
+    float: left;
+    margin-right: 15px;
+}
+
+.gioconda
+{
+    float: right;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.merlin
+{
+    column-span: all;
+    max-width: 100%;
+}
+
+.gaudi-house
+{
+    max-width: 100%;
+    float: right;
+}
+
+.gaudi-house-inner
+{
+    max-width: 100%;
+    float: right;
+}
+
+.behavior-rules
+{
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.behavior-rules > li
+{
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+.behavior-rules > li:before
+{
+    content: '-';
+    padding-right: 5px;
+}
+
+.magazine
+{
+    padding: 10px;
+    font-family: Constantia, sans-serif;
+    font-size: medium;
+    text-align: justify;
+    hyphens: auto;
+    font-variant: small-caps;
+    column-count: 3;
+    column-gap: 20px;
+    column-rule: 2px dotted black;
+}
+
+.setting-section-header
+{
+    font-family: Constantia, sans-serif;
+    font-size: 18px;
+}
+
+.settings-button
+{
+    background: #e4c076;
+    margin-left: 10px;
+    border: 2px black dotted;
+    border-radius: 10px;
+    font-family: Constantia, sans-serif;
+    font-size: 18px;
+    font-variant: small-caps;
+}
+
+.small-size-button:focus ~ article
+{
+    font-size: 12px;
+}
+
+.medium-size-button:focus ~ article
+{
+    font-size: 18px;
+}
+
+.big-size-button:focus ~ article
+{
+    font-size: 24px;
+}
+
+.huge-size-button:focus ~ article
+{
+    font-size: 30px;
+}
+
+.black-on-white-theme-button:focus ~ article
+{
+    background: #fff;
+    border-radius: 10px;
+}
+
+.white-on-black-theme-button:focus ~ article
+{
+    border-radius: 10px;
+    background: #000;
+    color: #fff;
+}
+
+.disable-all-custom-fonts-button:focus ~ article,
+.disable-all-custom-fonts-button:focus ~ article .article-title,
+.disable-all-custom-fonts-button:focus ~ article .first-letter
+{
+    font-family: Arial, serif;
+    font-variant: none;
+}
+
+.make-beauty-button:focus ~ article
+{
+    font-family: Arial, serif;
+}
+
+.first-letter
+{
+    float: left;
+    font-size: 42px;
+    padding-right: 10px;
+    color: crimson;
+    font-family: Cardinal, sans-serif;
+}
+
+.article-title
+{
+    text-align: center;
+    font-family: DancingScriptBold, serif;
+    border: 2px dotted black;
+    border-radius: 10px;
+}
+
+.style-line
+{
+    border: 2px dotted black;
+    border-bottom: none;
+}
+
+.under-picture-text
+{
+    font-family: DancingScript, serif;
+    font-size: 14px;
+}
+
+.letter-state
+{
+    text-align: center;
+    min-width: 20px;
+    float: right;
+    background: #e4c076;
+    margin-right: 20px;
+    border: 2px black dotted;
+    border-radius: 5px;
+    font-family: Cardinal, sans-serif;
+    font-size: 18px;
+}
+
+.header-technique-information
+{
+    padding: 1px 5px;
+    float: right;
+    background: #e4c076;
+    margin-right: 20px;
+    border: 2px black dotted;
+    border-radius: 10px;
+    font-family: Constantia, sans-serif;
+    font-size: 18px;
+}
