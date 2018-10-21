@@ -3,16 +3,12 @@
 
 body
 {
-    margin: 0;
-    padding: 0;
     font-family: 'Courier New', sans-serif;
 }
 
-figcaption
+figcaption 
 {
     text-align: center;
-    font-size: 18px;
-    font-style: italic;
 }
 
 img
@@ -58,6 +54,7 @@ img
     width: 25%;
     padding: 5px;
     float: left;
+    height: 1060px;
 }
 
 .news-title
@@ -103,15 +100,40 @@ img
     width: 50%;
     padding: 5px;
     float: left;
+    height: 1060px;
 }
 
 .sponsors
 {
     float: right;
     width: 23%;
+    height: 1060px;
 }
 
 input[id='small']:checked ~ main
 {
-    font-size: .5em ;
+    font-size: .7em;
+}
+
+input[id='small']:checked ~ main > article > blockquote
+{
+    font-size: .5em;
+}
+
+input[id='arial']:checked ~ main
+{
+    font-family: 'Arial', sans-serif;
+    background-color: black !important;
+}
+
+input[id='black']:checked ~ main > article
+{
+    background-color: black;
+    color: white;
+}
+
+input[id='black']:checked ~ main > aside
+{
+    background-color: black;
+    color: white;  
 }
