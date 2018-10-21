@@ -9,6 +9,20 @@
     font-size: 50px;
 }
 
+.info
+{
+    font-size: 11px;
+    float: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.clearfix
+{
+    position: relative;
+}
+
 .comic
 {
     font-family: 'Comic Sans MS', cursive, sans-serif;
@@ -212,8 +226,17 @@ input[value='small']:checked ~ .newspaper
 
 input[value='huge']:checked ~ .newspaper
 {
-    font-size: 60px;
+    column-count: 2;
+}
+
+input[value='huge']:checked ~ .newspaper > .logo-and-name ~ section
+{
+    font-size: 40px;
     word-spacing: 50vw;
-    column-count: 1;
     text-align: center;
+}
+
+input[value='huge']:checked ~ .newspaper > .logo-and-name ~ section h2
+{
+    font-size: 60px;
 }
