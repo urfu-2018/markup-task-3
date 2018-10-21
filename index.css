@@ -132,6 +132,11 @@ blockquote > p::after
     float: right;
 }
 
+.price-details
+{
+    margin-left: 10px;
+}
+
 .article-img
 {
     width: 100%;
