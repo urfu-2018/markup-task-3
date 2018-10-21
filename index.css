@@ -1,228 +1,136 @@
-.layout-block-1
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&subset=cyrillic');
+body
 {
-	width: 100%;
-	height: 100px; /*Пока в пикселях*/
-	margin: auto;
-	background: #BDB76B;
+	font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.coolspan-1, .coolspan-2, .coolspan-3
-{ 
-   float: left; /* Плавающий элемент */
-}
-.coolspan-1
+.paper-name
 {
-	width: 15%;
-	background: #7895A4;
-	margin: 2.5% 2.5% 0 3%;
-	color: #FFF;
+	font-size: 45px;
+	text-align: center;
 }
-.coolspan-2
+.paper-slogan
 {
-	width: 55%;
-	margin-top: 0.5%;
-	background: #F0EAD6;
+	text-align: center;
+	border: 1px solid;
 }
-.coolspan-3
+.paper-info
 {
-	width: 15%;
-	margin: 2.5% 2.5% 0 3%;
-	background: #C38A6D;
-	color: #FFE;
+	-moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+    text-align: center;
+    border: 1px solid ;
+    font: 12pt sans-serif; 
 }
-.layout-block-2
+.paper-header
 {
-	width: 100%;
-	margin-top: 1%;
-	background: #BDB76B;
+    -moz-column-count: 3;
+    -moz-column-width: 200px;
+    -webkit-column-count: 3;
+    -webkit-column-width: 200px;
+    column-count: 3;
+    column-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    
+    font: 12pt Georgia; 
 }
-.coolspan-4, .coolspan-5, .coolspan-6
-{ 
-   float: left; /* Плавающий элемент */
-}
-.coolspan-4
+main
 {
-	width: 35%;
-	background: #C38A6D;
-	margin: auto;
-	color: #FFF;
+	-moz-column-count: 3;
+    -moz-column-width: 200px;
+    -webkit-column-count: 3;
+    -webkit-column-width: 200px;
+    column-count: 3;
+    column-width: 200px;
+    column-rule: 1px solid gray;
+    margin: auto;
+    padding: 10px;
+    font-size: 90%;
 }
-.coolspan-4-1, .coolspan-4-2, .coolspan-4-3
-{ 
-   float: left; /* Плавающий элемент */
-}
-.coolspan-4-1
+article
 {
-	width: 35%;
-	background: #E6E6FA;
-	color: #FFF;
+	height: 1000px;
 }
-.coolspan-4-2
+.news-colum-2-2
 {
-	width: 35%;
-	background: #8B008B;
+	-moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+    column-rule: 1px solid gray;
 }
-.coolspan-4-3
+p:first-letter
 {
-	width: 30%;
-	background: #FF00FF;
-	color: #FFE;
-}
-.coolspan-5
+    font-family: "Times New Roman", Times, serif;
+    font-size: 200%;
+   }
+.verical-txt
 {
-	width: 30%;
-	background: #F0EAD6;
+    font-size: 34px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-transform: uppercase;
+    float: right;
+    padding: 10px;
+    border: 1px dashed;
+	margin: 10px;
 }
-.coolspan-5-1, .coolspan-5-2, .coolspan-5-3
-{ 
-   float: left; /* Плавающий элемент */
-}
-.coolspan-5-1
+.name-paper-state
 {
-	width: 35%;
-	background: #A0522D;
-	color: #FFF;
-}
-.coolspan-5-2
-{
-	width: 35%;
-	background: #A52A2A;
-}
-.coolspan-5-3
-{
-	width: 30%;
-	background: #800000;
-	color: #FFE;
-}
-.coolspan-6
-{
-	width: 35%;
-	background: #C38A6D;
-	color: #FFE;
-}
-.coolspan-6-1, .coolspan-6-2, .coolspan-6-3
-{ 
-   float: left; /* Плавающий элемент */
-}
-.coolspan-6-1
-{
-	width: 35%;
-	background: #FFA07A;
-	color: #FFF;
-}
-.coolspan-6-2
-{
-	width: 35%;
-	background: #FF7F50;
-}
-.coolspan-6-3
-{
-	width: 30%;
-	background: #FF6347;
-	color: #FFE;
-}
-.layout-block-3
-{
-	width: 100%;
-	margin-top: 4%;
-	background: #BDB76B;
-}
-.coolspan-7, .coolspan-8, .coolspan-9
-{ 
-   float: left; /* Плавающий элемент */
-}
-.coolspan-7
-{
-	width: 35%;
-	height: 20%;
-	background: #7895A4;
-	color: #FFF;
-}
-.coolspan-8
-{
-	width: 30%;
-	height: 20%;
-	background: #F0EAD6;
-}
-.coolspan-9
-{
-	width: 35%;
-	height: 20%;
-	background: #C38A6D;
-	color: #FFE;
-}
-.layout-block-4
-{
-	width: 100%;
-	margin-top: 4%;
-	background: #BDB76B;
-}
-.coolspan-10, .coolspan-11, .coolspan-12
-{ 
-   float: left; /* Плавающий элемент */
-}
-.coolspan-10
-{
-	width: 35%;
-	height: 20%;
-	background: #7895A4;
-	color: #FFF;
-}
-.coolspan-10-1, .coolspan-10-2
-{ 
-   float: left; /* Плавающий элемент */
-}
-.coolspan-10-1
-{
-	width: 50%;
-	background: #FFA07A;
-	color: #FFF;
-}
-.coolspan-10-2
-{
-	width: 50%;
-	background: #FF7F50;
-}
-.coolspan-11
-{
-	width: 30%;
-	height: 20%;
-	background: #F0EAD6;
-}
-.coolspan-11-1, .coolspan-11-2
-{ 
-   float: left; /* Плавающий элемент */
-}
-.coolspan-11-1
-{
-	width: 50%;
-	background: #FFA07A;
-	color: #FFF;
-}
-.coolspan-11-2
-{
-	width: 50%;
-	background: #FF7F50;
-}
-.coolspan-12
-{
-	width: 35%;
-	height: 20%;
-	background: #C38A6D;
-	color: #FFE;
+	font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+	font-stretch: condensed;
+	border: 1px solid;
+	padding: 5px;
 }
 
-.coolspan-12-1, .coolspan-12-2
-{ 
-   float: left; /* Плавающий элемент */
-}
-.coolspan-12-1
+.name-paper-state-2
 {
-	width: 50%;
-	background: #FFA07A;
-	color: #FFF;
+	font-family: 'Roboto Slab', serif;
+    font-style: italic;
+	font-stretch: condensed;
+	border: 4px double;
+	padding: 5px;
 }
-.coolspan-12-2
+input[class='input-night']:checked ~ main
 {
-	width: 50%;
-	background: #FF7F50;
+    color: #FFF;
+    background: #000;
 }
+input[class='input-night']:checked ~ header
+{
+    color: #FFF;
+    background: #000;
+}
+input[class='input-day']:checked ~ main
+{
+    color: #000;
+    background: #EEE8AA;
+}
+input[class='input-day']:checked ~ header
+{
+    color: #000;
+    background: #EEE8AA;
+}
+input[class='input-night']:checked ~ h1
+{
+    border: 4px double #FFF;
+}
+input[class='input-default-font-size']:checked ~ main
+{
+    font-size: 90%;
+}
+input[class='input-average-font-size']:checked ~ main
+{
+    font-size: 100%;
+}
+input[class='input-big-font-size']:checked ~ main
+{
+    font-size: 110%;
+}
+
+
+
