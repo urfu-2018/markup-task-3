@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+English');
+@import url('https://fonts.googleapis.com/css?family=Russo+One&subset=cyrillic');
+
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', sans-serif;
+}
+
+figcaption
+{
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+}
+
+img
+{
+    width: 100%;
+}
+
+.newspaper-info
+{
+    text-align: center;
+}
+
+.newspaper-title
+{
+    font-family: 'IM Fell English', serif;
+    font-size: 45px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.newspaper-title::first-letter
+{
+    font-size: 60px;
+    color: red;
+}
+
+.newspaper-subtitle
+{
+    font-size: 19px;
+    font-style: italic;
+    margin-top: 8px;
+}
+
+.release-info p
+{
+    font-weight: bold;
+    font-size: 18px;
+    text-align: right;
+}
+
+.first-news
+{
+    width: 25%;
+    padding: 5px;
+    float: left;
+}
+
+.news-title
+{
+    font-size: 25px;
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+}
+
+.news-info p
+{
+    hyphens: auto;
+    text-align: justify;
+    padding-left: 5px;
+    font-size: 18px;
+}
+
+.news-info p::first-letter
+{
+    font-size: 30px;
+}
+
+.quote
+{
+    text-align: justify;
+    margin: 50px;
+    border-top: 1px dotted black;
+    border-bottom: 1px dotted black;
+    font-size: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-style: italic;
+}
+
+.news-subtitle
+{
+    font-size: 20px;
+    text-align: center;
+}
+
+.second-news
+{
+    width: 50%;
+    padding: 5px;
+    float: left;
+}
+
+.sponsors
+{
+    float: right;
+    width: 23%;
+}
+
+input[id='small']:checked ~ main
+{
+    font-size: .5em ;
+}
