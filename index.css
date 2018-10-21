@@ -1,0 +1,115 @@
+main
+{
+    padding: 8px 0;
+    font-size: 20px;
+    background: white;
+    color: black;
+}
+
+.theme:checked ~ main
+{
+    background: black;
+    color: white;
+}
+
+.theme:checked ~ main header,
+.theme:checked ~ main article 
+{
+    column-rule-color: white;
+    border-color: white;
+}
+
+.font:checked ~ main
+{
+    font-size: 25px;
+}
+
+.font-off:checked ~ main h1,
+.font-off:checked ~ main h2,
+.font-off:checked ~ main h3,
+.font-off:checked ~ main p,
+.font-off:checked ~ main figcaption
+{
+    font-family: Arial, Helvetica;
+}
+
+input
+{
+    margin-left: 20px;
+}
+
+nav span
+{
+    margin-right: 20px;
+}
+
+header
+{
+    border: 3px dotted black;
+    margin: 20px;
+}
+
+h1,
+h2,
+h3
+{
+    text-align: center;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+article 
+{
+    column-count: 3;
+    column-gap: 60px;
+    column-rule: 2px solid black;
+    margin: 20px;
+    border: 3px solid black;
+    padding: 10px 30px;
+}
+
+.font:checked ~ main article
+{
+    padding: 10px 15px;
+}
+
+img 
+{
+    width: 100%;
+}
+
+.inner
+{
+    column-count: 2;
+}
+
+figure
+{
+    margin: 20px 0;
+}
+
+figcaption 
+{
+    font-family: 'Pacifico', cursive;
+    line-height: 100%;
+}
+
+p
+{
+    font-family: 'Comfortaa', cursive;
+    margin-top: 0;
+    font-size: 80%;
+    text-align: justify;
+    line-height: 20px;
+}
+
+h2
+{
+    margin-top: 0;
+}
+
+div p::first-letter
+{
+    font-size: 150%;
+    color: red;
+    margin-left: 10px;
+}
