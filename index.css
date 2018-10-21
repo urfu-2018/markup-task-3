@@ -135,5 +135,5 @@ input[id='black']:checked ~ main > article
 input[id='black']:checked ~ main > aside
 {
     background-color: black;
-    color: white;  
+    color: white;
 }
