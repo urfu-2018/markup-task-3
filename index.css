@@ -1,0 +1,145 @@
+main 
+{
+    column-count: 4;
+    background: darkcyan;
+    column-rule: 2px dashed rgb(42, 69, 224);
+    text-align: center;
+}
+
+h1
+{
+    margin-bottom: 0;
+}
+
+.zag 
+{
+    font-size: 40px;
+    background: cyan;
+    text-align: center;
+    font-family: 'Ultra', serif;
+}
+
+p
+{
+    margin-top: 0;
+    font-family: 'Text Me One', sans-serif;
+    hyphens: auto;
+    text-align: justify;
+    font-size: 80%;
+    line-height: 20px;
+}
+
+article:nth-child(2)
+{
+    column-count: 2;
+    column-rule: 1px dashed rgb(54, 73, 180);
+}
+
+article:last-child
+{
+    column-count: 3;
+    column-rule: 1px dashed rgb(54, 73, 180);
+}
+
+.podzag
+{
+    font-size: 20px;
+    font-family: 'Libre+Baskerville', cursive;
+    color: rgb(5, 63, 150);
+}
+
+figure img
+{
+    
+    width: 100%;
+}
+
+.bolsh
+{
+    column-span: all;
+}
+
+article div::first-letter
+{
+    font-size: 25px;
+}
+
+article:last-child
+{
+    font-size: 12px;
+}
+
+.comstyle1
+{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 30px;
+    text-align: center;
+}
+
+span
+{
+    line-height: 2;
+    font-size: 24px;
+    column-span: all;
+    border: 1 px solid darkblue;
+    font-family: 'Shadows Into Light', cursive;
+    border-bottom: 1px solid lightseagreen;
+    text-align: center;
+}
+
+article 
+{
+    border-bottom: 2px dashed rgb(42, 69, 224);
+}
+
+.vertic
+{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-transform: uppercase;
+    float: right;
+    padding: 10px;
+    border: 1px solid rgb(6, 85, 138);
+    margin: 10px;
+}
+
+.black:checked ~ header,
+.black:checked ~ main,
+.black:checked ~ main article,
+.black:checked ~ main article header,
+.black:checked ~ main article div p,
+.black:checked ~ main article div,
+.black:checked ~ main article span,
+.black:checked ~ main article h2
+{
+    background: black;
+    color: white;
+    column-rule-color: white;
+    border-color: white;
+}
+
+.font:checked ~ header h1,
+.font:checked ~ main article header,
+.font:checked ~ main article div p,
+.font:checked ~ main article div,
+.font:checked ~ main article span,
+.font:checked ~ main article h2
+{
+    font-family: 'Times New Roman';
+}
+
+.psize:checked ~ main,
+{
+    font-size: 100%;
+}
+
+.psize:checked ~ header h1
+{
+    font-size: 90%;
+}
+
+.psize:checked ~ main:last-child div,
+.psize:checked ~ main article h2
+{
+    font-size: 160%;
+}
