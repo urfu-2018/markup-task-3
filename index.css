@@ -1,0 +1,204 @@
+.newspaper
+{
+    width: 98%;
+    margin: auto;
+    font-size: 10px;
+    padding: 10px;
+}
+
+.newspaper .settings
+{
+    margin-bottom: 20px;
+    font-size: 1.6em;
+    position: fixed;
+    background-color: white;
+}
+
+.newspaper .settings div
+{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.newspaper .settings p
+{
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.newspaper header.title
+{
+    margin-top: .5em;
+    font-size: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Verdana;
+}
+
+.newspaper header.info
+{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+input[value='light']:checked ~ .newspaper
+{
+    background: url('newspaper-bg.jpg');
+    color: black;
+}
+
+input[value='light']:checked ~ .newspaper .settings
+{
+    background-color: white;
+}
+
+input[value='light']:checked ~ .newspaper article:nth-child(3n-1),
+input[value='light']:checked ~ .newspaper header.info
+{
+    border-color: black;
+}
+
+input[value='dark']:checked ~ .newspaper
+{
+    background: url('black-bg.jpg');
+    color: white;
+}
+
+input[value='dark']:checked ~ .newspaper .settings
+{
+    background-color: #2e264a;
+}
+
+input[value='dark']:checked ~ .newspaper article:nth-child(3n-1),
+input[value='dark']:checked ~ .newspaper header.info
+{
+    border-color: white;
+}
+
+input[value='small']:checked ~ .newspaper
+{
+    font-size: 8px;
+}
+
+input[value='normal']:checked ~ .newspaper
+{
+    font-size: 10px;
+}
+
+input[value='big']:checked ~ .newspaper
+{
+    font-size: 12px;
+}
+
+input[value='serif']:checked ~ .newspaper
+{
+    font-family: 'Times New Roman', serif;
+}
+
+input[value='sans-serif']:checked ~ .newspaper
+{
+    font-family: 'Tahoma', sans-serif;
+}
+
+input
+{
+    display: none;
+}
+
+.newspaper main
+{
+    column-count: 5;
+}
+
+.newspaper article
+{
+    padding: 0 5px;
+    margin-bottom: 10px;
+    hyphens: auto;
+}
+
+.newspaper article.mini
+{
+    display: inline-block;
+}
+
+.newspaper article p:first-of-type:first-letter
+{
+    font-size: 2.2em;
+}
+
+.newspaper article p:first-of-type:first-line
+{
+    line-height: .6em;
+}
+
+.newspaper article:nth-child(3n-1)
+{
+    border: 1px solid black;
+}
+
+.newspaper article h2,
+.newspaper article h3
+{
+    font-size: 2.6em;
+    hyphens: none;
+    font-family: 'Lucida Console';
+}
+
+.newspaper article h3
+{
+    font-size: 2.2em;
+    text-align: center;
+}
+
+.newspaper article div
+{
+    margin-top: 1.5em;
+}
+
+.newspaper article p
+{
+    font-size: 1.8em;
+}
+
+.newspaper article figure
+{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.newspaper article figcaption
+{
+    font-size: 1.4em;
+}
+
+.newspaper article img
+{
+    width: 300px;
+}
+
+.newspaper article p.question
+{
+    font-weight: bold;
+}
+
+.newspaper article p.question,
+.newspaper article p.answer
+{
+    text-indent: 10px;
+}
+
+.newspaper article span.club
+{
+    color: blue;
+}
+
+.newspaper article span.sportsman
+{
+    color: red;
+}
