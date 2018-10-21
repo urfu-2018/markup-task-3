@@ -1,0 +1,157 @@
+img
+{
+    margin: 7px;
+}
+
+body
+{
+    background-color: beige;
+}
+
+header
+{
+    border-bottom: 2px solid #000;
+    margin-bottom: 20px;
+    height: 200px;
+    position: relative;
+}
+
+header h1
+{
+    max-width: auto;
+    font-family: coolFont;
+    font-size: 100px;
+    margin: 10px;
+    font-weight: normal;
+}
+
+header h2
+{
+    max-width: auto;
+    font-family: coolFont;
+    font-size: 50px;
+    margin: 5px;
+    font-weight: normal;
+}
+
+section.note
+{
+    width: 250px;
+    border: 2px dashed #000;
+    float: right;
+    font-style: italic;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 30px;
+    padding: 20px;
+}
+
+section.note p
+{
+    margin: 0;
+    text-align: center;
+}
+
+article.horklump p img
+{
+    width: 230px;
+}
+
+article.pogrebin p img
+{
+    width: 230px;
+}
+
+article.quintaped p img
+{
+    float: left;
+}
+
+main
+{
+    position: relative;
+}
+
+main article.horklump
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+main article.pogrebin
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+main article.quintaped
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+p.inf
+{
+    word-break: normal;
+}
+
+p.inf::first-line
+{
+    font-weight: bold;
+}
+
+main
+{
+    height: 650px;
+}
+
+footer
+{
+    border-top: 2px solid #000;
+    margin: 10px;
+}
+
+footer address
+{
+    float: right;
+}
+
+footer p
+{
+    margin: 0;
+}
+
+article.horklump,
+article.pogrebin
+{
+    max-width: 49%;
+    margin: 0;
+}
+
+article.horklump p
+{
+    column-rule: 2px solid gray;
+    column-count: 3;
+}
+
+article.pogrebin p
+{
+    column-rule: 2px solid gray;
+    column-count: 3;
+}
+
+article.quintaped p
+{
+    column-rule: 2px solid gray;
+    column-count: 4;
+}
+
+@font-face
+{
+    font-family: coolFont;
+    src: url('fonts/coolFont.TTF');
+}
