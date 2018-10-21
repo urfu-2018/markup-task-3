@@ -1,0 +1,554 @@
+body
+{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.header-news .logo-block
+{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    top: -1.1em;
+}
+
+.header-news .logo-block::after,
+.header-news .logo-block::before
+{
+    font-family: 'BlackCastleMF';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2em;
+}
+
+.header-news .logo-block::before
+{
+    content: 'bewitch beguile';
+    position: absolute;
+    word-spacing: 5em;
+    top: 1.4em;
+    left: 0;
+}
+
+.header-news .logo-block::after
+{
+    content: 'beguile bewitch ensouled hex';
+    position: absolute;
+    bottom: -1.3em;
+    left: 0;
+    width: 100%;
+    transform: scale(1, -1);
+}
+
+.header-news .logo-news
+{
+    position: relative;
+}
+
+.header-news .logo-news::before,
+.header-news .logo-news::after
+{
+    position: absolute;
+    font-family: MuggleNews;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.7em;
+    background: url(img/gold-text.jpg)
+        no-repeat
+        center
+        center;
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.header-news .logo-news::before
+{
+    content: 'D';
+    top: 35%;
+    left: 35%;
+}
+
+.header-news .logo-news::after
+{
+    content: 'P';
+    bottom: 20%;
+    right: 35%;
+}
+
+.header-news .title-newspaper
+{
+    display: inline-block;
+    border-top: 5px solid #000;
+    border-bottom: 5px solid #000;
+    margin-top: 4%;
+    position: relative;
+}
+
+.header-news .title-newspaper::before,
+.header-news .title-newspaper::after
+{
+    content: 'spellbind conjure enchant divinate';
+    background: #fff;
+    font-family: 'BlackCastleMF';
+    font-style: normal;
+    font-weight: normal;
+    position: absolute;
+    right: -1px;
+    line-height: 1.5em;
+    font-size: 1.2em;
+    z-index: 1;
+    padding-left: 10px;
+}
+
+.header-news .title-newspaper::before
+{
+    top: -.75em;
+}
+
+.header-news .title-newspaper::after
+{
+    bottom: -.75em;
+    transform: scale(1,-1);
+}
+
+.header-news .title-newspaper h1
+{
+    font-family: MuggleNews;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 7.6em;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: -2%;
+}
+
+.header-news .title-newspaper h1 span
+{
+    background: url(img/gold-text.jpg)
+        no-repeat
+        center
+        center;
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    position: relative;
+}
+
+.header-news .title-newspaper h1 span::after
+{
+    content: 'P';
+    position: absolute;
+    text-shadow: 5px 0 10px rgba(0,0,0,.7);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.header-news .title-newspaper .subtitle
+{
+    font-family: 'Fontscafe';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.header-news .title-newspaper .subtitle::before,
+.header-news .title-newspaper .subtitle::after
+{
+    content: '\2605';
+    margin: 10px;
+    font-stretch: expanded;
+}
+
+.header-news .hr-title-top
+{
+    line-height: 1.5em;
+    position: relative;
+    outline: 0;
+    border: 0;
+    color: #000;
+    text-align: center;
+    height: 2em;
+    margin-top: -14px;
+    margin-bottom: 0;
+}
+
+.header-news .hr-title-top::after
+{
+    content: 'The';
+    position: relative;
+    display: inline-block;
+    color: #000;
+    padding: 0 .5em;
+    line-height: 2em;
+    font-family: 'LaurenScript';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2em;
+    background-color: #fff;
+    top: -10px;
+}
+
+.header-news .hr-title-top::before
+{
+    content: '';
+    background: #000;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+}
+
+.header-news .hr-title-bottom
+{
+    line-height: 1em;
+    outline: 0;
+    border: 0;
+    color: #000;
+    height: 1.5em;
+    margin-top: 0;
+    margin-bottom: -8px;
+    position: relative;
+}
+
+.header-news .hr-title-bottom::before
+{
+    content: '';
+    background: #000;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+}
+
+.main-news
+{
+    vertical-align: top;
+}
+
+.main-news .subheader
+{
+    margin: 1% 0;
+    min-height: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.main-news .subheader .announcement
+{
+    max-width: 37%;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    box-shadow: inset 0 0 0 5px #000, inset 0 0 0 6px #fff;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+}
+
+.main-news .subheader .announcement .reward
+{
+    font: normal
+        normal
+        4em
+        'Headth';
+    margin: 5px 2px;
+    text-shadow: 3px 3px #000, 5px 7px 2px rgba(255,255,255,.8);
+}
+
+.main-news .subheader .announcement .currency
+{
+    font: normal
+        normal
+        1.6em
+        'Headth';
+    text-transform: uppercase;
+    display: inline-block;
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: 1.2em;
+    left: 5em;
+}
+
+.main-news .subheader .announcement .mission
+{
+    font: normal
+        normal
+        2em
+        'HeadOh';
+    margin-left: 1.2em;
+    display: inline-block;
+    max-width: 50%;
+    text-align: center;
+}
+
+.column-daily
+{
+    max-width: 25%;
+    color: #000;
+    display: inline-block;
+    padding: 10px 0;
+}
+
+.column-daily .title
+{
+    font: normal
+        normal
+        3em
+        'Headth';
+    text-transform: capitalize;
+    text-align: justify;
+    margin: 0;
+    line-height: .4em;
+}
+
+.column-daily:nth-child(4) .title
+{
+    font: normal
+        normal
+        2em
+        'Fontscafe';
+    line-height: .7em;
+}
+
+.column-daily .news
+{
+    font: normal
+        normal
+        1em
+        'BlackCastleMF';
+    text-align: justify;
+    line-height: .6em;
+    margin: 0;
+}
+
+.column-daily .title::after,
+.column-daily .news::after
+{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    line-height: 0;
+}
+
+.main-news .content-block
+{
+    padding: 2%;
+    border: 5px solid #000;
+    /*position: relative;*/
+}
+
+.main-news .first-block
+{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main-news .column-news
+{
+    font: normal
+        normal
+        .7em
+        'GothicLove';
+    text-align: justify;
+}
+
+.main-news .column-news.exlusive
+{
+    flex-basis: 200px;
+}
+
+.main-news .column-news.exlusive .attention
+{
+    width: 95%;
+    background: #000;
+    font: normal
+        normal
+        2.5em
+        'Headth';
+    color: #fff;
+    text-shadow: 1px 1px #000, 2px 2px 2px rgba(255,255,255,.8);
+    padding: 0 5px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+
+.main-news .column-news.exlusive .article
+{
+    hyphens: auto;
+}
+
+.main-news .column-news.exlusive .article::first-letter
+{
+    font-family: 'Royal';
+    font-size: 9em;
+    float: left;
+}
+
+.main-news .column-news.exlusive .attention span
+{
+    transform: rotate(90deg)
+        scale(-1,1);
+    display: inline-block;
+}
+
+.main-news .first-news
+{
+    flex-basis: 79%;
+    position: relative;
+}
+
+.main-news .first-news .title-news,
+.main-news .first-news .subtitle-news
+{
+    font-family: 'Headoh';
+    font-style: normal;
+    font-weight: normal;
+    text-align: justify;
+    width: 100%;
+    margin: 0;
+    line-height: 0;
+}
+
+.main-news .first-news .title-news
+{
+    font-size: 12.5em;
+    margin-top: 11%;
+}
+
+.main-news .first-news .subtitle-news
+{
+    font-size: 9em;
+    margin-top: 11%;
+    margin-bottom: 9%;
+}
+
+.main-news .first-news .title-news::after
+{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    line-height: 0;
+}
+
+.main-news .first-news .img-article
+{
+    display: inline-block;
+    max-width: 600px;
+    position: absolute;
+}
+
+.main-news .first-news .left-article
+{
+    display: inline-block;
+    max-width: 200px;
+    margin-right: 0;
+    margin-left: auto;
+    position: absolute;
+    right: 2%;
+}
+
+.main-news .first-news .left-article::first-letter
+{
+    font-family: 'Flower';
+    font-size: 10em;
+    line-height: .7em;
+    float: left;
+}
+
+.main-news .first-news .center-article
+{
+    display: inline-block;
+    position: absolute;
+    top: 52.5em;
+    width: 580px;
+}
+
+.main-news .first-news .center-article .title
+{
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    column-span: all;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    padding: 2% 0;
+    font-size: 3em;
+    font-family: 'BlackCastleMF';
+}
+
+.main-news .first-news .center-article .article
+{
+    column-count: 3;
+    column-rule: 2px solid #000;
+    column-gap: 3%;
+}
+
+.main-news .first-news .center-article .article::first-letter
+{
+    font-family: 'Fontscafe';
+    font-size: 5em;
+    float: left;
+    line-height: .8em;
+}
+
+.main-news .footer-newspaper
+{
+    position: relative;
+}
+
+.main-news .footer-newspaper hr
+{
+    border: none;
+    width: 100%;
+    height: 5px;
+    background: #000;
+    position: absolute;
+    z-index: 0;
+    top: 35%;
+}
+
+.main-news .footer-newspaper span
+{
+    background: #fff;
+    z-index: 2;
+    position: relative;
+    margin: 0 3.2%;
+    font-size: 2em;
+    padding: 0 5px;
+}
+
+.main-news .footer-newspaper span:nth-child(2)
+{
+    font-family: 'Headth';
+}
+
+.main-news .footer-newspaper span:nth-child(3)
+{
+    font-family: 'GothicLove';
+}
+
+.main-news .footer-newspaper span:nth-child(4)
+{
+    font-family: 'LinaScript';
+}
+
+.main-news .footer-newspaper span:nth-child(5)
+{
+    font-family: 'Royal';
+    text-transform: uppercase;
+}
