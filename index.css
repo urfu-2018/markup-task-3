@@ -168,12 +168,20 @@ body
     padding: 0;
 }
 
+html
+{
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
 body
 {
     color: #000;
     font-family: 'PT Serif', serif;
     font-size: 16px;
     line-height: 1.38;
+    -ms-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
 }
 
 /**
