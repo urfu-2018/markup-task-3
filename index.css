@@ -1,18 +1,19 @@
-body
+div
 {
-    background: url('http://www.anasfim.com/p/2018/03/blank-old-newspaper-background-templates-corner-with-blank-old-newspaper-background.jpg') repeat;
+    display: inline-block;
 }
 
 article
 {
     position: relative;
+    height: 1580px;
 }
 
 .main-header,
 figure
 {
     text-align: center;
-    font-family: 'Amatic SC', cursive;
+    font: 27px 'Amatic SC', cursive;
 }
 
 figure
@@ -73,7 +74,7 @@ section
 .info
 {
     position: absolute;
-    float: right;
+    margin: 60px 0 0 1080px;
     height: 1100px;
     writing-mode: vertical-rl;
     text-orientation: upright;
@@ -85,6 +86,11 @@ h2
     text-align: center;
     column-span: all;
     font-family: 'Pacifico', cursive;
+}
+
+hr
+{
+    column-span: all;
 }
 
 img
@@ -114,4 +120,77 @@ p
 a
 {
     color: #8a3802;
+}
+
+input[id='standart-theme']:checked ~ article
+{
+    background: url('http://www.anasfim.com/p/2018/03/blank-old-newspaper-background-templates-corner-with-blank-old-newspaper-background.jpg') repeat;
+}
+
+input[id='unusual-theme']:checked ~ article
+{
+    background: url('http://www.onlygfx.com/wp-content/uploads/2015/10/old-wrinkled-paper.jpg') repeat;
+}
+
+input[id='unusual-fonts']:checked ~ article section h2
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[id='unusual-fonts']:checked ~ article section p
+{
+    font-family: 'Oswald', sans-serif;
+}
+
+input[id='unusual-fonts']:checked ~ article section p::first-letter
+{
+    font: 25px 'Pacifico', cursive;
+    color: #5d2be6d0;
+}
+
+input[id='unusual-fonts']:checked ~ article .three-article
+{
+    position: absolute;
+    margin: 1050px 0 0;
+    width: 910px;
+    column-count: 2;
+}
+
+input[id='standart-size']:checked ~ article
+{
+    font-size: 16px;
+}
+
+input[id='unusual-size']:checked ~ article
+{
+    font-size: 20px;
+    height: 2350px;
+}
+
+input[id='unusual-size']:checked ~ article .first-picture
+{
+    position: absolute;
+    margin: -1280px 0 0 330px;
+    width: 600px;
+}
+
+input[id='unusual-size']:checked ~ article .two-article
+{
+    position: absolute;
+    margin: 750px 0 0 960px;
+    width: 390px;
+}
+
+input[id='unusual-size']:checked ~ article .two-picture
+{
+    margin: -1100px 0 0 -630px;
+    width: 600px;
+}
+
+input[id='unusual-size']:checked ~ article .three-article
+{
+    position: absolute;
+    margin: 1600px 0 0;
+    width: 910px;
+    column-count: 2;
 }
