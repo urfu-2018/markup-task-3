@@ -76,24 +76,24 @@ main::after
     clear: both;
 }
 
-section.column
+.column
 {
     width: 20%;
     float: left;
 }
 
-section.column .contents
+.column .contents
 {
     height: 100%;
     width: 100%;
 }
 
-section.wide
+.wide
 {
     width: 40%;
 }
 
-section.column:not(:last-child) .contents
+.column:not(:last-child) .contents
 {
     border-right: 1px solid black;
 }
@@ -150,12 +150,12 @@ article .image p
     text-align: center;
 }
 
-section.subcolumn
+.subcolumn
 {
     width: 50%;
 }
 
-section.subcolumn .contents
+.subcolumn .contents
 {
     border-right: 1px solid black;
 }
