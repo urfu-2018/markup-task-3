@@ -82,6 +82,11 @@ input[id='large']:checked ~ article section blockquote
     font-size: 20px;
 }
 
+input[name='font-size']:checked + label
+{
+    background-color: rgb(194, 179, 158);
+}
+
 /* Изменение шрифта */
 
 input[id='arial']:checked ~ article section p,
@@ -94,6 +99,11 @@ input[id='deutsch-gothic']:checked ~ article section p,
 input[id='deutsch-gothic']:checked ~ article section blockquote
 {
     font-family: DeutschGothic, serif;
+}
+
+input[name='font']:checked + label
+{
+    background-color: rgb(155, 143, 127);
 }
 
 /* Изменение темы */
@@ -117,4 +127,9 @@ input[id='dark']:checked ~ article
 {
     background: url('old-paper-texture-night.jpg');
     background-repeat: repeat;
+}
+
+input[name='theme']:checked + label
+{
+    background-color: rgb(116, 107, 95);
 }
