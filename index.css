@@ -1,0 +1,127 @@
+/* Please do not use this import in production.
+You could download this font from here https://fontstorage.com/font/stalinist */
+@import 'http://fonts.fontstorage.com/import/stalinist.css';
+/*
+	Stalinist One, 400
+*/
+@import 'http://fonts.fontstorage.com/import/codenewroman.css';
+
+/*
+	Code New Roman, 400, 400 italic, 700
+*/
+
+@import 'http://fonts.fontstorage.com/import/ardeco.css';
+/*
+	Ardeco, 400
+*/
+
+body
+{
+    background: beige;
+}
+
+.header
+{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+/*todo:начинается с одной буквы*/
+
+.magic2::first-letter
+{
+    font-size: 3em;
+}
+
+.magic1
+{
+    left: 130px;
+    top: 20px;
+}
+
+h1
+{
+    position: absolute;
+    font-family: 'Stalinist One';
+    font-size: 35px;
+}
+
+h4
+{
+    font-family: 'Stalinist One';
+    position: absolute;
+    font-size: 10px;
+    bottom: 20px;
+}
+
+.info
+{
+    float: right;
+    width: 150px;
+    height: 150px;
+    border: double #630;
+    font-family: 'Code New Roman';
+    margin: 16px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.info::first-line
+{
+    font-size: .9em;
+}
+
+.info ul
+{
+    list-style-type: none;
+    font-family: 'Code New Roman';
+    padding: 0;
+
+}
+
+.info.i1,
+.info.i2
+{
+    position: absolute;
+}
+
+hr
+{
+    color: #630;
+    align-content: center;
+    border: 0;
+    border-bottom: 1px dashed #ccc;
+    background: #999;
+}
+
+.content
+{
+    column-count: 5;
+    column-rule: 2px solid #630;
+    font-family: 'Ardeco';
+}
+
+h2
+{
+    text-align: center;
+}
+
+article p
+{
+    text-align: justify;
+    hyphens: manual;
+    text-indent: 5%;
+}
+
+img
+{
+    width: 100%;
+}
+
+.blacklist
+{
+    border: 5px solid black;
+    padding: 5px;
+}
