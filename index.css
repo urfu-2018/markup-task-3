@@ -1,0 +1,216 @@
+@font-face
+{
+    font-family: 'Marck Script';
+    src: url(MarckScript-Regular.ttf);
+}
+
+body
+{
+    background-color: #000;
+}
+
+main
+{
+    margin-left: 240px;
+    width: 70%;
+    background-color: #fff;
+}
+
+header
+{
+    background: #69f;
+    color: #fff;
+    text-align: center;
+}
+
+.name
+{
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    padding: 30px;
+}
+
+.name-newspaper
+{
+    padding: 10px;
+    font: 70px 'PT Sans', sans-serif;
+}
+
+.date
+{
+    font: 14px 'Cherry Swash', cursive;
+    width: 1ch;
+    text-align: center;
+    word-wrap: break-word;
+    float: left;
+    padding: 20px;
+    margin-left: -10px;
+}
+
+.content-caption
+{
+    text-align: center;
+    font: 32px 'Marck Script';
+}
+
+.content
+{
+    font: 12px 'Indie Flower', cursive;
+    float: left;
+    padding: 20px;
+    margin-left: 10px;
+    width: 25%;
+    border-right: 1px solid #000;
+}
+
+.news
+{
+    column-count: 2;
+    column-gap: 30px;
+    padding: 20px;
+    text-align: justify;
+}
+
+.news-day
+{
+    column-span: all;
+    text-align: center;
+    color: #f00;
+    font: 36px 'Anton', sans-serif;
+}
+
+figure
+{
+    column-span: all;
+    margin-left: 10px;
+    text-align: center;
+}
+
+img
+{
+    width: 100%;
+}
+
+.caption
+{
+    text-align: center;
+    font: 20px 'Srisakdi';
+    font-weight: 900;
+}
+
+.news p:nth-of-type(1)
+{
+    font: oblique 14px 'Charmonman', cursive;
+    text-align: right;
+}
+
+.paragraph
+{
+    hyphens: auto;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.paragraph:nth-of-type(2)::first-letter
+{
+    font: italic 50px 'Chakra Petch';
+}
+
+q
+{
+    font-family: 'Dancing Script', cursive;
+}
+
+input
+{
+    display: none;
+}
+
+.appearance
+{
+    position: fixed;
+    float: left;
+    margin-left: 30px;
+    margin-top: 50px;
+    width: 140px;
+    color: #fff;
+}
+
+label
+{
+    line-height: 1.5;
+}
+
+.color-dark:checked ~ div .color-dark,
+.color-light:checked ~ div .color-light,
+.size-small:checked ~ div .size-small,
+.size-regular:checked ~ div .size-regular,
+.size-large:checked ~ div .size-large,
+.font-regular:checked ~ div .font-regular,
+.font-arial:checked ~ div .font-arial,
+.font-tnr:checked ~ div .font-tnr
+{
+    background-color: #69f;
+}
+
+.size-small:checked ~ main .news,
+.size-small:checked ~ main .news p:nth-of-type(1),
+.size-small:checked ~ main .paragraph:nth-of-type(2)::first-letter
+{
+    font-size: .8em;
+}
+
+.size-large:checked ~ main .news
+{
+    font-size: 1.4em;
+}
+
+.font-arial:checked ~ main,
+.font-arial:checked ~ main .name-newspaper,
+.font-arial:checked ~ main .date,
+.font-arial:checked ~ main .content-caption,
+.font-arial:checked ~ main .content,
+.font-arial:checked ~ main .news-day,
+.font-arial:checked ~ main .caption,
+.font-arial:checked ~ main .news p:nth-of-type(1),
+.font-arial:checked ~ main .paragraph,
+.font-arial:checked ~ main .paragraph:nth-of-type(2)::first-letter
+{
+    font-family: Arial, sans-serif;
+}
+
+.font-tnr:checked ~ main,
+.font-tnr:checked ~ main .name-newspaper,
+.font-tnr:checked ~ main .date,
+.font-tnr:checked ~ main .content-caption,
+.font-tnr:checked ~ main .content,
+.font-tnr:checked ~ main .news-day,
+.font-tnr:checked ~ main .caption,
+.font-tnr:checked ~ main .news p:nth-of-type(1),
+.font-tnr:checked ~ main .paragraph,
+.font-tnr:checked ~ main .paragraph:nth-of-type(2)::first-letter
+{
+    font-family: 'Times New Roman', serif;
+}
+
+.color-dark:checked ~ div .color-dark,
+.color-dark:checked ~ .size-small:checked ~ div .size-small,
+.color-dark:checked ~ .size-small:checked ~ div .size-small,
+.color-dark:checked ~ .size-regular:checked ~ div .size-regular,
+.color-dark:checked ~ .size-large:checked ~ div .size-large,
+.color-dark:checked ~ .font-regular:checked ~ div .font-regular,
+.color-dark:checked ~ .font-arial:checked ~ div .font-arial,
+.color-dark:checked ~ .font-tnr:checked ~ div .font-tnr
+{
+    background-color: #fff;
+    color: #000;
+}
+
+.color-dark:checked ~ main,
+.color-dark:checked ~ main .news,
+.color-dark:checked ~ main .content,
+.color-dark:checked ~ main header
+{
+    background-color: #000;
+    border-right-color: #fff;
+    color: #fff;
+}
