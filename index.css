@@ -23,6 +23,7 @@ body
     text-align: center;
     border: 1px solid ;
     font: 12pt sans-serif;
+    font-size: 12px;
 }
 
 .paper-header
