@@ -1,0 +1,152 @@
+p
+{
+    font-family: 'Neucha', cursive;
+    font-size: 1.2em;
+    text-indent: 5%;
+    hyphens: auto;
+}
+
+.font-size:checked ~ .newspaper p
+{
+    font-size: 1.4em;
+}
+
+.font:checked ~ .newspaper p
+{
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.dark:checked ~ .newspaper
+{
+    color: rgb(189, 188, 125);
+    background-color: #333224;
+    border-color: rgb(36, 35, 13);
+}
+
+p:first-of-type::first-letter
+{
+    font-weight: 500;
+    font-size: 1.4em;
+}
+
+div
+{
+    float: left;
+}
+
+.setting
+{
+    width: 96%;
+    text-align: center;
+    margin: 2%;
+}
+
+.setting label
+{
+    border-style: solid;
+    border-width: initial;
+    padding: 1%;
+}
+
+.setting label:hover
+{
+    background: rgb(211, 206, 149);
+}
+
+.newspaper
+{
+    background: #faf9c6;
+    color: #333224;
+    padding: 1%;
+    border-style: solid;
+    border-width: initial;
+    border-color: rgb(228, 226, 139);
+}
+
+.header
+{
+    text-align: center;
+    width: 60%;
+    float: left;
+}
+
+header p
+{
+    text-indent: 0;
+}
+
+h1
+{
+    font-variant: small-caps;
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 4em;
+}
+
+h3
+{
+    font-variant: small-caps;
+    font-family: 'Ruslan Display', cursive;
+    font-size: 2em;
+    text-align: center;
+}
+
+header .block
+{
+    border-style: solid;
+    border-width: initial;
+    width: 19%;
+    float: left;
+    text-align: center;
+}
+
+header h3
+{
+    font-family: 'Gabriela', serif;
+    font-size: 1.3em;
+    letter-spacing: 3px;
+}
+
+.date
+{
+    text-transform: uppercase;
+    text-align: center;
+    border-style: double none;
+    border-width: medium;
+    float: left;
+    width: 100%;
+}
+
+.content .block
+{
+    width: 31%;
+    float: left;
+    column-count: 2;
+    padding: 1%;
+    column-rule: 1px solid;
+}
+
+.content img
+{
+    display: block;
+    width: 100%;
+    column-span: all;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    opacity: .9;
+    filter: sepia(60%);
+}
+
+.big-header
+{
+    column-span: all;
+    font-family: 'Kelly Slab', cursive;
+    border-style: double none;
+}
+
+.announcement
+{
+    border-style: solid;
+    border-width: initial;
+    padding: 2%;
+    margin: 2%;
+}
