@@ -1,0 +1,138 @@
+@font-face
+{
+    src: url('https://fonts.googleapis.com/css?family=Abril+Fatface|Amatic+SC|EB+Garamond|Patua+One|Srisakdi');
+}
+
+body
+{
+    width: 99%;
+}
+
+main
+{
+    column-count: 4;
+    column-rule: 1px solid #000;
+}
+
+.title
+{
+    text-align: center;
+}
+
+.title h1
+{
+    font-family: 'Abril Fatface', serif;
+    font-style: normal;
+}
+
+.title p
+{
+    font-family: 'Amatic SC', serif;
+    font-style: oblique;
+}
+
+article p
+{
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    margin: 2px;
+    padding: 2px;
+    /*font-size: 18px;*/
+}
+
+article p::first-letter
+{
+    color: #ffc0cb;
+    font-size: 25px;
+    font-family: 'Srisakdi', serif;
+    font-style: italic;
+}
+
+article h2
+{
+    font-family: 'Patua One', cursive;
+    font-style: normal;
+    border-top: 3px double #000;
+    border-bottom: 3px double #000;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.quote:before
+{
+    content: '«';
+}
+
+.quote:after
+{
+    content: '»';
+}
+
+.copyright
+{
+    padding-left: 450px;
+}
+
+.info
+{
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    column-count: 2;
+    margin-bottom: 10px;
+}
+
+.date
+{
+    padding-left: 5px;
+    text-align: left;
+}
+
+.rubric-name
+{
+    text-align: right;
+    padding: 15px 0 0 5px;
+}
+
+.introduction p
+{
+    text-align: center;
+}
+
+.introduction img[alt='David Bowie']
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 200px;
+    margin-left: 26%;
+}
+
+.Debut-album section
+{
+    margin: 10px;
+}
+
+.Debut-album img[alt='Album']
+{
+    width: 100%;
+    height: 100%;
+}
+
+.Debut-album section:last-child
+{
+    column-count: 2;
+}
+
+.King-of-glam-rock img[alt$='gif']
+{
+    margin-left: 40px;
+}
+
+.vertical
+{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    border: 1px solid #000;
+    text-align: center;
+    float: right;
+}
