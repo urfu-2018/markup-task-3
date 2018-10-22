@@ -1,0 +1,296 @@
+@font-face
+{
+    font-family: 'Fusion Sans Pro';
+    src: url('./fonts/PF\ Fusion\ Sans\ Pro\ Black.ttf');
+}
+
+input[id='theme']
+{
+    display: none;
+}
+
+input[id='theme'] + label,
+input[id='theme']:checked + label
+{
+    height: 40px;
+    width: 40px;
+    content: url('./images/magick_wand.png');
+    filter: brightness(0%);
+}
+
+input[id='theme']:checked ~ main article,
+input[id='theme']:checked ~ main header,
+input[id='theme']:checked ~ main aside
+{
+    background-color: #000;
+    color: #fff;
+}
+
+input[id='theme']:checked ~ main header img,
+input[id='theme']:checked ~ main div.horoscope img
+{
+    filter: invert(100%);
+}
+
+input[id='theme']:checked ~ main header,
+input[id='theme']:checked ~ main header h1
+{
+    border-color: #fff;
+}
+
+input[id='theme']:checked ~ main aside div.edition
+{
+    background-color: #fff;
+    color: #000;
+}
+
+input[id='size']
+{
+    display: none;
+}
+
+input[id='size'] + label,
+input[id='size']:checked + label
+{
+    padding-right: 20px;
+    height: 40px;
+    width: 40px;
+    content: url('./images/magick_zoom.png');
+    filter: brightness(0%);
+}
+
+input[id='size']:checked ~ main article
+{
+    font-size: .8em;
+}
+
+input[id='size']:checked ~ main article h2
+{
+    font-size: 100px;
+}
+
+input[id='font']
+{
+    display: none;
+}
+
+input[id='font'] + label,
+input[id='font']:checked + label
+{
+    padding-right: 20px;
+    height: 40px;
+    width: 40px;
+    content: url('./images/magick_letter.png');
+    filter: brightness(0%);
+}
+
+/* input[id='font']:checked ~ main article,
+input[id='font']:checked ~ main article h2
+{
+
+} */
+
+header
+{
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+}
+
+header img
+{
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 40px;
+    float: left;
+    height: 100px;
+    width: 160px;
+}
+
+h1
+{
+    margin: 2px;
+    padding: 0;
+    text-align: justify;
+    letter-spacing: 3px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    font: normal small-caps 80px Fusion Sans Pro;
+}
+
+h1 span:first-of-type
+{
+    color: #ffca00;
+}
+
+h1 span:last-of-type
+{
+    display: block;
+    margin: auto;
+    text-align: end;
+    font: normal small-caps 24px sans;
+}
+
+h1 span:last-of-type::before
+{
+    content: '🟎';
+}
+
+h1 span:last-of-type::after
+{
+    content: '🟎';
+}
+
+aside
+{
+    padding: 10px;
+}
+
+aside div
+{
+    vertical-align: top;
+    display: inline-block;
+    margin: 2px;
+    padding: 3px;
+    height: 150px;
+}
+
+aside div.edition
+{
+    padding-top: 20px;
+    margin-right: 40px;
+    color: #fff;
+    background-color: #000;
+    font: 100px/60px Fusion Sans Pro;
+    font-weight: 800;
+    text-align: center;
+    width: 300px;
+}
+
+aside div.edition span
+{
+    font-size: 50px;
+}
+
+aside div.weather
+{
+    text-align: left;
+    margin-right: 40px;
+    font: normal 30px 'Gill Sans', sans-serif;
+}
+
+aside div.weather ul
+{
+    margin-left: 0;
+    padding-left: 0;
+    font-size: 20px;
+}
+
+aside div.weather ul li
+{
+    text-align: left;
+    list-style-type: none;
+}
+
+aside div.horoscope
+{
+    text-align: center;
+}
+
+aside div.horoscope p
+{
+    margin: auto;
+    font: normal 30px 'Gill Sans', sans-serif;
+}
+
+aside div.horoscope div p
+{
+    margin: auto;
+    display: block;
+    padding-top: 20px;
+    font: normal 20px 'Gill Sans', sans-serif;
+}
+
+aside div.horoscope img
+{
+    display: inline-block;
+    padding: 20px;
+    padding-bottom: 0;
+    height: 50px;
+    width: 50px;
+}
+
+h2
+{
+    text-align: center;
+    margin-top: -40px;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    font: normal small-caps 100px/60px Fusion Sans Pro;
+}
+
+h2 span
+{
+    text-align: justify;
+    font: normal small-caps 180px Fusion Sans Pro;
+}
+
+figure
+{
+    margin: auto;
+    column-span: all;
+}
+
+img
+{
+    filter: grayscale(100%);
+}
+
+img[alt='Дамблдор']
+{
+    height: 300px;
+    width: 600px;
+}
+
+img[alt='Хагрид']
+{
+    height: 180px;
+    width: 300px;
+}
+
+body
+{
+    margin: auto;
+    height: 100%;
+    width: 100%;
+}
+
+article
+{
+    margin: 2px;
+    border: 3px solid #000;
+}
+
+section
+{
+    vertical-align: top;
+    display: inline-block;
+    padding: 20px;
+    height: 700px;
+    width: 300px;
+}
+
+section.central
+{
+    column-count: 2;
+    width: 600px;
+}
+
+section.left::first-letter,
+section.right::first-letter
+{
+    float: left;
+    margin-top: 5px;
+    line-height: 60px;
+    font-size: 60px;
+    padding: 0;
+}
