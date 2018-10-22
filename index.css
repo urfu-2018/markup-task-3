@@ -1,0 +1,145 @@
+.page
+{
+    font-family: 'Slabo 27px', serif;
+    margin: 0 auto;
+    padding: 3%;
+    width: 75%;
+}
+
+h1
+{
+    text-align: center;
+    font-size: 48px;
+}
+
+h1:first-of-type
+{
+    font-family: 'IM Fell English SC', serif;
+    letter-spacing: 15px;
+    margin: 25px 0;
+}
+
+p
+{
+    margin: 0;
+}
+
+main div
+{
+    padding: 10px;
+    hyphens: manual;
+}
+
+.vertical-text
+{
+    padding: 10px;
+    margin: 10px;
+    float: left;
+    width: .5em;
+    word-wrap: break-word;
+    border: 1px #999 solid;
+}
+
+main
+{
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+    column-rule: 2px solid #555;
+    text-align: justify;
+}
+
+.footnote
+{
+    padding: 10px;
+    margin: 10px;
+    -webkit-column-span: all;
+    column-span: all;
+    font-size: 1.15em;
+    font-weight: bold;
+    letter-spacing: .8em;
+    text-align: center;
+    border-top: 1px #555 solid;
+    border-bottom: 1px #555 solid;
+}
+
+q
+{
+    margin: 10px;
+    font-family: 'Coustard', serif;
+    display: block;
+    font-size: .85em;
+}
+
+.bracket
+{
+    margin: 5px;
+    padding: 5px;
+    border: 1px #2e2e2e solid;
+    font-size: .74em;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.bracket h3
+{
+    border-bottom: 1px #2e2e2e solid;
+    font-size: 15px;
+}
+
+.heading
+{
+    border-top: 2px #555 solid;
+    border-bottom: 2px #555 solid;
+    margin: 25px;
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+main article:first-of-type:first-letter
+{
+    margin: -10px 0;
+    float: left;
+    font-size: 4em;
+}
+
+img
+{
+    width: 100%;
+}
+
+input[name='font_size'][value='low']:checked ~ .page
+{
+    font-size: .75em;
+}
+
+input[name='font_size'][value='normal']:checked ~ .page
+{
+    font-size: 1em;
+}
+
+input[name='font_size'][value='hard']:checked ~ .page
+{
+    font-size: 1.25em;
+}
+
+input[name='font_type'][value='serif']:checked ~ .page
+{
+    font-family: serif;
+}
+
+input[name='font_type'][value='sans-serif']:checked ~ .page
+{
+    font-family: sans-serif;
+}
+
+input[name='font_type'][value='monospace']:checked ~ .page
+{
+    font-family: monospace;
+}
+
+input[id='night_mode']:checked ~ .page
+{
+    background-color: #2e2e2e;
+    color: #cbca0e;
+}
