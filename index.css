@@ -1,0 +1,255 @@
+@import url(https://fonts.googleapis.com/css?family=Jura:300|Russo+One|Spectral+SC&subset=cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Seymour+One);
+@import url(https://fonts.googleapis.com/css?family=Ruslan+Display&subset=cyrillic);
+
+:root
+{
+    font: 18px 'Times New Roman', Times, serif;
+}
+
+p
+{
+    color: inherit;
+}
+
+.dark-theme-radio:checked ~ :not(label)
+{
+    background: #36393d;
+    color: lightgray;
+}
+
+.sans-serif-radio:checked ~ :not(label)
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.font-big-radio:checked ~ :not(label)
+{
+    font-size: 24px;
+}
+
+/*----------------Header---------------------*/
+
+h1
+{
+    text-align: center;
+    font-family: 'Spectral SC', serif;
+    font-size: 3em;
+    text-shadow: 2px 2px 2px grey;
+}
+
+body > header
+{
+    padding-bottom: 10px;
+    border-top: 1px solid;
+    border-bottom: 4px double;
+}
+
+.header-info
+{
+    padding-top: 10px;
+    border-top: 1px solid;
+    column-count: 3;
+}
+
+.slogan
+{
+    text-align: center;
+}
+
+.issue-number
+{
+    text-align: start;
+}
+
+.date
+{
+    text-align: right;
+}
+
+.header-info p
+{
+    margin: 0;
+}
+
+/*-----------------Main----------------------*/
+
+.double-col
+{
+    column-count: 2;
+    column-rule: 4px double;
+    border-bottom: 4px double;
+}
+
+article header
+{
+    margin: 10px;
+    text-align: center;
+}
+
+h3
+{
+    color: gray;
+}
+
+.article-content
+{
+    column-count: 6;
+    column-rule: 1px solid;
+    text-align: justify;
+}
+
+.article-content p
+{
+    text-indent: 1.25em;
+    line-height: 1.5;
+}
+
+.article-content p[lang]
+{
+    hyphens: auto;
+}
+
+.article-content p:first-of-type
+{
+    margin-top: 0;
+}
+
+.article-content p:first-of-type::first-letter
+{
+    margin: 3px;
+    font-style: bold;
+    font-size: 2em;
+    color: blueviolet;
+}
+
+.double-col .article-content
+{
+    column-count: 3;
+}
+
+.upright-text
+{
+    float: left;
+    margin-right: 5%;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    border: 1px dashed black;
+    font-size: 3em;
+    font-family: 'Russo One', sans-serif;
+    color: blueviolet;
+}
+
+.article-fish header
+{
+    border: 1px solid;
+    box-shadow: 4px 4px gray;
+}
+
+.article-fish h2
+{
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: .6em;
+}
+
+.article-fish h3
+{
+    font-family: 'Jura', sans-serif;
+}
+
+.article-grandpa header
+{
+    margin-left: 0;
+    margin-right: 0;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+
+.article-grandpa h2
+{
+    font-family: 'Seymour One', sans-serif;
+}
+
+blockquote
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 1.5em;
+    quotes: '&laquo;', '&raquo;';
+    color: gray;
+}
+
+blockquote p::before
+{
+    content: '\00ab';
+    color: blueviolet;
+}
+
+blockquote p::after
+{
+    content: '\00bb';
+    color: blueviolet;
+}
+
+.quote-caption
+{
+    text-align: right;
+}
+
+.quote-caption cite
+{
+    font-weight: normal;
+    text-decoration: underline;
+    color: black;
+}
+
+.article-css h2
+{
+    font: 2em 'Ruslan Display', cursive;
+}
+
+.article-css h3
+{
+    font-style: italic;
+}
+
+figure
+{
+    column-span: all;
+    padding: 10px;
+    border: 2px dotted black;
+}
+
+figcaption
+{
+    text-align: center;
+    font-style: italic;
+}
+
+figure img
+{
+    width: 100%;
+    object-fit: fill;
+}
+
+.article-fish figure
+{
+    display: inline-block;
+}
+
+/*-------------------Footer------------------*/
+
+footer
+{
+    padding: 20px;
+    column-count: 2;
+    border-top: 4px double;
+    font-style: italic;
+}
+
+.name
+{
+    display: block;
+    text-align: right;
+}

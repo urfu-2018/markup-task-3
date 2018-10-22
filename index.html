@@ -2,8 +2,323 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
     <title>Задача «DeLorean DMC-12»</title>
 </head>
 <body>
+    <label for="fontSmall">Мелкий шрифт</label>
+    <input id="fontSmall" type="radio" name="fontSize" checked>
+    <label for="fontBig">Крупный шрифт</label>
+    <input id="fontBig" class="font-big-radio" type="radio" name="fontSize">
+    <br>
+    Шрифт:
+    <input id="fontSans" type="radio" name="font" checked>
+    <label for="fontSans">Sans</label>
+    <input id="fontSansSerif" class="sans-serif-radio" type="radio" name="font">
+    <label for="fontSansSerif">Sans-Serif</label>
+    <br>
+    Тема:
+    <input id="lightTheme" type="radio" name="theme" checked>
+    <label for="lightTheme">Light</label>
+    <input id="darkTheme" class="dark-theme-radio" type="radio" name="theme">
+    <label for="darkTheme">Dark</label>
+    <header>
+        <h1>Рыбные вести</h1>
+        <div class="header-info">
+            <p class="issue-number">Выпуск №1</p>
+            <p class="slogan">Здесь вы не найдёте смысла</p>
+            <p class="date"><time datetime="2018-10-21">21 октября 2018</time></p>
+        </div>
+    </header>
+    <main>
+        <div class="double-col">
+            <article class="article-fish">
+                <header>
+                    <h2>
+                        На курсе по фронтенду объявлена неделя рыбных текстов
+                    </h2>
+                    <h3>
+                        Ну, я не буду оригинален
+                    </h3>
+                </header>
+                <section class="article-content">
+                    <p>
+                        Да&shy;ле&shy;ко-да&shy;ле&shy;ко за
+                        сло&shy;вес&shy;ны&shy;ми го&shy;ра&shy;ми в стра&shy;не
+                        глас&shy;ных и со&shy;глас&shy;ных жи&shy;вут
+                        рыб&shy;ные тек&shy;сты. Вда&shy;ли от всех жи&shy;вут
+                        они в бук&shy;вен&shy;ных до&shy;мах на бе&shy;ре&shy;гу
+                        Се&shy;ман&shy;ти&shy;ка боль&shy;шо&shy;го
+                        язы&shy;ко&shy;во&shy;го оке&shy;а&shy;на.
+                        Ма&shy;лень&shy;кий ру&shy;че&shy;ек Даль жур&shy;чит по
+                        всей стра&shy;не и обес&shy;пе&shy;чи&shy;ва&shy;ет ее
+                        все&shy;ми не&shy;об&shy;хо&shy;ди&shy;мы&shy;ми
+                        пра&shy;ви&shy;ла&shy;ми. Эта
+                        па&shy;ра&shy;диг&shy;ма&shy;ти&shy;че&shy;ская
+                        стра&shy;на, в ко&shy;то&shy;рой жа&shy;рен&shy;ные
+                        чле&shy;ны пред&shy;ло&shy;же&shy;ния
+                        за&shy;ле&shy;та&shy;ют пря&shy;мо в рот.
+                    </p>
+                    <p>
+                        Да&shy;же все&shy;мо&shy;гу&shy;щая
+                        пунк&shy;ту&shy;а&shy;ция не име&shy;ет вла&shy;сти над
+                        рыб&shy;ны&shy;ми тек&shy;ста&shy;ми,
+                        ве&shy;ду&shy;щи&shy;ми
+                        без&shy;ор&shy;фо&shy;гра&shy;фич&shy;ный об&shy;раз
+                        жиз&shy;ни. Од&shy;на&shy;жды од&shy;на
+                        ма&shy;лень&shy;кая строч&shy;ка рыб&shy;но&shy;го
+                        тек&shy;ста по име&shy;ни Lorem ipsum ре&shy;ши&shy;ла
+                        вый&shy;ти в боль&shy;шой мир грам&shy;ма&shy;ти&shy;ки.
+                        Ве&shy;ли&shy;кий Окс&shy;мокс
+                        пре&shy;ду&shy;пре&shy;ждал ее о злых за&shy;пя&shy;тых,
+                        ди&shy;ких зна&shy;ках во&shy;про&shy;са и
+                        ко&shy;вар&shy;ных точ&shy;ках с за&shy;пя&shy;той, но
+                        текст не дал сбить се&shy;бя с тол&shy;ку. Он
+                        со&shy;брал семь сво&shy;их за&shy;глав&shy;ных букв,
+                        под&shy;по&shy;я&shy;сал ини&shy;ци&shy;ал за по&shy;яс
+                        и пу&shy;стил&shy;ся в до&shy;ро&shy;гу.
+                    </p>
+                    <figure>
+                        <img src="http://simple-fauna.ru/wp-content/uploads/2016/04/ryba-figu-2.jpg"
+                            title="Рыба фугу" alt="Рыба Фугу">
+                        <figcaption>
+                            Не еш, подумой
+                        </figcaption>
+                    </figure>
+                    <p>
+                        Взо&shy;брав&shy;шись на первую вер&shy;ши&shy;ну
+                        кур&shy;сив&shy;ных гор, бро&shy;сил он
+                        по&shy;след&shy;ний взгляд на&shy;зад, на
+                        си&shy;лу&shy;эт сво&shy;е&shy;го род&shy;но&shy;го
+                        го&shy;ро&shy;да Бук&shy;во&shy;град, на
+                        за&shy;го&shy;ло&shy;вок де&shy;рев&shy;ни
+                        Ал&shy;фа&shy;вит и на под&shy;за&shy;го&shy;ло&shy;вок
+                        сво&shy;е&shy;го пе&shy;ре&shy;ул&shy;ка Строч&shy;ка.
+                        Груст&shy;ный ри&shy;то&shy;ри&shy;че&shy;ский
+                        во&shy;прос ска&shy;тил&shy;ся по его ще&shy;ке и он
+                        про&shy;дол&shy;жил свой путь. По до&shy;ро&shy;ге
+                        встре&shy;тил текст ру&shy;ко&shy;пись. Она
+                        пре&shy;ду&shy;пре&shy;ди&shy;ла его: «В мо&shy;ей
+                        стра&shy;не все
+                        пе&shy;ре&shy;пи&shy;сы&shy;ва&shy;ет&shy;ся по
+                        не&shy;сколь&shy;ко раз. Един&shy;ствен&shy;ное, что от
+                        ме&shy;ня оста&shy;лось, это при&shy;став&shy;ка «и».
+                    </p>
+                    <div class="upright-text">
+                        FISH
+                    </div>
+                    <p>
+                        Воз&shy;вра&shy;щай&shy;ся ты луч&shy;ше в свою
+                        без&shy;опас&shy;ную стра&shy;ну». Не
+                        по&shy;слу&shy;шав&shy;шись ру&shy;ко&shy;пи&shy;си, наш
+                        текст про&shy;дол&shy;жил свой путь. Вско&shy;ре ему
+                        по&shy;встре&shy;чал&shy;ся ко&shy;вар&shy;ный
+                        со&shy;ста&shy;ви&shy;тель ре&shy;клам&shy;ных
+                        тек&shy;стов, на&shy;по&shy;ив&shy;ший его язы&shy;ком и
+                        ре&shy;чью и за&shy;ма&shy;нив&shy;ший в свое
+                        аген&shy;ство, ко&shy;то&shy;рое
+                        ис&shy;поль&shy;зо&shy;ва&shy;ло его сно&shy;ва и
+                        сно&shy;ва в сво&shy;их про&shy;ек&shy;тах. И ес&shy;ли
+                        его не пе&shy;ре&shy;пи&shy;са&shy;ли, то жи&shy;вет он
+                        там до сих пор. Да&shy;ле&shy;ко-да&shy;ле&shy;ко за
+                        сло&shy;вес&shy;ны&shy;ми го&shy;ра&shy;ми в стра&shy;не
+                        глас&shy;ных и со&shy;глас&shy;ных жи&shy;вут
+                        рыб&shy;ные тек&shy;сты. Вда&shy;ли от всех жи&shy;вут
+                        они в бук&shy;вен&shy;ных до&shy;мах на бе&shy;ре&shy;гу
+                        Се&shy;ман&shy;ти&shy;ка боль&shy;шо&shy;го
+                        язы&shy;ко&shy;во&shy;го оке&shy;а&shy;на.
+                        Ма&shy;лень&shy;кий ру&shy;че&shy;ек Даль жур&shy;чит по
+                        всей стра&shy;не и обес&shy;пе&shy;чи&shy;ва&shy;ет ее
+                        все&shy;ми не&shy;об&shy;хо&shy;ди&shy;мы&shy;ми
+                        пра&shy;ви&shy;ла&shy;ми. Эта
+                        па&shy;ра&shy;диг&shy;ма&shy;ти&shy;че&shy;ская
+                        стра&shy;на, в ко&shy;то&shy;рой жа&shy;рен&shy;ные
+                        чле&shy;ны пред&shy;ло&shy;же&shy;ния
+                        за&shy;ле&shy;та&shy;ют пря&shy;мо в рот. Да&shy;же
+                        все&shy;мо&shy;гу&shy;щая пунк&shy;ту&shy;а&shy;ция не
+                        име&shy;ет вла&shy;сти над рыб&shy;ны&shy;ми
+                        тек&shy;ста&shy;ми, ве&shy;ду&shy;щи&shy;ми
+                        без&shy;ор&shy;фо&shy;гра&shy;фич&shy;ный об&shy;раз
+                        жиз&shy;ни.
+                    </p>
+                </section>
+            </article>
+            <article class="article-grandpa">
+                <header>
+                    <h2>
+                        Как говорил мой дед...
+                    </h2>
+                    <blockquote>
+                        <p>Бог умер: теперь мы хотим, чтобы жил сверхчеловек.</p>
+                    </blockquote>
+                    <div class="quote-caption">
+                        <cite>Этим дедом был Фридрих Ницше</cite>
+                    </div>
+                </header>
+                <section class="article-content">
+                    <p>
+                        Да&shy;ле&shy;ко-да&shy;ле&shy;ко за
+                        сло&shy;вес&shy;ны&shy;ми го&shy;ра&shy;ми в стра&shy;не
+                        глас&shy;ных и со&shy;глас&shy;ных жи&shy;вут
+                        рыб&shy;ные тек&shy;сты. Вда&shy;ли от всех жи&shy;вут
+                        они в бук&shy;вен&shy;ных до&shy;мах на бе&shy;ре&shy;гу
+                        Се&shy;ман&shy;ти&shy;ка боль&shy;шо&shy;го
+                        язы&shy;ко&shy;во&shy;го оке&shy;а&shy;на.
+                        Ма&shy;лень&shy;кий ру&shy;че&shy;ек Даль жур&shy;чит по
+                        всей стра&shy;не и обес&shy;пе&shy;чи&shy;ва&shy;ет ее
+                        все&shy;ми не&shy;об&shy;хо&shy;ди&shy;мы&shy;ми
+                        пра&shy;ви&shy;ла&shy;ми. Эта
+                        па&shy;ра&shy;диг&shy;ма&shy;ти&shy;че&shy;ская
+                        стра&shy;на, в ко&shy;то&shy;рой жа&shy;рен&shy;ные
+                        чле&shy;ны пред&shy;ло&shy;же&shy;ния
+                        за&shy;ле&shy;та&shy;ют пря&shy;мо в рот.
+                    </p>
+                    <p>
+                        Да&shy;же все&shy;мо&shy;гу&shy;щая
+                        пунк&shy;ту&shy;а&shy;ция не име&shy;ет вла&shy;сти над
+                        рыб&shy;ны&shy;ми тек&shy;ста&shy;ми,
+                        ве&shy;ду&shy;щи&shy;ми
+                        без&shy;ор&shy;фо&shy;гра&shy;фич&shy;ный об&shy;раз
+                        жиз&shy;ни. Од&shy;на&shy;жды од&shy;на
+                        ма&shy;лень&shy;кая строч&shy;ка рыб&shy;но&shy;го
+                        тек&shy;ста по име&shy;ни Lorem ipsum ре&shy;ши&shy;ла
+                        вый&shy;ти в боль&shy;шой мир грам&shy;ма&shy;ти&shy;ки.
+                        Ве&shy;ли&shy;кий Окс&shy;мокс
+                        пре&shy;ду&shy;пре&shy;ждал ее о злых за&shy;пя&shy;тых,
+                        ди&shy;ких зна&shy;ках во&shy;про&shy;са и
+                        ко&shy;вар&shy;ных точ&shy;ках с за&shy;пя&shy;той, но
+                        текст не дал сбить се&shy;бя с тол&shy;ку. Он
+                        со&shy;брал семь сво&shy;их за&shy;глав&shy;ных букв,
+                        под&shy;по&shy;я&shy;сал ини&shy;ци&shy;ал за по&shy;яс
+                        и пу&shy;стил&shy;ся в до&shy;ро&shy;гу.
+                    </p>
+                    <figure>
+                        <img src="https://bit.ly/2wGFrhc"
+                            title="Мой дед" alt="Мой дед">
+                        <figcaption>Мой дед</figcaption>
+                    </figure>
+                    <p>
+                        Взо&shy;брав&shy;шись на первую вер&shy;ши&shy;ну
+                        кур&shy;сив&shy;ных гор, бро&shy;сил он
+                        по&shy;след&shy;ний взгляд на&shy;зад, на
+                        си&shy;лу&shy;эт сво&shy;е&shy;го род&shy;но&shy;го
+                        го&shy;ро&shy;да Бук&shy;во&shy;град, на
+                        за&shy;го&shy;ло&shy;вок де&shy;рев&shy;ни
+                        Ал&shy;фа&shy;вит и на под&shy;за&shy;го&shy;ло&shy;вок
+                        сво&shy;е&shy;го пе&shy;ре&shy;ул&shy;ка Строч&shy;ка.
+                        Груст&shy;ный ри&shy;то&shy;ри&shy;че&shy;ский
+                        во&shy;прос ска&shy;тил&shy;ся по его ще&shy;ке и он
+                        про&shy;дол&shy;жил свой путь. По до&shy;ро&shy;ге
+                        встре&shy;тил текст ру&shy;ко&shy;пись. Она
+                        пре&shy;ду&shy;пре&shy;ди&shy;ла его: «В мо&shy;ей
+                        стра&shy;не все
+                        пе&shy;ре&shy;пи&shy;сы&shy;ва&shy;ет&shy;ся по
+                        не&shy;сколь&shy;ко раз. Един&shy;ствен&shy;ное, что от
+                        ме&shy;ня оста&shy;лось, это при&shy;став&shy;ка «и».
+                    </p>
+                    <p>
+                        Воз&shy;вра&shy;щай&shy;ся ты луч&shy;ше в свою
+                        без&shy;опас&shy;ную стра&shy;ну». Не
+                        по&shy;слу&shy;шав&shy;шись ру&shy;ко&shy;пи&shy;си, наш
+                        текст про&shy;дол&shy;жил свой путь. Вско&shy;ре ему
+                        по&shy;встре&shy;чал&shy;ся ко&shy;вар&shy;ный
+                        со&shy;ста&shy;ви&shy;тель ре&shy;клам&shy;ных
+                        тек&shy;стов, на&shy;по&shy;ив&shy;ший его язы&shy;ком и
+                        ре&shy;чью и за&shy;ма&shy;нив&shy;ший в свое
+                        аген&shy;ство, ко&shy;то&shy;рое
+                        ис&shy;поль&shy;зо&shy;ва&shy;ло его сно&shy;ва и
+                        сно&shy;ва в сво&shy;их про&shy;ек&shy;тах. И ес&shy;ли
+                        его не пе&shy;ре&shy;пи&shy;са&shy;ли, то жи&shy;вет он
+                        там до сих пор. Да&shy;ле&shy;ко-да&shy;ле&shy;ко за
+                        сло&shy;вес&shy;ны&shy;ми го&shy;ра&shy;ми в стра&shy;не
+                        глас&shy;ных и со&shy;глас&shy;ных жи&shy;вут
+                        рыб&shy;ные тек&shy;сты. Вда&shy;ли от всех жи&shy;вут
+                        они в бук&shy;вен&shy;ных до&shy;мах на бе&shy;ре&shy;гу
+                        Се&shy;ман&shy;ти&shy;ка боль&shy;шо&shy;го
+                        язы&shy;ко&shy;во&shy;го оке&shy;а&shy;на.
+                        Ма&shy;лень&shy;кий ру&shy;че&shy;ек Даль жур&shy;чит по
+                        всей стра&shy;не и обес&shy;пе&shy;чи&shy;ва&shy;ет ее
+                        все&shy;ми не&shy;об&shy;хо&shy;ди&shy;мы&shy;ми
+                        пра&shy;ви&shy;ла&shy;ми. Эта
+                        па&shy;ра&shy;диг&shy;ма&shy;ти&shy;че&shy;ская
+                        стра&shy;на, в ко&shy;то&shy;рой жа&shy;рен&shy;ные
+                        чле&shy;ны пред&shy;ло&shy;же&shy;ния
+                        за&shy;ле&shy;та&shy;ют пря&shy;мо в рот. Да&shy;же
+                        все&shy;мо&shy;гу&shy;щая пунк&shy;ту&shy;а&shy;ция не
+                        име&shy;ет вла&shy;сти над рыб&shy;ны&shy;ми
+                        тек&shy;ста&shy;ми, ве&shy;ду&shy;щи&shy;ми
+                        без&shy;ор&shy;фо&shy;гра&shy;фич&shy;ный об&shy;раз
+                        жиз&shy;ни.
+                    </p>
+                </section>
+            </article>
+        </div>
+        <article class="article-css">
+            <header>
+                <h2>
+                    Сегодня я узнал много страшных вещей про CSS
+                </h2>
+                <h3>
+                    То ли еще будет
+                </h3>
+            </header>
+            <section class="article-content">
+                <p lang="la">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aliquam non condimentum mauris. Ut bibendum tempus metus in
+                    iaculis. Cras ac ex hendrerit eros imperdiet euismod. Sed
+                    fringilla sed risus eget viverra. Aenean vitae eros sed orci
+                    tempus fermentum eget in ligula. Aliquam a malesuada massa,
+                    sed sodales est. Ut placerat ipsum vitae velit gravida, sit
+                    amet fermentum nisi sagittis. Proin et tellus ut turpis
+                    fermentum consequat.
+                </p>
+                <p lang="la">
+                    Nulla facilisi. Aenean iaculis tristique turpis, at iaculis
+                    elit maximus vitae. Suspendisse fringilla hendrerit posuere.
+                    Vestibulum eu volutpat magna. Interdum et malesuada fames ac
+                    ante ipsum primis in faucibus. Etiam dictum, velit non
+                    porttitor elementum, mauris nisi euismod purus, eget tempus
+                    odio risus eget nulla. Morbi sit amet risus eget magna
+                    vestibulum gravida nec vel arcu. Aenean tempor erat odio, in
+                    ornare sem condimentum at. Donec ornare lectus a velit
+                    dignissim, at ultrices dolor posuere. Cras eget purus nec
+                    dui egestas gravida a sagittis sem. Praesent sollicitudin
+                    augue nisi, ac rhoncus felis luctus vitae. Nam luctus
+                    sodales urna, non bibendum felis mattis at. Vestibulum
+                    hendrerit semper sapien, sit amet auctor leo. Proin vitae
+                    velit magna. Suspendisse nibh nisi, sagittis eu tristique
+                    sed, condimentum non nibh.
+                </p>
+                <p lang="la">
+                    Quisque lacinia id dui a fringilla. Etiam posuere, tellus ac
+                    porta auctor, urna lorem bibendum ante, quis efficitur risus
+                    tellus sit amet sem. Aliquam gravida diam dignissim lectus
+                    bibendum viverra. Proin quis convallis turpis. Ut semper,
+                    ligula sit amet vehicula lobortis, sapien felis pellentesque
+                    sapien, sed laoreet purus erat a lorem. Cras a mi pulvinar,
+                    cursus elit ac, laoreet massa. Donec sit amet hendrerit
+                    eros, sed bibendum est.
+                </p>
+                <p lang="la">
+                    Ut a orci tortor. Quisque condimentum ipsum dui, at auctor
+                    nisi mollis vitae. Nulla ultrices nibh vel augue vestibulum,
+                    eu pulvinar tortor ultricies. Pellentesque fermentum nisi
+                    non turpis cursus, a egestas sem mollis. In vitae dignissim
+                    velit. Aliquam viverra risus a est convallis, ut venenatis
+                    velit auctor. Curabitur pretium ac nisi sed vehicula. Mauris
+                    elementum purus ut tortor volutpat, sit amet interdum mauris
+                    sodales. Maecenas sit amet mauris ante. Vivamus sem nisi,
+                    dapibus ac felis efficitur, gravida tristique nisl. Sed
+                    lobortis feugiat enim. Vestibulum ornare hendrerit ex quis
+                    convallis.
+                </p>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <address>ул. Тургенева, 4, Екатеринбург, Свердловская обл., 620075</address>
+        <span class="name">Утробин Тимофей</span>
+    </footer>
 </body>
 </html>
