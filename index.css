@@ -78,14 +78,14 @@ p::first-letter
     height: 2em;
 }
 
+.img
+{
+    width: 100%;
+}
+
 .nav-item
 {    
     margin: 4px auto;
-}
-
-.g-form-element
-{
-    margin-top: 6px;
 }
 
 .g-row
