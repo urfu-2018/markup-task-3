@@ -3,7 +3,212 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «DeLorean DMC-12»</title>
+    <link href="https://fonts.googleapis.com/css?family=UnifrakturCook:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gabriela" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
+
+<input type="checkbox" id="invert" name="invert" hidden>
+<input type="checkbox" id="large" name="font-size" hidden>
+<input type="radio" id="random-font" name="font" hidden checked>
+<input type="radio" id="serif-font" name="font" hidden>
+<input type="radio" id="cursive-font" name="font" hidden>
+
+<nav>
+    <label for="invert" class="input-label">Темная тема</label>
+    <label for="large" class="input-label">Большой шрифт</label>
+    <label for="random-font" class="input-label">Случайные шрифты</label>
+    <label for="serif-font" class="input-label">Шрифт с засечками</label>
+    <label for="cursive-font" class="input-label">Шрифт без засечек</label>
+</nav>
+<header class="flex">
+    <div class="block">
+        <p>Здесь могла быть ваша реклама</p>
+    </div>
+    <div class="font-amatic">
+        <h1>Городской вестник</h1>
+    </div>
+    <div class="block">
+        <p>Здесь тоже могла быть ваша реклама</p>
+    </div>
+</header>
+<div>
+    <img src="images/city.jpg" alt="город">
+</div>
+<main>
+    <section class="font-merriweather">
+        <h2>Москвичи смогут увидеть «жизнерадостную» Луну</h2>
+        <p>Москва, 22 ок&shy;тяб&shy;ря. Жи&shy;те&shy;ли и го&shy;сти сто&shy;ли&shy;цы
+            смо&shy;гут уви&shy;деть «жиз&shy;не&shy;ра&shy;дост&shy;ную»
+            или «охот&shy;ни&shy;чью» Лу&shy;ну. Со&shy;от&shy;вет&shy;ству&shy;ю&shy;щую
+            ин&shy;фор&shy;ма&shy;цию пе&shy;ре&shy;да&shy;ет
+            пресс-служ&shy;ба Мос&shy;ков&shy;ско&shy;го пла&shy;не&shy;та&shy;рия.</p>
+        <img src="https://goo.gl/2Qo3wb"
+             alt="луна">
+        <p>Вто&shy;рое по&shy;сле осен&shy;не&shy;го рав&shy;но&shy;ден&shy;ствия
+            пол&shy;но&shy;лу&shy;ние, ко&shy;то&shy;рое
+            по&shy;лу&shy;чи&shy;ло на&shy;зва&shy;ние «жиз&shy;не&shy;ра&shy;дост&shy;ное»
+            или «охот&shy;ни&shy;чье»,
+            мож&shy;но бу&shy;дет уви&shy;деть в сре&shy;ду, 24 ок&shy;тяб&shy;ря, в 19.48.</p>
+        <p>По сло&shy;вам спе&shy;ци&shy;а&shy;ли&shy;ста пла&shy;не&shy;та&shy;рия,
+            свет пол&shy;ной лу&shy;ны поз&shy;во&shy;лял
+            пред&shy;кам под&shy;го&shy;то&shy;вить&shy;ся к зи&shy;ме. Так&shy;же
+            в кон&shy;це ок&shy;тяб&shy;ря про&shy;во&shy;дил&shy;ся
+            сбор уро&shy;жая.</p>
+    </section>
+    <section class="font-lobster">
+        <h2>Каррера уволен с поста главного тренера «Спартака»‍</h2>
+        <p>Ита&shy;лья&shy;нец Мас&shy;си&shy;мо Кар&shy;ре&shy;ра был от&shy;
+            прав&shy;лен в от&shy;став&shy;ку с
+            по&shy;ста
+            глав&shy;но&shy;го тре&shy;не&shy;ра мос&shy;ков&shy;ско&shy;го &quot;
+            Спар&shy;та&shy;ка&quot;, со&shy;
+            об&shy;ща&shy;ет
+            ТАСС. Как от&shy;ме&shy;ча&shy;ет пресс-служ&shy;ба крас&shy;но-бе&shy;лых,
+            в клу&shy;бе бла&shy;го&shy;
+            дар&shy;ны
+            спе&shy;ци&shy;а&shy;ли&shy;сту за по&shy;бе&shy;ду в чем&shy;
+            пи&shy;о&shy;на&shy;те Рос&shy;сии се&shy;
+            зо&shy;на-2016/17.
+            Ита&shy;лья&shy;нец был от&shy;прав&shy;лен в от&shy;став&shy;ку 22 ок&shy;тяб&shy;ря.
+            <br>
+        </p>
+    </section>
+    <section class="font-merriweather">
+        <h2>Обман темнокожих: Netflix обвинили в расизме</h2>
+        <p>Стри&shy;мин&shy;го&shy;вый ги&shy;гант Netflix рас&shy;кри&shy;ти&shy;
+            ко&shy;ва&shy;ли за ра&shy;сизм,
+            об&shy;ви&shy;нив
+            его в на&shy;ме&shy;рен&shy;ном об&shy;ма&shy;не тем&shy;но&shy;ко&shy;жих
+            зри&shy;те&shy;лей. Утвер&shy;
+            жда&shy;ет&shy;ся,
+            что в сво&shy;их ре&shy;ко&shy;мен&shy;да&shy;ци&shy;ях для
+            тем&shy;но&shy;ко&shy;жих поль&shy;зо&shy;
+            ва&shy;те&shy;лей
+            сер&shy;вис под&shy;би&shy;ра&shy;ет по&shy;сте&shy;ры к филь&shy;мам,
+            на ко&shy;то&shy;рых изоб&shy;ра
+            &shy;же&shy;ны
+            тем&shy;но&shy;ко&shy;жие пер&shy;со&shy;на&shy;жи, за&shy;ча&shy;стую
+            иг&shy;ра&shy;ю&shy;щие вто&shy;
+            ро&shy;сте&shy;пен&shy;ные
+            ро&shy;ли.</p>
+        <img src="https://goo.gl/M1AibB" alt="расизм">
+        <p>Глав&shy;ный ре&shy;дак&shy;тор бри&shy;тан&shy;ско&shy;го ин&shy;
+            тер&shy;нет-жур&shy;на&shy;ла для
+            тем&shy;но&shy;ко&shy;жих
+            жен&shy;щин Melan Mag Джой Джо&shy;зес за&shy;яви&shy;ла, что та&shy;кая
+            прак&shy;ти&shy;ка яв&shy;
+            ля&shy;ет&shy;ся
+            бо&shy;лее чем об&shy;ман&shy;чи&shy;вой. Джо&shy;зес за&shy;яви&shy;ла,
+            что на по&shy;сте&shy;рах
+            к не&shy;ко&shy;то&shy;рым
+            филь&shy;мам изоб&shy;ра&shy;же&shy;ны аф&shy;ро&shy;аме&shy;ри&shy;кан&shy;ские
+            ак&shy;те&shy;ры,
+            ко&shy;то&shy;рые
+            сыг&shy;ра&shy;ли в кар&shy;ти&shy;не вто&shy;ро&shy;сте&shy;пен&shy;ную роль,
+            и с по&shy;мо&shy;щью
+            та&shy;ко&shy;го
+            при&shy;е&shy;ма Netflix об&shy;ма&shy;ны&shy;ва&shy;ет ожи&shy;да&shy;ния
+            зри&shy;те&shy;лей.</p>
+    </section>
+    <section class="font-lobster">
+        <h2>Минстрой прогнозирует рост ставок по ипотеке до 9,8-10% до конца года</h2>
+        <p>Сред&shy;ние став&shy;ки по ипо&shy;те&shy;ке в Рос&shy;сии мо&shy;гут
+            вы&shy;рас&shy;ти до 9,8-10%
+            до кон&shy;ца
+            го&shy;да, со&shy;об&shy;щил в по&shy;не&shy;дель&shy;ник за&shy;ме&shy;сти&shy;тель
+            ми&shy;ни&shy;стра
+            стро&shy;и&shy;тель&shy;ства
+            и ЖКХ Рос&shy;сии Ни&shy;ки&shy;та Ста&shy;си&shy;шин на со&shy;ве&shy;ща&shy;нии
+            в Со&shy;ве&shy;те
+            Фе&shy;де&shy;ра&shy;ции
+            по нац&shy;про&shy;ек&shy;ту &quot;Жи&shy;лье и го&shy;род&shy;ска сре&shy;да&quot;.</p>
+    </section>
+    <section class="flex">
+        <span class="vertical-text">реклама</span>
+        <p>Про&shy;дам мо&shy;то&shy;цикл Урал! С ко&shy;ляс&shy;кой. 86-ой год рож&shy;де&shy;ния.
+            По&shy;след&shy;ние
+            20 лет сто&shy;ял в го&shy;ра&shy;же и лишь из&shy;ред&shy;ка вы&shy;ез&shy;жал для
+            по&shy;езд&shy;ки на да&shy;чу.<br>
+            Телефон: +7 (933) 612-12-34</p>
+        <span class="vertical-text">реклама</span>
+    </section>
+    <section class="font-merriweather">
+        <h2>Доллар опустился ниже 65 рублей впервые с 1 октября</h2>
+        <p>Курс дол&shy;ла&shy;ра США со&shy;ста&shy;вил 65,05 руб./$1 в
+            18:19, что на 44,5 ко&shy;пей&shy;ки ни&shy;же
+            уров&shy;ня за&shy;кры&shy;тия преды&shy;ду&shy;щих тор&shy;гов.
+            Чуть ра&shy;нее курс
+            дол&shy;ла&shy;ра опус&shy;кал&shy;ся
+            до от&shy;мет&shy;ки 64,99 руб./$1. Ев&shy;ро на ука&shy;зан&shy;ное вре&shy;мя
+            сто&shy;ил 74,61 руб./EUR1,
+            опу&shy;стив&shy;шись на 81 ко&shy;пей&shy;ку, тор&shy;гу&shy;ясь
+            ни&shy;же 75 руб./EUR1
+            впер&shy;вые с 8 ав&shy;гу&shy;ста.</p>
+    </section>
+    <section>
+        <h2>В Екатеринбурге в 2,5 раза подорожает проезд в городской электричке</h2>
+        <img src="https://goo.gl/nZzk6q" alt="поезд">
+        <p>Про&shy;езд в го&shy;род&shy;ской элек&shy;трич&shy;ке в
+            Ека&shy;те&shy;рин&shy;бур&shy;ге
+            по пол&shy;но&shy;му
+            марш&shy;ру&shy;ту (от Сы&shy;сер&shy;ти до Ека&shy;те&shy;рин&shy;бург –
+            Сор&shy;ти&shy;ро&shy;воч&shy;ный)
+            по&shy;до&shy;ро&shy;жа&shy;ет в 2,5 ра&shy;за. Но&shy;вые та&shy;ри&shy;фы
+            опуб&shy;ли&shy;ко&shy;ва&shy;ла
+            пресс-служ&shy;ба АО «Сверд&shy;лов&shy;ская при&shy;го&shy;род&shy;ная
+            ком&shy;па&shy;ния». Со&shy;глас&shy;но
+            пред&shy;став&shy;лен&shy;но&shy;му гра&shy;фи&shy;ку, вво&shy;дит&shy;ся
+            пла&shy;ва&shy;ю&shy;щий та&shy;риф.</p>
+        <p>К при&shy;ме&shy;ру, це&shy;на по&shy;езд&shy;ки от Ке&shy;ра&shy;ми&shy;ки
+            до стан&shy;ции 21 км со&shy;ста&shy;вит
+            29 руб&shy;лей. От этой же точ&shy;ки до стан&shy;ций Ке&shy;ра&shy;мик,
+            Втор&shy;чер&shy;мет, Уктус и Бо&shy;та&shy;ни&shy;че&shy;ская
+            – 43 руб&shy;ля. Все&shy;го в схе&shy;ме раз&shy;ме&shy;че&shy;ны три зо&shy;ны.
+            Мак&shy;си&shy;маль&shy;ная
+            це&shy;на за про&shy;езд в один ко&shy;нец со&shy;ста&shy;вит 73 руб&shy;ля.</p>
+    </section>
+    <section class="span-2 font-lobster">
+        <h2 class="span-all">Акции "Яндекса" подорожали после заявления Воложа‍</h2>
+        <img class="span-all" src="https://goo.gl/uw3Rkb" alt="Яндекс">
+        <p>
+            Ген&shy;ди&shy;рек&shy;тор груп&shy;пы ком&shy;па&shy;ний и
+            со&shy;ос&shy;но&shy;ва&shy;тель
+            &quot;Ян&shy;дек&shy;са&quot;
+            Ар&shy;ка&shy;дий Во&shy;лож не бу&shy;дет про&shy;да&shy;вать соб&shy;ствен&shy;ную до&shy;лю
+            в ком&shy;па&shy;нии.
+            Об этом го&shy;во&shy;рит&shy;ся в за&shy;яв&shy;ле&shy;нии,
+            рас&shy;про&shy;стра&shy;нен&shy;ном в по&shy;не&shy;дель&shy;ник
+            &quot;Ян&shy;дек&shy;сом&quot;.
+        </p>
+        <p>&quot;Я пла&shy;ни&shy;рую и даль&shy;ше воз&shy;глав&shy;лять &quot;Ян&shy;декс&quot;
+            и не на&shy;ме&shy;рен
+            про&shy;да&shy;вать свою до&shy;лю в ком&shy;па&shy;нии.
+            Так&shy;же я под&shy;дер&shy;жи&shy;ваю уси&shy;лия
+            со&shy;ве&shy;та ди&shy;рек&shy;то&shy;ров по раз&shy;ви&shy;тию
+            ком&shy;па&shy;нии и, в том чис&shy;ле,
+            оцен&shy;ке раз&shy;лич&shy;ных воз&shy;мож&shy;но&shy;стей управ&shy;ле&shy;ния
+            струк&shy;ту&shy;рой ка&shy;пи&shy;та&shy;ла&quot;,
+            - ци&shy;ти&shy;ру&shy;ют&shy;ся в ре&shy;ли&shy;зе сло&shy;ва Во&shy;ло&shy;жа.
+        </p>
+        <p>
+            В за&shy;яв&shy;ле&shy;нии под&shy;чер&shy;ки&shy;ва&shy;ет&shy;ся,
+            что ком&shy;па&shy;ния по&shy;сто&shy;ян&shy;но
+            по&shy;лу&shy;ча&shy;ет раз&shy;лич&shy;ные пред&shy;ло&shy;же&shy;ния от
+            тре&shy;тьих сто&shy;рон, но не
+            ком&shy;мен&shy;ти&shy;ру&shy;ет слу&shy;хи о
+            воз&shy;мож&shy;ных из&shy;ме&shy;не&shy;ни&shy;ях в ак&shy;ци&shy;о&shy;нер&shy;ном
+            ка&shy;пи&shy;та&shy;ле.
+        </p>
+    </section>
+</main>
+<footer>
+    <p class="right">&copy; 2018. Твой любимый город</p>
+</footer>
 </body>
 </html>
