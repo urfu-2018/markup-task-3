@@ -266,7 +266,7 @@ input[value='dark']:checked ~ div .columns
 
 input[value='dark']:checked ~ div hr
 {
-    color: white; 
+    color: white;
 }
 
 input[value='light']:checked ~ div
