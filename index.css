@@ -109,6 +109,13 @@ h2
     font-style: italic;
 }
 
+.main_policy::first-letter
+{
+    font-family: 'Arial Black';
+    font-size: 15px;
+    color: rgb(245, 10, 88);
+}
+
 h6
 {
     column-span: all;
@@ -215,6 +222,11 @@ p.begin
     width: 95%;
 }
 
+div[class='science'] p[class='begin']::first-letter
+{
+    color: rgb(245, 10, 88);
+}
+
 p.substantial
 {
     text-align: justify;
@@ -265,6 +277,11 @@ div[class='science'] img
     width: 370px;
     column-span: all;
     word-wrap: break-word;;
+}
+
+.sport p.main::first-letter
+{
+    color: rgb(245, 10, 88);
 }
 
 .sport p.content
@@ -346,6 +363,11 @@ span.event
     font-family: 'Times New Roman', serif;
     font-style: italic;
     margin: 0 3px 0 3px;
+}
+
+.hystory p::first-letter
+{
+    color: rgb(245, 10, 88);
 }
 
 .redaction
