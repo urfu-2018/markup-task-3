@@ -1,0 +1,347 @@
+body
+{
+    margin: 0;
+}
+
+.wrapper-tools-pannel
+{
+    width: 1300px;
+    height: 50px;
+}
+
+.light-mode,
+.size-mode,
+.font-mode
+{
+    position: relative;
+    top: 0;
+}
+
+.light-mode
+{
+    left: 20px;
+}
+
+.size-mode
+{
+    left: 70px;
+}
+
+.font-mode
+{
+    left: 120px;
+}
+
+.text-light-mode,
+.text-size-mode,
+.text-font-mode
+{
+    position: relative;
+    top: 20px;
+    font-family: fantasy;
+}
+
+.text-light-mode
+{
+    left: 20px;
+}
+
+.text-size-mode
+{
+    left: 65px;
+}
+
+.text-font-mode
+{
+    left: 120px;
+}
+
+input[id='font-mode-checkbox'],
+input[id='size-mode-checkbox'],
+input[id='light-mode-checkbox']
+{
+    display: none;
+}
+
+input[id='light-mode-checkbox'] + label,
+input[id='light-mode-checkbox']:checked + label,
+input[id='size-mode-checkbox'] + label,
+input[id='size-mode-checkbox']:checked + label,
+input[id='font-mode-checkbox'] + label,
+input[id='font-mode-checkbox']:checked + label
+{
+    width: 30px;
+    height: 30px;
+}
+
+input[id='light-mode-checkbox'] + label
+{
+    content: url(https://png.icons8.com/ios/1600/moon-symbol.png);
+}
+
+input[id='light-mode-checkbox']:checked + label
+{
+    content: url(http://thedollz.co.uk/wp-content/uploads/2014/12/half.png);
+}
+
+input[id='size-mode-checkbox'] + label
+{
+    content: url(https://mbtskoudsalg.com/images/plus-icon-png-white-7.png);
+}
+
+input[id='size-mode-checkbox']:checked + label
+{
+    content: url(https://cdn4.iconfinder.com/data/icons/mathematics-doodle-1/48/3-512.png);
+}
+
+input[id='font-mode-checkbox'] + label,
+input[id='font-mode-checkbox']:checked + label
+{
+    content: url(https://png2.kisspng.com/20171216/c8b/5a3529bcba95d6.8753622915134335327643.png);
+}
+
+input[id='light-mode-checkbox']:checked ~ .wrapper
+{
+    background-color: #000;
+    color: #fff;
+}
+
+input[id='light-mode-checkbox']:checked ~ main header.header-wrapper,
+input[id='light-mode-checkbox']:checked ~ main,
+input[id='light-mode-checkbox']:checked ~ main article,
+input[id='light-mode-checkbox']:checked ~ main article p,
+input[id='light-mode-checkbox']:checked ~ main footer.footer-wrapper
+{
+    border-color: #fff;
+}
+
+input[id='light-mode-checkbox']:checked ~ main div.content-wrapper,
+input[id='light-mode-checkbox']:checked ~ main div article.article-1,
+input[id='light-mode-checkbox']:checked ~ main div article.article-4
+{
+    column-rule-color: #fff;
+}
+
+input[id='size-mode-checkbox']:checked ~ main div article,
+input[id='size-mode-checkbox']:checked ~ main footer
+{
+    font-size: 1.2em;
+}
+
+input[id='font-mode-checkbox']:checked ~ main div article,
+input[id='font-mode-checkbox']:checked ~ main footer
+{
+    font: normal 700 15px 'Helvetica', sans-serif;
+}
+
+.wrapper
+{
+    background-color: #fff;
+    font: #000;
+}
+
+.newspaper-article-wrapper
+{
+    padding-top: 30px;
+    padding-bottom: 3px;
+    text-align: center;
+    border-bottom: solid #000;
+}
+
+.newspaper-article
+{
+    font: small-caps italic 700 100px / 20px Arial, sans-serif;
+}
+
+.header-wrapper
+{
+    column-count: 3;
+    font: small-caps normal 700 15px / 20px Arial, sans-serif;
+    border-bottom: 6px solid #000;
+}
+
+.header-wrapper p
+{
+    margin: 0%;
+    padding: 10px;
+}
+
+.column-1
+{
+    text-align: left;
+}
+
+.column-2
+{
+    text-align: center;
+}
+
+.column-3
+{
+    text-align: right;
+}
+
+.content-wrapper
+{
+    column-count: 3;
+    padding: 20px;
+    border-top: solid #000;
+    border-bottom: solid #000;
+    font: normal 700 15px  'Comic Sans MS', 'cursive';
+    column-rule: 1px solid #000;
+    column-gap: 30px;
+    text-align: justify;
+}
+
+.content-wrapper p::first-letter
+{
+    font: small-caps normal 700 30px / 20px serif;
+    line-height: 1;
+    float: top;
+}
+
+.content-wrapper header
+{
+    font: normal 700 25px Arial, sans-serif;
+    text-align: center;
+}
+
+figcaption
+{
+    font: normal 700 10px / 20px Arial, sans-serif;
+}
+
+.article-1 header,
+.article-4 header,
+.article-5
+{
+    column-span: all;
+}
+
+/*статья Stallone rocks St Petersburg*/
+
+.article-1
+{
+    height: 100%;
+    column-count: 2;
+    column-rule: 1px dotted #000;
+}
+
+.article-1-quotesf
+{
+    column-span: all;
+    border: 2px dashed #000;
+    padding: 4px;
+    font: normal 700 24px Georgia, serif;
+}
+
+/*статья Arty cheese made from Olafur's tears*/
+
+.img-article2
+{
+    width: 150px;
+    height: auto;
+    padding: 10px;
+    filter: grayscale(100%);
+}
+
+.img-article2-wrapper
+{
+    margin: 5px;
+    float: left;
+}
+
+.img-article2-figcaption
+{
+    position: relative;
+    left: 20px;
+    width: 100px;
+}
+
+/*статья Generosity must be genetic*/
+
+.img-article3
+{
+    width: 150px;
+    height: auto;
+    filter: grayscale(100%);
+}
+
+.img-article3-wrapper
+{
+    padding: 0;
+    margin: 0;
+}
+
+.quotesf-article3
+{
+    float: right;
+    width: 200px;
+    font: italic 700 20px  'Comic Sans MS', 'cursive';
+}
+
+.quotesf-article3::before
+{
+    content: '«';
+}
+
+.quotesf-article3::after
+{
+    content: '»‎';
+}
+
+/*статья Giving back*/
+
+.article-4
+{
+    column-count: 3;
+    column-rule: 1px dotted #000;
+}
+
+/*статья Winter on the beach*/
+
+.article-5
+{
+    margin: 3px;
+    border-top: 5px double #000;
+}
+
+.img-article5
+{
+    width: 300px;
+    height: auto;
+    filter: grayscale(100%);
+}
+
+.img-article5-wrapper
+{
+    float: left;
+}
+
+/*footer*/
+
+.footer-wrapper
+{
+    padding: 5px;
+    border: solid #000;
+    column-count: 2;
+    font: normal 700 15px  'Courier New', 'monospace';
+}
+
+.footer-text-wrapper
+{
+    padding: 20px;
+}
+
+.footer-img
+{
+    filter: grayscale(100%);
+    width: 250px;
+    height: 190px;
+}
+
+.footer-img-wrapper
+{
+    position: relative;
+    right: -300px;
+}
