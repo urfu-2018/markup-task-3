@@ -1,0 +1,91 @@
+@font-face
+{
+    font-family: Parizhel;
+    src: url(MainHeader.woff2)format('truetype');
+}
+
+@font-face
+{
+    font-family: Moscow Sans Regular;
+    src: url(MSR.woff2)format('truetype');
+}
+
+.mainHeader
+{
+    font: 45px bold, 'Parizhel', cursive;
+    text-align: center;
+}
+
+.head
+{
+    text-align: center;
+    border-bottom: 1px solid #242121;
+    border-top: 1px solid #242121;
+    margin-bottom: 20px;
+}
+
+.aboutMarty
+{
+    column-count: 3;
+    column-rule: 1px solid rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+
+.leftimg 
+{
+    float: left;
+    margin: 10px 7px 5px 5px;
+    filter: grayscale(100%);
+    
+}
+
+p:first-letter
+{
+    font-family: 'Lobster', cursive;
+}
+
+.family
+{
+    column-count: 2;
+    column-rule: 1px solid rgb(0, 0, 0);
+    margin-top: 20px;
+}
+
+.docAndMarty
+{
+    width: 100%;
+    filter: grayscale(100%);
+}
+
+.rub
+{
+    position: absolute;
+    top: 1px;
+    right: 20px;
+    width: 1px;
+    word-wrap: break-word;
+}
+
+figcaption
+{
+    text-align: center;
+    font-family: 'Kelly Slab', cursive;
+}
+
+main
+{
+    color: rgb(0, 0, 0);
+    font: 20px 'Moscow Sans Regular', Verdana, Helvetica, Arial, serif;
+}
+
+body header 
+{
+    padding: 5px;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+
+blockquote
+{
+    font-family: 'Marmelad', Arial, Helvetica, sans-serif;
+}
