@@ -15,6 +15,26 @@ h2
     margin-bottom: 10px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    text-shadow: #555 0 0 1px;
+}
+
+hr 
+{
+    border: 0;
+    height: 1px;
+    background: #555;
+    background-image: -webkit-linear-gradient(left, #fff, #555, #fff);
+    background-image: -moz-linear-gradient(left, #fff, #555, #fff);
+    background-image: -ms-linear-gradient(left, #fff, #555, #fff);
+    background-image: -o-linear-gradient(left, #fff, #555, #fff);
+}
+
+.vertical_header {
+    writing-mode: vertical-rl;
+    text-transform: uppercase;
+    text-orientation: upright;
+    padding: 1em 3em 0 0 !important;
+    height: 35%;
 }
 
 .base-text
@@ -30,18 +50,32 @@ h2
     color: #555;
     -webkit-transition: color 0.6s ease;
     transition: color 0.6s ease;
+    text-shadow: #555 0 0 1px;
+    text-align: justify;
 }
 
-.wrapper{
+p::first-letter
+{
+    font-size: 1.5em;
+}
+
+.centered-text
+{
+    text-align: center;
+}
+
+.wrapper
+{
     margin: 0 auto;
     max-width: 1000px;
+    display: block;
 }
 
 .nav-panel
 {
     margin: .5em auto;
-    border-bottom: 2px solid #555;
-    border-top: 2px solid #555;
+    border-bottom: 2px double #555;
+    border-top: 2px double #555;
     height: 2em;
 }
 
@@ -85,6 +119,15 @@ h2
 .g-col-5 
 {
     left: 80%;
+}
+
+.g-col-1,
+.g-col-2,
+.g-col-3,
+.g-col-4,
+.g-col-5
+{
+    padding: 0 5px 0 5px;
 }
 
 .g-span-1,
