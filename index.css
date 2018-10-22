@@ -4,7 +4,7 @@ body
     background-size: 45%;
 }
 
-.sport
+.sportIMG
 {
     max-height: 100%;
     max-width: 100%;
@@ -19,7 +19,19 @@ body
     width: 100%;
     columns: 5 100px;
     column-rule: 2px solid #000;
-    column-gap: 0;
+    column-gap: 15px;
+}
+
+.columnBOX
+{
+    position: relative;
+    text-align: justify;
+    margin-left: 31%;
+    width: 69%;
+    columns: 3 100px;
+    column-rule: 1px dashed #000;
+    column-gap: 20px;
+    border: 1px dashed #000;
 }
 
 h1
@@ -45,9 +57,42 @@ h1
 
 .basic
 {
-    margin: 5px;
+    margin-top: 2px;
     word-spacing: 10px;
     font: normal 500 16px/1 SansSerif, 'Verdana', serif;
+}
+
+.basicBOX
+{
+    margin-top: 3px;
+    word-spacing: 7px;
+    line-height: 1;
+    font-weight: 200;
+    font-variant: normal;
+    font-style: italic;
+    font-size: 18px;
+    font-family: Snell Roundhand, cursive;
+}
+
+.firstLetterSUPERBOX
+{
+    margin-left: 20px;
+    font-weight: 700;
+    font-variant: normal;
+    font-style: italic;
+    font-size: 30px;
+    font-family: Snell Roundhand, cursive;
+}
+
+.firstLetterBOX
+{
+    margin-left: 15px;
+    line-height: 1;
+    font-weight: 200;
+    font-variant: normal;
+    font-style: italic;
+    font-size: 18px;
+    font-family: Snell Roundhand, cursive;
 }
 
 .firstLetterBasic
@@ -81,7 +126,32 @@ h1
     margin: 10px auto;
 }
 
-section
+.box
 {
-    break-after: page;
+    float: left;
+    margin-left: 15px;
+    font: normal 900 40px/1 Monospaced, 'DejaVu Sans Mono', monospace;
+}
+
+.box > div:first-of-type
+{
+    float: left;
+}
+
+.box > div > p
+{
+    margin-bottom: 40px;
+}
+
+.box > div:last-of-type
+{
+    margin-left: 15px;
+    float: right;
+}
+
+.sector
+{
+    margin-bottom: 50px;
+    margin-top: 50px;
+
 }
