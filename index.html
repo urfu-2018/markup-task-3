@@ -96,7 +96,7 @@
         .main-left-side p
         {
             margin-right: 7px;
-            font-size: 13px;
+            font-size: 14px;
             word-spacing: 4px;
         }
 
@@ -229,25 +229,42 @@
             column-rule: 1px solid gray;
         }
 
-        .right-side-text-content .right-side-info .general-text
+        .right-side-info .message:before
         {
-
+            border-top: 1px solid gray;
+            content: '';
+            width: 200px;
+            height: 16px;
+            display: block;
+            margin: 15px auto 0;
+            column-span: all;
         }
 
         .right-side-info .message h4
         {
-            column-span: all
+            column-span: all;
+            font-style: italic;
+            font-size: 13px;
+            margin-top: 0;
+        }
+
+        .right-side-info .message h4 > span
+        {
+            column-span: all;
+            font-size: 18px;
+            word-spacing: 5px;
         }
 
         .right-side-info .message .message-content .message-text-container
         {
             font-family: 'TextMessageFont', serif;
-            word-spacing: -112px;
+            line-height: 12px;
         }
 
         .message-sign .sign-name
         {
             text-align: right;
+            padding-left: 100px;
         }
 
         .right-side-header-info .headers
@@ -292,7 +309,7 @@
             margin-top: 50px;
             border-top: 1px solid gray;
             text-align: end;
-            margin-bottom: -50px;
+            margin-bottom: -90px;
         }
 
         .right-side-header-info .newspaper-info .newspaper-description,
@@ -314,6 +331,7 @@
             font-family: 'NewspaperNameFont', sans-serif;
             vertical-align: top;
             line-height: 1.4em;
+            margin-top: -20px;
         }
 
         .newspaper-info .newspaper-name h3 > span:first-child
@@ -329,14 +347,14 @@
 
         .right-side-text-content
         {
-            margin-top: 60px;
+            margin-top: 20px;
         }
 
         .right-side-text-content h3,
         .right-side-text-content h4,
         .right-side-text-content h5
         {
-            margin: 8px;
+            margin: 6px;
         }
 
         .right-side-text-content h3
@@ -374,6 +392,7 @@
         .newspaper-info .newspaper-release-info
         {
             border: 1px solid gray;
+            border-bottom: 5px groove;
             column-count: 3;
             column-rule: 1px solid gray;
             column-gap: 6em;
@@ -394,6 +413,36 @@
         figure
         {
             margin: 6px 6px 6px 0;
+        }
+
+        .main-right-side .footer-summary
+        {
+            column-span: all;
+            border: 4px groove gray;
+            font-size: 18px;
+            margin-bottom: 20px;
+            margin-top: 6px;
+        }
+
+        .main-right-side .footer-summary > p
+        {
+            display: inline-block;
+            font-size: 15px;
+        }
+
+        .main-right-side .footer-summary > p:last-child
+        {
+            float: right;
+            text-indent: 0;
+            font-size: 16px;
+        }
+
+        .main-right-side .footer-summary > p:last-child:first-line
+        {
+            float: right;
+            text-indent: 0;
+            font-size: 17px;
+            letter-spacing: 13px;
         }
     </style>
 </head>
@@ -544,7 +593,7 @@
                 </div>
                 <div class="message">
                     <h4>
-                        Советсвкому космонавту, впервые в мире совершившему космический полет,
+                        Советсвкому космонавту, впервые в мире совершившему космический полет,<br>
                         <span>майору ГАГАРИНУ Юрию Алексеевичу</span>
                     </h4>
                     <div class="message-content">
@@ -560,7 +609,7 @@
                             <p lang="ru">До скорой встречи в Москве.</p>
                             <div class="message-sign">
                                 <p lang="ru">
-                                    <span class="sign-name">Н.ХРУЩЕВ</span>
+                                    <span class="sign-name"><b>Н.ХРУЩЕВ</b></span>
                                     <br>
                                     <span>12 апреля 1961 года.</span>
                                 </p>
@@ -568,12 +617,17 @@
                         </div>
                     </div>
                 </div>
+                <div class="footer-summary">
+                    <p lang="ru">
+                        <b>12 апреля 1961 года - </b>
+                    </p>
+                    <p>ТОВАРИЩ,<br>
+                        ЗАПОМНИ ЭТОТ ДЕНЬ!
+                    </p>
+                </div>
             </div>
         </div>
     </div>
 </main>
-<footer>
-    <p lang="ru"><span>12 апреля 1961 года - </span><span>ТОВАРИЩ, ЗАПОМНИ ЭТОТ ДЕНЬ!</span></p>
-</footer>
 </body>
 </html>
