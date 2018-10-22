@@ -1,49 +1,63 @@
-article{
-    background: gray;
+article {
+    background: darkgray;
     margin: 15px;
 }
-.column{
-    width: 23%;
-    background: aqua;
-    display: inline-block;
+
+.text img {
+    width: 96%;
+    margin: auto;
 }
 
-.column p:first-child::first-letter{
-    color:red;
-    font-size: 20px;
+.article p:first-of-type::first-letter {
+    color: darkcyan;
+    font-size: 25px;;
 }
 
-.top{
-    height: 500px;
-    background: aquamarine;
-}
-.specialColumn{
-    width: 23%;
-    background: beige;
-    display: inline-block;
+.text {
+    background: darkgrey;
 }
 
-.separator
-{
-    font-family: Arial ;
-}
-
-.specialColumn.bottom{
+.vertical {
     writing-mode: vertical-rl;
     text-orientation: upright;
 }
 
-.specialColumn.bottom p{
-    width: 10%;
-}
-.specialColumn.bottom img{
-    width: 80%;
-}
-
-header{
+header {
     width: 100%;
 }
 
-img {
-    display: inline;
+.text {
+    column-count: 4;
+}
+
+.separator {
+    font-family: "Yu Gothic UI Semibold", monospace;
+    border-style: solid;
+
+}
+
+.top .article:nth-child(odd) {
+    font-family: Arimo, serif;
+}
+
+.top .article:nth-child(even) {
+    font-family: Cambria, serif;
+}
+
+.bottom .article:nth-child(odd) {
+    font-family: Bahnschrift, monospace;
+}
+
+.bottom .article:nth-child(even) {
+    font-family: Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    border-style: solid;
+    height: 50px;
+}
+
+p {
+    hyphens: auto;
 }
