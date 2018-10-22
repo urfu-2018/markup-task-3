@@ -145,7 +145,7 @@ img
 
 .right-column img
 {
-    width: 550px;
+    width: 610px;
 }
 
 .column-into-column
@@ -174,7 +174,88 @@ img
     -webkit-column-span: all;
 }
 
-body 
+.content 
 {
     background: url(http://ekladata.com/4z74jKsN6kAKZIuPGsNi2Jpe1vc.jpg);
+}
+
+.theme[value='black']:checked ~ .content
+{
+    background: url(http://luxfon.com/images/201203/luxfon.com_6284.jpg);
+    color: white;
+}
+
+body
+{
+    margin: 0;
+}
+
+.font[value='Times New Roman']:checked ~ .content p
+{
+    font-family: 'Times New Roman';
+}
+
+.font[value='Calibri']:checked ~ .content p
+{
+    font-family: 'Calibri';
+}
+
+.font[value='Arial']:checked ~ .content p
+{
+    font-family: 'Arial';
+}
+
+.font-size[value='min']:checked ~ .content p
+{
+    font-size: 14px;
+}
+
+.font-size[value='max']:checked ~ .content p
+{
+    font-size: 26px;
+}
+
+span.theme
+{
+    text-align: left;
+}
+
+span.font 
+{
+    text-align: center;
+}
+
+span.font-size
+{
+    text-align: right;
+}
+
+input.theme,
+input.font,
+input.font-size
+{
+    display: none;
+}
+
+.menu
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu > span
+{
+    flex: 1;
+    cursor: pointer;
+}
+
+.menu label:hover
+{
+    background: #692a2a;
+}
+
+.menu
+{
+    background: #777;
+    color: #fff;
 }
