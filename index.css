@@ -1,0 +1,128 @@
+@font-face
+{
+    font-family: newsPapperFont;
+    src: url(OldNewspaperTypes.ttf) format('truetype');
+}
+@font-face
+{
+    font-family: quotesFont;
+    src: url(QUEENSI.ttf);
+}
+@font-face
+{
+    font-family: firstletter;
+    src: url(BeautifulPeople.ttf);
+}
+
+body
+{
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    line-height: 20px;
+}
+
+.quotes
+{
+    font-family: quotesFont, serif;
+}
+
+h1
+{
+    font-family: newsPapperFont, serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+h2
+{
+    font-family: newsPapperFont, serif;
+    font-style: italic;
+    text-align: center;
+    line-height: 30px;
+}
+
+div
+{
+    font-family: newsPapperFont, serif;
+    text-indent: 5%;
+    text-align: justify;
+    columns: 200px 4;
+    column-rule: 2px solid;
+}
+
+.pic
+{
+    text-align: center;
+    column-span: all;
+}
+
+.title
+{
+    font-family: newsPapperFont, serif;
+    font-style: italic;
+    break-inside: avoid;
+    break-before: column;
+    display: block;
+    text-align: center;
+    line-height: 30px;
+}
+
+div.a::first-letter
+{
+    font-family: firstletter, sans-serif;
+    font-size: 30px;
+}
+
+.sign
+{
+    border: 1px solid;
+    margin: 5px 0 20px 5px;
+    padding: 1px;
+}
+
+.sign figcaption
+{
+    text-align: center;
+}
+
+.checkbox:checked ~ .std
+{
+    background: black;
+    color: white;
+}
+
+.std
+{
+    background: white;
+    transition: .5s;
+}
+
+.checkBigLet:checked ~ .std
+{
+    font-size: 1.5em;
+}
+
+.checkSmallLet:checked ~ .std
+{
+    font-size: .5em;
+}
+
+.chetyre2:checked ~ .std
+{
+    font-family: Arial, sans-serif;
+}
+
+.chetyre3:checked ~ .std
+{
+    font-family: Times New Roman, serif;
+}
+
+.line
+{
+    text-align: center;
+    width: 100px;
+    color: #000;
+}
