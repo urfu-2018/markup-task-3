@@ -1,0 +1,37 @@
+html
+{
+    word-break: normal;
+}
+
+tr:first-child
+{
+    text-align: center;
+    font: 50px AppleGothic;
+}
+
+tr:not(tr:first-child)
+{
+    text-align: left;
+}
+
+tr:first-child td:nth-child(2)
+{
+    width: 1px;
+    word-break: break-all !important;
+}
+
+td
+{
+    font-size: 40px;
+    width: 100px;
+}
+
+td:not(tr:nth-child(2) td:first-child)
+{
+    vertical-align: top;
+}
+
+tr:nth-child(2) > td:first-child:first-letter
+{
+    font-size: 80px;
+}
