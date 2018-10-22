@@ -1,0 +1,180 @@
+@font-face
+{
+    font-family: 'RealTruth';
+    src: url(RealTruth.ttf);
+}
+
+.header
+{
+    letter-spacing: 10px;
+    font-family: 'RealTruth';
+    font-size: 100px;
+    text-align: center;
+    margin: 0;
+}
+
+.info
+{
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main
+{
+    display: flex;
+    text-align: justify;
+}
+
+.right-column
+{
+    flex: 5;
+    padding-left: 10px;
+}
+
+.center-column
+{
+    padding-left: 10px;
+    column-width: 150px;
+    column-fill: auto;
+    flex: 5;
+}
+
+.left-column
+{
+    flex: 2;
+}
+
+h1,
+h2,
+h3
+{
+    margin: 0;
+    text-align: center;
+}
+
+.article-2
+{
+    font-family: 'Comic Sans MS';
+    font-size: 20px;
+}
+
+.article-2 h1
+{
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.article-1 h2
+{
+    font-size: 30px;
+    font-style: italic;
+}
+
+article p
+{
+    text-indent: 1.5em;
+    word-break: break-all;
+    margin: 0;
+}
+
+article p::first-letter
+{
+    color: red;
+    font-weight: 700;
+    font-size: 1.6em;
+}
+
+img
+{
+    width: 160px;
+}
+
+.article-1 img
+{
+    width: 425px;
+}
+
+.article-3 
+{
+    font-family: 'Arial Narrow';
+}
+
+.article-4
+{
+    font-family: 'Georgia';
+    font-size: 1em;
+}
+
+.article-5
+{
+    font-family: 'Calibri';
+}
+
+.article-1,
+.article-8,
+.article-9,
+.article-10,
+.article-11,
+.article-12,
+.article-13
+{
+    font-family: 'Helvetica';
+}
+
+.article-4 h1
+{
+    font-size: 35px;
+    text-transform: uppercase;
+    text-shadow: 1.5px 1.5px 5px #3b3939;
+    hyphens: manual;
+}
+
+.article-5 img
+{
+    border: 2.5px solid #000;
+    border-radius: 20px;
+}
+
+.article-6 h2
+{
+    font-family: 'Lucida Sans';
+    font-size: 30px;
+    font-style: italic;
+}
+
+.right-column img
+{
+    width: 550px;
+}
+
+.column-into-column
+{
+    display: flex;
+    text-align: justify;
+}
+
+.column-1
+{
+    flex: 1;
+    padding-left: 10px;
+}
+
+.column-2
+{
+    padding-left: 10px;
+    column-width: 150px;
+    column-fill: auto;
+    flex: 1;
+}
+
+.column-1 h2
+{
+    column-span: all;
+    -webkit-column-span: all;
+}
+
+body 
+{
+    background: url(http://ekladata.com/4z74jKsN6kAKZIuPGsNi2Jpe1vc.jpg);
+}
