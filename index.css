@@ -1,0 +1,188 @@
+body
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.logotype
+{
+    column-count: 2;
+}
+
+.logotype p
+{
+    margin: 0;
+    padding: 0;
+}
+
+.logo img
+{
+    width: 100px;
+}
+
+.medal img
+{
+    width: 50px;
+}
+
+.medal
+{
+    text-align: right;
+}
+
+.title
+{
+    text-align: center;
+}
+
+.info
+{
+    column-count: 2;
+    border: 1px solid grey;
+}
+
+.info p
+{
+    margin: 0;
+    padding: 0;
+}
+
+.name
+{
+    font-size: 35px;
+    font-variant: small-caps;
+    text-align: center;
+}
+
+.tagline
+{
+    font-size: 25px;
+    font-style: italic;
+}
+
+.number
+{
+    text-align: left;
+}
+
+.date
+{
+    text-align: right;
+}
+
+main
+{
+    column-count: 3;
+    column-rule: 1px solid gray;
+}
+
+.article-name
+{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px;
+}
+
+.article-contents
+{
+    column-rule: 1px dashed black;
+}
+
+.article-contents p:not(.quote):not(.spanning)
+{
+    hyphens: auto;
+    text-align: justify;
+    text-indent: 1.5em;
+    margin: 0;
+}
+
+.article-contents p:first-of-type::first-letter
+{
+    font-size: 30px;
+}
+
+figure img
+{
+    width: 100%;
+}
+
+figcaption
+{
+    hyphens: auto;
+    font-style: italic;
+    text-align: justify;
+}
+
+.spanning
+{
+    column-span: all;
+}
+
+.quote
+{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+.upright
+{
+    font-size: 34px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-transform: uppercase;
+    float: right;
+    padding: 10px;
+    border: 1px dotted black;
+    margin: 10px;
+}
+
+.article1 .article-name
+{
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    font-stretch: condensed;
+}
+
+.article2 .article-name
+{
+    font-family: Cambria, 'Times New Roman', serif;
+    font-style: oblique;
+    font-weight: 100;
+    border-top: 1px dashed black;
+    border-bottom: 1px dashed black;
+}
+
+.article2 .article-contents
+{
+    column-count: 2;
+}
+
+.article3 .article-contents
+{
+    column-count: 3;
+}
+
+.checkboxFontSize:checked ~ main
+{
+    font-size: 120%;
+}
+
+.checkboxBlackTheme:checked ~ main
+{
+    background: black;
+    color: white;
+}
+
+
+input[value='Arial']:checked ~ main
+{
+    font-family: Arial, serif;
+}
+
+input[value='Times New Roman']:checked ~ main
+{
+    font-family: 'Times New Roman', serif;
+}
