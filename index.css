@@ -9,34 +9,34 @@ hr
 html
 {
     font-size: 20px;
-    font-family: 'Izhitsa';
+    font-family: 'Izhitsa', serif;
 }
 
 @font-face
 {
     font-family: Izhitsa;
-    src: url('Izhitsa.woff2') format('woff2'), url('Izhitsa.woff') format('woff');
+    src: url('./Izhitsa.woff2') format('woff2'), url('Izhitsa.woff') format('woff');
 }
 @font-face
 {
     font-family: Behrens;
-    src: url('Behrens.woff2') format('woff2'), url('Behrens.woff') format('woff');
+    src: url('./Behrens.woff2') format('woff2'), url('Behrens.woff') format('woff');
 }
 @font-face
 {
     font-family: Galactica;
-    src: url('Galactica.woff2') format('woff2'), url('Galactica.woff') format('woff');
+    src: url('./Galactica.woff2') format('woff2'), url('Galactica.woff') format('woff');
 }
 
 .section
 {
-    font-family: 'Galactica';
+    font-family: 'Galactica', serif;
     height: 1900px;
 }
 
 aside
 {
-    font-family: 'Behrens';
+    font-family: 'Behrens', serif;
 }
 
 .horizontal-container .horizontal-element
