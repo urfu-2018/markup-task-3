@@ -1,14 +1,17 @@
-body
+.container
 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 14px;
+    width: 1400px;
+    margin: 0 auto;
+    padding: 15px;
 }
 
 bdi
 {
     text-align: justify;
     line-height: 0.9em;
-    font-size: 0.7em;
+    font-size: 12px;
     display: inline-block;
 }
 
@@ -26,7 +29,8 @@ p
 
 h1
 {
-    font-size: 4em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 56px;
     padding: 0;
     margin: 0;  
     text-align: center;
@@ -35,18 +39,13 @@ h1
 
 h2
 {
-    font-size: 1.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22px;
     line-height: 1em;
     padding: 0;
     margin: 0;
     display: inline-block;
     text-align: center;
-}
-
-h1,
-h2
-{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 article
@@ -88,6 +87,13 @@ section img
     margin-right: 10px;
 }
 
+.logo-img
+{
+    background: url('images/logo.png');
+    height: 235px;
+    width: 1158px;
+}
+
 .important-message
 {
     border: 1px solid black;
@@ -98,7 +104,7 @@ section img
 .important-message p
 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.2em;
+    font-size: 18px;
     font-style: italic;
     font-weight: 600;
     text-align: left;
@@ -107,14 +113,28 @@ section img
 
 .no-float
 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 0.7em;
     clear: both;
     text-align: justify;
-    text-justify: inter-word;
-    word-spacing: 2em;
     border-top: 1px solid black;
     border-bottom: 2px solid black;
     padding: 2px 0;
     margin-bottom: 10px;
+    height: 1.3em;
+}
+
+.no-float::after
+{
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+.no-float span
+{
+    display: inline-block;
 }
 
 .appeal
@@ -136,8 +156,32 @@ section img
     font-style: italic; 
 }
 
-.container
+#oldschool:checked ~ .container
 {
-    width: 1400px;
-    margin: 0 auto;
+    background: url('images/background.jpg');
+    color: #403b32;
+}
+
+#oldschool:checked ~ .container .logo-img
+{
+    background: url('images/burned_logo.png');
+    opacity: .7;
+}
+
+#oldschool:checked ~ .container .left-block,
+#oldschool:checked ~ .container .no-float,
+#oldschool:checked ~ .container .important-message
+{
+    border-color: #403b32;
+}
+
+#changefont:checked ~ .container
+{
+    font-family: "Comic Sans MS", cursive;
+    color: red;
+}
+
+input[value='normal-size']:checked ~ .container
+{
+    font-size: 1.25em;
 }

@@ -8,7 +8,16 @@
 </head>
 
 <body>
-    <!-- example http://www.oldgazette.ru/izvestie/12031985/index1.html-->
+    <span>Размер шрифта:</span>
+    <input id="small-size-size" type="radio" name="font-size" value="small-size" checked>
+    <label for="small-size">Советский</label>
+    <input id="normal-size" type="radio" name="font-size" value="normal-size">
+    <label for="normal-size">Капиталистический</label> |
+    <label for="oldschool">Состарить газету</label>
+    <input id="oldschool" type="checkbox"> | 
+    <label for="changefont">"Поиграться со шрифтами"</label>
+    <input id="changefont" type="checkbox"> 
+    <hr>
     <div class="container">
         <header>
             <div class="logo">
@@ -31,23 +40,26 @@
                     unitevi!
 
                 </bdi>
-                <img src="images/logo.png">
+                <div class="logo-img"></div>
             </div>
             <aside class="important-message">
                 <p>11 марта 1985 года состоялся внеочередной Пленум Центрального Комитета КПСС.</p>
                 <p>Пленум единодушно избрал Генеральным секретарем ЦК КПСС товарища Горбачева Михаила Сергеевича.</p>
             </aside>
-            <p class="no-float">№&nbsp;71&nbsp;(21148) Вторник,&nbsp;12&nbsp;марта&nbsp;1985&nbsp;года
-                Цена&nbsp;4&nbsp;коп.</p>
+            <div class="no-float">
+                <span>№&nbsp;71&nbsp;(21148)</span>
+                <span>Вторник,&nbsp;12&nbsp;марта&nbsp;1985&nbsp;года</span>
+                <span>Цена&nbsp;4&nbsp;коп.</span>
+            </div>
         </header>
         <section>
             <section class="left-block">
                 <h1>Обращение</h1>
-                <span class="appeal from">Центрального&nbsp;Комитета&nbsp;КПСС
-                    Президиума&nbsp;Верховного&nbsp;Совета&nbsp;СССР
-                    Совета&nbsp;Министров&nbsp;СССР</span>
-                <span class="appeal to">к&nbsp;Коммунистической&nbsp;партии
-                    к&nbsp;советскому&nbsp;народу</span>
+                <span class="appeal from">Центрального Комитета КПСС<br>
+                    Президиума Верховного Совета СССР<br>
+                    Совета Министров СССР</span>
+                <span class="appeal to">к Коммунистической партии<br>
+                    к советскому народу</span>
                 <article>
                     <p>Коммунистическая партия Советского Союза, Советское государство, весь советский народ
                         понесли
