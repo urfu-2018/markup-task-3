@@ -1,12 +1,13 @@
 html
 {
-    background-color: rgba(250, 188, 108, 0.705);
+    background-color: rgba(250, 188, 108, 0.7);
 }
 
 .header
 {
     border-bottom: 2px solid black;
-    padding-bottom: 15px; 
+    padding-bottom: 15px;
+
 }
 
 .logo
