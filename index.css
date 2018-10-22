@@ -1,0 +1,107 @@
+@font-face
+{
+    font-family: Diplomata;
+src: url('fonts/Diplomata-Regular.ttf');
+}
+
+@font-face
+{
+font-family: YesevaOne;
+src: url('fonts/YesevaOne-Regular.ttf');
+}
+
+@font-face
+{
+font-family: SeymourOne;
+src: url('fonts/SeymourOne-Regular.ttf');
+}
+
+
+header
+{
+text-align: center;
+font-size: 50px;
+font-family: Diplomata;
+}
+
+article
+{
+    height: 1200px;
+    text-align: center;
+}
+
+section
+{
+    display: inline-block;
+}
+
+img
+{
+    width: 100%;
+}
+
+figcaption
+{
+    font-style: italic;
+}
+
+h1
+{
+    font-family: YesevaOne;
+    font-size: 22px;
+}
+
+p
+{
+    padding: 5px;
+    text-align: justify;
+    font-size: 18px;
+    font-family: serif;
+}
+
+p.article::first-letter
+{
+    font-family: SeymourOne;
+    font-size: 18px;
+}
+
+p.big
+{
+    column-count: 2;
+}
+
+section.vertical
+{
+    width: 6%;
+    text-orientation: upright;
+    writing-mode: vertical-lr;
+}
+
+.date
+{
+    text-align: center;
+    border-bottom: 2px solid #000;
+    border-top: 2px solid #000;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+}
+
+.articles
+{
+    width: 90%;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+    vertical-align: top;
+    padding: 2px;
+    column-count: 4;
+}
+
+.vertical h1
+{
+    font-family: Diplomata;
+    font-size: 32px;
+    word-spacing: 20px;
+    letter-spacing: 5px;
+}
