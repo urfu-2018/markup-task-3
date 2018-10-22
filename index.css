@@ -6,8 +6,9 @@ hr
     margin: 0;
 }
 
-body
+html
 {
+    font-size: 20px;
     font-family: 'Izhitsa';
 }
 
@@ -15,6 +16,27 @@ body
 {
     font-family: Izhitsa;
     src: url('Izhitsa.woff2') format('woff2'), url('Izhitsa.woff') format('woff');
+}
+@font-face
+{
+    font-family: Behrens;
+    src: url('Behrens.woff2') format('woff2'), url('Behrens.woff') format('woff');
+}
+@font-face
+{
+    font-family: Galactica;
+    src: url('Galactica.woff2') format('woff2'), url('Galactica.woff') format('woff');
+}
+
+.section
+{
+    font-family: 'Galactica';
+    height: 1900px;
+}
+
+aside
+{
+    font-family: 'Behrens';
 }
 
 .horizontal-container .horizontal-element
@@ -64,22 +86,21 @@ body
 {
     text-align: right;
     text-decoration: underline;
-    font-size: 15px;
+    font-size: 1em;
     line-height: 25px;
 }
 
 .header .paper-title
 {
-    font-size: 96px;
+    font-size: 6em;
     text-align: center;
 }
 
 .header .description
 {
-    font-size: 12px;
+    font-size: .75em;
     line-height: 20px;
     text-align: center;
-
 }
 
 .uppercase
@@ -90,7 +111,8 @@ body
 .header-cell
 {
     text-align: center;
-    font-size: 12px;
+    font-size: .75em;
+    height: 40px;
 }
 
 .title
@@ -100,23 +122,29 @@ body
     text-align: center;
     text-decoration: underline;
     letter-spacing: .1em;
-    font-size: 30px;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.columns p
+{
+    text-indent: 5%;
+    hyphens: manual;
 }
 
 .columns
 {
-    text-indent: 5%;
-    hyphens: manual;
-    column-count: 2;
+    column-count: 3;
     column-rule: 1px solid #000;
 }
 
 .columns p::first-letter
 {
-    font-weight: bold;
+    font-weight: 900;
+    font-size: 1.5em;
 }
 
-.gaben-block
+.column-span-all
 {
     column-span: all;
     border: 3px dotted black;
@@ -124,14 +152,38 @@ body
     padding: 0;
 }
 
-.gaben-block .gaben-text
+.column-span-all .text
 {
     padding: 30px 0;
-    font-size: 40px;
+    font-size: 3em;
 }
 
-.gaben-block .gaben-text-small
+.column-span-all .text-small
 {
     text-align: right;
-    font-size: 15px;
+    font-size: 1em;
+}
+
+input[id='invert']:checked ~ .big-container
+{
+    color: #fff !important;
+    background: #000 !important;
+}
+
+input[id='bigText']:checked ~ .big-container
+{
+    font-size: 1.4rem;
+}
+
+input[id='bigText']:checked ~ .big-container
+{
+    font-size: 1.4rem;
+}
+
+input[id='uglyText']:checked ~ .big-container
+{
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+    color: aqua !important;
+    text-shadow: 4px  4px 10px #f00, -4px -4px 10px #0f0;
 }
