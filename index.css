@@ -1,0 +1,129 @@
+h2
+{
+    font-weight: 700;
+    -webkit-letter-spacing: 0.2px;
+    -moz-letter-spacing: 0.2px;
+    -ms-letter-spacing: 0.2px;
+    letter-spacing: 0.2px;
+    margin-top: -3px;
+    -webkit-transition: color 0.6s ease;
+    transition: color 0.6s ease;
+    color: #121212;
+    font-size: 1.25rem;
+    line-height: 1.4375rem;
+    font-family: nyt-cheltenham;
+    margin-bottom: 10px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.base-text
+{
+    font-family: nyt-imperial;
+    font-size: 1rem;
+    line-height: 1.375rem;
+    font-style: normal;
+    -webkit-letter-spacing: 0.1px;
+    -moz-letter-spacing: 0.1px;
+    -ms-letter-spacing: 0.1px;
+    letter-spacing: 0.1px;
+    color: #555;
+    -webkit-transition: color 0.6s ease;
+    transition: color 0.6s ease;
+}
+
+.wrapper{
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.nav-panel
+{
+    margin: .5em auto;
+    border-bottom: 2px solid #555;
+    border-top: 2px solid #555;
+    height: 2em;
+}
+
+.nav-item
+{    
+    margin: 4px auto;
+}
+
+.g-form-element
+{
+    margin-top: 6px;
+}
+
+.g-row
+{
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+}
+
+.g-col-1
+{
+    left: 0;
+}
+
+.g-col-2 
+{
+    left: 20%;
+}
+
+.g-col-3
+{
+    left: 40%;
+}
+
+.g-col-4 
+{
+    left: 60%;
+}
+
+.g-col-5 
+{
+    left: 80%;
+}
+
+.g-span-1,
+.g-span-2,
+.g-span-3,
+.g-span-4,
+.g-span-5
+{
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+}
+
+.g-span-1
+{
+    width: 20%;
+    margin-right: -20%;
+}
+
+.g-span-2
+{
+    width: 40%;
+    margin-right: -40%;
+}
+
+.g-span-3
+{
+    width: 60%;
+    margin-right: -60%;
+}
+
+.g-span-4
+{
+    width: 80%;
+    margin-right: -80%;
+}
+
+.g-span-5
+{
+    width: 100%;
+    margin-right: -100%;
+}
