@@ -93,24 +93,12 @@ section
     font-weight: bold;
 }
 
-.equalizer
-{
-    width: 100%;
-    height: 1px;
-    clear: both;
-}
-
 .columns
 {
     column-count: 2;
     column-rule: 2px solid black;
     column-gap: 20px;
     column-fill: balance;
-}
-
-.headline
-{
-    text-align: center;
 }
 
 .quote
@@ -131,6 +119,7 @@ section
     font-style: oblique;
     font-weight: 600;
     margin-bottom: 20px;
+    clear: both;
 }
 
 .verticalText
@@ -149,7 +138,6 @@ section
 
 p
 {
-    hyphens: auto;
     margin-block-start: 0;
     margin-block-end: 0;
     font-weight: bold;
@@ -183,26 +171,6 @@ hr
     font-size: 4.3em;
 }
 
-.headline2
-{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
-    font-weight: bold;
-    font-size: 1.5em;
-}
-
-.headline3
-{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bold;
-    font-size: 1.15em;
-}
-
-.headline2.oblique
-{
-    font-size: 1.4em;
-    font-style: oblique;
-}
-
 img
 {
     display: block;
@@ -213,63 +181,87 @@ img
     border: 2px solid black;
 }
 
-input[value='small']:checked ~ div article
+h2,
+h3
+{
+    margin: 0;
+    text-align: center;
+}
+
+h2
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
+    font-weight: bold;
+}
+
+h3
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+.oblique
+{
+    font-style: oblique;
+}
+
+input[value='small']:checked ~ main article
 {
     font-size: .7em;
 }
 
-input[value='medium']:checked ~ div article
+input[value='medium']:checked ~ main article
 {
     font-size: 1em;
 }
 
-input[value='big']:checked ~ div article
+input[value='big']:checked ~ main article
 {
     font-size: 1.3em;
 }
 
-input[value='standart']:checked ~ div p
+input[value='standart']:checked ~ main p
 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif;
 }
 
-input[value='courier']:checked ~ div p
+input[value='courier']:checked ~ main p
 {
     font-family: 'Courier New', Courier, monospace;
 }
 
-input[value='impact']:checked ~ div p
+input[value='impact']:checked ~ main p
 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-input[value='dark']:checked ~ div
+input[value='dark']:checked ~ main
 {
     color: white;
     background-image: url('pictures/dark_theme.png');
     background-repeat: repeat;
 }
 
-input[value='dark']:checked ~ div section,
-input[value='dark']:checked ~ div .line,
-input[value='dark']:checked ~ div .quote,
-input[value='dark']:checked ~ div .block,
-input[value='dark']:checked ~ div .verticalText
+input[value='dark']:checked ~ main section,
+input[value='dark']:checked ~ main .line,
+input[value='dark']:checked ~ main .quote,
+input[value='dark']:checked ~ main .block,
+input[value='dark']:checked ~ main .verticalText
 {
     border-color: white;
 }
 
-input[value='dark']:checked ~ div .columns
+input[value='dark']:checked ~ main .columns
 {
     column-rule-color: white;
 }
 
-input[value='dark']:checked ~ div hr
+input[value='dark']:checked ~ main hr
 {
     color: white;
 }
 
-input[value='light']:checked ~ div
+input[value='light']:checked ~ main
 {
     background-image: url('pictures/light_theme.png');
     background-repeat: repeat;
