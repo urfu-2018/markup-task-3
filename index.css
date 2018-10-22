@@ -1,0 +1,144 @@
+h1
+{
+    font: 70px 'Lobster', cursive;
+    text-align: center;
+    margin: 0;
+}
+
+h3
+{
+    font: 2em 'Russo One', sans-serif;
+    column-span: all;
+    text-align: center;
+}
+
+.info
+{
+    border-top: 5px black double;
+    border-bottom: 5px black double;
+    font-family: 'Play', sans-serif;
+}
+
+hr
+{
+    border-color: black;
+}
+
+.info p
+{
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.main
+{
+    display: flex;
+    font-family: 'Gabriela', serif;
+}
+
+.flex1
+{
+    flex: 1;
+}
+
+.flex2
+{
+    flex: 2;
+}
+
+.columns2
+{
+    column-count: 2;
+    column-rule: 2px solid black;
+}
+
+h2
+{
+    font: 2em 'Press Start 2P', cursive;
+    text-align: center;
+}
+
+section p,
+article p
+{
+    hyphens: auto;
+}
+
+article p:first-of-type:first-letter
+{
+    font-size: 3em;
+    font-family: 'Press Start 2P', cursive;
+}
+
+article,
+aside
+{
+    padding: 5px;
+    border-right: solid black 2px;
+}
+
+.in-text-img-right
+{
+    float: right;
+}
+
+.quote
+{
+    font-size: .7em;
+    font-family: 'Kelly Slab', cursive;
+    font-style: italic;
+    text-align: start;
+}
+
+.inner-quote
+{
+    font-family: 'Mistral', serif;
+}
+
+.no-wrap
+{
+    white-space: nowrap;
+}
+
+.quote-source
+{
+    font-size: .7em;
+    text-align: end;
+}
+
+.radio-size-medium:checked ~ .main
+{
+    font-size: 20px;
+}
+
+.radio-size-big:checked ~ .main
+{
+    font-size: 30px;
+}
+
+.label-size
+{
+    display: inline-block;
+}
+
+.color-checkbox:checked ~ div article,
+.color-checkbox:checked ~ div aside,
+.color-checkbox:checked ~ div aside hr,
+.color-checkbox:checked ~ div,
+.color-checkbox:checked ~ .info
+{
+    color: white !important;
+    background: black !important;
+    border-color: white !important;
+    column-rule-color: white !important;
+}
+
+.force-cs-checkbox:checked ~ div,
+.force-cs-checkbox:checked ~ div h1,
+.force-cs-checkbox:checked ~ div h2,
+.force-cs-checkbox:checked ~ div h3,
+.force-cs-checkbox:checked ~ div i
+{
+    font-family: 'Comic Sans MS', serif !important;
+}
