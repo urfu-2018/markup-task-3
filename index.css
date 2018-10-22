@@ -10,7 +10,7 @@ h2
     transition: color .6s ease;
     color: #121212;
     font-size: 1.25rem;
-    line-height: 1.4375rem;
+    line-height: 1.4rem;
     font-family: nyt-cheltenham;
     margin-bottom: 10px;
     -webkit-font-smoothing: antialiased;
@@ -25,22 +25,21 @@ hr
     background: #555;
     background-image: -webkit-linear-gradient(left, #fff, #555, #fff);
     background-image: -moz-linear-gradient(left, #fff, #555, #fff);
-    background-image: -ms-linear-gradient(left, #fff, #555, #fff);
-    background-image: -o-linear-gradient(left, #fff, #555, #fff);
 }
 
-.vertical_header {
+.vertical-text
+{
+    padding: 1em 3em 0 0 !important;
     writing-mode: vertical-rl;
     text-transform: uppercase;
     text-orientation: upright;
-    padding: 1em 3em 0 0 !important;
 }
 
 .base-text
 {
     font-family: nyt-imperial;
     font-size: 1rem;
-    line-height: 1.375rem;
+    line-height: 1.4rem;
     font-style: normal;
     -webkit-letter-spacing: .1px;
     -moz-letter-spacing: .1px;
@@ -84,7 +83,7 @@ p::first-letter
 }
 
 .nav-item
-{    
+{
     margin: 4px auto;
 }
 
@@ -126,7 +125,7 @@ p::first-letter
 .g-col-4,
 .g-col-5
 {
-    padding: 0 5px 0 5px;
+    padding: 0 5px;
 }
 
 .g-span-1,
