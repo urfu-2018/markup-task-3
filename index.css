@@ -10,27 +10,27 @@
     src: url('fonts/Enchanted\ Land.otf');
 }
 
-html
+@font-face
 {
-    width:100%;
-    /* margin: 0 auto; */
+    font-family: OldNewspaper;
+    src: url('fonts/OldNewspaperTypes.ttf');
+}
+
+main
+{
+    width: 100%;
     display: flex;
     padding: 0 5px 10px 10px;
     flex-direction: column;
     box-sizing: border-box;
     background: url(images/paper_texture1289.jpg) no-repeat center;
-    font-family: NYText;
-    font-size: 3ex
-}
-
-header
-{
-    font-family: unset;
-}
-
-header
-{
     font-family: OldEnglish;
+    font-size: 3ex;
+}
+
+.page-content
+{
+    font-family: NYText;
 }
 
 .page-header h1
@@ -39,6 +39,7 @@ header
     flex-basis: 50px;
     margin-bottom: 5px;
     border-bottom: 1px solid #000;
+    font-size: 300%;
 }
 
 .page-header div
@@ -58,23 +59,28 @@ header
     -ms-hyphens: auto;
     -moz-hyphens: auto;
     hyphens: auto;
-    column-width: auto;
-    column-count: auto;
 }
 
 .page-content > div
 {
     height: 100%;
     float: left;
-    text-align: justify;
     padding: 3px 6px;
     box-sizing: border-box;
     border-right: 2px solid black;
+    margin: 0%;
 }
 
 .page-content > div:last-of-type
 {
     border-right: none;
+}
+
+p::first-letter
+{
+    border: .5px solid #000;
+    font-family: OldNewspaper;
+    font-size: 150%;
 }
 
 .left-side
@@ -106,17 +112,10 @@ header
     width: 20%;
 }
 
-#separator
-{
-    border-bottom: 1px solid #000;
-}
-
-.happy-mrs-kennedy-content:nth-child(n)
+.happy-mrs-kennedy-content
 {
     column-count: 2;
-    
     column-rule: 2px dotted black;
-    height: 100%;
 }
 
 p.caption
@@ -124,3 +123,68 @@ p.caption
     border-bottom: 1px solid #000;
 }
 
+.switch-font:checked ~ .page-content
+{
+    font-family: OldEnglish;
+}
+
+.switch-font:checked ~ header
+{
+    font-family: NYText;
+}
+
+.switch-font:checked ~ .page-content p::first-letter
+{
+    font-family: OldEnglish;
+}
+
+.switch-font-size:checked ~ .page-content
+{
+    font-size: 90%;
+}
+
+.switch-font-size:checked ~ .page-header
+{
+    font-size: 110%;
+}
+
+.switch-color:checked ~ .page-content
+{
+    color: #fff;
+    background: #000;
+    border-right: 1px solid #fff;
+}
+
+.switch-color:checked ~ .page-content div
+{
+    border-right: 1px solid #fff;
+}
+
+.switch-color:checked ~ .page-content div:last-of-type
+{
+    border-right: 1px solid #000;
+}
+
+.switch-color:checked ~ .page-header
+{
+    color: #fff;
+    background: #000;
+    border-bottom: 1px solid #fff;
+}
+
+.switch-color:checked ~ .page-header h1
+{
+    color: #fff;
+    background: #000;
+    border-bottom: 1px solid #fff;
+}
+
+.switch-color:checked ~ .page-content p::first-letter
+{
+    border: .5px solid #fff;
+}
+
+.switch-color:checked ~ .page-content .caption
+{
+    border-bottom: .5px solid #fff;
+}
