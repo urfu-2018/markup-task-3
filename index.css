@@ -1,30 +1,69 @@
-.container {
-    width: 100%;
-    height: 80%;
-    margin: 0 auto;
-    font-size: 2em;
-    font-family: 'Abril Fatface', cursive;
-    text-align: center;
-    border: 1px white;
+input[id='dark_theme']:checked ~ .container
+{
+    background-color: gray;
+    color: navajowhite;
 }
 
-.container p {
+input[id='dark_theme']:checked ~ .container .info
+{
+    border-top: 5px double navajowhite;
+    border-bottom: 5px double navajowhite;
+}
+
+input[id='bigger_font']:checked ~ .container
+{
+    font-size: 260%;
+}
+
+input[id='bigger_font']:checked ~ section.first_column,
+section.counter-list
+{
+    font-size: .5em !important;
+}
+
+.container
+{
+    font-size: 200%;
+}
+
+input[id='another_font']:checked ~ .container.fatface,
+input[id='another_font']:checked ~ .container .fatface,
+input[id='another_font']:checked ~ .container .gothic,
+input[id='another_font']:checked ~ .container .gabriola,
+input[id='another_font']:checked ~ .container .oldface
+{
+    font-family: Arial sans-serif;
+}
+
+.container
+{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container p
+{
     font-size: .6em;
 
 }
 
-.container h1 {
+.container h1
+{
     letter-spacing: 4px;
     word-spacing: 60px;
     text-transform: capitalize;
 }
 
-.container h3, h6 {
+.container h3,
+h6
+{
     text-transform: capitalize;
     word-spacing: 6px;
 }
 
-.info {
+.info
+{
     display: table;
     width: 100%;
     font-size: .7em;
@@ -34,142 +73,192 @@
 
 }
 
-.left, .center, .right {
-    width: 33.3333%;
+.left,
+.center,
+.right
+{
+    width: 33.33%;
     display: table-cell;
     text-align: center;
     text-transform: capitalize;
 }
 
-article div {
-    font-family: Gabriola;
-    font-weight: bold;
-
-}
-
-img {
+img
+{
     width: 500px;
     height: 400px;
 }
 
-.some_texts {
+.some_texts
+{
     width: 100%;
     display: table;
     overflow: hidden;
-    position: relative;
-    height: 600px;
-
-
-
 }
 
-.first_column {
-    width: 33.3333%;
+.some_texts > section,
+.some_texts > article
+{
+    width: calc(100% / 3 - 10px);
+}
+
+.first_column
+{
     display: table-cell;
     float: left;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    top: 0;
+    text-align: left;
 }
 
-.counter-list {
+.first_column h4
+{
+    text-align: center;
+}
+
+.counter-list
+{
     column-count: 2;
     font-size: .7em;
 }
 
-.counter-list p {
+.counter-list p
+{
     margin-top: 0;
     overflow: hidden;
     text-transform: capitalize;
 }
 
-.counter-list p:after {
+.counter-list p:after
+{
     content: '..................................................';
     display: block;
     white-space: nowrap;
     overflow: hidden;
 }
 
-p span:first-of-type {
+p span:first-of-type
+{
     float: left;
     margin-right: 10px;
 }
 
-p span:last-of-type {
+p span:last-of-type
+{
     float: right;
     margin-left: 10px;
 }
 
-.tribute p {
+.tribute p
+{
     text-align: justify;
-    font-family: 'Abril Fatface', cursive;
     border-bottom: 5px double black;
     border-top: 5px double black;
     font-size: .6em;
     column-span: all;
 }
 
-.announce {
+.fatface
+{
+    font-family: 'Abril Fatface', cursive;
+}
+
+.gothic
+{
+    font-family: GothicE, serif;
+}
+
+.oldface
+{
+    font-family: 'Baskerville Old Face', sans-serif;
+}
+
+.gabriola
+{
+    font-family: Gabriola, monospace;
+}
+
+.announce
+{
     font-size: 1em;
-    font-family: GothicE;
     font-weight: bold;
 }
 
-.second_column {
-    font-family: "Baskerville Old Face";
+.second_column
+{
     font-style: italic;
-    width: 33%;
     text-align: justify;
+    float: left;
     column-count: 2;
     margin-left: 30px;
     column-rule: 1px solid black;
-    bottom: 0;
-    position: absolute;
-    left: 33.3333%;
+    display: table-cell;
 
 }
-.second_column p {
+
+.second_column p
+{
     font-size: .6em;
 }
-.second_column h4 {
+
+.second_column h4
+{
     font-size: 1em;
     text-align: center;
 }
 
-.qu {
+.qu
+{
     column-span: all;
     font-size: .8em;
     font-weight: bold;
 }
 
-.third_column {
-    width: 28%;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    top: 0;
+.third_column
+{
+    display: table-cell;
+    float: left;
 
 }
 
-.third_column img {
+.third_column img
+{
     width: 250px;
     height: 300px;
 }
 
-.third_column p {
+.third_column p
+{
     text-align: center;
     word-spacing: 2px;
     font-size: 1em;
-    font-family: Gabriola;
     font-weight: bold;
     text-transform: capitalize;
 
 }
 
-.third_column p:first-letter {
-    font-family: "Old English Text MT";
+.third_column p:first-letter
+{
+    font-family: 'Old English Text MT', sans-serif;
     font-size: 2em;
 }
 
+.dno p
+{
+    font-size: .4em;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    text-align: right;
+}
 
+@media (max-width: 925px)
+{
+    .some_texts > section,
+    .some_texts > article
+    {
+        width: 100%;
+    }
+
+    .second_column
+    {
+        margin-left: 0;
+    }
+}
