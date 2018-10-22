@@ -5,7 +5,6 @@ body
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
     hyphens: auto;
-
 }
 
 .night-mode:checked ~ section,
@@ -15,15 +14,40 @@ body
     background: #222 !important;
 }
 
-.night-mode:checked ~ section > .red-ad,
+.night-mode:checked ~ section > .red-block,
 .night-mode:checked ~ section hr
 {
     border-color: #f5deb3;
 }
 
-.input
+.small-font-size:checked ~ .newspaper-text
 {
-    width: 100px;
+    font-size: 12px;
+}
+
+.medium-font-size:checked ~ .newspaper-text
+{
+    font-size: 14px;
+}
+
+.large-font-size:checked ~ .newspaper-text
+{
+    font-size: 18px;
+}
+
+.arial-font-family:checked ~ .newspaper-text
+{
+    font-family: Arial, serif;
+}
+
+.times-font-family:checked ~ .newspaper-text
+{
+    font-family: Times, serif;
+}
+
+.helvetica-font-family:checked ~ .newspaper-text
+{
+    font-family: Helvetica, serif;
 }
 
 .title-section
@@ -34,13 +58,13 @@ body
     text-align: center;
 }
 
-.red-ad
+.red-block
 {
     border: 3px double #333;
     color: #333;
 }
 
-.red-ad-left
+.red-block-left
 {
     text-align: left;
 }
@@ -60,7 +84,7 @@ body
     width: 50%;
 }
 
-.red-ad-right
+.red-block-right
 {
     font: 20px bold impact, sans-serif;
     line-height: 19px;
@@ -69,15 +93,37 @@ body
 .newspaper-title
 {
     /* replace with actual image?*/
-    font: 60px 'Times New Roman', Times, serif;
+    font: 60px Times, serif;
     margin: 1rem;
 }
 
 .undertitle
 {
     text-align: center;
-    margin: 10px 20px 0;
-    padding: 0 0 20px;
+    margin: 1% 2% 0;
+    padding: 0 0 2%;
+}
+
+.newspaper-info
+{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+
+.newspaper-info-n,
+.newspaper-info-cost
+{
+    padding: 0 5%;
+}
+
+.newspaper-info-n
+{
+    text-align: left;
+}
+
+.newspaper-info-cost
+{
+    text-align: right;
 }
 
 .thicc-hr
@@ -119,22 +165,22 @@ body
 
 .newspaper-text
 {
-    display: grid;
-    grid-template-columns: 30% 14% 14% 14% 14% 14%;
+    column-count: 6;
+    column-rule: 1px solid #222;
+    column-fill: balance;
+    text-align: justify;
 }
 
-.column,
-.first-column,
-.last-column
+.span-hr-pair
 {
-    border: 2px #222;
-    border-right-style: solid;
-    font-size: 12px;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
 }
 
-.last-column
+.text::first-letter
 {
-    border: none;
+    font-size: 1.1rem;
 }
 
 .first-column-titles
@@ -158,10 +204,5 @@ body
 .picture
 {
     margin-left: 1px;
-    width: 200%;
-}
-
-.bottom-picture
-{
-    vertical-align: bottom;
+    width: 95%;
 }

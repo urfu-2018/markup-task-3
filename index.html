@@ -9,31 +9,38 @@
     <input type="checkbox" id="night-mode-checkbox" class="night-mode">
     <label for="night-mode-checkbox">Night Mode</label>
     |
-    <label for="font-size">Font Size</label>
-    <input type="range" min='8' max='40' id="font-size" class="input">
+    Font Size:
+    <input type="radio" name="font-size" value="12px" id="small-font-size" class="small-font-size">
+    <label for="small-font-size">S</label>
+    <input type="radio" name="font-size" value="14px" id="medium-font-size" class="medium-font-size">
+    <label for="medium-font-size">M</label>
+    <input type="radio" name="font-size" value="18px" id="large-font-size" class="large-font-size">
+    <label for="large-font-size">L</label>
     |
-    <label for="font-selector">Font</label>
-    <select id="font-selector" class="input">
-        <option value="Arial">Arial</option>
-        <option value="Times New Roman">Times New Roman</option>
-        <option value="Times" selected="selected">Times</option>
-        <option value="Helvetica">Helvetica</option>
-        <option value="Verdana">Verdana</option>
-    </select>
+    Font
+    <input type="radio" name="font-family" id="arial-font-family" class="arial-font-family">
+    <label for="arial-font-family">Arial</label>
+    <input type="radio" name="font-family" id="times-font-family" class="times-font-family">
+    <label for="times-font-family">Times</label>
+    <input type="radio" name="font-family" id="helvetica-font-family" class="helvetica-font-family">
+    <label for="helvetica-font-family">Helvetica</label>
+    <hr class="thinn-hr">
     <section class="title-section">
-        <div class="red-ad red-ad-left">
-            Yes, I know, night mode looks afwul. <br>
+        <div class="red-block red-block-left">
+            Yes, I know, night mode looks awful. <br>
             It would've looked great with a just a sprinkle of js, but you didn't allow it, guys. <br>
         </div>
         <div class="title">
-            <h1 class="newspaper-title">Daily News & Reader</h1>
+            <h1 class="newspaper-title">Daily News &amp; Reader</h1>
             <hr class="thicc-hr">
             <hr class="thinn-hr">
-            <span class="newspaper-info">
-                No. 21.343. LONDON & MANCHESTER, WEDNESDAY, AUGUST 3. 1914. ONE HALF-PENNY
-            </span>
+            <div class="newspaper-info">
+                <div class="newspaper-info-n">No. 21.343.</div>
+                <div class="newspaper-info-date">LONDON &amp; MANCHESTER, WEDNESDAY, AUGUST 3. 1914.</div>
+                <div class="newspaper-info-cost">ONE HALF-PENNY</div>
+            </div>
         </div>
-        <div class="red-ad red-ad-right">
+        <div class="red-block red-block-right">
             <span class="thicc-text">BRAND'S ESSENCE</span><br>
             of <span class="underlined-text">BEEF</span><br>
             and of <span class="underlined-text">CHICKEN</span><br>
@@ -50,51 +57,73 @@
         <hr class="thinn-hr">
     </section>
     <section class="newspaper-text">
-        <div class="first-column">
-            <div class="first-column-titles">
+        <div class="first-column-titles">
+            <div class="span-hr-pair">
                 <span>WAR WITH GERMANY.</span>
                 <hr class="short-hr">
+            </div>
+            <div class="logo-hr-pair">
                 <span>Reported Sinking of a British Ship.</span>
                 <hr class="short-hr">
+            </div>
+            <div class="logo-hr-pair">
                 <span>OUR ULTIMATUM.</span>
                 <hr class="short-hr">
+            </div>
+            <div class="logo-hr-pair">
                 <span>Demand for Withdrawal from Belgium</span>
                 <hr class="short-hr">
+            </div>
+            <div class="logo-hr-pair">
                 <span>KING'S MESSAGE TO NAVY</span>
                 <hr class="short-hr">
             </div>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean augue lectus, tempor ut est ac, tempor
-            sodales libero. Etiam eget sapien libero. Nulla mollis, sapien in porta molestie, enim turpis efficitur.
         </div>
-        <div class="column">
-            <div class="column-titles">
-                <span>GERMANS SUNK BRITISH SHIP</span>
-                <hr class="short-hr">
-                <span>Reported loss of Mine-Layer.</span>
-                <hr class="short-hr">
-            </div>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean augue lectus, tempor ut est ac, tempor
-            sodales libero. Etiam eget sapien libero. Nulla mollis, sapien in porta molestie, enim turpis efficitur.
+        <div class="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+            in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+            in culpa qui officia deserunt mollit anim id est laborum.
         </div>
-        <div class="column">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean augue lectus, tempor ut est ac, tempor
-            sodales libero. Etiam eget sapien libero. Nulla mollis, sapien in porta molestie, enim turpis efficitur.
-            <div class="bottom-picture">
-                <img src="German_advance.png" title="German advance trough Belgium." alt="German advance trough Belgium."
-                     class="picture">
-            </div>
+        <div class="column-titles">
+            <span>GERMANS SUNK BRITISH SHIP</span>
+            <hr class="short-hr">
+            <span>Reported loss of Mine-Layer.</span>
+            <hr class="short-hr">
         </div>
-        <div class="column">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean augue lectus, tempor ut est ac, tempor
-            sodales libero. Etiam eget sapien libero. Nulla mollis, sapien in porta molestie, enim turpis efficitur.
+        <div class="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+            in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+            in culpa qui officia deserunt mollit anim id est laborum.
         </div>
-        <div class="column">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean augue lectus, tempor ut est ac, tempor
-            sodales libero. Etiam eget sapien libero. Nulla mollis, sapien in porta molestie, enim turpis efficitur.
+        <div class="bottom-picture">
+            <img src="German_advance.png" title="German advance trough Belgium."
+                 alt="German advance trough Belgium." class="picture">
         </div>
-        <div class="last-column">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean augue lectus, tempor ut est ac, tempor
-            sodales libero. Etiam eget sapien libero. Nulla mollis, sapien in porta molestie, enim turpis efficitur.
+        <div class="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+            in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+            in culpa qui officia deserunt mollit anim id est laborum.
         </div>
     </section>
 </body>
