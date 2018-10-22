@@ -1,0 +1,362 @@
+@font-face
+{
+    font-family: Flavius;
+    src: url(Flavius.ttf);
+}
+@font-face
+{
+    font-family: Arhimandrite;
+    src: url(Archimandrite.otf);
+}
+
+@font-face
+{
+    font-family: Eskal;
+    src: url("Eskal Font4You.ttf");
+}
+
+@font-face
+{
+    font-family: Lato;
+    src: url("ofont.ru_Lato Light.ttf");
+}
+
+@font-face
+{
+    font-family: Sport;
+    src: url(ofont.ru_Giger.ttf);
+}
+
+@font-face
+{
+    font-family: Petschat;
+    src: url(12112.ttf);
+}
+
+@font-face
+{
+    font-family: Flavius;
+    src: url(Flavius.ttf);
+}
+
+@import url(http://allfont.ru/allfont.css?fonts=freeset-bold-cyrillic);
+
+header
+{
+    font-size: 6em;
+    font-family: Arhimandrite;
+    text-align: center;
+    color: rgb(245, 10, 88);
+    border-bottom: 1px solid rgb(128, 128, 128);
+}
+
+img 
+{
+    width: 100px;
+}
+
+.info 
+{
+    width: 205px;
+    margin: 0 12px 2px 5px;
+}
+
+.info p:not([class]) 
+{
+    font-size: .9em;
+    font-family: Arhimandrite;
+    text-align: left;
+}
+
+.auxiliary
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10px;
+    text-align: left;
+}
+
+.content 
+{
+    margin: 0 30px 0 30px;
+}
+
+h2 
+{
+    margin-left: 1px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    background: rgb(192, 192, 192);
+    width: 100%;
+    column-span: all;
+}
+
+.policy 
+{
+    width: 400px;
+    border-right: .2px solid rgba(231, 22, 92, .8);
+    hyphens: auto;
+    position: absolute;
+    float: top;
+}
+
+.main_policy
+{
+    font-family: 'Arial Black';
+    font-size: 15px;
+    text-align: center;
+    hyphens: auto;
+    margin-right: 15px;
+    font-style: italic;
+}
+
+h6
+{
+    column-span: all;
+    font-size: 20px;
+    font-family: 'FreeSet Bold Cyrillic', arial;
+    margin: 20px 0 20px 0;
+}
+
+.policy_content 
+{
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.25;
+    margin-right: 30px;
+    hyphens: auto;
+    column-gap: 1em;
+    column-count: 2;
+}
+
+hr
+{
+    border: none;
+    column-span: all;
+    background-color: rgba(231, 22, 92, .2);
+    color: rgba(231, 22, 92, .2);
+    height: 1px;
+}
+
+.quote
+{
+    background: url("https://ds04.infourok.ru/uploads/ex/0c87/0008ab8e-b11988ae/img3.jpg");
+    background-size: 500px 281px;
+    width: 450px;
+    height: 278px;
+    margin-right: 0;
+    float: right;
+    position: relative;
+}
+
+div[class="quote"] p[class="main"]
+{
+    margin: 2% 0 0 8%;
+    font-size: 24px;
+    font-family: Eskal;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+div[class="quote"] p[class="autor"]
+{
+    text-align: right;
+    margin-right: 30%;
+    font-size: 22px;
+    font-family: Eskal;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.science
+{
+    width: auto; 
+    margin: 0 460px 0 410px;
+    float: top;
+    position: absolute;
+}
+
+.science h2
+{
+    margin-left: 1px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    background: rgb(192, 192, 192);
+    width: 95%;
+    column-span: all;
+}
+
+div[class="science"] p[class="head"]
+{
+    font-family: Lato;
+    text-align: center;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    width: 95%;
+}
+
+p.begin::first-line
+{
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p.begin
+{
+    font-weight: bold;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    line-height: 1.25;
+    position: relative;
+    width: 95%;
+}
+
+p.substantial
+{
+    text-align: justify;
+    font-family: Cambria, serif;
+    font-size: 16px;
+    margin: 0 2px 0 2px;
+    line-height: 1.25;
+    width: 800px;
+    column-count: 4;
+    hyphens: auto;
+    column-gap: 1em;
+    position: absolute;
+}
+
+div[class="science"] img
+{
+    margin-left: 2px;
+    width: 100%;
+    column-span: all;
+    display: block;
+}
+
+.sport
+{
+    position: relative;
+    width: 390px;
+    display: block;
+}
+
+.sport p.head
+{
+    margin-left: 50px;
+    width: 300px;
+    font-family: Sport;
+    word-wrap: break-word;
+    text-align: center;
+    font-size: 24px;
+    column-span: all;
+    font-weight: bold;
+}
+
+.sport p.main
+{
+    font-family: Sport;
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+    width: 370px;
+    column-span: all;
+    word-wrap: break-word;;
+}
+
+.sport p.content
+{
+    column-count: 2;
+    width: 370px;
+    margin: 0;
+    text-align: justify;
+}
+
+.sport blockquote
+{
+    background: rgba(240, 212, 153, .2);
+    text-align: justify;
+    font-style: oblique;
+    font-family: Calibri, sans-serif;
+    border: 12px solid  rgba(240, 212, 153, .1);
+    border-radius: 7px;
+    margin: 0;
+}
+
+div[class="sport"] img
+{
+    margin-left: 15%;
+    width: 70%;
+    column-span: all;
+    display: block;
+}
+
+.announcement
+{
+    width: 215px;
+    margin-left: 1230px;
+    float: left;
+    text-align: justify;
+    display: block;
+    position: relative;
+}
+
+.announcement p
+{
+    font-family: Petschat;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+span.date
+{
+    font-weight: bolder;
+    color:  rgb(245, 10, 88);
+}
+
+span.event
+{
+    font-weight: bolder;
+}
+
+.hystory
+{
+    width: 215px;
+    margin-left: 1230px;
+    float: left;
+    text-align: justify;
+    display: block;
+    position: relative;
+    background: rgba(255, 222, 173, .2);
+}
+
+.hystory h5
+{
+    font-family: Flavius;
+    font-size: 18px;
+    text-align: center;
+}
+
+.hystory p
+{
+    font-size: 12.5px;
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+    margin: 0 3px 0 3px;
+}
+
+.redaction
+{
+    width: 215px;
+    margin-left: 1230px;
+    float: left;
+    text-align: justify;
+    display: block;
+    position: relative;
+    font-size: 13px;
+    font-family: 'Times New Roman', serif;
+}
+
