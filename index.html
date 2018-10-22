@@ -407,12 +407,42 @@
         {
             width: 100%;
             text-align: center;
-            border-bottom: 1px solid gray;
+            margin-bottom: 10px;
         }
 
         figure
         {
             margin: 6px 6px 6px 0;
+        }
+
+        .main-left-side figure figcaption > span
+        {
+            font-style: italic;
+            position: relative;
+            top: 5px;
+            display: inline-block;
+        }
+
+        .main-left-side figure figcaption > span:after
+        {
+            content: '';
+            position: absolute;
+            border-bottom: 1px solid gray;
+            top: 9px;
+            width: 54px;
+            left: 100%;
+            margin-left: 15px;
+        }
+
+        .main-left-side figure figcaption > span:before
+        {
+            content: '';
+            position: absolute;
+            border-bottom: 1px solid gray;
+            top: 9px;
+            width: 54px;
+            right: 100%;
+            margin-right: 15px;
         }
 
         .main-right-side .footer-summary
@@ -459,7 +489,7 @@
     <div class="main-left-side">
         <figure>
             <img src="img/mainPhoto.jpg" class="main-image"/>
-            <figcaption>ЮРИЙ АЛЕКСЕЕВИЧ ГАГАРИН</figcaption>
+            <figcaption><span>ЮРИЙ АЛЕКСЕЕВИЧ ГАГАРИН</span></figcaption>
         </figure>
         <div class="left-side-text-content">
             <article>
