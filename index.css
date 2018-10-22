@@ -5,12 +5,13 @@
     width: 1400px;
     margin: 0 auto;
     padding: 15px;
+    overflow: hidden;
 }
 
 bdi
 {
     text-align: justify;
-    line-height: 0.9em;
+    line-height: .9em;
     font-size: 12px;
     display: inline-block;
 }
@@ -32,7 +33,7 @@ h1
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 56px;
     padding: 0;
-    margin: 0;  
+    margin: 0;
     text-align: center;
     text-transform: uppercase;
 }
@@ -51,7 +52,7 @@ h2
 article
 {
     column-count: 2;
-    padding-top: 0.5em;
+    padding-top: .5em;
     margin-bottom: 2em;
 }
 
@@ -97,7 +98,7 @@ section img
 .important-message
 {
     border: 1px solid black;
-    padding: 0.8em;
+    padding: .8em;
     overflow: hidden;
 }
 
@@ -115,7 +116,7 @@ section img
 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
-    font-size: 0.7em;
+    font-size: .7em;
     clear: both;
     text-align: justify;
     border-top: 1px solid black;
@@ -153,31 +154,31 @@ section img
 
 .appeal.to
 {
-    font-style: italic; 
+    font-style: italic;
 }
 
-#oldschool:checked ~ .container
+.oldschool:checked ~ .container
 {
     background: url('images/background.jpg');
     color: #403b32;
 }
 
-#oldschool:checked ~ .container .logo-img
+.oldschool:checked ~ .container .logo-img
 {
     background: url('images/burned_logo.png');
     opacity: .7;
 }
 
-#oldschool:checked ~ .container .left-block,
-#oldschool:checked ~ .container .no-float,
-#oldschool:checked ~ .container .important-message
+.oldschool:checked ~ .container .left-block,
+.oldschool:checked ~ .container .no-float,
+.oldschool:checked ~ .container .important-message
 {
     border-color: #403b32;
 }
 
-#changefont:checked ~ .container
+.changefont:checked ~ .container
 {
-    font-family: "Comic Sans MS", cursive;
+    font-family: 'Comic Sans MS', cursive;
     color: red;
 }
 
