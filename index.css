@@ -1,0 +1,155 @@
+@font-face
+{
+    font-family: 'Rounds Black Regular';
+    src: url('fonts/RoundsBlack.eot');
+    src: url('fonts/RoundsBlack.eot?#iefix') format('embedded-opentype'), url('fonts/RoundsBlack.woff') format('woff'), url('fonts/RoundsBlack.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face
+{
+    font-family: 'Herold';
+    src: url('fonts/herold-normal.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+    background: #dadada;
+}
+
+header,
+h4
+{
+    text-align: center;
+}
+
+p
+{
+    hyphens: auto;
+    font-size: 20px;
+}
+
+span
+{
+    hyphens: none;
+}
+
+.news
+{
+    padding: 30px;
+    width: 80%;
+    float: left;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.sidebar
+{
+    padding: 20px;
+    float: right;
+}
+
+.name
+{
+    font-family: Herold;
+    font-size: 72px;
+    line-height: 12px;
+}
+
+h3
+{
+    font-family: Rounds Black Regular;
+    text-align: center;
+    font-size: 25px;
+}
+
+h3::first-letter
+{
+    font-size: 150%;
+    border: #0d0d0d solid 2px;
+    padding: 1px;
+}
+
+.news img
+{
+    margin: 10px 0;
+    width: 300px;
+}
+
+.img-right
+{
+    float: right;
+    width: 250px;
+    margin: 0 10px;
+}
+
+.img-left
+{
+    float: left;
+    width: 250px;
+    margin: 0 10px;
+}
+
+.img-center
+{
+    width: 100%;
+}
+
+.content-article
+{
+    overflow: hidden;
+}
+
+.content-article > p
+{
+    font-family: Courier;
+    word-spacing: -.2px;
+    margin: 0;
+    text-indent: 1.5em;
+}
+
+.news > article
+{
+    margin-bottom: 20px;
+}
+
+.news > article:not(:last-child)
+{
+    border-bottom: 4px double black;
+}
+
+.two-collums > .content-article
+{
+    column-count: 2;
+    column-rule: 1px solid gray;
+}
+
+.two-collums-news td
+{
+    padding: 5px;
+}
+
+.two-collums-news td:last-child
+{
+    margin-left: 10px;
+    border-left: 4px double black;
+}
+
+.day
+{
+    text-align: center;
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+.day:not(:last-child)
+{
+    border-bottom: 6px double black;
+}
+
+.day > img
+{
+    width: 70%;
+}
