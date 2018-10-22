@@ -118,8 +118,8 @@ body {
     color: #ffe;
 }
 
-#dark:checked ~ .newspaper * .borderbox,
-#dark:checked ~ .newspaper * .underline {
+#dark:checked ~ * .borderbox,
+#dark:checked ~ * .underline {
     border-color:#ffe;
 }
 
