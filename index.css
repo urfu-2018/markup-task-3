@@ -176,7 +176,6 @@ figcaption
     color: white;
 }
 
-
 input[value='Arial']:checked ~ main
 {
     font-family: Arial, serif;
