@@ -1,0 +1,87 @@
+body
+{
+    background: url('https://cdn1.savepice.ru/uploads/2018/10/21/881a5cbf0624ee66a20ce705a7d169a3-full.jpg');
+    background-size: 45%;
+}
+
+.sport
+{
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.column
+{
+    text-align: justify;
+    float: left;
+    width: 100%;
+    columns: 5 100px;
+    column-rule: 2px solid #000;
+    column-gap: 0;
+}
+
+h1
+{
+    border: 3px solid black;
+    word-spacing: 40px;
+    letter-spacing: 20px;
+    font: normal 900 45px/1 Times, 'URW Palladio L', ultra-condensed;
+}
+
+.intro
+{
+    margin-top: -20px;
+    word-spacing: 1px;
+    font: normal 30px/1 SansSerif, 'Gill Sans', sans-serif;
+}
+
+.firstLetterIntro
+{
+    margin-left: 15px;
+    font: normal 900 35px/1 Times, 'Times New Roman', serif;
+}
+
+.basic
+{
+    margin: 5px;
+    word-spacing: 10px;
+    font: normal 500 16px/1 SansSerif, 'Verdana', serif;
+}
+
+.firstLetterBasic
+{
+    margin-left: 15px;
+}
+
+.star
+{
+    margin-top: -5px;
+    margin-bottom: -5px;
+    margin-left: 20%;
+    font-size: xx-large;
+}
+
+.rightIMG
+{
+    width: 300px;
+    margin: 5px auto;
+    float: right;
+    position: relative;
+    right: 0;
+    top: 28%;
+}
+
+.rightSign
+{
+    text-align: justify;
+    font: italic 200 16px/1 Monospaced, 'FreeMono', monospace;
+    width: 80px;
+    margin: 10px auto;
+}
+
+section
+{
+    break-after: page;
+}
