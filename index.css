@@ -1,0 +1,100 @@
+header h1
+{
+    font-family: toreadoreregular, small-caps;
+    font-size: 70px;
+    letter-spacing: .3em;
+    text-align: center;
+}
+
+body
+{
+    background: url('rsz_logo.png') no-repeat top right, url('test.jpg') no-repeat;
+    background-size: 7%, cover;
+}
+
+main
+{
+    column-count: 3;
+    column-rule: 2px solid gray;
+    column-gap: 12px;
+}
+
+.article-center
+{
+    column-span: all;
+}
+
+p::first-letter
+{
+    color: #1aa;
+    font-size: 1.5em;
+    font-style: inherit;
+}
+
+.color-of-magic
+{
+    text-shadow: 2px 2px 10px  #1aa;
+}
+
+.article-name
+{
+    font-family: toreadoreregular;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .3em;
+}
+
+.article
+{
+    font-family: the_world_is_yoursregular;
+    font-size: 20px;
+    column-gap: 10px;
+    hyphens: auto;
+    text-indent: 1em;
+}
+
+.article figure img
+{
+    width: 400px;
+}
+
+figcaption
+{
+    hyphens: auto;
+    font-style: italic;
+    text-align: justify;
+}
+
+.twoColumn
+{
+    column-count: 2;
+    column-rule: 3px double gray;
+}
+
+@font-face
+{
+    font-family: 'the_main_eventregular';
+    src: url('fonts/themaineventdemo-webfont.woff2') format('woff2'), url('fonts/themaineventdemo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face
+{
+    font-family: 'toreadoreregular';
+    src: url('fonts/toreadore-webfont.woff2') format('woff2'), url('fonts/toreadore-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face
+{
+    font-family: 'the_world_is_yoursregular';
+    src: url('fonts/theworldisyours-webfont.woff2') format('woff2'), url('fonts/theworldisyours-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
