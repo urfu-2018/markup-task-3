@@ -1,0 +1,139 @@
+body
+{
+    background: #faebd7;
+}
+
+h1
+{
+    font-family: 'Amatic SC', cursive;
+    font-size: 60px;
+    text-align: center;
+}
+
+.headTable td
+{
+    width: calc(100vw/3);
+}
+
+.weather div
+{
+    text-indent: 30px;
+    text-align: center;
+    border: 5px double black;
+    padding: 10px 20px;
+    font-family: 'Poiret One', cursive;
+}
+
+.quote div
+{
+    text-indent: 30px;
+    text-align: center;
+    border: 5px double black;
+    padding: 10px 20px;
+    font-family: 'Playfair Display SC', serif;
+}
+
+hr
+{
+    background-color: black;
+    width: 100%;
+    height: 1px;
+}
+
+div.Subtitle
+{
+    text-align: center;
+}
+
+div.column
+{
+    font-size: 90%;
+    text-align: justify;
+    column-count: 7;
+    column-rule: 2px solid black;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    column-span: all;
+}
+
+p:first-letter
+{
+    font-size: 200%;
+    font-family: 'Caveat', cursive;
+
+}
+
+.title1
+{
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 28px;
+}
+
+.Subtitle
+{
+    font-family: 'Cormorant Unicase', serif;
+    font-size: 30px;
+}
+
+.title2
+{
+
+    font-size: 30px;
+    text-align: center;
+}
+
+.title4
+{
+    font-family: 'Ruslan Display', cursive;
+    font-size: 35px;
+}
+
+.title3
+{
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    text-align: left;
+}
+
+.github
+{
+    font-family: 'Marmelad', sans-serif;
+    font-size: 120%;
+}
+
+.death
+{
+    font-family: 'Playfair Display SC', serif;
+}
+
+.SpaceX
+{
+    font-family: 'Pattaya', sans-serif;
+    font-size: 110%;
+}
+
+.Win10
+{
+    font-family: 'Kelly Slab', cursive;
+}
+
+q
+{
+    text-shadow: 1px 1px gray;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+hr
+{
+    height: 2px;
+    border-width: 0;
+    color: black;
+    background-color: black;
+}
+
+img
+{
+    border: 3px solid black;
+}
