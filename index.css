@@ -1,0 +1,187 @@
+@font-face
+{
+    font-family: Lobster;
+    src: url("./fonts/Lobster-Regular.ttf");
+}
+
+@font-face
+{
+    font-family: Oswald;
+    src: url("./fonts/Oswald/");
+}
+
+@font-face
+{
+    font-family: RobotoMono;
+    src: url("./fonts/RobotoMono/");
+}
+
+@font-face
+{
+    font-family: Merriweather;
+    src: url("./fonts/Merriweather/Merriweather-Italic.ttf");
+}
+
+h1
+{
+    font-family: 'Lobster', cursive;
+    font-size: 80px;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0px;
+}
+
+h2
+{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 3px;
+}
+
+h3
+{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+p
+{
+    margin: 0;
+    font-family: 'Merriweather', serif;
+}
+
+img
+{
+    width: 100%;
+    min-height: 150px;
+    max-height: 300px
+}
+
+p::first-letter {
+    font-size: 40px;
+    font-display: bold;
+}
+
+.vertical
+{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-transform: uppercase;
+}
+
+.advertisment
+{
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.advertisment p::first-line
+{
+    font-weight: bold;
+}
+
+.advertisment p::first-letter
+{
+    font-size: 30px;
+    font-display: none;
+}
+
+.layout
+{
+    display: flex;
+}
+
+.layout div
+{
+    padding-left: 5px;
+    padding-right: 10px;
+    height: 100%;
+    text-align: justify;
+    font-size: 30px;
+    border-right: 2px solid black;
+}
+
+.layout div:last-child
+{
+    border-right: none;
+}
+
+.date
+{
+    float: left;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.publication
+{
+    float: right;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.single-width
+{
+    width: 20%;
+}
+
+.double-width
+{
+    width: 40%;
+}
+
+.quarter-width
+{
+    width: 5%;
+    font-size: 30px !important;
+}
+
+.two-column
+{
+    display: flex;
+    float: none;
+}
+
+.image-caption
+{
+    font-size: 15px;
+    text-align: center;
+    font-family: serif;
+}
+
+.quote
+{
+    font-size: 25px;
+    padding: 0;
+}
+
+.quote p
+{
+    font-family: 'Lobster', cursive;
+}
+
+.news
+{
+    display: b
+}
+
+#night:checked ~ .news
+{
+    background-color: black;
+    color: white;
+}
+
+#zoom:checked ~ .news
+{
+    zoom: 1.5;
+}
+
+#style:checked ~ .news *
+{
+    font-family: 'Times New Roman';
+}
