@@ -1,0 +1,128 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+html
+{
+    background-color: rgba(250, 188, 108, 0.705);
+}
+
+.header
+{
+    border-bottom: 2px solid black;
+    padding-bottom: 15px; 
+}
+
+.logo
+{
+    display:inline-block;
+    width: 20%;
+}
+
+.logo img
+{
+    width :30%;
+    margin-left: 40%;
+}
+
+.paper-name
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline-block;
+    width: 60%;
+    text-align: center;
+}
+
+.date
+{
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    width: 15%;
+}
+
+.main-content
+{
+    text-align: justify;
+    position: relative;
+}
+
+.left-area
+{
+    display: inline-block;
+    width:25%;
+    vertical-align: top;
+}
+
+.left-area h3
+{
+    text-align: center;
+}
+
+.left-area ul li p
+{
+    font-family: sans-serif;
+}
+
+.content
+{
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+}
+
+.content .colums-article
+{
+    columns:2;    
+}
+
+.content .classic-article h3
+{
+    text-align: center;
+}
+
+
+.content img
+{
+    width: 100%;
+}
+
+.right-area
+{
+    display: inline-block;
+    width: 25%;
+    vertical-align: top;
+
+}
+
+.right-area .deads .deads-article p
+{
+    font-family: fantasy; 
+}
+
+.wedding .wedding-article p
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+img
+{
+    width: 100%;
+}
+
+.footer
+{
+    border-top: 2px solid black;
+    padding-top: 15px; 
+}
+
+.footer h4
+{
+    text-align: center;
+}
+
+.author
+{
+    color: darkred;
+}
