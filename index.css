@@ -9,6 +9,11 @@ article
     height: 1580px;
 }
 
+.main-header
+{
+    color: #4eff08;
+}
+
 .main-header,
 figure
 {
@@ -22,6 +27,7 @@ figure
     font: 27px 'Amatic SC', cursive;
     border: 1px solid #a5a5a5;
     border-radius: 10px;
+    color: #f00;
 }
 
 section
@@ -140,6 +146,11 @@ input[id='unusual-theme']:checked ~ article
     background: url('http://www.onlygfx.com/wp-content/uploads/2015/10/old-wrinkled-paper.jpg') repeat;
 }
 
+input[id='unusual-theme']:checked ~ article .main-header
+{
+    color: #f00;
+}
+
 input[id='unusual-fonts']:checked ~ article section h2
 {
     font-family: Arial, Helvetica, sans-serif;
@@ -154,6 +165,11 @@ input[id='unusual-fonts']:checked ~ article section p::first-letter
 {
     font: 25px 'Pacifico', cursive;
     color: #5d2be6d0;
+}
+
+input[id='unusual-fonts']:checked ~ article h1
+{
+    font: 25px 'times new roman';
 }
 
 input[id='unusual-fonts']:checked ~ article .first-picture
