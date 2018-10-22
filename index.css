@@ -1,0 +1,205 @@
+.headline-font
+{
+    font-family: 'Diplomata', cursive;
+    font-size: 60px;
+}
+
+.reclame-font
+{
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 20px;
+}
+
+table
+{
+    width: 100%;
+}
+
+.info-font
+{
+    font-size: 25px;
+    font-family: 'Acme', sans-serif;
+    border-bottom: 3px double;
+}
+
+.header-blocks
+{
+    width: 170px;
+    border: 2px solid;
+}
+
+.date
+{
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.second-headline-font
+{
+    font-family: 'Bitter', serif;
+    text-align: center;
+    margin-top: -5%;
+    font-size: 60px;
+    word-spacing: 45px;
+}
+
+.second-headline-font-2
+{
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+    font-size: 40px;
+    word-spacing: 45px;
+    text-transform: capitalize;
+    border-bottom: 4px double;
+}
+
+.two-columns-with-content
+{
+    margin-top: -50px;
+    width: 27%;
+    column-count: 2;
+    float: left;
+    padding: 10px;
+    column-rule: 1px solid;
+}
+
+.free-columns-with-content
+{
+    margin-top: -50px;
+    width: 40%;
+    column-count: 2;
+    float: left;
+    column-rule: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    padding: 5px;
+}
+
+.two-last-columns-with-content
+{
+    margin-top: -50px;
+    width: 27%;
+    column-count: 2;
+    float: left;
+    padding: 10px;
+}
+
+.important-text
+{
+    font-family: 'Bitter', serif;
+    text-align: center;
+    text-transform: uppercase;
+    column-span: all;
+    font-size: 25px;
+    margin-top: -30px;
+}
+
+.important-text-2
+{
+    font-family: 'Abril Fatface', cursive;
+    text-align: center;
+    column-span: all;
+    font-size: 20px;
+    margin-top: -30px;
+}
+
+.important-text-3
+{
+    font-family: 'Teko', sans-serif;
+    text-align: center;
+    column-span: all;
+    font-size: 25px;
+    margin-top: -30px;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+}
+
+.two-col-text
+{
+    text-indent: 5%;
+    font-family: 'Times New Roman', Times, serif;
+    column-span: all;
+    margin-top: -30px;
+}
+
+hr
+{
+    size: 2px;
+    width: 200px;
+}
+
+.big-letter
+{
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.thumbnail
+{
+    font-weight: bold;
+}
+
+.Donald-img
+{
+    width: 150px;
+    padding: 4px;
+    border: 3px double;
+}
+
+.beer-img
+{
+    width: 250px;
+    height: 300px;
+    padding: 2px;
+    border: 3px double;
+}
+
+.text-after-img
+{
+    opacity: .7;
+    font-size: 12px;
+}
+
+input[id='black']:checked ~ section article
+{
+    color: #fff;
+    background: #000;
+}
+
+input[id='black']:checked ~ section
+{
+    color: #fff;
+    background: #000;
+}
+
+input[id='old']:checked ~ section article
+{
+    color: #000;
+    background: #fbdf56;
+}
+
+input[id='old']:checked ~ section
+{
+    color: #000;
+    background: #fbdf56;
+}
+
+input[id='normal']:checked ~ section article p
+{
+    font-size: 18px;
+}
+
+input[id='big']:checked ~ section article p
+{
+    font-size: 21px;
+}
+
+input[id='cursive']:checked ~ section article p
+{
+    font-family: 'Satisfy', cursive;
+}
+
+input[id='sans-serif']:checked ~ section article p
+{
+    font-family: 'Arial', sans-serif;
+}
