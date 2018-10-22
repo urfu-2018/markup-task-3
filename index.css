@@ -1,19 +1,20 @@
 img
 {
-    margin: 7px;
+    margin: 3px;
 }
 
 body
 {
     background-color: beige;
+    background-image: url('images/frame.jpg');
+    background-size: 100%;
 }
 
 header
 {
     border-bottom: 2px solid #000;
     margin-bottom: 20px;
-    height: 200px;
-    position: relative;
+    float: initial;
 }
 
 header h1
@@ -53,50 +54,44 @@ section.note p
     text-align: center;
 }
 
-article.horklump p img
+article.horklump img,
+article.pogrebin img,
+article.quintaped img
 {
-    width: 230px;
+    max-width: 98%;
+    float: initial;
 }
 
-article.pogrebin p img
+p.note
 {
-    width: 230px;
-}
-
-article.quintaped p img
-{
-    float: left;
-}
-
-main
-{
-    position: relative;
+    border: 2px dashed black;
+    padding: 4px;
+    max-width: 93%;
+    font-family: note;
+    line-height: 1em;
 }
 
 main article.horklump
 {
-    position: absolute;
-    top: 0;
-    left: 0;
+    float: left;
 }
 
 main article.pogrebin
 {
-    position: absolute;
-    top: 0;
-    right: 0;
+    float: right;
 }
 
-main article.quintaped
-{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-p.inf
+p.inf,
+section.note p
 {
     word-break: normal;
+    font-family: pFont;
+}
+
+main article
+{
+    border-right: 2px double black;
+    padding: 3px;
 }
 
 p.inf::first-line
@@ -104,15 +99,12 @@ p.inf::first-line
     font-weight: bold;
 }
 
-main
-{
-    height: 650px;
-}
-
 footer
 {
     border-top: 2px solid #000;
+    border-left: 2px solid #000;
     margin: 10px;
+    float: right;
 }
 
 footer address
@@ -125,33 +117,49 @@ footer p
     margin: 0;
 }
 
-article.horklump,
 article.pogrebin
 {
-    max-width: 49%;
+    max-width: 20%;
     margin: 0;
+}
+
+article.horklump
+{
+    max-width: 35%;
 }
 
 article.horklump p
 {
-    column-rule: 2px solid gray;
-    column-count: 3;
+    column-rule: 1px solid black;
+    column-count: 2;
 }
 
 article.pogrebin p
 {
-    column-rule: 2px solid gray;
-    column-count: 3;
+    column-rule: 1px solid black;
+    column-count: 2;
 }
 
-article.quintaped p
+article.quintaped
 {
-    column-rule: 2px solid gray;
-    column-count: 4;
+    column-rule: 1px solid black;
+    column-count: 3;
 }
 
 @font-face
 {
     font-family: coolFont;
     src: url('fonts/coolFont.TTF');
+}
+
+@font-face
+{
+    font-family: pFont;
+    src: url('fonts/pText.ttf');
+}
+
+@font-face
+{
+    font-family: note;
+    src: url('fonts/note.ttf');
 }
