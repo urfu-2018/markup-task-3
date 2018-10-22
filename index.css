@@ -1,0 +1,137 @@
+html,
+p,
+h1,
+hr
+{
+    margin: 0;
+}
+
+body
+{
+    font-family: 'Izhitsa';
+}
+
+@font-face
+{
+    font-family: Izhitsa;
+    src: url('Izhitsa.woff2') format('woff2'), url('Izhitsa.woff') format('woff');
+}
+
+.horizontal-container .horizontal-element
+{
+    box-sizing: border-box;
+    float: left;
+    padding: 10px;
+}
+
+.horizontal-container .horizontal-element:not(:last-child)
+{
+    border-right: 1px black solid;
+}
+
+.percent-25
+{
+    width: 25%;
+    float: left;
+}
+
+.percent-33
+{
+    width: 33%;
+}
+
+.percent-50
+{
+    width: 50%;
+}
+
+.percent-60
+{
+    width: 60%;
+}
+
+.percent-67
+{
+    width: 67%;
+}
+
+.header
+{
+    text-transform: uppercase;
+}
+
+.header .slogan
+{
+    text-align: right;
+    text-decoration: underline;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.header .paper-title
+{
+    font-size: 96px;
+    text-align: center;
+}
+
+.header .description
+{
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+
+}
+
+.uppercase
+{
+    text-transform: uppercase;
+}
+
+.header-cell
+{
+    text-align: center;
+    font-size: 12px;
+}
+
+.title
+{
+    column-span: all;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: underline;
+    letter-spacing: .1em;
+    font-size: 30px;
+}
+
+.columns
+{
+    text-indent: 5%;
+    hyphens: manual;
+    column-count: 2;
+    column-rule: 1px solid #000;
+}
+
+.columns p::first-letter
+{
+    font-weight: bold;
+}
+
+.gaben-block
+{
+    column-span: all;
+    border: 3px dotted black;
+    margin: 0;
+    padding: 0;
+}
+
+.gaben-block .gaben-text
+{
+    padding: 30px 0;
+    font-size: 40px;
+}
+
+.gaben-block .gaben-text-small
+{
+    text-align: right;
+    font-size: 15px;
+}
