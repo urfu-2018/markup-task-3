@@ -1,0 +1,105 @@
+.newspaper {
+    font: 14%, Times New Roman, Times, serif;
+    color: grey;
+    margin-top: 5%;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.newspaper-header {
+    border-bottom: 3px;
+}
+
+.newspaper-header-pad{
+    border-top: solid 1px #ccc;
+    border-bottom: solid 1.2px #ccc;
+    column-count: 5;
+    column-gap: 3.3em;
+    white-space: nowrap;
+}
+
+.news-times-watermark {
+    border: solid 1px #ccc;
+    margin: 10px;
+    padding: 15px;
+    width: 130px;
+    height: 35px;
+}
+
+.newspaper-header-weather{
+    width: 240px;
+    float: right;
+}
+
+.paper-background {
+    padding: 30px;
+    box-shadow: 0 0 300px rgba(0,0,0,0.5);
+    background-color: rgb(238, 237, 237);
+}
+
+.small-font{
+    font-size: 0.60em;
+}
+
+.ultra-small-font{
+    font-size: 0.45em;
+}
+
+.center-row {
+    top: 49px;
+    bottom: 49%;
+}
+
+.body-content{
+    -webkit-column-width: 200px;
+    -moz-column-width: 200px;
+    column-width: 200px;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    -webkit-column-rule: 1px solid #ccc;
+    -moz-column-rule: 1px solid #ccc;
+    column-rule: 1px solid #ccc;
+}
+
+.related-headlines {
+    padding: 5px;
+    border-top: solid 0.3px #ccc;
+    border-bottom: solid 0.4px #ccc;
+}
+
+.content-author{
+    margin-top: 5px;
+    margin-right: 60px;
+    margin-left: 60px;
+    padding: 5px;
+    border-top: solid 0.3px #ccc;
+    border-bottom: solid 0.4px #ccc;
+}
+
+.content-image{
+    height: 200%;
+    width: 50%;
+}
+
+h1 {
+    font-size: 5em;
+    border-bottom: solid 1.2px #ccc;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 5px;
+}
+
+h2 {
+    font-size: 3em;
+    border-bottom: solid 1.2px #ccc;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 5px;
+}
