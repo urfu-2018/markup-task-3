@@ -17,19 +17,19 @@ html
 
 .logo
 {
-    display:inline-block;
+    display: inline-block;
     width: 20%;
 }
 
 .logo img
 {
-    width :30%;
+    width: 30%;
     margin-left: 40%;
 }
 
 .paper-name
 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT';
     display: inline-block;
     width: 60%;
     text-align: center;
@@ -51,7 +51,7 @@ html
 .left-area
 {
     display: inline-block;
-    width:25%;
+    width: 25%;
     vertical-align: top;
 }
 
@@ -74,14 +74,14 @@ html
 
 .content .colums-article
 {
-    columns:2;    
+    columns: 2;
+
 }
 
 .content .classic-article h3
 {
     text-align: center;
 }
-
 
 .content img
 {
@@ -98,7 +98,8 @@ html
 
 .right-area .deads .deads-article p
 {
-    font-family: fantasy; 
+    font-family: fantasy;
+
 }
 
 .wedding .wedding-article p
@@ -114,7 +115,8 @@ img
 .footer
 {
     border-top: 2px solid black;
-    padding-top: 15px; 
+    padding-top: 15px;
+
 }
 
 .footer h4
