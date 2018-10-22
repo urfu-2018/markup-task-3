@@ -87,7 +87,7 @@ article p::first-letter
 
 img
 {
-    width: 160px;
+    width: 200px;
 }
 
 .article-1 img
@@ -258,4 +258,9 @@ input.font-size
 {
     background: #777;
     color: #fff;
+}
+
+.circulation
+{
+    text-align: right;
 }
