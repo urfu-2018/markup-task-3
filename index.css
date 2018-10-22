@@ -1,0 +1,126 @@
+@font-face
+{
+    font-family: OldEnglish;
+    src: url('fonts/8967.ttf');
+}
+
+@font-face
+{
+    font-family: NYText;
+    src: url('fonts/Enchanted\ Land.otf');
+}
+
+html
+{
+    width:100%;
+    /* margin: 0 auto; */
+    display: flex;
+    padding: 0 5px 10px 10px;
+    flex-direction: column;
+    box-sizing: border-box;
+    background: url(images/paper_texture1289.jpg) no-repeat center;
+    font-family: NYText;
+    font-size: 3ex
+}
+
+header
+{
+    font-family: unset;
+}
+
+header
+{
+    font-family: OldEnglish;
+}
+
+.page-header h1
+{
+    text-align: center;
+    flex-basis: 50px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #000;
+}
+
+.page-header div
+{
+    border-bottom: 1px solid #000;
+    hyphens: auto;
+}
+
+.date
+{
+    text-align: center;
+}
+
+.page-content
+{
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+    column-width: auto;
+    column-count: auto;
+}
+
+.page-content > div
+{
+    height: 100%;
+    float: left;
+    text-align: justify;
+    padding: 3px 6px;
+    box-sizing: border-box;
+    border-right: 2px solid black;
+}
+
+.page-content > div:last-of-type
+{
+    border-right: none;
+}
+
+.left-side
+{
+    float: left;
+    width: 20%;
+}
+
+.middle
+{
+    float: center;
+    width: 40%;
+}
+
+.middle img
+{
+    width: 100%;
+}
+
+.right-side-1
+{
+    float: right;
+    width: 20%;
+}
+
+.right-side-2
+{
+    float: right;
+    width: 20%;
+}
+
+#separator
+{
+    border-bottom: 1px solid #000;
+}
+
+.happy-mrs-kennedy-content:nth-child(n)
+{
+    column-count: 2;
+    
+    column-rule: 2px dotted black;
+    height: 100%;
+}
+
+p.caption
+{
+    border-bottom: 1px solid #000;
+}
+
