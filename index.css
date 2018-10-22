@@ -1,0 +1,204 @@
+@font-face
+{
+    font-family: 'Kingthings Spikelles';
+    src: url('../markup-task-3/fonts/Kingthings_Spikeless-webfont.eot');
+    src: url('../markup-task-3/fonts/Kingthings_Spikeless-webfont.eot?iefix') format('eot'), url('../markup-task-3/fonts/Kingthings_Spikeless-webfont.woff') format('woff'), url('../markup-task-3/fonts/Kingthings_Spikeless-webfont.ttf') format('truetype'), url('../markup-task-3/fonts/Kingthings_Spikeless-webfont.svg#webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+    background: white;
+}
+    
+.title
+{
+    font-family: 'Kingthings Spikelles';
+    font-size: 100px;
+    text-align: center;
+    text-shadow: 1px 1px white, 2px 2px #777;
+    color: #222;
+}
+
+p
+{
+    margin: 20px;
+}
+
+hr
+{
+    margin: 2px;
+    
+}
+
+.subtitle
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.number
+{
+    width: 20%;
+    min-height: 10px;
+    float: left;
+}
+
+.price
+{
+    width: 15%;
+    min-height: 10px;
+    float: right;
+
+}
+
+section.hitchcock
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    width: 30%;
+    float: left;
+}
+
+section.vita
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    width: 68%;
+    float: right;
+}
+
+div.column > div::first-letter
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+}
+
+div.column > div.ldv
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 24px;
+}
+
+section > div.column
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    column-count: 2;
+    column-gap: 1em;
+    column-rule: 2px solid #222;
+}
+
+section.vita > hr
+{
+    margin: 10px;
+}
+
+div.row
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    border: #222 solid 2px;
+    width: 55%;
+    column-count: 2;
+    column-gap: 1em;
+    column-rule: 2px solid #222;
+}
+
+div.row > div::first-letter
+{
+    font-family: 'Kingthings Spikelles';
+    font-size: 30px;
+}
+
+div.row > div.quote
+{
+    border: #777 outset 3px;
+    width: 95%;
+    font-style: italic;
+}
+
+div.row > br::first-letter
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+}
+
+div.name
+{
+    text-decoration: underline;
+}
+
+div.empty
+{
+    width: 100%;
+    height: 20px;
+    clear: both;
+}
+
+div.end
+{
+    width: 100%;
+    text-align: center;
+    padding: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    border-top: 4px double #777;
+    border-bottom: 4px double #777;
+}
+
+img
+{
+    width: 100%;
+    border: black solid 2px;
+    margin: 10px;
+}
+
+div > img.dolce
+{
+    width: 40%;
+    border: black solid 2px;
+    margin: 10px;
+    float: right;
+}
+
+input[value='small']:checked ~ article div
+{
+    font-size: 10px;
+}
+
+input[value='medium']:checked ~ article div
+{
+    font-size: 18px;
+}
+
+input[value='large']:checked ~ article div
+{
+    font-size: 30px;
+}
+
+input[value='normal']:checked ~ article div
+{
+    font-style: normal;
+}
+
+input[value='italic']:checked ~ article div
+{
+    font-style: italic;
+}
+
+input[value='gray']:checked ~ main,
+input[value='gray']:checked ~ article
+{
+    background: url(picture/paper1.jpg) no-repeat center fixed;
+}
+
+input[value='sepia']:checked ~ main,
+input[value='sepia']:checked ~ article
+{
+    background: url(picture/paper.jpg) no-repeat center fixed;
+}
