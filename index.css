@@ -1,0 +1,493 @@
+@font-face
+{
+    font-family: MainHeaderFont;
+    src: url(fonts/Molot.otf) format('opentype');
+}
+
+@font-face
+{
+    font-family: UnderMainHeaderFont;
+    src: url(fonts/Heuristica-Regular.otf) format('opentype');
+}
+
+@font-face
+{
+    font-family: TextContentHeaderFont;
+    src: url(fonts/td-neumann.otf) format('opentype');
+}
+
+@font-face
+{
+    font-family: NewspaperInfoLargeHeaderFont;
+    src: url(fonts/texgyreschola-regular.otf) format('opentype');
+}
+
+@font-face
+{
+    font-family: NewspaperInfoPersonHeaderFont;
+    src: url(fonts/Forum-Regular.otf) format('opentype');
+}
+
+@font-face
+{
+    font-family: SummaryInfoFont;
+    src: url(fonts/Arsenal-Regular.otf) format('opentype');
+}
+
+@font-face
+{
+    font-family: RightSideTextHeaderFont;
+    src: url(fonts/Kelvinch-Bold.otf) format('opentype');
+}
+
+@font-face
+{
+    font-family: NewspaperNameFont;
+    src: url(fonts/20db.otf) format('opentype');
+}
+
+@font-face
+{
+    font-family: RightSideTextHeaderFont;
+    src: url(fonts/Kelvinch-Bold.otf) format('opentype');
+}
+
+@font-face
+{
+    font-family: TextContentAppealFont;
+    src: url(fonts/Merriweather-Bold.otf) format('opentype');
+}
+
+@font-face
+{
+    font-family: TextContentAppealFontLight;
+    src: url(fonts/Merriweather-Light.otf) format('opentype');
+}
+
+@font-face
+{
+    font-family: TextMessageFont;
+    src: url(fonts/nimbusmono-regular.otf) format('opentype');
+}
+
+body
+{
+    margin: 0 auto;
+    width: 750px;
+    min-width: 400px;
+    background-color: #ecddbc;
+}
+
+p
+{
+    text-indent: 5%;
+    margin: 0;
+    hyphens: auto;
+    text-align: justify;
+}
+
+.main-left-side p
+{
+    margin-right: 7px;
+    font-size: 14px;
+    word-spacing: 4px;
+}
+
+.main-right-side p
+{
+    font-size: 12px;
+    word-spacing: 4px;
+}
+
+h4,
+h5
+{
+    text-align: center;
+}
+
+header h2
+{
+    font-family: 'MainHeaderFont', sans-serif;
+    word-spacing: 8px;
+    letter-spacing: 11px;
+    font-weight: 500;
+    font-size: 53px;
+    text-transform: uppercase;
+    margin: -12px 0;
+}
+
+header h3
+{
+    font-family: 'UnderMainHeaderFont', serif;
+    font-size: 29px;
+    font-weight: 500;
+    margin: -7px 0;
+}
+
+main
+{
+    margin-top: 10px;
+}
+
+.main-left-side,
+.main-right-side
+{
+    display: inline-block;
+    max-width: 370px;
+}
+
+.main-left-side
+{
+    float: left;
+    margin-right: 5px;
+    border-right: 1px solid gray;
+}
+
+.main-right-side
+{
+    float: right;
+}
+
+.main-left-side .text-content-header
+{
+    font-family: 'TextContentHeaderFont', 'sans-serif';
+    text-align: left;
+    word-spacing: 4px;
+    font-size: 22px;
+    margin: -2px 0;
+}
+
+.main-left-side .text-content-header > .text-content-header-description
+{
+    font-style: italic;
+    font-size: 8px;
+    width: 10px;
+}
+
+.main-left-side .text-content-header .text-content-header-description > span
+{
+    text-decoration: underline;
+}
+
+.timed-text-container
+{
+    margin: 7px 0;
+}
+
+.timed-text-container .timed-text > div,
+.timed-text-container .timed-text > p
+{
+    display: inline-block;
+}
+
+.timed-text-container .timed-text > div
+{
+    vertical-align: top;
+    text-decoration: underline;
+    font-style: italic;
+    width: 40%;
+    height: 100%;
+}
+
+.timed-text-container .timed-text > p
+{
+    text-indent: 0;
+    width: 55%;
+    font-size: 13px;
+}
+
+.summary-info > p
+{
+    font-family: 'SummaryInfoFont', sans-serif;
+    font-size: 16px;
+}
+
+.summary-info p > span
+{
+    font-style: italic;
+}
+
+.summary-info p > q
+{
+    font-weight: bold;
+}
+
+.newspaper-release-info
+{
+    column-count: 3;
+    font-size: 10px;
+}
+
+.main-right-side .right-side-text-content
+{
+    margin-top: 0;
+}
+
+.right-side-text-content h3
+{
+    font-family: 'RightSideTextHeaderFont', serif;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 15px;
+    margin: 10px 0;
+}
+
+.right-side-text-content .right-side-info
+{
+    column-count: 2;
+    column-rule: 1px solid gray;
+}
+
+.right-side-info .message:before
+{
+    border-top: 1px solid gray;
+    content: '';
+    width: 200px;
+    height: 16px;
+    display: block;
+    margin: 15px auto 0;
+    column-span: all;
+}
+
+.right-side-info .message h4
+{
+    column-span: all;
+    font-style: italic;
+    font-size: 13px;
+    margin-top: 0;
+}
+
+.right-side-info .message h4 > span
+{
+    column-span: all;
+    font-size: 18px;
+    word-spacing: 5px;
+}
+
+.right-side-info .message .message-content .message-text-container
+{
+    font-family: 'TextMessageFont', serif;
+    line-height: 12px;
+}
+
+.message-sign .sign-name
+{
+    text-align: right;
+    font-weight: bold;
+    padding-left: 100px;
+}
+
+.right-side-header-info .headers
+{
+    margin-top: -20px;
+}
+
+.right-side-header-info .headers > h4
+{
+    font-family: 'NewspaperInfoLargeHeaderFont', serif;
+    font-size: 35px;
+    word-spacing: 7px;
+    letter-spacing: 6px;
+    margin: 20px 0 8px;
+    line-height: 1em;
+}
+
+.right-side-header-info .headers > h5
+{
+    margin: 0;
+    line-height: 3em;
+}
+
+.right-side-header-info .headers h5 > span
+{
+    font-family: 'NewspaperInfoPersonHeaderFont', serif;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 300;
+    word-spacing: 10px;
+    float: left;
+}
+
+.right-side-header-info .headers h5 .person-name
+{
+    float: right;
+}
+
+.right-side-header-info .newspaper-info
+{
+    height: 300px;
+    margin-top: 50px;
+    border-top: 1px solid gray;
+    text-align: end;
+    margin-bottom: -90px;
+}
+
+.right-side-header-info .newspaper-info .newspaper-description,
+.right-side-header-info .newspaper-info .newspaper-name
+{
+    display: inline-block;
+}
+
+.right-side-header-info .newspaper-info .newspaper-description
+{
+    font-size: 11px;
+    font-weight: 900;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.right-side-header-info .newspaper-info .newspaper-name h3
+{
+    font-family: 'NewspaperNameFont', sans-serif;
+    vertical-align: top;
+    line-height: 1.4em;
+    margin-top: -20px;
+}
+
+.newspaper-info .newspaper-name h3 > span:first-child
+{
+    font-size: 17px;
+}
+
+.newspaper-info .newspaper-name h3 > span:last-child
+{
+    font-size: 32px;
+    letter-spacing: 10px;
+}
+
+.right-side-text-content
+{
+    margin-top: 20px;
+}
+
+.right-side-text-content h3,
+.right-side-text-content h4,
+.right-side-text-content h5
+{
+    margin: 6px;
+}
+
+.right-side-text-content h3
+{
+    font-family: 'TextContentAppealFont', serif;
+}
+
+.right-side-text-content h5
+{
+    font-family: 'TextContentAppealFontLight', serif;
+    letter-spacing: 3px;
+}
+
+.main-right-side .newspaper-info figure
+{
+    margin-bottom: 80px;
+}
+
+.newspaper-info figure img
+{
+    display: inline-block;
+    float: left;
+    vertical-align: top;
+}
+
+.newspaper-info figure figcaption
+{
+    display: inline-block;
+    text-decoration: underline;
+    font-size: 13px;
+    vertical-align: top;
+    text-align: end;
+    font-style: italic;
+}
+
+.newspaper-info .newspaper-release-info
+{
+    border: 1px solid gray;
+    border-bottom: 5px groove;
+    column-count: 3;
+    column-rule: 1px solid gray;
+    column-gap: 6em;
+}
+
+.newspaper-info .newspaper-release-info > p
+{
+    white-space: pre;
+}
+
+.main-left-side figure
+{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+figure
+{
+    margin: 6px 6px 6px 0;
+}
+
+.main-left-side figure figcaption > span
+{
+    text-transform: uppercase;
+    font-style: italic;
+    position: relative;
+    top: 5px;
+    display: inline-block;
+}
+
+.main-left-side figure figcaption > span:after
+{
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid gray;
+    top: 9px;
+    width: 54px;
+    left: 100%;
+    margin-left: 15px;
+}
+
+.main-left-side figure figcaption > span:before
+{
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid gray;
+    top: 9px;
+    width: 54px;
+    right: 100%;
+    margin-right: 15px;
+}
+
+.main-right-side .footer-summary
+{
+    column-span: all;
+    border: 4px groove gray;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 6px;
+}
+
+.main-right-side .footer-summary > p
+{
+    display: inline-block;
+    font-size: 15px;
+}
+
+.main-right-side .footer-summary > p:first-child
+{
+    font-weight: bold;
+}
+
+.main-right-side .footer-summary > p:last-child
+{
+    float: right;
+    text-indent: 0;
+    font-size: 16px;
+}
+
+.main-right-side .footer-summary > p:last-child:first-line
+{
+    float: right;
+    text-indent: 0;
+    font-size: 16px;
+    letter-spacing: 14px;
+}
