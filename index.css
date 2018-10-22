@@ -1,0 +1,407 @@
+@font-face 
+{
+    font-family: 'pravdaFont';
+    unicode-range: U+400-4FF, U+0030-0039;
+    src: local('Native Custom Font'),
+    url('Pravda Newspaper.otf');
+}
+
+@font-face
+{
+    font-family: 'dobroznacnyFont';
+    src: local('Native Custom Font'),
+    url('Dobrozrachniy-Oblique.woff2') format('woff2');
+    font-style: oblique;
+}
+
+@font-face
+{
+    font-family: 'dobroznacnyFont';
+    src: local('Native Custom Font'),
+    url('Dobrozrachniy-Regular.woff2') format('woff2');
+    font-style: normal;
+}
+
+body
+{
+    font-family: pravdaFont;
+    font-size: .8em;
+}
+
+header
+{
+    text-align: center;
+    height: 44px;
+}
+
+header > div
+{
+    display: inline-block;
+    width: 33%;
+}
+
+article > section
+{
+    display: inline-block;
+}
+
+.central-header
+{
+    text-align: center;
+    column-span: all;
+}
+
+.center-in-one-column
+{
+    margin: 0;
+    font-family: 'PT Serif Caption', serif;
+    text-align: center;
+}
+
+.inline-block
+{
+    display: inline-block;
+}
+
+.two-column-section
+{
+    columns: 2;
+    column-gap: 5px;
+    column-rule: 1px solid;
+}
+
+.table
+
+.three-column-section
+{
+    columns: 3;
+}
+
+.all-parrent-width
+{
+    width: 100%;
+}
+
+.column-width-sixteen
+{
+    width: 16%;
+}
+
+.column-width-therty
+{
+    width: 30%;   
+}
+
+.column-width-fifty
+{
+    width: 49%;
+}
+
+.column-width-sixty
+{
+    width: 69%;
+}
+
+header
+{
+    margin: 0;
+}
+
+.name
+{
+    text-align: center;
+    letter-spacing: .5em;
+    font-size: 1.4em;
+}
+
+.date
+{
+    font-size: 1.2em;
+    float: left;
+    text-align: start;
+}
+
+.page
+{
+    font-size: 1.2em;
+    text-align: end;
+    float: right;
+}
+
+.left-section
+{
+    text-align: justify;
+    float: left;
+    border-right: 1px solid;
+    padding-right: 1px;
+    margin-right: 1px;
+    width: 35%;
+}
+
+.oswald-font-header
+{
+    column-span: all;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    letter-spacing: -1px;
+}
+
+.serif-font-header
+{
+    column-span: all;
+    margin: 0;
+    font-family: 'PT Serif Caption', serif;
+    font-size: 1.4em;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 7px;
+}
+
+.big-letter-spacing
+{
+    letter-spacing: 2px;
+}
+
+.center-section
+{
+    height: 100%;
+    text-align: justify;
+    float: left;
+    width: 30.6%;
+    border-right: 1px solid;
+    margin: 0;
+    margin-right: 1px;
+    padding-right: 1px;
+}
+
+.left_border
+{
+    border-left: 1px solid;
+}
+
+.right-marging-border
+{
+    padding-right: 1px;
+    border-right: 1px solid;
+}
+
+.normal-img
+{
+    display: block;
+    width: 99%;
+    height: auto;
+}
+
+.right-section
+{
+    text-align: justify;
+    width: 34%;
+}
+
+.top-align
+{
+    margin-top: 0;
+    vertical-align: top;
+}
+
+.ceiling-div
+{
+    width:100%;
+    height:1px;
+    clear:both;
+}
+
+.margin-author-section
+{
+    column-span: all;
+    text-align: left;
+    margin-left: 7%;
+    margin-top: 10%;
+    font-weight: bold;
+}
+
+.align-author-section
+{
+    text-align: right;
+    margin-right: 10%;
+    font-weight: bold;
+}
+
+.dobroz-font-header
+{
+    font-family: dobroznacnyFont;
+    font-size: 3.5em;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.bold-span
+{
+    font-weight: bold;
+}
+
+.italic-rewievers-div
+{
+    margin-bottom: 5px;
+    margin-left: 30%;
+    font-style: italic;
+    font-size: 1.6em;
+    text-align: left
+}
+
+.serif-rewievers-div
+{
+    margin: 0;
+    margin-bottom: 5px;
+    margin-left: 10%;
+    font-family: 'PT Serif Caption', serif;
+    text-align: left;
+    font-size: 1.3em;
+    word-spacing: 10px;
+}
+
+.san-serif-font
+{
+    font-family: 'Oswald', sans-serif;
+}
+
+.serif-font
+{
+    font-family: 'PT Serif Caption', serif;
+}
+
+.small-width-big-height-hr
+{
+    width: 20%;
+    height: 3px;
+    background-color: black;
+}
+
+.small-table
+{
+    font-family: 'Oswald', sans-serif;
+    table-layout: fixed;
+    width: 100%;
+    border-spacing: 4px 4px;
+}
+
+.small-table tr:first-child td:nth-last-child(-n+5)
+{
+    column-width: 16%;
+    font-size: .8em;
+    text-align: center;
+}
+
+.small-table tr:nth-last-child(-n+2) td:first-child
+{
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.small-table tr:nth-last-child(-n+2) td:nth-last-child(-n+5)
+{
+    border: 2px solid;
+    text-align: center;
+    font-weight: bold;
+}
+
+.oswald-font-underheader
+{
+    letter-spacing: 5px;
+    font-size: 1em;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+.big-table
+{
+    font-family: 'PT Serif Caption', serif;
+    table-layout: auto;
+    width: 100%;
+}
+
+.big-table td:first-child
+{
+    text-align: left;
+    white-space: nowrap;
+}
+
+.big-table tr:first-child td
+{
+    font-size: .8em;
+    letter-spacing: -1px;
+    word-spacing: -1px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.big-table tr:nth-last-child(-n+14) td:nth-last-child(-n+3)
+{
+    text-align: center;
+    font-weight: bold;
+}
+
+.table-subscription-small-font
+{
+    font-weight: bold;
+    column-span: all;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+
+.big-table:last-child tr td:first-child
+{
+    font-weight: bold;
+}
+
+.table-subscription-small-font::first-line
+{
+    font-size: 1.4em;
+}
+
+.poem-left-align-pharagraph
+{
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.9em;
+    font-weight: 600;
+    text-align: left;
+}
+
+.author-name
+{
+    text-align: right;
+    font-family: dobroznacnyFont;
+    font-style: oblique;
+    font-size: 1.3em;
+    text-decoration: underline;
+}
+
+.big-serif-font-header
+{
+    column-span: all;
+    letter-spacing: 2px;
+    margin: 0;
+    font-family: 'PT Serif Caption', serif;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 7px;
+}
+
+.big-after-header-hr
+{
+    height: 0.2em;
+    background-color: black;
+}
