@@ -1,0 +1,159 @@
+body
+{
+    background-color: #f4f5ac;
+}
+
+h1
+{
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Old English Text MT';
+    line-height: 20px;
+}
+
+h4,
+h5,
+
+h6
+{
+    font-family: serif;
+    text-indent: 10%;
+    text-align: start;
+}
+
+header
+{
+    position: relative;
+    text-align: center;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    padding: 4px;
+}
+
+.subtitle
+{
+    display: block;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    text-align: center;
+    font-family: serif;
+    font-variant: small-caps;
+    width: 100%;
+    margin: 1px 0;
+}
+
+article
+{
+    border: 1px solid black;
+    height: 100%;
+}
+
+.news
+{
+    column-count: 3;
+    column-rule: 2px solid black;
+    text-indent: 1em;
+    width: 50%;
+    display: inline-block;
+}
+
+.mainNew
+{
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.mainNewTitle
+{
+    font-family: 'Times New Roman';
+    font-style: italic;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.weather,
+.tagline
+{
+    position: absolute;
+    border: 1px solid black;
+    padding: 0 5px;
+    line-height: 0;
+    height: 90%;
+    text-align: center;
+}
+
+.weather
+{
+    right: 70px;
+}
+
+.tagline
+{
+    left: 70px;
+}
+
+section
+{
+    font-family: serif;
+    font-variant: small-caps;
+    text-align: center;
+    padding: 3px;
+}
+
+.newsBox
+{
+    border: 1px solid #313131;
+}
+
+hr
+{
+    color: #000;
+}
+
+.titleHr
+{
+    width: 40%;
+}
+
+.textHr
+{
+    width: 80%;
+}
+
+.articleTitle
+{
+    font-family: serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.prevue
+{
+    display: inline-block;
+    column-count: 1;
+    column-rule: black;
+    width: 30%;
+    border-right: 1px black solid;
+    vertical-align: top;
+}
+
+.mainNewImage
+{
+    display: inline-block;
+    filter: grayscale(100%);
+    width: 66%;
+}
+
+.mainImage
+{
+    width: 100%;
+}
+
+.mainNewText
+{
+    column-count: 3;
+    column-rule: 2px solid black;
+    text-indent: 1em;
+}
