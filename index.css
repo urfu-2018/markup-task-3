@@ -4,24 +4,24 @@
     src: url(fonts/Rye-Regular.ttf);
 }
 
-input.swap:checked ~ main
+.swap:checked ~ main
 {
     background-color: black;
     color: bisque;
 }
 
-input.swap:not(:checked) ~ main
+.swap:not(:checked) ~ main
 {
     background-color: antiquewhite;
     color: black;
 }
 
-input.zoom:not(:checked) ~ main
+.zoom:not(:checked) ~ main
 {
     font-size: 1em;
 }
 
-input.zoom:checked ~ main
+.zoom:checked ~ main
 {
     font-size: 1.25em;
 }
@@ -32,38 +32,40 @@ main
     border: 1px solid brown;
 }
 
+[class*='header']
+{
+    text-align: center;
+}
+
 header
 {
     border-bottom: 1px solid brown;
 }
 
-.paper-name
+.paper-header
 {
     font-family: UnifrakturMaguntia;
     font-size: 30px;
-    text-align: center;
-    margin-top: 15px;
-    margin-bottom: 10px;
+    margin: 15px 0 10px;
 }
 
-.article::first-letter
+.text-content::first-letter
 {
     font-family: Rye;
 }
 
-.article
+.text-content
 {
     margin: 5px;
 }
 
-article.two-columns
+.two-columns
 {
     column-count: 2;
     column-rule: 3px dotted brown;
     max-width: 60%;
     display: inline-block;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin: 5px 0 10px;
     text-align: justify;
 }
 
@@ -73,10 +75,9 @@ article.two-columns
     margin-top: 10px;
     font-family: Sancreek;
     font-size: 18px;
-    text-align: center;
 }
 
-article.one-column
+.one-column
 {
     max-width: 60%;
     display: inline-block;
@@ -87,7 +88,6 @@ article.one-column
 {
     font-family: Uncial Antiqua;
     font-size: 20px;
-    text-align: center;
 }
  
 aside
@@ -97,18 +97,17 @@ aside
     float: left;
 }
 
-article.aside
+.note
 {
     margin: 15px;
     word-spacing: -2px;
     text-align: center;
 }
 
-.aside-header
+.note-header
 {
     font-family: Rye;
     font-size: 17px;
-    text-align: center;
 }
 
 .image
