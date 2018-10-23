@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Rye');
+
+h1
+{
+    font-family: 'Rye', cursive;
+    font-size: 300%;
+    text-align: center;
+}
+
+h2
+{
+    column-span: all;
+    font-style: italic;
+    margin: 10px;
+}
+
+html:lang(en)
+{
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+div.d1
+{
+    column-count: 4;
+    column-rule: 2px solid #000;
+    float: left;
+    width: 47%;
+    border-right-style: double;
+    border-left-style: double;
+    padding: 1%;
+}
+
+div.d2
+{
+    column-count: 2;
+    column-rule: 2px solid #000;
+    float: left;
+    width: 23%;
+    border-right-style: double;
+    padding: 1%;
+}
+
+img.i1
+{
+    -webkit-column-span: all;
+    column-span: all;
+    width: 400%;
+}
+
+img.i2
+{
+    -webkit-column-span: all;
+    column-span: all;
+    width: 200%;
+}
+
+img.i3
+{
+    -webkit-column-span: all;
+    column-span: all;
+    width: 100%;
+}
+
+p.p1
+{
+    opacity: .5;
+    column-span: all;
+}
+
+p.p2
+{
+    opacity: .5;
+}
+
+p.p3
+{
+    border-bottom-style: double;
+    border-top-style: double;
+    text-align: center;
+}
