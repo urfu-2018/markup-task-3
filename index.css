@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Fascinate+Inline');
+@import url('https://fonts.googleapis.com/css?family=Monda');
+@import url('https://fonts.googleapis.com/css?family=Bangers');
+@import url('https://fonts.googleapis.com/css?family=Squada+One');
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
+@import url('https://fonts.googleapis.com/css?family=Mitr');
+@import url('https://fonts.googleapis.com/css?family=Alef');
+@import url('https://fonts.googleapis.com/css?family=Hanalei+Fill');
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
+@import url('https://fonts.googleapis.com/css?family=Skranji');
+@import url('https://fonts.googleapis.com/css?family=Bahiana');
+@import url('https://fonts.googleapis.com/css?family=Limelight');
+@import url('https://fonts.googleapis.com/css?family=Itim');
+
+html
+{
+    margin: 0;
+    padding: 0;
+}
+
+main
+{
+
+    background-size: cover;
+    z-index: -2;
+}
+
+.header_newspaper,
+.whole-page
+{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1920px;
+}
+
+h3,
+h2,
+h1
+{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.name_header
+{
+    display: grid;
+    grid-template-areas: 'a b c';
+    grid-auto-rows: minmax(100px, auto);
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 10px double #000;
+}
+
+.text_header
+{
+    display: grid;
+    grid-auto-rows: minmax(50px, auto);
+    grid-template-areas: 'a b c d';
+    justify-items: center;
+    align-items: center;
+    border-bottom: 5px dotted #000;
+    margin-bottom: 20px;
+}
+
+.header_h1
+{
+    font-size: 60px;
+    font-family: 'Fascinate Inline', cursive;
+    letter-spacing: 20px;
+}
+
+.name_header p
+{
+    font-size: 30px;
+    font-family: 'Monda', sans-serif;
+}
+
+.text_header p
+{
+    font-size: 40px;
+    font-family: 'Bangers', cursive;
+}
+
+.main_newspaper
+{
+    display: grid;
+    grid-template: 'a b' 'c d' 'e e' /1fr 1fr;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.first_columns
+{
+    grid-area: a;
+}
+
+.head-lines
+{
+    text-align: center;
+}
+
+.head-lines-main
+{
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.news_h2
+{
+    font-size: 40px;
+    font-family: 'Squada One', cursive;
+    letter-spacing: 10px;
+}
+
+.news_h3
+{
+    font-size: 25px;
+    font-family: 'Bowlby One SC', cursive;
+}
+
+.news_p
+{
+    font-size: 16px;
+    font-family: 'Mitr', sans-serif;
+}
+
+.main-story
+{
+    grid-area: b;
+    text-indent: 20px;
+    text-align: center;
+}
+
+.main-story-text
+{
+    columns: 200px 3;
+    column-rule-style: solid;
+    text-align: justify;
+    word-break: break-all;
+    word-spacing: normal;
+}
+
+.main-story-pic
+{
+    max-width: 600px;
+    width: 100%;
+    column-span: all;
+}
+
+.third_news
+{
+    grid-area: c;
+    text-align: center;
+    border-top: 10px outset #6f787a;
+    border-bottom: 10px outset #6f787a;
+    columns: 300px 2;
+    word-break: break-word;
+    word-spacing: normal;
+    padding-top: 20px;
+}
+
+.third_news_header
+{
+    border-bottom: 5px dotted #000;
+}
+
+.news_p_second
+{
+    font-size: 20px;
+    font-family: 'Alef', sans-serif;
+}
