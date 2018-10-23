@@ -1,3 +1,5 @@
+@import url(//db.onlinewebfonts.com/c/6f32b578fae9c85cb3659e1016e35932?family=58+Rodeo);
+
 @font-face
 {
     font-family: ModernoTwoRegular;
@@ -98,8 +100,15 @@ body
     text-align: center;
     font-size: 7em;
     font-family: ModernoTwoRegular, serif;
+}
+
+.frenchTitle
+{
+    text-align: center;
+    font-size: 2em;
+    font-family: '58 Rodeo', serif;
     border-bottom: .01em solid black;
-    margin-bottom: .01em;
+    margin-bottom: .1em;
 }
 
 .mainPage
