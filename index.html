@@ -10,14 +10,20 @@
 </head>
 <body>
     Размер шрифта:<br>
-    <input type="radio" name="font_size" value="low">Маленький<br>
-    <input type="radio" name="font_size" value="normal" checked>Нормальный<br>
-    <input type="radio" name="font_size" value="hard">Большой<br>
+    <input type="radio" name="font_size" value="low" id="font-low">
+    <label for="font-low">Маленький</label><br>
+    <input type="radio" name="font_size" value="normal" id="font-normal" checked>
+    <label for="font-normal">Нормальный</label><br>
+    <input type="radio" name="font_size" value="hard" id="font-hard">
+    <label for="font-hard">Большой</label><br>
     Тип шрифта:<br>
-    <input type="radio" name="font_type" value="serif">serif<br>
-    <input type="radio" name="font_type" value="sans-serif">sans-serif<br>
-    <input type="radio" name="font_type" value="monospace">Monospace<br>
-    Ночной режим:
+    <input type="radio" name="font_type" value="serif" id="font-serif" checked>
+    <label for="font-serif">serif</label><br>
+    <input type="radio" name="font_type" value="sans-serif" id="sans-serif">
+    <label for="sans-serif">sans-serif</label><br>
+    <input type="radio" name="font_type" value="monospace" id="monospace">
+    <label for="monospace">Monospace</label><br>
+    <label for="night_mode">Ночной режим:</label>
     <input type="checkbox" id="night_mode">
     <div class="page">
         <header>

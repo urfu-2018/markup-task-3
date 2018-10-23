@@ -1,6 +1,5 @@
 .page
 {
-    font-family: 'Slabo 27px', serif;
     margin: 0 auto;
     padding: 3%;
     width: 75%;
@@ -125,7 +124,7 @@ input[name='font_size'][value='hard']:checked ~ .page
 
 input[name='font_type'][value='serif']:checked ~ .page
 {
-    font-family: serif;
+    font-family: 'Slabo 27px', serif;
 }
 
 input[name='font_type'][value='sans-serif']:checked ~ .page
