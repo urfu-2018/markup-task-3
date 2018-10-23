@@ -1,0 +1,125 @@
+html
+{
+    padding: 10%;
+    font-size: 20px;
+}
+
+h1
+{
+    margin: 0;
+    font-size: 5rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+}
+
+h2
+{
+    width: 200%;
+}
+
+h3
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+h4
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    column-span: all;
+    text-align: center;
+    font-style: italic;
+}
+
+article > p
+{
+    text-indent: 20px;
+    margin: 0;
+}
+
+article
+{
+    hyphens: auto;
+}
+
+main
+{
+    margin-top: 2em;
+}
+
+fieldset
+{
+    white-space: nowrap;
+    border: 3px solid #000;
+}
+
+table
+{
+    text-align: justify;
+}
+
+table > tr
+{
+    display: block;
+    margin: 20px;
+}
+
+.table_head
+{
+    width: 100%;
+    text-align: center;
+    border-bottom: 15px solid #000;
+    font-weight: bold;
+    border-collapse: collapse;
+}
+
+body
+{
+    background-image: url(http://www.theblockforum.com/fun/lance/lancescollection/textures/paper2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.article_one
+{
+    float: left;
+    border: 3px solid gray;
+    text-align: justify;
+    width: 30%;
+}
+
+.article_two
+{
+    column-count: 3;
+    column-rule: 2px solid #000;
+    column-fill: auto;
+}
+
+.article_three
+{
+    column-count: 2;
+}
+
+.wrapped_img
+{
+    width: min-content;
+    height: min-content;
+}
+
+.left_align
+{
+    text-align: left;
+}
+
+.right_align
+{
+    text-align: right;
+}
+
+.my_div
+{
+    font-size: .6em;
+    font-variant: small-caps;
+}
