@@ -1,27 +1,26 @@
 @font-face
 {
     font-family: Diplomata;
-src: url('fonts/Diplomata-Regular.ttf');
+    src: url('fonts/Diplomata-Regular.ttf');
 }
 
 @font-face
 {
-font-family: YesevaOne;
-src: url('fonts/YesevaOne-Regular.ttf');
+    font-family: YesevaOne;
+    src: url('fonts/YesevaOne-Regular.ttf');
 }
 
 @font-face
 {
-font-family: SeymourOne;
-src: url('fonts/SeymourOne-Regular.ttf');
+    font-family: SeymourOne;
+    src: url('fonts/SeymourOne-Regular.ttf');
 }
-
 
 header
 {
-text-align: center;
-font-size: 50px;
-font-family: Diplomata;
+    text-align: center;
+    font-size: 50px;
+    font-family: Diplomata;
 }
 
 article
