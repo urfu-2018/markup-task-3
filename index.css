@@ -10,6 +10,7 @@ small
     font-style: oblique;
     font-family: serif;
     line-height: 20px;
+    text-align: center;
 }
 
 h4
@@ -29,7 +30,6 @@ aside
 h2
 {
     font-variant: small-caps;
-    column-span: 2;
     column-span: all;
     text-align: center;
 }
@@ -48,11 +48,6 @@ h3
     background: #cfcfcf;
     padding: 20px;
     font-size: 13px;
-}
-
-#release
-{
-    text-align: center;
 }
 
 span
@@ -91,4 +86,3 @@ a
 {
     text-decoration: none;
 }
-
