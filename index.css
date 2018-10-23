@@ -108,7 +108,7 @@ img
     width: 23%;
 }
 
-.font-size:checked ~ main > blockquote
+.font-size:checked ~ main
 {
     font-size: .7em;
 }
