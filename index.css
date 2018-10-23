@@ -4,6 +4,18 @@
     src: url('./fonts/PF\ Fusion\ Sans\ Pro\ Black.ttf');
 }
 
+@font-face
+{
+    font-family: 'Garamond, arial';
+    src: url('./fonts/Garamond.ttf');
+}
+
+@font-face
+{
+    font-family: 'Pudelinka, arial';
+    src: url('./fonts/Pudelinka.ttf');
+}
+
 input[id='theme']
 {
     display: none;
@@ -20,7 +32,8 @@ input[id='theme']:checked + label
 
 input[id='theme']:checked ~ main article,
 input[id='theme']:checked ~ main header,
-input[id='theme']:checked ~ main aside
+input[id='theme']:checked ~ main aside,
+input[id='theme']:checked ~ main footer
 {
     background-color: #000;
     color: #fff;
@@ -34,6 +47,7 @@ input[id='theme']:checked ~ main div.horoscope img
 
 input[id='theme']:checked ~ main header,
 input[id='theme']:checked ~ main header h1
+input[id='theme']:checked ~ main footer
 {
     border-color: #fff;
 }
@@ -59,13 +73,15 @@ input[id='size']:checked + label
     filter: brightness(0%);
 }
 
-input[id='size']:checked ~ main article
+input[id='size']:checked ~ main article section
 {
-    font-size: .8em;
+    font-size: .9em;
 }
 
-input[id='size']:checked ~ main article h2
+input[id='size']:checked ~ main article h2,
+input[id='size']:checked ~ main article h2 span
 {
+    margin-top: 5px;
     font-size: 100px;
 }
 
@@ -84,11 +100,18 @@ input[id='font']:checked + label
     filter: brightness(0%);
 }
 
-/* input[id='font']:checked ~ main article,
-input[id='font']:checked ~ main article h2
+input[id='font']:checked ~ main article h2,
+input[id='font']:checked ~ main article h2 span
 {
+    font-family: 'Pudelinka, arial';
+    margin-top: 5px;
+    font-size: 100px;
+}
 
-} */
+input[id='font']:checked ~ main article section
+{
+    font: small-caps 14px 'Arial', sans-serif;
+}
 
 header
 {
@@ -191,13 +214,9 @@ aside div.weather ul li
     list-style-type: none;
 }
 
-aside div.horoscope
-{
-    text-align: center;
-}
-
 aside div.horoscope p
 {
+    text-align: center;
     margin: auto;
     font: normal 30px 'Gill Sans', sans-serif;
 }
@@ -211,6 +230,15 @@ aside div.horoscope div p
 }
 
 aside div.horoscope img
+{
+    display: inline-block;
+    margin-top: -20px;
+    padding-left: 20px;
+    height: 150px;
+    width: 150px;
+}
+
+aside div.horoscope div img
 {
     display: inline-block;
     padding: 20px;
@@ -238,6 +266,13 @@ figure
 {
     margin: auto;
     column-span: all;
+}
+
+figure figcaption
+{
+    text-align: center;
+    font-size: .8em;
+    color: #4d4c4c;
 }
 
 img
@@ -277,6 +312,14 @@ section
     padding: 20px;
     height: 700px;
     width: 300px;
+    font: normal 16px 'Garamond, arial';
+}
+
+section p span
+{
+    font-weight: 700;
+    font-size: 1.2em;
+    font-variant: small-caps;
 }
 
 section.central
@@ -290,7 +333,39 @@ section.right::first-letter
 {
     float: left;
     margin-top: 5px;
+    font-family: 'Pudelinka, arial';
     line-height: 60px;
     font-size: 60px;
-    padding: 0;
+    padding-right: 10px;
+}
+
+footer
+{
+    margin-bottom: 3px;
+    vertical-align: top;
+    column-count: 3;
+    column-width: 100px;
+    border-bottom: 5px double #000;
+}
+
+footer p
+{
+    font: bold 16px 'Garamond, arial';
+    padding: 5px;
+    margin: 0;
+}
+
+footer p:first-of-type
+{
+    text-align: left;
+}
+
+footer p:nth-of-type(2)
+{
+    text-align: center;
+}
+
+footer p:last-of-type
+{
+    text-align: right;
 }
