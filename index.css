@@ -1,0 +1,84 @@
+body
+{
+    width: 100%;
+    font-family: Special+Elite;
+    letter-spacing: 2px;
+}
+
+.paper_name
+{
+    font-family: Ewert;
+    font-size: 45px;
+    text-align: center;
+    display: inline-block;
+    width: 750px;
+}
+
+h2::first-letter
+{
+    font-family: Ewert;
+}
+
+h1
+{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.paper_header
+{
+    margin: 0 auto;
+    width: 1280px;
+    height: 300px;
+}
+
+.paper_header_notes
+{
+    display: inline-block;
+    width: 190px;
+    height: 50px;
+    border: 3px solid #000;
+    margin: 15px;
+    margin-top: 40px;
+    padding: 1em;
+    text-align: center;
+}
+
+.paper_date
+{
+    font-weight: 400;
+    text-align: center;
+    border-bottom: 2px solid #000;
+    border-top: 3px solid #000;
+}
+
+header
+{
+    width: 100%;
+    height: 200px;
+}
+
+main
+{
+    width: 100%;
+}
+
+.paper_content
+{
+    margin: 0 auto;
+    width: 1280px;
+}
+
+article
+{
+    width: 100%;
+    -moz-column-count: 5;
+    -webkit-column-count: 5;
+    column-count: 5;
+    -webkit-column-rule: 1px solid #000;
+    -moz-column-rule: 1px solid #000;
+    column-rule: 1px solid #000;
+    border-top: 1px solid #000;
+    border-bottom: 2px solid #000;
+}
