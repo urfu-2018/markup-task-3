@@ -1,9 +1,9 @@
-body 
+body
 {
     background-color: #f4f5ac;
 }
 
-h1 
+h1
 {
     font-size: 40px;
     text-align: center;
@@ -14,7 +14,7 @@ h1
 h4,
 h5,
 
-h6 
+h6
 {
     font-family: serif;
     text-indent: 10%;
@@ -129,7 +129,7 @@ hr
     font-size: 30px;
 }
 
-.prevue 
+.prevue
 {
     display: inline-block;
     column-count: 1;
@@ -144,6 +144,11 @@ hr
     display: inline-block;
     filter: grayscale(100%);
     width: 66%;
+}
+
+.mainImage
+{
+    width: 100%;
 }
 
 .mainNewText
