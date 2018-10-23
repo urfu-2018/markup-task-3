@@ -1,7 +1,8 @@
 html,
 p,
 h1,
-hr
+hr,
+h2
 {
     margin: 0;
 }
@@ -15,23 +16,22 @@ html
 @font-face
 {
     font-family: Izhitsa;
-    src: url('./Izhitsa.woff2') format('woff2'), url('./Izhitsa.woff') format('woff');
+    src: url('./izhitsa.woff2') format('woff2'), url('./izhitsa.woff') format('woff');
 }
 @font-face
 {
     font-family: Behrens;
-    src: url('./Behrens.woff2') format('woff2'), url('./Behrens.woff') format('woff');
+    src: url('./behrens.woff2') format('woff2'), url('./behrens.woff') format('woff');
 }
 @font-face
 {
     font-family: Galactica;
-    src: url('./Galactica.woff2') format('woff2'), url('./Galactica.woff') format('woff');
+    src: url('./galactica.woff2') format('woff2'), url('./galactica.woff') format('woff');
 }
 
-.section
+main
 {
     font-family: 'Galactica', serif;
-    height: 1900px;
 }
 
 aside
@@ -51,10 +51,16 @@ aside
     border-right: 1px black solid;
 }
 
+.horizontal-container::after
+{
+    content: '';
+    display: table;
+    clear: both;
+}
+
 .percent-25
 {
     width: 25%;
-    float: left;
 }
 
 .percent-33
@@ -67,22 +73,18 @@ aside
     width: 50%;
 }
 
-.percent-60
-{
-    width: 60%;
-}
-
 .percent-67
 {
     width: 67%;
 }
 
-.header
+header
 {
     text-transform: uppercase;
+    text-align: center;
 }
 
-.header .slogan
+header .slogan
 {
     text-align: right;
     text-decoration: underline;
@@ -90,32 +92,24 @@ aside
     line-height: 25px;
 }
 
-.header .paper-title
+header .title
 {
     font-size: 6em;
-    text-align: center;
 }
 
-.header .description
+header .description
 {
     font-size: .75em;
     line-height: 20px;
-    text-align: center;
-}
-
-.uppercase
-{
-    text-transform: uppercase;
 }
 
 .header-cell
 {
     text-align: center;
     font-size: .75em;
-    height: 40px;
 }
 
-.title
+main .title
 {
     column-span: all;
     text-transform: uppercase;
@@ -148,14 +142,20 @@ aside
 {
     column-span: all;
     border: 3px dotted black;
-    margin: 0;
+    margin: 10px 0;
     padding: 0;
+}
+
+.column-span-all p
+{
+    text-indent: 0;
+    hyphens: manual;
 }
 
 .column-span-all .text
 {
     padding: 30px 0;
-    font-size: 3em;
+    font-size: 2rem;
 }
 
 .column-span-all .text-small
@@ -164,26 +164,21 @@ aside
     font-size: 1em;
 }
 
-input[id='invert']:checked ~ .big-container
+input[id='invert']:checked ~ .container
 {
-    color: #fff !important;
-    background: #000 !important;
+    color: #fff;
+    background: #000;
 }
 
-input[id='bigText']:checked ~ .big-container
-{
-    font-size: 1.4rem;
-}
-
-input[id='bigText']:checked ~ .big-container
+input[id='bigText']:checked ~ .container
 {
     font-size: 1.4rem;
 }
 
-input[id='uglyText']:checked ~ .big-container
+input[id='uglyText']:checked ~ .container
 {
     font-size: 1em;
     font-family: Arial, sans-serif;
-    color: aqua !important;
+    color: aqua;
     text-shadow: 4px  4px 10px #f00, -4px -4px 10px #0f0;
 }
