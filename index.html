@@ -1,9 +1,184 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <title>Задача «DeLorean DMC-12»</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Diplomata">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Srisakdi">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alef">
 </head>
 <body>
+<input type="checkbox" class="theme-switch" id="theme-switch">
+<input type="checkbox" class="font-switch" id="font-switch">
+<input type="checkbox" class="size-switch" id="size-switch">
+<div class="controls">
+    <label for="theme-switch" class="theme-label" tabindex="1">
+        Включить ночной режим
+    </label>
+    <label for="font-switch" class="font-label" tabindex="2">
+        Изменить шрифт
+    </label>
+    <label for="size-switch" class="size-label" tabindex="3">
+        Увеличить шрифт
+    </label>
+</div>
+<main>
+    <h1>Моя газета</h1>
+    <article>
+        <h2>FP-style Pointfree Selenium Tests in JavaScript</h2>
+        <p>This post is a tutorial for writing Selenium tests in a pointfree style. This should
+            reduce the size of your
+            user experience tests, because writing them in a pointfree style rids the test-code of
+            most variables and
+            “awaits” (aysnc/await). Here’s an example of what I mean.</p>
+        <pre>test('User can login', () =&gt; S.seq(<br>S.call('get', ROOT_URL),
+            S.click('[data-go="login"]'),
+            S.fillForm(forms.login, user.credentials),
+            S.click('button[type="submit"]'),<br>)(opts))</pre>
+        <figure>
+            <img
+                src="https://goo.gl/wsuz9v"
+                alt="City">
+            <figcaption>Voronezh (2018)</figcaption>
+        </figure>
+        <h3>Selenium-webdriver and Node.js</h3>
+        <p>I use Selenium-Webdriver and Jest to write automated browser tests. I won’t go into
+            detail about that, but if
+            you search for “selenium-webdriver jest” or “selenium-webdriver mocha” you’ll find some
+            good blog posts that
+            describe how to use the two together in more detail. In general, Jest or Mocha is the
+            test runner, and
+            selenium-webdriver is used within the tests to interact with the browser. The code below
+            is taken from one
+            of those blog posts.</p>
+    </article>
+    <article>
+        <h2>Article 2</h2>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+            egestas. Vestibulum
+            tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+            amet quam egestas
+            semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet
+            est et sapien
+            ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit
+            amet, wisi. Aenean
+            fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus
+            lacus enim ac dui. Donec
+            non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus
+            faucibus, tortor neque
+            egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi,
+            tincidunt quis, accumsan
+            porttitor, facilisis luctus, metus</p>
+        <q>Vestibulum tortor quam</q>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+            egestas. Vestibulum
+            tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+            amet quam egestas
+            semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet
+            est et sapien
+            ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit
+            amet, wisi. Aenean
+            fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus
+            lacus enim ac dui. Donec
+            non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus
+            faucibus, tortor neque
+            egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi,
+            tincidunt quis, accumsan
+            porttitor, facilisis luctus, metus</p>
+    </article>
+    <article>
+        <h2>Article 3</h2>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+            egestas. Vestibulum
+            tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+            amet quam egestas
+            semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet
+            est et sapien
+            ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit
+            amet, wisi. Aenean
+            fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus
+            lacus enim ac dui. Donec
+            non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus
+            faucibus, tortor neque
+            egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi,
+            tincidunt quis, accumsan
+            porttitor, facilisis luctus, metus</p>
+        <img
+            src="https://goo.gl/orcKmk"
+            alt="Cat">
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+            egestas. Vestibulum
+            tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+            amet quam egestas
+            semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet
+            est et sapien
+            ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit
+            amet, wisi. Aenean
+            fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus
+            lacus enim ac dui. Donec
+            non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus
+            faucibus, tortor neque
+            egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi,
+            tincidunt quis, accumsan
+            porttitor, facilisis luctus, metus</p>
+    </article>
+    <article>
+        <h2>Smartphones got so good they’re completely boring</h2>
+        <img
+            src="https://cdn-images-1.medium.com/max/1000/1*14PcWr3nEzpTN-st-C2uKg.png"
+            alt="Smartphones"
+        >
+        <q>Smartphone innovation has come to a crawl</q>
+        <p>If there’s anything that’s been crystal clear from the flagship smartphones on 2018, it’s
+            that they’re all
+            boring. From Apple’s iPhone Xs to the Pixel 3, it’s the same story wherever you look:
+            more speed, more
+            camera, and more flashy features to try and tempt you.</p>
+        <p>Smartphone innovation has come to a crawl as the big players have begun struggling to
+            justify the yearly
+            upgrade cycle they’ve spent years pushing to make normal. People are upgrading less than
+            ever, and whispers
+            of peak smartphone are beginning to be uttered.</p>
+        <p>As it’s getting increasingly difficult to convince you to pull out your wallet on
+            hardware, the push for
+            features as a selling point has become a renewed focus across the board.</p>
+        <p><strong>The race to the bottom for hardware is over, and everyone won: every device is
+            high-end now.</strong>
+            Absolutely every smartphone out there is fast, with a great screen and a fantastic
+            camera. Specifications
+            simply don’t matter anymore, because everything’s great. All that’s left is software,
+            and the ecosystem
+            around the phone, to sell you the next big thing.</p>
+        <p>This is happening across the industry: Apple’s latest iPhone Xs introduced features like
+            Smart HDR and
+            adjustable depth control, while Google’s Pixel 3 touts Top Shots, Super Zoom and call
+            screening. Samsung’s
+            devices tout raw gaming power, while Huawei focuses on “AI powered” technology.</p>
+    </article>
+    <article>
+        <h2>Innovation Isn’t About Ideas</h2>
+        <p>Every enterprise needs to innovate. It doesn’t matter whether you’re are a profit-seeking
+            business, a
+            nonprofit organization, or a government entity. The simple truth is that every business
+            model fails
+            eventually, because conditions change over time. We have to manage not for stability,
+            but for
+            disruption — that, or face irrelevance.</p>
+        <p>There is no shortage of advice on how to go about it. In fact, there is far too much
+            advice. Design thinkers
+            will tell you to focus on the end user, but Harvard’s Clayton Christensen says that
+            listening to customers
+            too much is how good businesses fail. Then there’s open innovation, lean startups, and
+            on and on it
+            goes.</p>
+    </article>
+</main>
 </body>
 </html>

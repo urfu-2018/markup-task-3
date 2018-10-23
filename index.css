@@ -1,0 +1,143 @@
+body
+{
+    margin: 0;
+}
+
+main
+{
+    transition: all ease .5s;
+    padding: 10px;
+    columns: 250px;
+    column-rule: 1px solid black;
+}
+
+h1
+{
+    column-span: all;
+    text-align: center;
+    font-size: 5em;
+    margin: 0;
+    padding: 50px;
+}
+
+img
+{
+    width: 100%;
+    transition: all ease 1s;
+}
+
+q
+{
+    text-decoration: underline;
+    text-align: center;
+    font-family: 'Alef', sans-serif;
+    font-size: 1.6em;
+    font-weight: 700;
+}
+
+pre
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+article:nth-of-type(2n) p:first-child
+{
+    text-decoration: underline;
+}
+
+p
+{
+    transition: font-size ease .5s;
+}
+
+p:first-letter
+{
+    font-size: 2em;
+    font-weight: 800;
+    color: #742714;
+}
+
+article:nth-of-type(3n) p
+{
+    font-family: 'Indie Flower', Arial, cursive;
+}
+
+article:nth-of-type(2n) p
+{
+    font-family: 'Alegreya Sans', serif;
+}
+
+article:nth-of-type(1n) h2
+{
+    font-family: 'Lobster', cursive;
+}
+
+article:nth-of-type(3n) h2
+{
+    font-family: 'Diplomata', sans-serif;
+    text-align: center;
+    text-decoration: underline;
+}
+
+article:nth-of-type(5n) h2
+{
+    font-family: 'Srisakdi', cursive;
+    font-size: 54px;
+    text-align: right;
+}
+
+article:nth-of-type(7n) h2
+{
+    font-family: 'Righteous', serif;
+}
+
+input[type='checkbox']
+{
+    display: none;
+}
+
+.controls label
+{
+    transition: all ease .5s;
+    padding: 10px;
+    display: inline-block;
+    line-height: 50px;
+    font-family: Roboto, sans-serif;
+    cursor: pointer;
+}
+
+.controls label:focus
+{
+    outline: 0;
+    text-decoration: overline;
+}
+
+.theme-switch:checked ~ main,
+.theme-switch:checked ~ .controls .theme-label
+{
+    background: #002b36;
+    color: #859900;
+}
+
+.theme-switch:checked ~ main img
+{
+    filter: sepia(100%);
+}
+
+.font-switch:checked ~ main p
+{
+    font-family: 'Helvetica', sans-serif;
+}
+
+.size-switch:checked ~ main p
+{
+    font-size: 1.5em;
+}
+
+.theme-switch:checked ~ .controls .theme-label,
+.size-switch:checked ~ .controls .size-label,
+.font-switch:checked ~ .controls .font-label
+{
+    text-decoration: underline;
+}
