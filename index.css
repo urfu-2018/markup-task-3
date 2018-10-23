@@ -109,12 +109,12 @@ input[id='design']:checked ~ .settings > .settings-item > label[for='design']
     color: rgba(255, 255, 255, 1);
 }
 
-input
+.setting-radio-item
 {
     display: none;
 }
 
-html
+:root
 {
     margin: 0;
     text-align: justify;
@@ -142,21 +142,23 @@ html
 {
     font-family: 'Playfair Display', serif;
     text-align: center;
+    hyphens: auto;
 }
 
 .subtitle
 {
     text-align: center;
     font-family: 'Courier New', monospace;
+    hyphens: auto;
 }
 
-blockquote
+.description
 {
     font-style: italic;
     hyphens: auto;
 }
 
-p
+.article
 {
     hyphens: auto;
 }
@@ -166,7 +168,7 @@ p
     column-count: 5;
 }
 
-img
+.picture
 {
     width: 100%;
 }
