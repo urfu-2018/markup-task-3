@@ -117,11 +117,12 @@ body
     text-align: justify;
 }
 
-.mainPage header
+.mainPage h1
 {
     text-align: center;
     font-size: 1.5em;
     font-family: Bengaly, serif;
+    margin: auto;
 }
 
 img,
