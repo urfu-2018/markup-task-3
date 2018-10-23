@@ -114,13 +114,22 @@ main
 
 .columns__header__logo
 {
+    display: inline-block;
     background-image: url('https://lh3.googleusercontent.com/zQcyzBFlezJyBZpK83m9IscWfALWf9BqXMQe0oWGGrAAyg6PHqY7yhhf_wkwgZVPQyZl=s128');
+    width: 128px;
+    height: 128px;
 }
 
 .newspaperArticle__title_center
 {
     text-align: center;
     vertical-align: middle;
+}
+
+.newspaperArticle__content::first-letter
+{
+    font-size: 150%;
+    text-shadow: 2px 2px;
 }
 
 .newspaperArticle__title_doubleBorder
