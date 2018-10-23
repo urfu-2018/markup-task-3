@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,900&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,900&amp;subset=cyrillic"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Limelight" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
@@ -15,94 +16,119 @@
 <body>
 
     <label for="lightswitch">Light Switch</label>
-    <input type="checkbox" class="lightswitch" />
-
+    <input type="checkbox" id="lightswitch" class="lightswitch">
     <main>
-        <aside class="weather"><span> <strong style="font-size: 14px;">THE WEATHER</strong><br>10
+        <aside class="weather"><span><strong>THE WEATHER</strong><br>10
                 градусов<br>облачно</span></aside>
-        <header class="paperName">Student<img src="images/mat-meh_logo.png" alt="МатМех">&nbspMail
+        <header class="paperName">Student<img src="images/mat-meh_logo.png" alt="МатМех">&nbsp;Mail
         </header>
-        <section class="metainfo">Екатеринбург, вторник октябрь 23 1985<aside>123 руб 00 коп</aside>
-        </section>
+        <div class="metainfo">Екатеринбург, вторник октябрь 23 1985<aside>123 руб 00 коп</aside>
+        </div>
 
-        <header>
+        <header class="headline">
             <h1>DEADLINE IS NEAR!</h1>
-            <div style="text-align: center;">никогда такого не было, и вот опять</div>
+            <div class="comment">никогда такого не было, и вот опять</div>
             <hr class="headlineBreak">
         </header>
-        <section class="articles">
-            <article style="max-width: 400px;">
+        <div class="articles">
+            <article>
                 <h2>
                     дедлайн близко, что же делать
                 </h2>
-                <section>
-                    <aside><img style="max-width: 200px;" src="images/oh.jpg" alt="oh oh thats hard"></aside>
+                <div>
+                    <aside class="image">
+                        <figure>
+                            <img src="images/oh.jpg" alt="oh oh thats hard">
+                            <figcaption>я не знаю что нажимать аааа</figcaption>
+                        </figure>
+                    </aside>
                     <strong>Н</strong>аши аналитики полагают что урон от несделанного домашнего задания может
                     достигнуть
                     1 балла!
                     Это
-                    непоправимый ущерб нанесенный количеству баллов. Эксперт Василий полагает, что все что нужно чтобы
-                    выправить это бедственное положение дел, это сесть наконец, и сделать задание. Но подойдет ли такой
+                    непоправимый ущерб нанесенный количеству баллов. Эксперт Василий полагает, 
+                    что все что нужно чтобы
+                    выправить бедственное положение дел, это сесть наконец, и сделать задание. 
+                    Но подойдет ли такой
                     инновационный способ для
-                    решения этой проблемы, покажет только время. <br> Lorem ipsum dolor sit amet, consectetur
+                    решения этой проблемы, покажет только время. <br>Lorem ipsum dolor sit amet, consectetur
                     adipiscing
-                    elit. Curabitur id tincidunt neque. Curabitur iaculis erat non nisl luctus, sit amet imperdiet orci
-                    viverra. Aliquam pellentesque mi in sem mattis tempus. Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Curabitur id tincidunt neque. Curabitur iaculis erat non nisl luctus, sit amet
+                    elit. Curabitur id tincidunt neque. Curabitur iaculis erat non nisl luctus, 
+                    sit amet imperdiet orci
+                    viverra. Aliquam pellentesque mi in sem mattis tempus. Lorem ipsum dolor sit amet, 
+                    consectetur
+                    adipiscing elit. Curabitur id tincidunt neque. Curabitur iaculis erat non nisl luctus, 
+                    sit amet
                     imperdiet orci viverra. Aliquam pellentesque mi in sem mattis tempus.
-                </section>
+                </div>
             </article>
-            <article style="max-width: 200px;">
-                <h2 style="font-family: 'Audiowide', cursive;">
+            <article>
+                <h2>
                     Steve Jobs leaves Apple Computers
                 </h2>
-                <section>
+                <div>
                     <strong>L</strong>
-                    orem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id tincidunt neque. Curabitur
-                    iaculis erat non nisl luctus, sit amet imperdiet orci viverra. Aliquam pellentesque mi in sem
-                    mattis tempus. Ut pulvinar dapibus porta. Vestibulum vitae elit maximus turpis mollis hendrerit.
-                    Pellentesque dictum sagittis nibh, a finibus orci pulvinar vel. Sed sodales magna lorem, sit amet
-                    rutrum augue euismod a. Cras in nulla a magna euismod congue. Suspendisse potenti. Maecenas
+                    orem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur 
+                    id tincidunt neque. Curabitur
+                    iaculis erat non nisl luctus, sit amet imperdiet orci viverra. Aliquam 
+                    pellentesque mi in sem
+                    mattis tempus. Ut pulvinar dapibus porta. Vestibulum vitae elit maximus 
+                    turpis mollis hendrerit.
+                    Pellentesque dictum sagittis nibh, a finibus orci pulvinar vel. Sed sodales 
+                    magna lorem, sit amet
+                    rutrum augue euismod a. Cras in nulla a magna euismod congue. 
+                    Suspendisse potenti. Maecenas
                     consequat fringilla libero, vel vulputate magna volutpat ac.
-                </section>
+                </div>
             </article>
-            <article style="max-width: 200px;">
-                <h2 style="font-family: 'Limelight';">
+            <article>
+                <h2>
                     THERE IS SO LITTLE COOL CYRILLIC FONTS
                 </h2>
-                <section>
+                <div>
                     <strong>L</strong>
-                    orem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id tincidunt neque. Curabitur
-                    iaculis erat non nisl luctus, sit amet imperdiet orci viverra. Aliquam pellentesque mi in sem
-                    mattis tempus. Ut pulvinar dapibus porta. Vestibulum vitae elit maximus turpis mollis hendrerit.
-                    Pellentesque dictum sagittis nibh, a finibus orci pulvinar vel. Sed sodales magna lorem, sit amet
-                    rutrum augue euismod a. Cras in nulla a magna euismod congue. Suspendisse potenti. Maecenas
+                    orem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id 
+                    tincidunt neque. Curabitur
+                    iaculis erat non nisl luctus, sit amet imperdiet orci viverra. Aliquam 
+                    pellentesque mi in sem
+                    mattis tempus. Ut pulvinar dapibus porta. Vestibulum vitae elit maximus 
+                    turpis mollis hendrerit.
+                    Pellentesque dictum sagittis nibh, a finibus orci pulvinar vel. Sed 
+                    sodales magna lorem, sit amet
+                    rutrum augue euismod a. Cras in nulla a magna euismod congue. 
+                    Suspendisse potenti. Maecenas
                     consequat fringilla libero, vel vulputate magna volutpat.
-                </section>
+                </div>
             </article>
-            <article style="max-width: 200px;">
-                <h2 style="font-family: 'Rubik Mono One';">
+            <article>
+                <h2>
                     Mikhail Gorbachev calls for perestroika
                 </h2>
-                <section>
+                <div>
                     <strong>S</strong>
-                    Some people view glasnost as carte blanche to write whatever they please, claimed Vladimir Karpov,
+                    Some people view glasnost as carte blanche to write whatever they please, 
+                    claimed Vladimir Karpov,
                     the conservative head of the Writers’ Union, and a veteran of Stalin’s Gulag.
 
-                    Mr Gorbachev came down on both sides of the argument, in one of his now regular interventions in
-                    the course of the debate on the floor of the 19th party conference in the Kremlin Palace of
+                    Mr Gorbachev came down on both sides of the argument, in one of his now 
+                    regular interventions in
+                    the course of the debate on the floor of the 19th party conference 
+                    in the Kremlin Palace of
                     Congresses.
                     <br>
-                    <blockquote><q>If we give up the further development of the process of glasnost, criticism,
+                    <blockquote><q>If we give up the further development of the process 
+                        of glasnost, criticism,
                             self-criticism
                             and
-                            democracy it will be the end to our perestroika. We have resolutely taken the path of
+                            democracy it will be the end to our perestroika. We have resolutely 
+                            taken the path of
                             glasnost
                             and
-                            we shall follow it unswervingly</q>,</blockquote> Mr Gorbachev told the conference.
-                </section>
+                            we shall follow it unswervingly</q>,</blockquote> Mr Gorbachev 
+                            told the conference.
+                </div>
             </article>
-        </section>
+        </div>
     </main>
     <footer></footer>
 </body>

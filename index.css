@@ -64,7 +64,7 @@ h1
     text-align: center;
 }
 
-h1 + section
+h1 + div
  {
     margin-top: -15px;
     font-family: 'Alegreya Sans SC', sans-serif;
@@ -105,17 +105,22 @@ article:last-child
     text-align: center;
 }
 
-.articles section
+.articles div
  {
     padding: 5px;
 }
 
-.articles img
+.articles .image
  {
     margin-left: 5px;
     float: right;
-    border: 2px solid #666;
     border-color: inherit;
+    font-size: 10px;
+}
+
+.articles .image img
+ {
+    border: 2px solid #666;
 }
 
 .articles strong
@@ -155,4 +160,49 @@ input.lightswitch:checked + main
     background-color: #666;
     color: #fff5d9;
     border-color: #fff5d9;
+}
+
+.weather strong
+ {
+    font-size: 14px;
+}
+
+.headline .comment
+ {
+    text-align: center;
+}
+
+.articles article:first-child
+ {
+    max-width: 400px;
+}
+
+figure
+ {
+    margin: 0;
+}
+
+.articles img
+ {
+    max-width: 200px;
+}
+
+.articles article
+ {
+    max-width: 200px;
+}
+
+.articles article:nth-child(2) h2
+ {
+    font-family: 'Audiowide', cursive;
+}
+
+.articles article:nth-child(3) h2
+ {
+    font-family: 'Limelight';
+}
+
+.articles article:nth-child(4) h2
+ {
+    font-family: 'Rubik Mono One';
 }
