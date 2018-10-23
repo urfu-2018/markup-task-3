@@ -1,6 +1,9 @@
-body
+fieldset
 {
     background-color: #f4f4e2;
+    box-shadow: inset 0 0 20px 3px #000, inset 0 0 150px 10px #deb887;
+    border-radius: 3px;
+    border: 0;
 }
 
 .paper-name
@@ -36,22 +39,22 @@ article
     font-family: 'Courier New', serif;
 }
 
-input[id='new-font']:checked ~ div article
+input[id='new-font']:checked ~ fieldset div article
 {
     font-family: 'Arial Black', cursive;
 }
 
-input[id='bigger-font']:checked ~ div article
+input[id='bigger-font']:checked ~ fieldset div article
 {
     font-size: 120%;
 }
 
-input[id='lower-font']:checked ~ div article
+input[id='lower-font']:checked ~ fieldset div article
 {
     font-size: 80%;
 }
 
-input[id='white-font']:checked ~ div
+input[id='white-font']:checked ~ fieldset
 {
     background-color: black;
     color: white;
