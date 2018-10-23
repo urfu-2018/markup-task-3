@@ -10,7 +10,6 @@ small
     font-style: oblique;
     font-family: serif;
     line-height: 20px;
-    text-align: center;
 }
 
 h4
@@ -48,6 +47,19 @@ h3
     background: #cfcfcf;
     padding: 20px;
     font-size: 13px;
+}
+
+img
+{
+    width: 260px;
+}
+
+#release
+{
+    font-style: oblique;
+    font-family: serif;
+    font-size: 13px;
+    text-align: center;
 }
 
 span
