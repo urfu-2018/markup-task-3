@@ -1,3 +1,10 @@
+@font-face
+{
+    font-family: 'Old English Text MT';
+    src: local('Old English Text MT'), url('fonts/NewYorkTimesFont.ttf') format('ttf');
+    font-display: auto;
+}
+
 body
 {
     margin: 10px;
