@@ -74,29 +74,19 @@ body
 {
     margin: 0 auto;
     width: 750px;
-    min-width: 400px;
     background-color: #ecddbc;
+}
+
+main
+{
+    margin-top: 10px;
 }
 
 p
 {
-    text-indent: 5%;
     margin: 0;
-    hyphens: auto;
+    text-indent: 5%;
     text-align: justify;
-}
-
-.main-left-side p
-{
-    margin-right: 7px;
-    font-size: 14px;
-    word-spacing: 4px;
-}
-
-.main-right-side p
-{
-    font-size: 12px;
-    word-spacing: 4px;
 }
 
 h4,
@@ -107,26 +97,22 @@ h5
 
 header h2
 {
-    font-family: 'MainHeaderFont', sans-serif;
+    margin: -12px 0;
+    font: 53px 'MainHeaderFont', sans-serif;
     word-spacing: 8px;
     letter-spacing: 11px;
-    font-weight: 500;
-    font-size: 53px;
     text-transform: uppercase;
-    margin: -12px 0;
 }
 
 header h3
 {
-    font-family: 'UnderMainHeaderFont', serif;
-    font-size: 29px;
-    font-weight: 500;
     margin: -7px 0;
+    font: 29px 'UnderMainHeaderFont', serif;
 }
 
-main
+figure
 {
-    margin-top: 10px;
+    margin: 6px 6px 6px 0;
 }
 
 .main-left-side,
@@ -138,30 +124,68 @@ main
 
 .main-left-side
 {
-    float: left;
     margin-right: 5px;
     border-right: 1px solid gray;
 }
 
-.main-right-side
+.main-left-side p
 {
-    float: right;
+    margin-right: 7px;
+    font-size: 14px;
+    word-spacing: 4px;
+}
+
+.main-left-side figure
+{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.main-left-side figure figcaption > span
+{
+    display: inline-block;
+    top: 5px;
+    font-style: italic;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.main-left-side figure figcaption > span:after
+{
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 100%;
+    width: 54px;
+    margin-left: 15px;
+    border-bottom: 1px solid gray;
+}
+
+.main-left-side figure figcaption > span:before
+{
+    content: '';
+    position: absolute;
+    top: 9px;
+    right: 100%;
+    width: 54px;
+    margin-right: 15px;
+    border-bottom: 1px solid gray;
 }
 
 .main-left-side .text-content-header
 {
-    font-family: 'TextContentHeaderFont', 'sans-serif';
+    margin: -2px 0;
+    font: bolder 22px 'TextContentHeaderFont', 'sans-serif';
     text-align: left;
     word-spacing: 4px;
-    font-size: 22px;
-    margin: -2px 0;
 }
 
 .main-left-side .text-content-header > .text-content-header-description
 {
+    width: 10px;
     font-style: italic;
     font-size: 8px;
-    width: 10px;
 }
 
 .main-left-side .text-content-header .text-content-header-description > span
@@ -178,28 +202,28 @@ main
 .timed-text-container .timed-text > p
 {
     display: inline-block;
+    margin-top: 5px;
 }
 
 .timed-text-container .timed-text > div
 {
-    vertical-align: top;
-    text-decoration: underline;
-    font-style: italic;
     width: 40%;
     height: 100%;
+    vertical-align: top;
+    font-style: italic;
+    text-decoration: underline;
 }
 
 .timed-text-container .timed-text > p
 {
-    text-indent: 0;
     width: 55%;
     font-size: 13px;
+    text-indent: 0;
 }
 
 .summary-info > p
 {
-    font-family: 'SummaryInfoFont', sans-serif;
-    font-size: 16px;
+    font: 16px 'SummaryInfoFont', sans-serif;
 }
 
 .summary-info p > span
@@ -212,10 +236,129 @@ main
     font-weight: bold;
 }
 
+.main-right-side
+{
+    float: right;
+}
+
+.main-right-side p
+{
+    font-size: 12px;
+    word-spacing: 4px;
+}
+
+.main-right-side .newspaper-info figure
+{
+    margin-bottom: 80px;
+}
+
+.newspaper-info figure img
+{
+    display: inline-block;
+    float: left;
+}
+
+.newspaper-info figure figcaption
+{
+    display: inline-block;
+    text-decoration: underline;
+    font-size: 13px;
+    font-style: italic;
+}
+
 .newspaper-release-info
 {
     column-count: 3;
     font-size: 10px;
+}
+
+.right-side-header-info .headers
+{
+    margin-top: -20px;
+}
+
+.right-side-header-info .headers > h4
+{
+    margin: 20px 0 8px;
+    font: bolder 35px 'NewspaperInfoLargeHeaderFont', serif;
+    word-spacing: 7px;
+    letter-spacing: 6px;
+    line-height: 1em;
+}
+
+.right-side-header-info .headers > h5
+{
+    margin: 0;
+    line-height: 3em;
+}
+
+.right-side-header-info .headers h5 > span
+{
+    float: left;
+    font: 300 40px 'NewspaperInfoPersonHeaderFont', serif;
+    font-style: italic;
+    word-spacing: 10px;
+}
+
+.right-side-header-info .headers h5 .person-name
+{
+    float: right;
+}
+
+.right-side-header-info .newspaper-info
+{
+    height: 300px;
+    text-align: end;
+    margin-top: 50px;
+    margin-bottom: -90px;
+    border-top: 1px solid gray;
+}
+
+.right-side-header-info .newspaper-info .newspaper-description,
+.right-side-header-info .newspaper-info .newspaper-name
+{
+    display: inline-block;
+}
+
+.right-side-header-info .newspaper-info .newspaper-description
+{
+    margin-right: 10px;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 900;
+}
+
+.right-side-header-info .newspaper-info .newspaper-name h3
+{
+    margin-top: -20px;
+    font-family: 'NewspaperNameFont', sans-serif;
+    vertical-align: top;
+    line-height: 1.4em;
+}
+
+.newspaper-info .newspaper-name h3 > span:first-child
+{
+    font-size: 17px;
+}
+
+.newspaper-info .newspaper-name h3 > span:last-child
+{
+    font-size: 32px;
+    letter-spacing: 10px;
+}
+
+.newspaper-info .newspaper-release-info
+{
+    column-count: 3;
+    column-rule: 1px solid gray;
+    column-gap: 6em;
+    border: 1px solid gray;
+    border-bottom: 5px groove;
+}
+
+.newspaper-info .newspaper-release-info > p
+{
+    white-space: pre;
 }
 
 .main-right-side .right-side-text-content
@@ -223,13 +366,25 @@ main
     margin-top: 0;
 }
 
+.right-side-text-content h3,
+.right-side-text-content h4,
+.right-side-text-content h5
+{
+    margin: 6px;
+}
+
 .right-side-text-content h3
 {
-    font-family: 'RightSideTextHeaderFont', serif;
-    text-align: center;
-    font-size: 30px;
-    letter-spacing: 15px;
     margin: 10px 0;
+    text-align: center;
+    font: 30px 'RightSideTextHeaderFont', serif;
+    letter-spacing: 16px;
+}
+
+.right-side-text-content h5
+{
+    font-family: 'TextContentAppealFontLight', serif;
+    letter-spacing: 3px;
 }
 
 .right-side-text-content .right-side-info
@@ -240,21 +395,21 @@ main
 
 .right-side-info .message:before
 {
-    border-top: 1px solid gray;
     content: '';
+    display: block;
     width: 200px;
     height: 16px;
-    display: block;
     margin: 15px auto 0;
     column-span: all;
+    border-top: 1px solid gray;
 }
 
 .right-side-info .message h4
 {
+    margin-top: 0;
     column-span: all;
     font-style: italic;
     font-size: 13px;
-    margin-top: 0;
 }
 
 .right-side-info .message h4 > span
@@ -277,193 +432,13 @@ main
     padding-left: 100px;
 }
 
-.right-side-header-info .headers
-{
-    margin-top: -20px;
-}
-
-.right-side-header-info .headers > h4
-{
-    font-family: 'NewspaperInfoLargeHeaderFont', serif;
-    font-size: 35px;
-    word-spacing: 7px;
-    letter-spacing: 6px;
-    margin: 20px 0 8px;
-    line-height: 1em;
-}
-
-.right-side-header-info .headers > h5
-{
-    margin: 0;
-    line-height: 3em;
-}
-
-.right-side-header-info .headers h5 > span
-{
-    font-family: 'NewspaperInfoPersonHeaderFont', serif;
-    font-size: 40px;
-    font-style: italic;
-    font-weight: 300;
-    word-spacing: 10px;
-    float: left;
-}
-
-.right-side-header-info .headers h5 .person-name
-{
-    float: right;
-}
-
-.right-side-header-info .newspaper-info
-{
-    height: 300px;
-    margin-top: 50px;
-    border-top: 1px solid gray;
-    text-align: end;
-    margin-bottom: -90px;
-}
-
-.right-side-header-info .newspaper-info .newspaper-description,
-.right-side-header-info .newspaper-info .newspaper-name
-{
-    display: inline-block;
-}
-
-.right-side-header-info .newspaper-info .newspaper-description
-{
-    font-size: 11px;
-    font-weight: 900;
-    text-align: center;
-    margin-right: 10px;
-}
-
-.right-side-header-info .newspaper-info .newspaper-name h3
-{
-    font-family: 'NewspaperNameFont', sans-serif;
-    vertical-align: top;
-    line-height: 1.4em;
-    margin-top: -20px;
-}
-
-.newspaper-info .newspaper-name h3 > span:first-child
-{
-    font-size: 17px;
-}
-
-.newspaper-info .newspaper-name h3 > span:last-child
-{
-    font-size: 32px;
-    letter-spacing: 10px;
-}
-
-.right-side-text-content
-{
-    margin-top: 20px;
-}
-
-.right-side-text-content h3,
-.right-side-text-content h4,
-.right-side-text-content h5
-{
-    margin: 6px;
-}
-
-.right-side-text-content h3
-{
-    font-family: 'TextContentAppealFont', serif;
-}
-
-.right-side-text-content h5
-{
-    font-family: 'TextContentAppealFontLight', serif;
-    letter-spacing: 3px;
-}
-
-.main-right-side .newspaper-info figure
-{
-    margin-bottom: 80px;
-}
-
-.newspaper-info figure img
-{
-    display: inline-block;
-    float: left;
-    vertical-align: top;
-}
-
-.newspaper-info figure figcaption
-{
-    display: inline-block;
-    text-decoration: underline;
-    font-size: 13px;
-    vertical-align: top;
-    text-align: end;
-    font-style: italic;
-}
-
-.newspaper-info .newspaper-release-info
-{
-    border: 1px solid gray;
-    border-bottom: 5px groove;
-    column-count: 3;
-    column-rule: 1px solid gray;
-    column-gap: 6em;
-}
-
-.newspaper-info .newspaper-release-info > p
-{
-    white-space: pre;
-}
-
-.main-left-side figure
-{
-    width: 100%;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-figure
-{
-    margin: 6px 6px 6px 0;
-}
-
-.main-left-side figure figcaption > span
-{
-    text-transform: uppercase;
-    font-style: italic;
-    position: relative;
-    top: 5px;
-    display: inline-block;
-}
-
-.main-left-side figure figcaption > span:after
-{
-    content: '';
-    position: absolute;
-    border-bottom: 1px solid gray;
-    top: 9px;
-    width: 54px;
-    left: 100%;
-    margin-left: 15px;
-}
-
-.main-left-side figure figcaption > span:before
-{
-    content: '';
-    position: absolute;
-    border-bottom: 1px solid gray;
-    top: 9px;
-    width: 54px;
-    right: 100%;
-    margin-right: 15px;
-}
-
 .main-right-side .footer-summary
 {
-    column-span: all;
-    border: 4px groove gray;
-    font-size: 18px;
     margin-bottom: 20px;
     margin-top: 6px;
+    column-span: all;
+    font-size: 18px;
+    border: 4px groove gray;
 }
 
 .main-right-side .footer-summary > p
