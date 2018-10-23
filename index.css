@@ -46,7 +46,7 @@ input[id='theme']:checked ~ main div.horoscope img
 }
 
 input[id='theme']:checked ~ main header,
-input[id='theme']:checked ~ main header h1
+input[id='theme']:checked ~ main header h1,
 input[id='theme']:checked ~ main footer
 {
     border-color: #fff;
@@ -343,8 +343,7 @@ footer
 {
     margin-bottom: 3px;
     vertical-align: top;
-    column-count: 3;
-    column-width: 100px;
+    columns: 100px 3;
     border-bottom: 5px double #000;
 }
 
