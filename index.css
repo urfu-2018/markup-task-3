@@ -94,13 +94,13 @@ hr
     column-count: 4;
 }
 
-.about_Earth_day > section
+.Earthday_content
 {
     padding: 0 5px;
     border: 3px dashed;
 }
 
-.about_World_Water_day > section
+.Waterday_content
 {
     padding: 0 5px;
     border: 7px ridge;
@@ -123,8 +123,8 @@ article > section > p:first-child::first-letter
     width: 100%;
 }
 
-.newspaper_content > .about_whiles > header > h2,
-.newspaper_content > .about_Great_Chinese_wall > header > h2
+.whiles_headline,
+.China_headline
 {
     border-bottom: 4px dotted;
 }
@@ -134,17 +134,7 @@ input[value='night_mode']:checked ~ .newspaper_content
     background-color: black;
     color: white;
     column-rule: 1px solid white;
-    border-bottom: 4px dotted white;
-}
-
-input[value='night_mode']:checked ~ .newspaper_content
-{
-    border-bottom-color: white;
-}
-
-input[value='night_mode']:checked ~ .newspaper_content
-{
-    border-bottom-color: white;
+    border-color: white;
 }
 
 input[value='day_mode']:checked ~ .newspaper_content
@@ -152,17 +142,7 @@ input[value='day_mode']:checked ~ .newspaper_content
     background: white;
     color: black;
     column-rule: 1px solid black;
-    border-bottom: 4px dotted black;
-}
-
-input[value='day_mode']:checked ~ .newspaper_content
-{
-    border-bottom-color: black;
-}
-
-input[value='day_mode']:checked ~ .newspaper_content
-{
-    border-bottom-color: black;
+    border-color: black;
 }
 
 input[value='Times_New_Roman_style']:checked ~ .newspaper_content
