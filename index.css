@@ -1,0 +1,93 @@
+h1
+{
+    font-family: cursive;
+    text-align: center;
+    font-size: 550%;
+}
+
+h2,
+h3
+{
+    font-family: cursive;
+    text-align: center;
+    border-bottom: 2px solid #000;
+}
+
+#size:checked ~ .site-info
+{
+    zoom: 2;
+}
+
+#dark:checked ~ .site-info
+{
+    background-color: black;
+    color: white;
+}
+
+#font-style:checked ~ .site-info
+{
+    font-family: "Droid Sans Georgian", cursive, "Noto Serif Armenian";
+}
+
+p::first-letter
+{
+    font-family: cursive;
+    font-size: 250%;
+}
+
+p
+{
+    border-bottom: 2px solid #000;
+    hyphens: auto;
+}
+
+img
+{
+    width: 100%;
+}
+
+.vert-text
+{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-transform: uppercase;
+    min-width: 20px;
+    padding-top: 20px;
+}
+
+.text-cont
+{
+    display: flex;
+    outline: 4px solid #000;
+}
+
+.text-cont > div
+{
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+div.wide
+{
+    width: 50%;
+}
+
+.text-cont div:last-child
+{
+    border-right: none;
+}
+
+.columns
+{
+    column-count: 2;
+    column-rule: 2px solid #000;
+}
+
+h3.in-colonms
+{
+    column-span: all;
+    border-bottom: none;
+}
