@@ -2,77 +2,92 @@ body
 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 .title
 {
     text-align: center;
     font-size: 40px;
 }
+
 .name
 {
     margin: 0;
     padding: 0;
 }
+
 .sub-name
 {
     font-size: 25px;
     margin: 0;
     padding: 0;
 }
+
 .information
 {
     border: 1px solid black;
     column-count: 3;
     margin: 5px;
 }
+
 .paper-number
 {
     margin: 0;
     padding: 5px;
     text-align: left;
 }
+
 .paper-date
 {
     margin: 0;
     padding: 5px;
     text-align: center;
 }
+
 .paper-type
 {
     margin: 0;
     padding: 5px;
     text-align: right;
 }
+
 main
 {
     column-count: 4;
     column-rule: 2px solid black;
 }
+
 figure img
 {
     width: 100%;
 }
+
 figcaption
 {
     font-style: italic;
     text-align: justify;
 }
+
 .content
 {
     column-rule: 1px dotted black;
 }
+
 .content p:first-of-type::first-letter
 {
     font-size: 30px;
     margin-right: 2px;
 }
+
 .article1 .content
 {
     column-count: 2;
 }
+
 .article2 .content
 {
     column-count: 3;
 }
+
 .article2 .article-title
 {
     text-align: center;
@@ -82,10 +97,12 @@ figcaption
     border-top: 1px double black;
     border-bottom: 1px double black;
 }
+
 .article3 .content
 {
     column-count: 3;
 }
+
 .article3 .article-title
 {
     text-align: center;
@@ -95,10 +112,12 @@ figcaption
     border-top: 1px dotted black;
     border-bottom: 1px dotted black;
 }
+
 .article4 .content
 {
     column-count: 2;
 }
+
 .article4 .article-title
 {
     font-family: fantasy;
@@ -106,7 +125,9 @@ figcaption
     border: 4px solid black;
     text-align: center;
 }
-.vertical-text {
+
+.vertical-text
+{
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
