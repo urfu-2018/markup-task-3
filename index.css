@@ -1,0 +1,151 @@
+@font-face
+{
+    font-family: ModernoTwoRegular;
+    src: url('modernotwo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: Rodeo;
+    src: url('rodeo_allfont.ru.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: Usual;
+    src: url(UsualNew.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: Bengaly;
+    src: url(AGBengaly.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html
+{
+    background-color: white;
+}
+
+body
+{
+    margin: .5em;
+    border: .15em solid black;
+    padding: .5em;
+    background-color: rgba(0, 0, 0, .06);
+
+    font-family: Usual, serif;
+}
+
+.alignedColumnSpan
+{
+    column-count: 3;
+}
+
+.alignedColumnSpan > article
+{
+    column-span: 1;
+    font-size: .8em;
+}
+
+.alignedColumnSpan > div
+{
+    text-align: center;
+}
+
+.alignedColumnSpan > div:first-child
+{
+    text-align: left;
+}
+
+.alignedColumnSpan > div:last-child
+{
+    text-align: right;
+}
+
+.strongBorderInformation
+{
+    padding-top: .02em;
+    padding-bottom: .02em;
+    border-top: .05em solid black;
+    border-bottom: .4em solid black;
+}
+
+.epigraph
+{
+    column-count: 2;
+}
+
+.epigraph div
+{
+    font-size: 3em;
+    font-family: Rodeo, sans-serif;
+    text-decoration: underline;
+    text-decoration-style: double;
+    text-decoration-skip: spaces;
+}
+
+.generalHeader
+{
+    text-align: center;
+    font-size: 7em;
+    font-family: ModernoTwoRegular, serif;
+    border-bottom: .01em solid black;
+    margin-bottom: .01em;
+}
+
+.mainPage
+{
+    column-count: 4;
+    column-gap: .3em;
+    column-rule: .1em solid black;
+    /* line-height: 80%;*/
+
+    margin-top: .05em;
+    border-top: .05em solid black;
+    padding-top: .2em;
+
+    font-size: 1em;
+    text-align: justify;
+}
+
+.mainPage header
+{
+    text-align: center;
+    font-size: 1.5em;
+    font-family: Bengaly, serif;
+}
+
+img,
+figure,
+figcaption
+{
+    position: relative;
+
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.mainPage figure
+{
+    border: .1em solid black;
+}
+
+.mainPage figcaption
+{
+    text-align: left;
+}
+
+.mainPage > article > p:first-letter
+{
+    font-size: 1.5em;
+}
