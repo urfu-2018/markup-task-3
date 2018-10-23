@@ -1,0 +1,327 @@
+body
+{
+    font: 14px'Open Sans', sans-serif;
+    color: #1a1a1a;
+    background-color: #e6f3fe;
+    min-width: 1000px;
+    text-transform: uppercase;
+}
+
+.newspaper-header
+{
+    margin-top: 10px;
+    border-bottom: 7px solid #1a1a1a;
+}
+
+.newspaper-headline
+{
+    position: relative;
+    margin: 30px 0 10px;
+    padding: 0;
+    width: 600px;
+    border: 1px solid #1a1a1a;
+    vertical-align: middle;
+    font: 600 50px 'Six Caps', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.manifesto-headline
+{
+    font: bold 125px 'Six Caps', sans-serif;
+    letter-spacing: 25px;
+}
+
+.sub-headline
+{
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: -30px;
+    left: 30px;
+    background-color: #e6f3fe;
+    font: bold 30px 'Monsieur La Doulaise', cursive;
+    text-transform: none;
+}
+
+.logo
+{
+    width: 130px;
+    height: 130px;
+    padding: 15px;
+    vertical-align: middle;
+    border: 5px double;
+    font: 100 100px 'Plaster', cursive;
+    text-align: center;
+}
+
+.weather
+{
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    padding: 10px 15px;
+    border: 10px solid;
+    border-image: url(image/border.png) 35 round;
+    vertical-align: middle;
+    font: 12px 'Cinzel', serif;
+    line-height: 15px;
+}
+
+.weather > p:not(:first-child)
+{
+    margin: 0;
+}
+
+.additionally
+{
+    padding-top: 20px;
+    border-bottom: 5px double #1a1a1a;
+    font: 900 14px 'Cinzel', serif;
+}
+
+.additionally > p
+{
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.newspaper-header,
+.additionally
+{
+    text-align: justify;
+}
+
+.newspaper-header::after,
+.additionally::after
+{
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+.newspaper-header > div,
+.newspaper-headline,
+.additionally > p
+{
+    display: inline-block;
+}
+
+.first-part,
+.third-part,
+.subpart
+{
+    column-count: 2;
+    column-rule: 2px solid #1a1a1a;
+    column-gap: 50px;
+}
+
+.main-headline
+{
+    margin: 0;
+    padding: 15px 0;
+    border-bottom: 2px solid #1a1a1a;
+    font: bold 50px 'Cinzel', serif;
+    text-align: center;
+    letter-spacing: 20px;
+}
+
+.first-paragraph::first-letter
+{
+    padding: 1px;
+    margin-left: 30px;
+    border: 2px solid #1a1a1a;
+    font: 900 20px 'Plaster', cursive;
+}
+
+.subpart
+{
+    display: block;
+    column-count: 2;
+    break-before: column;
+    break-after: column;
+    column-fill: balance;
+}
+
+.subpart > p
+{
+    margin: 5px;
+}
+
+.subtitle
+{
+    font: 20px 'Montserrat Subrayada', sans-serif;
+    margin: 10px 0;
+    column-span: all;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.text-column
+{
+    display: block;
+    text-align: center;
+    white-space: pre-line;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 15px;
+}
+
+.future
+{
+    column-span: all;
+    padding: 60px 0;
+    border-top: 2px solid #1a1a1a;
+    font-size: 40px;
+    text-align: center;
+    word-spacing: 30px;
+}
+
+.second-part
+{
+    column-count: 6;
+    column-gap: 1px;
+}
+
+.second-part > div
+{
+    padding: 20px;
+    font: bold 20px;
+    text-transform: uppercase;
+    text-align: center;
+    background: #1a1a1a;
+    color: #fff;
+}
+
+.two-column
+{
+    display: block;
+    column-span: all;
+    width: 100%;
+    margin: 0;
+}
+
+.two-column > img,
+.one-column > img
+{
+    width: 100%;
+}
+
+.photo-signature
+{
+    font-family: 'Cinzel', serif;
+    text-transform: none;
+    text-align: center;
+}
+
+figure.one-column
+{
+    display: block;
+    column-span: none;
+    width: 100%;
+    margin: 0;
+}
+
+.quote
+{
+    margin: 0;
+    font-size: 22px;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.author
+{
+    font: bold 18px 'Poiret One', cursive;
+    text-align: right;
+    margin: 20px;
+}
+
+footer
+{
+    border-top: 2px solid #2f2f2f;
+    padding: 10px;
+    text-align: center;
+}
+
+.color-dark:checked ~ header,
+.color-dark:checked ~ header .sub-headline,
+.color-dark:checked ~ main,
+.color-dark:checked ~ .additionally
+{
+    background: #1a1a1a;
+    color: #e6f3fe;
+}
+
+.color-dark:checked ~ main .second-part > div
+{
+    background: #e6f3fe;
+    color: #1a1a1a;
+}
+
+.color-dark:checked ~ main .first-part,
+.color-dark:checked ~ main .third-part,
+.color-dark:checked ~ main .subpart
+{
+    column-rule: 1px solid #e6f3fe;
+}
+
+.color-dark:checked ~ header,
+.color-dark:checked ~ header .logo,
+.color-dark:checked ~ .additionally,
+.color-dark:checked ~ main .main-headline,
+.color-dark:checked ~ main footer
+{
+    border-color: #e6f3fe;
+}
+
+.color-dark:checked ~ header .sub-headline,
+.color-dark:checked ~ main .quote,
+.color-dark:checked ~ main .subtitle,
+.color-dark:checked ~ main .future,
+.color-dark:checked ~ main .main-headline
+{
+    color: #eacb66;
+}
+
+.color-dark:checked ~ header .newspaper-headline
+{
+    border-color: #eacb66;
+}
+
+.font-simple:checked ~ main,
+.font-simple:checked ~ .additionally,
+.font-simple:checked ~ main .main-headline,
+.font-simple:checked ~ main .subtitle,
+.font-simple:checked ~ main .quote,
+.font-simple:checked ~ main figcaption
+{
+    font-family: Arial, Helvetica, Calibri, serif;
+}
+
+.size-bigger:checked ~ main,
+.size-bigger:checked ~ .additionally
+{
+    font-size: 18px;
+}
+
+.size-bigger:checked ~ main .subtitle
+{
+    font-size: 25px;
+}
+
+.size-smaller:checked ~ main,
+.size-smaller:checked ~ .additionally
+{
+    font-size: 12px;
+}
+
+.size-smaller:checked ~ main .subtitle
+{
+    font-size: 16px;
+}
+
+.size-smaller:checked ~ main .future
+{
+    padding: 40px 0;
+}

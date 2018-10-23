@@ -1,9 +1,319 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Six+Caps" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monsieur+La+Doulaise" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Plaster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
     <title>Задача «DeLorean DMC-12»</title>
 </head>
 <body>
+    <span>Change font size:</span>
+    <label for="size-bigger">bigger</label>
+    <input type="radio" name="size" id="size-bigger" class="size-bigger">
+    <label for="size-normal">normal</label>
+    <input type="radio" name="size" id="size-normal" class="size-normal" checked="checked">
+    <label for="size-smaller">smaller</label>
+    <input type="radio" name="size" id="size-smaller" class="size-smaller">
+    <br>
+    <span>Change font:</span>
+    <label for="font-styling">styling</label>
+    <input type="radio" name="font" id="font-styling" class="font-styling" checked="checked">
+    <label for="font-simple">simple</label>
+    <input type="radio" name="font" id="font-simple" class="font-simple">
+    <br>
+    <span>Change color:</span>
+    <label for="color-light">light</label>
+    <input type="radio" name="color" id="color-light" class="color-light" checked="checked">
+    <label for="color-dark">dark</label>
+    <input type="radio" name="color" id="color-dark" class="color-dark">
+    <header class="newspaper-header">
+        <div class="logo">
+            M
+        </div>        
+        <h1 class="newspaper-headline">
+            <span class="sub-headline">Special Pokras Lampas Issue</span>
+            <span class="manifesto-headline">Manifesto</span>
+        </h1>
+        <div class="weather">
+            <p>Weatherforcast for the next 24 hours:</p>
+            <p>light snow</p>
+            <p>Wind: 2.5m/s W;</p>
+            <p>Ther: 3&deg;C</p>
+            <p>Hum: 59%</p>
+        </div>
+    </header>
+    <div class="additionally">
+        <p>&#8470;1</p>
+        <p>Yekaterinburg, Monday, October 21, 2018</p>
+        <p>Page One</p>
+    </div>
+    <main>
+        <h2 class="main-headline">
+            CALLIGRĀ𝒇UTURÏSM.
+        </h2>
+        <article class="first-part">
+            <article class="subpart">
+                <h3 class="subtitle">
+                    18 Words about Vasily Vereshchagin.
+                </h3>
+                <p class="first-paragraph">
+                    To bring the new ge&shy;ne&shy;ra&shy;tion of audience to the tem&shy;po&shy;ra&shy;ry
+                    ex&shy;hi&shy;bi&shy;tion the Museum col&shy;la&shy;bo&shy;rat&shy;ed with me in this
+                    uni&shy;que pro&shy;ject, re&shy;veal&shy;ed at the Museum`s Night event 19th of May
+                    in Mos&shy;cow.
+                </p>
+                <p>
+                    Va&shy;si&shy;ly Ve&shy;resh&shy;cha&shy;gin (1842–1904) was
+                    an out&shy;stand&shy;ing Rus&shy;sian pain&shy;ter,
+                    his&shy;to&shy;rian, ethno&shy;gra&shy;pher, wri&shy;ter, phi&shy;lo&shy;so&shy;pher,
+                    tra&shy;ve&shy;ler,
+                    and mi&shy;li&shy;ta&shy;ry of&shy;fi&shy;cer. The Gal&shy;lery will open a
+                    com&shy;pre&shy;hen&shy;si&shy;ve
+                    re&shy;tro&shy;spect of the mas&shy;ter’s best pain&shy;ted and gra&shy;phic works.
+                </p>
+                <p>
+                    A grand tra&shy;vel&shy;ler and a pas&shy;siona&shy;te exp&shy;lo&shy;rer who found his
+                    in&shy;spi&shy;ra&shy;tion in exa&shy;min&shy;ing world’s cul&shy;tu&shy;res,
+                    start&shy;ing with Europe to Asia.
+                    The mo&shy;dern ar&shy;tist who found his own way to cap&shy;tu&shy;re
+                    the ra&shy;pid fu&shy;si&shy;on of world’s
+                    cul&shy;tu&shy;res though cal&shy;lig&shy;ra&shy;phy and tur&shy;ned
+                    let&shy;ters into a po&shy;wer&shy;ful
+                    me&shy;dium of com&shy;mu&shy;ni&shy;ca&shy;tion in the dialog with the viewer.
+                </p>
+                <figure class="two-column">
+                    <img src="https://i.imgur.com/U1GAwip.jpg" alt="The NEW TRETYAKOV Gallery State Museum">
+                    <figcaption class="photo-signature">The NEW TRETYAKOV Gallery State Museum</figcaption>
+                </figure>
+                <p>
+                    The pur&shy;po&shy;se of the ex&shy;hi&shy;bi&shy;tion is to
+                    re&shy;veal the ar&shy;tist’s uni&shy;que
+                    per&shy;so&shy;na&shy;li&shy;ty to the pub&shy;lic, to pre&shy;sent him as a paint&shy;er,
+                    mi&shy;li&shy;ta&shy;ry
+                    man and pa&shy;ci&shy;fist, a pas&shy;sio&shy;na&shy;te re&shy;search&shy;er of
+                    new geo&shy;gra&shy;phic
+                    lands&shy;ca&shy;pes, count&shy;ries and peop&shy;le, a vi&shy;siona&shy;ry
+                    who ma&shy;nag&shy;ed to
+                    trans&shy;form bat&shy;tle paint&shy;ing as a gen&shy;re in a ra&shy;di&shy;cal way.
+                    The ex&shy;hi&shy;bi&shy;tion
+                    rais&shy;es one of im&shy;por&shy;tant theore&shy;ti&shy;cal is&shy;sues
+                    re&shy;le&shy;vant to&shy;day — it
+                    re&shy;flects on the boun&shy;daries of real&shy;ism, tak&shy;ing
+                    Ve&shy;resh&shy;cha&shy;gin’s
+                    oeuv&shy;re as an exa&shy;mple.
+                </p>
+                <p>
+                    The new art instal&shy;la&shy;tion on the front si&shy;de
+                    of rus&shy;sian Tretyakovskaya Gal&shy;lery is a
+                    sym&shy;bo&shy;lic re&shy;pre&shy;sen&shy;ta&shy;tion of a ga&shy;te,
+                    the ico&shy;nic ima&shy;ge that
+                    of&shy;ten&shy;ti&shy;mes ap&shy;pear&shy;ed in Vereshchagin’s works.
+                    This art piece is a bow of re&shy;spect
+                    to&shy;wards the grand he&shy;rit&shy;age of the genius creat&shy;or
+                    who li&shy;ved over a cen&shy;tu&shy;ry ago.
+                </p>
+                <p>
+                   The ga&shy;te car&shy;ries a po&shy;wer&shy;ful mean&shy;ing.
+                   It rep&shy;re&shy;sents world’s shift in&shy;to
+                   the new era, it’s ir&shy;re&shy;ver&shy;sib&shy;le tran&shy;si&shy;tion
+                   from the past into the fu&shy;tu&shy;re.
+                   This ins&shy;tal&shy;la&shy;tion is al&shy;so a sym&shy;bo&shy;lic
+                   em&shy;bo&shy;di&shy;ment of a board&shy;er
+                   that big: se&shy;pa&shy;ra&shy;tes and bounds to&shy;ge&shy;ther the two art worlds.
+                </p>
+            </article>
+            <article class="subpart">
+                <h3 class="subtitle">
+                    Ł Ï N £ . 7 U Š Į Ø N . F Ü 卞 ن R غ
+                </h3> 
+                <h4 class="text-column">미
+                                        래
+                </h4>  
+                <p>
+                    미래란 지금의 시간으로부터 그 이후를 말한다. 지금 이전의 시간까지를 과거라고 한다면,
+                    크게 과거와 현재, 그리고 미래가 구분된다. 그러나 과거 현재 미래의 구분은 단절적인 것이 아니라
+                    연속선상에서 이해되어야 할 것이다.
+                </p>
+                <figure class="one-column">
+                    <img src="https://i.imgur.com/OSrQt4i.jpg" alt="Future">
+                    <figcaption class="photo-signature">Line. Fusion. Future.</figcaption>
+                </figure>
+                <h4 class="text-column">F
+                                        u
+                                        t
+                                        u
+                                        r
+                                        e
+                </h4>   
+                <p>
+                    The fu&shy;tu&shy;re is what will hap&shy;pen in the
+                    ti&shy;me af&shy;ter the pre&shy;sent.
+                    Its ar&shy;ri&shy;val is con&shy;si&shy;der&shy;ed
+                    ine&shy;vi&shy;tab&shy;le due to the
+                    exis&shy;ten&shy;ce of ti&shy;me and the laws of phy&shy;sics.
+                    In the Occidental view, which
+                    uses a li&shy;near con&shy;cep&shy;tion of ti&shy;me,
+                    the fu&shy;tu&shy;re is the por&shy;tion
+                    of the pro&shy;ject&shy;ed ti&shy;me li&shy;ne that
+                    is an&shy;ti&shy;ci&shy;pat&shy;ed to occur.
+                </p>
+                <h4 class="text-column">Б
+                                        у
+                                        д
+                                        у
+                                        щ
+                                        е
+                                        е
+                </h4>
+                <p>
+                    Бу&shy;ду&shy;щее — ги&shy;по&shy;те&shy;ти&shy;че&shy;ская часть
+                    ли&shy;нии вре&shy;ме&shy;ни,
+                    мно&shy;же&shy;ство со&shy;бы&shy;тий, ко&shy;то&shy;рые ещё не
+                    про&shy;изо&shy;шли, но мо&shy;гут
+                    про&shy;изой&shy;ти.
+                </p>
+                <p>
+                    Су&shy;ще&shy;ству&shy;ет кон&shy;цеп&shy;ция
+                    че&shy;ло&shy;ве&shy;че&shy;ско&shy;го
+                    бу&shy;ду&shy;ще&shy;го в со&shy;зна&shy;нии от&shy;дель&shy;ных
+                    ци&shy;ви&shy;ли&shy;за&shy;ций,
+                    пред&shy;став&shy;ля&shy;ю&shy;щих вре&shy;мя в ви&shy;де ли&shy;нии,
+                    про&shy;хо&shy;дя&shy;щей из
+                    про&shy;шло&shy;го в бу&shy;ду&shy;щее.
+                </p>
+                <h4 class="text-column">Б
+                                        ¥
+                                        Д
+                                        01011001
+                                        Щ
+                                        £
+                                        Ę
+                </h4>
+                <p>
+                    Б¥Д01011001Щ£Ę ГИП0ТغТИЧЕСКÅЯ ЧАСТЬ ЛИĦИИ /// ВРĘМЕНИ, МНØЖЕ亡ТВО 듬6ЫТИŪ,
+                    КОТØРЫЕ £ЩЁ НЕ П₽ОИ30ШЛИ, НÕ М°7YТ ПР°ИЗОЙТИ.
+                </p>
+                <p>
+                    ĆYЩЕСТВ01011001ĘТ 片ОНЦĒПЦИЯ ЧЕЛОВ£ЧЕÇКО7О
+                    " БУقУЩ£ГŌ " В Ç°ЗНАНИИ О卞ДغЛbНЫX / /
+                    ЦИBUЛUЗズЦИن, ПР£ДСТАВЛЮЩИメ 믐РЕМЯ ß 믐ИДЕ ЛИĦИИ,
+                    ПР0Х٥ДЯЩЕن ИЗ ПРОШЛ0ГО В (1 — ?) ƼУД01011001Щ£Е.
+                </p>
+                <div class="future ">
+                    F Ü 卞 ن R غ
+                </div>
+            </article>
+        </article>
+        <section class="second-part">
+            <div>Line.</div>
+            <div>Fusion.</div>
+            <div>Future.</div>
+            <div>Линия.</div>
+            <div>Синтез.</div>
+            <div>Будущее.</div>
+        </section>
+        <article class="third-part">
+            <h3 class="subtitle">Huge public art object.</h3>
+            <section class="subpart">
+                <p>
+                    IN&shy;FI&shy;NI&shy;TE MIR&shy;ROR PUB&shy;LIC ART
+                    INSTAL&shy;LA&shy;TION IN MOSCOW.
+                </p>
+                <p>
+                    Hu&shy;ge pub&shy;lic art ob&shy;ject lo&shy;cat&shy;ed in
+                    the over&shy;ground tun&shy;nel.
+                    Rep&shy;re&shy;sent&shy;ing the mo&shy;dern cy&shy;ril&shy;lic
+                    calli&shy;graphy and typo&shy;graphy.
+                </p>
+                <p>
+                    \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ . 👁
+                </p>
+                <figure class="two-column">
+                    <img src="https://i.imgur.com/Kzbq9Te.jpg" alt="Atrium Mall by Pokras Lampas">
+                    <figcaption class="photo-signature">A R T R I U M ╳ Pokras Lampas</figcaption>
+                </figure>
+                <p>
+                    Cal&shy;li&shy;graf&shy;fi&shy;ti in the floor,
+                    hu&shy;ge sca&shy;le cal&shy;li&shy;graphy on
+                    plexi&shy;glass sur&shy;face, in&shy;fi&shy;ni&shy;ty
+                    mir&shy;rors installa&shy;tion,
+                    fluores&shy;cent lights.
+                </p>
+                <p>
+                    Based in the ve&shy;ry heart of Moscow, this pub&shy;lic
+                    art ob&shy;ject re-think&shy;ing
+                    the pub&shy;lic spa&shy;ce as the new world of mo&shy;dern
+                    cal&shy;lig&shy;ra&shy;phy art.
+                    Typo&shy;graphy based on the Russian avant-garde art of
+                    the early XX century. Cal&shy;lig&shy;rap&shy;hy
+                    based on the "Cal&shy;lig&shy;ra&shy;fu&shy;tu&shy;rism"
+                    sty&shy;le de&shy;ve&shy;lop&shy;ed by Pokras Lampas. 
+                </p>
+            </section>
+            <section class="subpart">
+                <p>
+                    «Ат&shy;ри&shy;ум» был, на&shy;вер&shy;ное, для ме&shy;ня са&shy;мым слож&shy;ным
+                    про&shy;ек&shy;том в Рос&shy;сии.
+                    У ме&shy;ня бы&shy;ла дав&shy;но мысль по&shy;ра&shy;бо&shy;тать с
+                    про&shy;стран&shy;ством для лю&shy;дей,
+                    что&shy;бы по&shy;ка&shy;зать, что аб&shy;со&shy;лют&shy;но
+                    при&shy;выч&shy;ная им ло&shy;ка&shy;ция,
+                    воз&shy;мож&shy;но не та&shy;кая кру&shy;тая по ар&shy;хи&shy;тек&shy;ту&shy;ре
+                    и про&shy;че&shy;му,
+                    мо&shy;жет рас&shy;крыть&shy;ся со&shy;всем ина&shy;че. И в этом
+                    пла&shy;не у ме&shy;ня с ре&shy;бя&shy;та&shy;ми,
+                    ко&shy;то&shy;рые управ&shy;ля&shy;ют «Ат&shy;ри&shy;умом», 
+                    мно&shy;го об&shy;щих  идей,
+                    мы дав&shy;но дру&shy;жим, и тут мы со&shy;шлись: что на&shy;до де&shy;лать,
+                    на&shy;до де&shy;лать очень слож&shy;но,
+                    при этом нуж&shy;но сде&shy;лать мак&shy;си&shy;маль&shy;но
+                    близ&shy;кую тех&shy;но&shy;ло&shy;гию к лю&shy;дям,
+                    что&shy;бы они мог&shy;ли сни&shy;мать се&shy;бя в зер&shy;ка&shy;ло,
+                    что&shy;бы они мог&shy;ли ви&shy;деть днем и
+                    но&shy;чью раз&shy;ный об&shy;лик од&shy;но&shy;го и то&shy;го же
+                    объ&shy;ек&shy;та.
+                    И па&shy;рал&shy;лель&shy;но с этим оста&shy;вить
+                    функ&shy;ци&shy;о&shy;наль&shy;ность
+                    са&shy;мо&shy;го тун&shy;не&shy;ля, что&shy;бы по не&shy;му
+                    мож&shy;но бы&shy;ло хо&shy;дить и не ме&shy;шать
+                    огром&shy;но&shy;му тра&shy;фи&shy;ку лю&shy;дей каж&shy;дый день.
+                </p>
+                <figure class="quote two-column">
+                    <blockquote>
+                        К  Ã  Ж  Д  Ā  9/  Ф  Ø  P  M  Ā  £  C  T  Ь  М  И  ₽.
+                    </blockquote>
+                    <figcaption class="author">
+                        Казимир Малевич
+                    </figcaption>
+                </figure>
+                <p>
+                    Рус&shy;ский аван&shy;гард — это ис&shy;то&shy;рия про то,
+                    что сто лет на&shy;зад был
+                    на&shy;пи&shy;сан «Квад&shy;рат» Ма&shy;ле&shy;ви&shy;ча, в 1915 го&shy;ду.
+                    И вме&shy;сте с этим огром&shy;ные, важ&shy;ные,
+                    ре&shy;во&shy;лю&shy;ци&shy;он&shy;ные идеи —
+                    не столь&shy;ко с точ&shy;ки зре&shy;ния там ка&shy;ких-то тер&shy;ми&shy;нов из
+                    по&shy;ли&shy;ти&shy;ки или из об&shy;ще&shy;ства, а в об&shy;щем.
+                    От&shy;но&shy;ше&shy;ние к
+                    ис&shy;кус&shy;ству, от&shy;но&shy;ше&shy;ние к фор&shy;ме,
+                    от&shy;но&shy;ше&shy;ние к
+                    сло&shy;ву бы&shy;ли со&shy;зда&shy;ны и ре&shy;а&shy;ли&shy;зо&shy;ва&shy;ны
+                    луч&shy;ши&shy;ми
+                    ума&shy;ми то&shy;го вре&shy;ме&shy;ни.    
+                </p>
+            </section>
+        </article>
+        <footer>
+            <address>
+                &copy; <a href="https://pokraslampas.com">https://pokraslampas.com</a>
+            </address>
+        </footer>
+    </main>
 </body>
 </html>
