@@ -131,7 +131,8 @@ article.horklump
 article.horklump p
 {
     column-rule: 1px solid black;
-    column-count: 2;
+    column-count: 1;
+    line-height: .95em;
 }
 
 article.pogrebin p
