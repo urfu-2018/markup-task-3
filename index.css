@@ -1,0 +1,92 @@
+@font-face 
+{
+    font-family: 'OldEnglishText';
+    src: url('OldEnglishText.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+h1 
+{
+    column-span: all;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-family: OldEnglishText, georgia, 'times new roman';
+    font-size: 4em;
+}
+
+h2 
+{
+    column-span: all;
+    text-align: center;
+    padding: 5px;
+    border-top: double #000;
+    border-bottom: double #000;
+    font-size: .6em;
+}
+
+h3 
+{
+    text-align: center;
+    margin: .5em;
+    column-span: all;
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+article 
+{
+    margin: 0;
+    padding: .2em;
+    column-rule: 1px solid #000;
+    column-gap: .5em;
+}
+
+.AboriginalRangers 
+{
+    width: calc(12.5% - .6em);
+    float: left;
+    column-count: 1;
+    font-size: .95em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.SagradaFamilia 
+{
+    width: calc(50% - .6em);
+    float: left;
+    column-count: 4;
+    font-weight: 600;
+    border-left: 1px solid #000;
+}
+
+.SagradaFamilia h3 
+{
+    font-size: 2.4em;
+    font-style: normal;
+}
+
+.EvelynAnthony 
+{
+    width: calc(37.5% - .6em);
+    column-count: 3;
+    border: double #000;
+    font-size: .87em;
+}
+
+.SagradaFamiliaImage 
+{
+    display: block;
+    column-span: all;
+    margin: 0;
+    padding: .5em;
+    width: calc(100% - 1em);
+}
+
+.EvelynAnthonyImage 
+{
+    display: block;
+    margin: 0;
+    width: 100%;
+}
