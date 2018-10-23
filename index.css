@@ -138,7 +138,10 @@ aside
 .force-cs-checkbox:checked ~ div h1,
 .force-cs-checkbox:checked ~ div h2,
 .force-cs-checkbox:checked ~ div h3,
-.force-cs-checkbox:checked ~ div i
+.force-cs-checkbox:checked ~ div i,
+.force-cs-checkbox:checked ~ div span,
+.force-cs-checkbox:checked ~ div p,
+.force-cs-checkbox:checked ~ div article p:first-of-type:first-letter
 {
     font-family: 'Comic Sans MS', serif !important;
 }
