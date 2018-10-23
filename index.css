@@ -1,31 +1,32 @@
 @font-face
 {
     font-family: 'customHeaderFont';
-    src: url('fonts/header_font.ttf');
+    src: url('fonts/header_font.woff2') format('woff2'), url('fonts/header_font.eot') format('eot');
 }
 
-body
+.newspaper-body
 {
-    background-color: #fff4de;
+    background: #fff4de;
     min-width: 1200px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif;
 }
 
-section
+.newspaper-article
 {
     float: left;
     text-align: center;
     padding: 10px;
     font-size: 1em;
-    min-height: 500px;
+    height: 100%;
+
 }
 
-.wide
+.article-wide
 {
     width: 30.96%;
 }
 
-.tight
+.article-tight
 {
     width: 15%;
 }
@@ -61,7 +62,7 @@ section
     text-align: center;
 }
 
-.block
+.header-block
 {
     height: 80px;
     width: 220px;
@@ -70,30 +71,30 @@ section
     text-align: justify;
 }
 
-.left
+.block-position-left
 {
     float: left;
 }
 
-.right
+.block-position-right
 {
     float: right;
 }
 
-.block.left
+.header-block.block-position-left
 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
     font-weight: bold;
     text-align: center;
 }
 
-.block.right
+.header-block.block-position-right
 {
     font-size: .75em;
     font-weight: bold;
 }
 
-.columns
+.newspaper-column-article
 {
     column-count: 2;
     column-rule: 2px solid black;
@@ -109,7 +110,7 @@ section
     margin: 5px 0;
 }
 
-.line
+.newspaper-header-line
 {
     padding: 2.5px 0;
     width: 100%;
@@ -122,21 +123,19 @@ section
     clear: both;
 }
 
-.verticalText
+.vertical-text-block
 {
     float: right;
-    font-size: 1.5em;
     padding: 7px 2px;
     margin: 10px 0 0 10px;
     writing-mode: vertical-rl;
     text-orientation: upright;
     letter-spacing: -3px;
     border: 2px solid black;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
-    font-weight: bold;
+    font: bold 1.5em 'Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
 }
 
-p
+.article-paragraph
 {
     margin-block-start: 0;
     margin-block-end: 0;
@@ -146,29 +145,21 @@ p
     text-indent: 1em;
 }
 
-p::first-letter
+.article-paragraph::first-letter
 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.5em;
-    font-weight: 900;
+    font: 900 1.5em Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-hr
+.black-rule
 {
     border-style: solid;
     color: black;
     width: 95%;
 }
 
-.shortline
+.black-rule.shortline
 {
     width: 60%;
-}
-
-.headline1
-{
-    font-family: 'customHeaderFont', sans-serif;
-    font-size: 4.3em;
 }
 
 img
@@ -181,20 +172,25 @@ img
     border: 2px solid black;
 }
 
-h2,
-h3
+.main-headline
+{
+    font: 4.3em 'customHeaderFont', sans-serif;
+}
+
+.article-headline,
+.additional-headline
 {
     margin: 0;
     text-align: center;
 }
 
-h2
+.article-headline
 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
     font-weight: bold;
 }
 
-h3
+.additional-headline
 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
@@ -205,65 +201,63 @@ h3
     font-style: oblique;
 }
 
-input[value='small']:checked ~ main article
+input[value='small']:checked ~ .layout .newspaper-content
 {
     font-size: .7em;
 }
 
-input[value='medium']:checked ~ main article
+input[value='medium']:checked ~ .layout .newspaper-content
 {
     font-size: 1em;
 }
 
-input[value='big']:checked ~ main article
+input[value='big']:checked ~ .layout .newspaper-content
 {
     font-size: 1.3em;
 }
 
-input[value='standart']:checked ~ main p
+input[value='standart']:checked ~ .layout .article-paragraph
 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif;
 }
 
-input[value='courier']:checked ~ main p
+input[value='courier']:checked ~ .layout .article-paragraph
 {
     font-family: 'Courier New', Courier, monospace;
 }
 
-input[value='impact']:checked ~ main p
+input[value='impact']:checked ~ .layout .article-paragraph
 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-input[value='dark']:checked ~ main
+input[value='dark']:checked ~ .layout
 {
     color: white;
-    background-image: url('pictures/dark_theme.png');
-    background-repeat: repeat;
+    background: url('pictures/dark_theme.png') repeat;
 }
 
-input[value='dark']:checked ~ main section,
-input[value='dark']:checked ~ main .line,
-input[value='dark']:checked ~ main .quote,
-input[value='dark']:checked ~ main .block,
-input[value='dark']:checked ~ main .verticalText
+input[value='dark']:checked ~ .layout .newspaper-article,
+input[value='dark']:checked ~ .layout .newspaper-header-line,
+input[value='dark']:checked ~ .layout .quote,
+input[value='dark']:checked ~ .layout .header-block,
+input[value='dark']:checked ~ .layout .vertical-text-block
 {
     border-color: white;
 }
 
-input[value='dark']:checked ~ main .columns
+input[value='dark']:checked ~ .layout .newspaper-column-article
 {
     column-rule-color: white;
 }
 
-input[value='dark']:checked ~ main hr
+input[value='dark']:checked ~ .layout .black-rule
 {
     color: white;
 }
 
-input[value='light']:checked ~ main
+input[value='light']:checked ~ .layout
 {
-    background-image: url('pictures/light_theme.png');
-    background-repeat: repeat;
+    background: url('pictures/light_theme.png') repeat;
     color: black;
 }
