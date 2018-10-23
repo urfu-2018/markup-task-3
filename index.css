@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+@import url('https://fonts.googleapis.com/css?family=Charmonman');
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand');
+
+body
+{
+    text-align: center;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1
+{
+    margin: 0;
+    padding: 0;
+}
+
+p
+{
+    margin: 0;
+    padding: 0;
+    font: 17px 'Patrick Hand', cursive;
+}
+
+label
+{
+    padding: 5px;
+    border: 2px solid #f2dd91;
+}
+
+.newspaper
+{
+    background: #f8ecc2;
+    border: 3px solid #f2dd91;
+    margin-top: 10px;
+    overflow: auto;
+}
+
+.newspaper-about .title
+{
+    font: 70px 'Righteous', cursive;
+}
+
+.release-about .date
+{
+    text-transform: lowercase;
+    font-size: 16px;
+}
+
+main
+{
+    margin-top: 10px;
+}
+
+.half
+{
+    float: left;
+    width: 50%;
+}
+
+article
+{
+    margin: 5px;
+    height: 320px;
+    padding: 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: justify;
+    border: 2px solid black;
+}
+
+.article-half
+{
+    display: inline-block;
+    width: 47%;
+}
+
+.two-columns
+{
+    column-count: 2;
+    column-rule: 1px solid black;
+}
+
+.three-columns
+{
+    column-count: 3;
+    column-rule: 1px solid black;
+}
+
+.newspaper article p::first-letter
+{
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 50px;
+    float: left;
+    line-height: 1em;
+    margin-bottom: -.4em;
+    margin-right: .09em;
+}
+
+article h1
+{
+    font-family: 'Berkshire Swash', cursive;
+    font-weight: normal;
+}
+
+article img
+{
+    width: 100%;
+    margin-top: 10px;
+}
+
+:checked + label
+{
+    background: #f8ecc2;
+}
+
+.theme:checked ~ .newspaper
+{
+    background: black;
+    color: white;
+}
+
+.theme:checked ~ .newspaper article
+{
+    border-color: white;
+}
+
+.large-print:checked ~ .newspaper article p
+{
+    width: 100%;
+    font-size: 20px;
+}
+
+.font:checked ~ .newspaper article p
+{
+    font-family: 'Courier New', Courier, monospace;
+}
