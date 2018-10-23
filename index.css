@@ -61,7 +61,7 @@ header
 .comments 
 {
     color: orange;
-    margin:0 auto;
+    margin: 0 auto;
     width: 100%;
     display: inline-block;
     text-align: center;
@@ -103,12 +103,12 @@ header
 
 .border-text 
 {
-    width: .7em; 
-    width: 1ch;
+    width: .7em;
     text-align: center;
     font: Consolas, Monaco, monospace; 
     word-wrap: break-word;
     font-size: 13px;
+    
 }
 
 .image 
