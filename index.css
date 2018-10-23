@@ -1,0 +1,94 @@
+h1
+{
+    letter-spacing: 2.5px;
+    text-align: center;
+    text-shadow: 3px 3px 7px gray;
+}
+
+small
+{
+    font-style: oblique;
+    font-family: serif;
+    line-height: 20px;
+}
+
+h4
+{
+    text-align: center;
+    font-style: oblique;
+}
+
+aside
+{
+    font-family: fantasy;
+    background: #f0f0f0;
+    padding: 20px;
+    word-spacing: 5px;
+}
+
+h2
+{
+    font-variant: small-caps;
+    column-span: 2;
+    column-span: all;
+    text-align: center;
+}
+
+h3
+{
+    background: #f0f0f0;
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+    width: 150px;
+}
+
+.preview
+{
+    background: #cfcfcf;
+    padding: 20px;
+    font-size: 13px;
+}
+
+#release
+{
+    text-align: center;
+}
+
+span
+{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.main_text,
+.text
+{
+    text-indent: 30px;
+    font-family: cursive;
+    font-size: 11px;
+}
+
+.main_text::first-letter
+{
+    font-size: 25px;
+}
+
+figure
+{
+    margin: 20px;
+    text-decoration: underline;
+}
+
+article,
+section
+{
+    column-count: 2;
+    column-rule: 1px solid #777575;
+}
+
+a
+{
+    text-decoration: none;
+}
+
