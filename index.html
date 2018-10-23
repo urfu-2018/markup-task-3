@@ -7,19 +7,19 @@
 </head>
 <body>
     <p>Размер шрифта:</p>
-    <input class="c" id="small" name="font-size" type="radio">
+    <input class="font-size" id="small" name="font-size" type="radio">
     <label for="small">Мелкий</label>
     <input id="normal" name="font-size" type="radio" checked>
     <label for="normal">Обычный</label>
     <p>Шрифт:</p>
     <input id="courier-new" name="font-family" type="radio" checked>
     <label for="courier-new">Courier New</label>
-    <input id="arial" name="font-family" type="radio">
+    <input class="font-family" id="arial" name="font-family" type="radio">
     <label for="arial">Arial</label>
     <p>Цветовая тема:</p>
     <input id="light" name="theme" type="radio" checked>
     <label for="light">Светлая</label>
-    <input id="black" name="theme" type="radio">
+    <input class="theme"  id="black" name="theme" type="radio">
     <label for="black">Темная</label>
     <header>
         <section class="newspaper-info">
@@ -94,7 +94,7 @@
                 «Свердловское» и «Самара».
             </p>
         </article>
-        <aside class="sponsors">
+        <article class="sponsors">
             <header>
                 <h1 class="news-title">Немного рекламы спонсоров</h1>
             </header>
@@ -118,7 +118,7 @@
                      alt="Гусь">
                 <figcaption>Он просто заплатил</figcaption>
             </figure>
-        </aside>
+        </article>
     </main>
 </body>
 </html>

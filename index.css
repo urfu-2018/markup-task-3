@@ -100,39 +100,25 @@ img
     width: 50%;
     padding: 5px;
     float: left;
-    height: 1060px;
 }
 
 .sponsors
 {
-    float: right;
+    float: left;
     width: 23%;
-    height: 1060px;
 }
 
-input[id='small']:checked ~ main
+.font-size:checked ~ main > blockquote
 {
     font-size: .7em;
 }
 
-input[id='small']:checked ~ main > article > blockquote
-{
-    font-size: .5em;
-}
-
-input[id='arial']:checked ~ main
+.font-family:checked ~ main
 {
     font-family: 'Arial', sans-serif;
-    background-color: black !important;
 }
 
-input[id='black']:checked ~ main > article
-{
-    background-color: black;
-    color: white;
-}
-
-input[id='black']:checked ~ main > aside
+.theme:checked ~ main > article
 {
     background-color: black;
     color: white;
