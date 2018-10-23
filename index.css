@@ -112,6 +112,11 @@ main
     font-size: 1.25em;
 }
 
+.columns__header__logo
+{
+    background-image: url('https://lh3.googleusercontent.com/zQcyzBFlezJyBZpK83m9IscWfALWf9BqXMQe0oWGGrAAyg6PHqY7yhhf_wkwgZVPQyZl=s128');
+}
+
 .newspaperArticle__title_center
 {
     text-align: center;
