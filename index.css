@@ -66,10 +66,10 @@ h1
 
 .articles
  {
-    border-top: 2px solid;
-    border-bottom: 2px solid;
+    border: 2px solid;
     border-color: inherit;
     display: table;
+    border-collapse: collapse;
     margin: 10px auto;
 }
 
@@ -77,16 +77,10 @@ article
  {
     display: table-cell;
     vertical-align: top;
-    border-left: 2px solid #666;
+    border: 2px solid #666;
     border-color: inherit;
     height: 100%;
     min-height: 100%;
-}
-
-article:last-child
- {
-    border-right: 2px solid #666;
-    border-color: inherit;
 }
 
 .articles h2
@@ -145,11 +139,27 @@ main
     padding: 10px;
 }
 
-input.lightswitch:checked + main
+input.lightswitch:checked ~ main
  {
     background-color: #666;
     color: #fff5d9;
     border-color: #fff5d9;
+}
+
+input.bigfontswitch:checked ~ main,
+input.bigfontswitch:checked ~ main h2
+ {
+    font-size: 120%;
+}
+
+input[value='serif']:checked ~ main
+ {
+    font-family: 'Times new roman', sans-serif;
+}
+
+.spacer
+ {
+    margin-left: 50px;
 }
 
 .weather strong
@@ -180,6 +190,11 @@ figure
 .articles article
  {
     max-width: 200px;
+}
+
+.articles article:nth-child(1) h2
+ {
+    font-family: 'Alegreya Sans SC', sans-serif;
 }
 
 .articles article:nth-child(2) h2
