@@ -1,0 +1,30 @@
+html 
+{
+    font-family: 'Im Fell English';
+    background-color: #f8dfc1;
+}
+
+.main-article
+{
+    font-family: 'IM Fell English', serif;
+    text-align: center;
+    font-size: 50px;
+}
+
+.main-block 
+{
+    column-count: 4;
+    column-rule: 1px solid black;
+}
+
+h2::first-letter
+{
+    color: orange;
+    border: 1px solid brown;
+    background-color: red;
+}
+
+img 
+{
+    width: 100%;
+}
