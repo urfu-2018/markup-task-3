@@ -1,3 +1,9 @@
+@font-face
+{
+    font-family: Rye;
+    src: url(fonts/Rye-Regular.ttf);
+}
+
 input.swap:checked ~ main
 {
     background-color: black;
