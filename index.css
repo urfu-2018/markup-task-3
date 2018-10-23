@@ -57,9 +57,12 @@ p::first-letter
 .article figure img
 {
     width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-figcaption
+.quote
 {
     hyphens: auto;
     font-style: italic;
