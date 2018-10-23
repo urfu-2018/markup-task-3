@@ -3,7 +3,130 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «DeLorean DMC-12»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <!-- Настройки размера шрифта -->
+    <span class="settings-description">Размер шрифта:</span>
+    <input type="radio" id="font-size-small" class="font-size-small" name="font-size">
+    <label for="font-size-small">мелкий</label>
+    <input type="radio" id="font-size-medium" class="font-size-medium" name="font-size" checked>
+    <label for="font-size-medium">средний</label>
+    <input type="radio" id="font-size-large" class="font-size-large" name="font-size">
+    <label for="font-size-large">крупный</label>
+    <br>
+
+    <!-- Настройки семейства шрифта -->
+    <span class="settings-description">Семейство шрифта:</span>
+    <input type="radio" id="font-family-serif" class="font-family-serif" name="font-family">
+    <label for="font-family-serif">с засечками</label>
+    <input type="radio" id="font-family-sans-serif" class="font-family-sans-serif" name="font-family" checked>
+    <label for="font-family-sans-serif">без засечек</label>
+    <input type="radio" id="font-family-monospace" class="font-family-monospace" name="font-family">
+    <label for="font-family-monospace">моноширинные</label>
+    <br>
+
+    <!-- Настройки темы -->
+    <span class="settings-description">Тема:</span>
+    <input type="radio" id="theme-light" class="theme-light" name="theme" checked>
+    <label for="theme-light">светлая</label>
+    <input type="radio" id="theme-dark" class="theme-dark" name="theme">
+    <label for="theme-dark">темная</label>
+
+    <header class="header clearfix">
+        <h1 class="header__caption">
+            Аргументы<br>
+            не факты
+        </h1>
+        <p class="header__edition">
+            № 30(1500)
+            <time datetime="2014-11-30">30 ноября 2014</time> &ndash;
+            <time datetime="2014-12-06">6 декабря 2014</time>
+        </p>
+        <p class="header__creation">
+            Издается с <time datetime="1970-01-01">1970 года</time>
+        </p>
+    </header>
+    <main>
+        <article class="news">
+            <header class="news__header">
+                <h2 class="news__caption">
+                    Россия, Китай и Индия займутся созданием Евразийского квантового пути
+                </h2>
+                <time class="news__date" datetime="2014-11-30">30 ноября 2014</time>
+            </header>
+            <figure>
+                <img class="post-image"
+                    src="https://cdn5.img.ria.ru/images/150031/69/1500316950.jpg" alt="Квантовый путь">
+                <figcaption>
+                    Квантовый путь &copy;
+                    &laquo;<abbr title="Аргументы не факты" class="newspaper__abbr">АнФ</abbr>&raquo;
+                </figcaption>
+            </figure>
+            <p>
+                Россия, Китай и Индия займутся созданием Евразийского квантового пути
+                &ndash; инфраструктуры для безопасной передачи данных, рассказал в интервью
+                РИА Новости президент Некоммерческого партнерства &quot;Руссофт&quot;,
+                руководитель рабочей группы SafeNet Валентин Макаров.
+            </p>
+            <p>
+                В июне Макаров говорил, что российские разработчики предлагают ряду стран
+                Азии и Европы участвовать в этом проекте на фоне рисков, что быстро
+                развивающийся квантовый компьютер через несколько лет сможет расшифровывать
+                в режиме реального времени те ключи, которые сейчас используются для защиты информации.
+                Присоединиться к этому проекту Россия предложила Китаю, Индии, Турции, Ирану.
+            </p>
+            <p>
+                Обратную связь от ряда стран в итоге удалось получить, сообщил Макаров.
+            </p>
+            <blockquote cite="https://ria.ru/technology/20181013/1530590253.html">
+                <p>
+                    &quot;Мы связались с Академией наук Китая, которая занимается проектом создания
+                    квантовой защищенной сети для всей территории КНР&quot;, &ndash; сказал он.
+                </p>
+            </blockquote>
+            <p>
+                По словам Макарова, китайцы согласились поработать над проектом вместе.
+            </p>
+            <p>
+                Об интересе сообщили и индийские коллеги.
+            </p>
+            <blockquote cite="https://ria.ru/technology/20181013/1530590253.html">
+                <p>
+                    &quot;Индия, конечно, заинтересована в проекте, но там есть политический аспект,
+                    плюс Индия не имеет общей границы с территорией ЕАЭС&hellip;. Мы предложили включить
+                    в повестку дня российско-индийской МПК вопрос о проработке проекта… Надеюсь,
+                    что мы постепенно к этому придем, тем более, что &quot;Руссофт&quot; сейчас
+                    создает свое представительство (бизнес-хаб) в Индии&quot;, &ndash; добавил он.
+                </p>
+            </blockquote>
+            <p>
+                По словам Макарова, чтобы проложить квантовый магистральный путь по всей территории
+                России &ndash; от границы с Китаем до границы с Финляндией, потребуется около 40
+                миллиардов рублей.
+            </p>
+            <blockquote cite="https://ria.ru/technology/20181013/1530590253.html">
+                <p>
+                    &quot;В нашем первичном упрощенном бизнес-плане, считалось, что мы можем построить
+                    за 40 миллиардов рублей главную магистральную ветку. Причем от государства нужно
+                    будет только 10%, а остальные деньги мы возьмем с рынка от заинтересованных
+                    операторов связи или крупных клиентов. Свой интерес проявляют банки, крупные
+                    корпорации, например, &quot;Ростех&quot;, &ndash; заключил он.
+                </p>
+            </blockquote>
+            <p class="commercial clearfix">
+                <span class="commercial__name">Реклама</span>
+                <span class="commercial__caption">Купить слона.</span>
+                Текст объявления. Текст объявления. Текст объявления. Текст объявления.
+                Текст объявления. Текст объявления. Текст объявления. Текст объявления.
+            </p>
+        </article>
+    </main>
+    <footer class="footer">
+        Актуальные новости одной строкой &ndash;
+        на каждой странице
+        &laquo;<abbr title="Аргументы не факты" class="abbr">АнФ</abbr>&raquo;
+        &#10149;
+    </footer>
 </body>
 </html>

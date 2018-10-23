@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,700,700i|Roboto+Mono:300,300i,700,700i|Roboto:300,300i,700,700i&subset=cyrillic');
+
+body
+{
+    font: normal 300 1rem 'Roboto';
+}
+
+.clearfix::after
+{
+    display: block;
+    content: '';
+    clear: both;
+}
+
+input[type='radio']
+{
+    vertical-align: middle;
+    margin-top: -1px;
+}
+
+input[type='radio'] + label,
+.settings-description
+{
+    font-size: .9rem;
+}
+
+.settings-description
+{
+    font-weight: 700;
+}
+
+input[type='radio'] ~ header,
+input[type='radio'] ~ main,
+input[type='radio'] ~ footer
+{
+    font: normal 300 1rem 'Roboto';
+    padding: 20px;
+}
+
+input[type='radio'] ~ header
+{
+    margin-top: 10px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.font-size-small:checked ~ header,
+.font-size-small:checked ~ main,
+.font-size-small:checked ~ footer
+{
+    font-size: .7rem;
+}
+
+.font-size-large:checked ~ header,
+.font-size-large:checked ~ main,
+.font-size-large:checked ~ footer
+{
+    font-size: 1.3rem;
+}
+
+.font-family-serif:checked ~ header,
+.font-family-serif:checked ~ main,
+.font-family-serif:checked ~ footer
+{
+    font-family: 'Merriweather';
+}
+
+.font-family-monospace:checked ~ header,
+.font-family-monospace:checked ~ main,
+.font-family-monospace:checked ~ footer
+{
+    font-family: 'Roboto Mono';
+}
+
+.theme-dark:checked ~ header,
+.theme-dark:checked ~ main,
+.theme-dark:checked ~ footer
+{
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+.theme-dark:checked ~ main > article
+{
+    column-rule-color: white;
+}
+
+.theme-dark:checked ~ main > article > .commercial
+{
+    border-color: white;
+}
+
+.header__caption
+{
+    font-size: 4em;
+    line-height: .8;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 700;
+    text-indent: .5em;
+    margin: 0 auto 15px;
+    width: 6.6em;
+}
+
+.header__edition,
+.header__creation
+{
+    font-size: .8em;
+    margin: 0;
+}
+
+.header__edition
+{
+    float: left;
+}
+
+.header__creation
+{
+    float: right;
+}
+
+.news
+{
+    column-count: 4;
+    column-gap: 40px;
+    column-rule: 1px solid black;
+}
+
+.news > p:not(.commercial)
+{
+    text-align: justify;
+    text-indent: 1em;
+}
+
+.news > p:not(.commercial):first-letter
+{
+    font-weight: 700;
+}
+
+.news__header
+{
+    column-span: all;
+    padding-bottom: 20px;
+}
+
+.news__caption
+{
+    font-weight: 700;
+}
+
+.news__date
+{
+    font-size: .8em;
+}
+
+figure
+{
+    margin: 0;
+}
+
+.post-image
+{
+    width: 100%;
+}
+
+figcaption
+{
+    font-size: .8em;
+}
+
+blockquote
+{
+    font-style: italic;
+}
+
+.commercial
+{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.commercial__name
+{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-size: .7em;
+    float: right;
+    font-weight: 700;
+    padding-left: 5px;
+}
+
+.commercial__caption
+{
+    font-weight: 700;
+}
+
+.footer
+{
+    border-top: 1px solid black;
+}
