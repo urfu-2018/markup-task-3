@@ -1,0 +1,4 @@
+.zoom:checked ~ .newspaper
+{
+    font-size: 24px;
+}

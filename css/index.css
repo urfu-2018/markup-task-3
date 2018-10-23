@@ -1,0 +1,56 @@
+@font-face
+{
+    font-family: "Pikabu";
+    src: url(../fonts/pikabu.otf);
+}
+
+body
+{
+    margin: 0;
+    font-size: 16px;
+}
+
+.newspaper
+{
+    padding: 20px 40px;
+    background-color: #ffe;
+}
+
+.center
+{
+    text-align: center;
+}
+
+.margin
+{
+    margin: 10px;
+}
+
+.underline
+{
+    border-bottom: 3px double black;
+}
+
+.right
+{
+    text-align: right;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.vertical
+{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-transform: uppercase;
+}
+
+.wordwrap
+{
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}

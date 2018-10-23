@@ -1,0 +1,30 @@
+.article
+{
+    margin: 20px 10px;
+    word-wrap: break-word;
+}
+
+.article > p::first-letter,
+.title::first-letter
+{
+    color: orange;
+    font-weight: bold;
+}
+
+.title
+{
+    font-family: "Pikabu";
+    font-size: 4em;
+    margin: 0;
+}
+
+.box
+{
+    border: 1px solid black;
+}
+
+.box > p
+{
+    margin: 5px;
+    font-style: italic;
+}
