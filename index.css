@@ -176,7 +176,7 @@ div[class='quote'] p[class='autor']
 
 .science
 {
-    width: auto; 
+    width: auto;
     margin: 0 460px 0 410px;
     float: top;
     position: absolute;
@@ -276,7 +276,7 @@ div[class='science'] img
     font-style: italic;
     width: 370px;
     column-span: all;
-    word-wrap: break-word;;
+    word-wrap: break-word;
 }
 
 .sport p.main::first-letter
@@ -331,7 +331,7 @@ div[class='sport'] img
 span.date
 {
     font-weight: bolder;
-    color:  rgb(245, 10, 88);
+    color: rgb(245, 10, 88);
 }
 
 span.event
@@ -362,7 +362,7 @@ span.event
     font-size: 12.5px;
     font-family: 'Times New Roman', serif;
     font-style: italic;
-    margin: 0 3px 0 3px;
+    margin: 0 3px;
 }
 
 .hystory p::first-letter
@@ -381,4 +381,3 @@ span.event
     font-size: 13px;
     font-family: 'Times New Roman', serif;
 }
-
