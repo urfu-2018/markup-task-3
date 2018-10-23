@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Arvo:400,700,700i|Cinzel:400,900|Oswald|Patrick+Hand|Playfair+Display|Text+Me+One|Yanone+Kaffeesatz:400,700');
+
+.header-content
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.h1-cinzel
+{
+    margin: 0;
+    font-size: 70px;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+
+}
+
+.info
+{
+    font-family: 'Arvo', serif;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    border: 2px solid;
+}
+
+.h2-anton
+{
+    margin: 20px;
+    font-size: 40px;
+    font-weight: 200;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+}
+
+.main-content
+{
+    padding: 20px;
+    background: lemonchiffon;
+    color: black;
+}
+
+.h3-kaff
+{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 30px;
+    column-span: all;
+    padding: 15px;
+    margin: 0;
+    border-top: 1px dotted;
+    text-align: center;
+    border-bottom: 1px dotted;
+}
+
+.date-box
+{
+    font-family: 'Text Me One', sans-serif;
+    border-top: 5px double black;
+    border-bottom: 5px double black;
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+}
+
+.section-content
+{
+    column-count: 2;
+    column-rule: 4px dotted;
+
+}
+
+.fix-ul
+{
+    padding: 0;
+    margin: 0;
+
+}
+
+.column-article
+{
+    text-align: justify;
+    padding: 10px;
+    vertical-align: top;
+    column-gap: 20px;
+    font-size: 20px;
+    display: inline-block;
+    text-indent: 1.5em;
+    hyphens: manual;
+    column-rule: 3px dashed darkblue;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.column-article > p
+{
+    margin: 0;
+}
+
+.column-article > p:first-letter
+{
+
+    font-weight: 900;
+    color: red;
+}
+
+.column-two
+{
+    column-count: 2;
+}
+
+.picture
+{
+    margin: 0 auto;
+    display: block;
+    column-span: all;
+    width: 100%;
+
+}
+
+.vertical-text
+{
+    font-family: 'Text Me One', sans-serif;
+    text-align: right;
+    font-size: 20px;
+    width: 1px;
+    word-wrap: break-word;
+    font-weight: 900;
+}
+
+.picture-outer
+{
+    margin: 0;
+}
+
+.picture-title
+{
+    column-span: all;
+    text-align: right;
+    font-family: 'Anton', sans-serif;
+
+}
+
+.checkers:checked ~ .main-content
+{
+    background: black;
+    color: lemonchiffon;
+}
+
+.checkers:checked ~ .main-content > .date-box
+{
+    border-top: 5px double lemonchiffon;
+    border-bottom: 5px double lemonchiffon;
+}
+
+.small-size:checked ~ .main-content > .h2-anton
+{
+    font-size: 20px;
+}
+
+.small-size:checked ~ .main-content .h3-kaff
+{
+    font-size: 15px;
+}
+
+.small-size:checked ~ .main-content .column-article
+{
+    font-size: 10px;
+}
+
+.high-size:checked ~ .main-content > .h2-anton
+{
+    font-size: 50px;
+}
+
+.high-size:checked ~ .main-content .h3-kaff
+{
+    font-size: 40px;
+}
+
+.high-size:checked ~ .main-content .column-article
+{
+    font-size: 30px;
+}
+
+.oswald-text:checked ~ .main-content .column-article
+{
+    font-family: 'Oswald', sans-serif;
+}
+
+.playfair-text:checked ~ .main-content .column-article
+{
+    font-family: 'Playfair Display', serif;
+}
