@@ -40,6 +40,7 @@ h3
     text-align: center;
     padding: 20px;
     width: 150px;
+    border: 1px solid
 }
 
 .preview
@@ -54,7 +55,7 @@ img
     width: 260px;
 }
 
-#information
+.information
 {
     font-style: oblique;
     font-family: serif;
@@ -97,4 +98,11 @@ section
 a
 {
     text-decoration: none;
+}
+
+.headline
+{
+    width: 100px;
+    align-content: center;
+    column-span: all;
 }
