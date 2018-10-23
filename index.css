@@ -1,63 +1,76 @@
-article {
+article
+{
     background: darkgray;
     margin: 15px;
 }
 
-.text img {
+.text img
+{
     width: 96%;
     margin: auto;
 }
 
-.article p:first-of-type::first-letter {
+.article p:first-of-type::first-letter
+{
     color: darkcyan;
-    font-size: 25px;;
+    font-size: 25px;
 }
 
-.text {
+.text
+{
     background: darkgrey;
 }
 
-.vertical {
+.vertical
+{
     writing-mode: vertical-rl;
     text-orientation: upright;
 }
 
-header {
+header
+{
     width: 100%;
 }
 
-.text {
+.text
+{
     column-count: 4;
 }
 
-.separator {
-    font-family: "Yu Gothic UI Semibold", monospace;
+.separator
+{
+    font-family: Yu Gothic UI Semibold, monospace;
     border-style: solid;
-
 }
 
-.top .article:nth-child(odd) {
+.top .article:nth-child(odd)
+{
     font-family: Arimo, serif;
 }
 
-.top .article:nth-child(even) {
+.top .article:nth-child(even)
+{
     font-family: Cambria, serif;
 }
 
-.bottom .article:nth-child(odd) {
+.bottom .article:nth-child(odd)
+{
     font-family: Bahnschrift, monospace;
 }
 
-.bottom .article:nth-child(even) {
+.bottom .article:nth-child(even)
+{
     font-family: Verdana, sans-serif;
 }
 
-h1 {
+h1
+{
     text-align: center;
     border-style: solid;
     height: 50px;
 }
 
-p {
+p
+{
     hyphens: auto;
 }
