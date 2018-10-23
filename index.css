@@ -1,0 +1,156 @@
+@font-face
+{
+    font-family: 'Mali';
+    src: url(./AncientFont.ttf) format('truetype');
+    font-display: auto;
+}
+
+@font-face
+{
+    font-family: 'Charmonman';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Charmonman Regular'), local(
+        'Charmonman-Regular'), url(
+            https://fonts.gstatic.com/s/charmonman/v1/MjQDmiR3vP_nuxDv47jiaJaivQ.woff2
+            ) format('woff2');
+}
+
+@font-face
+{
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lobster Regular'), local(
+        'Lobster-Regular'), url(
+            https://fonts.gstatic.com/s/lobster/v20/neILzCirqoswsqX9zoKmMw.woff2
+            ) format('woff2');
+}
+
+@font-face
+{
+    font-family: 'Amatic SC';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Amatic SC Regular'), local(
+        'AmaticSC-Regular'), url(
+            https://fonts.gstatic.com/s/amaticsc/v11/TUZyzwprpvBS1izr_vOECuSf.woff2
+            ) format('woff2');
+}
+
+@font-face
+{
+    font-family: 'Diplomata';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Diplomata'), local(
+        'Diplomata-Regular'), url(
+            https://fonts.gstatic.com/s/diplomata/v9/Cn-0JtiMXwhNwp-wKxyvZ2ZZ.woff2
+            ) format('woff2');
+}
+
+input:checked ~ table
+{
+    background-color: black;
+    color: white;
+}
+
+input:invalid
+{
+    background-color: red;
+}
+
+input[type='number'][value='10'] ~ table > p
+{
+    font-size: 10px;
+}
+
+input[type='number'][value='20'] ~ table > p
+{
+    font-size: 20px;
+}
+
+.continue
+{
+    column-span: all;
+    text-align: center;
+    letter-spacing: 30px;
+    font-size: 30px;
+    font-variant: small-caps;
+}
+
+header
+{
+    border-bottom: 1px solid #000;
+    height: 110px;
+}
+
+.paperTitle
+{
+    font-family: 'Mali';
+    font-size: 80px;
+    word-spacing: 40px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+h2
+{
+    font-variant: small-caps;
+    column-count: 2;
+}
+
+p
+{
+    hyphens: auto;
+}
+
+p::first-letter
+{
+    color: blue;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.verticalText
+{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    width: 20%;
+    font-size: 20px;
+    letter-spacing: 25px;
+    text-align: center;
+    margin-left: 50%;
+}
+
+.mainDescription
+{
+    column-count: 2;
+    column-rule: 1px solid #000;
+}
+
+.partsDescription
+{
+    column-count: 2;
+    column-rule: 1px solid #000;
+}
+
+.firstPart
+{
+    font-family: 'Charmonman';
+}
+
+.secondPart
+{
+    font-family: 'Lobster';
+}
+
+.thirdPart
+{
+    font-family: 'Amatic SC';
+}
+
+footer
+{
+    border-top: 1px solid #000;
+}
