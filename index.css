@@ -13,20 +13,20 @@ h3
     border-bottom: 2px solid #000;
 }
 
-#size:checked ~ .site-info
+.size:checked ~ .site-info
 {
     zoom: 2;
 }
 
-#dark:checked ~ .site-info
+.dark:checked ~ .site-info
 {
     background-color: black;
     color: white;
 }
 
-#font-style:checked ~ .site-info
+.font-style:checked ~ .site-info
 {
-    font-family: "Droid Sans Georgian", cursive, "Noto Serif Armenian";
+    font-family: 'Droid Sans Georgian', cursive, 'Noto Serif Armenian';
 }
 
 p::first-letter
