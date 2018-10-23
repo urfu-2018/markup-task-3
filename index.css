@@ -58,6 +58,13 @@ span
     line-height: 12px;
 }
 
+.empty
+{
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+}
+
 h3
 {
     font-family: Rounds Black Regular;
@@ -74,27 +81,26 @@ h3::first-letter
 
 .news img
 {
-    margin: 10px 0;
     width: 300px;
 }
 
 .img-right
 {
     float: right;
-    width: 250px;
-    margin: 0 10px;
+    margin: 10px;
 }
 
 .img-left
 {
     float: left;
     width: 250px;
-    margin: 0 10px;
+    margin: 10px;
 }
 
 .img-center
 {
-    width: 100%;
+    display: block;
+    margin: 10px auto;
 }
 
 .content-article
@@ -112,7 +118,7 @@ h3::first-letter
 
 .news > article
 {
-    margin-bottom: 20px;
+    padding: 20px 0;
 }
 
 .news > article:not(:last-child)
