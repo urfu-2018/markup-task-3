@@ -32,7 +32,7 @@ h1
 
 .paper-header section p
 {
-    font-size: 12px;
+    font-size: 1em;
     margin: 0;
 }
 
@@ -51,35 +51,76 @@ h1
     text-align: right;
 }
 
-.forecast
-{
-    padding: .3em;
-    border: 2px solid black;
-}
-
-    /*.number*/
-    /*{*/
-        /*text-align: left;*/
-    /*}*/
-
-    /*.info*/
-    /*{*/
-        /*text-align: center;*/
-    /*}*/
-
-    /*.price*/
-    /*{*/
-        /*text-align: right;*/
-    /*}*/
-
 main
 {
-    column-count: 3;
-    font-size: 10px;
+    font-size: 1em;
+    column-gap: .3em;
+    column-rule-style: double;
+    column-count: 4;
 }
 
-article p:first-letter
+main article
+{
+    break-inside: avoid;
+}
+
+main article section
+{
+    column-count: 2;
+    column-rule-style: dashed;
+    column-rule-width: 1px;
+}
+
+article header
+{
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+
+article > section > p:first-of-type:first-letter
 {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1.2em;
+}
+
+article
+{
+    text-align: justify;
+}
+
+figure img
+{
+    width: 100%;
+}
+
+figcaption
+{
+    text-align: center;
+}
+
+.wanted
+{
+    border: 2px dashed black;
+    text-align: center;
+    font-size: 2em;
+    padding: 0;
+    margin: 0;
+}
+
+.wanted h3
+{
+    font-size: 1.5em;
+    padding: 0;
+    margin: 0;
+}
+
+.wanted p
+{
+    line-height: .6;
+}
+
+footer
+{
+    text-align: center;
+    font-family: 'Impact', sans-serif;
 }
