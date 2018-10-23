@@ -1,0 +1,151 @@
+@font-face
+{
+    font-family: 'Old English Text MT';
+    src: local('Old English Text MT'), url('fonts/NewYorkTimesFont.ttf') format('ttf');
+    font-display: auto;
+}
+
+body
+{
+    margin: 10px;
+    font-size: 16px;
+}
+
+.title
+{
+    margin: 0;
+    padding: 15px;
+}
+
+h1
+{
+    font-family: 'Old English Text MT', fantasy;
+    font-size: 400%;
+    text-align: center;
+}
+
+.inFrame
+{
+    border: 2px solid black;
+    padding: 10px;
+}
+
+div.exchange,
+div.weather
+{
+    float: left;
+    margin: 10px;
+    width: 175px;
+    height: 80px;
+    text-align: center;
+    font-size: 65%;
+}
+
+div.weather
+{
+    float: right;
+}
+
+div.exchange > table
+{
+    margin: auto;
+}
+
+.daily
+{
+    clear: both;
+    font-weight: bold;
+    border-top: 6px double black;
+    border-bottom: 6px double black;
+}
+
+.daily > .date
+{
+    text-align: center;
+}
+
+.daily > .price
+{
+    float: right;
+}
+
+main
+{
+    clear: both;
+    column-count: 5;
+    text-align: justify;
+    column-rule: 1px solid black;
+}
+
+main p
+{
+    text-indent: 20px;
+}
+
+main > article:not(.joke) > p:first-of-type::first-letter
+{
+    font-size: 200%;
+    text-indent: 0;
+}
+
+main h2
+{
+    text-align: center;
+}
+
+.image
+{
+    text-align: center;
+    font-style: oblique;
+}
+
+.image > img
+{
+    width: 100%;
+}
+
+main q
+{
+    font-style: italic;
+    break-inside: avoid;
+}
+
+article.joke
+{
+    border: 2px dashed black;
+    text-align: center;
+    line-height: 8px;
+    break-inside: avoid;
+}
+
+article.joke > p::before
+{
+    content: '-';
+}
+
+.bigLetterSpacing
+{
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+.smallСaps
+{
+    text-transform: capitalize;
+    font-variant: small-caps;
+}
+
+.uppercase
+{
+    text-transform: uppercase;
+}
+
+.italic
+{
+    font-style: italic;
+}
+
+.capitalize
+{
+    text-transform: capitalize;
+}
