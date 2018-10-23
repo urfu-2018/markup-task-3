@@ -1,31 +1,51 @@
 @font-face
 {
     font-family: HeadLines;
-    src: url(fonts/HeadLine.ttf);
+    src: local('HeadLine')
+        , url(fonts/HeadLine.ttf) format('ttf') /* линтер только так принимал */
+        , url(fonts/HeadLine.eot) format('eot')
+        , url(fonts/HeadLine.woff) format('woff')
+        , url(fonts/HeadLine.woff2) format('woff2');
 }
 
 @font-face
 {
     font-family: Quotes;
-    src: url(fonts/Quotes.otf);
+    src: local('Quotes')
+        , url(fonts/Quotes.otf) format('otf')
+        , url(fonts/Quotes.eot) format('eot')
+        , url(fonts/Quotes.woff) format('woff')
+        , url(fonts/Quotes.woff2) format('woff2');
 }
 
 @font-face
 {
     font-family: Names;
-    src: url(fonts/Names.otf);
+    src: local('Names')
+        , url(fonts/Names.otf) format('otf')
+        , url(fonts/Names.eot) format('eot')
+        , url(fonts/Names.woff) format('woff')
+        , url(fonts/Names.woff2) format('woff2');
 }
 
 @font-face
 {
     font-family: ForText;
-    src: url(fonts/Text.ttf);
+    src: local('Text')
+        , url(fonts/Text.ttf) format('ttf')
+        , url(fonts/Text.eot) format('eot')
+        , url(fonts/Text.woff) format('woff')
+        , url(fonts/Text.woff2) format('woff2');
 }
 
 @font-face
 {
     font-family: FirstLetter;
-    src: url(fonts/FirstLetter.otf);
+    src: local('FirstLetter')
+        , url(fonts/FirstLetter.otf) format('otf')
+        , url(fonts/FirstLetter.eot) format('eot')
+        , url(fonts/FirstLetter.woff) format('woff')
+        , url(fonts/FirstLetter.woff2) format('woff2');
 }
 
 main
@@ -35,44 +55,50 @@ main
 
 .first-part
 {
+    -webkit-columns: 1;
+    -moz-columns: 1;
     columns: 1;
     width: 39%;
 }
 
 .second-part
 {
+    -webkit-columns: 2;
+    -moz-columns: 2;
     columns: 2;
     width: 60%;
 }
 
 .main-news
 {
+    -webkit-column-rule: 2px solid #fea;
+    -moz-column-rule: 2px solid #fea;
     column-rule: 2px solid #fea;
     width: 100%;
 }
 
 .first-part,
 .weather img,
-.weather
-{
-    float: left;
-}
-
+.weather,
 .second-part,
 .vertical
 {
-    float: right;
+    display: inline-block;
 }
 
 .main-news
 {
     width: 100%;
+    -webkit-columns: 4;
+    -moz-columns: 4;
     columns: 4;
 }
 
 figure img
 {
     width: 100%;
+    height: 100%;
+    -webkit-filter: grayscale(100);
     filter: grayscale(100);
 }
 
@@ -83,27 +109,40 @@ figure img
 
 .aeroflot
 {
-    column-span: all;
     width: 85%;
+}
+
+@supports not (column-span: all)
+{
+    h5,
+    h2,
+    hr,
+    .aeroflot
+    {
+        position: relative;
+        left: 0;
+        top: 0;
+        right: 0;
+    }
 }
 
 div,
 p
 {
-    font-family: ForText;
+    font-family: ForText, Helvetica, sans-serif;
     text-align: justify;
 }
 
 .weather
 {
     font-size: 3.5em;
+    width: 90%;
 }
 
 h1,
 .weather
 {
     margin: auto;
-    width: 30%;
 }
 
 h2
@@ -111,14 +150,11 @@ h2
     margin-top: 3%;
 }
 
-section,
-figure,
-hr,
-h3,
-h1
+.text-center,
+hr
 {
     text-align: center;
-    font-family: HeadLines;
+    font-family: HeadLines, Helvetica, sans-serif;
 }
 
 hr
@@ -138,8 +174,11 @@ h3
 
 h5,
 h2,
-hr
+hr,
+.aeroflot
 {
+    -webkit-column-span: all;
+    -moz-column-span: all;
     column-span: all;
 }
 
@@ -157,12 +196,16 @@ h5,
 .vertical
 {
     text-orientation: upright;
+    -webkit-writing-mode: vertical-lr;
+    -ms-writing-mode: tb-lr;
     writing-mode: vertical-lr;
     letter-spacing: -5px;
 }
 
 label
 {
+    -webkit-writing-mode: horizontal-tb;
+    -ms-writing-mode: lr-tb;
     writing-mode: horizontal-tb;
 }
 
@@ -188,7 +231,7 @@ span span::after
 
 .quote
 {
-    font-family: Quotes;
+    font-family: Quotes, Georgia, italic;
 }
 
 .name
