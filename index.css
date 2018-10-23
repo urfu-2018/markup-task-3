@@ -31,7 +31,6 @@ div.title > div
     width: 130px;
     height: 90px;
     text-align: center;
-    padding: 0 20px;
     position: absolute;
 }
 
@@ -40,6 +39,8 @@ div.title > div
     border: 1px solid #000;
     line-height: 90px;
     left: 0;
+    padding: 0 20px;
+
 }
 
 .header_block-quote span
@@ -78,4 +79,29 @@ div.title > div
 .main-title img
 {
     width: 730px;
+}
+
+.subtitle
+{
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+}
+
+.subtitle span
+{
+    margin-right: 15px;
+}
+
+.subtitle span.company
+{
+    font-size: 10px;
+}
+
+
+.subtitle span:last-of-type
+{
+    float: right;
+    margin: 0;
 }
