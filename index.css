@@ -185,45 +185,45 @@ label
     opacity: .7;
 }
 
-.dark:checked ~ article label[for='dark-theme'],
-.light:checked ~ article label[for='light-theme'],
-.small:checked ~ article label[for='small-size'],
-.medium:checked ~ article label[for='medium-size'],
-.large:checked ~ article label[for='large-size'],
-.arbutus:checked ~ article label[for='arbutus-slab'],
-.verd:checked ~ article label[for='verdana']
+.dark:checked ~ div label[for='dark-theme'],
+.light:checked ~ div label[for='light-theme'],
+.small:checked ~ div label[for='small-size'],
+.medium:checked ~ div label[for='medium-size'],
+.large:checked ~ div label[for='large-size'],
+.arbutus:checked ~ div label[for='arbutus-slab'],
+.verd:checked ~ div label[for='verdana']
 {
     color: rgb(2, 150, 66);
     opacity: 1;
 }
 
-.dark:checked ~ article
+.dark:checked ~ div
 {
     background-color: rgba(15, 15, 15, .9);
     color: rgb(190, 185, 185);
 }
 
-.light:checked ~ article
+.light:checked ~ div
 {
     border-color: #000;
 }
 
-.small:checked ~ article
+.small:checked ~ div
 {
     font-size: 12px;
 }
 
-.large:checked ~ article
+.large:checked ~ div
 {
     font-size: 20px;
 }
 
-.arbutus:checked ~ article
+.arbutus:checked ~ div
 {
     font-family: 'Arbutus Slab', serif;
 }
 
-.verd:checked ~ article
+.verd:checked ~ div
 {
     font-family: Verdana, sans-serif;
 }
