@@ -1,12 +1,11 @@
 html 
 {
-    font-family: 'Im Fell English';
+    font-family: 'Im Fell English', sans-serif;
     background-color: #f8dfc1;
 }
 
 .main-article
 {
-    font-family: 'IM Fell English', serif;
     text-align: center;
     font-size: 50px;
 }
@@ -17,6 +16,19 @@ html
     column-rule: 1px solid black;
 }
 
+aside
+{
+    float: right;
+    height: 100%;
+    width: 7%;
+    word-break: break-all;
+    font-weight: bold;
+    font-size: 20px;
+    display: inline-block;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
 h2::first-letter
 {
     color: orange;
@@ -24,7 +36,37 @@ h2::first-letter
     background-color: red;
 }
 
+.mars-article
+{
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 15px;
+}
+
+.mystery-article
+{
+    font-family: 'Inconsolata', sans-serif;
+}
+
 img 
 {
     width: 100%;
+}
+
+p
+{
+    hyphens: auto;
+}
+
+.quotes::before,
+.quotes::after
+{
+    content: '«';
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.quotes::after
+{
+    content: '»';
 }
