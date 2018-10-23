@@ -1,31 +1,38 @@
 *
 {
-    padding: 3px;    
+    padding: 3px;
+    
 }
+
 h2 
 {
     font-size: 16px;
     color: yellow;
     margin: 2px;
 }
+
 p ,
 h1
 {
     margin: 2px;
 }
+
 p:first-letter  
 {
     color: red;
 }
+
 header 
 {
     text-align: center;
 }
+
 .container 
 {
     float: left;
     width: 100%;
 }
+
 .advertising 
 {
     color: black;
@@ -37,6 +44,7 @@ header
     background-image: url(https://i.ytimg.com/vi/jihLhrrHjJ8/maxresdefault.jpg);
     text-align: center;
 }
+
 .articles 
 {
     color: white;
@@ -49,6 +57,7 @@ header
     font-style: oblique;
     font-family: Verdana;
 }
+
 .comments 
 {
     color: orange;
@@ -60,6 +69,7 @@ header
     background-color: gainsboro;
     font-family: 'Courier New', Courier, monospace;
 }
+
 .weather 
 {
     color: white;
@@ -72,21 +82,25 @@ header
     display: inline-block;
     text-align: center;
 }
+
 .angular-column 
 {
     float: left;
     width: 25%;
 }
+
 .standart-journal-column 
 {
     float: left;
     width: 33%;
 }
+
 .center-column 
 {
     float: left;
     width: 40%;
 }
+
 .border-text 
 {
     width: .7em; 
@@ -96,6 +110,7 @@ header
     word-wrap: break-word;
     font-size: 13px;
 }
+
 .image 
 {
     width: 70%;
