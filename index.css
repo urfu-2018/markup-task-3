@@ -1,0 +1,210 @@
+@font-face
+{
+    font-family: kingArthur;
+    src: url(fonts/KingArthur.ttf);
+}
+
+@font-face
+{
+    font-family: oldLondon;
+    src: url(fonts/OldLondon.ttf);
+}
+
+@font-face
+{
+    font-family: aleawabb;
+    src: url(fonts/ALEAWBB_.ttf);
+}
+
+@font-face
+{
+    font-family: camelothCaps;
+    src: url(fonts/CamelotCaps.ttf);
+}
+
+@font-face
+{
+    font-family: cymbeline;
+    src: url(fonts/cymbeline.ttf);
+}
+
+.newspaper
+{
+    background: url(resources/background.jpg);
+    border: 2px solid #000;
+    padding: 8px;
+
+    font-family: cymbeline, serif;
+    font-size: 1.5em;
+}
+
+h1
+{
+    font-family: kingArthur, cursive;
+    font-size: 3em;
+    font-weight: normal;
+
+    margin: 15px;
+    text-align: center;
+}
+
+.main_subheader
+{
+    font-family: aleawabb, cursive;
+    font-size: .6em;
+
+    margin-bottom: 8px;
+
+    text-align: center;
+    overflow: hidden;
+
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+.left_subheader
+{
+    float: left;
+}
+
+.right_subheader
+{
+    float: right;
+}
+
+.main
+{
+    column-count: 3;
+    column-rule: 2px solid #000;
+
+    margin-top: 0;
+}
+
+p
+{
+    hyphens: auto;
+    text-align: justify;
+}
+
+p::first-line
+{
+    color: #a72919;
+}
+
+p::first-letter
+{
+    color: #000;
+    text-transform: capitalize;
+    font-family: camelothCaps, serif;
+    font-size: 2.3em;
+    float: left;
+}
+
+.paper_article > h3
+{
+    font-family: aleawabb, cursive;
+    font-size: .9em;
+
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.paper_article > h3::after
+{
+    display: block;
+    content: '';
+
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+
+    border: 2px solid #000;
+}
+
+.paper_article > h3::before
+{
+    display: block;
+    content: '';
+    height: 25px;
+    background: url(resources/article_footer.png);
+    margin-bottom: 16px;
+}
+
+.cite
+{
+    font-family: aleawabb, cursive;
+    font-size: .5em;
+}
+
+.cite_content
+{
+    margin: auto;
+    width: 70%;
+
+    text-align: center;
+}
+
+.cite_author
+{
+    float: right;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+.cite_author::before
+{
+    content: '- ';
+}
+
+.aside_text
+{
+    float: left;
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+
+    font-size: 10px;
+    margin: 8px;
+
+    border: 1px solid #000;
+}
+
+figcaption
+{
+    text-align: center;
+}
+
+figure > img
+{
+    max-width: 100%;
+}
+
+label:hover
+{
+    background: #806917;
+}
+
+input[class='change_font_size']:checked ~ .newspaper
+{
+    font-size: 1.2em;
+}
+
+input[class='change_fonts']:checked ~ .newspaper
+{
+    font-family: oldLondon, serif;
+}
+
+input[class='change_color']:checked ~ .newspaper
+{
+    background: url(resources/background_black.jpg);
+    color: #afafaf;
+}
+
+input[class='change_color']:checked ~ .newspaper p::first-letter
+{
+    background: url(resources/background_black.jpg);
+    color: #afafaf;
+}
