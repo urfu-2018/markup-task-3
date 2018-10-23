@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=New+Rocker');
+@import url('https://fonts.googleapis.com/css?family=Agency+FB');
+@import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive');
+
+body
+{
+    font-family: 'Agency FB', sans-serif;
+}
+
+header p
+{
+    text-transform: uppercase;
+}
+
+h1
+{
+    font-family: 'New Rocker', sans-serif;
+    text-align: center;
+}
+
+.paper-header
+{
+    width: 100%;
+    position: relative;
+}
+
+.paper-header section
+{
+    column-count: 3;
+    border-bottom: black double 2px;
+}
+
+.paper-header section p
+{
+    font-size: 12px;
+    margin: 0;
+}
+
+.paper-header section p:first-child
+{
+    text-align: left;
+}
+
+.paper-header section p:nth-child(n+2):nth-last-child(n+2)
+{
+    text-align: center;
+}
+
+.paper-header section p:last-child
+{
+    text-align: right;
+}
+
+.forecast
+{
+    padding: .3em;
+    border: 2px solid black;
+}
+
+    /*.number*/
+    /*{*/
+        /*text-align: left;*/
+    /*}*/
+
+    /*.info*/
+    /*{*/
+        /*text-align: center;*/
+    /*}*/
+
+    /*.price*/
+    /*{*/
+        /*text-align: right;*/
+    /*}*/
+
+main
+{
+    column-count: 3;
+    font-size: 10px;
+}
+
+article p:first-letter
+{
+    font-weight: bold;
+    font-size: 16px;
+}
