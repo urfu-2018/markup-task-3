@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat|Kelly+Slab|Oswald|Playfair+Display|Russo+One&subset=cyrillic');
+
+/*
+font-family: 'Oswald', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Caveat', cursive;
+font-family: 'Russo One', sans-serif;
+font-family: 'Kelly Slab', cursive;
+*/
+
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+main
+{
+    padding: 10px;
+}
+
+.paper
+{
+    font: 18px serif;
+}
+
+p
+{
+    margin-top: 0;
+}
+
+input[class='font-small']:checked ~ .paper
+{
+    font-size: 12px;
+}
+
+input[class='font-medium']:checked ~ .paper
+{
+    font-size: 18px;
+}
+
+input[class='font-large']:checked ~ .paper
+{
+    font-size: 24px;
+}
+
+input[class='font-serif']:checked ~ .paper
+{
+    font-family: serif;
+}
+
+input[class='font-comic']:checked ~ .paper
+{
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+input[class='color-day']:checked ~ .paper
+{
+    color: black;
+    background-color: white;
+}
+
+input[class='color-night']:checked ~ .paper
+{
+    color: white;
+    background-color: #212121;
+}
+
+.paper-name
+{
+    text-align: center;
+}
+
+.paper-title
+{
+    font-family: 'Kelly Slab', cursive;
+    font-size: 6em;
+    text-transform: capitalize;
+    margin: 10px;
+}
+
+.paper-issue
+{
+    column-count: 3;
+    border-top: 1px solid currentColor;
+    border-bottom: 1px solid currentColor;
+}
+
+.paper-issue p
+{
+    margin: 0%;
+    padding: 5px;
+}
+
+.issue-num
+{
+    text-align: left;
+}
+
+.issue-info
+{
+    text-align: center;
+}
+
+.publisher
+{
+    text-align: right;
+}
+
+main
+{
+    column-count: 2;
+    column-rule: 2px solid currentColor;
+    column-gap: 30px;
+}
+
+.paper-article
+{
+    margin-bottom: 15px;
+    padding: 8px;
+    break-inside: avoid;
+    border: 1px solid grey;
+}
+
+.paper-article p
+{
+    /*даже так переносы не появляются*/
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    text-align: justify;
+}
+
+.paper-article p:first-of-type::first-letter
+{
+    font-size: 2em;
+    font-style: italic;
+}
+
+.article-title-1
+{
+    font-family: 'Russo One', sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    margin: 10px;
+}
+
+.article-title-2
+{
+    font-family: 'Caveat', cursive;
+    font-size: 4em;
+    margin: 10px;
+}
+
+.article-title-3
+{
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    margin: 10px;
+}
+
+.columns-1
+{
+    column-count: 1;
+    column-rule: 1px solid grey;
+}
+
+.columns-2
+{
+    column-count: 2;
+    column-rule: 1px solid grey;
+}
+
+.columns-3
+{
+    column-count: 3;
+    column-rule: 1px solid grey;
+}
+
+.columns-4
+{
+    column-count: 4;
+    column-rule: 1px solid grey;
+}
+
+.spannable
+{
+    column-span: all;
+}
+
+.article-quote
+{
+    column-span: all;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+.vertical-text
+{
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid currentColor;
+    float: left;
+    font-size: 1em;
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+
+figure
+{
+    break-inside: avoid;
+    margin: 10px;
+}
+
+figure img
+{
+    width: 100%;
+}
+
+figcaption
+{
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
+    font-size: 1em;
+    text-align: center;
+}
+
+footer
+{
+    margin-top: 15px;
+}
+
+.settings-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
