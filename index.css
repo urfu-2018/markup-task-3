@@ -1,21 +1,28 @@
-body {
+body 
+{
     background-color: #f4f5ac;
 }
 
-h1 {
+h1 
+{
     font-size: 40px;
     text-align: center;
-    font-family: "Old English Text MT";
+    font-family: 'Old English Text MT';
     line-height: 20px;
 }
 
-h4, h5, h6 {
+h4,
+h5,
+
+h6 
+{
     font-family: serif;
     text-indent: 10%;
     text-align: start;
 }
 
-header {
+header
+{
     position: relative;
     text-align: center;
     border-bottom: 1px solid black;
@@ -23,7 +30,8 @@ header {
     padding: 4px;
 }
 
-subtitle {
+.subtitle
+{
     display: block;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
@@ -31,15 +39,17 @@ subtitle {
     font-family: serif;
     font-variant: small-caps;
     width: 100%;
-    margin: 1px 0px 1px 0px
+    margin: 1px 0;
 }
 
-article {
+article
+{
     border: 1px solid black;
     height: 100%;
 }
 
-.news {
+.news
+{
     column-count: 3;
     column-rule: 2px solid black;
     text-indent: 1em;
@@ -47,67 +57,80 @@ article {
     display: inline-block;
 }
 
-.mainNew {
+.mainNew
+{
     width: 49%;
     display: inline-block;
     vertical-align: top;
 }
 
-.mainNewTitle {
-    font-family: "Times New Roman";
+.mainNewTitle
+{
+    font-family: 'Times New Roman';
     font-style: italic;
     font-size: 40px;
     font-weight: bold;
     text-align: center;
 }
 
-.weather, .tagline {
+.weather,
+.tagline
+{
     position: absolute;
     border: 1px solid black;
-    padding: 0px 5px 0px 5px;
-    line-height: 0px;
+    padding: 0 5px;
+    line-height: 0;
     height: 90%;
     text-align: center;
 }
 
-.weather {
+.weather
+{
     right: 70px;
 }
 
-.tagline {
+.tagline
+{
     left: 70px;
 }
 
-section {
+section
+{
     font-family: serif;
     font-variant: small-caps;
     text-align: center;
     padding: 3px;
 }
 
-.newsBox {
-    border: 1px solid #313131
+.newsBox
+{
+    border: 1px solid #313131;
 }
 
-hr {
-    color: #000000;
+hr
+{
+    color: #000;
 }
 
-.titleHr {
+.titleHr
+{
     width: 40%;
 }
 
-.textHr {
-    width: 80%
+.textHr
+{
+    width: 80%;
 }
 
-.articleTitle {
+.articleTitle
+{
     font-family: serif;
     font-weight: bold;
     font-size: 30px;
 }
 
-.prevue {
+.prevue 
+{
     display: inline-block;
     column-count: 1;
     column-rule: black;
@@ -116,13 +139,15 @@ hr {
     vertical-align: top;
 }
 
-.mainNewImage {
+.mainNewImage
+{
     display: inline-block;
     filter: grayscale(100%);
-    width: 66%
+    width: 66%;
 }
 
-.mainNewText {
+.mainNewText
+{
     column-count: 3;
     column-rule: 2px solid black;
     text-indent: 1em;
