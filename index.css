@@ -1,0 +1,225 @@
+main
+{
+    min-width: 1200px;
+    padding: 0 50px;
+}
+
+header
+{
+    height: 180px;
+    border-bottom: 1px solid #000;
+}
+
+div.title
+{
+    padding-top: 40px;
+    padding-bottom: 10px;
+    text-align: center;
+    position: relative;
+    border-bottom: 1px solid #000;
+
+}
+
+div.title > div
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header-block
+{
+    width: 130px;
+    height: 90px;
+    text-align: center;
+    position: absolute;
+}
+
+.header_block-quote
+{
+    border: 1px solid #000;
+    line-height: 90px;
+    left: 0;
+    padding: 0 20px;
+
+}
+
+.header_block-quote span
+{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.25;
+    font-size: 16px;
+}
+
+.header_block-weather
+{
+    right: 0;
+    width: 170px;
+}
+
+.header_block-weather h4
+{
+    margin: 0;
+    font-family: sans-serif, 'Arial';
+}
+
+.header_block-weather p
+{
+    margin: 0;
+    font-size: 12px;
+    text-align: justify;
+    word-break: break-all;
+}
+
+.main-title
+{
+    text-align: center;
+}
+
+.main-title img
+{
+    width: 730px;
+}
+
+.subtitle
+{
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+}
+
+.subtitle span
+{
+    margin-right: 15px;
+}
+
+.subtitle span.company
+{
+    font-size: 10px;
+}
+
+.subtitle span:last-of-type
+{
+    float: right;
+    margin: 0;
+}
+
+article > div
+{
+    float: left;
+}
+
+article
+{
+    margin-top: 35px;
+    text-align: left;
+
+}
+
+.big-col
+{
+    width: calc((100% / 3) * 2);
+}
+
+.small-col
+{
+    width: calc(100% / 6);
+
+}
+
+.article-image img
+{
+    width: 100%;
+}
+
+.article-image span
+{
+    width: 100%;
+    float: right;
+    text-align: right;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.col-content
+{
+    padding: 10px;
+    word-break: normal;
+    text-align: justify;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.col-content p
+{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    text-indent: 1em;
+}
+
+.special-1
+{
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    text-align: center;
+    margin-top: 0;
+    font-size: 28px;
+}
+
+.special-2
+{
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 20px;
+
+}
+
+.special-3
+{
+    margin-top: 0;
+    font-family: Impact, sans-serif;
+    text-align: center;
+    font-size: 26px;
+
+}
+
+.special-4
+{
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    text-align: center;
+    font-size: 28px;
+}
+
+.content-hr
+{
+    width: 45%;
+    margin: 0 auto;
+}
+
+.continued
+{
+    text-align: center;
+    font-style: italic;
+}
+
+.article-col
+{
+    border-top: 1px solid #000;
+
+}
+
+.block-col
+{
+    column-count: 3;
+}
+
+.block-col p
+{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    text-indent: 1em;
+}
