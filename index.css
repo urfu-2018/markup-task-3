@@ -12,12 +12,6 @@
 
 @font-face
 {
-    font-family: RobotoMono;
-    src: url('./fonts/RobotoMono/');
-}
-
-@font-face
-{
     font-family: Merriweather;
     src: url('./fonts/Merriweather/Merriweather-Italic.ttf');
 }
@@ -64,7 +58,7 @@ img
 p::first-letter
 {
     font-size: 40px;
-    font-display: bold;
+    font-weight: bold;
 }
 
 .vertical
@@ -72,6 +66,11 @@ p::first-letter
     writing-mode: vertical-lr;
     text-orientation: upright;
     text-transform: uppercase;
+}
+
+p.vertical::first-letter
+{
+    font-weight: normal;
 }
 
 .advertisment
@@ -84,12 +83,6 @@ p::first-letter
 .advertisment p::first-line
 {
     font-weight: bold;
-}
-
-.advertisment p::first-letter
-{
-    font-size: 30px;
-    font-display: none;
 }
 
 .layout
@@ -139,7 +132,6 @@ p::first-letter
 .quarter-width
 {
     width: 5%;
-    font-size: 30px !important;
 }
 
 .two-column
@@ -166,18 +158,20 @@ p::first-letter
     font-family: 'Lobster', cursive;
 }
 
-#night:checked ~ .news
+.night:checked ~ main
 {
     background-color: black;
     color: white;
 }
 
-#zoom:checked ~ .news
+.zoom:checked ~ main
 {
     zoom: 1.5;
 }
 
-#style:checked ~ .news *
+.style:checked ~ main.fonts p,
+.style:checked ~ main.fonts h2,
+.style:checked ~ main.fonts h3
 {
     font-family: 'Times New Roman';
 }
