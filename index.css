@@ -1,29 +1,44 @@
-p
+.paragraph
 {
     font-family: 'Neucha', cursive;
     font-size: 1.2em;
-    text-indent: 5%;
     hyphens: auto;
 }
 
-.font-size:checked ~ .newspaper p
+.content .paragraph
+{
+    text-indent: 5%;
+}
+
+header .paragraph
+{
+    text-indent: 0;
+}
+
+.font-size:checked ~ .newspaper .paragraph
 {
     font-size: 1.4em;
 }
 
-.font:checked ~ .newspaper p
+.font:checked ~ .newspaper .paragraph
 {
     font-family: 'Cormorant Garamond', serif;
 }
 
 .dark:checked ~ .newspaper
 {
-    color: rgb(189, 188, 125);
+    color: #bdbc7d;
     background-color: #333224;
-    border-color: rgb(36, 35, 13);
+    border-color: #24230d;
 }
 
-p:first-of-type::first-letter
+.dark:checked ~ .newspaper header .rubric,
+.dark:checked ~ .newspaper .announcement
+{
+    border-color: #bdbc7d;
+}
+
+.paragraph:first-of-type::first-letter
 {
     font-weight: 500;
     font-size: 1.4em;
@@ -34,23 +49,22 @@ div
     float: left;
 }
 
-.setting
+.settings
 {
     width: 96%;
     text-align: center;
     margin: 2%;
 }
 
-.setting label
+.settings label
 {
-    border-style: solid;
-    border-width: initial;
+    border: 1px solid black;
     padding: 1%;
 }
 
-.setting label:hover
+.settings label:hover
 {
-    background: rgb(211, 206, 149);
+    background: #d3ce95;
 }
 
 .newspaper
@@ -58,9 +72,7 @@ div
     background: #faf9c6;
     color: #333224;
     padding: 1%;
-    border-style: solid;
-    border-width: initial;
-    border-color: rgb(228, 226, 139);
+    border: 2px solid #e4e28b;
 }
 
 .header
@@ -70,11 +82,6 @@ div
     float: left;
 }
 
-header p
-{
-    text-indent: 0;
-}
-
 h1
 {
     font-variant: small-caps;
@@ -82,7 +89,7 @@ h1
     font-size: 4em;
 }
 
-h3
+.content .standart-header
 {
     font-variant: small-caps;
     font-family: 'Ruslan Display', cursive;
@@ -90,20 +97,21 @@ h3
     text-align: center;
 }
 
-header .block
+header .standart-header
 {
-    border-style: solid;
-    border-width: initial;
-    width: 19%;
-    float: left;
-    text-align: center;
-}
-
-header h3
-{
+    font-variant: small-caps;
     font-family: 'Gabriela', serif;
     font-size: 1.3em;
     letter-spacing: 3px;
+    text-align: center;
+}
+
+header .rubric
+{
+    border: 2px solid black;
+    width: 19%;
+    float: left;
+    text-align: center;
 }
 
 .date
@@ -116,7 +124,7 @@ header h3
     width: 100%;
 }
 
-.content .block
+.content .rubric
 {
     width: 31%;
     float: left;
@@ -145,8 +153,7 @@ header h3
 
 .announcement
 {
-    border-style: solid;
-    border-width: initial;
+    border: 1px solid black;
     padding: 2%;
     margin: 2%;
 }
