@@ -1,0 +1,196 @@
+h1
+{
+    text-align: center;
+    margin: 5px 20px;
+    font-size: 60px;
+    font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2
+{
+    font-family: Impact;
+    margin: 5px;
+}
+
+h2::first-letter
+{
+    font-size: 40px;
+}
+
+body
+{
+    hyphens: auto;
+}
+
+hr
+{
+    border: 2px solid black;
+    margin: 15px 0;
+}
+
+.title
+{
+    width: 84%;
+    display: inline-block;
+}
+
+.top_angle
+{
+    width: 70px;
+    height: 70px;
+    border: 5px double black;
+}
+
+.left-top_angle
+{
+    float: left;
+}
+
+.right-top_angle
+{
+    float: right;
+}
+
+.right-top_angle > p
+{
+    text-align: center;
+    font: 28px bold;
+    margin: 20px 0;
+}
+
+.info_about_newspaper
+{
+    column-count: 3;
+}
+
+.info_about_newspaper > p
+{
+    font-size: 20px;
+    text-decoration-line: underline;
+    margin: 10px;
+}
+
+.info_about_issue_date
+{
+    text-align: left;
+}
+
+.info_about_edition
+{
+    text-align: center;
+}
+
+.info_about_1st_issue
+{
+    text-align: right;
+}
+
+.newspaper_content
+{
+    padding: 5px;
+    border: 3px groove black;
+    column-rule: 1px solid black;
+    column-count: 4;
+}
+
+.about_Earth_day > section
+{
+    padding: 0 5px;
+    border: 3px dashed;
+}
+
+.about_World_Water_day > section
+{
+    padding: 0 5px;
+    border: 7px ridge;
+}
+
+article > section > p:first-child::first-letter
+{
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.image_to_article
+{
+    font-style: italic;
+    text-align: center;
+}
+
+.image_to_article > img
+{
+    width: 100%;
+}
+
+.newspaper_content > .about_whiles > header > h2,
+.newspaper_content > .about_Great_Chinese_wall > header > h2
+{
+    border-bottom: 4px dotted;
+}
+
+input[value='night_mode']:checked ~ .newspaper_content
+{
+    background-color: black;
+    color: white;
+    column-rule: 1px solid white;
+    border-bottom: 4px dotted white;
+}
+
+input[value='night_mode']:checked ~ .newspaper_content
+{
+    border-bottom-color: white;
+}
+
+input[value='night_mode']:checked ~ .newspaper_content
+{
+    border-bottom-color: white;
+}
+
+input[value='day_mode']:checked ~ .newspaper_content
+{
+    background: white;
+    color: black;
+    column-rule: 1px solid black;
+    border-bottom: 4px dotted black;
+}
+
+input[value='day_mode']:checked ~ .newspaper_content
+{
+    border-bottom-color: black;
+}
+
+input[value='day_mode']:checked ~ .newspaper_content
+{
+    border-bottom-color: black;
+}
+
+input[value='Times_New_Roman_style']:checked ~ .newspaper_content
+{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input[value='Arial_style']:checked ~ .newspaper_content
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[value='small_text_size']:checked ~ .newspaper_content
+{
+    font-size: 14px;
+}
+
+input[value='middle_text_size']:checked ~ .newspaper_content
+{
+    font-size: 16px;
+}
+
+input[value='big_text_size']:checked ~ .newspaper_content
+{
+    font-size: 18px;
+}
+
+body > header
+{
+    margin-top: 50px;
+}

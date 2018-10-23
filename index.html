@@ -1,9 +1,196 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>Задача «DeLorean DMC-12»</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
 </head>
+
 <body>
+    Режим чтения:
+    <input type="radio" id="night_mode" name="reading_mode" value="night_mode">
+    <label for="night_mode">Ночной режим</label>
+    <input type="radio" id="day_mode" name="reading_mode" value="day_mode" checked="checked">
+    <label for="day_mode">Дневной режим</label>
+    <br>
+    Стиль текста:
+    <input type="radio" id="Times_New_Roman_style" name="text_style_mode" value="Times_New_Roman_style"
+        checked="checked">
+    <label for="Times_New_Roman_style">Times New Roman</label>
+    <input type="radio" id="Arial_style" name="text_style_mode" value="Arial_style">
+    <label for="Arial_style">Arial</label>
+    <br>
+    Размер шрифта:
+    <input type="radio" id="small_text_size" name="font_size_mode" value="small_text_size">
+    <label for="small_text_size">Маленький шрифт</label>
+    <input 
+        type="radio" 
+        id="middle_text_size" 
+        name="font_size_mode" 
+        value="middle_text_size" 
+        checked="checked"
+    >
+    <label for="middle_text_size">Средний шрифт</label>
+    <input type="radio" id="big_text_size" name="font_size_mode" value="big_text_size">
+    <label for="big_text_size">Большой шрифт</label>
+
+    <header>
+        <div class="left-top_angle top_angle"></div>
+        <div class="title">
+            <h1>Morning news</h1>
+        </div>
+        <div class="right-top_angle top_angle">
+            <p>№29</p>
+        </div>
+        <hr>
+        <section class="info_about_newspaper">
+            <p class="info_about_issue_date">Thursday october, 21 1965</p>
+            <p class="info_about_edition">TODAY'S EDITION</p>
+            <p class="info_about_1st_issue">Founded in 1965</p>
+        </section>
+        <hr>
+    </header>
+    <main class="newspaper_content">
+        <article class="about_whiles">
+            <header>
+                <h2 class="whiles_headline">Do whales sleep?</h2>
+            </header>
+            <section>
+                <p>
+                    Whales are mammals, so in many ways, they are just like human beings. The most important
+                    difference
+                    is that humans and whales live in different environments and whales have a special
+                    respiratory
+                    system that enables them to stay underwater for several minutes without breathing oxygen.
+                </p>
+                <figure class="image_to_article">
+                    <img src="whiles.jpg" alt="whiles">
+                    <figcaption>Black whales</figcaption>
+                </figure>
+
+                <p>For this
+                    reason, they are said to be voluntary breathers. That is, because of whales’ underwater
+                    environment, they must be conscious breathers. They think about every breath they take
+                    and come up
+                    to the surface of the water to breathe through blowholes on top of their heads.
+
+                    What is outstanding about whales is the way they can sleep. While all mammals sleep,
+                    whales cannot
+                    afford to become unconscious for long because they may drown. The only way they can sleep
+                    is by
+                    remaining partially conscious. It is believed that only one hemisphere of the whale’s
+                    brain sleeps
+                    at a time, so they rest but are never completely asleep. They can do so most probably
+                    near the
+                    surface so that they can come up for air easily.
+                </p>
+            </section>
+
+        </article>
+        <article class="about_Earth_day">
+            <header>
+                <h2 class="Earthday_headline">Earth Day</h2>
+            </header>
+            <section>
+                <p>
+                    Many countries around the world celebrate Earth Day. It is a day that is meant to raise
+                    awareness
+                    and appreciation about the Earth’s natural environment.
+
+                    The first Earth Day was held in the USA. It was founded by United States Senator Gaylord
+                    Nelson as
+                    an environmental teach-in – a sort of general educational forum or seminar. That was on
+                    April 22,
+                    1970.
+                    While this first Earth Day was focused on the United States, an organization launched by
+                    Denis
+                    Hayes, who was the original national coordinator in 1970, took it international in 1990
+                    and
+                    organized events in 141 nations.
+
+                    Earth Day is now coordinated globally by the Earth Day Network, and is celebrated in more
+                    than 175
+                    countries every year. Numerous communities celebrate Earth Week, an entire week of
+                    activities
+                    focused on environmental issues. In 2009, the United Nations designated April 22
+                    International
+                    Mother Earth Day.
+                </p>
+            </section>
+        </article>
+        <article class="about_Great_Chinese_wall">
+            <header>
+                <h2 class="China_headline">The Great wall of China</h2>
+            </header>
+            <section class="Chinese_wall_content">
+                <p>The Great Wall of China, one of the greatest wonders of the world, was first built between
+                    220–206
+                    BC. In fact, it began as independent walls for different states when it was first built,
+                    and did
+                    not become the “Great” wall until the Qin Dynasty. Emperor Qin Shihuang succeeded in his
+                    effort to
+                    have the walls joined together to serve as fortification to protect the northern borders
+                    of the
+                    Chinese Empire from invasion. Afterwards it was rebuilt and maintained over the years,
+                    between the
+                    5th century BC and the 16th century.
+                </p>
+                <figure class="image_to_article">
+                    <img src="China_wall.jpg" alt="The Great wall of China">
+                    <figcaption>The Great wall of China</figcaption>
+                </figure>
+                <p>
+                    One of the myths associated with the Great Wall of China is that it is the only man-made
+                    structure
+                    that can be seen from the Moon with the naked eye. The legend originated in Richard
+                    Halliburton’s
+                    1938 book Second Book of Marvels. However, this myth is simply not true. Richard
+                    Halliburton’s
+                    claim was contradicted by astronauts Neil Armstrong and Yang Liwei. A more plausible
+                    assumption
+                    would be to say that the Great Wall can be visible from a low orbit of the Earth which is
+                    not
+                    unique in this regard as many other artificial constructions can be seen from that
+                    height.</p>
+            </section>
+        </article>
+        <article class="about_World_Water_day">
+            <header>
+                <h2 class="Waterday_headline">World Water day</h2>
+            </header>
+            <section>
+                <p>
+                    World Water Day is observed on March 22 since 1993. It was declared as such by the United
+                    Nations
+                    General Assembly. This day was first formally proposed in Agenda of the 1992 United
+                    Nations
+                    Conference on Environment and Development (UNCED) in Rio de Janeiro, Brazil. Observance
+                    began in
+                    1993 and has grown significantly ever since.
+
+                    The UN and its member nations devote this day to implementing UN recommendations and
+                    promoting
+                    concrete activities within their countries regarding the world’s water resources. Each
+                    year, one of
+                    various UN agencies involved in water issues takes the lead in promoting and coordinating
+                    international activities for World Water Day.
+
+                    In addition to the UN member states, a number of NGOs promoting clean water and
+                    sustainable aquatic
+                    habitats have used World Day for Water as a time to focus public attention on the
+                    critical water
+                    issues of our era. Every three years since 1997, the World Water Council has drawn
+                    thousands to
+                    participate in its World Water Forum during the week of World Day for Water.
+                    Participating agencies
+                    and NGOs have highlighted issues such as a billion people being without access to safe
+                    water for
+                    drinking and the role of gender in family access to safe water.
+                </p>
+            </section>
+        </article>
+    </main>
 </body>
+
 </html>
