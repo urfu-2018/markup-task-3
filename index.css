@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Diplomata');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body
+{
+    padding: 5px;
+    background: url('img/bg.jpg') repeat;
+    text-align: justify;
+    text-shadow: 0 0 2px #000;
+}
+
+h2
+{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+}
+
+h3
+{
+    line-height: 25px;
+    font-style: italic;
+}
+
+p
+{
+    font-size: 12px;
+}
+
+p:first-letter
+{
+    font-size: 15px;
+    font-family: 'Diplomata', cursive;
+    margin-right: 3px;
+}
+
+article
+{
+    vertical-align: top;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+}
+
+section
+{
+    padding: 0 10px;
+}
+
+img
+{
+    width: 100%;
+    opacity: .78;
+}
+
+h4
+{
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 18px;
+    margin: 0;
+}
+
+header h1
+{
+    font-family: 'Diplomata', cursive;
+    font-size: 50px;
+    text-align: center;
+    border-bottom: 3px #000 solid;
+    padding-bottom: 15px;
+}
+
+.left-block div
+{
+    -webkit-column-break-inside: avoid;
+}
+
+.left-block
+{
+    flex-grow: 1;
+    column-count: 2;
+    border-right: 3px #000 double;
+}
+
+.right-block
+{
+    flex-grow: 1;
+    border-bottom: 3px #000 double;
+}
+
+.right-block p
+{
+    hyphens: auto;
+}
+
+.right-block div:first-child
+{
+    column-count: 2;
+    column-rule: 3px dotted #000;
+    border: 2px solid #000;
+    padding: 5px;
+}
+
+.vertical-text
+{
+    writing-mode: vertical-rl;
+    float: left;
+    text-orientation: upright;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+.big-text
+{
+    text-transform: uppercase;
+    column-span: all;
+    letter-spacing: 15px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.image-block
+{
+    margin-top: 10px;
+    text-align: right;
+}
+
+.three-column-block
+{
+    column-count: 3;
+}
+
+.three-column-block h3
+{
+    column-span: all;
+}
+
+.quote
+{
+    font-style: italic;
+}
+
+.quote:before
+{
+    content: '\00ab';
+}
+
+.quote:after
+{
+    content: '\00bb';
+}
