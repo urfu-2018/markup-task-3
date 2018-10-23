@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Ewert');
+
+.logo1
+{
+    height: 50px;
+    float: left;
+}
+
+.logo2
+{
+    height: 50px;
+    float: right;
+}
+
+h1,
+h2
+{
+    text-align: center;
+}
+
+.sideRight
+{
+    text-align: right;
+}
+
+.two-column
+{
+    column-count: 2;
+}
+
+main > .two-column
+{
+    column-rule: 1px solid;
+}
+
+article
+{
+    break-after: column;
+}
+
+.vertical
+{
+    float: left;
+    writing-mode: tb-rl;
+}
+
+.news
+{
+    width: 90%;
+    margin: auto;
+}
+
+.imgHolder
+{
+    text-indent: 0;
+    font-style: italic;
+    text-align: center;
+}
+
+.imgHolder img
+{
+    width: 250px;
+}
+
+article p
+{
+    text-indent: 2em;
+}
+
+article.two-column h2
+{
+    column-span: all;
+}
+
+.news p:first-child
+{
+    break-after: column;
+}
+
+.wrapper
+{
+    background-image: url(backgroung.jpg);
+    color: black;
+    line-height: 1.5;
+}
+
+input[class='inverted']:checked ~ .wrapper
+{
+    background-image: url(bakground-inverted.jpg);
+    color: white;
+}
+
+input[class='small-size']:checked ~ .wrapper
+{
+    font-size: small;
+}
+
+input[class='medium-size']:checked ~ .wrapper
+{
+    font-size: medium;
+}
+
+input[class='big-size']:checked ~ .wrapper
+{
+    font-size: x-large;
+}
+
+input[class='arial']:checked ~ .wrapper
+{
+    font-family: sans-serif;
+}
+
+input[class='times']:checked ~ .wrapper
+{
+    font-family: serif;
+}
+
+input[class='monospaced']:checked ~ .wrapper
+{
+    font-family: monospace;
+}
+
+h1
+{
+    word-spacing: 15px;
+    font: small-caps 50px 'Ewert';
+}
+
+ul
+{
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+li::first-letter
+{
+    color: gray;
+    font-size: 130%;
+    font-weight: bold;
+}
+
+li
+{
+    margin-top: 10px;
+}
+
+.marker
+{
+    font-style: italic;
+    font-size: 110%;
+    text-decoration: underline;
+}
+
+.phone::before
+{
+    content: 'Тел.: ';
+}
