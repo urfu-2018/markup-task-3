@@ -7,5 +7,5 @@
 .night:checked ~ .newspaper .box,
 .night:checked ~ .newspaper .underline
 {
-    border-color:#ffe;
+    border-color: #ffe;
 }

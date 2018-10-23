@@ -1,11 +1,11 @@
 @font-face
 {
-    font-family: "Old";
+    font-family: 'Old';
     src: url(../fonts/old.ttf);
 }
 
 .font:checked ~ .newspaper,
 .font:checked ~ .title
 {
-    font-family: "Old";
+    font-family: 'Old';
 }
