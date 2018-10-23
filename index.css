@@ -1,0 +1,168 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+.checkbox
+{
+    margin: 15px 5px 0 15px;
+}
+
+.checkbox__text
+{
+    margin-right: 15px;
+}
+
+.main
+{
+    border: 4px double;
+    margin: 15px;
+    font-size: 14px;
+    border-color: #000;
+    color: #000;
+    background: #fff;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.size:checked ~ .main
+{
+    font-size: 20px;
+}
+
+.color:checked ~ .main
+{
+    color: #fff;
+    border-color: #fff;
+    background: #000;
+}
+
+.font:checked ~ .main
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header
+{
+    padding: 30px 15px 20px;
+}
+
+.header__row
+{
+    display: block;
+    width: 100%;
+}
+
+.header__row_center
+{
+    text-align: center;
+}
+
+.header__row_right
+{
+    text-align: right;
+}
+
+.header__row h1
+{
+    display: inline-block;
+    margin: 0;
+    font-size: 4em;
+    text-transform: uppercase;
+}
+
+.header__year
+{
+    display: inline-block;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-size: .8em;
+    margin-bottom: -7px;
+}
+
+.header__date
+{
+    font-size: 1.2em;
+    border-top: 1px solid;
+    border-color: inherit;
+    padding-top: 15px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.content
+{
+    display: block;
+    width: 100%;
+    padding: 0 15px;
+    column-count: 3;
+    column-rule: 1px solid;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.content__column:last-child .article:last-child
+{
+    border: none;
+}
+
+.article
+{
+    margin-bottom: 50px;
+    border-bottom: 1px solid;
+}
+
+.article h2
+{
+    display: inline-block;
+    width: 100%;
+    margin: 30px 0 15px;
+    font-size: 2.5em;
+    color: inherit;
+    text-transform: uppercase;
+}
+
+.article:first-child h2
+{
+    margin: 0 0 15px;
+}
+
+.article p
+{
+    font-size: 1.1em;
+    color: inherit;
+    margin: 0 0 15px;
+}
+
+.article p::first-letter
+{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.article blockquote
+{
+    border-left: 5px solid #666;
+    padding: 0 30px;
+    margin: 25px 15px;
+    font-size: 1.2em;
+}
+
+.article figure
+{
+    margin: 15px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.article img
+{
+    max-width: 100%;
+    width: auto;
+    margin-bottom: 15px;
+}
+
+.article figcaption
+{
+    font-size: 1em;
+}
