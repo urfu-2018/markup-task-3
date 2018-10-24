@@ -29,12 +29,6 @@ h3 /*0 0 1*/
     text-overflow: ellipsis;
 }
 
-h4 /*0 0 1*/
-{
-    text-align: center;
-    font-style: oblique;
-}
-
 aside /*0 0 1*/
 {
     font-family: StudioScriptCTT, cursive;
@@ -74,8 +68,15 @@ a /*0 0 1*/
     color: #6698ff;
 }
 
-article,
-section /*0 0 2*/
+h4, /*0 0 2*/
+h5
+{
+    text-align: center;
+    font-style: oblique;
+}
+
+article, /*0 0 2*/
+section
 {
     column-count: 2;
     column-rule: 1px solid #777575;
