@@ -1,109 +1,171 @@
-h1
+@font-face
+{
+    font-family: StudioScriptCTT;
+    font-display: block;
+    src: url('StudioScriptCTT.eot');
+    src: url('StudioScriptCTT.woff')  format('woff');
+}
+
+h1 /*0 0 1*/
 {
     letter-spacing: 2.5px;
     text-align: center;
     text-shadow: 3px 3px 7px gray;
 }
 
-small
-{
-    font-style: oblique;
-    font-family: serif;
-    line-height: 20px;
-}
-
-h4
-{
-    text-align: center;
-    font-style: oblique;
-}
-
-aside
-{
-    font-family: fantasy;
-    background: #f0f0f0;
-    padding: 20px;
-    word-spacing: 5px;
-}
-
-h2
+h2 /*0 0 1*/
 {
     font-variant: small-caps;
     column-span: all;
     text-align: center;
-    line-height: 10px;
 }
 
-h3
+h3 /*0 0 1*/
 {
-    background: #f0f0f0;
     font-style: italic;
     text-align: center;
+    border: 1px solid;
+    display:block;
     padding: 20px;
-    width: 150px;
-    border: 1px solid
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.preview
+h4 /*0 0 1*/
 {
-    background: #cfcfcf;
-    padding: 20px;
-    font-size: 13px;
-}
-
-img
-{
-    width: 260px;
-}
-
-.information
-{
+    text-align: center;
     font-style: oblique;
-    font-family: serif;
-    font-size: 13px;
+}
+
+aside /*0 0 1*/
+{
+    font-family: StudioScriptCTT, cursive;
+    background: #f0f0f0;
+    padding: 20px;
+    word-spacing: 5px;
+    font-size: 20px;
+    hyphens: auto;
+}
+
+figure /*0 0 1*/
+{
+    margin: -15px 0px 0px 0px;
     text-align: center;
 }
 
-span
+img /*0 0 1*/
+{
+    width: 100%;
+}
+
+figcaption /*0 0 1*/
+{
+    font-family: Courier, monospace;
+}
+
+span /*0 0 1*/
 {
     font-size: 13px;
     font-weight: bold;
 }
 
-.main_text,
-.text
+a /*0 0 1*/
 {
-    text-indent: 30px;
-    font-family: cursive;
-    font-size: 11px;
-}
-
-.main_text::first-letter
-{
-    font-size: 25px;
-}
-
-figure
-{
-    margin: 20px;
-    text-decoration: underline;
+    text-decoration: none;
+    color: #6698ff;
 }
 
 article,
-section
+section /*0 0 2*/
 {
     column-count: 2;
     column-rule: 1px solid #777575;
 }
 
-a
+header p /*0 0 2*/
 {
-    text-decoration: none;
+    font-style: oblique;
+    font-family: serif;
+    font-size: 13px;
+    text-align: center;
 }
 
-.headline
+.headline /*0 1 0*/
 {
     width: 100px;
     align-content: center;
     column-span: all;
+}
+
+.preview /*0 1 0*/
+{
+    background: #a5a5a5;
+    padding: 20px;
+    font-size: 13px;
+    text-align: center;
+    display:block;
+    hyphens: auto;
+}
+
+.main_text::first-letter /*0 1 1*/
+{
+    font-size: 25px;
+}
+
+a:hover /*0 1 1*/
+{
+    color: #ff6698;
+}
+
+a:visited /*0 1 1*/
+{
+    color: #ffb366;
+}
+
+a:focus /*0 1 1*/
+{
+    color: #98ff66;
+}
+
+.main_text,
+.text /*0 2 0*/
+{
+    text-indent: 30px;
+    font-family: cursive;
+    font-size: 11px;
+    hyphens: auto;
+}
+
+.reverse:checked ~ *, /*0 4 0*/
+.reverse:checked ~ main article aside
+{
+    background: black;
+    color: white;
+}
+
+.change:checked ~ *, /*0 10 0*/
+.change:checked ~ header p,
+.change:checked ~ main article aside,
+.change:checked ~ main article section p,
+.change:checked ~ main article section p span
+{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.increase:checked ~ *, /*0 10 0*/
+.increase:checked ~ header p,
+.increase:checked ~ main article aside,
+.increase:checked ~ main article section p,
+.increase:checked ~ main article section p span
+{
+    font-size: 120%;
+}
+
+.reduce:checked ~ *, /*0 10 0*/
+.reduce:checked ~ header p,
+.reduce:checked ~ main article aside,
+.reduce:checked ~ main article section p,
+.reduce:checked ~ main article section p span
+{
+    font-size: 80%;
 }
