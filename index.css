@@ -1,0 +1,107 @@
+body 
+
+{
+    background: #ebd2b5;
+}
+
+.газета
+
+{
+    width: 900px;
+    height: 1000px;
+    background: #cca474;
+}
+
+header
+
+{
+    font-family: Palatino Linotype;
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+td
+
+{
+    width: 450px;
+    vertical-align: top;
+}
+
+.дата
+
+{
+    text-align: right;
+}
+
+.первый
+
+{
+    width: 300px;
+    border-right: 2px solid black;
+
+}
+
+.первый div
+
+{
+    width: 290px;
+    height: 100px;
+    border: 2px solid black;
+    font-weight: bold;
+    font-size: 110%;
+    font-family: cursive;
+}
+
+.газета p::first-letter
+
+{
+    font-weight: bold;
+    font-size: 110%;
+    font-family: Verdana;
+}
+
+.подзаголовок
+
+{
+    font-family: Tempus Sans ITC;
+    font-size: 110%;
+    font-style: oblique;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.второй 
+
+{
+    border-right: 2px solid black;
+    width: 300px;
+
+}
+
+.pic
+
+{
+    width: 300px;
+    height: 220px;
+}
+
+.третий 
+
+{
+    width: 300px;
+}
+
+.вертикальный
+
+{
+    padding: 10px;
+    margin: 10px;
+    float: left;
+    width: .5em;
+    word-wrap: break-word;
+    border: 1px solid black;
+    font-family: 'Wingdings';
+    font-weight: bold;
+}
