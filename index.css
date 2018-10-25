@@ -1,3 +1,25 @@
+@font-face
+{
+    font-family: 'garamondnormal';
+    src: url('./garamond.woff2') format('woff2'), url('./garamond.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'brushtypenormal';
+    src: url('./brushtype.woff2') format('woff2'), url('./brushtype.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Comic Sans MS', arial;
+    src: url('./comic.ttf') format('truetype');
+}
+
 body
 {
     margin: 0;
@@ -131,7 +153,7 @@ input[id='light-mode-checkbox']:checked ~ main div article.article-4
 input[id='font-mode-checkbox']:checked ~ main div article,
 input[id='font-mode-checkbox']:checked ~ main footer
 {
-    font: normal 700 15px 'Helvetica', sans-serif;
+    font-family: 'Comic Sans MS', arial;
 }
 
 input[id='size-mode-checkbox']:checked ~ main div article,
@@ -145,7 +167,7 @@ input[id='size-mode-checkbox']:checked ~ main footer
     padding-top: 30px;
     padding-bottom: 3px;
     text-align: center;
-    border-bottom: solid #000;
+    border-bottom: 1px solid #000;
 }
 
 .newspaper-article
@@ -187,21 +209,23 @@ input[id='size-mode-checkbox']:checked ~ main footer
     padding: 20px;
     border-top: solid #000;
     border-bottom: 1px solid #000;
-    font: normal 700 15px  'Comic Sans MS', 'cursive';
+    font-family: 'garamondnormal';
     column-rule: 1px solid #000;
     column-gap: 30px;
     text-align: justify;
 }
 
-.content-wrapper p::first-letter
+.content-wrapper p::first-letter :not(.article-1-quotesf)
 {
-    font: small-caps normal 700 30px / 20px serif;
+    font-family: 'brushtypenormal';
+    font-size: 30px;
     line-height: 1;
 }
 
-.content-wrapper header
+.content-wrapper article header
 {
-    font: normal 700 25px Arial, sans-serif;
+    font-family: 'brushtypenormal';
+    font-size: 30px;
     text-align: center;
 }
 
@@ -276,7 +300,7 @@ figcaption
 {
     float: right;
     width: 200px;
-    font: italic 700 20px  'Comic Sans MS', 'cursive';
+    font: italic 700 20px Georgia, serif;
 }
 
 .quotesf-article3::before
@@ -324,7 +348,8 @@ figcaption
     padding: 5px;
     border: solid #000;
     column-count: 2;
-    font: normal 700 15px  'Courier New', 'monospace';
+    font-family: 'garamondnormal';
+    font-weight: 700;
 }
 
 .footer-text-wrapper
