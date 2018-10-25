@@ -5,7 +5,6 @@ body
 
 .wrapper-tools-pannel
 {
-    width: 1300px;
     height: 50px;
 }
 
@@ -56,6 +55,13 @@ body
     left: 120px;
 }
 
+input[id='light-mode-checkbox']:hover + label,
+input[id='size-mode-checkbox']:hover + label,
+input[id='font-mode-checkbox']:hover + label
+{
+    cursor: pointer;
+}
+
 input[id='font-mode-checkbox'],
 input[id='size-mode-checkbox'],
 input[id='light-mode-checkbox']
@@ -76,28 +82,28 @@ input[id='font-mode-checkbox']:checked + label
 
 input[id='light-mode-checkbox'] + label
 {
-    content: url(https://png.icons8.com/ios/1600/moon-symbol.png);
+    content: url('https://png.icons8.com/ios/1600/moon-symbol.png');
 }
 
 input[id='light-mode-checkbox']:checked + label
 {
-    content: url(http://thedollz.co.uk/wp-content/uploads/2014/12/half.png);
+    content: url('http://thedollz.co.uk/wp-content/uploads/2014/12/half.png');
 }
 
 input[id='size-mode-checkbox'] + label
 {
-    content: url(https://mbtskoudsalg.com/images/plus-icon-png-white-7.png);
+    content: url('https://mbtskoudsalg.com/images/plus-icon-png-white-7.png');
 }
 
 input[id='size-mode-checkbox']:checked + label
 {
-    content: url(https://cdn4.iconfinder.com/data/icons/mathematics-doodle-1/48/3-512.png);
+    content: url('https://cdn4.iconfinder.com/data/icons/mathematics-doodle-1/48/3-512.png');
 }
 
 input[id='font-mode-checkbox'] + label,
 input[id='font-mode-checkbox']:checked + label
 {
-    content: url(https://png2.kisspng.com/20171216/c8b/5a3529bcba95d6.8753622915134335327643.png);
+    content: url('https://png2.kisspng.com/20171216/c8b/5a3529bcba95d6.8753622915134335327643.png');
 }
 
 input[id='light-mode-checkbox']:checked ~ .wrapper
@@ -122,22 +128,16 @@ input[id='light-mode-checkbox']:checked ~ main div article.article-4
     column-rule-color: #fff;
 }
 
-input[id='size-mode-checkbox']:checked ~ main div article,
-input[id='size-mode-checkbox']:checked ~ main footer
-{
-    font-size: 1.2em;
-}
-
 input[id='font-mode-checkbox']:checked ~ main div article,
 input[id='font-mode-checkbox']:checked ~ main footer
 {
     font: normal 700 15px 'Helvetica', sans-serif;
 }
 
-.wrapper
+input[id='size-mode-checkbox']:checked ~ main div article,
+input[id='size-mode-checkbox']:checked ~ main footer
 {
-    background-color: #fff;
-    font: #000;
+    font-size: 1.2em;
 }
 
 .newspaper-article-wrapper
@@ -162,7 +162,7 @@ input[id='font-mode-checkbox']:checked ~ main footer
 
 .header-wrapper p
 {
-    margin: 0%;
+    margin: 0;
     padding: 10px;
 }
 
@@ -186,7 +186,7 @@ input[id='font-mode-checkbox']:checked ~ main footer
     column-count: 3;
     padding: 20px;
     border-top: solid #000;
-    border-bottom: solid #000;
+    border-bottom: 1px solid #000;
     font: normal 700 15px  'Comic Sans MS', 'cursive';
     column-rule: 1px solid #000;
     column-gap: 30px;
@@ -197,7 +197,6 @@ input[id='font-mode-checkbox']:checked ~ main footer
 {
     font: small-caps normal 700 30px / 20px serif;
     line-height: 1;
-    float: top;
 }
 
 .content-wrapper header
@@ -269,7 +268,7 @@ figcaption
 
 .img-article3-wrapper
 {
-    padding: 0;
+    padding-left: 10px;
     margin: 0;
 }
 
@@ -343,5 +342,5 @@ figcaption
 .footer-img-wrapper
 {
     position: relative;
-    right: -300px;
+    right: -100px;
 }
