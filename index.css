@@ -3,40 +3,57 @@
     src: url('https://fonts.googleapis.com/css?family=Abril+Fatface|Amatic+SC|EB+Garamond|Patua+One|Srisakdi');
 }
 
+.black:checked ~ main
+{
+    background-color: #000;
+    color: #fff;
+}
+
 body
 {
     width: 99%;
+    white-space: nowrap;
+    color: #000;
 }
 
 main
 {
     column-count: 4;
     column-rule: 1px solid #000;
+    white-space: normal;
 }
 
 .title
 {
     text-align: center;
+    white-space: normal;
 }
 
-.title h1
+.title .title
 {
     font-family: 'Abril Fatface', serif;
     font-style: normal;
+    white-space: normal;
 }
 
-.title p
+.text-introduction
 {
     font-family: 'Amatic SC', serif;
     font-style: oblique;
+    white-space: normal;
 }
 
-article p
+.text-Debut-album,
+.text-King-of-glam-rock,
+.text-Patriarch-of-modern-music,
+.text-Ziggy-Stardaust,
+.text-with-column
 {
     font-family: 'EB Garamond', serif;
     font-style: italic;
-    margin: 2px;
     padding: 2px;
+    white-space: normal;
+    margin: 0 auto;
     /*font-size: 18px;*/
 }
 
@@ -48,7 +65,7 @@ article p::first-letter
     font-style: italic;
 }
 
-article h2
+.subtitle
 {
     font-family: 'Patua One', cursive;
     font-style: normal;
@@ -56,6 +73,7 @@ article h2
     border-bottom: 3px double #000;
     padding: 10px 0;
     text-align: center;
+    white-space: normal;
 }
 
 .quote:before
@@ -93,40 +111,50 @@ article h2
     padding: 15px 0 0 5px;
 }
 
-.introduction p
+.text-introduction
 {
     text-align: center;
 }
 
-.introduction img[alt='David Bowie']
+.King-of-glam-rock img[alt='David-gif']
 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 200px;
-    margin-left: 26%;
+    display: block;
+    margin: auto;
+    height: 220px;
 }
 
-.Debut-album section
+.introduction img[alt='David Bowie']
 {
-    margin: 10px;
+    display: block;
+    width: auto;
+    margin: auto;
+    height: 250px;
 }
 
 .Debut-album img[alt='Album']
 {
+    display: block;
     width: 100%;
-    height: 100%;
+    margin: auto;
 }
 
-.Debut-album section:last-child
+.column-with-img
+{
+    column-count: 2;
+    margin: 10px;
+}
+
+.text-with-column
 {
     column-count: 2;
 }
 
-.King-of-glam-rock img[alt$='gif']
+/*.King-of-glam-rock img[alt$='gif']
 {
-    margin-left: 40px;
-}
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+}*/
 
 .vertical
 {
