@@ -1,4 +1,4 @@
-h1
+.title
 {
     font: 70px 'Lobster', cursive;
     text-align: center;
@@ -31,20 +31,30 @@ hr
     text-transform: uppercase;
 }
 
-.main
+table.main
 {
-    display: flex;
     font-family: 'Gabriela', serif;
+    border-spacing: 0;
 }
 
-.flex1
+td.align-top
 {
-    flex: 1;
+    vertical-align: top;
 }
 
-.flex2
+.column-1
 {
-    flex: 2;
+    width: 40%;
+}
+
+.column-2
+{
+    width: 20%;
+}
+
+.column-3
+{
+    width: 40%;
 }
 
 .columns2
@@ -53,16 +63,10 @@ hr
     column-rule: 2px solid black;
 }
 
-h2
+.article-title
 {
     font: 2em 'Press Start 2P', cursive;
     text-align: center;
-}
-
-section p,
-article p
-{
-    hyphens: auto;
 }
 
 article p:first-of-type:first-letter
@@ -71,16 +75,23 @@ article p:first-of-type:first-letter
     font-family: 'Press Start 2P', cursive;
 }
 
-article,
-aside
+td
 {
-    padding: 5px;
+    padding: 0 5px;
     border-right: solid black 2px;
 }
 
-.in-text-img-right
+.image-inline
 {
-    float: right;
+    display: inline;
+}
+
+.vertical-text
+{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    display: inline;
+    text-align: center;
 }
 
 .quote
@@ -94,11 +105,6 @@ aside
 .inner-quote
 {
     font-family: 'Mistral', serif;
-}
-
-.no-wrap
-{
-    white-space: nowrap;
 }
 
 .quote-source
