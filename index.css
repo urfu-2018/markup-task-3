@@ -1,6 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Jura:300|Russo+One|Spectral+SC&subset=cyrillic);
-@import url(https://fonts.googleapis.com/css?family=Seymour+One);
 @import url(https://fonts.googleapis.com/css?family=Ruslan+Display&subset=cyrillic);
+
+@font-face  {
+    font-family: 'Seymour One';
+    src: local('SeymourOne'),
+        url('fonts/Seymour_One/SeymourOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Pacifico';
+    src: local('Pacifico Regular'), local('Pacifico-Regular'),
+        url('fonts/Pacifico/Pacifico-Regular.woff') format('woff'),
+        url('fonts/Pacifico/Pacifico-Regular.ttf') format('truetype');
+}
 
 :root
 {
@@ -209,7 +221,8 @@ blockquote p::after
 
 .article-css h3
 {
-    font-style: italic;
+    font-family: 'Pacifico', cursive;
+    font-weight: 200;
 }
 
 figure
