@@ -199,9 +199,7 @@ blockquote p::after
 
 .quote-caption cite
 {
-    font-weight: normal;
     text-decoration: underline;
-    color: black;
 }
 
 .article-css h2
