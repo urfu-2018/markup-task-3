@@ -1,11 +1,12 @@
 @font-face
 {
     font-family: 'Marck Script';
-    src: url(MarckScript-Regular.ttf);
+    src: url(MarckScript-Regular.woff2) format('woff2');
 }
 
 body
 {
+    min-width: 1000px;
     background-color: #000;
 }
 
@@ -94,8 +95,7 @@ img
 .caption
 {
     text-align: center;
-    font: 20px 'Srisakdi';
-    font-weight: 900;
+    font: 900 20px 'Srisakdi';
 }
 
 .news p:nth-of-type(1)
