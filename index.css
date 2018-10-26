@@ -240,8 +240,8 @@ figcaption
 
 figure img
 {
-    width: 100%;
-    object-fit: fill;
+    display: block;
+    margin: auto;
 }
 
 .article-fish figure
