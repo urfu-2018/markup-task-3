@@ -1,73 +1,61 @@
 @font-face
 {
-    font-family: MainHeaderFont;
-    src: url(fonts/Molot.otf) format('opentype');
+    font-family: Molot;
+    src: url(fonts/Molot.woff) format('woff');
 }
 
 @font-face
 {
-    font-family: UnderMainHeaderFont;
-    src: url(fonts/Heuristica-Regular.otf) format('opentype');
+    font-family: Heuristica-Regular;
+    src: url(fonts/Heuristica-Regular.woff) format('woff');
 }
 
 @font-face
 {
-    font-family: TextContentHeaderFont;
-    src: url(fonts/td-neumann.otf) format('opentype');
+    font-family: td-neumann;
+    src: url(fonts/td-neumann.woff) format('woff');
 }
 
 @font-face
 {
-    font-family: NewspaperInfoLargeHeaderFont;
-    src: url(fonts/texgyreschola-regular.otf) format('opentype');
+    font-family: texgyreschola-regular;
+    src: url(fonts/texgyreschola-regular.woff) format('woff');
 }
 
 @font-face
 {
-    font-family: NewspaperInfoPersonHeaderFont;
-    src: url(fonts/Forum-Regular.otf) format('opentype');
+    font-family: Forum-Regular;
+    src: url(fonts/Forum-Regular.woff) format('woff');
 }
 
 @font-face
 {
-    font-family: SummaryInfoFont;
-    src: url(fonts/Arsenal-Regular.otf) format('opentype');
+    font-family: Arsenal-Regular;
+    src: url(fonts/Arsenal-Regular.woff) format('woff');
 }
 
 @font-face
 {
-    font-family: RightSideTextHeaderFont;
-    src: url(fonts/Kelvinch-Bold.otf) format('opentype');
+    font-family: Kelvinch-Bold;
+    src: url(fonts/Kelvinch-Bold.woff) format('woff');
 }
 
 @font-face
 {
-    font-family: NewspaperNameFont;
-    src: url(fonts/20db.otf) format('opentype');
+    font-family: db20;
+    src: url(fonts/db20.woff) format('woff');
 }
 
 @font-face
 {
-    font-family: RightSideTextHeaderFont;
-    src: url(fonts/Kelvinch-Bold.otf) format('opentype');
+    font-family: Merriweather-Light;
+    src: url(fonts/Merriweather-Light.woff) format('woff');
 }
 
 @font-face
 {
-    font-family: TextContentAppealFont;
-    src: url(fonts/Merriweather-Bold.otf) format('opentype');
-}
-
-@font-face
-{
-    font-family: TextContentAppealFontLight;
-    src: url(fonts/Merriweather-Light.otf) format('opentype');
-}
-
-@font-face
-{
-    font-family: TextMessageFont;
-    src: url(fonts/nimbusmono-regular.otf) format('opentype');
+    font-family: nimbusmono-regular;
+    src: url(fonts/nimbusmono-regular.woff) format('woff');
 }
 
 body
@@ -98,7 +86,7 @@ h5
 header h2
 {
     margin: -12px 0;
-    font: 53px 'MainHeaderFont', sans-serif;
+    font: 53px 'Molot', sans-serif;
     word-spacing: 8px;
     letter-spacing: 11px;
     text-transform: uppercase;
@@ -106,8 +94,8 @@ header h2
 
 header h3
 {
-    margin: -7px 0;
-    font: 29px 'UnderMainHeaderFont', serif;
+    margin: 6px 0 -10px;
+    font: 28px 'Heuristica-Regular', serif;
 }
 
 figure
@@ -176,7 +164,7 @@ figure
 .main-left-side .text-content-header
 {
     margin: -2px 0;
-    font: bolder 22px 'TextContentHeaderFont', 'sans-serif';
+    font: bolder 22px 'td-neumann', 'sans-serif';
     text-align: left;
     word-spacing: 4px;
 }
@@ -223,7 +211,7 @@ figure
 
 .summary-info > p
 {
-    font: 16px 'SummaryInfoFont', sans-serif;
+    font: 17px 'Arsenal-Regular', sans-serif;
 }
 
 .summary-info p > span
@@ -280,7 +268,7 @@ figure
 .right-side-header-info .headers > h4
 {
     margin: 20px 0 8px;
-    font: bolder 35px 'NewspaperInfoLargeHeaderFont', serif;
+    font: bolder 35px 'texgyreschola-regular', serif;
     word-spacing: 7px;
     letter-spacing: 6px;
     line-height: 1em;
@@ -295,7 +283,7 @@ figure
 .right-side-header-info .headers h5 > span
 {
     float: left;
-    font: 300 40px 'NewspaperInfoPersonHeaderFont', serif;
+    font: 300 40px 'Forum-Regular', serif;
     font-style: italic;
     word-spacing: 10px;
 }
@@ -331,7 +319,7 @@ figure
 .right-side-header-info .newspaper-info .newspaper-name h3
 {
     margin-top: -20px;
-    font-family: 'NewspaperNameFont', sans-serif;
+    font-family: 'db20', sans-serif;
     vertical-align: top;
     line-height: 1.4em;
 }
@@ -377,13 +365,13 @@ figure
 {
     margin: 10px 0;
     text-align: center;
-    font: 30px 'RightSideTextHeaderFont', serif;
+    font: 30px 'Kelvinch-Bold', serif;
     letter-spacing: 16px;
 }
 
 .right-side-text-content h5
 {
-    font-family: 'TextContentAppealFontLight', serif;
+    font-family: 'Merriweather-Light', serif;
     letter-spacing: 3px;
 }
 
@@ -421,7 +409,7 @@ figure
 
 .right-side-info .message .message-content .message-text-container
 {
-    font-family: 'TextMessageFont', serif;
+    font-family: 'nimbusmono-regular', serif;
     line-height: 12px;
 }
 
@@ -429,7 +417,7 @@ figure
 {
     text-align: right;
     font-weight: bold;
-    padding-left: 100px;
+    padding-left: 90px;
 }
 
 .main-right-side .footer-summary
