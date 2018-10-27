@@ -1,9 +1,15 @@
+@font-face
+{
+    font-family: Bankay;
+    src: url('fonts/Bankay.woff2');
+}
+    
 body
 {
-    font: 14px'Open Sans', sans-serif;
+    font: 14px 'Open Sans', sans-serif;
     color: #1a1a1a;
     background-color: #e6f3fe;
-    min-width: 1000px;
+    min-width: 1100px;
     text-transform: uppercase;
 }
 
@@ -51,7 +57,8 @@ body
     padding: 15px;
     vertical-align: middle;
     border: 5px double;
-    font: 100 100px 'Plaster', cursive;
+    font: 130px 'Bankay';
+    line-height: 130px;
     text-align: center;
 }
 
@@ -160,12 +167,16 @@ body
 
 .text-column
 {
-    display: block;
-    text-align: center;
-    white-space: pre-line;
+    margin: 10px auto;
     text-transform: uppercase;
     font-size: 16px;
-    margin: 15px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+.letter
+{
+    writing-mode: horizontal-tb;
 }
 
 .future
@@ -205,7 +216,9 @@ body
 .two-column > img,
 .one-column > img
 {
-    width: 100%;
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .photo-signature
@@ -270,7 +283,8 @@ footer
 .color-dark:checked ~ header .logo,
 .color-dark:checked ~ .additionally,
 .color-dark:checked ~ main .main-headline,
-.color-dark:checked ~ main footer
+.color-dark:checked ~ main footer,
+.color-dark:checked ~ main .future
 {
     border-color: #e6f3fe;
 }
@@ -302,12 +316,22 @@ footer
 .size-bigger:checked ~ main,
 .size-bigger:checked ~ .additionally
 {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .size-bigger:checked ~ main .subtitle
 {
     font-size: 25px;
+}
+
+.size-bigger:checked ~ main .text-column
+{
+    font-size: 23px;
+}
+
+.size-bigger:checked ~ main .future
+{
+    padding: 10px 0;
 }
 
 .size-smaller:checked ~ main,
@@ -323,5 +347,5 @@ footer
 
 .size-smaller:checked ~ main .future
 {
-    padding: 40px 0;
+    padding: 20px 0;
 }
