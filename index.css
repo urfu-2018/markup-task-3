@@ -1,11 +1,12 @@
-body 
+@import url('https://fonts.googleapis.com/css?family=UnifrakturCook:700');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Indie+Flower|Mali|Shadows+Into+Light|Spicy+Rice');
 
+body 
 {
     background: #ebd2b5;
 }
 
-.газета
-
+.newspaper
 {
     width: 900px;
     height: 1000px;
@@ -13,9 +14,8 @@ body
 }
 
 header
-
 {
-    font-family: Palatino Linotype;
+    font-family: 'UnifrakturCook', cursive;
     font-size: 45px;
     font-weight: bold;
     letter-spacing: 2px;
@@ -23,28 +23,24 @@ header
 }
 
 td
-
 {
     width: 450px;
     vertical-align: top;
 }
 
-.дата
-
+.date
 {
     text-align: right;
 }
 
-.первый
-
+.first
 {
     width: 300px;
     border-right: 2px solid black;
 
 }
 
-.первый div
-
+.first div
 {
     width: 290px;
     height: 100px;
@@ -54,26 +50,23 @@ td
     font-family: cursive;
 }
 
-.газета p::first-letter
-
+.newspaper p::first-letter
 {
     font-weight: bold;
     font-size: 110%;
     font-family: Verdana;
 }
 
-.подзаголовок
-
+.subtitle
 {
-    font-family: Tempus Sans ITC;
+    font-family: Tempus Sans ITC, sans-serif;
     font-size: 110%;
     font-style: oblique;
     font-weight: bold;
     letter-spacing: 2px;
 }
 
-.второй 
-
+.second 
 {
     border-right: 2px solid black;
     width: 300px;
@@ -81,20 +74,21 @@ td
 }
 
 .pic
-
 {
-    width: 300px;
-    height: 220px;
+    position: absolute;
+    z-index: 1;
+    width: 320px;
+    height: 200px;
+    margin-left: 280px;
+    margin-top: 590px;
 }
 
-.третий 
-
+.third 
 {
     width: 300px;
 }
 
-.вертикальный
-
+.vertical
 {
     padding: 10px;
     margin: 10px;
@@ -102,6 +96,17 @@ td
     width: .5em;
     word-wrap: break-word;
     border: 1px solid black;
-    font-family: 'Wingdings';
+    font-family: 'Indie Flower';
     font-weight: bold;
+}
+
+h1
+{
+    font-family: 'Spicy Rice';
+    font-size: 16px;
+}
+
+.tabl
+{
+    position: relative;
 }
