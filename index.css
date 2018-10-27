@@ -1,24 +1,68 @@
-@import url('https://fonts.googleapis.com/css?family=Anton|Arvo:400,700,700i|Cinzel:400,900|Oswald|Patrick+Hand|Playfair+Display|Text+Me+One|Yanone+Kaffeesatz:400,700');
+@font-face
+{
+    font-family: 'Cinzel';
+    src: local('Cinzel-Black'), url('fonts/Cinzel/Cinzel-Black.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Arvo';
+    src: local('Arvo-Bold'), url('fonts/Arvo/Arvo-Bold.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Anton';
+    src: local('Anton-Regular'), url('fonts/Anton/Anton-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Yanone Kaffeesatz';
+    src: local('YanoneKaffeesatz-Bold'), url('fonts/Yanone_K/YanoneKaffeesatz-Bold.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Text Me One';
+    src: local('TextMeOne-Regular'), url('fonts/Text_Me_One/TextMeOne-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Patrick Hand';
+    src: local('PatrickHand-Regular'), url('fonts/Patrick_Hand/PatrickHand-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Oswald';
+    src: local('Oswald-Light'), url('fonts/Oswald/Oswald-Light.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Playfair Display';
+    src: local('PlayfairDisplay-Regular'), url('fonts/Playfair/PlayfairDisplay-Regular.ttf') format('truetype');
+}
 
 .header-content
 {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 20px;
+    text-align: center;
 }
 
 .h1-cinzel
 {
-    margin: 0;
+    margin: 0 50px;
+    display: inline-block;
     font-size: 70px;
     text-align: center;
     font-family: 'Cinzel', serif;
-
 }
 
 .info
 {
+    display: inline-block;
     font-family: 'Arvo', serif;
     padding: 10px;
     text-align: center;
@@ -33,6 +77,13 @@
     font-weight: 200;
     text-align: center;
     font-family: 'Anton', sans-serif;
+}
+
+.quote
+{
+    font-weight: 900;
+    font-family: 'Text Me One', sans-serif;
+    column-span: all;
 }
 
 .main-content
