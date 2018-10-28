@@ -12,64 +12,53 @@
 
 @font-face
 {
-    font-family: SeymourOne;
-    src: url('fonts/SeymourOne-Regular.ttf');
+    font-family: Arial;
+    src: local(Arial);
 }
 
-header
+@font-face
 {
-    font-family: Diplomata;
+    font-family: CentureGophic;
+    src: url('fonts/CenturyGothic.woff');
+}
+
+@font-face
+{
+    font-family: Rus;
+    src: url('fonts/Rus.otf');
+}
+
+.newspaper-title
+{
+    font-family: Diplomata, serif;
     text-align: center;
     font-size: 50px;
 }
 
-article
+.main
 {
     height: 1200px;
     text-align: center;
 }
 
-section
+.part
 {
     display: inline-block;
 }
 
-img
+.article::first-letter
 {
-    width: 100%;
-}
-
-figcaption
-{
-    font-style: italic;
-}
-
-h1
-{
-    font-family: YesevaOne;
+    font-family: Rus, serif;
     font-size: 22px;
 }
 
-p
-{
-    padding: 5px;
-    text-align: justify;
-    font-size: 18px;
-    font-family: serif;
-}
-
-p.article::first-letter
-{
-    font-family: SeymourOne;
-    font-size: 18px;
-}
-
-p.big
+.big
 {
     column-count: 2;
+    -moz-column-count: 2;
 }
 
-section.vertical
+.vertical
 {
     width: 6%;
     text-orientation: upright;
@@ -84,6 +73,28 @@ section.vertical
     word-spacing: 5px;
     letter-spacing: 3px;
     text-transform: capitalize;
+    padding: 5px;
+    font-size: 18px;
+    font-family: serif;
+}
+
+.article-title
+{
+    text-align: center;
+    font-family: YesevaOne, serif;
+    font-size: 22px;
+}
+
+.picture
+{
+    width: 100%;
+    height: 100%;
+}
+
+.caption
+{
+    font-style: italic;
+    text-align: center;
 }
 
 .articles
@@ -95,11 +106,25 @@ section.vertical
     vertical-align: top;
     padding: 2px;
     column-count: 4;
+    text-align: justify;
+    font-size: 18px;
+    font-family: CentureGophic, Arial, serif;
 }
 
-.vertical h1
+.quote
 {
-    font-family: Diplomata;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.title
+{
+    font-weight: bold;
+}
+
+.vertical
+{
+    font-family: Diplomata, serif;
     font-size: 32px;
     word-spacing: 20px;
     letter-spacing: 5px;
