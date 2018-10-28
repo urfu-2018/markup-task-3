@@ -10,7 +10,7 @@ h1
     text-align: center;
 }
 
-.headTable td
+.head-table td
 {
     width: calc(100vw/3);
 }
@@ -36,30 +36,30 @@ h1
 hr
 {
     background-color: black;
-    width: 100%;
     height: 1px;
 }
 
-div.Subtitle
+div.subtitle
 {
     text-align: center;
 }
 
 div.column
 {
-    font-size: 90%;
+    font-size: 14px;
     text-align: justify;
     column-count: 7;
     column-rule: 2px solid black;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     -ms-hyphens: auto;
+    hyphens: auto;
     column-span: all;
 }
 
 p:first-letter
 {
-    font-size: 200%;
+    font-size: 30px;
     font-family: 'Caveat', cursive;
 
 }
@@ -70,7 +70,7 @@ p:first-letter
     font-size: 28px;
 }
 
-.Subtitle
+.subtitle
 {
     font-family: 'Cormorant Unicase', serif;
     font-size: 30px;
@@ -99,7 +99,7 @@ p:first-letter
 .github
 {
     font-family: 'Marmelad', sans-serif;
-    font-size: 120%;
+    font-size: 17px;
 }
 
 .death
@@ -107,13 +107,13 @@ p:first-letter
     font-family: 'Playfair Display SC', serif;
 }
 
-.SpaceX
+.spaceX
 {
     font-family: 'Pattaya', sans-serif;
-    font-size: 110%;
+    font-size: 16px;
 }
 
-.Win10
+.win10
 {
     font-family: 'Kelly Slab', cursive;
 }
