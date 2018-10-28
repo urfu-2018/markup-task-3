@@ -1,63 +1,61 @@
 @font-face
 {
     font-family: machina;
-    src: local('DEUX'), url(DEUX.ttf);
+    src: local('DEUX'), url(fonts/DEUX.ttf), url(fonts/deux.eot), url(fonts/deux.woff), url(fonts/deux.woff2);
 }
 
 @font-face
 {
     font-family: augusta;
-    src: local('Augusta One'), url(Augusta_One.ttf);
+    src: local('Augusta One'), url(fonts/Augusta_One.ttf), url(fonts/augusta-one.eot), url(fonts/augusta-one.woff), url(fonts/augusta-one.woff2);
 }
 
 @font-face
 {
     font-family: turandot;
-    src: local('Turandot'), url(Turandot.ttf);
+    src: local('Turandot'), url(fonts/Turandot.ttf), url(fonts/turandot.eot), url(fonts/turandot.woff), url(fonts/turandot.woff2);
 }
 
 @font-face
 {
     font-family: valentina;
-    src: local('Valentina'), url(Valentina.ttf);
+    src: local('Valentina'), url(fonts/Valentina.ttf), url(fonts/valentina.eot), url(fonts/valentina.woff), url(fonts/valentina.woff2);
 }
 
 @font-face
 {
     font-family: alice;
-    src: local('Alice'), url(Alice.ttf);
+    src: local('Alice'), url(fonts/Alice.ttf), url(fonts/alice.eot), url(fonts/alice.woff), url(fonts/alice.woff2);
 }
 
 @font-face
 {
     font-family: violett;
-    src: local('Violet'), url(Violet.ttf);
+    src: local('Violet'), url(fonts/Violet.ttf), url(fonts/valentina.eot), url(fonts/valentina.woff), url(fonts/valentina.woff2);
 }
 
 @font-face
 {
     font-family: red_banner;
-    src: local('Red Banner'), url(red_banner.ttf);
+    src: local('Red Banner'), url(fonts/red_banner.ttf), url(fonts/red-banner.eot), url(fonts/red-banner.woff), url(fonts/red-banner.woff2);
 }
 
 @font-face
 {
     font-family: graffiti;
-    src: local('Graffiti1C'), url(Graffiti1C.ttf);
+    src: local('Graffiti1C'), url(fonts/Graffiti1C.ttf), url(fonts/graffiti1c.eot), url(fonts/graffiti1c.woff), url(fonts/graffiti1c.woff2);
 }
 
 @font-face
 {
     font-family: comic;
-    src: local('Comic Sans'), url(comic.ttf);
+    src: local('Comic Sans'), url(fonts/comic.ttf), url(fonts/comic.eot), url(fonts/comic.woff), url(fonts/comic.woff2);
 }
 
 main 
 {
     padding: 5px 20px;
     background-color: hsl(53, 70%, 88%);
-    -webkit-column-count: 5;
-    column-count: 5;
     -webkit-column-rule: 3px outset #000;
     column-rule: 3px outset #000;
 }
@@ -80,7 +78,8 @@ blockquote
 
 img
 {
-    width: 60%;
+    width: 100%;
+    height: 100%;
 }
 
 figure
@@ -89,6 +88,18 @@ figure
     column-span: all;
     text-align: center;
     font-size: 120%;
+}
+
+.top-news
+{
+    -webkit-column-count: 2;
+    column-count: 2;
+}
+
+.bot-news
+{
+    -webkit-column-count: 5;
+    column-count: 5;
 }
 
 .side
@@ -106,12 +117,14 @@ figure
 
 .news-1
 {
+    display: inline-block;
     font-family: turandot, Lucida Grande, monospace;
-    font-size: 140%;
+    font-size: 200%;
 }
 
 .news-2
 {
+    columns: 2;
     font-family: valentina, Lucida Grande, monospace;
     font-size: 110%;
 }
