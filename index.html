@@ -6,124 +6,152 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <fieldset class="options">
-        <label for="theme">Theme:&nbsp;</label>
-        <label><input checked class="white" type="radio" name="theme" id="theme">White&nbsp;</label>
-        <label><input class="black" type="radio" name="theme">Black</label>
-        <br>
-        <label for="size-font">Size font:&nbsp;</label>
-        <label><input class="large-font" type="radio" name="size-font" id="size-font">Large&nbsp;</label>
-        <label><input checked class="default-font" type="radio" name="size-font">Default&nbsp;</label>
-        <label><input class="small-font" type="radio" name="size-font">Small</label>
-        <br>
-        <label for="style-font">Style font:&nbsp;</label>
-        <label><input class="large-font" type="radio" name="style" id="style-font">Times New Roman</label>
-        <label><input checked class="default-font" type="radio" name="style">&nbsp;Default&nbsp;</label>
-        <label><input class="small-font" type="radio" name="style">Arial</label>
-    </fieldset>
+    <label>Theme&nbsp;</label>
+    <input checked class="white" type="radio" name="theme" id="white theme">
+    <label class="white" for="white theme">White&nbsp;</label>
+    <input class="black" type="radio" name="theme" id="black theme">
+    <label class="black" for="black theme">Black</label>
+    <br>
+    <label>Size font:&nbsp;</label>
+    <input class="large-font" type="radio" name="size-font" id="large font">
+    <label class="large-font" for="large font">Large&nbsp;</label>
+    <input checked class="default-font" type="radio" name="size-font" id="default font">
+    <label class="default-font" for="default font">Default&nbsp;</label>
+    <input class="small-font" type="radio" name="size-font" id="small font">
+    <label class="small-font" for="small font">Small</label>
+    <br>
+    <label>Style font:&nbsp;</label>
+    <input class="nautilus-style" type="radio" name="style" id="nautilus font">
+    <label class='nautilus-style' for="nautilus font">Nautilus</label>
+    <input checked class="default-style" type="radio" name="style" id="default style">
+    <label class="default-style" for="default style">&nbsp;Default&nbsp;</label>
+    <input class="arial-style" type="radio" name="style" id="arial style">
+    <label class="arial-style" for="arial style">Arial</label>
     <header>
         <section class="title">
             <h1 class="title">МАРСИАНИН ДЭВИД БОУИ</h1>
-            <p class="quote">Делать нужно не то, что положено, а то, чего хочется душе</p>
-            <p class="copyright">&copy;Дэвид Боуи</p>
+            <blockquote>
+                <p class="quote">Делать нужно не то, что положено, а то, чего хочется душе</p>
+                <p class="copyright">&copy;Дэвид Боуи</p>
+            </blockquote>
         </section>
         <section class="info">
-            <p class="date">21 Октября</p>
+            <time datetime="2018-10-21 14:00" class="date">21 Октября</time>
             <p class="rubric-name">Жизнь Великих</p>
         </section>
     </header>
-    <main>
+    <main class="newspaper">
         <article class="introduction">
-            <img src="DavidBowie.jpeg" alt="David Bowie">
-            <p class="text-introduction">
-                Этот человек попал в первую тридцатку величайших британцев, стал одним из лучших вокалистов
-                всех времен, при этом отказался от награды Командора Британской империи и рыцарского титула,
-                заявив, что это вовсе не то, ради чего он всю жизнь работал. Таков был Дэвид Боуи.
+            <img src="DavidBowie.jpeg" alt="David Bowie" height="250">
+            <p class="text introduction">
+                Этот человек попал в&nbsp;первую тридцатку величайших британцев, стал одним
+                из&nbsp;лучших вокалистов всех времен, при этом отказался от&nbsp;награды
+                Командора Британской империи и&nbsp;рыцарского титула, заявив, что это
+                вовсе не&nbsp;то, ради чего он&nbsp;всю жизнь работал. Таков был Дэвид Боуи.
             </p>
         </article>
-        <article class="Debut-album">
+        <article class="debut-album">
             <h2 class="subtitle">Дебютный альбом</h2>
-            <p class="text-Debut-album">
-                Дэвид твердо решил связать свою жизнь с музыкой. Первую рок-группу он организовал в
-                15 лет, хотя известный певец Дэвид Боуивсему миру образ родился не сразу. До начала
-                сольной карьеры Дэвид пел и играл в нескольких поп- и рок-коллективах, каждый из
-                которых теперь известен только тем, что их участником когда-то был Боуи. Сначала
-                музыкант выходил на сцену под именем Дэйви Джонс, но такое же имя было у одного из
-                вокалистов группы The Monkees. Это порождало путаницу. Тогда Дэвид покончил с этим
-                и выбрал себе псевдоним от названия американского ножа – боуи, а орудие в свою
-                очередь было названо в честь Джеймса Боуи – героя американской революции.
+            <p class="text debut-album">
+                Дэвид твердо решил связать свою жизнь с&nbsp;музыкой. Первую рок-группу
+                он&nbsp;организовал в&nbsp;15&nbsp;лет, хотя известный певец Дэвид
+                Боуивсему миру образ родился не&nbsp;сразу. До&nbsp;начала сольной
+                карьеры Дэвид пел и&nbsp;играл в&nbsp;нескольких поп-
+                и&nbsp;рок-коллективах, каждый из&nbsp;которых теперь известен только тем,
+                что их&nbsp;участником когда-то был Боуи. Сначала музыкант выходил
+                на&nbsp;сцену под именем Дэйви Джонс, но&nbsp;такое&nbsp;же имя было
+                у&nbsp;одного из&nbsp;вокалистов группы The Monkees. Это порождало
+                путаницу. Тогда Дэвид покончил с&nbsp;этим и&nbsp;выбрал себе псевдоним
+                от&nbsp;названия американского ножа&nbsp;&mdash; боуи, а&nbsp;орудие
+                в&nbsp;свою очередь было названо в&nbsp;честь Джеймса Боуи&nbsp;&mdash;
+                героя американской революции.
             </p>
             <section class="column-with-img">
                 <img src="DebutAlbum.jpg" alt="Album">
-                <p class="text-Debut-album">
-                    В 1967 году Дэвид записал свой первый альбом с простым и одновременно довольно
-                    претенциозным названием для дебюта – «David Bowie». Эта пластинка сделала его
-                    суперзвездой.
+                <p class="text debut-album">
+                    В&nbsp;1967 году Дэвид записал свой первый альбом с&nbsp;простым
+                    и&nbsp;одновременно довольно претенциозным названием для
+                    дебюта&nbsp;&mdash; &laquo;David Bowie&raquo;. Эта пластинка сделала
+                    его суперзвездой.
                 </p>
             </section>
         </article>
-        <article class="King-of-glam-rock">
+        <article class="king-of-glam-rock">
             <h2 class="subtitle">Король глэм-рока Дэвид Боуи</h2>
-            <p class="text-King-of-glam-rock">
-                Несколько лет понадобилось Боуи для того, чтобы сложить свой уникальный сценический имидж,
-                который магнитом притягивал публику. А когда в 1969 году его песня «Space Oddity» оказалась
-                на вершине хит-парадов, тогда о Дэвиде узнали буквально певец Дэвид Боуивсе. Вслед за песней
-                вышел одноименный альбом.
+            <p class="text king-of-glam-rock">
+                Несколько лет понадобилось Боуи для того, чтобы сложить свой уникальный
+                сценический имидж, который магнитом притягивал публику. А&nbsp;когда
+                в&nbsp;1969 году его песня &laquo;Space Oddity&raquo; оказалась
+                на&nbsp;вершине хит-парадов, тогда о&nbsp;Дэвиде узнали буквально певец
+                Дэвид Боуивсе. Вслед за&nbsp;песней вышел одноименный альбом.
             </p>
-            <img src="https://bit.ly/2RaqsGj" alt="David-gif">
+            <img src="https://bit.ly/2RaqsGj" alt="David gif" height="220">
             <section>
-                <p class="text-with-column">
-                    Музыкант продолжал работать в студии, и результатом его трудов в 1970 году стала третья
-                    пластика под названием «The Man Who Sold the World». Этот альбом сочинялся в доме Дэвида –
-                    особняке эдвардианской эпохи, переделанном в многоквартирный дом. Квартира Боуи больше
-                    напоминала гостиную графа Дракулы, и это накладывало на его творчество особый оттенок.
+                <p class="text with-column">
+                    Музыкант продолжал работать в&nbsp;студии, и&nbsp;результатом его
+                    трудов в&nbsp;1970 году стала третья пластинка под названием
+                    &laquo;The Man Who Sold the World&raquo;. Этот альбом сочинялся
+                    в&nbsp;доме Дэвида&nbsp;&mdash; особняке эдвардианской эпохи,
+                    переделанном в&nbsp;многоквартирный дом. Квартира Боуи больше
+                    напоминала гостиную графа Дракулы, и&nbsp;это накладывало
+                    на&nbsp;его творчество особый оттенок.
                 </p>
             </section>
-            <p class="text-King-of-glam-rock">
-                Пластинка «The Man Who Sold the World» повлияла на развитие готик-рока и дарквейва.
-                А Курт Кобейн говорил, что она в числе его самых любимых альбомов. Позже группа Nirvana
-                даже записала кавер-версию на главную песню пластинки Дэвида Боуи. Многие считают, что
-                глэм-рок родился в тот момент, когда Боуи выпустил этот альбом.
+            <p class="text king-of-glam-rock">
+                Пластинка &laquo;The Man Who Sold the World&raquo; повлияла
+                на&nbsp;развитие готик-рока и&nbsp;дарквейва. А&nbsp;Курт Кобейн
+                говорил, что она в&nbsp;числе его самых любимых альбомов. Позже группа
+                Nirvana даже записала кавер-версию на&nbsp;главную песню пластинки
+                Дэвида Боуи. Многие считают, что глэм-рок родился в&nbsp;тот момент,
+                когда Боуи выпустил этот альбом.
             </p>
         </article>
-        <article class="Ziggy-Stardaust">
+        <article class="ziggy-stardaust">
             <h2 class="subtitle">Зигги Стардаст</h2>
-            <p class="text-Ziggy-Stardaust">
-                Во время американского тура в поддержку альбома Дэвид Боуи познакомился с музыкантами,
-                которые певец Дэвид Боуив дохновили его на создание своего знаменитого сценического образа
-                Зигги Стардаста. Это были Игги Поп и Лу Рид. Боуи изменил сущность рок-музыки своего
-                времени и породил грандиозный культ в поп-музыке. В удивительном костюме с прической
-                маллет и волосами огненно-красного цвета Боуи начал победное шествие с альбомом
-                «The Rise and Fall of Ziggy Stardust and the Spiders from Mars». Шоу певца пользовалось
-                беспрецедентной популярностью, так Дэвид Боуи создал свой культ личности. Однако обратной
-                стороной медали стало то, что вскоре под влиянием наркотиков певец перестал отличать свою
-                настоящую жизнь от сценического образа.
+            <p class="text ziggy-stardaust">
+                Во&nbsp;время американского тура в&nbsp;поддержку альбома Дэвид Боуи
+                познакомился с&nbsp;музыкантами, которые певец Дэвид Боуив дохновили его
+                на&nbsp;создание своего знаменитого сценического образа Зигги Стардаста.
+                Это были Игги Поп и&nbsp;Лу&nbsp;Рид. Боуи изменил сущность рок-музыки
+                своего времени и&nbsp;породил грандиозный культ в&nbsp;поп-музыке.
+                В&nbsp;удивительном костюме с&nbsp;прической маллет и&nbsp;волосами
+                огненно-красного цвета Боуи начал победное шествие с&nbsp;альбомом
+                &laquo;The Rise and Fall of&nbsp;Ziggy Stardust and the Spiders from
+                Mars&raquo;. Шоу певца пользовалось беспрецедентной популярностью,
+                так Дэвид Боуи создал свой культ личности. Однако обратной стороной
+                медали стало&nbsp;то, что вскоре под влиянием наркотиков певец перестал
+                отличать свою настоящую жизнь от&nbsp;сценического образа.
             </p>
         </article>
-        <article class="Patriarch-of-modern-music">
+        <article class="patriarch-of-modern-music">
             <h2 class="subtitle">Патриарх современной музыки</h2>
-            <p class="text-Patriarch-of-modern-music">
-                Параллельно Дэвид развивал и свою актерскую карьеру. Фильмография Боуи пестрит несколькими
-                картинами, которые стали знаковыми в мировом кинематографе. Кстати, его сын Данкан стал
-                кинорежиссером.
+            <p class="text patriarch-of-modern-music">
+                Параллельно Дэвид развивал и&nbsp;свою актерскую карьеру. Фильмография
+                Боуи пестрит несколькими картинами, которые стали знаковыми
+                в&nbsp;мировом кинематографе. Кстати, его сын Данкан стал кинорежиссером.
             </p>
-            <p class="text-Patriarch-of-modern-music">
-                В 1990-е годы Дэвид был на острие моды, когда музыка становилась более танцевальной и
-                электронной, а с наступлением нового тысячелетия Боуи стал уже патриархом  певец Дэвид
-                Боуисовременной музыки. Скорее всего, он бы и дальше оставался таким же энергичным и
-                творчески плодовитым, но возраст и последствия наркотической зависимости в молодые годы
-                дали о себе знать. В 2004 году на концерте в Осло кто-то из зрителей кинул на сцену
-                чупа-чупс и попал музыканту прямо в глаз, а через неделю Дэвид почувствовал резкую боль
-                в груди. Закупорка коронарной артерии потребовала срочной операции. Все концерты в рамках
-                тура были отменены, но тогда никто не предполагал, что перерыв затянется на целых 10 лет.
-                После операции Дэвид почти прекратил студийную и гастрольную работу, лишь иногда записывал
-                песни для кинофильмов и играл небольшие роли.
+            <p class="text patriarch-of-modern-music">
+                В&nbsp;1990-е годы Дэвид был на&nbsp;острие моды, когда музыка
+                становилась более танцевальной и&nbsp;электронной,
+                а&nbsp;с&nbsp;наступлением нового тысячелетия Боуи стал уже патриархом
+                певец Дэвид Боуисовременной музыки. Скорее всего, он&nbsp;бы
+                и&nbsp;дальше оставался таким&nbsp;же энергичным и&nbsp;творчески
+                плодовитым, но&nbsp;возраст и&nbsp;последствия наркотической зависимости
+                в&nbsp;молодые годы дали о&nbsp;себе знать. В&nbsp;2004 году на&nbsp;концерте
+                в&nbsp;Осло кто-то из&nbsp;зрителей кинул на&nbsp;сцену чупа-чупс и&nbsp;попал
+                музыканту прямо в&nbsp;глаз, а&nbsp;через неделю Дэвид почувствовал резкую боль
+                в&nbsp;груди. Закупорка коронарной артерии потребовала срочной операции. Все
+                концерты в&nbsp;рамках тура были отменены, но&nbsp;тогда никто
+                не&nbsp;предполагал, что перерыв затянется на&nbsp;целых 10&nbsp;лет. После
+                операции Дэвид почти прекратил студийную и&nbsp;гастрольную работу, лишь иногда
+                записывал песни для кинофильмов и&nbsp;играл небольшие роли.
             </p>
             <div class="vertical">Blackstar</div>
-            <p class="text-Patriarch-of-modern-music">
-                Его последний студийный альбом «Blackstar» вышел 8 января 2016 года – в день рождения
-                певца, а через два дня, 10 января, мир узнал о смерти своего кумира. В последние месяцы
-                жизни Дэвид Боуи боролся с раком печени и перенес несколько инфарктов.
+            <p class="text patriarch-of-modern-music">
+                Его последний студийный альбом &laquo;Blackstar&raquo; вышел 8&nbsp;января 2016
+                года&nbsp;&mdash; в&nbsp;день рождения певца, а&nbsp;через два дня,
+                10&nbsp;января, мир узнал о&nbsp;смерти своего кумира. В&nbsp;последние месяцы
+                жизни Дэвид Боуи боролся с&nbsp;раком печени и&nbsp;перенес несколько инфарктов.
             </p>
         </article>
     </main>

@@ -3,24 +3,94 @@
     src: url('https://fonts.googleapis.com/css?family=Abril+Fatface|Amatic+SC|EB+Garamond|Patua+One|Srisakdi');
 }
 
-.black:checked ~ main
+@font-face
 {
-    background-color: #000;
+    font-family: 'Nautilus';
+    src: local('Nautilus'), url('Nautilus Pompilius/Nautilus.otf') format('truetype');
+}
+
+.black:checked ~ .newspaper,
+.black:checked ~ header
+{
+    background: #000;
     color: #fff;
+    column-rule: 1px solid #fff;
+    border: 1px solid #000;
+}
+
+.black:checked ~ header .info
+{
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.black:checked ~ .newspaper .subtitle
+{
+    border-top: 3px double #fff;
+    border-bottom: 3px double #fff;
+}
+
+.black:checked ~ .newspaper .vertical
+{
+    border: 1px solid #fff;
+}
+
+.white:checked ~ .newspaper,
+.white:checked ~ header
+{
+    background: #fff;
+    color: #000;
+}
+
+.large-font:checked ~ .newspaper,
+.large-font:checked ~ header
+{
+    font-size: 18px;
+}
+
+.default-font:checked ~ .newspaper,
+.default-font:checked ~ header
+{
+    font-size: 16px;
+}
+
+.small-font:checked ~ .newspaper,
+.small-font:checked ~ header
+{
+    font-size: 14px;
+}
+
+.nautilus-style:checked ~ .newspaper .text,
+.nautilus-style:checked ~ .newspaper .vertical,
+.nautilus-style:checked ~ header
+{
+    font-family: 'Nautilus', serif;
+}
+
+.arial-style:checked ~ .newspaper .text,
+.arial-style:checked ~ .newspaper .vertical,
+.arial-style:checked ~ header
+{
+    font-family: 'Arial', Helvatic, sans-serif;
 }
 
 body
 {
-    width: 99%;
+    min-width: 500px;
     white-space: nowrap;
-    color: #000;
 }
 
-main
+header
+{
+    margin: 0;
+}
+
+.newspaper
 {
     column-count: 4;
     column-rule: 1px solid #000;
     white-space: normal;
+    padding-top: 5px;
 }
 
 .title
@@ -43,21 +113,16 @@ main
     white-space: normal;
 }
 
-.text-Debut-album,
-.text-King-of-glam-rock,
-.text-Patriarch-of-modern-music,
-.text-Ziggy-Stardaust,
-.text-with-column
+.text
 {
     font-family: 'EB Garamond', serif;
     font-style: italic;
     padding: 2px;
     white-space: normal;
     margin: 0 auto;
-    /*font-size: 18px;*/
 }
 
-article p::first-letter
+p.text::first-letter
 {
     color: #ffc0cb;
     font-size: 25px;
@@ -96,19 +161,21 @@ article p::first-letter
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
     column-count: 2;
-    margin-bottom: 10px;
+    display: flex;
 }
 
 .date
 {
     padding-left: 5px;
+    padding-top: 18px;
     text-align: left;
 }
 
 .rubric-name
 {
+    flex-grow: 1;
     text-align: right;
-    padding: 15px 0 0 5px;
+    padding: 1px 0 0 5px;
 }
 
 .text-introduction
@@ -116,11 +183,10 @@ article p::first-letter
     text-align: center;
 }
 
-.King-of-glam-rock img[alt='David-gif']
+.king-of-glam-rock img[alt='David gif']
 {
     display: block;
     margin: auto;
-    height: 220px;
 }
 
 .introduction img[alt='David Bowie']
@@ -128,10 +194,9 @@ article p::first-letter
     display: block;
     width: auto;
     margin: auto;
-    height: 250px;
 }
 
-.Debut-album img[alt='Album']
+.debut-album img[alt='Album']
 {
     display: block;
     width: 100%;
@@ -144,17 +209,10 @@ article p::first-letter
     margin: 10px;
 }
 
-.text-with-column
+.text.with-column
 {
     column-count: 2;
 }
-
-/*.King-of-glam-rock img[alt$='gif']
-{
-    margin: 0 auto;
-    height: auto;
-    width: 100%;
-}*/
 
 .vertical
 {
