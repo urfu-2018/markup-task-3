@@ -10,18 +10,17 @@
     src: local('imperial-italic'), url(fonts/imperial-italic-700.ttf);
 }
 
-
-#fontSizeChanger:checked ~ .wrapper
+.increase-font-checker:checked ~ .wrapper
 {
     font-size: 1.2em;
 }
 
-#fontFamilyChanger:checked ~ .wrapper
+.imperial-font-checker:checked ~ .wrapper
 {
     font-family: Imperial, Fallback;
 }
 
-#enableBlackTheme:checked ~ .wrapper
+.night-theme-checker:checked ~ .wrapper
 {
     font: white;
     background-color: rgb(151, 151, 151);
@@ -100,7 +99,7 @@ p::first-letter
 
 .navigation-item
 {
-    margin: 0px auto;
+    margin: 0 auto;
 }
 
 .g-row
@@ -141,7 +140,7 @@ p::first-letter
 .g-col-4,
 .g-col-5
 {
-    padding: 5px 5px;
+    padding: 5px;
     display: inline-block;
     vertical-align: top;
 }
