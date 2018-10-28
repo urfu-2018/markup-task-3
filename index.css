@@ -1,6 +1,36 @@
-h2
+@font-face
+{
+    font-family: Cheltenham;
+    src: local('cheltenham-normal'), url(fonts/cheltenham-normal-700.ttf);
+}
+
+@font-face
+{
+    font-family: Imperial;
+    src: local('imperial-italic'), url(fonts/imperial-italic-700.ttf);
+}
+
+
+#fontSizeChanger:checked ~ .wrapper
+{
+    font-size: 1.2em;
+}
+
+#fontFamilyChanger:checked ~ .wrapper
+{
+    font-family: Imperial, Fallback;
+}
+
+#enableBlackTheme:checked ~ .wrapper
+{
+    font: white;
+    background-color: rgb(151, 151, 151);
+}
+  
+.news-title
 {
     font-weight: 700;
+    font-family: Cheltenham, Fallback;
     -webkit-letter-spacing: .2px;
     -moz-letter-spacing: .2px;
     -ms-letter-spacing: .2px;
@@ -9,18 +39,23 @@ h2
     -webkit-transition: color .6s ease;
     transition: color .6s ease;
     color: #121212;
-    font-size: 1.25rem;
     line-height: 1.4rem;
-    font-family: nyt-cheltenham;
     margin-bottom: 10px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-shadow: #555 0 0 1px;
 }
 
+.wrapper
+{
+    margin: 0 auto;
+    max-width: 1000px;
+    display: block;
+}
+
 .vertical-text
 {
-    padding: 1em 3em 0 0 !important;
+    padding: 1em 3em 0 0;
     writing-mode: vertical-rl;
     text-transform: uppercase;
     text-orientation: upright;
@@ -28,10 +63,7 @@ h2
 
 .base-text
 {
-    font-family: nyt-imperial;
-    font-size: 1rem;
     line-height: 1.4rem;
-    font-style: normal;
     -webkit-letter-spacing: .1px;
     -moz-letter-spacing: .1px;
     -ms-letter-spacing: .1px;
@@ -53,14 +85,7 @@ p::first-letter
     text-align: center;
 }
 
-.wrapper
-{
-    margin: 0 auto;
-    max-width: 1000px;
-    display: block;
-}
-
-.nav-panel
+.navigation
 {
     margin: .5em auto;
     border-bottom: 2px double #555;
@@ -73,9 +98,9 @@ p::first-letter
     width: 100%;
 }
 
-.nav-item
+.navigation-item
 {
-    margin: 4px auto;
+    margin: 0px auto;
 }
 
 .g-row
@@ -92,22 +117,22 @@ p::first-letter
 
 .g-col-2 
 {
-    left: 20%;
+    left: 19.5%;
 }
 
 .g-col-3
 {
-    left: 40%;
+    left: 39%;
 }
 
 .g-col-4 
 {
-    left: 60%;
+    left: 58.5%;
 }
 
 .g-col-5 
 {
-    left: 80%;
+    left: 78%;
 }
 
 .g-col-1,
@@ -116,7 +141,9 @@ p::first-letter
 .g-col-4,
 .g-col-5
 {
-    padding: 0 5px;
+    padding: 5px 5px;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .g-span-1,
@@ -127,7 +154,6 @@ p::first-letter
 {
     position: relative;
     box-sizing: border-box;
-    float: left;
 }
 
 .g-span-1
