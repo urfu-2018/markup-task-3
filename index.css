@@ -1,7 +1,7 @@
 @font-face
 {
-    font-family: '20_db';
-    src: url(fonts/20db.woff2) format('woff2'), url(fonts/20db.woff) format('woff');
+    font-family: '20db';
+    src: local('20db'), url(fonts/20db.otf) format('opentype'), url(fonts/20db.ttf) format('truetype'), url(fonts/20db.woff2) format('woff2'), url(fonts/20db.woff) format('woff');
     font-weight: normal;
     font-style: normal;
 }
