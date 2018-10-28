@@ -5,6 +5,20 @@ body
 
 }
 
+input,
+label {
+    cursor: pointer;
+}
+
+figure {
+    margin: 5px 0;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+}
+
 input[value='night']:checked ~ section 
 {
     background: black;
@@ -61,7 +75,6 @@ input[value='Times']:checked ~ section
     margin-top: 5px;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
 p 
@@ -76,7 +89,7 @@ p::first-letter
     color: brown;
 }
 
-.verticalLabel
+.vertical-label
 {
     font-size: 2em;
     padding: 15px 0;
@@ -87,12 +100,12 @@ p::first-letter
     border: 1px solid black;
 }
 
-.italyVertical
+.italy-vertical
 {
     float: left;
 }
 
-.franceVertical
+.france-vertical
 {
     float: right;
 }
@@ -102,7 +115,7 @@ p::first-letter
     column-count: 2;
 }
 
-.italy_header 
+.italy-header 
 {
     column-span: all;
     text-align: center;
@@ -114,7 +127,7 @@ p::first-letter
     padding: 5px 0;
 }
 
-.spain_header 
+.spain-header 
 {
     font-family: 'Adobe Caslon Pro', Georgia, Garamond, Times, serif;
     letter-spacing: .1em;
@@ -129,7 +142,7 @@ p::first-letter
     border-top: .5px solid black;
 }
 
-.france_header 
+.france-header 
 {
     font: bold 2em 'Century Schoolbook', Georgia, Times, serif;
     line-height: 90%;
@@ -138,7 +151,6 @@ p::first-letter
     border-bottom: .5px solid black;
     border-top: .5px solid black;
     letter-spacing: -2px;
-
 }
 
 .ending
@@ -152,7 +164,6 @@ p::first-letter
     border-bottom: .5px solid black;
     border-top: .5px solid black;
     text-align: center;
-
 }
 
 .spain
@@ -190,7 +201,7 @@ img
     margin-top: 10px;
 }
 
-.cite_cont
+.cite-cont
 {
     border-top: 5px double black;
     border-bottom: 5px double black;
