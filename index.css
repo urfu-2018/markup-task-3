@@ -1,7 +1,9 @@
 @font-face
 {
     font-family: Cheltenham;
-    src: local('cheltenham-normal'), url(fonts/cheltenham-normal-700.ttf);
+    src: local('cheltenham-normal'), 
+    url(fonts/cheltenham-normal-700.ttf), 
+    url(fonts/cheltenham-normal-700.woff);
 }
 
 @font-face
