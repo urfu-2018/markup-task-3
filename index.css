@@ -38,12 +38,12 @@ main
     border: 1px solid brown;
 }
 
-[class*='header']
+.header
 {
     text-align: center;
 }
 
-header
+.paper-header-wrapper
 {
     border-bottom: 1px solid brown;
 }
