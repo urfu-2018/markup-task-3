@@ -1,13 +1,13 @@
 @font-face
 {
     font-family: Rye;
-    src: url(fonts/Rye-Regular.ttf);
+    src: local('Rye'), local('Rye Regular'), local('Rye-Regular'), url(fonts/Rye-Regular.ttf);
 }
 
 @font-face
 {
-    font-family: Charmonman-Regular;
-    src: url(fonts/Charmonman-Regular.ttf);
+    font-family: Charmonman;
+    src: local('Charmonman Regular'), local('Charmonman-Regular'), url(fonts/Charmonman-Regular.ttf);
 }
 
 .swap:checked ~ main
@@ -137,7 +137,7 @@ aside
 {
     border-bottom: 3px dashed #e24b4b;
     border-top: 3px dashed #e24b4b;
-    font-family: Charmonman-Regular;
+    font-family: Charmonman;
     font-size: 1.15em;
     text-align: center;
 }
