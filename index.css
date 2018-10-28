@@ -1,14 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Russo+One|Vollkorn+SC');
+
 .container
 {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 14px;
-    width: 1400px;
+    font-size: 12px;
+    width: 1000px;
     margin: 0 auto;
-    padding: 15px;
+    padding: 30px;
     overflow: hidden;
 }
 
-bdi
+.proletarians
 {
     text-align: justify;
     line-height: .9em;
@@ -16,7 +18,7 @@ bdi
     display: inline-block;
 }
 
-p
+.container section p
 {
     text-align: justify;
     -webkit-hyphens: auto;
@@ -28,44 +30,58 @@ p
     margin: 0;
 }
 
-h1
+.container h1
 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 56px;
+    font-size: 40px;
     padding: 0;
     margin: 0;
     text-align: center;
     text-transform: uppercase;
 }
 
-h2
+.container h2
 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 22px;
-    line-height: 1em;
+    line-height: 22px;
     padding: 0;
     margin: 0;
     display: inline-block;
     text-align: center;
 }
 
-article
+.container article
 {
     column-count: 2;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
     padding-top: .5em;
     margin-bottom: 2em;
 }
 
-section img
+.container section img
 {
     padding-right: 10px;
-    width: 40%;
+    width: 100%;
+}
+
+.container section figure
+{
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+}
+
+.container section figure figcaption
+{
+    text-align: center;
+    font-weight: bold;
 }
 
 .left-block
 {
-    width: 40%;
-    float: left;
+    width: 400px;
     margin-right: 10px;
     border-right: 2px solid black;
     padding-right: 10px;
@@ -73,7 +89,14 @@ section img
 
 .right-block
 {
-    overflow: hidden;
+    width: 570px;
+}
+
+.left-block,
+.right-block
+{
+    display: inline-block;
+    vertical-align: top;
 }
 
 .right-block img
@@ -84,32 +107,34 @@ section img
 .logo
 {
     float: left;
-    width: 1158px;
+    width: 758px;
     margin-right: 10px;
 }
 
 .logo-img
 {
-    background: url('images/logo.png');
-    height: 235px;
-    width: 1158px;
+    background: url('images/logo.png') no-repeat;
+    height: 154px;
+    width: 758px;
 }
 
 .important-message
 {
     border: 1px solid black;
-    padding: .8em;
+    padding: 10px;
     overflow: hidden;
+    margin: 0;
+    margin-bottom: 5px;
 }
 
 .important-message p
 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-style: italic;
     font-weight: 600;
     text-align: left;
-    line-height: 1.5em;
+    line-height: 24px;
 }
 
 .no-float
@@ -140,9 +165,9 @@ section img
 
 .appeal
 {
-    font-size: 1.5em;
+    font-size: 18px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1em;
+    line-height: 18px;
     text-align: center;
     display: block;
 }
@@ -176,13 +201,34 @@ section img
     border-color: #403b32;
 }
 
-.changefont:checked ~ .container
+.normal-size[value='normal-size']:checked ~ .container
 {
-    font-family: 'Comic Sans MS', cursive;
+    font-size: 1.25em;
+}
+
+.unreal-style:checked ~ .container
+{
+    font-family: 'Vollkorn SC', serif;
     color: red;
 }
 
-input[value='normal-size']:checked ~ .container
+.unreal-style:checked ~ .container h1,
+.unreal-style:checked ~ .container h2,
+.unreal-style:checked ~ .container .appeal
 {
-    font-size: 1.25em;
+    font-family: 'Russo One', sans-serif;
+    color: indigo;
+}
+
+.unreal-style:checked ~ .container p::first-letter
+{
+    font-size: 2em;
+    color: palevioletred;
+}
+
+.unreal-style:checked ~ .container .proletarians
+{
+    text-align: left;
+    writing-mode: vertical-rl;
+    max-height: 100px;
 }
