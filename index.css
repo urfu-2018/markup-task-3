@@ -1,84 +1,445 @@
+@font-face
+{
+    font-family: 'OpenSansCondensed';
+    src: url('Fonts/OpenSansCondensed-Light.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Rosario-Regular';
+    src: url('Fonts/Rosario-Regular.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Rosario-Italic';
+    src: url('Fonts/Rosario-Italic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Rosario-BoldItalic';
+    src: url('Fonts/Rosario-BoldItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+div,
+section,
+article,
+img,
+header,
+main,
+span,
+input,
+body
+{
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0;
+    text-align: justify;
+}
+
 body
 {
     width: 100%;
-    font-family: Special+Elite;
+    font-family: Special + Elite;
     letter-spacing: 2px;
+    background-color: #d7d7d7;
+    overflow-x: hidden;
+}
+
+header,
+main
+{
+    width: 100%;
+    font-size: 14px;
+}
+
+.paper_header,
+.paper_content
+{
+    background-color: white;
+    margin: 0 auto;
+    width: 1280px;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    box-shadow: 0 25px 20px #212121;
+}
+
+.header_body
+{
+    width: fit-content;
+    height: 150px;
+    margin: 10px auto 0;
 }
 
 .paper_name
 {
-    font-family: Ewert;
-    font-size: 45px;
-    text-align: center;
-    display: inline-block;
-    width: 750px;
+    margin: 0 30px;
+    width: 780px;
+    height: 150px;
+    fill: black;
 }
 
-h2::first-letter
+.left
 {
-    font-family: Ewert;
+    float: left;
 }
 
-h1
+.right
 {
-    font-size: 40px;
-    text-align: center;
-    font-weight: 600;
-}
-
-.paper_header
-{
-    margin: 0 auto;
-    width: 1280px;
-    height: 300px;
+    float: right;
 }
 
 .paper_header_notes
 {
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding: 30px 10px;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    border: 1.5px solid #000;
+}
+
+.header_footer
+{
+    padding: 3px 0;
+    border-bottom: 1px solid #000;
+    border-top: 2px solid #000;
+    display: table;
+    width: 100%;
+}
+
+.header_footer > div
+{
+    font-size: 16px;
+}
+
+.footer_item
+{
+    width: 33.33%;
+    display: table-cell;
+}
+
+.footer_item-left
+{
+    padding-left: 10px;
+}
+
+.footer_item-center
+{
+    text-align: center;
+}
+
+.footer_item-right
+{
+    text-align: end;
+    padding-right: 10px;
+}
+
+img
+{
+    width: 100%;
+}
+
+article,
+section
+{
     display: inline-block;
-    width: 190px;
-    height: 50px;
-    border: 3px solid #000;
-    margin: 15px;
-    margin-top: 40px;
-    padding: 1em;
+    box-sizing: border-box;
+}
+
+div.paper_content > section
+{
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+section.political_memo
+{
+    width: 35%;
+    border-right: 1px solid black;
+}
+
+section.left_side
+{
+    width: 19%;
+    border-left: 1px solid black;
+}
+
+div.center_content
+{
+    display: inline-block;
+    width: 45%;
+}
+
+section.political_memo > article > div:nth-child(2),
+div.center_content > article > div:last-child
+{
+    column-count: 2;
+    box-sizing: border-box;
+    margin: 10px 0;
+}
+
+span.author
+{
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+div.paper_content > section > article
+{
+    margin-bottom: 5px;
+}
+
+div.paper_content > section > article:not(:first-child)
+{
+    border-top: 1px solid black;
+}
+
+div.paper_content > section article:not(:last-child)
+{
+    border-bottom: 1px solid black;
+}
+
+section h2,
+div.center_content h2
+{
+    font-size: 35px;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 40px;
+    width: 90%;
+}
+
+section.political_memo > article h2
+{
+    font-family: Rosario-BoldItalic;
+}
+
+section.political_memo > article:first-child h2,
+div.center_content h2
+{
+    font-family: Rosario-Regular;
+}
+
+section.political_memo > article:last-child h2
+{
+    font-family: Rosario-Italic;
+}
+
+section.political_memo h2::before,
+div.center_content > article h2::before,
+div.inside > article h2::before
+{
+    position: absolute;
+    top: 120%;
+    left: 25%;
+    width: 50%;
+    border-bottom: 1px solid #000;
+    content: '';
+}
+
+div.paper_content > div > article
+{
+    border: 1px solid black;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+div.paper_content > div > article > div:first-child
+{
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+article > div:nth-child(2) > span
+{
+    font-style: italic;
+}
+
+section.news_preview > article > h2
+{
+    text-align: left;
+    font-size: 17px;
+    margin: 2px 0;
+}
+
+div.inside > article
+{
+    width: 64%;
+    padding: 2px;
+}
+
+section.news_preview
+{
+    width: 35%;
+}
+
+article.oscars_news > div
+{
+    margin-top: 30px;
+}
+
+.oscar_winner
+{
+    width: 49%;
+    display: inline-block;
+}
+
+.oscar_winner > h3,
+.oscar_winner > p
+{
     text-align: center;
 }
 
-.paper_date
+section.left_side h2
 {
-    font-weight: 400;
-    text-align: center;
-    border-bottom: 2px solid #000;
-    border-top: 3px solid #000;
+    font-size: 42px;
+    font-family: OpenSansCondensed;
 }
 
-header
+p span
 {
-    width: 100%;
-    height: 200px;
+    font-weight: bold;
 }
 
-main
+.font-size-up,
+.font-size-up_label,
+.font-size-down,
+.font-size-down_label,
+.theme_toggle,
+.theme_change
 {
-    width: 100%;
+    position: fixed;
 }
 
-.paper_content
+.font-size-up_label,
+.font-size-down_label,
+.theme_change,
 {
-    margin: 0 auto;
-    width: 1280px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-article
+.font-size-up
 {
-    width: 100%;
-    -moz-column-count: 5;
-    -webkit-column-count: 5;
-    column-count: 5;
-    -webkit-column-rule: 1px solid #000;
-    -moz-column-rule: 1px solid #000;
-    column-rule: 1px solid #000;
-    border-top: 1px solid #000;
-    border-bottom: 2px solid #000;
+    top: 25px;
+    left: 25px;
+}
+
+.font-size-up_label
+{
+    top: 20px;
+    left: 45px;
+}
+
+.font-size-down
+{
+    top: 45px;
+    left: 25px;
+}
+
+.font-size-down_label
+{
+    top: 40px;
+    left: 45px;
+}
+
+.theme_toggle
+{
+    top: 65px;
+    left: 25px;
+}
+
+.theme_change
+{
+    top: 60px;
+    left: 45px;
+}
+
+input.font-size-up:checked ~ main
+{
+    font-size: 17px;
+}
+
+input.font-size-up:checked ~ main > h2
+{
+    font-size: 40px;
+}
+
+input.font-size-down:checked ~ main
+{
+    font-size: 10px;
+}
+
+input.theme_toggle:checked ~ main,
+input.theme_toggle:checked ~ header
+{
+    background-color: #171c20;
+}
+
+input.theme_toggle:checked ~ main > div.paper_content,
+input.theme_toggle:checked ~ header > div.paper_header
+{
+    background-color: #22272b;
+    color: #bfbfbf;
+}
+
+input.theme_toggle:checked ~ header > div > div > div.paper_header_notes,
+input.theme_toggle:checked ~ main > div > div.center_content > article
+{
+    border: 1px solid #bfbfbf;
+}
+
+input.theme_toggle:checked ~ header > div > div > svg.paper_name
+{
+    fill: #bfbfbf;
+}
+
+input.theme_toggle:checked ~ header > div > div.header_footer
+{
+    border-bottom: 1px solid #bfbfbf;
+    border-top: 2px solid #bfbfbf;
+}
+
+input.theme_toggle:checked ~ main > div > section.political_memo
+{
+    border-right: 1px solid #bfbfbf;
+}
+
+input.theme_toggle:checked ~ main > div > section.left_side
+{
+    border-left: 1px solid #bfbfbf;
+}
+
+input.theme_toggle:checked ~ main > div > section.political_memo h2::before,
+input.theme_toggle:checked ~ main > div > div > article h2::before,
+input.theme_toggle:checked ~ main > div > div > div.inside > article h2::before
+{
+    border-bottom: 1px solid #bfbfbf;
+}
+
+input.theme_toggle:checked ~ main > div > section > article:not(:first-child)
+{
+    border-top: 1px solid #bfbfbf;
+}
+
+input.theme_toggle:checked ~ main > div > section article:not(:last-child)
+{
+    border-bottom: 1px solid #bfbfbf;
 }
