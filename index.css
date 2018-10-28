@@ -44,7 +44,7 @@ input[id='change-theme']:checked ~ .config-panel > label[for='change-theme']
 
 .change-font:checked ~ main > .newspaper-content > article
 {
-    font-family: Arial, Helvetica, sans-serif !important;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .change-theme:checked ~ .newspaper-page
@@ -175,12 +175,10 @@ blockquote > p::after
 
 .vertical-text
 {
-    text-align: center;
-    font-size: 20px;
-    width: 11px;
-    word-wrap: break-word;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
     float: right;
-    padding: 20px;
+    padding: 15px;
     border: 1px solid #000;
     margin-left: 10px;
 }
@@ -199,7 +197,18 @@ blockquote > p::after
     left: 150px;
 }
 
-.about-wheater
+.about-weather
 {
     right: 150px;
+}
+
+.article-img-wrapper
+{
+    margin: 0;
+}
+
+.article-img-caption
+{
+    font-size: .8em;
+    font-style: italic;
 }
