@@ -69,8 +69,6 @@ main
 {
     column-count: 2;
     column-rule: 3px dotted brown;
-    max-width: 60%;
-    display: inline-block;
     margin: 5px 0 10px;
     text-align: justify;
 }
@@ -85,8 +83,6 @@ main
 
 .one-column
 {
-    max-width: 60%;
-    display: inline-block;
     text-align: justify;
 }
 
@@ -99,7 +95,6 @@ main
 aside
 {
     width: 35%;
-    float: left;
     font-size: 95%;
 }
 
@@ -129,8 +124,7 @@ aside
     font-family: Rye;
     width: .1em;
     word-wrap: break-word;
-    float: right;
-    margin: 50px 30px 0 0;
+    margin: 50px 0 0 10px;
 }
 
 .quote
@@ -140,4 +134,15 @@ aside
     font-family: Charmonman;
     font-size: 1.15em;
     text-align: center;
+}
+
+.top-block
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.main-content
+{
+    max-width: 60%;
 }
