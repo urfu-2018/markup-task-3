@@ -94,12 +94,13 @@ p.vertical-text
     writing-mode: vertical-lr;
 }
 
-blockquote {
+blockquote
+{
     margin: 0;
-    background:lightslategrey;
+    background: lightslategrey;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
-    color: #3A3C55;
+    color: #3a3c55;
     padding: 30px 30px 30px 90px;
     position: relative;
     font-family: 'Lato', sans-serif;
