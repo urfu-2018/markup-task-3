@@ -1,4 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Russo+One|Vollkorn+SC');
+@font-face
+{
+    font-family: '20db';
+    src: local('ßδ≈'), url('fonts/20db.otf') format('opentype'), url('fonts/20db.svg') format('svg'), url('fonts//20db.ttf') format('truetype'), url('fonts/20db.woff') format('woff');
+}
+
+@font-face
+{
+    font-family: 'American TextC';
+    src: local('ßδ≈'), url('fonts/American_TextC.otf') format('opentype'), url('fonts/American_TextC.svg') format('svg'), url('fonts/American_TextC.ttf') format('truetype'), url('fonts/American_TextC.woff') format('woff');
+}
 
 .container
 {
@@ -28,6 +38,7 @@
     line-height: 1em;
     text-indent: 3em;
     margin: 0;
+    overflow: hidden;
 }
 
 .container h1
@@ -89,7 +100,7 @@
 
 .right-block
 {
-    width: 570px;
+    width: 560px;
 }
 
 .left-block,
@@ -208,7 +219,7 @@
 
 .unreal-style:checked ~ .container
 {
-    font-family: 'Vollkorn SC', serif;
+    font-family: '20db', serif;
     color: red;
 }
 
@@ -216,7 +227,7 @@
 .unreal-style:checked ~ .container h2,
 .unreal-style:checked ~ .container .appeal
 {
-    font-family: 'Russo One', sans-serif;
+    font-family: 'American TextC', sans-serif;
     color: indigo;
 }
 
