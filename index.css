@@ -1,14 +1,14 @@
 input[id='light']:checked ~ main,
-input[id='light']:checked ~ .main_title
+input[id='light']:checked ~ .main-title
 {
-    background: #ffe4c4;
-    column-rule: 2px solid #2b1401;
-    color: #2b1401;
+    background: rgba(255, 228, 196, 1);
+    column-rule: 2px solid rgba(43, 20, 1, 1);
+    color: rgba(43, 20, 1, 1);
 }
 
 input[id='light']:checked ~ main > hr
 {
-    color: #2b1401;
+    color: rgba(43, 20, 1, 1);
 }
 
 input[id='light']:checked ~ .settings > .settings-item > label[for='light']
@@ -18,11 +18,11 @@ input[id='light']:checked ~ .settings > .settings-item > label[for='light']
 }
 
 input[id='dark']:checked ~ main,
-input[id='dark']:checked ~ .main_title
+input[id='dark']:checked ~ .main-title
 {
-    background: #2b1401;
-    column-rule: 2px solid #ffe4c4;
-    color: #ffe4c4;
+    background: rgba(43, 20, 1, 1);
+    column-rule: 2px solid rgba(255, 228, 196, 1);
+    color: rgba(255, 228, 196, 1);
 }
 
 input[id='dark']:checked ~ .settings > .settings-item > label[for='dark']
@@ -33,7 +33,7 @@ input[id='dark']:checked ~ .settings > .settings-item > label[for='dark']
 
 input[id='dark']:checked ~ main > hr
 {
-    color: #ffe4c4;
+    color: rgba(255, 228, 196, 1);
 }
 
 input[id='normal']:checked ~ main
@@ -69,12 +69,12 @@ input[id='small']:checked ~ .settings > .settings-item > label[for='small']
     color: rgba(255, 255, 255, 1);
 }
 
-input[id='standard']:checked ~ main
+input[id='usual']:checked ~ main
 {
     font-family: sans-serif;
 }
 
-input[id='standard']:checked ~ .settings > label[for='standard']
+input[id='usual']:checked ~ .settings > .settings-item > label[for='usual']
 {
     background: rgba(56, 56, 56, 1);
     color: rgba(255, 255, 255, 1);
@@ -98,7 +98,7 @@ input[id='design']:checked ~ .settings > .settings-item > label[for='design']
     padding: 5px;
     cursor: pointer;
     background: rgba(56, 56, 56, .8);
-    border: #aaa;
+    border: 1px solid rgba(170, 170, 170, 1);
     color: rgba(255, 255, 255, .8);
     transition: all .5s ease-out;
 }
@@ -131,7 +131,7 @@ input[id='design']:checked ~ .settings > .settings-item > label[for='design']
     margin: 0;
 }
 
-.main_title
+.main-title
 {
     font-family: 'Ruslan Display', cursive;
     margin: 0;
@@ -156,19 +156,36 @@ input[id='design']:checked ~ .settings > .settings-item > label[for='design']
 {
     font-style: italic;
     hyphens: auto;
+    text-indent: 10px;
 }
 
 .article
 {
     hyphens: auto;
+    text-indent: 10px;
 }
 
-.advert
+.newspaper
 {
     column-count: 5;
 }
 
 .picture
 {
+    width: 90%;
+    display: inline-block;
+}
+
+.picture-title
+{
+    display: inline-block;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+
+.picture-block
+{
     width: 100%;
+    margin: 0;
+    white-space: nowrap;
 }
