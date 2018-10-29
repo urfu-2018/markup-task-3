@@ -5,8 +5,7 @@ img
 
 body
 {
-    background-color: beige;
-    background-image: url('images/frame.jpg');
+    background: beige url('images/frame.jpg') 0 0;
     background-size: 100%;
 }
 
@@ -125,42 +124,40 @@ article.pogrebin
 
 article.horklump
 {
-    max-width: 35%;
+    max-width: 30%;
 }
 
 article.horklump p
 {
-    column-rule: 1px solid black;
-    column-count: 1;
-    line-height: .95em;
+    line-height: 1em;
 }
 
 article.pogrebin p
 {
+    columns: 2;
     column-rule: 1px solid black;
-    column-count: 2;
 }
 
 article.quintaped
 {
+    columns: 220px auto;
     column-rule: 1px solid black;
-    column-count: 3;
 }
 
 @font-face
 {
     font-family: coolFont;
-    src: url('fonts/coolFont.TTF');
+    src: url('fonts/coolFont.woff');
 }
 
 @font-face
 {
     font-family: pFont;
-    src: url('fonts/pText.ttf');
+    src: url('fonts/pText.woff');
 }
 
 @font-face
 {
     font-family: note;
-    src: url('fonts/note.ttf');
+    src: url('fonts/note.woff');
 }
