@@ -24,6 +24,12 @@
 
 @font-face
 {
+    font-family: Geometria;
+    src: url('fonts/Geometria-ExtraLight.eot');
+}
+
+@font-face
+{
     font-family: Rus;
     src: url('fonts/Rus.otf');
 }
@@ -75,7 +81,7 @@
     text-transform: capitalize;
     padding: 5px;
     font-size: 18px;
-    font-family: serif;
+    font-family: Geometria, monospace;
 }
 
 .article-title
