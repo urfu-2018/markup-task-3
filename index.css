@@ -83,7 +83,6 @@
 {
     font-weight: 900;
     font-family: 'Text Me One', sans-serif;
-    column-span: all;
 }
 
 .main-content
@@ -97,12 +96,17 @@
 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 30px;
-    column-span: all;
+    /*column-span: all;*/
     padding: 15px;
     margin: 0;
     border-top: 1px dotted;
     text-align: center;
     border-bottom: 1px dotted;
+}
+
+.all-span
+{
+    column-span: all;
 }
 
 .date-box
@@ -119,7 +123,14 @@
 {
     column-count: 2;
     column-rule: 4px dotted;
+    word-wrap: break-word;
+    column-gap: 2em;
 
+}
+
+.class1
+{
+    display: block;
 }
 
 .fix-ul
@@ -131,12 +142,12 @@
 
 .column-article
 {
+    word-wrap: break-word;
     text-align: justify;
     padding: 10px;
-    vertical-align: top;
     column-gap: 20px;
     font-size: 20px;
-    display: inline-block;
+    display: block;
     text-indent: 1.5em;
     hyphens: manual;
     column-rule: 3px dashed darkblue;
@@ -177,6 +188,7 @@
     width: 1px;
     word-wrap: break-word;
     font-weight: 900;
+    padding: 10px;
 }
 
 .picture-outer
