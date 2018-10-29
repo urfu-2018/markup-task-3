@@ -16,8 +16,20 @@
 .info
 {
     font-size: 12px;
-    display: flex;
-    justify-content: space-between;
+    position: relative;
+    text-align: center;
+}
+
+.number
+{
+    position: absolute;
+    left: 0;
+}
+
+.price
+{
+    position: absolute;
+    right: 0;
 }
 
 main
@@ -36,13 +48,13 @@ main
 {
     padding-left: 10px;
     column-width: 150px;
-    column-fill: auto;
+    column-fill: balance;
     flex: 5;
 }
 
 .left-column
 {
-    flex: 2;
+    flex: 4;
 }
 
 h1,
@@ -87,12 +99,7 @@ article p::first-letter
 
 img
 {
-    width: 200px;
-}
-
-.article-1 img
-{
-    width: 425px;
+    width: 100%;
 }
 
 .article-3 
@@ -143,11 +150,6 @@ img
     font-style: italic;
 }
 
-.right-column img
-{
-    width: 610px;
-}
-
 .column-into-column
 {
     display: flex;
@@ -176,12 +178,12 @@ img
 
 .content 
 {
-    background: url(http://ekladata.com/4z74jKsN6kAKZIuPGsNi2Jpe1vc.jpg);
+    background: url(https://ekladata.com/4z74jKsN6kAKZIuPGsNi2Jpe1vc.jpg);
 }
 
 .theme[value='black']:checked ~ .content
 {
-    background: url(http://luxfon.com/images/201203/luxfon.com_6284.jpg);
+    background: url(img.jpg);
     color: white;
 }
 
@@ -215,17 +217,17 @@ body
     font-size: 26px;
 }
 
-span.theme
+.theme
 {
     text-align: left;
 }
 
-span.font 
+.font 
 {
     text-align: center;
 }
 
-span.font-size
+.font-size
 {
     text-align: right;
 }
