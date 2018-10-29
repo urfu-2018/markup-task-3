@@ -1,8 +1,8 @@
 @font-face
 {
-    font-family: nice;
-    src: url('12236.ttf') format('truetype');
+    font-family: myFont;
     font-display: auto;
+    src: url('12236.woff') format('woff');
 }
 
 body
@@ -85,7 +85,7 @@ p:first-letter
 
 .title2
 {
-    font-family: nice;
+    font-family: myFont;
     font-size: 30px;
     text-align: center;
 }
