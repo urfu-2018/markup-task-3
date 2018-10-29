@@ -65,19 +65,19 @@ main
     column-rule: 1px solid gray;
 }
 
-.article-name
+.articleName
 {
     text-transform: uppercase;
     text-align: center;
     margin: 10px;
 }
 
-.article-contents
+.articleContents
 {
     column-rule: 1px dashed black;
 }
 
-.article-contents p:not(.quote):not(.spanning)
+.articleContents p:not(blockquote)
 {
     hyphens: auto;
     text-align: justify;
@@ -85,7 +85,7 @@ main
     margin: 0;
 }
 
-.article-contents p:first-of-type::first-letter
+.articleContents p:first-of-type::first-letter
 {
     font-size: 30px;
 }
@@ -107,7 +107,7 @@ figcaption
     column-span: all;
 }
 
-.quote
+blockquote
 {
     font-size: 20px;
     font-style: italic;
@@ -129,14 +129,14 @@ figcaption
     margin: 10px;
 }
 
-.article1 .article-name
+.oneColumn .articleName
 {
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
     font-style: italic;
     font-stretch: condensed;
 }
 
-.article2 .article-name
+.twoColumn .articleName
 {
     font-family: Cambria, 'Times New Roman', serif;
     font-style: oblique;
@@ -145,12 +145,12 @@ figcaption
     border-bottom: 1px dashed black;
 }
 
-.article2 .article-contents
+.twoColumn .articleContents
 {
     column-count: 2;
 }
 
-.article3 .article-contents
+.threeColumn .articleContents
 {
     column-count: 3;
 }
