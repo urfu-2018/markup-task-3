@@ -1,36 +1,36 @@
-input[id='fs1']:checked ~ main,
-input[id='fs1']:checked ~ header
+input[id='fontSize1']:checked ~ main,
+input[id='fontSize1']:checked ~ header
 {
     font-size: 14px;
 }
 
-input[id='fs2']:checked ~ main,
-input[id='fs2']:checked ~ header
+input[id='fontSize2']:checked ~ main,
+input[id='fontSize2']:checked ~ header
 {
     font-size: 18px;
 }
 
-input[id='ft1']:checked ~ main,
-input[id='ft1']:checked ~ header
+input[id='fontType1']:checked ~ main,
+input[id='fontType1']:checked ~ header
 {
     font-family: 'Times New Roman', Times, serif;
 }
 
-input[id='ft2']:checked ~ main,
-input[id='ft2']:checked ~ header
+input[id='fontType2']:checked ~ main,
+input[id='fontType2']:checked ~ header
 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-input[id='cs1']:checked ~ main,
-input[id='cs1']:checked ~ header
+input[id='colorSetting1']:checked ~ main,
+input[id='colorSetting1']:checked ~ header
 {
     color: black;
     background: white;
 }
 
-input[id='cs2']:checked ~ main,
-input[id='cs2']:checked ~ header
+input[id='colorSetting2']:checked ~ main,
+input[id='colorSetting2']:checked ~ header
 {
     color: white;
     background: tan;
@@ -69,12 +69,12 @@ h1
     text-align: center;
 }
 
-h3 
+h2 
 {
     margin-top: 20px;
 }
 
-h4 
+h3 
 {
     margin-bottom: 5px;
     margin-top: 20px;
@@ -121,6 +121,14 @@ figcaption
 
 img
 {
-    height: 100%;
+    height: 100% !important;
     width: 100%;
+}
+
+div.verticalText
+{
+    word-wrap: break-word;
+    width: 10px;
+    column-count: 1;
+    column-rule: 0;
 }
