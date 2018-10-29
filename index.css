@@ -12,6 +12,12 @@
     float: right;
 }
 
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
 h1,
 h2
 {
@@ -90,6 +96,11 @@ input[class='inverted']:checked ~ .wrapper
     color: white;
 }
 
+input[class='inverted']:checked ~ .wrapper a
+{
+    color: white;
+}
+
 input[class='small-size']:checked ~ .wrapper
 {
     font-size: small;
@@ -154,4 +165,26 @@ li
 .phone::before
 {
     content: 'Тел.: ';
+}
+
+.clearfix::after
+{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.news
+{
+    width: 40%;
+    float: left;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.titleNews
+{
+    width: 20%;
+    text-align: center;
+    float: left;
 }
