@@ -9,7 +9,7 @@ body
 .newspaper
 {
     width: 900px;
-    height: 1000px;
+    height: 1100px;
     background: #cca474;
 }
 
@@ -59,7 +59,7 @@ td
 
 .subtitle
 {
-    font-family: Tempus Sans ITC, sans-serif;
+    font-family: 'Mali';
     font-size: 110%;
     font-style: oblique;
     font-weight: bold;
@@ -77,10 +77,11 @@ td
 {
     position: absolute;
     z-index: 1;
-    width: 320px;
-    height: 200px;
-    margin-left: 280px;
-    margin-top: -240px;
+    width: 490px;
+    height: 320px;
+    margin-left: 330px;
+    margin-top: -235px;
+    display: block;
 }
 
 .third 
