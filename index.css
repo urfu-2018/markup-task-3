@@ -1,3 +1,9 @@
+@font-face
+{
+    font-family: nice;
+    src: url('12236.ttf') format('truetype');
+    font-display: auto;
+}
 body
 {
     background: #faebd7;
@@ -78,7 +84,7 @@ p:first-letter
 
 .title2
 {
-
+    font-family: nice;
     font-size: 30px;
     text-align: center;
 }
