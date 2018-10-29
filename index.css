@@ -1,3 +1,19 @@
+@font-face
+{
+    font-family: 'OpenSansRegular';
+    src: local('./fonts/OpenSansRegular.eot'), url('./fonts/OpenSansRegular.eot')format('embedded-opentype'), url('./fonts/OpenSansRegular.woff') format('woff'), url('./fonts/OpenSansRegular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face
+{
+    font-family: 'Lobster';
+    src: url('./fonts/Lobster-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
 body
 {
     margin: 0;
@@ -132,6 +148,8 @@ body
     font-size: 1.1em;
     color: inherit;
     margin: 0 0 15px;
+    hyphens: manual;
+    text-align: justify;
 }
 
 .article p::first-letter
@@ -146,6 +164,7 @@ body
     padding: 0 30px;
     margin: 25px 15px;
     font-size: 1.2em;
+    font-family: 'Lobster';
 }
 
 .article figure
@@ -165,4 +184,11 @@ body
 .article figcaption
 {
     font-size: 1em;
+    font-family: 'OpenSansRegular';
+}
+
+.content__column_all
+{
+    column-span: all;
+    text-align: center;
 }
