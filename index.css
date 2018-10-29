@@ -1,16 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
-html
-{
-    font-size: 20px;
-}
-
 body
 {
-    background-image: url(http://www.theblockforum.com/fun/lance/lancescollection/textures/paper2.jpg);
-    background-repeat: no-repeat;
+    background: url(http://www.theblockforum.com/fun/lance/lancescollection/textures/paper2.jpg) no-repeat;
     background-size: cover;
     width: 100%;
+    font-size: 20px;
 }
 
 h1
@@ -39,9 +34,24 @@ h4
     font-style: italic;
 }
 
+header + main
+{
+    margin-top: 200px;
+}
+
 article
 {
     text-align: justify;
+}
+
+article + article
+{
+    margin-top: 100px;
+}
+
+article > p
+{
+    margin: 0;
 }
 
 .hyphenate 
@@ -97,11 +107,6 @@ figcaption
     text-align: center;
 }
 
-main
-{
-    margin-top: 100px;
-}
-
 footer p
 {
     text-align: center;
@@ -114,55 +119,7 @@ fieldset
 {
     border: 3px solid #000;
     white-space: nowrap;
-}
-
-table.table_head
-{
-    text-align: center;
-    border-bottom: 15px double #000;
     font-weight: bold;
-    word-break: break-all;
-}
-
-td.table_head_1_1
-{
-    text-align: left;
-    width: 30%;
-}
-
-td.table_head_1_2
-{
-    width: 10%;
-
-}
-
-td.table_head_1_3
-{
-    width: 60%;
-}
-
-td.table_head_2_1
-{
-    width: 50%;
-}
-
-td.table_head_2_2
-{
-    text-align: right;
-    width: 50%;
-}
-
-td.table_head_2_2 > h1
-{
-    text-align: right;
-}
-
-td.table_1_1 > span
-{
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.5em;
-    letter-spacing: 1em;
 }
 
 .wrapped_img
@@ -175,6 +132,10 @@ td.table_1_1 > span
 div
 {
     text-align: center;
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
 }
 
 div > img
@@ -182,7 +143,53 @@ div > img
     max-width: 95%;
 }
 
-.caps_div
+div.head
+{
+    clear: both;
+}
+
+div.head > img
+{
+    width: 10%;
+}
+
+div.head > h1
+{
+    width: 60%;
+    text-align: left;
+    word-break: break-all;
+}
+
+div.head > fieldset
+{
+    float: right;
+    margin-left: 40px;
+    margin-right: 30px;
+}
+
+div.head > img,
+div.head > h1,
+div.head > h2
+{
+    float: left;
+}
+
+div.head > h2 + h1
+{
+    text-align: right;
+    float: right;
+    margin-left: 40px;
+    word-break: break-all;
+}
+
+div.main > span
+{
+    font-weight: bold;
+    font-size: 1.5em;
+    letter-spacing: 1em;
+}
+
+div.caps_div
 {
     font-size: .8em;
     font-variant: small-caps;
@@ -236,6 +243,16 @@ hr.vertical
     border: 1px inset;
     margin: 5px;
 
+}
+
+header + hr.double
+{
+    padding: 0;
+    border: none;
+    border-top: 12px double #333;
+    color: #333;
+    text-align: center;
+    width: 100%;
 }
 
 hr:last-of-type
