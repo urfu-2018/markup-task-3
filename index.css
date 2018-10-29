@@ -20,14 +20,11 @@ h3
     font-style: italic;
 }
 
-hr
-{
-    opacity: 0;
-}
-
 p
 {
     font-family: 'Courier New', Courier, monospace;
+    word-break: break-all;
+    hyphens: auto;
 }
 
 p::first-letter
@@ -49,7 +46,7 @@ body
     background-color: dimgray;
 }
 
-.News
+.news
 {
     width: 50%;
     float: left;
@@ -57,7 +54,7 @@ body
     column-rule: 2px solid black;
 }
 
-.Humor
+.humor
 {
     width: 45%;
     float: right;
@@ -83,7 +80,29 @@ body
 
 .img
 {
+    height: 100%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: block;
+}
+
+p.vertical-text
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    writing-mode: vertical-lr;
+}
+
+blockquote {
+    margin: 0;
+    background:lightslategrey;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    color: #3A3C55;
+    padding: 30px 30px 30px 90px;
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-style: italic;
 }
