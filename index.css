@@ -1,23 +1,48 @@
 @font-face
 {
     font-family: 'Cardinal';
-    src: url(Cardinal.ttf) format('truetype');
+    src: local('Cardinal.eot');
+    src: url('Cardinal-Regular.woff') format('woff')
+        , url('Cardinal.woff2') format('woff2')
+        , url('Cardinal.eot?#iefix') format('embedded-opentype')
+        , url('Cardinal-Regular.ttf') format('truetype')
+        , url('Cardinal-Regular.svg#Cardinal-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face
 {
-    font-family: 'DancingScript';
-    src: url('DancingScript-Regular.ttf') format('truetype');
+    font-family: 'DancingScript-Regular';
+    src: local('DancingScript-Regular.eot');
+    src: url('DancingScript-Regular.woff2') format('woff2')
+        , url('DancingScript-Regular.woff') format('woff')
+        , url('DancingScript-Regular.ttf') format('truetype')
+        , url('DancingScript-Regular.svg#DancingScript-Regular') format('svg')
+        , url('DancingScript-Regular.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face
 {
-    font-family: 'DancingScriptBold';
-    src: url('DancingScript-Bold.ttf') format('truetype');
+    font-family: 'Constantia';
+    src: local('Constantia');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Constantia';
+    src: local('Constantia');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body
 {
+    min-width: 1100px;
     padding: 0;
     margin: 0;
     background: url('bg.jpg');
@@ -27,41 +52,40 @@ body
 .title
 {
     margin: 20px auto;
-    font-family: 'Cardinal', serif;
+    font-family: 'Cardinal', Fallback, serif;
     font-variant: small-caps;
     text-align: center;
     font-size: 50pt;
 }
 
+.photo-with-vertical-text
+{
+    margin: 10px;
+    display: inline-block;
+    width: 100%;
+}
+
 .da-vinci-photo
 {
-    float: left;
-    margin-right: 15px;
+    margin-right: 40px;
+}
+
+.vertical-text
+{
+    writing-mode: vertical-lr;
+    -ms-writing-mode: bt-rl;
+    -webkit-writing-mode: vertical-lr;
+    text-orientation: upright;
+    margin: 0 10px;
+    font-size: 27px;
+    padding: 5px;
+    border: 2px dotted black;
+    border-radius: 10px;
 }
 
 .gioconda
 {
-    float: right;
-    margin-left: 15px;
-    margin-top: 15px;
-}
-
-.merlin
-{
-    column-span: all;
-    max-width: 100%;
-}
-
-.gaudi-house
-{
-    max-width: 100%;
-    float: right;
-}
-
-.gaudi-house-inner
-{
-    max-width: 100%;
-    float: right;
+    margin-left: 20px;
 }
 
 .behavior-rules
@@ -86,7 +110,7 @@ body
 .magazine
 {
     padding: 10px;
-    font-family: Constantia, sans-serif;
+    font-family: Constantia, Fallback, sans-serif;
     font-size: medium;
     text-align: justify;
     hyphens: auto;
@@ -98,7 +122,7 @@ body
 
 .setting-section-header
 {
-    font-family: Constantia, sans-serif;
+    font-family: Constantia, Fallback, sans-serif;
     font-size: 18px;
 }
 
@@ -108,70 +132,69 @@ body
     margin-left: 10px;
     border: 2px black dotted;
     border-radius: 10px;
-    font-family: Constantia, sans-serif;
+    font-family: Constantia, Fallback, sans-serif;
     font-size: 18px;
     font-variant: small-caps;
 }
 
-.small-size-button:focus ~ article
+.small-size-button:focus ~ .magazine
 {
-    font-size: 12px;
+    font-size: 12px !important;
 }
 
-.medium-size-button:focus ~ article
+.medium-size-button:focus ~ .magazine
 {
-    font-size: 18px;
+    font-size: 18px !important;
 }
 
-.big-size-button:focus ~ article
+.big-size-button:focus ~ .magazine
 {
-    font-size: 24px;
+    font-size: 24px !important;
 }
 
-.huge-size-button:focus ~ article
+.huge-size-button:focus ~ .magazine
 {
-    font-size: 30px;
+    font-size: 30px !important;
 }
 
-.black-on-white-theme-button:focus ~ article
+.black-on-white-theme-button:focus ~ .magazine
 {
-    background: #fff;
-    border-radius: 10px;
+    background: #fff !important;
+    border-radius: 10px !important;
 }
 
-.white-on-black-theme-button:focus ~ article
+.white-on-black-theme-button:focus ~ .magazine
 {
-    border-radius: 10px;
-    background: #000;
-    color: #fff;
+    border-radius: 10px !important;
+    background: #000 !important;
+    color: #fff !important;
 }
 
-.disable-all-custom-fonts-button:focus ~ article,
-.disable-all-custom-fonts-button:focus ~ article .article-title,
-.disable-all-custom-fonts-button:focus ~ article .first-letter
+.disable-all-custom-fonts-button:focus ~ .magazine,
+.disable-all-custom-fonts-button:focus ~ .magazine .article-title,
+.disable-all-custom-fonts-button:focus ~ .magazine .first-letter
 {
-    font-family: Arial, serif;
-    font-variant: none;
+    font-family: Arial, Fallback, serif !important;
+    font-variant: none !important;
 }
 
-.make-beauty-button:focus ~ article
+.make-beauty-button:focus ~ .magazine
 {
-    font-family: Arial, serif;
+    font-family: Arial, Fallback, serif !important;
 }
 
 .first-letter
 {
-    float: left;
-    font-size: 42px;
+    font-size: 30px;
     padding-right: 10px;
-    color: crimson;
-    font-family: Cardinal, sans-serif;
+    color: #f00;
+    font-family: Cardinal, Fallback, sans-serif;
 }
 
 .article-title
 {
     text-align: center;
-    font-family: DancingScriptBold, serif;
+    font-family: DancingScript-Regular, Fallback, serif;
     border: 2px dotted black;
     border-radius: 10px;
 }
@@ -184,7 +207,7 @@ body
 
 .under-picture-text
 {
-    font-family: DancingScript, serif;
+    font-family: DancingScript-Regular, Fallback, serif;
     font-size: 14px;
 }
 
@@ -192,23 +215,44 @@ body
 {
     text-align: center;
     min-width: 20px;
-    float: right;
     background: #e4c076;
     margin-right: 20px;
     border: 2px black dotted;
     border-radius: 5px;
-    font-family: Cardinal, sans-serif;
+    font-family: Cardinal, Fallback, sans-serif;
     font-size: 18px;
 }
 
-.header-technique-information
+.footer-technique-information
 {
     padding: 1px 5px;
-    float: right;
     background: #e4c076;
     margin-right: 20px;
     border: 2px black dotted;
     border-radius: 10px;
-    font-family: Constantia, sans-serif;
+    text-align: center;
+    font-family: Constantia, Fallback, sans-serif;
     font-size: 18px;
+}
+
+.magazine > p
+{
+    text-indent: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.true-ending
+{
+    font-size: 30pt;
+    text-align: center;
+    font-family: 'Cardinal', Fallback, serif;
+}
+
+.pre-footer
+{
+    margin: 10px 0;
+    text-align: center;
 }
