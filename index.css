@@ -1,7 +1,7 @@
 @font-face
 {
     font-family: kingArthur;
-    src: local('King Atrhur'), url(fonts/KingArthur.ttf) format('truetype');
+    src: local('King Atrhur'), url(fonts/KingArthur.woff2) format('woff2'), url(fonts/KingArthur.woff) format('woff'), url(fonts/KingArthur.ttf) format('truetype');
 }
 
 @font-face
