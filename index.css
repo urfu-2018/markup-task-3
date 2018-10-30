@@ -7,6 +7,12 @@ body
     hyphens: auto;
 }
 
+@font-face
+{
+    font-family: 'Century Old Style';
+    src: url('Century_Old_Style.otf') format('opentype');
+}
+
 .night-mode:checked ~ section,
 .night-mode:checked ~ section > div
 {
@@ -48,6 +54,11 @@ body
 .helvetica-font-family:checked ~ .newspaper-text
 {
     font-family: Helvetica, serif;
+}
+
+.century-font-family:checked ~ .newspaper-text
+{
+    font-family: 'Century Old Style', serif;
 }
 
 .title-section,
@@ -96,9 +107,9 @@ body
 
 .newspaper-title
 {
-    /* replace with actual image?*/
     font: 60px Times, serif;
     margin: 1rem;
+    font-variant: small-caps;
 }
 
 .undertitle
