@@ -29,64 +29,60 @@ input[type='radio'] + label,
     font-weight: 700;
 }
 
-input[type='radio'] ~ header,
-input[type='radio'] ~ main,
-input[type='radio'] ~ footer
+input[type='radio'] ~ .wrapper
 {
     font: normal 300 1rem 'Roboto';
+}
+
+.wrapper > header,
+.wrapper > main,
+.wrapper > footer
+{
     padding: 20px;
 }
 
-input[type='radio'] ~ header
+.wrapper > header
 {
     margin-top: 10px;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
 
-.font-size-small:checked ~ header,
-.font-size-small:checked ~ main,
-.font-size-small:checked ~ footer
+.font-size-small:checked ~ .wrapper
 {
     font-size: .7rem;
 }
 
-.font-size-large:checked ~ header,
-.font-size-large:checked ~ main,
-.font-size-large:checked ~ footer
+.font-size-large:checked ~ .wrapper
 {
     font-size: 1.3rem;
 }
 
-.font-family-serif:checked ~ header,
-.font-family-serif:checked ~ main,
-.font-family-serif:checked ~ footer
+.font-family-serif:checked ~ .wrapper
 {
     font-family: 'Merriweather';
 }
 
-.font-family-monospace:checked ~ header,
-.font-family-monospace:checked ~ main,
-.font-family-monospace:checked ~ footer
+.font-family-monospace:checked ~ .wrapper
 {
     font-family: 'Roboto Mono';
 }
 
-.theme-dark:checked ~ header,
-.theme-dark:checked ~ main,
-.theme-dark:checked ~ footer
+.theme-dark:checked ~ .wrapper header,
+.theme-dark:checked ~ .wrapper main,
+.theme-dark:checked ~ .wrapper footer
 {
     background-color: black;
     color: white;
     border-color: white;
 }
 
-.theme-dark:checked ~ main > article
+.theme-dark:checked ~ .wrapper .news
 {
     column-rule-color: white;
 }
 
-.theme-dark:checked ~ main > article > .commercial
+.theme-dark:checked ~ .wrapper .commercial
 {
     border-color: white;
 }
@@ -157,11 +153,6 @@ input[type='radio'] ~ header
 figure
 {
     margin: 0;
-}
-
-.post-image
-{
-    width: 100%;
 }
 
 figcaption
