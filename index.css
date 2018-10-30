@@ -61,10 +61,6 @@ article:first-letter
 
 article
 {
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
     font-family: 'Courier New', serif;
 }
 
