@@ -6,15 +6,18 @@ body
 }
 
 input,
-label {
+label
+{
     cursor: pointer;
 }
 
-figure {
+figure
+{
     margin: 5px 0;
 }
 
-figcaption {
+figcaption
+{
     text-align: center;
     font-style: italic;
 }
