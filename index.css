@@ -1,3 +1,9 @@
+@font-face { 
+    font-family: DeutschGothic;
+    src: local(DeutschGothic),
+        url(deutsch-gothic.ttf);
+} 
+
 div
 {
     display: inline-block;
@@ -6,6 +12,7 @@ div
 article
 {
     position: relative;
+    width: 1490px;
     height: 1580px;
 }
 
@@ -69,7 +76,7 @@ section
     position: absolute;
     margin: 1020px 0 0;
     width: 910px;
-    column-count: 2;
+    -webkit-column-count: 2;
 }
 
 .in-the-next-series
@@ -89,7 +96,7 @@ section
     letter-spacing: -10px;
 }
 
-h2
+.title-article
 {
     text-align: center;
     column-span: all;
@@ -121,9 +128,13 @@ p
 
 .info > p 
 {
-    font: 20px 'Oswald', cursive !important;
-    color: #99088d !important;
-    font-family: 'Oswald', sans-serif;
+    font: 20px DeutschGothic, cursive;
+    color: #99088d;
+}
+
+.quote
+{
+    color: #f00;
 }
 
 a
@@ -138,12 +149,12 @@ footer
 
 input[id='standart-theme']:checked ~ article
 {
-    background: url('http://www.anasfim.com/p/2018/03/blank-old-newspaper-background-templates-corner-with-blank-old-newspaper-background.jpg') repeat;
+    background: url('old-wrinkled-paper.jpg') repeat;
 }
 
 input[id='unusual-theme']:checked ~ article
 {
-    background: url('http://www.onlygfx.com/wp-content/uploads/2015/10/old-wrinkled-paper.jpg') repeat;
+    background: url('setwalls.ru-11050.jpg') repeat;
 }
 
 input[id='unusual-theme']:checked ~ article .main-header
@@ -151,9 +162,24 @@ input[id='unusual-theme']:checked ~ article .main-header
     color: #f00;
 }
 
-input[id='unusual-fonts']:checked ~ article section h2
+input[id='unusual-theme']:checked ~ article p
+{
+    color: #a5a5a5;
+}
+
+input[id='unusual-theme']:checked ~ article .title-article
+{
+    color: #53d8d8;
+}
+
+input[id='unusual-fonts']:checked ~ article section .title-article
 {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+input[id='unusual-fonts']:checked ~ article
+{
+    height: 1780px;
 }
 
 input[id='unusual-fonts']:checked ~ article section p
@@ -169,7 +195,8 @@ input[id='unusual-fonts']:checked ~ article section p::first-letter
 
 input[id='unusual-fonts']:checked ~ article h1
 {
-    font: 25px 'times new roman';
+    font-family: DeutschGothic, serif;
+    font-size: 25px;
 }
 
 input[id='unusual-fonts']:checked ~ article .first-picture
@@ -189,7 +216,7 @@ input[id='unusual-fonts']:checked ~ article .two-article
 input[id='unusual-fonts']:checked ~ article .three-article
 {
     position: absolute;
-    margin: 1050px 0 0;
+    margin: 1150px 0 0;
     width: 910px;
     column-count: 2;
 }
@@ -202,7 +229,7 @@ input[id='standart-size']:checked ~ article
 input[id='unusual-size']:checked ~ article
 {
     font-size: 20px;
-    height: 2350px;
+    height: 2400px;
 }
 
 input[id='unusual-size']:checked ~ article .first-picture
