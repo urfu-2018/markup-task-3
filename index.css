@@ -147,17 +147,17 @@ article.quintaped
 @font-face
 {
     font-family: coolFont;
-    src: url('fonts/coolFont.woff');
+    src: url('fonts/coolFont.woff') format('woff'), url('fonts/coolFont.ttf') format('ttf'), url('fonts/coolFont.woff2') format('woff2');
 }
 
 @font-face
 {
     font-family: pFont;
-    src: url('fonts/pText.woff');
+    src: url('fonts/pText.woff') format('woff'), url('fonts/pText.ttf') format('ttf'), url('fonts/pText.woff2') format('woff2');
 }
 
 @font-face
 {
     font-family: note;
-    src: url('fonts/note.woff');
+    src: url('fonts/note.woff') format('woff'), url('fonts/note.ttf') format('ttf'), url('fonts/note.woff2') format('woff2');
 }
