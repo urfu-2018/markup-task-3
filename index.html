@@ -7,31 +7,31 @@
 </head>
 <body>
     <header>
-        <div class="head-msg">
+        <section class="header-message">
+            <h3>Morbi finibus</h3>
             <p>
-                Morbi finibus tincidunt libero at interdum.
                 Curabitur fringilla nunc leo, quis varius dui ullamcorper eu.
             </p>
-        </div>
+        </section>
         <img
             src="https://bit.ly/2q83iVl"
-            alt="The New York Times logo"
-            title="The New York Times logo"
+            alt="The New York Times main logo"
+            title="The New York Times"
         >
-        <div class="head-msg">
+        <section class="header-message">
             <h6>Phasellus lobortis cursus sem.</h6>
             <p>
                 Donec at vehicula arcu. Suspendisse ante metus, rhoncus eu erat at,
                 facilisis facilisis nisl. Nullam vehicula porta cursus.
                 Integer iaculis semper ipsum et sodales.
             </p>
-        </div>
+        </section>
     </header>
-    <div class="edition-number">
-        <p>Number</p>
-        <p>Some title</p>
-        <p>Date 1.1.1111</p>
-    </div>
+    <ul class="edition-number">
+        <li>Number</li>
+        <li>Some title</li>
+        <li>Date 1.1.1111</li>
+    </ul>
     <div class="key-words">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Quisque commodo enim et feugiat laoreet. Sed in tempus libero.
@@ -42,6 +42,7 @@
         <div class="main-column text-column">
             <article class="article1">
                 <h3>Article 1</h3>
+                <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Nam non sapien a purus sollicitudin dictum. Proin elit est, tincidunt vel viverra ac,
                     iaculis vitae purus. Sed commodo nisl id lectus efficitur auctor.
@@ -76,6 +77,7 @@
                     Sed hendrerit, risus vel molestie euismod, justo mauris cursus nulla,
                     ut mollis risus sem id ligula. Phasellus vitae bibendum magna.
                     Donec id odio quis neque convallis mattis. Phasellus ac scelerisque est.
+                </p>
             </article>
         </div>
         <div class="main-column center-column">
@@ -98,15 +100,17 @@
                         <h4>Donec gravida pellentesque dolor nec lacinia.</h4>
                     </div>
                     <h3>Article 3</h3>
-                    Pellentesque non tellus convallis odio molestie efficitur sit amet et dui.
-                    In hac habitasse platea dictumst. Suspendisse ac varius diam.
-                    Quisque sodales dignissim tincidunt.
-                    Aenean efficitur rutrum nunc, a hendrerit risus elementum et.
-                    Donec porttitor efficitur nibh, quis gravida enim venenatis nec.
-                    Integer ultricies felis sed nulla commodo blandit.
-                    Morbi malesuada tellus in vulputate consequat.
-                    Suspendisse non erat vitae ipsum venenatis hendrerit vel in eros.
-                    Pellentesque eget nunc vel ante mattis pellentesque sit amet in ligula.
+                    <p>
+                        Pellentesque non tellus convallis odio molestie efficitur sit amet et dui.
+                        In hac habitasse platea dictumst. Suspendisse ac varius diam.
+                        Quisque sodales dignissim tincidunt.
+                        Aenean efficitur rutrum nunc, a hendrerit risus elementum et.
+                        Donec porttitor efficitur nibh, quis gravida enim venenatis nec.
+                        Integer ultricies felis sed nulla commodo blandit.
+                        Morbi malesuada tellus in vulputate consequat.
+                        Suspendisse non erat vitae ipsum venenatis hendrerit vel in eros.
+                        Pellentesque eget nunc vel ante mattis pellentesque sit amet in ligula.
+                    </p>
                 </article>
                 <section class="advertisement">
                     <h2>
@@ -147,6 +151,10 @@
                 <h2>
                     Some title
                 </h2>
+                <div class="vertical-text">Text</div>
+                <div class="vertical-text">Text</div>
+                <div class="vertical-text">Text</div>
+                <div class="vertical-text">Text</div>
                 <hr>
                 <p>
                     Nunc viverra sodales ex vel lacinia.
@@ -163,8 +171,9 @@
             </section>
             <article class="article2">
                 <h3>Article 2</h3>
+                <p>
                     Quisque ac viverra nisl, at aliquet lacus.
-                    Nullam auctor, nunc suscipit lacinia rhoncus, velit urna vestibulum mauris,
+                    <q>Nullam auctor, nunc suscipit lacinia rhoncus</q>, velit urna vestibulum mauris,
                     eu convallis sapien sapien quis erat. Cras in mi nisi.
                     Duis scelerisque facilisis magna, quis pharetra est faucibus a. Fusce sed urna metus.
                     Etiam vehicula nisl laoreet, dictum ante ac, pharetra lorem.
@@ -174,20 +183,27 @@
                     ligula risus luctus ex, non euismod tortor risus at eros.
                     Nullam pulvinar blandit diam, sit amet lobortis ante pellentesque pellentesque.
                     Pellentesque vitae nisl fringilla, pulvinar est quis, egestas erat.
+                </p>
             </article>
             <article class="article5">
                 <h3>Article 5</h3>
+                <p>
                     Pellentesque non tellus convallis odio molestie efficitur sit amet et dui.
                     In hac habitasse platea dictumst. Suspendisse ac varius diam.
                     Quisque sodales dignissim tincidunt.
+                </p>
+                <blockquote>
                     Aenean efficitur rutrum nunc, a hendrerit risus elementum et.
                     Donec porttitor efficitur nibh, quis gravida enim venenatis nec.
                     Integer ultricies felis sed nulla commodo blandit.
                     Morbi malesuada tellus in vulputate consequat.
+                </blockquote>
+                <p>
                     Suspendisse non erat vitae ipsum venenatis hendrerit vel in eros.
                     Pellentesque eget nunc vel ante mattis pellentesque sit amet in ligula.
                     Nam vulputate, libero sit amet sollicitudin pharetra, leo ipsum interdum lorem,
                     vel suscipit metus quam non turpis. Integer at ligula massa. Donec erat urna
+                </p>
             </article>
         </div>
     </main>
