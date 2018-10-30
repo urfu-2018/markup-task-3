@@ -3,7 +3,8 @@
 @font-face
 {
     font-family: ModernoTwoRegular;
-    src: url('modernotwo.woff') format('woff');
+
+    src: local('Moderno Two'), url('modernotwo.woff') format('woff'), url('modernotwo.ttf') format('truetype'), url('modernotwo.eot') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -11,7 +12,7 @@
 @font-face
 {
     font-family: Rodeo;
-    src: url('rodeo_allfont.ru.woff') format('woff');
+    src: local('Rodeo'), url('rodeo_allfont.ru.ttf') format('truetype'), url('rodeo_allfont.ru.woff') format('woff'), url('rodeo_allfont.ru.eot') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -19,7 +20,7 @@
 @font-face
 {
     font-family: Usual;
-    src: url(UsualNew.woff) format('woff');
+    src: local('Usual New'), url('UsualNew.woff') format('woff'), url('UsualNew.ttf') format('truetype'), url('UsualNew.eot') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -27,7 +28,7 @@
 @font-face
 {
     font-family: Bengaly;
-    src: url(AGBengaly.woff) format('woff');
+    src: local('AGBengaly'), url('AGBengaly.woff') format('woff'), url('AGBengaly.ttf') format('truetype'), url('AGBengaly.eot') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -47,33 +48,33 @@ body
     font-family: Usual, serif;
 }
 
-.alignedColumnSpan
+.aligned-column-span
 {
     column-count: 3;
 }
 
-.alignedColumnSpan > article
+.aligned-column-span > article
 {
     column-span: 1;
     font-size: .8em;
 }
 
-.alignedColumnSpan > div
+.aligned-column-span > div
 {
     text-align: center;
 }
 
-.alignedColumnSpan > div:first-child
+.aligned-column-span > div:first-child
 {
     text-align: left;
 }
 
-.alignedColumnSpan > div:last-child
+.aligned-column-span > div:last-child
 {
     text-align: right;
 }
 
-.strongBorderInformation
+.strong-border-information
 {
     padding-top: .02em;
     padding-bottom: .02em;
@@ -95,14 +96,14 @@ body
     text-decoration-skip: spaces;
 }
 
-.generalHeader
+.general-header
 {
     text-align: center;
     font-size: 7em;
     font-family: ModernoTwoRegular, serif;
 }
 
-.frenchTitle
+.french-title
 {
     text-align: center;
     font-size: 2em;
@@ -111,7 +112,7 @@ body
     margin-bottom: .1em;
 }
 
-.mainPage
+.main-page
 {
     column-count: 4;
     column-gap: .3em;
@@ -126,7 +127,7 @@ body
     text-align: justify;
 }
 
-.mainPage h1
+.main-page h1
 {
     text-align: center;
     font-size: 1.5em;
@@ -145,17 +146,17 @@ figcaption
     margin: auto;
 }
 
-.mainPage figure
+.main-page figure
 {
     border: .1em solid black;
 }
 
-.mainPage figcaption
+.main-page figcaption
 {
     text-align: left;
 }
 
-.mainPage > article > p:first-letter
+.main-page > article > p:first-letter
 {
     font-size: 1.5em;
 }
