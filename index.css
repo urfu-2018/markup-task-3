@@ -2,7 +2,8 @@
 {
     font-family: myFont;
     font-display: auto;
-    src: url('12236.woff') format('woff');
+    src: url('12236.woff2') format('woff2')
+        , url('12236.woff') format('woff');
 }
 
 body
