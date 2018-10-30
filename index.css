@@ -124,6 +124,7 @@ input[id='design']:checked ~ .settings > .settings-item > label[for='design']
 {
     display: inline-block;
     text-align: left;
+    margin-right: 10px;
 }
 
 .settings-title
@@ -167,6 +168,8 @@ input[id='design']:checked ~ .settings > .settings-item > label[for='design']
 
 .newspaper
 {
+    padding-left: 7px;
+    padding-right: 7px;
     column-count: 5;
 }
 
