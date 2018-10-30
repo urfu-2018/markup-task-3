@@ -1,10 +1,10 @@
 body
 {
-    max-width: 1080px;
+    width: 1100px;
     margin: 0 auto;
 }
 
-.header-news .logo-block
+.logo-block
 {
     display: inline-block;
     position: relative;
@@ -12,16 +12,14 @@ body
     top: -1.1em;
 }
 
-.header-news .logo-block::after,
-.header-news .logo-block::before
+.logo-block::after,
+.logo-block::before
 {
     font-family: 'BlackCastleMF';
-    font-style: normal;
-    font-weight: normal;
     font-size: 1.2em;
 }
 
-.header-news .logo-block::before
+.logo-block::before
 {
     content: 'bewitch beguile';
     position: absolute;
@@ -30,7 +28,7 @@ body
     left: 0;
 }
 
-.header-news .logo-block::after
+.logo-block::after
 {
     content: 'beguile bewitch ensouled hex';
     position: absolute;
@@ -40,18 +38,16 @@ body
     transform: scale(1, -1);
 }
 
-.header-news .logo-news
+.logo-news
 {
     position: relative;
 }
 
-.header-news .logo-news::before,
-.header-news .logo-news::after
+.logo-news::before,
+.logo-news::after
 {
     position: absolute;
     font-family: MuggleNews;
-    font-style: normal;
-    font-weight: normal;
     font-size: 2.7em;
     background: url(img/gold-text.jpg)
         no-repeat
@@ -62,21 +58,21 @@ body
     -webkit-background-clip: text;
 }
 
-.header-news .logo-news::before
+.logo-news::before
 {
     content: 'D';
     top: 35%;
     left: 35%;
 }
 
-.header-news .logo-news::after
+.logo-news::after
 {
     content: 'P';
     bottom: 20%;
     right: 35%;
 }
 
-.header-news .title-newspaper
+.title-newspaper
 {
     display: inline-block;
     border-top: 5px solid #000;
@@ -85,14 +81,12 @@ body
     position: relative;
 }
 
-.header-news .title-newspaper::before,
-.header-news .title-newspaper::after
+.title-newspaper::before,
+.title-newspaper::after
 {
     content: 'spellbind conjure enchant divinate';
     background: #fff;
     font-family: 'BlackCastleMF';
-    font-style: normal;
-    font-weight: normal;
     position: absolute;
     right: -1px;
     line-height: 1.5em;
@@ -101,29 +95,27 @@ body
     padding-left: 10px;
 }
 
-.header-news .title-newspaper::before
+.title-newspaper::before
 {
     top: -.75em;
 }
 
-.header-news .title-newspaper::after
+.title-newspaper::after
 {
     bottom: -.75em;
     transform: scale(1,-1);
 }
 
-.header-news .title-newspaper h1
+.title-newspaper h1
 {
     font-family: MuggleNews;
-    font-style: normal;
-    font-weight: normal;
     font-size: 7.6em;
     text-transform: uppercase;
     margin: 0;
     margin-top: -2%;
 }
 
-.header-news .title-newspaper h1 span
+.title-newspaper h1 span
 {
     background: url(img/gold-text.jpg)
         no-repeat
@@ -135,7 +127,7 @@ body
     position: relative;
 }
 
-.header-news .title-newspaper h1 span::after
+.title-newspaper h1 span::after
 {
     content: 'P';
     position: absolute;
@@ -145,11 +137,9 @@ body
     z-index: -1;
 }
 
-.header-news .title-newspaper .subtitle
+.title-newspaper .subtitle
 {
     font-family: 'Fontscafe';
-    font-style: normal;
-    font-weight: normal;
     font-size: 1.2em;
     text-transform: uppercase;
     text-align: center;
@@ -157,15 +147,15 @@ body
     margin-bottom: 0;
 }
 
-.header-news .title-newspaper .subtitle::before,
-.header-news .title-newspaper .subtitle::after
+.title-newspaper .subtitle::before,
+.title-newspaper .subtitle::after
 {
     content: '\2605';
     margin: 10px;
     font-stretch: expanded;
 }
 
-.header-news .hr-title-top
+.hr-title-top
 {
     line-height: 1.5em;
     position: relative;
@@ -178,7 +168,7 @@ body
     margin-bottom: 0;
 }
 
-.header-news .hr-title-top::after
+.hr-title-top::after
 {
     content: 'The';
     position: relative;
@@ -187,14 +177,12 @@ body
     padding: 0 .5em;
     line-height: 2em;
     font-family: 'LaurenScript';
-    font-style: normal;
-    font-weight: normal;
     font-size: 2em;
     background-color: #fff;
     top: -10px;
 }
 
-.header-news .hr-title-top::before
+.hr-title-top::before
 {
     content: '';
     background: #000;
@@ -205,7 +193,7 @@ body
     height: 2px;
 }
 
-.header-news .hr-title-bottom
+.hr-title-bottom
 {
     line-height: 1em;
     outline: 0;
@@ -217,7 +205,7 @@ body
     position: relative;
 }
 
-.header-news .hr-title-bottom::before
+.hr-title-bottom::before
 {
     content: '';
     background: #000;
@@ -242,7 +230,7 @@ body
     align-items: flex-start;
 }
 
-.main-news .subheader .announcement
+.announcement
 {
     max-width: 37%;
     background: #000;
@@ -254,7 +242,7 @@ body
     display: inline-block;
 }
 
-.main-news .subheader .announcement .reward
+.reward
 {
     font: normal
         normal
@@ -264,7 +252,7 @@ body
     text-shadow: 3px 3px #000, 5px 7px 2px rgba(255,255,255,.8);
 }
 
-.main-news .subheader .announcement .currency
+.currency
 {
     font: normal
         normal
@@ -278,7 +266,7 @@ body
     left: 5em;
 }
 
-.main-news .subheader .announcement .mission
+.mission
 {
     font: normal
         normal
@@ -340,14 +328,14 @@ body
     line-height: 0;
 }
 
-.main-news .content-block
+.content-block
 {
     padding: 2%;
     border: 5px solid #000;
     /*position: relative;*/
 }
 
-.main-news .first-block
+.first-block
 {
     display: flex;
     align-items: flex-start;
@@ -355,7 +343,7 @@ body
     flex-wrap: wrap;
 }
 
-.main-news .column-news
+.column-news
 {
     font: normal
         normal
@@ -364,12 +352,12 @@ body
     text-align: justify;
 }
 
-.main-news .column-news.exlusive
+.column-news.exlusive
 {
     flex-basis: 200px;
 }
 
-.main-news .column-news.exlusive .attention
+.column-news.exlusive .attention
 {
     width: 95%;
     background: #000;
@@ -385,36 +373,35 @@ body
     margin: 0;
 }
 
-.main-news .column-news.exlusive .article
+.column-news.exlusive .article
 {
     hyphens: auto;
 }
 
-.main-news .column-news.exlusive .article::first-letter
+.column-news.exlusive .article::first-letter
 {
     font-family: 'Royal';
     font-size: 9em;
     float: left;
 }
 
-.main-news .column-news.exlusive .attention span
+.column-news.exlusive .attention span
 {
     transform: rotate(90deg)
         scale(-1,1);
     display: inline-block;
 }
 
-.main-news .first-news
+.first-news
 {
     flex-basis: 79%;
     position: relative;
 }
 
-.main-news .first-news .title-news,
-.main-news .first-news .subtitle-news
+.title-news,
+.subtitle-news
 {
     font-family: 'Headoh';
-    font-style: normal;
     font-weight: normal;
     text-align: justify;
     width: 100%;
@@ -422,20 +409,20 @@ body
     line-height: 0;
 }
 
-.main-news .first-news .title-news
+.title-news
 {
     font-size: 12.5em;
     margin-top: 11%;
 }
 
-.main-news .first-news .subtitle-news
+.subtitle-news
 {
     font-size: 9em;
     margin-top: 11%;
     margin-bottom: 9%;
 }
 
-.main-news .first-news .title-news::after
+.title-news::after
 {
     content: '';
     display: inline-block;
@@ -444,14 +431,14 @@ body
     line-height: 0;
 }
 
-.main-news .first-news .img-article
+.img-article
 {
     display: inline-block;
     max-width: 600px;
     position: absolute;
 }
 
-.main-news .first-news .left-article
+.left-article
 {
     display: inline-block;
     max-width: 200px;
@@ -461,7 +448,7 @@ body
     right: 2%;
 }
 
-.main-news .first-news .left-article::first-letter
+.left-article::first-letter
 {
     font-family: 'Flower';
     font-size: 10em;
@@ -469,7 +456,7 @@ body
     float: left;
 }
 
-.main-news .first-news .center-article
+.center-article
 {
     display: inline-block;
     position: absolute;
@@ -477,7 +464,7 @@ body
     width: 580px;
 }
 
-.main-news .first-news .center-article .title
+.center-article .title
 {
     display: block;
     width: 100%;
@@ -491,14 +478,14 @@ body
     font-family: 'BlackCastleMF';
 }
 
-.main-news .first-news .center-article .article
+.center-article .article
 {
     column-count: 3;
     column-rule: 2px solid #000;
     column-gap: 3%;
 }
 
-.main-news .first-news .center-article .article::first-letter
+.center-article .article::first-letter
 {
     font-family: 'Fontscafe';
     font-size: 5em;
@@ -506,12 +493,12 @@ body
     line-height: .8em;
 }
 
-.main-news .footer-newspaper
+.footer-newspaper
 {
     position: relative;
 }
 
-.main-news .footer-newspaper hr
+.footer-newspaper hr
 {
     border: none;
     width: 100%;
@@ -522,7 +509,7 @@ body
     top: 35%;
 }
 
-.main-news .footer-newspaper span
+.footer-newspaper span
 {
     background: #fff;
     z-index: 2;
@@ -532,22 +519,22 @@ body
     padding: 0 5px;
 }
 
-.main-news .footer-newspaper span:nth-child(2)
+.footer-newspaper span:nth-child(2)
 {
     font-family: 'Headth';
 }
 
-.main-news .footer-newspaper span:nth-child(3)
+.footer-newspaper span:nth-child(3)
 {
     font-family: 'GothicLove';
 }
 
-.main-news .footer-newspaper span:nth-child(4)
+.footer-newspaper span:nth-child(4)
 {
     font-family: 'LinaScript';
 }
 
-.main-news .footer-newspaper span:nth-child(5)
+.footer-newspaper span:nth-child(5)
 {
     font-family: 'Royal';
     text-transform: uppercase;
