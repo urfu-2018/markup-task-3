@@ -5,8 +5,8 @@
 
 @font-face
 {
-    font-family: 'Nautilus';
-    src: local('Nautilus'), url('Nautilus Pompilius/Nautilus.otf') format('truetype');
+    font-family: 'Christmas ScriptC';
+    src: local('Christmas ScriptC'), url('Christmas ScriptC/christmasscriptc.woff') format('woff');
 }
 
 .black:checked ~ .newspaper,
@@ -60,11 +60,12 @@
     font-size: 14px;
 }
 
-.nautilus-style:checked ~ .newspaper .text,
-.nautilus-style:checked ~ .newspaper .vertical,
-.nautilus-style:checked ~ header
+.local-style:checked ~ .newspaper .text,
+.local-style:checked ~ .newspaper .vertical,
+.local-style:checked ~ header
 {
-    font-family: 'Nautilus', serif;
+    font-family: 'Christmas ScriptC', serif;
+    font-size: 18px;
 }
 
 .arial-style:checked ~ .newspaper .text,
