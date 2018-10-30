@@ -61,7 +61,7 @@ header h1
     text-transform: capitalize;
 }
 
-.date-and-exchange-rate
+.date-and-page
 {
     width: 100%;
     overflow: hidden;
@@ -99,31 +99,26 @@ header h1
     width: 30%;
 }
 
-.layout
+.content
 {
     flex-grow: 1;
-    hyphens: auto;
     font-family: OldNewspaper, Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.layout section
+.content section
 {
     margin-bottom: 5px;
 }
 
-.layout section:last-child
+.content section:last-child
 {
     margin: 0;
-}
-
-.bordered
-{
-    border: 3px solid black;
 }
 
 .advert
 {
     padding: 5px;
+    border: 3px solid black;
 }
 
 .advert p
@@ -131,22 +126,23 @@ header h1
     text-align: left;
 }
 
-.quote
+blockquote
 {
     padding: 2px 5px;
+    margin: 10px;
 }
 
-.quote .text::before
+blockquote .text::before
 {
     content: '\201D';
 }
 
-.quote .text::after
+blockquote .text::after
 {
     content: '\201E';
 }
 
-.quote .author
+blockquote .author
 {
     text-align: right;
     font-style: italic;
@@ -157,6 +153,11 @@ header h1
     text-align: center;
     text-transform: capitalize;
     font-weight: bold;
+}
+
+.guide
+{
+    border: 3px solid black;
 }
 
 .guide h3
@@ -175,13 +176,13 @@ header h1
     list-style-position: inside;
 }
 
-.two-columns-text
+.long-text
 {
     column-count: 2;
     column-rule: 2px dotted black;
 }
 
-.layout section h2
+.content section h2
 {
     margin: 10px 0;
     text-align: center;
@@ -190,7 +191,7 @@ header h1
     font-variant: small-caps;
 }
 
-.layout section p
+.content section p
 {
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
@@ -200,7 +201,7 @@ header h1
     margin: 5px 0;
 }
 
-.layout section p.caption
+.content section p.caption
 {
     text-align: center;
     text-transform: lowercase;
@@ -208,22 +209,28 @@ header h1
     font-size: 14px;
 }
 
-.layout section p.caption::first-letter
+.content section p.horizontal-caption
+{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+
+.content section p.caption::first-letter
 {
     font-size: inherit;
 }
 
-.layout section img
+.content section img
 {
     width: 100%;
 }
 
-.layout p::first-letter
+.content p::first-letter
 {
     font-size: 24px;
 }
 
-.layout > div
+.content > section
 {
     height: 100%;
     float: left;
@@ -233,42 +240,62 @@ header h1
     border-right: 2px solid black;
 }
 
-.layout > div:last-child
+.content > section:last-child
 {
     border: none;
 }
 
-.width-normal 
+.narrow-column
 {
     width: 20%;
 }
 
-.width-wide 
+.wide-column
 {
     width: 40%;
 }
 
-.font-bigger:checked ~ main .layout
+body input[type='checkbox']
+{
+    display: none;
+}
+
+body label
+{
+    display: inline-block;
+    margin: 5px;
+    padding: 2px 5px;
+    cursor: pointer;
+}
+
+.font-bigger:checked ~ main .content
 {
     font-size: 18px;
 }
 
-.font-bigger:checked ~ main .layout p
+.font-bigger:checked ~ main .content p
 {
     font-size: 18px;
 }
 
-.font-bigger:checked ~ main .layout h2
+.font-bigger:checked ~ main .content h2
 {
     font-size: 28px;
 }
 
-.font-change:checked ~ main .layout
+.font-bigger:checked ~ label[for='font-bigger'],
+.font-change:checked ~ label[for='font-change'],
+.dark-theme:checked ~ label[for='dark-theme']
+{
+    background: #f0dc9a;
+}
+
+.font-change:checked ~ main .content
 {
     font-family: 'FBI Report', Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.font-change:checked ~ main .layout h2
+.font-change:checked ~ main .content h2
 {
     font-family: SerialPublication, Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -279,17 +306,17 @@ header h1
     background: #3e2f2a;
 }
 
-.dark-theme:checked ~ main header .date-and-exchange-rate
+.dark-theme:checked ~ main header .date-and-page
 {
     border-color: #f0dc9a;
 }
 
-.dark-theme:checked ~ main .layout > div
+.dark-theme:checked ~ main .content > div
 {
     border-right-color: #f0dc9a;
 }
 
-.dark-theme:checked ~ main .layout .two-columns-text
+.dark-theme:checked ~ main .content .long-text
 {
     column-rule-color: #f0dc9a;
 }
@@ -299,7 +326,8 @@ header h1
     border-color: #f0dc9a;
 }
 
-.dark-theme:checked ~ main .bordered
+.dark-theme:checked ~ main .guide,
+.dark-theme:checked ~ main .advert
 {
     border-color: #f0dc9a;
 }
