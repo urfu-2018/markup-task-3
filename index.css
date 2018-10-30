@@ -117,7 +117,6 @@ body
     column-count: 4;
     column-gap: .3em;
     column-rule: .1em solid black;
-    /* line-height: 80%;*/
 
     margin-top: .05em;
     border-top: .05em solid black;
@@ -125,6 +124,7 @@ body
 
     font-size: 1em;
     text-align: justify;
+    line-height: 1.4em;
 }
 
 .main-page h1
@@ -141,6 +141,7 @@ figcaption
 {
     position: relative;
 
+    font-size: .9em;
     display: block;
     width: 90%;
     margin: auto;
@@ -156,7 +157,25 @@ figcaption
     text-align: left;
 }
 
-.main-page > article > p:first-letter
+.main-page > article > p:first-of-type:first-letter
 {
-    font-size: 1.5em;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+blockquote
+{
+    margin: auto;
+    padding: .5em;
+    border: .05em black solid;
+    font-size: 1em;
+    text-align: right;
+}
+
+blockquote.little-quote
+{
+    margin-right: unset;
+    margin-left: 35%;
+    padding: .5em;
+    font-size: .8em;
 }
