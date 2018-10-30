@@ -1,8 +1,8 @@
-@font-face { 
+@font-face
+{
     font-family: DeutschGothic;
-    src: local(DeutschGothic),
-        url(deutsch-gothic.ttf);
-} 
+    src: local('DeutschGothic'), url('deutsch-gothic.ttf');
+}
 
 div
 {
