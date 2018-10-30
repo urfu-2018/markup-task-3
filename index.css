@@ -155,6 +155,11 @@ figure
     margin: 0;
 }
 
+.post-image
+{
+    width: 100%;
+}
+
 figcaption
 {
     font-size: .8em;
