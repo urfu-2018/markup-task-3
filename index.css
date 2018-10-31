@@ -14,6 +14,16 @@
     src: url(BeautifulPeople.ttf);
 }
 
+.fontarial:checked ~ .content
+{
+    font-family: Arial, Helvetica, Calibri, serif;
+}
+
+.fontTNR:checked ~ .content
+{
+    font-family: 'Times New Roman', Times, serif;
+}
+
 body
 {
     -webkit-hyphens: auto;
@@ -44,13 +54,21 @@ h2
     line-height: 30px;
 }
 
-div
+.content
 {
     font-family: newsPapperFont, serif;
     text-indent: 5%;
     text-align: justify;
     columns: 200px 4;
     column-rule: 2px solid;
+}
+
+.Doggypic
+{
+    float: right;
+    column-span: all;
+    height: 300px;
+    width: 250px;
 }
 
 .pic
@@ -70,13 +88,20 @@ div
     line-height: 30px;
 }
 
-div.a::first-letter
+div.column::first-letter
 {
     font-family: firstletter, sans-serif;
     font-size: 30px;
 }
 
-.sign
+.vertical
+{
+    text-align: left;
+    width: .9em;
+    line-height: 1em;
+}
+
+.signature
 {
     border: 1px solid;
     margin: 5px 0 20px 5px;
@@ -85,39 +110,25 @@ div.a::first-letter
 
 .sign figcaption
 {
+    width: 1em;
+    line-height: 1em;
     text-align: center;
 }
 
-.checkbox:checked ~ .std
+.checkbox:checked ~ .content
 {
     background: black;
     color: white;
 }
 
-.std
-{
-    background: white;
-    transition: .5s;
-}
-
-.checkBigLet:checked ~ .std
+.bigletters:checked ~ .content
 {
     font-size: 1.5em;
 }
 
-.checkSmallLet:checked ~ .std
+.smallletters:checked ~ .content
 {
     font-size: .5em;
-}
-
-.chetyre2:checked ~ .std
-{
-    font-family: Arial, sans-serif;
-}
-
-.chetyre3:checked ~ .std
-{
-    font-family: Times New Roman, serif;
 }
 
 .line
@@ -125,4 +136,23 @@ div.a::first-letter
     text-align: center;
     width: 100px;
     color: #000;
+}
+
+figure
+{
+    display: inline-block;
+    padding: 20px;
+    margin: 0 1em 0 0;
+    vertical-align: middle;
+}
+
+figcaption
+{
+    text-align: center;
+}
+
+.right
+{
+    float: left;
+    padding: 1px;
 }
