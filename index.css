@@ -110,11 +110,10 @@ h1
 
 .rightIMG
 {
-    width: 300px;
+    width: 100%;
     margin: 5px auto;
-    float: right;
     position: relative;
-    right: 0;
+    text-align: center;
     top: 28%;
 }
 
