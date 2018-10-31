@@ -1,17 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=New+Rocker');
 @import url('https://fonts.googleapis.com/css?family=Agency+FB');
 
-body
+@font-face {
+    font-family: bebas;
+    src: local('Bebas'),
+    url('BEBAS.woff') format('woff');
+}
+
+@font-face {
+    font-family: junction;
+    src: local('Junction'),
+    url('junction-light.ttf') format('ttf');
+}
+
+.content
 {
     font-family: 'Agency FB', sans-serif;
 }
 
-header p
+.content header p
 {
     text-transform: uppercase;
 }
 
-h1
+.logo
 {
     font-family: 'New Rocker', sans-serif;
     text-align: center;
@@ -26,6 +38,7 @@ h1
 .paper-header section
 {
     column-count: 3;
+    -moz-column-count: 3;
     border-bottom: black double 2px;
 }
 
@@ -50,49 +63,55 @@ h1
     text-align: right;
 }
 
-main
+.content
 {
     font-size: 1em;
     column-gap: .3em;
     column-rule-style: double;
     column-count: 4;
+    -moz-column-gap: .3em;
+    -moz-column-rule-style: double;
+    -moz-column-count: 4;
 }
 
-main article
+.content article
 {
     break-inside: avoid;
 }
 
-main article section
+.content article section
 {
     column-count: 2;
     column-rule-style: dashed;
     column-rule-width: 1px;
+    -moz-column-count: 2;
+    -moz-column-rule-style: dashed;
+    -moz-column-rule-width: 1px;
 }
 
-article header
+.content article header
 {
     text-transform: uppercase;
     font-size: 1.1em;
 }
 
-article > section > p:first-of-type:first-letter
+.content article > section > p:first-of-type:first-letter
 {
     font-weight: bold;
     font-size: 1.2em;
 }
 
-article
+.content article
 {
     text-align: justify;
 }
 
-figure img
+.content figure img
 {
     width: 100%;
 }
 
-figcaption
+.content figcaption
 {
     text-align: center;
 }
@@ -111,6 +130,8 @@ figcaption
     font-size: 1.5em;
     padding: 0;
     margin: 0;
+    text-align: center;
+    font-family: bebas, sans-serif;
 }
 
 .wanted p
@@ -118,8 +139,14 @@ figcaption
     line-height: .6;
 }
 
-footer
+.paper-footer
 {
     text-align: center;
     font-family: 'Impact', sans-serif;
+}
+
+.metro-article
+{
+    font-family: junction, sans-serif;
+    font-size: .7em;
 }
