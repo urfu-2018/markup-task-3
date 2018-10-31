@@ -28,7 +28,7 @@ header
 header > img
 {
     display: inline-block;
-    width: 55%;
+    width: 40%;
     height: 90px;
     margin: 0 50px;
 }
@@ -131,7 +131,7 @@ header > img
 
 .center-column
 {
-    margin: 0 2%;
+    margin: 0 1%;
     width: 60%;
 }
 
