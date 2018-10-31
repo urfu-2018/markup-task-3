@@ -7,7 +7,7 @@ body
 @font-face
 {
     font-family: 'Old';
-    src: local("Bukyvede");
+    src: local('Bukyvede');
 }
 
 @font-face
@@ -31,7 +31,7 @@ body
 @font-face
 {
     font-family: 'Pikabu';
-    src: local("Arial Rounded MT Pro Cyr");
+    src: local('Arial Rounded MT Pro Cyr');
 }
 
 @font-face
@@ -52,7 +52,8 @@ body
     src: url(fonts/pikabu.woff2);
 }
 
-.quote {
+.quote
+{
     font: italic 1em 'Old';
     font-weight: bold;
     margin: 0;
@@ -60,7 +61,8 @@ body
     padding-left: 8px;
 }
 
-.float {
+.float
+{
     float: left;
 }
 
@@ -74,12 +76,14 @@ body
     width: 60px;
 }
 
-.col1 {
-    width: calc(20% - 24px) 
+.col1
+{
+    width: calc(20% - 24px);
 }
 
-.col2 {
-    width: calc(40% - 48px) 
+.col2
+{
+    width: calc(40% - 48px);
 }
 
 .width20
@@ -92,7 +96,8 @@ body
     width: 30%;
 }
 
-.width100{
+.width100
+{
     width: 100%;
 }
 
@@ -109,7 +114,8 @@ body
     padding: 20px 40px;
 }
 
-.overflow {
+.overflow
+{
     overflow: auto;
 }
 
