@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=New+Rocker');
 @import url('https://fonts.googleapis.com/css?family=Agency+FB');
 
-@font-face {
+@font-face
+{
     font-family: bebas;
-    src: local('Bebas'),
-    url('BEBAS.woff') format('woff');
+    src: local('Bebas'), url('BEBAS.woff') format('woff');
 }
 
-@font-face {
+@font-face
+{
     font-family: junction;
-    src: local('Junction'),
-    url('junction-light.ttf') format('ttf');
+    src: local('Junction'), url('junction-light.ttf') format('ttf');
 }
 
 .content
