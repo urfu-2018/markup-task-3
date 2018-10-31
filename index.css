@@ -9,15 +9,21 @@ body
 
 @font-face
 {
-    font-family: 'Century Old Style';
-    src: url('Century_Old_Style.otf') format('opentype');
+    font-family: 'Century Old Style Std';
+    src: local('Century Old Style Std Regular')
+        , local('CenturyOldStyleStd-Regular')
+        , url('CenturyOldStyleStd-Regular.woff2') format('woff2')
+        , url('CenturyOldStyleStd-Regular.woff') format('woff');
+    /* прекрасное позиционирование запятых из-за кривых правил линта*/
+    font-weight: normal;
+    font-style: normal;
 }
 
 .night-mode:checked ~ section,
 .night-mode:checked ~ section > div
 {
     color: #f5deb3;
-    background: #222;
+    background-color: #222;
 }
 
 .night-mode:checked ~ section > .red-block,
