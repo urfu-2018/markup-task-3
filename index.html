@@ -3,49 +3,76 @@
     <head>
         <meta charset="utf-8">
         <title>Задача «DeLorean DMC-12»</title>
-        <link rel="stylesheet" href="./css/index.css">
-        <link rel="stylesheet" href="./css/article.css">
-        <link rel="stylesheet" href="./css/flex.css">
-        <link rel="stylesheet" href="./css/alt-font.css">
-        <link rel="stylesheet" href="./css/zoom.css">
-        <link rel="stylesheet" href="./css/night.css">
+        <link rel="stylesheet" href="./index.css">
     </head>
     <body>
         <input type="checkbox" id="font" class="font"><label for="font">Дальше в прошлое</label>
         <input type="checkbox" id="zoom" class="zoom"><label for="zoom">Увеличить</label>
         <input type="checkbox" id="night" class="night"><label for="night">Ночная тема</label>
         <div class="newspaper">
-            <div class="flex underline">
-                <div class="margin box flex1">
-                    <p class="wordwrap">Присылайте свои статьи на почту "Пикабу":</p>
-                    <p class="wordwrap">Москва, ул.Королева, 70</p>
+            <div class="overflow underline">
+                <div class="float width20">
+                    <div class="margin box">
+                        <p class="wordwrap">Присылайте свои статьи на почту &quot;Пикабу&quot;:</p>
+                        <p class="wordwrap">Москва, ул.Королева, 70</p>
+                    </div>
                 </div>
-                <div class="wordwrap flex3 flex-center">
+                <div class="wordwrap float width30">
                     <h1 class="title">ПИКАБУ</h1>
                 </div>
-                <div class="wordwrap right flex2">
+                <div class="wordwrap float right width20">
                     <h2>Комментарий<br>дня</h2>
                 </div>
-                <div class="margin box flex3">
-                    <p class="bold wordwrap">Карма - штука хитрая!</p>
-                    <p class="wordwrap">
-                        я бы затупил, что-нибудь промямлил,
-                        и только на следующий день придумал бы, как нужно было ответить
-                    </p>
-                    <p class="bold wordwrap">+1960, Pisunyaka</p>
+                <div class="float width30">
+                    <div class="margin box">
+                        <p class="bold wordwrap">Карма - штука хитрая!</p>
+                        <p class="wordwrap">
+                            я бы затупил, что-нибудь промямлил,
+                            и только на следующий день придумал бы, как нужно было ответить
+                        </p>
+                        <p class="bold wordwrap">+1960, Pisunyaka</p>
+                    </div>
                 </div>
             </div>
             <div class="center underline">
                 <p>Горячие статьи за понедельник, 22 октября, 2018.</p>
             </div>
-            <div class="flex">
-                <div>
+            <div class="overflow">
+                <div class="float width60px">
                     <div class="article">
                         <p class="vertical">особняки стоят рядами _</p>
                         <p class="vertical">один стоит особняком</p>
                     </div>
                 </div>
-                <div class="flex2">
+                <div class="float col1">
+                    <div class="article">
+                        <h2>В Канаде вскоре после легализации закончилась марихуана</h2>
+                        <p class="wordwrap">
+                            Жители раскупили в магазинах весь завезенный каннабис за пару дней.
+                            Власти не рассчитывали, что спрос на него будет настолько большим.
+                        </p>
+                        <p class="wordwrap">
+                            После вступления в силу закона о легализации каннабиса,
+                            в канадских магазинах скупили всю марихуану в течение нескольких дней.
+                            Об этом в воскресенье, 21 октября, сообщает Independent.
+                        </p> 
+                        <p class="wordwrap">
+                            Очереди из желающих купить наркотик были такие длинные,
+                            что полиции пришлось патрулировать места продажи и усмирять тех,
+                            кому не хватило.
+                        </p>    
+                        <blockquote class="wordwrap quote">
+                            А я слива лиловая, спелая садовая
+                        </blockquote>
+                        <p class="wordwrap">
+                            Руководитель государственной программы по легализации марихуаны
+                            Билл Блэр отметил, что страна не смогла удовлетворить спрос населения,
+                            а в магазины завезли недостаточно каннабиса.
+                        </p>
+                        <p class="wordwrap bold">traveler74</p>
+                    </div>
+                </div>
+                <div class="float col1">
                     <div class="article">
                         <h2>В Канаде вскоре после легализации закончилась марихуана</h2>
                         <p class="wordwrap">
@@ -69,107 +96,48 @@
                         </p>
                         <p class="wordwrap bold">traveler74</p>
                     </div>
-                    <div class="flex">
-                        <div class="flex1">
-                            <div class="article box">
-                                <p class="wordwrap">Продам гараж. Звоните: 8-800-555-35-35</p>
-                            </div>
-                            <div class="article">
-                                <h2>История про Илью</h2>
-                                <p class="wordwrap">
-                                    А у Ильи был только один долг -
-                                    он тоже его успешно закрыл.
-                                </p>
-                            </div>
-                            <div class="article">
-                                <h2>История про Пашу</h2>
-                                <p class="wordwrap">
-                                    У Паши было 5 долгов по учёбе,
-                                    но он их успешно закрыл перед аккредитацией университета.
-                                    Паша - молодец!
-                                </p>
-                            </div>
-                        </div>
-                        <div class="flex1">
-                            <div class="article">
-                                <h2>Почему зебра?</h2>
-                                <p class="wordwrap">
-                                    Очень забавно бывает узнавать историю привычных,
-                                    повседневных вещей. Вот вы, например, задумывались,
-                                    почему пешеходный переход системы «зёбра» выглядит именно так,
-                                    как он выглядит? Широкие полосы, расположенные вдоль улицы?
-                                </p>
-                                <p class="wordwrap">
-                                    В этом, как и во многом другом, виноваты древние римляне.
-                                    Пешеходы переходили через заваленные навозом и отбросами улицы
-                                    по специально положенным большим плоским камням, подобранным так,
-                                    чтобы колёса колесниц (ширина колеи которых у римлян тоже была
-                                    стандартизирована) попадали точно между камней. Это позволяло
-                                    и колесницам проехать и пешеходам не замочить ноги.
-                                </p>
-                                <p class="wordwrap bold">krakatoor</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-                <div class="flex1">
+                <div class="float col1">
+                    <div class="article box">
+                        <p class="wordwrap">Продам гараж. Звоните: 8&mdash;800&mdash;555&mdash;35&mdash;35</p>
+                    </div>
                     <div class="article">
-                        <h2>Ты, это, приходи, а то уволим...</h2>
+                        <h2>В Канаде вскоре после легализации закончилась марихуана</h2>
                         <p class="wordwrap">
-                            Суть такая: помимо основной работы, устроился недавно начальником ИТ
-                            на полставки. В конторе был песец, просто жуткий. 
+                            Жители раскупили в магазинах весь завезенный каннабис за пару дней.
+                            Власти не рассчитывали, что спрос на него будет настолько большим.
+                        </p>
+                        <p class="wordwrap">
+                            После вступления в силу закона о легализации каннабиса,
+                            в канадских магазинах скупили всю марихуану в течение нескольких дней.
+                            Об этом в воскресенье, 21 октября, сообщает Independent.
+                        </p> 
+                        <p class="wordwrap">
+                            Очереди из желающих купить наркотик были такие длинные,
+                            что полиции пришлось патрулировать места продажи и усмирять тех,
+                            кому не хватило.
                         </p>    
                         <p class="wordwrap">
-                            В течении 2ух месяцев я отчаянно все там восстанавливал. По часам работал
-                            даже больше положенного. На прошлой неделе все закончил.
-                            Все у них работает само, удал. доступ на случай беды - имеется.
+                            Руководитель государственной программы по легализации марихуаны
+                            Билл Блэр отметил, что страна не смогла удовлетворить спрос населения,
+                            а в магазины завезли недостаточно каннабиса.
                         </p>
-                        <p class="wordwrap">
-                            И тут на основной работе настал аврал. Три дня я не появлялся на работе
-                            по совместительству. Звонит мне их начальник филиала - заметьте,
-                            даже не директор.
-                        </p>
-                        <p class="wordwrap">
-                            Звонит - ты когда к нам придешь?<br>
-                            я- не знаю, у меня на основной аврал, а вообще, зачем к вам приходить?
-                            у вас все работает.<br>
-                            Начальница мне - ты часы свои должен вырабатывать - иначе прогулы поставим.<br>
-                            WTF? а когда я часы перерабатывал - не учитывается?<br>
-                            Начальница- я не знаю что ты там переработал, врешь небось<br>
-                            ОК! Я приду - что делать буду? Тут начальница не нашла ничего лучше
-                            как бросить трубку.
-                        </p>
-                        <p class="wordwrap">Позвонил директору, вопрос уладил, но осадочек остался...</p>
-                        <p class="wordwrap bold">r04ter</p>
+                        <p class="wordwrap bold">traveler74</p>
                     </div>
                 </div>
-                <div class="flex2">
+                <div class="float col2">
                     <div class="article">
                         <h2>80 лет отмечает Кристофер Ллойд</h2><br>
-                        <img class="image" src="./img/1.jpg" title="Кристофер Ллойд" alt="Кристофер Ллойд">
+                        <img class="width100" src="./img/1.jpg" title="Кристофер Ллойд" alt="Кристофер Ллойд">
                         <p class="wordwrap bold">DustIntheWind</p>
                     </div>
-                    <div class="article">
-                        <h2>Экстренная посадка на шоссе</h2>
-                        <p class="wordwrap">
-                            Калифорния, США. 25-летний пилот-инструктор проводил урок в воздухе
-                            для 36-летнего курсанта. В какой-то момент у их Piper ёкнул двигатель
-                            и пришлось экстренно садиться. Единственной подходящей площадкой оказалось
-                            шоссе.
-                        </p>
-                        <p class="wordwrap">
-                            Пилот благополучно разминулся с ЛЭП и влился в поток на трассе, так ничего
-                            и не задев.
-                        </p>
-                        <p class="wordwrap bold">PixelSPB</p>
-                    </div>
                 </div>
-                <div>
-                    <div class="article">
-                        <p class="vertical">на пульте две тревожных кнопки _</p>
-                        <p class="vertical">одна тревожнее другой</p>
+                <div class="float width60px">
+                        <div class="article">
+                            <p class="vertical">особняки стоят рядами _</p>
+                            <p class="vertical">один стоит особняком</p>
+                        </div>
                     </div>
-                </div>
             </div>
         </div>
     </body>

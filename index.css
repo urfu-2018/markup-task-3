@@ -1,0 +1,202 @@
+body
+{
+    margin: 0;
+    font-size: 16px;
+}
+
+@font-face
+{
+    font-family: 'Old';
+    src: local("Bukyvede");
+}
+
+@font-face
+{
+    font-family: 'Old';
+    src: url(fonts/old.ttf);
+}
+
+@font-face
+{
+    font-family: 'Old';
+    src: url(fonts/old.woff);
+}
+
+@font-face
+{
+    font-family: 'Old';
+    src: url(fonts/old.woff2);
+}
+
+@font-face
+{
+    font-family: 'Pikabu';
+    src: local("Arial Rounded MT Pro Cyr");
+}
+
+@font-face
+{
+    font-family: 'Pikabu';
+    src: url(fonts/pikabu.otf);
+}
+
+@font-face
+{
+    font-family: 'Pikabu';
+    src: url(fonts/pikabu.woff);
+}
+
+@font-face
+{
+    font-family: 'Pikabu';
+    src: url(fonts/pikabu.woff2);
+}
+
+.quote {
+    font: italic 1em 'Old';
+    font-weight: bold;
+    margin: 0;
+    border-left: 2px solid black;
+    padding-left: 8px;
+}
+
+.float {
+    float: left;
+}
+
+.inline
+{
+    display: inline-block;
+}
+
+.width60px
+{
+    width: 60px;
+}
+
+.col1 {
+    width: calc(20% - 24px) 
+}
+
+.col2 {
+    width: calc(40% - 48px) 
+}
+
+.width20
+{
+    width: 20%;
+}
+
+.width30
+{
+    width: 30%;
+}
+
+.width100{
+    width: 100%;
+}
+
+.font:checked ~ .newspaper,
+.font:checked ~ .title
+{
+    font-family: 'Old';
+}
+
+.newspaper
+{
+    overflow: auto;
+    background-color: #ffe;
+    padding: 20px 40px;
+}
+
+.overflow {
+    overflow: auto;
+}
+
+.article
+{
+    margin: 20px 10px;
+    word-wrap: break-word;
+}
+
+.article > p::first-letter,
+.title::first-letter
+{
+    color: orange;
+    font-weight: bold;
+}
+
+.night:checked ~ .newspaper
+{
+    background-color: #222;
+    color: #ffe;
+}
+
+.night:checked ~ .newspaper .box,
+.night:checked ~ .newspaper .underline,
+.night:checked ~ .newspaper .quote
+{
+    border-color: #ffe;
+}
+
+.zoom:checked ~ .newspaper
+{
+    font-size: 24px;
+}
+
+.title
+{
+    font: 4em 'Pikabu';
+    margin: 0;
+}
+
+.box
+{
+    border: 1px solid black;
+}
+
+.box > p
+{
+    margin: 10px;
+    font-style: italic;
+}
+
+.center
+{
+    text-align: center;
+}
+
+.margin
+{
+    margin: 10px;
+}
+
+.underline
+{
+    border-bottom: 3px double black;
+}
+
+.right
+{
+    text-align: right;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.vertical
+{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-transform: uppercase;
+}
+
+.wordwrap
+{
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
