@@ -18,6 +18,10 @@ html
     padding: 0;
 }
 
+body
+{
+    margin: 0;
+}
 /*Шапка*/
 
 main
@@ -29,7 +33,7 @@ main
 }
 
 .header_newspaper,
-.main_newspaper
+.news_header
 {
     margin: 0 auto;
     width: 100%;
@@ -57,39 +61,52 @@ h1
 
 .text_header
 {
-    display: grid;
-    grid-auto-rows: minmax(50px, auto);
-    grid-template-areas: 'a b c d';
-    justify-items: center;
-    align-items: center;
     border-bottom: 5px dotted #000;
     margin-bottom: 20px;
+    text-align: center;
+
 }
 
 /*Настройки текса header*/
 
 .header_h1
 {
-    font-size: 60px;
-    font-family: 'Fascinate Inline', cursive;
+    font: 60px 'Fascinate Inline', cursive;
     letter-spacing: 20px;
 }
 
 .name_header p
 {
-    font-size: 30px;
-    font-family: 'Monda', sans-serif;
+    font: 30px 'Monda', sans-serif;
 }
 
 .text_header p
 {
-    font-size: 40px;
-    font-family: 'Bangers', cursive;
+    font: 40px 'Bangers', cursive;
 }
 
+.text_header ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.text_header ul li
+{
+    display: inline;
+    margin: 0 20px;
+}
+
+.text_header ul li a
+{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
 /*Блог новостей*/
 
-.main_newspaper
+.news_header
 {
     display: grid;
     grid-template: 'a b' 'c d' 'e e' /1fr 1fr;
@@ -121,21 +138,19 @@ h1
 
 .news_h2
 {
-    font-size: 40px;
-    font-family: 'Squada One', cursive;
+    font: 40px 'Squada One', cursive;
     letter-spacing: 10px;
 }
 
 .news_h3
 {
-    font-size: 25px;
-    font-family: 'Bowlby One SC', cursive;
+    font: 25px 'Bowlby One SC', cursive;
 }
 
 .news_p
 {
-    font-size: 16px;
-    font-family: 'Mitr', sans-serif;
+    font: 16px 'Mitr', sans-serif;
+    padding: 5px;
 }
 
 /*Вторая новость*/
@@ -152,8 +167,9 @@ h1
     columns: 200px 3;
     column-rule-style: solid;
     text-align: justify;
-    word-break: break-all;
+    word-break: break-word;
     word-spacing: normal;
+    padding: 10px;
 }
 
 .second_news figure
@@ -191,8 +207,8 @@ h1
 
 .news_p_second
 {
-    font-size: 20px;
-    font-family: 'Alef', sans-serif;
+    font: 20px 'Alef', sans-serif;
+    padding: 10px;
 }
 
 /*Четвертая новость*/
@@ -238,9 +254,24 @@ h1
     padding: 5px;
     columns: 300px 4;
     text-align: justify;
-    word-break: break-all;
+    word-break: break-word;
 }
 
+figcaption
+{
+    display: inline-block;
+    letter-spacing: normal;
+    font: 2em 'Squada One', cursive;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+.vertical_text
+{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    /*position: absolute;*/
+}
 /*Шестая новость*/
 
 .sixth_news

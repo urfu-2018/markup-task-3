@@ -8,19 +8,19 @@
 </head>
 
 <body>
-    <label class="input1" for="name6">Основной размер</label>
+    <label for="name6">Основной размер</label>
     <input class="input1" type="radio" id="name6" name="news_size" checked>
-    <label class="input2" for="name5">Маленький размер</label>
+    <label for="name5">Маленький размер</label >
     <input class="input2" type="radio" id="name5" name="news_size">
-    <label class="input3" for="name4">Большой размер</label>
+    <label for="name4">Большой размер</label>
     <input class="input3" type="radio" id="name4" name="news_size">
-    <label class="input4" for="name3">Основной тип шрифта</label>
+    <label for="name3">Основной тип шрифта</label>
     <input class="input4" type="radio" id="name3" name="news_font" checked>
-    <label class="input5" for="name2">Запасной тип шрифта</label>
+    <label for="name2">Запасной тип шрифта</label>
     <input class="input5" type="radio" id="name2" name="news_font">
-    <label class="input6" for="name1">Черно цветовая схема</label>
+    <label for="name1">Черно цветовая схема</label>
     <input class="input6" type="radio" id="name1" name="news_back" checked>
-    <label class="input7" for="name">Черно цветовая схема</label>
+    <label for="name">Черно цветовая схема</label>
     <input class="input7" type="radio" id="name" name="news_back">
     <main>
     <header class="header_newspaper">
@@ -29,21 +29,23 @@
             <h1 class="header_h1">Wild west</h1>
             <p>3.30</p>
         </div>
-        <div class="text_header">
-            <p>Amazing adventure</p>
-            <p>Fast and alive</p>
-            <p>Rodeo</p>
-            <p>Race</p>
+        <div class="text_header news_h2">
+            <ul>
+                <li><a href="#">Amazing adventure</a></li>
+                <li><a href="#">Fast and alive</a></li>
+                <li><a href="#">Rodeo</a></li>
+                <li><a href="#">Race</a></li>
+            </ul>
         </div>
     </header>
     <!--    Блог новостей-->
-    <div class="main_newspaper">
+    <div class="news_header">
         <div class="first_columns">
             <article class="first_news">
                 <h2 class="news_h2">Lucky horseshoe
                 </h2>
                 <h3 class="news_h3">legend of the Wild West</h3>
-                <img src="img/horseshoe.jpg" alt="horseshoe">
+                <img src="img/horseshoe.jpg" alt="cowboy make horseshoe">
                 <p class="news_p">One day a black horseman came to a Texas ranch with a
                     black stallion. He appealed to the local blacksmith Dukkan with a request to shoe.</p>
                 <h3 class="news_h3 first_news_caption">But his request was very unusual:
@@ -59,32 +61,31 @@
             </article>
             <article class="third_news">
                 <h2 class="third_news_header news_h2">Cowboy tales</h2>
-                <img src="img/8.jpg" alt="horse">
-                <blockquote>
-                    <p class="news_p">The image of a cowboy, a courageous and
+                <img src="img/8.jpg" alt="cowboy on horse">
+                <blockquote class="news_p">
+                    The image of a cowboy, a courageous and
                         eternally drunk "tough guy", a freedom-loving conqueror
                         of the Wild West, the instigator of the fights, for any
                         reason clutching at the right Colt and without any words
                         ending the debate by shooting, has been shaped by numerous
-                        Westerns. But was it really that way?</p>
+                        Westerns. But was it really that way<br>
                     <cite class="news_p_second">Lewis</cite>
                 </blockquote>
-                <blockquote>
-                    <p class="news_p">In fact, neither in America nor in the Wild
-                        West, cowboys never made up the majority of the population.
-                        According to statistics, over the past hundred years in the
-                        country there were no more than 20 thousand representatives
-                        of the profession.
-                    </p>
+                <blockquote class="news_p">
+                    In fact, neither in America nor in the Wild
+                    West, cowboys never made up the majority of the population.
+                    According to statistics, over the past hundred years in the
+                    country there were no more than 20 thousand representatives
+                    of the profession.<br>
                     <cite class="news_p_second">Fedor</cite>
                 </blockquote>
-                <blockquote>
-                    <p class="news_p">Cowboys led a hard nomadic life. After all,
+                <blockquote class="news_p">
+                    Cowboys led a hard nomadic life. After all,
                         moving cattle, which sometimes lasts more than a year, on
                         dusty, exhausting roads is not an easy thing. Every third
                         cowboy was black, and every fourth was an Indian. A lot
                         was among the representatives of this profession and the
-                        Mexicans. And in the rodeo the winners were not only “white”.</p>
+                        Mexicans. And in the rodeo the winners were not only “white”.<br>
                     <cite class="news_p_second">Misha</cite>
                 </blockquote>
             </article>
@@ -112,7 +113,7 @@
                 this chapter.</p><br>
             <figure>
                 <img class="second_news_img" src="img/2.jpg" alt="man at the car">
-                <figcaption class="news_p_second">man at the car</figcaption>
+                <figcaption>cowboyracing</figcaption>
             </figure> <br>
             <p class="second_news_text news_p_second">Thus, wars between whites and Indians
                 were inevitable. In 1862, the troops of Colonel Christopher "Whale" Carson
@@ -145,9 +146,10 @@
             <h3 class="fourth_news_h3 news_h3">Children`s<br>clothing or ladies
                 oxfords<br>to go at</h3>
             <h2 class="fourth_news_h2 news_h2">Cost.<br>Shaws.</h2>
-            <img src="img/6.jpg" alt="man">
+            <img src="img/6.jpg" alt="cowboy at the car">
         </article>
         <article class="fifth_news">
+            <!--<div class="vertical_block news_p_second">COWBOY</div>-->
             <h2 class="news_h3">Drying Creek</h2>
             <p class="news_p_second">Cowboy is the name used in the Wild West of
                 the United States in relation to herdsmen. The era of cowboys began
@@ -168,10 +170,12 @@
                 novices, or Texas riders and military men. Secondly, no one shot
                 at the same time from two Colts, preferring to make twelve accurate
                 shots without reloading first from one pistol, and then from
-                the other.</p><blockquote class="news_p_second">"Laborum et repellendus deleniti
+                the other.</p>
+            <blockquote class="news_p_second">"Laborum et repellendus deleniti
                 nemo tempora, ducimus explicabo, blanditiis, fugiat rem temporibus
-                aliquid aperiam dolorem aliquam est perspiciatis."
-            </blockquote><cite>Carol Lewis</cite> <br>
+                aliquid aperiam dolorem aliquam est perspiciatis."<br>
+                <cite>Carol Lewis</cite>
+            </blockquote>
             <p class="news_p_second">Cowboys constantly organized shootouts in
                 homes and in saloons. This is fiction. It should be remembered
                 that in those days gunpowder was used, which, when burned,
@@ -215,11 +219,10 @@
                 <h3 class="news_h3">And his companion Bebop</h3>
                 <h2 class="news_h2 sixth_news_h2">The best cowboys in the wild west</h2>
                 <h3 class="news_h3">The best shooter in Teahsa</h3>
-                <img src="img/cowboy_PNG10.png" alt="cowboy">
+                <img src="img/cowboy_PNG10.png" alt="cowboy racing">
             </div>
         </article>
     </div>
 </main>
 </body>
 </html>
-
