@@ -150,3 +150,11 @@
     font-family: junction, sans-serif;
     font-size: .7em;
 }
+
+.vertical
+{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    float: left;
+    font-weight: bold;
+}
