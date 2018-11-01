@@ -2,25 +2,32 @@
 {
     font-family: StudioScriptCTT;
     font-display: block;
-    src: url('StudioScriptCTT.eot');
-    src: url('StudioScriptCTT.woff')  format('woff');
+    src: local('StudioScriptCTT'),
+        url('StudioScriptCTT.eot') format('eot'),
+        url('StudioScriptCTT.woff') format('woff');
 }
 
-h1 /*0 0 1*/
+span
+{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.newspaper_name
 {
     letter-spacing: 2.5px;
     text-align: center;
     text-shadow: 3px 3px 7px gray;
 }
 
-h2 /*0 0 1*/
+.article_name
 {
     font-variant: small-caps;
     column-span: all;
     text-align: center;
 }
 
-h3 /*0 0 1*/
+.division
 {
     font-style: italic;
     text-align: center;
@@ -29,77 +36,76 @@ h3 /*0 0 1*/
     text-overflow: ellipsis;
 }
 
-aside /*0 0 1*/
+.plan
 {
-    font-family: StudioScriptCTT, cursive;
-    background: #f0f0f0;
+    font: 20px StudioScriptCTT, cursive;
+    background-color: #f0f0f0;
     padding: 20px;
     word-spacing: 5px;
-    font-size: 20px;
     hyphens: auto;
 }
 
-figure /*0 0 1*/
+.frame
 {
     text-align: center;
     margin: 10px 1px 1px;
 }
 
-img /*0 0 1*/
+.image
 {
     width: 100%;
 }
 
-figcaption /*0 0 1*/
+.description
 {
     display: inline-block;
     font-family: Courier, monospace;
 }
 
-span /*0 0 1*/
-{
-    font-size: 13px;
-    font-weight: bold;
-}
-
-a /*0 0 1*/
+[href]
 {
     text-decoration: none;
     color: #6698ff;
 }
 
-h4, /*0 0 2*/
-h5
+.information
 {
     text-align: center;
     font-style: oblique;
 }
 
-article, /*0 0 2*/
-section
+.vertical
+{
+    float: right;
+    word-break: break-all;
+    width: 10px;
+    padding: 10px;
+    border: 1px outset;
+    text-align: center;
+}
+
+.speakers
 {
     column-count: 2;
     column-rule: 1px solid #777575;
 }
 
-header p /*0 0 2*/
+.time
 {
-    font-style: oblique;
-    font-family: serif;
-    font-size: 13px;
+    font: oblique 13px serif;
     text-align: center;
 }
 
-.headline /*0 1 0*/
+.headline
 {
     width: 100px;
     align-content: center;
     column-span: all;
 }
 
-.preview /*0 1 0*/
+.preview
 {
-    background: #a5a5a5;
+    background-color: #a5a5a5;
     padding: 5px;
     font-size: 13px;
     text-align: center;
@@ -108,47 +114,42 @@ header p /*0 0 2*/
     border: 4px double;
 }
 
-.main_text::first-letter /*0 1 1*/
+.main_text::first-letter
 {
     font-size: 25px;
 }
 
-a:hover /*0 1 1*/
+a:hover
 {
     color: #ff6698;
 }
 
-a:visited /*0 1 1*/
+a:visited
 {
     color: #ffb366;
 }
 
-a:focus /*0 1 1*/
+a:focus
 {
     color: #98ff66;
 }
 
 .main_text,
-.text /*0 2 0*/
+.text
 {
     text-indent: 30px;
-    font-family: cursive;
-    font-size: 11px;
+    font: 11px cursive;
     hyphens: auto;
 }
 
-.reverse:checked ~ header, /*0 8 0*/
-.reverse:checked ~ main,
-.reverse:checked ~ footer,
+.reverse:checked ~ *,
 .reverse:checked ~ main article aside
 {
-    background: black;
+    background-color: black;
     color: white;
 }
 
-.change:checked ~ header, /*0 14 0*/
-.change:checked ~ main,
-.change:checked ~ footer,
+.change:checked ~ *,
 .change:checked ~ header p,
 .change:checked ~ main article aside,
 .change:checked ~ main article section p,
@@ -157,9 +158,7 @@ a:focus /*0 1 1*/
     font-family: 'Courier New', Courier, monospace;
 }
 
-.increase:checked ~ header, /*0 14 0*/
-.increase:checked ~ main,
-.increase:checked ~ footer,
+.increase:checked ~ *,
 .increase:checked ~ header p,
 .increase:checked ~ main article aside,
 .increase:checked ~ main article section p,
@@ -168,9 +167,7 @@ a:focus /*0 1 1*/
     font-size: 120%;
 }
 
-.reduce:checked ~ header, /*0 14 0*/
-.reduce:checked ~ main,
-.reduce:checked ~ footer,
+.reduce:checked ~ *,
 .reduce:checked ~ header p,
 .reduce:checked ~ main article aside,
 .reduce:checked ~ main article section p,
