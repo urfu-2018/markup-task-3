@@ -19,6 +19,10 @@ body
 main
 {
     padding: 20px 0;
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+
 }
 
 .small-font:checked ~ .paper
@@ -38,10 +42,9 @@ main
 
 .paper
 {
-    background-image: url('http://www.goodrichgourmet.com/blog/wp-content/uploads/2012/01/parchment-bg1-1024x684.jpg');
+    min-width: 800px;
+    background: url('http://www.goodrichgourmet.com/blog/wp-content/uploads/2012/01/parchment-bg1-1024x684.jpg') no-repeat center center;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
     padding: 0 40px;
 }
 
@@ -74,28 +77,6 @@ main::after
     display: block;
     height: 0;
     clear: both;
-}
-
-.column
-{
-    width: 20%;
-    float: left;
-}
-
-.column .contents
-{
-    height: 100%;
-    width: 100%;
-}
-
-.wide
-{
-    width: 40%;
-}
-
-.column:not(:last-child) .contents
-{
-    border-right: 1px solid black;
 }
 
 article > header
@@ -139,25 +120,15 @@ article
     padding: 10px;
 }
 
-article .image img
+figure img
 {
     width: 100%;
 }
 
-article .image p
+figcaption
 {
     margin: 0;
     text-align: center;
-}
-
-.subcolumn
-{
-    width: 50%;
-}
-
-.subcolumn .contents
-{
-    border-right: 1px solid black;
 }
 
 .note
