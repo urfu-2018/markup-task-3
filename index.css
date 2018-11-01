@@ -2,9 +2,8 @@
 {
     font-family: StudioScriptCTT;
     font-display: block;
-    src: local('StudioScriptCTT'),
-        url('StudioScriptCTT.eot') format('eot'),
-        url('StudioScriptCTT.woff') format('woff');
+    src: local('StudioScriptCTT'), url('StudioScriptCTT.eot')
+        format('eot'), url('StudioScriptCTT.woff') format('woff');
 }
 
 span
@@ -142,14 +141,18 @@ a:focus
     hyphens: auto;
 }
 
-.reverse:checked ~ *,
+.reverse:checked ~ header,
+.reverse:checked ~ main,
+.reverse:checked ~ footer,
 .reverse:checked ~ main article aside
 {
     background-color: black;
     color: white;
 }
 
-.change:checked ~ *,
+.change:checked ~ header,
+.change:checked ~ main,
+.change:checked ~ footer,
 .change:checked ~ header p,
 .change:checked ~ main article aside,
 .change:checked ~ main article section p,
@@ -158,7 +161,9 @@ a:focus
     font-family: 'Courier New', Courier, monospace;
 }
 
-.increase:checked ~ *,
+.increase:checked ~ header,
+.increase:checked ~ main,
+.increase:checked ~ footer,
 .increase:checked ~ header p,
 .increase:checked ~ main article aside,
 .increase:checked ~ main article section p,
@@ -167,7 +172,9 @@ a:focus
     font-size: 120%;
 }
 
-.reduce:checked ~ *,
+.reduce:checked ~ header,
+.reduce:checked ~ main,
+.reduce:checked ~ footer,
 .reduce:checked ~ header p,
 .reduce:checked ~ main article aside,
 .reduce:checked ~ main article section p,
