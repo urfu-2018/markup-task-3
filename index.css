@@ -1,33 +1,34 @@
 @font-face
 {
     font-family: 'OpenSansCondensed';
-    src: url('Fonts/OpenSansCondensed-Light.ttf') format('truetype');
-    font-weight: 200;
+    src: url('Fonts/opensanscondensed.woff') format('woff')
+        , url('Fonts/opensanscondensed.woff2') format('woff2');
     font-style: normal;
 }
 
 @font-face
 {
-    font-family: 'Rosario-Regular';
-    src: url('Fonts/Rosario-Regular.ttf') format('truetype');
-    font-weight: 200;
+    font-family: 'Rosario';
+    src: url('Fonts/rosario-regular.woff') format('woff')
+        , url('Fonts/rosario-regular.woff2') format('woff2');
     font-style: normal;
 }
 
 @font-face
 {
-    font-family: 'Rosario-Italic';
-    src: url('Fonts/Rosario-Italic.ttf') format('truetype');
-    font-weight: 200;
-    font-style: normal;
+    font-family: 'Rosario';
+    src: url('Fonts/rosario-italic.woff') format('woff')
+        , url('Fonts/rosario-italic.woff2') format('woff2');
+    font-style: italic;
 }
 
 @font-face
 {
-    font-family: 'Rosario-BoldItalic';
-    src: url('Fonts/Rosario-BoldItalic.ttf') format('truetype');
-    font-weight: 200;
-    font-style: normal;
+    font-family: 'Rosario';
+    src: url('Fonts/rosario-bolditalic.woff') format('woff')
+        , url('Fonts/rosario-bolditalic.woff2') format('woff2');
+    font-weight: bold;
+    font-style: italic;
 }
 
 h1,
@@ -65,6 +66,11 @@ main
 {
     width: 100%;
     font-size: 14px;
+}
+
+img ~ p
+{
+    color: gray;
 }
 
 .paper_header,
@@ -155,16 +161,40 @@ img
     width: 100%;
 }
 
-article,
-section
+article > div > p:first-child::first-letter
+{
+    font-family: Rosario;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.inside > article,
+.inside > section
 {
     display: inline-block;
     box-sizing: border-box;
 }
 
+.paper_content
+{
+    height: 2150px;
+}
+
+div.paper_content > section,
+div.center_content,
+section.left_side
+{
+    float: left;
+    height: 99%;
+}
+
+.center_content
+{
+    margin: 0 5px;
+}
+
 div.paper_content > section
 {
-    display: inline-block;
     box-sizing: border-box;
     padding: 5px;
 }
@@ -183,7 +213,6 @@ section.left_side
 
 div.center_content
 {
-    display: inline-block;
     width: 45%;
 }
 
@@ -228,18 +257,22 @@ div.center_content h2
 
 section.political_memo > article h2
 {
-    font-family: Rosario-BoldItalic;
+    font-family: Rosario;
+    font-weight: bold;
+    font-style: italic;
 }
 
 section.political_memo > article:first-child h2,
 div.center_content h2
 {
-    font-family: Rosario-Regular;
+    font-family: Rosario;
+    font-style: normal;
 }
 
 section.political_memo > article:last-child h2
 {
-    font-family: Rosario-Italic;
+    font-family: Rosario;
+    font-style: italic;
 }
 
 section.political_memo h2::before,
@@ -267,7 +300,7 @@ div.paper_content > div > article > div:first-child
     padding: 10px;
 }
 
-article > div:nth-child(2) > span
+.continue_page_info
 {
     font-style: italic;
 }
@@ -313,6 +346,11 @@ section.left_side h2
     font-family: OpenSansCondensed;
 }
 
+section.left_side article
+{
+    padding: 15px 0;
+}
+
 p span
 {
     font-weight: bold;
@@ -323,14 +361,14 @@ p span
 .font-size-down,
 .font-size-down_label,
 .theme_toggle,
-.theme_change
+.theme_change,
+.change_font,
+.toggle_font
 {
     position: fixed;
 }
 
-.font-size-up_label,
-.font-size-down_label,
-.theme_change,
+label
 {
     font-size: 16px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -339,37 +377,49 @@ p span
 .font-size-up
 {
     top: 25px;
-    left: 25px;
+    left: 20px;
 }
 
 .font-size-up_label
 {
     top: 20px;
-    left: 45px;
+    left: 40px;
 }
 
 .font-size-down
 {
     top: 45px;
-    left: 25px;
+    left: 20px;
 }
 
 .font-size-down_label
 {
     top: 40px;
-    left: 45px;
+    left: 40px;
 }
 
 .theme_toggle
 {
     top: 65px;
-    left: 25px;
+    left: 20px;
 }
 
 .theme_change
 {
     top: 60px;
-    left: 45px;
+    left: 40px;
+}
+
+.toggle_font
+{
+    top: 85px;
+    left: 20px;
+}
+
+.change_font
+{
+    top: 80px;
+    left: 40px;
 }
 
 input.font-size-up:checked ~ main
@@ -382,9 +432,19 @@ input.font-size-up:checked ~ main > h2
     font-size: 40px;
 }
 
+input.font-size-up:checked ~ main > .paper_content
+{
+    height: 2900px;
+}
+
 input.font-size-down:checked ~ main
 {
     font-size: 10px;
+}
+
+input.font-size-down:checked ~ main > .paper_content
+{
+    height: 1900px;
 }
 
 input.theme_toggle:checked ~ main,
@@ -394,7 +454,8 @@ input.theme_toggle:checked ~ header
 }
 
 input.theme_toggle:checked ~ main > div.paper_content,
-input.theme_toggle:checked ~ header > div.paper_header
+input.theme_toggle:checked ~ header > div.paper_header,
+input.theme_toggle:checked ~ label
 {
     background-color: #22272b;
     color: #bfbfbf;
@@ -442,4 +503,28 @@ input.theme_toggle:checked ~ main > div > section > article:not(:first-child)
 input.theme_toggle:checked ~ main > div > section article:not(:last-child)
 {
     border-bottom: 1px solid #bfbfbf;
+}
+
+input.toggle_font:checked ~ main p
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+}
+
+input.toggle_font:checked ~ main h2
+{
+    font-family: monospace;
+
+}
+
+input.toggle_font:checked ~ main .continue_page_info
+{
+    font-weight: bold;
+    font-style: normal;
+}
+
+input.toggle_font:checked ~ main p > span
+{
+    font-family: Calibri, sans-serif;
+    font-style: italic;
 }
