@@ -1,6 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Didact+Gothic);
+@import url(https://fonts.googleapis.com/css?family=Carrois+Gothic);
+@import url(https://fonts.googleapis.com/css?family=Anton);
+
 .recommended
 {
-    position: relative;
     background-color: #ebebeb;
     width: 230px;
     margin-left: 10px;
@@ -8,8 +11,7 @@
 
 .recommended__image
 {
-    margin-left: 10px;
-    margin-top: 10px;
+    margin: 10px 0 0 10px;
 }
 
 .recommended__title
@@ -36,7 +38,7 @@
     position: absolute;
     top: 35px;
     left: -10px;
-    border-style: solid;
+    border: solid;
     border-width: 0 10px 10px 0;
     border-color: transparent #828282;
 }
@@ -46,7 +48,7 @@
     border: 1px solid #000;
 }
 
-.triple-line.middle-line
+.middle-line
 {
     border: 2px solid #000;
 }
@@ -55,10 +57,7 @@
 {
     width: 83%;
     color: rgba(0,0,0,.2);
-    font-family: 'Carrois Gothic', sans-serif;
-    text-align: center;
     transform: translate(15%, 0);
-    font-size: 25px;
     white-space: nowrap;
 }
 
@@ -66,25 +65,18 @@
 {
     text-shadow: 0 1px 0 #a10012, 0 2px  0 #000, 0 3px 0 #000;
     font-family: 'Didact Gothic', sans-serif;
-    /*text-align: center;*/
     letter-spacing: -2px;
     font-size: 100px;
     background-color: transparent;
     color: #a10012;
 }
 
-.sign
+.sign,
+.headline
 {
     font-family: 'Carrois Gothic', sans-serif;
     text-align: center;
     font-size: 25px;
-}
-
-.main-space,
-td,
-th
-{
-    position: relative;
 }
 
 .main-space
@@ -92,29 +84,23 @@ th
     width: 100%;
 }
 
-.left-under-column-1,
-.left-under-column-2,
-.left-under-column-3
+.information
 {
     width: 14.4%;
+    font-family: 'Hiragino Kaku Gothic ProN', sans-serif;
 }
 
-.right-under-column-1.row-3
+.begin-article
 {
-    hyphens: auto;
     font-family: 'DIN Alternate', sans-serif;
     text-align: justify;
     width: 36%;
 }
 
-.right-under-column-1.right-under-column-2.row-5.row-6
+.main-article
 {
-    hyphens: auto;
     column-count: 3;
-    column-rule-style: solid;
-    column-rule-color: black;
-    position: relative;
-    /*word-break: break-word;*/
+    column-rule: solid black;
     text-align: justify;
 }
 
@@ -127,11 +113,11 @@ th
 .big-picture-sign
 {
     text-align: justify;
-    hyphens: auto;
     opacity: .5;
 }
 
-li.weather:not(:first-child)
+li.weather:not(:first-child),
+li.horoscope:not(:first-child)
 {
     padding-top: 25%;
 }
@@ -148,67 +134,29 @@ li.horoscope
     list-style-image: url('h.png');
 }
 
-li.horoscope:not(:first-child)
-{
-    padding-top: 25%;
-}
-
-.left-under-column-3.row-1.row-2.row-3.row-4.row-5
-{
-    position: relative;
-    font-family: 'Hiragino Kaku Gothic ProN', sans-serif;
-}
-
-.anecdotes
+.hyphens
 {
     hyphens: auto;
-    overflow: auto;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
 }
 
-.left-under-column-2.row-1.row-2.row-3.row-4.row-5
-{
-    position: relative;
-    font-family: 'Hiragino Kaku Gothic ProN', sans-serif;
-}
-
-.horoscope-field
-{
-    overflow: auto;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-}
-
-.left-under-column-1.row-1.row-2.row-3.row-4.row-5
-{
-    position: relative;
-    font-family: 'Hiragino Kaku Gothic ProN', sans-serif;
-}
-
+.anecdotes,
+.horoscope-field,
 .weather-forecast
 {
     overflow: auto;
-    position: absolute;
     left: 0;
-    right: 0;
     top: 0;
     bottom: 0;
+    right: 0;
 }
 
-a
+.link
 {
     text-decoration: none;
     color: black;
 }
 
-.links
+.interesting-links
 {
     font-family: 'Anton', sans-serif;
     font-size: 15px;
@@ -219,136 +167,124 @@ a
     white-space: nowrap;
 }
 
-.right-under-column-1.right-under-column-2.row-1
+.title
 {
     font-size: 25px;
 }
 
-.right-under-column-1.right-under-column-2.row-1::first-letter
+.title::first-letter
 {
+
     font-size: 40px;
 }
 /*for resizable*/
 
-input[class='large']:checked ~ main
-{
-    zoom: 1.1;
-}
-
-input[class='large']:checked ~ main .headline
-{
-    zoom: 1.1;
-}
-
-input[class='large']:checked ~ main .horoscope-field
-{
-    zoom: 1.1;
-}
-
-input[class='large']:checked ~ main .weather-forecast
-{
-    zoom: 1.1;
-}
-
-input[class='large']:checked ~ main .anecdotes
-{
-    zoom: 1.1;
-}
-
-input[class='large']:checked ~ main a
-{
-    zoom: 1.1;
-}
-
-input[class='large']:checked ~ main legend
-{
-    zoom: 1.1;
-}
-
-input[class='large']:checked ~ main aside .recommended__title
+.large:checked ~ main
 {
     zoom: 1.1;
 }
 
 /*for  changing sans*/
 
-input[class='sans-serif']:checked ~ main
+.sans-serif:checked ~ main
 {
     font-family: 'DIN Alternate', sans-serif;
 }
 
-input[class='sans-serif']:checked ~ main .headline
+.sans-serif:checked ~ main .headline
 {
     font-family: 'DIN Alternate', sans-serif;
 }
 
-input[class='sans-serif']:checked ~ main .horoscope-field
+.sans-serif:checked ~ main .information
 {
     font-family: 'DIN Alternate', sans-serif;
 }
 
-input[class='sans-serif']:checked ~ main .weather-forecast
+.sans-serif:checked ~ main .interesting-links
 {
     font-family: 'DIN Alternate', sans-serif;
 }
 
-input[class='sans-serif']:checked ~ main .anecdotes
-{
-    font-family: 'DIN Alternate', sans-serif;
-}
-
-input[class='sans-serif']:checked ~ main a
-{
-    font-family: 'DIN Alternate', sans-serif;
-}
-
-input[class='sans-serif']:checked ~ main .nature
-{
-    font-family: 'DIN Alternate', sans-serif;
-}
-
-input[class='sans-serif']:checked ~ main legend
+.sans-serif:checked ~ main .nature
 {
     font-family: 'DIN Alternate', sans-serif;
 }
 
 /*for coloring*/
 
-input[class='black-white']:checked ~ main .recommended
-{
-    background: #404040;
-}
-
-input[class='black-white']:checked ~ main
+.black-white:checked ~ main
 {
     color: white;
-    background: black;
+    background-color: black;
 }
 
-input[class='black-white']:checked ~ aside
+.black-white:checked ~ main .recommended
 {
-    background-color: rgba(72, 72, 72, .98);
+    background-color: #404040;
 }
 
-input[class='black-white']:checked ~ main .headline
-{
-    color: white;
-    background: black;
-}
-
-input[class='black-white']:checked ~ main a
+.black-white:checked ~ main .headline
 {
     color: white;
-    background: black;
+    background-color: black;
+}
+
+.black-white:checked ~ main .link
+{
+    color: white;
+    background-color: black;
+}
+
+.black-white:checked ~ main hr
+{
+    border-color: white;
 }
 
 body
 {
     background-image: url('bg.jpg');
-    background-size: 100% 100%;
+    background-size: 100% 106%;
 }
 
 .legend
 {
     text-align: left;
+}
+
+.footer
+{
+    height: 100px;
+}
+
+.footer-sign
+{
+    left: 45px;
+    top: 20px;
+}
+
+.footer-title
+{
+    top: 20px;
+    left: 15px;
+    writing-mode: vertical-lr;
+}
+
+.page
+{
+    top: 30px;
+    right: 20px;
+    font-size: 40px;
+}
+
+.relative,
+td,
+th
+{
+    position: relative;
+}
+
+.absolute
+{
+    position: absolute;
 }
