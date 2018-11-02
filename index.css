@@ -7,49 +7,13 @@ body
 @font-face
 {
     font-family: 'Old';
-    src: local('Bukyvede');
-}
-
-@font-face
-{
-    font-family: 'Old';
-    src: url(fonts/old.ttf);
-}
-
-@font-face
-{
-    font-family: 'Old';
-    src: url(fonts/old.woff);
-}
-
-@font-face
-{
-    font-family: 'Old';
-    src: url(fonts/old.woff2);
+    src: local('Bukyvede'), url(fonts/old.ttf) format('truetype'), url(fonts/old.woff) format('woff'), url(fonts/old.woff2) format('woff2');
 }
 
 @font-face
 {
     font-family: 'Pikabu';
-    src: local('Arial Rounded MT Pro Cyr');
-}
-
-@font-face
-{
-    font-family: 'Pikabu';
-    src: url(fonts/pikabu.otf);
-}
-
-@font-face
-{
-    font-family: 'Pikabu';
-    src: url(fonts/pikabu.woff);
-}
-
-@font-face
-{
-    font-family: 'Pikabu';
-    src: url(fonts/pikabu.woff2);
+    src: local('Arial Rounded MT Pro Cyr'), url(fonts/pikabu.otf) format('opentype'), url(fonts/pikabu.woff) format('woff'), url(fonts/pikabu.woff2) format('woff2');
 }
 
 .quote
