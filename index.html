@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <title>Задача «DeLorean DMC-12»</title>
@@ -12,7 +12,7 @@
     Arial<input value="Arial" type="radio" name="radioFont">
     TimesNewRoman<input value="TimesNewRoman" type="radio" name="radioFont" checked>
     <main>
-        <header class="mainHeader">
+        <div class="main-header">
             <p class="boxed slogan">“All the News That`s Fir to Print.”</p>
             <h1>The New York Times.</h1>
             <div class="boxed weather floatRight">
@@ -22,20 +22,18 @@
                     showers late, low 54. Weather map appears on Page C8.
                 </p>
             </div>
-        </header>
+        </div>
         <section>
-            <div class="informationLine">
+            <div class="information-line">
                 <p>VOL. CLXVIII . . . No. 58,121 +</p>
                 <p class="uppercase">New York, Saturday, October 20, 1914. - Eighteen pages.</p>
                 <p class="price uppercase">One cent</p>
             </div>
         </section>
-        <section class="newspaper">
-            <article>
-                <header>
-                    <h2>Small Donors Equal Big Dollars, Lifting Democrats’ Fund-Raising</h2>
-                </header>
-                <p>
+        <article class="newspaper">
+            <section>
+                <h2>Small Donors Equal Big Dollars, Lifting Democrats’ Fund-Raising</h2>
+                <p lang="en">
                     An army of Democrats giving money over the internet has lifted the party’s House
                     candidates to a strong financial advantage over Republicans in the final weeks of the
                     2018 midterm election, with Democrats in the most competitive House races outraising
@@ -64,15 +62,13 @@
                     statement. “Survivors, parishioners and the public want to see proof that every diocese
                     has taken sweeping, decisive and impactful action to make children safer.”
                 </p>
-            </article>
-            <article>
-                <img class="postcard" src="1.jpg" alt="1">
-
-                <header>
-                    <h2>A Peek Behind the Ivy: How to Get Into Harvard</h2>
-                </header>
-                <div class="threeColumns">
-
+            </section>
+            <section>
+                <img class="postcard" src="1.jpg" alt="postcard">
+                <p class="subscription">postcard</p>
+                <h2>A Peek Behind the Ivy: How to Get Into Harvard</h2>
+                <p class="vertical-writing">Magic</p>
+                <div class="two-columns">
                     <p>
                         BOSTON — The deliberations that take place inside 86 Brattle Street, a red brick
                         building where Harvard University’s admissions committee convenes, have very much
@@ -99,20 +95,12 @@
                         an aggressive environment that allowed it to escalate.
                     </p>
                 </div>
-            </article>
-            <article>
-                <header>
-                    <h2 class="uppercase">U.S. says russians led online drive to tilt midterms</h2>
-                </header>
-                <header>
-                    <h2>‘INFORMATION WARFARE’</h2>
-                </header>
-                <header>
-                    <h2 class="uppercase">Citing reports, Trump concedes writer is dead</h2>
-                </header>
-                <header>
-                    <h3>President Stops Short of Implicating the Saudi Crown Prince</h3>
-                </header>
+            </section>
+            <section>
+                <h2 class="uppercase">U.S. says russians led online drive to tilt midterms</h2>
+                <h2>‘INFORMATION WARFARE’</h2>
+                <h2 class="uppercase">Citing reports, Trump concedes writer is dead</h2>
+                <h3>President Stops Short of Implicating the Saudi Crown Prince</h3>
                 <p>
                     WASHINGTON — President Trump said on Thursday that he believes the Saudi journalist Jamal
                     Khashoggi is dead, and he expressed confidence in intelligence reports from multiple
@@ -133,11 +121,9 @@
                     was asked what the consequences would be if Saudi Arabia’s culpability was established.
                     “Well, it’ll have to be very severe,” he said. “I mean, it’s bad”.
                 </p>
-            </article>
-            <article>
-                <header>
-                    <h2>An Insider in Florida Politics, Running for Office as an Outsider</h2>
-                </header>
+            </section>
+            <section>
+                <h2>An Insider in Florida Politics, Running for Office as an Outsider</h2>
                 <p>
                     TALLAHASSEE, Fla. — City Hall never did seem big enough for Andrew Gillum. It was
                     November 2014 — Mr. Gillum’s swearing-in as mayor of Tallahassee — and typical
@@ -161,11 +147,9 @@
                     he has been ubiquitous, in his city and on television, as he managed the fallout from
                     Hurricane Michael.
                 </p>
-            </article>
-            <article>
-                <header>
-                    <h2>Anti-Abortion Push in Missouri (And Not Only Within G.O.P.)</h2>
-                </header>
+            </section>
+            <section>
+                <h2>Anti-Abortion Push in Missouri (And Not Only Within G.O.P.)</h2>
                 <p>
                     ST. LOUIS — Joan Barry has been a member of the Missouri Democratic Party for 53 years.
                     As a state legislator, she voted regularly for workers’ rights, health care and programs
@@ -183,8 +167,8 @@
                     end of his presidency, Democratic fortunes had declined precipitously, dragged down by
                     raw culture war battles that plagued the state.
                 </p>
-            </article>
-        </section>
+            </section>
+        </article>
     </main>
 </body>
 </html>

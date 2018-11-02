@@ -30,41 +30,78 @@ h1
     width: 77%;
     display: inline;
     text-align: center;
-    font-size: 610%;
+    font-size: 100px;
     font-family: 'Old English Text MT';
 }
 
-.mainHeader
+.main-header
 {
     width: 100%;
     overflow: hidden;
     border-bottom: 2px solid #000;
-    padding-bottom: .3%;
-    margin-bottom: .3%;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
 }
 
-.mainHeader > p,
+.main-header > p,
 h1
 {
     float: left;
     margin: 0;
 }
 
-.mainHeader .weather
+.main-header .weather
 {
-    font-size: 70%;
+    font-size: 11px;
     float: right;
 }
 
-.mainHeader p.slogan
+.main-header p.slogan
 {
-    margin-top: 3%;
+    margin-top: 47px;
 }
 
-section article
+article
 {
     column-count: 4;
     column-rule: 1px solid #000;
+}
+
+.newspaper section p::first-letter
+{
+    font-size: 40px;
+}
+
+.newspaper section p
+{
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+
+.newspaper section p.vertical-writing
+{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+
+.newspaper section p.vertical-writing::first-letter
+{
+    font-size: inherit;
+}
+
+.newspaper section p.subscription
+{
+    text-align: center;
+    text-transform: lowercase;
+    font-size: 14px;
+    margin: 0;
+}
+
+.newspaper section p.subscription::first-letter
+{
+    font-size: inherit;
 }
 
 .boxed
@@ -75,27 +112,27 @@ section article
     max-width: 10%;
 }
 
-.informationLine
+.information-line
 {
     width: 100%;
     padding: 0;
     overflow: hidden;
     border-top: 2px solid #000;
     border-bottom: 2px solid #000;
-    margin-bottom: .3%;
+    margin-bottom: 5px;
 }
 
-.informationLine .price
+.information-line .price
 {
     float: right;
 }
 
-.informationLine > p
+.information-line > p
 {
     float: left;
 }
 
-.informationLine > p:nth-child(2)
+.information-line > p:nth-child(2)
 {
     width: 70%;
     text-align: center;
@@ -113,21 +150,20 @@ section article
     display: inline-block;
 }
 
-.newspaper h2:after
+.newspaper h2::after
 {
     content: '';
     position: absolute;
-    bottom: -15%;
-    left: 50%;
+    bottom: -10px;
+    left: 60px;
     width: 60%;
     height: 1px;
-    margin-left: -30%;
     background: #000;
 }
 
 .newspaper p
 {
-    text-indent: 10%;
+    text-indent: 30px;
 }
 
 .newspaper img
@@ -140,14 +176,14 @@ section article
     text-transform: uppercase;
 }
 
-.threeColumns
+.two-columns
 {
     column-count: 2;
 }
 
 .checkboxFontSize:checked ~ main
 {
-    font-size: 120%;
+    font-size: 200px;
 }
 
 .checkboxBlackTheme:checked ~ main
