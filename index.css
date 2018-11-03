@@ -58,7 +58,7 @@ article
 {
     column-count: 3;
     column-gap: 1vw;
-    column-rule-color: rgba(245, 10, 88, 1);;
+    column-rule-color: rgba(245, 10, 88, 1);
     column-rule-style: solid;
     width: 100%;
     height: auto;
@@ -67,7 +67,6 @@ article
 .policy,
 .sport
 {
-
     display: inline-block;
 }
 
