@@ -58,7 +58,7 @@ article
 {
     column-count: 3;
     column-gap: 1vw;
-    column-rule-color: red;
+    column-rule-color: rgba(245, 10, 88, 1);;
     column-rule-style: solid;
     width: 100%;
     height: auto;
@@ -157,7 +157,7 @@ blockquote
 .picture-sport
 {
     margin-top: 0;
-    width: 80%;
+    width: 90%;
     display: inline-block;
 }
 
