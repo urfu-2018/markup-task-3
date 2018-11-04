@@ -3,7 +3,7 @@ body
     margin: 0;
 }
 
-main
+.content
 {
     transition: all ease .5s;
     padding: 10px;
@@ -11,7 +11,7 @@ main
     column-rule: 1px solid black;
 }
 
-h1
+.header h1
 {
     column-span: all;
     text-align: center;
@@ -20,13 +20,13 @@ h1
     padding: 50px;
 }
 
-img
+.content img
 {
     width: 100%;
     transition: all ease 1s;
 }
 
-q
+.content q
 {
     text-decoration: underline;
     text-align: center;
@@ -35,52 +35,54 @@ q
     font-weight: 700;
 }
 
-pre
+.content pre
 {
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-article:nth-of-type(2n) p:first-child
+.content article:nth-of-type(2n) p:first-child
 {
     text-decoration: underline;
 }
 
-p
+.content p
 {
     transition: font-size ease .5s;
+    text-align: justify;
+    hyphens: auto;
 }
 
-p:first-letter
+.content p:first-letter
 {
     font-size: 2em;
     font-weight: 800;
     color: #742714;
 }
 
-article:nth-of-type(3n) p
+.content article:nth-of-type(3n) p
 {
     font-family: 'Indie Flower', Arial, cursive;
 }
 
-article:nth-of-type(2n) p
+.content article:nth-of-type(2n) p
 {
     font-family: 'Alegreya Sans', serif;
 }
 
-article:nth-of-type(1n) h2
+.content article:nth-of-type(1n) h2
 {
     font-family: 'Lobster', cursive;
 }
 
-article:nth-of-type(3n) h2
+.content article:nth-of-type(3n) h2
 {
     font-family: 'Diplomata', sans-serif;
     text-align: center;
     text-decoration: underline;
 }
 
-article:nth-of-type(5n) h2
+.content article:nth-of-type(5n) h2
 {
     font-family: 'Srisakdi', cursive;
     font-size: 54px;
@@ -92,7 +94,17 @@ article:nth-of-type(7n) h2
     font-family: 'Righteous', serif;
 }
 
-input[type='checkbox']
+.vertical-heading
+{
+    word-break: break-all;
+    width: 1ch;
+    padding-right: 10px;
+    float: left;
+}
+
+.theme-switch,
+.font-switch,
+.size-switch
 {
     display: none;
 }
@@ -113,31 +125,32 @@ input[type='checkbox']
     text-decoration: overline;
 }
 
-.theme-switch:checked ~ main,
-.theme-switch:checked ~ .controls .theme-label
+.theme-switch:checked ~ .content,
+.theme-switch:checked ~ .header h1,
+.theme-switch:checked ~ .header .controls .theme-label
 {
     background: #002b36;
     color: #859900;
 }
 
-.theme-switch:checked ~ main img
+.theme-switch:checked ~ .content img
 {
     filter: sepia(100%);
 }
 
-.font-switch:checked ~ main p
+.font-switch:checked ~ .content p
 {
     font-family: 'Helvetica', sans-serif;
 }
 
-.size-switch:checked ~ main p
+.size-switch:checked ~ .content p
 {
     font-size: 1.5em;
 }
 
-.theme-switch:checked ~ .controls .theme-label,
-.size-switch:checked ~ .controls .size-label,
-.font-switch:checked ~ .controls .font-label
+.theme-switch:checked ~ .header .controls .theme-label,
+.size-switch:checked ~ .header .controls .size-label,
+.font-switch:checked ~ .header .controls .font-label
 {
     text-decoration: underline;
 }

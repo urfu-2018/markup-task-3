@@ -18,19 +18,21 @@
 <input type="checkbox" class="theme-switch" id="theme-switch">
 <input type="checkbox" class="font-switch" id="font-switch">
 <input type="checkbox" class="size-switch" id="size-switch">
-<div class="controls">
-    <label for="theme-switch" class="theme-label" tabindex="1">
-        Включить ночной режим
-    </label>
-    <label for="font-switch" class="font-label" tabindex="2">
-        Изменить шрифт
-    </label>
-    <label for="size-switch" class="size-label" tabindex="3">
-        Увеличить шрифт
-    </label>
-</div>
-<main>
+<header class="header">
+    <div class="controls">
+        <label for="theme-switch" class="theme-label" tabindex="1">
+            Включить ночной режим
+        </label>
+        <label for="font-switch" class="font-label" tabindex="2">
+            Изменить шрифт
+        </label>
+        <label for="size-switch" class="size-label" tabindex="3">
+            Увеличить шрифт
+        </label>
+    </div>
     <h1>Моя газета</h1>
+</header>
+<main class="content">
     <article>
         <h2>FP-style Pointfree Selenium Tests in JavaScript</h2>
         <p>This post is a tutorial for writing Selenium tests in a pointfree style. This should
@@ -44,9 +46,10 @@
             S.click('button[type="submit"]'),<br>)(opts))</pre>
         <figure>
             <img
-                src="https://goo.gl/wsuz9v"
-                alt="City">
-            <figcaption>Voronezh (2018)</figcaption>
+                src="https://goo.gl/xNrPpK"
+                alt="City"
+                title="City">
+            <figcaption>Some big city (2018)</figcaption>
         </figure>
         <h3>Selenium-webdriver and Node.js</h3>
         <p>I use Selenium-Webdriver and Jest to write automated browser tests. I won’t go into
@@ -94,7 +97,7 @@
             porttitor, facilisis luctus, metus</p>
     </article>
     <article>
-        <h2>Article 3</h2>
+        <h2 class="vertical-heading">Article 3</h2>
         <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
             egestas. Vestibulum
             tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
@@ -112,7 +115,8 @@
             porttitor, facilisis luctus, metus</p>
         <img
             src="https://goo.gl/orcKmk"
-            alt="Cat">
+            alt="Cat"
+            title="Cat">
         <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
             egestas. Vestibulum
             tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
@@ -134,6 +138,7 @@
         <img
             src="https://cdn-images-1.medium.com/max/1000/1*14PcWr3nEzpTN-st-C2uKg.png"
             alt="Smartphones"
+            title="Smartphones"
         >
         <q>Smartphone innovation has come to a crawl</q>
         <p>If there’s anything that’s been crystal clear from the flagship smartphones on 2018, it’s
