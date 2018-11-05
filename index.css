@@ -89,6 +89,17 @@ body
     text-align: right;
 }
 
+.content .article-with-cat
+{
+    columns: 2;
+}
+
+.content .article-with-cat img
+{
+    column-span: all;
+    display: block;
+}
+
 article:nth-of-type(7n) h2
 {
     font-family: 'Righteous', serif;
