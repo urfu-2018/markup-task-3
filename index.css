@@ -1,57 +1,49 @@
-input[id='invert']:checked ~ nav > label[for='invert'],
-input[id='large']:checked ~ nav > label[for='large'],
-input[id='random-font']:checked ~ nav > label[for='random-font'],
-input[id='serif-font']:checked ~ nav > label[for='serif-font'],
-input[id='cursive-font']:checked ~ nav > label[for='cursive-font']
+input[id='invert']:checked ~ .navigation > label[for='invert'],
+input[id='large']:checked ~ .navigation > label[for='large'],
+input[id='random-font']:checked ~ .navigation > label[for='random-font'],
+input[id='serif-font']:checked ~ .navigation > label[for='serif-font'],
+input[id='cursive-font']:checked ~ .navigation > label[for='cursive-font']
 {
     background: yellow;
 }
 
-input[id='large']:checked ~ main,
-input[id='large']:checked ~ header
+input[id='large']:checked ~ .font-changed
 {
     font-size: 150%;
 }
 
-input[id='invert']:checked ~ main,
-input[id='invert']:checked ~ header
+input[id='invert']:checked ~ .font-changed
 {
     color: #f8f4c0;
     background: black;
 }
 
-input[id='random-font']:checked ~ main .font-amatic,
-input[id='random-font']:checked ~ header .font-amatic
+input[id='random-font']:checked ~ .font-changed .font-amatic
 {
     font-family: 'Amatic SC', cursive;
 }
 
-input[id='random-font']:checked ~ main .font-merriweather,
-input[id='random-font']:checked ~ header .font-merriweather
+input[id='random-font']:checked ~ .font-changed .font-merriweather
 {
     font-family: 'Merriweather', serif;
 }
 
-input[id='random-font']:checked ~ main .font-merriweather,
-input[id='random-font']:checked ~ header .font-merriweather
+input[id='random-font']:checked ~ .font-changed .font-merriweather
 {
     font-family: 'Merriweather', serif;
 }
 
-input[id='random-font']:checked ~ main .font-lobster,
-input[id='random-font']:checked ~ header .font-lobster
+input[id='random-font']:checked ~ .font-changed .font-lobster
 {
     font-family: 'Lobster', cursive;
 }
 
-input[id='serif-font']:checked ~ main,
-input[id='serif-font']:checked ~ header
+input[id='serif-font']:checked ~ .font-changed
 {
     font-family: 'Gabriela', serif;
 }
 
-input[id='cursive-font']:checked ~ main,
-input[id='cursive-font']:checked ~ header
+input[id='cursive-font']:checked ~ .font-changed
 {
     font-family: 'Caveat', cursive;
 }
@@ -68,7 +60,7 @@ input[id='cursive-font']:checked ~ header
     background: antiquewhite;
 }
 
-nav
+.navigation
 {
     overflow: hidden;
     background-color: whitesmoke;
@@ -79,82 +71,84 @@ nav
     column-span: all;
 }
 
-.span-2
+.span-size-2
 {
     column-count: 2;
 }
 
-.flex
+.left
 {
-    display: flex;
+    float: left;
 }
 
-header > div
+.right
 {
-    margin: 0 auto;
+    float: right;
 }
 
-body
+.center
 {
-    background-color: #fffbc7;
-    margin: 0;
+    text-align: center;
 }
 
-section > p:first-of-type::first-letter
+.advertisement
+{
+    border: 1px solid black;
+    width: 20%;
+    max-width: 200px;
+    margin: 0 5%;
+    text-align: center;
+}
+
+.advertisement-article
+{
+    display: inline-block;
+}
+
+.main-img
+{
+    width: 100%;
+    margin: 10px 0;
+}
+
+.news > p:first-of-type::first-letter
 {
     font-size: 150%;
     text-shadow: 2px 2px;
-}
-
-img
-{
-    display: block;
-    margin: auto;
-    width: 100%;
-}
-
-header .block
-{
-    width: 18%;
-}
-
-.block
-{
-    border: 1px solid;
-    text-align: center;
 }
 
 .vertical-text
 {
     writing-mode: vertical-rl;
     text-orientation: upright;
-    margin: auto;
-    padding: auto;
-    border: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
     font-weight: bold;
 }
 
-footer
+.news:not(:last-child)
 {
-    float: right;
-    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
-main
+.news-img
+{
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+.body
+{
+    background-color: #fffbc7;
+    margin: 0;
+}
+
+.main
 {
     column-count: 3;
     column-rule: 1px solid black;
     width: 100%;
     border-bottom: 1px solid black;
     padding: 5px;
-}
-
-section:not(:last-child)
-{
-    border-bottom: 1px solid black;
-}
-
-section img
-{
-    width: 90%;
 }

@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
-<body>
+<body class="body">
 
 <input type="checkbox" id="invert" name="invert" hidden>
 <input type="checkbox" id="large" name="font-size" hidden>
@@ -19,36 +19,34 @@
 <input type="radio" id="serif-font" name="font" hidden>
 <input type="radio" id="cursive-font" name="font" hidden>
 
-<nav>
+<nav class="navigation">
     <label for="invert" class="input-label">Темная тема</label>
     <label for="large" class="input-label">Большой шрифт</label>
     <label for="random-font" class="input-label">Случайные шрифты</label>
     <label for="serif-font" class="input-label">Шрифт с засечками</label>
     <label for="cursive-font" class="input-label">Шрифт без засечек</label>
 </nav>
-<header class="flex">
-    <div class="block">
+<header class="font-changed">
+    <div class="advertisement left">
         <p>Здесь могла быть ваша реклама</p>
     </div>
-    <div class="font-amatic">
-        <h1>Городской вестник</h1>
+    <div class="advertisement right">
+    <p>Здесь тоже могла быть ваша реклама</p>
     </div>
-    <div class="block">
-        <p>Здесь тоже могла быть ваша реклама</p>
-    </div>
+    <h1 class="center">Городской вестник</h1>
 </header>
 <div>
-    <img src="images/city.jpg" alt="город">
+    <img class="main-img" src="images/city.jpg" alt="город">
 </div>
-<main>
-    <section class="font-merriweather">
+<main class="main font-changed">
+    <article class="news font-merriweather">
         <h2>Москвичи смогут увидеть «жизнерадостную» Луну</h2>
         <p>Москва, 22 ок&shy;тяб&shy;ря. Жи&shy;те&shy;ли и го&shy;сти сто&shy;ли&shy;цы
             смо&shy;гут уви&shy;деть «жиз&shy;не&shy;ра&shy;дост&shy;ную»
             или «охот&shy;ни&shy;чью» Лу&shy;ну. Со&shy;от&shy;вет&shy;ству&shy;ю&shy;щую
             ин&shy;фор&shy;ма&shy;цию пе&shy;ре&shy;да&shy;ет
             пресс-служ&shy;ба Мос&shy;ков&shy;ско&shy;го пла&shy;не&shy;та&shy;рия.</p>
-        <img src="https://goo.gl/2Qo3wb"
+        <img class="news-img" src="https://goo.gl/2Qo3wb"
              alt="луна">
         <p>Вто&shy;рое по&shy;сле осен&shy;не&shy;го рав&shy;но&shy;ден&shy;ствия
             пол&shy;но&shy;лу&shy;ние, ко&shy;то&shy;рое
@@ -60,8 +58,8 @@
             пред&shy;кам под&shy;го&shy;то&shy;вить&shy;ся к зи&shy;ме. Так&shy;же
             в кон&shy;це ок&shy;тяб&shy;ря про&shy;во&shy;дил&shy;ся
             сбор уро&shy;жая.</p>
-    </section>
-    <section class="font-lobster">
+    </article>
+    <article class="news font-lobster">
         <h2>Каррера уволен с поста главного тренера «Спартака»‍</h2>
         <p>Ита&shy;лья&shy;нец Мас&shy;си&shy;мо Кар&shy;ре&shy;ра был от&shy;
             прав&shy;лен в от&shy;став&shy;ку с
@@ -78,8 +76,8 @@
             Ита&shy;лья&shy;нец был от&shy;прав&shy;лен в от&shy;став&shy;ку 22 ок&shy;тяб&shy;ря.
             <br>
         </p>
-    </section>
-    <section class="font-merriweather">
+    </article>
+    <article class="news font-merriweather">
         <h2>Обман темнокожих: Netflix обвинили в расизме</h2>
         <p>Стри&shy;мин&shy;го&shy;вый ги&shy;гант Netflix рас&shy;кри&shy;ти&shy;
             ко&shy;ва&shy;ли за ра&shy;сизм,
@@ -97,7 +95,7 @@
             иг&shy;ра&shy;ю&shy;щие вто&shy;
             ро&shy;сте&shy;пен&shy;ные
             ро&shy;ли.</p>
-        <img src="https://goo.gl/M1AibB" alt="расизм">
+        <img class="news-img" src="https://goo.gl/M1AibB" alt="расизм">
         <p>Глав&shy;ный ре&shy;дак&shy;тор бри&shy;тан&shy;ско&shy;го ин&shy;
             тер&shy;нет-жур&shy;на&shy;ла для
             тем&shy;но&shy;ко&shy;жих
@@ -115,8 +113,8 @@
             та&shy;ко&shy;го
             при&shy;е&shy;ма Netflix об&shy;ма&shy;ны&shy;ва&shy;ет ожи&shy;да&shy;ния
             зри&shy;те&shy;лей.</p>
-    </section>
-    <section class="font-lobster">
+    </article>
+    <article class="news font-lobster">
         <h2>Минстрой прогнозирует рост ставок по ипотеке до 9,8-10% до конца года</h2>
         <p>Сред&shy;ние став&shy;ки по ипо&shy;те&shy;ке в Рос&shy;сии мо&shy;гут
             вы&shy;рас&shy;ти до 9,8-10%
@@ -128,17 +126,18 @@
             в Со&shy;ве&shy;те
             Фе&shy;де&shy;ра&shy;ции
             по нац&shy;про&shy;ек&shy;ту &quot;Жи&shy;лье и го&shy;род&shy;ска сре&shy;да&quot;.</p>
-    </section>
-    <section class="flex">
-        <span class="vertical-text">реклама</span>
+    </article>
+    <article class="news advertisement-article">
+        <span class="left vertical-text">реклама</span>
+        <span class="right vertical-text">реклама</span>
         <p>Про&shy;дам мо&shy;то&shy;цикл Урал! С ко&shy;ляс&shy;кой. 86-ой год рож&shy;де&shy;ния.
             По&shy;след&shy;ние
             20 лет сто&shy;ял в го&shy;ра&shy;же и лишь из&shy;ред&shy;ка вы&shy;ез&shy;жал для
             по&shy;езд&shy;ки на да&shy;чу.<br>
             Телефон: +7 (933) 612-12-34</p>
-        <span class="vertical-text">реклама</span>
-    </section>
-    <section class="font-merriweather">
+
+    </article>
+    <article class="news font-merriweather">
         <h2>Доллар опустился ниже 65 рублей впервые с 1 октября</h2>
         <p>Курс дол&shy;ла&shy;ра США со&shy;ста&shy;вил 65,05 руб./$1 в
             18:19, что на 44,5 ко&shy;пей&shy;ки ни&shy;же
@@ -150,10 +149,10 @@
             опу&shy;стив&shy;шись на 81 ко&shy;пей&shy;ку, тор&shy;гу&shy;ясь
             ни&shy;же 75 руб./EUR1
             впер&shy;вые с 8 ав&shy;гу&shy;ста.</p>
-    </section>
-    <section>
+    </article>
+    <article class="news">
         <h2>В Екатеринбурге в 2,5 раза подорожает проезд в городской электричке</h2>
-        <img src="https://goo.gl/nZzk6q" alt="поезд">
+        <img class="news-img" src="https://goo.gl/nZzk6q" alt="поезд">
         <p>Про&shy;езд в го&shy;род&shy;ской элек&shy;трич&shy;ке в
             Ека&shy;те&shy;рин&shy;бур&shy;ге
             по пол&shy;но&shy;му
@@ -172,10 +171,10 @@
             – 43 руб&shy;ля. Все&shy;го в схе&shy;ме раз&shy;ме&shy;че&shy;ны три зо&shy;ны.
             Мак&shy;си&shy;маль&shy;ная
             це&shy;на за про&shy;езд в один ко&shy;нец со&shy;ста&shy;вит 73 руб&shy;ля.</p>
-    </section>
-    <section class="span-2 font-lobster">
+    </article>
+    <article class="news span-size-2 font-lobster">
         <h2 class="span-all">Акции "Яндекса" подорожали после заявления Воложа‍</h2>
-        <img class="span-all" src="https://goo.gl/uw3Rkb" alt="Яндекс">
+        <img class="news-img span-all" src="https://goo.gl/uw3Rkb" alt="Яндекс">
         <p>
             Ген&shy;ди&shy;рек&shy;тор груп&shy;пы ком&shy;па&shy;ний и
             со&shy;ос&shy;но&shy;ва&shy;тель
@@ -205,7 +204,7 @@
             воз&shy;мож&shy;ных из&shy;ме&shy;не&shy;ни&shy;ях в ак&shy;ци&shy;о&shy;нер&shy;ном
             ка&shy;пи&shy;та&shy;ле.
         </p>
-    </section>
+    </article>
 </main>
 <footer>
     <p class="right">&copy; 2018. Твой любимый город</p>
