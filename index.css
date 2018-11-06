@@ -29,24 +29,25 @@ html
     src: url('./galactica.woff2') format('woff2'), url('./galactica.woff') format('woff');
 }
 
-main
+.main
 {
     font-family: 'Galactica', serif;
 }
 
-aside
+.aside
 {
     font-family: 'Behrens', serif;
+    width: 33%;
 }
 
-.horizontal-container .horizontal-element
+.horizontal-element
 {
     box-sizing: border-box;
     float: left;
     padding: 10px;
 }
 
-.horizontal-container .horizontal-element:not(:last-child)
+.horizontal-element:not(:last-child)
 {
     border-right: 1px black solid;
 }
@@ -58,33 +59,28 @@ aside
     clear: both;
 }
 
-.percent-25
+.header-cell-small
 {
     width: 25%;
 }
 
-.percent-33
-{
-    width: 33%;
-}
-
-.percent-50
+.header-cell-big
 {
     width: 50%;
 }
 
-.percent-67
+.section
 {
     width: 67%;
 }
 
-header
+.header
 {
     text-transform: uppercase;
     text-align: center;
 }
 
-header .slogan
+.header .slogan
 {
     text-align: right;
     text-decoration: underline;
@@ -92,12 +88,12 @@ header .slogan
     line-height: 25px;
 }
 
-header .title
+.header .title
 {
     font-size: 6em;
 }
 
-header .description
+.header .description
 {
     font-size: .75em;
     line-height: 20px;
@@ -109,7 +105,7 @@ header .description
     font-size: .75em;
 }
 
-main .title
+.main .title
 {
     column-span: all;
     text-transform: uppercase;
@@ -170,12 +166,12 @@ input[id='invert']:checked ~ .container
     background: #000;
 }
 
-input[id='bigText']:checked ~ .container
+input[id='big-text']:checked ~ .container
 {
     font-size: 1.4rem;
 }
 
-input[id='uglyText']:checked ~ .container
+input[id='ugly-text']:checked ~ .container
 {
     font-size: 1em;
     font-family: Arial, sans-serif;
