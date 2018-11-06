@@ -144,11 +144,6 @@ article:nth-of-type(7n) h2
     color: #859900;
 }
 
-.theme-switch:checked ~ .content img
-{
-    filter: sepia(100%);
-}
-
 .font-switch:checked ~ .content p
 {
     font-family: 'Helvetica', sans-serif;
