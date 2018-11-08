@@ -1,6 +1,6 @@
 p::first-letter
 {
-    font: 30px;
+    font-size: 30px;
 }
 
 p
@@ -8,6 +8,7 @@ p
     line-height: 30px;
     letter-spacing: 2px;
     font-family: serif;
+    border-bottom: 1px solid black;
     hyphens: auto;
 }
 
@@ -32,12 +33,19 @@ h2
     font-variant: small-caps;
 }
 
+@font-face
+{
+    font-family: Germania;
+    src: url('fonts/GermaniaOne-Regular.ttf');
+}
+
 header
 {
+    font-family: Germania;
+    letter-spacing: 10px;
     font-size: 60px;
     font-weight: bold;
     text-align: center;
-    font: Arial;
 }
 
 img
@@ -47,21 +55,16 @@ img
     margin-right: auto;
 }
 
-.Lisbet img
-{
-    break-inside: avoid-column;
-}
-
 aside
 {
     text-align: right;
 }
 
-main
+.news
 {
     column-count: 4;
-    column-gap: 20px;
     column-rule: 2px solid black;
+    column-gap: 15px;
 }
 
 .date
@@ -74,18 +77,13 @@ main
 p.palmemordet
 {
     column-count: 2;
+    column-rule: 2px solid black;
     border-bottom: 1px solid black;
-    column-rule: 1px solid black;
 }
 
 figcaption
 {
     text-align: center;
-}
-
-section.palmemordet
-{
-    break-inside:avoid;
 }
 
 .watermark
