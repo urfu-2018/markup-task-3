@@ -1,0 +1,98 @@
+p::first-letter
+{
+    font: 30px;
+}
+
+p
+{
+    line-height: 30px;
+    letter-spacing: 2px;
+    font-family: serif;
+    hyphens: auto;
+}
+
+blockquote
+{
+    font-style: italic;
+    border-bottom: 2px dotted black;
+    border-top: 2px dotted black ;
+    border-left: 2px dotted black ;
+    border-right: 2px dotted black ;
+}
+
+h1
+{
+    font-family: fantasy;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+h2
+{
+    font-variant: small-caps;
+}
+
+header
+{
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    font: Arial;
+}
+
+img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Lisbet img
+{
+    break-inside: avoid-column;
+}
+
+aside
+{
+    text-align: right;
+}
+
+main
+{
+    column-count: 4;
+    column-gap: 20px;
+    column-rule: 2px solid black;
+}
+
+.date
+{
+    text-align: center;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black ;
+}
+
+p.palmemordet
+{
+    column-count: 2;
+    border-bottom: 1px solid black;
+    column-rule: 1px solid black;
+}
+
+figcaption
+{
+    text-align: center;
+}
+
+section.palmemordet
+{
+    break-inside:avoid;
+}
+
+.watermark
+{
+    width: 10px;
+    font-family: monospace;
+    word-wrap: break-word;
+    float: left;
+    opacity: .5;
+}
