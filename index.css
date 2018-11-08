@@ -33,9 +33,9 @@ input[id='theme'] + label
     content: url('./images/magick_wand.png');
 }
 
-input[id='theme']:checked ~ main article,
+input[id='theme']:checked ~ main .newspaper,
 input[id='theme']:checked ~ main header,
-input[id='theme']:checked ~ main aside,
+input[id='theme']:checked ~ main .advertisment,
 input[id='theme']:checked ~ main footer
 {
     background-color: #000;
@@ -49,7 +49,7 @@ input[id='theme']:checked ~ main .horoscope img
 }
 
 input[id='theme']:checked ~ main header,
-input[id='theme']:checked ~ main header h1,
+input[id='theme']:checked ~ main .header-title,
 input[id='theme']:checked ~ main footer
 {
     border-color: #fff;
@@ -66,15 +66,15 @@ input[id='font'] + label
     content: url('./images/magick_letter.png');
 }
 
-input[id='font']:checked ~ main article h2,
-input[id='font']:checked ~ main article h2 span
+input[id='font']:checked ~ main .newspaper h2,
+input[id='font']:checked ~ main .newspaper h2 span
 {
     font-family: 'Pudelinka, arial';
     margin: 5px 0 0;
     font-size: 100px;
 }
 
-input[id='font']:checked ~ main article section
+input[id='font']:checked ~ main .article-section
 {
     font: normal 14px 'Arial', sans-serif;
 }
@@ -90,13 +90,13 @@ input[id='size'] + label
     content: url('./images/magick_zoom.png');
 }
 
-input[id='size']:checked ~ main article section
+input[id='size']:checked ~ main .article-section
 {
     font-size: .85em;
 }
 
-input[id='size']:checked ~ main article h2,
-input[id='size']:checked ~ main article h2 span
+input[id='size']:checked ~ main .newspaper h2,
+input[id='size']:checked ~ main .newspaper h2 span
 {
     margin: 5px 0 0;
     font-size: 100px;
