@@ -11,166 +11,168 @@
 </head>
 <body>
     <input id="night-mode" class="night-mode" type="checkbox">
-    <label for="night-mode">Ночной режим</label>
+    <label class="mode-label" for="night-mode">Ночной режим</label>
     <input id="old-font" class="old-font" type="checkbox" checked>
-    <label for="old-font">Старый шрифт</label>
+    <label class="mode-label" for="old-font">Старый шрифт</label>
     <input id="big-letters" class="big-letters" type="checkbox">
-    <label for="big-letters">Крупные буквы</label>
-    <section class="main">
+    <label class="mode-label" for="big-letters">Крупные буквы</label>
+    <main class="main">
         <header>
-            <h1>Новости Петербурга</h1>
-            <h3>Изданіе отъ 24 ноября 1905 года.</h3>
+            <h1 class="title">Новости Петербурга</h1>
+            <h3 class="subtitle">Изданіе отъ 24 ноября 1905 года.</h3>
         </header>
-        <section>
-            <aside>
-                <div>Тираж</div>
-                <div>5000</div>
-                <div>экземпляров</div>
-            </aside>
-            <article>
-                <figure>
-                    <img src="hotel.jpg" alt="Изображение гостиницы">
-                    <figcaption>
-                        Гостиница «Франція»
-                    </figcaption>
-                </figure>
-                <p>2 де&shy;каб&shy;ря въ 11 ча&shy;со&shy;въ утра на ули&shy;ца&shy;хъ
-                    Пет&shy;ро&shy;гра&shy;да сто&shy;я&shy;лъ на&shy;столь&shy;ко
-                    гу&shy;стой ту&shy;манъ, что на раз&shy;сто&shy;яніи нѣсколь&shy;кихъ
-                    са&shy;жень невоз&shy;мож&shy;но бы&shy;ло видѣть че&shy;ловѣка.
-                    При это&shy;мъ на&shy;блю&shy;да&shy;лось лю&shy;бо&shy;пыт&shy;ное
-                    яв&shy;леніе: въ нѣко&shy;то&shy;рыхъ пунк&shy;тахъ ту&shy;манъ бы&shy;лъ
-                    гущѣ, въ дру&shy;гихъ слабѣе, слов&shy;но шелъ онъ по&shy;ло&shy;са&shy;ми.
-                    Это об&shy;сто&shy;я&shy;тель&shy;ство бро&shy;са&shy;лось
-                    въ гла&shy;за про&shy;хо&shy;жихъ. Въ 12 ча&shy;су дня ту&shy;манъ
-                    разсѣял&shy;ся, но въ 7 ча&shy;су ве&shy;че&shy;ра сно&shy;ва
-                    надъ сто&shy;ли&shy;цей сгу&shy;стил&shy;ся ту&shy;манъ, но этотъ разъ
-                    сплош&shy;ной непро&shy;ни&shy;ца&shy;е&shy;мой стѣной.
-                    Опа&shy;са&shy;ясь столк&shy;но&shy;веній, ва&shy;го&shy;но&shy;во&shy;жа&shy;тые
-                    ста&shy;ли тор&shy;мо&shy;зить ва&shy;го&shy;ны трам&shy;вая.
-                    Въ нѣко&shy;то&shy;рыхъ пунк&shy;тахъ, впро&shy;че&shy;мъ, дѣло не
-                    обо&shy;шлось безъ аварій. Из&shy;воз&shy;чи&shy;ки
-                    ди&shy;ко ора&shy;ли на зазѣвав&shy;ших&shy;ся про&shy;хо&shy;жихъ,
-                    ко&shy;то&shy;рыхъ неод&shy;но&shy;крат&shy;но задѣва&shy;ли то
-                    ог&shy;лоб&shy;ля&shy;ми, то ку&shy;зо&shy;во&shy;мъ са&shy;ней.
-                    Осо&shy;бен&shy;но при&shy;хо&shy;ди&shy;лось осте&shy;ре&shy;гать&shy;ся
-                    гру&shy;зо&shy;ви&shy;ко&shy;въ-ав&shy;то&shy;мо&shy;би&shy;лей,
-                    ко&shy;то&shy;рые, невзи&shy;рая на опас&shy;ность, по обык&shy;но&shy;венію
-                    мча&shy;лись безъ фо&shy;на&shy;рей. На пе&shy;ре&shy;крест&shy;кахъ
-                    ули&shy;цъ ло&shy;мо&shy;вое и лег&shy;кое дви&shy;женіе
-                    за&shy;дер&shy;жи&shy;ва&shy;лось, чтобы не вы&shy;звать се&shy;рьез&shy;ны&shy;хъ
-                    ка&shy;та&shy;стро&shy;фъ. Послѣ 7 ве&shy;че&shy;ра,
-                    ко&shy;гда въ ма&shy;га&shy;зи&shy;на&shy;хъ бы&shy;лъ по&shy;га&shy;шенъ свѣтъ,
-                    на ули&shy;ца&shy;хъ об&shy;ра&shy;зо&shy;ва&shy;лась та&shy;кая еги&shy;пет&shy;ская
-                    тьма, что улич&shy;ные фо&shy;на&shy;ри ка&shy;за&shy;лись жал&shy;ки&shy;ми
-                    туск&shy;лы&shy;ми ноч&shy;ни&shy;ка&shy;ми. И толь&shy;ко въ 10
-                    ча&shy;су ве&shy;че&shy;ра ту&shy;манъ разсѣял&shy;ся и пет&shy;ро&shy;град&shy;цы
-                    ста&shy;ли лег&shy;че ды&shy;шать.</p>
-                <p>Вне&shy;зап&shy;но съ быст&shy;ро&shy;той молніи онъ под&shy;нял&shy;ся
-                    по лѣстницѣ на вто&shy;рой этажъ, во&shy;рвал&shy;ся въ но&shy;меръ Га
-                    Іена и сталъ на&shy;но&shy;сить ударъ за уда&shy;ро&shy;мъ но&shy;жо&shy;мъ
-                    быв&shy;ше&shy;му ми&shy;ни&shy;стру И Пон&shy;гу. Затѣмъ сек&shy;ре&shy;тарь
-                    вы&shy;нулъ ре&shy;воль&shy;веръ и выстрѣли&shy;лъ сво&shy;е&shy;му
-                    хо&shy;зя&shy;и&shy;ну въ жи&shy;вотъ. Вся ком&shy;на&shy;та бы&shy;ла
-                    за&shy;ли&shy;та кро&shy;вью, на по&shy;мощь дру&shy;гу бро&shy;сил&shy;ся
-                    Га Іенъ, и вскорѣ борь&shy;ба пе&shy;ре&shy;ки&shy;ну&shy;лась
-                    въ ко&shy;ри&shy;доръ. Раз&shy;го&shy;ря&shy;чен&shy;ные
-                    ино&shy;стран&shy;цы оже&shy;сто&shy;чен&shy;но дра&shy;лись,
-                    брыз&shy;ги кро&shy;ви па&shy;да&shy;ли на полъ, раз&shy;да&shy;ва&shy;лись
-                    гор&shy;тан&shy;ные ру&shy;га&shy;тель&shy;ства. На кри&shy;ки
-                    сбѣжа&shy;лись оф&shy;фиціан&shy;ты го&shy;сти&shy;ни&shy;цы и
-                    раз&shy;ня&shy;ли ко&shy;рей&shy;цевъ. На по&shy;лу въ но&shy;мерѣ ле&shy;жалъ
-                    окро&shy;вав&shy;лен&shy;ный И Пон&shy;гъ, онъ по&shy;лу&shy;чи&shy;лъ
-                    один&shy;на&shy;дцать но&shy;же&shy;вы&shy;хъ и од&shy;ну ог&shy;нестрѣльную
-                    ра&shy;ну, но… остал&shy;ся живъ и бы&shy;лъ въ со&shy;сто&shy;яніи шо&shy;ка
-                    от&shy;ве&shy;зенъ въ Обу&shy;хов&shy;скую боль&shy;ни&shy;цу.</p>
-                <p>На&shy;па&shy;давшій схва&shy;ченъ и от&shy;ве&shy;денъ въ
-                    по&shy;ли&shy;цейскій уча&shy;сто&shy;къ, на до&shy;про&shy;сы
-                    не отвѣча&shy;етъ, а толь&shy;ко си&shy;дитъ и, на&shy;су&shy;пив&shy;шись,
-                    смот&shy;ритъ на ок&shy;но. Въ гос&shy;пи&shy;талѣ
-                    гос&shy;по&shy;д&shy;инъ И Пон&shy;гъ за&shy;яви&shy;лъ,
-                    что при&shy;чи&shy;на нена&shy;ви&shy;сти къ нѣму юно&shy;ши кро&shy;ет&shy;ся въ
-                    <q>дав&shy;ней, кро&shy;ва&shy;вой и та&shy;ин&shy;ствен&shy;ной
-                        ис&shy;торіи, ко&shy;то&shy;рая про&shy;изо&shy;шла еще въ Ко&shy;реѣ</q>,
-                    од&shy;на&shy;ко от&shy;крыть эту тай&shy;ну онъ от&shy;ка&shy;зал&shy;ся:</p>
-                <blockquote>Азіатскіе от&shy;но&shy;шенія непо&shy;нят&shy;ны
-                    рус&shy;ски&shy;мъ…</blockquote>
-                <p>— за&shy;яви&shy;лъ онъ . Со&shy;сто&shy;яніе И Пон&shy;га ста&shy;биль&shy;но,
-                    вскорѣ онъ пой&shy;детъ на по&shy;прав&shy;ку.</p>
-            </article>
-            <article>
-                <figure>
-                    <img src="andreev.jpeg" alt="Изображение Леонида Андреева">
-                    <figcaption>
-                        Леонидъ Андреевъ съ женой въ Райволо
-                    </figcaption>
-                </figure>
-                <p>Въ ночь съ 29 на 30 де&shy;каб&shy;ря въ имѣніи Л. Ан&shy;дре&shy;ева
-                    въ Рай&shy;во&shy;ло про&shy;изо&shy;шло по&shy;ку&shy;шеніе на
-                    хо&shy;зя&shy;и&shy;на имѣнія. Въ эту ночь онъ ра&shy;бо&shy;талъ
-                    на ве&shy;рандѣ. Вдру&shy;гъ съ лѣстни&shy;цы по&shy;слы&shy;ша&shy;лись
-                    кри&shy;ки. Су&shy;дя по ни&shy;мъ, ра&shy;бочій Аб&shy;ра&shy;мъ
-                    хотѣлъ вой&shy;ти къ Ан&shy;дре&shy;еву, а же&shy;на Ан&shy;дре&shy;ева
-                    Ан&shy;на Ильи&shy;нич&shy;на его не пус&shy;ка&shy;ла, за что онъ
-                    ея ру&shy;галъ. Ан&shy;дре&shy;евъ вы&shy;шелъ навстрѣчу имъ и
-                    спро&shy;си&shy;лъ у Аб&shy;ра&shy;ма, что ему нуж&shy;но.
-                    Тотъ вы&shy;нулъ пи&shy;сто&shy;летъ и выстрѣли&shy;лъ въ
-                    Ан&shy;дре&shy;ева, но про&shy;мах&shy;нул&shy;ся. Тутъ су&shy;пру&shy;ги
-                    Ан&shy;дре&shy;евы хва&shy;та&shy;ютъ его за ру&shy;ки и на&shy;чи&shy;на&shy;ютъ
-                    съ ни&shy;мъ бо&shy;роть&shy;ся. Аб&shy;ра&shy;мъ уку&shy;си&shy;лъ Ан&shy;ну
-                    Ильи&shy;нич&shy;ну за ру&shy;ку до кро&shy;ви. Прибѣжа&shy;ли лю&shy;ди и
-                    по&shy;ва&shy;ли&shy;ли Аб&shy;ра&shy;ма, но че&shy;резъ нѣко&shy;то&shy;рое
-                    вре&shy;мя, поль&shy;зу&shy;ясь су&shy;ма&shy;то&shy;хой, онъ скрыл&shy;ся
-                    съ ре&shy;воль&shy;ве&shy;ро&shy;мъ. Это&shy;го Аб&shy;ра&shy;ма годъ
-                    на&shy;задъ Ан&shy;дре&shy;евъ пріюти&shy;лъ и обез&shy;пе&shy;чи&shy;лъ
-                    ра&shy;бо&shy;той. Для са&shy;мо&shy;за&shy;щи&shy;ты по&shy;да&shy;ри&shy;лъ
-                    ему ре&shy;воль&shy;веръ. Кромѣ то&shy;го, по&shy;да&shy;ри&shy;лъ ему свою
-                    шу&shy;бу и шап&shy;ку. Съ дру&shy;ги&shy;ми слу&shy;га&shy;ми Аб&shy;ра&shy;мъ
-                    не ужил&shy;ся и по&shy;сто&shy;ян&shy;но имъ угро&shy;жалъ, за что
-                    по&shy;лу&shy;чалъ вы&shy;го&shy;во&shy;ры отъ Ан&shy;дре&shy;ева.
-                    Ви&shy;ди&shy;мо, на этой почвѣ впе&shy;чат&shy;ли&shy;тель&shy;ный
-                    Аб&shy;ра&shy;мъ и за&shy;та&shy;и&shy;лъ мысль объ убійствѣ.
-                    Скорѣе все&shy;го, онъ ненор&shy;ма&shy;ленъ.</p>
-            </article>
-            <article>
-                <figure>
-                    <img src="shalapin.jpeg" alt="Изображение Фёдора Шаляпина">
-                    <figcaption>
-                        Ѳедоръ Шаляпинъ поетъ съ листа на репетиціи въ залѣ Народнаго дома
-                    </figcaption>
-                </figure>
-                <p>2 де&shy;каб&shy;ря въ 11 ча&shy;со&shy;въ утра на ули&shy;ца&shy;хъ
-                    Пет&shy;ро&shy;гра&shy;да сто&shy;я&shy;лъ на&shy;столь&shy;ко
-                    гу&shy;стой ту&shy;манъ, что на раз&shy;сто&shy;яніи нѣсколь&shy;кихъ
-                    са&shy;жень невоз&shy;мож&shy;но бы&shy;ло видѣть че&shy;ловѣка.
-                    При это&shy;мъ на&shy;блю&shy;да&shy;лось лю&shy;бо&shy;пыт&shy;ное
-                    яв&shy;леніе: въ нѣко&shy;то&shy;рыхъ пунк&shy;тахъ ту&shy;манъ бы&shy;лъ
-                    гущѣ, въ дру&shy;гихъ слабѣе, слов&shy;но шелъ онъ по&shy;ло&shy;са&shy;ми.
-                    Это об&shy;сто&shy;я&shy;тель&shy;ство бро&shy;са&shy;лось въ гла&shy;за
-                    про&shy;хо&shy;жихъ. Въ 12 ча&shy;су дня ту&shy;манъ разсѣял&shy;ся, но
-                    въ 7 ча&shy;су ве&shy;че&shy;ра сно&shy;ва надъ сто&shy;ли&shy;цей
-                    сгу&shy;стил&shy;ся ту&shy;манъ, но этотъ разъ сплош&shy;ной
-                    непро&shy;ни&shy;ца&shy;е&shy;мой стѣной. Опа&shy;са&shy;ясь
-                    столк&shy;но&shy;веній, ва&shy;го&shy;но&shy;во&shy;жа&shy;тые ста&shy;ли
-                    тор&shy;мо&shy;зить ва&shy;го&shy;ны трам&shy;вая. Въ нѣко&shy;то&shy;рыхъ
-                    пунк&shy;тахъ, впро&shy;че&shy;мъ, дѣло не обо&shy;шлось безъ аварій.
-                    Из&shy;воз&shy;чи&shy;ки ди&shy;ко ора&shy;ли на зазѣвав&shy;ших&shy;ся
-                    про&shy;хо&shy;жихъ, ко&shy;то&shy;рыхъ неод&shy;но&shy;крат&shy;но задѣва&shy;ли то
-                    ог&shy;лоб&shy;ля&shy;ми, то ку&shy;зо&shy;во&shy;мъ са&shy;ней. Осо&shy;бен&shy;но
-                    при&shy;хо&shy;ди&shy;лось осте&shy;ре&shy;гать&shy;ся
-                    гру&shy;зо&shy;ви&shy;ко&shy;въ-ав&shy;то&shy;мо&shy;би&shy;лей,
-                    ко&shy;то&shy;рые, невзи&shy;рая на опас&shy;ность, по обык&shy;но&shy;венію
-                    мча&shy;лись безъ фо&shy;на&shy;рей. На пе&shy;ре&shy;крест&shy;кахъ ули&shy;цъ
-                    ло&shy;мо&shy;вое и лег&shy;кое дви&shy;женіе за&shy;дер&shy;жи&shy;ва&shy;лось,
-                    чтобы не вы&shy;звать се&shy;рьез&shy;ны&shy;хъ ка&shy;та&shy;стро&shy;фъ.
-                    Послѣ 7 ве&shy;че&shy;ра, ко&shy;гда въ ма&shy;га&shy;зи&shy;на&shy;хъ бы&shy;лъ
-                    по&shy;га&shy;шенъ свѣтъ, на ули&shy;ца&shy;хъ об&shy;ра&shy;зо&shy;ва&shy;лась
-                    та&shy;кая еги&shy;пет&shy;ская тьма, что улич&shy;ные фо&shy;на&shy;ри
-                    ка&shy;за&shy;лись жал&shy;ки&shy;ми туск&shy;лы&shy;ми ноч&shy;ни&shy;ка&shy;ми.
-                    И толь&shy;ко въ 10 ча&shy;су ве&shy;че&shy;ра ту&shy;манъ разсѣял&shy;ся и
-                    пет&shy;ро&shy;град&shy;цы ста&shy;ли лег&shy;че ды&shy;шать.</p>
-            </article>
+        <section class="content">
+            <section>
+                <aside class="printing-info">
+                    <div class="printing-info-part">Тираж</div>
+                    <div class="printing-info-part">5000</div>
+                    <div class="printing-info-part">экземпляров</div>
+                </aside>
+                <article>
+                    <figure>
+                        <img class="article-image" src="hotel.jpg" alt="Изображение гостиницы">
+                        <figcaption class="article-image-caption">
+                            Гостиница «Франція»
+                        </figcaption>
+                    </figure>
+                    <p class="main-text">2 де&shy;каб&shy;ря въ 11 ча&shy;со&shy;въ утра на ули&shy;ца&shy;хъ
+                        Пет&shy;ро&shy;гра&shy;да сто&shy;я&shy;лъ на&shy;столь&shy;ко
+                        гу&shy;стой ту&shy;манъ, что на раз&shy;сто&shy;яніи нѣсколь&shy;кихъ
+                        са&shy;жень невоз&shy;мож&shy;но бы&shy;ло видѣть че&shy;ловѣка.
+                        При это&shy;мъ на&shy;блю&shy;да&shy;лось лю&shy;бо&shy;пыт&shy;ное
+                        яв&shy;леніе: въ нѣко&shy;то&shy;рыхъ пунк&shy;тахъ ту&shy;манъ бы&shy;лъ
+                        гущѣ, въ дру&shy;гихъ слабѣе, слов&shy;но шелъ онъ по&shy;ло&shy;са&shy;ми.
+                        Это об&shy;сто&shy;я&shy;тель&shy;ство бро&shy;са&shy;лось
+                        въ гла&shy;за про&shy;хо&shy;жихъ. Въ 12 ча&shy;су дня ту&shy;манъ
+                        разсѣял&shy;ся, но въ 7 ча&shy;су ве&shy;че&shy;ра сно&shy;ва
+                        надъ сто&shy;ли&shy;цей сгу&shy;стил&shy;ся ту&shy;манъ, но этотъ разъ
+                        сплош&shy;ной непро&shy;ни&shy;ца&shy;е&shy;мой стѣной.
+                        Опа&shy;са&shy;ясь столк&shy;но&shy;веній, ва&shy;го&shy;но&shy;во&shy;жа&shy;тые
+                        ста&shy;ли тор&shy;мо&shy;зить ва&shy;го&shy;ны трам&shy;вая.
+                        Въ нѣко&shy;то&shy;рыхъ пунк&shy;тахъ, впро&shy;че&shy;мъ, дѣло не
+                        обо&shy;шлось безъ аварій. Из&shy;воз&shy;чи&shy;ки
+                        ди&shy;ко ора&shy;ли на зазѣвав&shy;ших&shy;ся про&shy;хо&shy;жихъ,
+                        ко&shy;то&shy;рыхъ неод&shy;но&shy;крат&shy;но задѣва&shy;ли то
+                        ог&shy;лоб&shy;ля&shy;ми, то ку&shy;зо&shy;во&shy;мъ са&shy;ней.
+                        Осо&shy;бен&shy;но при&shy;хо&shy;ди&shy;лось осте&shy;ре&shy;гать&shy;ся
+                        гру&shy;зо&shy;ви&shy;ко&shy;въ-ав&shy;то&shy;мо&shy;би&shy;лей,
+                        ко&shy;то&shy;рые, невзи&shy;рая на опас&shy;ность, по обык&shy;но&shy;венію
+                        мча&shy;лись безъ фо&shy;на&shy;рей. На пе&shy;ре&shy;крест&shy;кахъ
+                        ули&shy;цъ ло&shy;мо&shy;вое и лег&shy;кое дви&shy;женіе
+                        за&shy;дер&shy;жи&shy;ва&shy;лось, чтобы не вы&shy;звать се&shy;рьез&shy;ны&shy;хъ
+                        ка&shy;та&shy;стро&shy;фъ. Послѣ 7 ве&shy;че&shy;ра,
+                        ко&shy;гда въ ма&shy;га&shy;зи&shy;на&shy;хъ бы&shy;лъ по&shy;га&shy;шенъ свѣтъ,
+                        на ули&shy;ца&shy;хъ об&shy;ра&shy;зо&shy;ва&shy;лась та&shy;кая еги&shy;пет&shy;ская
+                        тьма, что улич&shy;ные фо&shy;на&shy;ри ка&shy;за&shy;лись жал&shy;ки&shy;ми
+                        туск&shy;лы&shy;ми ноч&shy;ни&shy;ка&shy;ми. И толь&shy;ко въ 10
+                        ча&shy;су ве&shy;че&shy;ра ту&shy;манъ разсѣял&shy;ся и пет&shy;ро&shy;град&shy;цы
+                        ста&shy;ли лег&shy;че ды&shy;шать.</p>
+                    <p class="main-text">Вне&shy;зап&shy;но съ быст&shy;ро&shy;той молніи онъ
+                        под&shy;нял&shy;ся по лѣстницѣ на вто&shy;рой этажъ, во&shy;рвал&shy;ся въ
+                        но&shy;меръ Га Іена и сталъ на&shy;но&shy;сить ударъ за уда&shy;ро&shy;мъ
+                        но&shy;жо&shy;мъ быв&shy;ше&shy;му ми&shy;ни&shy;стру И Пон&shy;гу. Затѣмъ
+                        сек&shy;ре&shy;тарь вы&shy;нулъ ре&shy;воль&shy;веръ и выстрѣли&shy;лъ
+                        сво&shy;е&shy;му хо&shy;зя&shy;и&shy;ну въ жи&shy;вотъ. Вся ком&shy;на&shy;та
+                        бы&shy;ла за&shy;ли&shy;та кро&shy;вью, на по&shy;мощь дру&shy;гу бро&shy;сил&shy;ся
+                        Га Іенъ, и вскорѣ борь&shy;ба пе&shy;ре&shy;ки&shy;ну&shy;лась
+                        въ ко&shy;ри&shy;доръ. Раз&shy;го&shy;ря&shy;чен&shy;ные
+                        ино&shy;стран&shy;цы оже&shy;сто&shy;чен&shy;но дра&shy;лись,
+                        брыз&shy;ги кро&shy;ви па&shy;да&shy;ли на полъ, раз&shy;да&shy;ва&shy;лись
+                        гор&shy;тан&shy;ные ру&shy;га&shy;тель&shy;ства. На кри&shy;ки
+                        сбѣжа&shy;лись оф&shy;фиціан&shy;ты го&shy;сти&shy;ни&shy;цы и
+                        раз&shy;ня&shy;ли ко&shy;рей&shy;цевъ. На по&shy;лу въ но&shy;мерѣ ле&shy;жалъ
+                        окро&shy;вав&shy;лен&shy;ный И Пон&shy;гъ, онъ по&shy;лу&shy;чи&shy;лъ
+                        один&shy;на&shy;дцать но&shy;же&shy;вы&shy;хъ и од&shy;ну ог&shy;нестрѣльную
+                        ра&shy;ну, но… остал&shy;ся живъ и бы&shy;лъ въ со&shy;сто&shy;яніи шо&shy;ка
+                        от&shy;ве&shy;зенъ въ Обу&shy;хов&shy;скую боль&shy;ни&shy;цу.</p>
+                    <p class="main-text">На&shy;па&shy;давшій схва&shy;ченъ и от&shy;ве&shy;денъ въ
+                        по&shy;ли&shy;цейскій уча&shy;сто&shy;къ, на до&shy;про&shy;сы
+                        не отвѣча&shy;етъ, а толь&shy;ко си&shy;дитъ и, на&shy;су&shy;пив&shy;шись,
+                        смот&shy;ритъ на ок&shy;но. Въ гос&shy;пи&shy;талѣ
+                        гос&shy;по&shy;д&shy;инъ И Пон&shy;гъ за&shy;яви&shy;лъ,
+                        что при&shy;чи&shy;на нена&shy;ви&shy;сти къ нѣму юно&shy;ши кро&shy;ет&shy;ся въ
+                        <q class="quote">дав&shy;ней, кро&shy;ва&shy;вой и та&shy;ин&shy;ствен&shy;ной
+                            ис&shy;торіи, ко&shy;то&shy;рая про&shy;изо&shy;шла еще въ Ко&shy;реѣ</q>,
+                        од&shy;на&shy;ко от&shy;крыть эту тай&shy;ну онъ от&shy;ка&shy;зал&shy;ся:</p>
+                    <blockquote class="quote">Азіатскіе от&shy;но&shy;шенія непо&shy;нят&shy;ны
+                        рус&shy;ски&shy;мъ…</blockquote>
+                    <p class="main-text">— за&shy;яви&shy;лъ онъ . Со&shy;сто&shy;яніе И Пон&shy;га
+                        ста&shy;биль&shy;но, вскорѣ онъ пой&shy;детъ на по&shy;прав&shy;ку.</p>
+                </article>
+                <article>
+                    <figure>
+                        <img class="article-image" src="andreev.jpeg" alt="Изображение Леонида Андреева">
+                        <figcaption class="article-image-caption">
+                            Леонидъ Андреевъ съ женой въ Райволо
+                        </figcaption>
+                    </figure>
+                    <p class="main-text">Въ ночь съ 29 на 30 де&shy;каб&shy;ря въ имѣніи Л. Ан&shy;дре&shy;ева
+                        въ Рай&shy;во&shy;ло про&shy;изо&shy;шло по&shy;ку&shy;шеніе на
+                        хо&shy;зя&shy;и&shy;на имѣнія. Въ эту ночь онъ ра&shy;бо&shy;талъ
+                        на ве&shy;рандѣ. Вдру&shy;гъ съ лѣстни&shy;цы по&shy;слы&shy;ша&shy;лись
+                        кри&shy;ки. Су&shy;дя по ни&shy;мъ, ра&shy;бочій Аб&shy;ра&shy;мъ
+                        хотѣлъ вой&shy;ти къ Ан&shy;дре&shy;еву, а же&shy;на Ан&shy;дре&shy;ева
+                        Ан&shy;на Ильи&shy;нич&shy;на его не пус&shy;ка&shy;ла, за что онъ
+                        ея ру&shy;галъ. Ан&shy;дре&shy;евъ вы&shy;шелъ навстрѣчу имъ и
+                        спро&shy;си&shy;лъ у Аб&shy;ра&shy;ма, что ему нуж&shy;но.
+                        Тотъ вы&shy;нулъ пи&shy;сто&shy;летъ и выстрѣли&shy;лъ въ
+                        Ан&shy;дре&shy;ева, но про&shy;мах&shy;нул&shy;ся. Тутъ су&shy;пру&shy;ги
+                        Ан&shy;дре&shy;евы хва&shy;та&shy;ютъ его за ру&shy;ки и на&shy;чи&shy;на&shy;ютъ
+                        съ ни&shy;мъ бо&shy;роть&shy;ся. Аб&shy;ра&shy;мъ уку&shy;си&shy;лъ Ан&shy;ну
+                        Ильи&shy;нич&shy;ну за ру&shy;ку до кро&shy;ви. Прибѣжа&shy;ли лю&shy;ди и
+                        по&shy;ва&shy;ли&shy;ли Аб&shy;ра&shy;ма, но че&shy;резъ нѣко&shy;то&shy;рое
+                        вре&shy;мя, поль&shy;зу&shy;ясь су&shy;ма&shy;то&shy;хой, онъ скрыл&shy;ся
+                        съ ре&shy;воль&shy;ве&shy;ро&shy;мъ. Это&shy;го Аб&shy;ра&shy;ма годъ
+                        на&shy;задъ Ан&shy;дре&shy;евъ пріюти&shy;лъ и обез&shy;пе&shy;чи&shy;лъ
+                        ра&shy;бо&shy;той. Для са&shy;мо&shy;за&shy;щи&shy;ты по&shy;да&shy;ри&shy;лъ
+                        ему ре&shy;воль&shy;веръ. Кромѣ то&shy;го, по&shy;да&shy;ри&shy;лъ ему свою
+                        шу&shy;бу и шап&shy;ку. Съ дру&shy;ги&shy;ми слу&shy;га&shy;ми Аб&shy;ра&shy;мъ
+                        не ужил&shy;ся и по&shy;сто&shy;ян&shy;но имъ угро&shy;жалъ, за что
+                        по&shy;лу&shy;чалъ вы&shy;го&shy;во&shy;ры отъ Ан&shy;дре&shy;ева.
+                        Ви&shy;ди&shy;мо, на этой почвѣ впе&shy;чат&shy;ли&shy;тель&shy;ный
+                        Аб&shy;ра&shy;мъ и за&shy;та&shy;и&shy;лъ мысль объ убійствѣ.
+                        Скорѣе все&shy;го, онъ ненор&shy;ма&shy;ленъ.</p>
+                </article>
+                <article>
+                    <figure>
+                        <img class="article-image" src="shalapin.jpeg" alt="Изображение Фёдора Шаляпина">
+                        <figcaption class="article-image-caption">
+                            Ѳедоръ Шаляпинъ поетъ съ листа на репетиціи въ залѣ Народнаго дома
+                        </figcaption>
+                    </figure>
+                    <p class="main-text">2 де&shy;каб&shy;ря въ 11 ча&shy;со&shy;въ утра на ули&shy;ца&shy;хъ
+                        Пет&shy;ро&shy;гра&shy;да сто&shy;я&shy;лъ на&shy;столь&shy;ко
+                        гу&shy;стой ту&shy;манъ, что на раз&shy;сто&shy;яніи нѣсколь&shy;кихъ
+                        са&shy;жень невоз&shy;мож&shy;но бы&shy;ло видѣть че&shy;ловѣка.
+                        При это&shy;мъ на&shy;блю&shy;да&shy;лось лю&shy;бо&shy;пыт&shy;ное
+                        яв&shy;леніе: въ нѣко&shy;то&shy;рыхъ пунк&shy;тахъ ту&shy;манъ бы&shy;лъ
+                        гущѣ, въ дру&shy;гихъ слабѣе, слов&shy;но шелъ онъ по&shy;ло&shy;са&shy;ми.
+                        Это об&shy;сто&shy;я&shy;тель&shy;ство бро&shy;са&shy;лось въ гла&shy;за
+                        про&shy;хо&shy;жихъ. Въ 12 ча&shy;су дня ту&shy;манъ разсѣял&shy;ся, но
+                        въ 7 ча&shy;су ве&shy;че&shy;ра сно&shy;ва надъ сто&shy;ли&shy;цей
+                        сгу&shy;стил&shy;ся ту&shy;манъ, но этотъ разъ сплош&shy;ной
+                        непро&shy;ни&shy;ца&shy;е&shy;мой стѣной. Опа&shy;са&shy;ясь
+                        столк&shy;но&shy;веній, ва&shy;го&shy;но&shy;во&shy;жа&shy;тые ста&shy;ли
+                        тор&shy;мо&shy;зить ва&shy;го&shy;ны трам&shy;вая. Въ нѣко&shy;то&shy;рыхъ
+                        пунк&shy;тахъ, впро&shy;че&shy;мъ, дѣло не обо&shy;шлось безъ аварій.
+                        Из&shy;воз&shy;чи&shy;ки ди&shy;ко ора&shy;ли на зазѣвав&shy;ших&shy;ся
+                        про&shy;хо&shy;жихъ, ко&shy;то&shy;рыхъ неод&shy;но&shy;крат&shy;но задѣва&shy;ли то
+                        ог&shy;лоб&shy;ля&shy;ми, то ку&shy;зо&shy;во&shy;мъ са&shy;ней. Осо&shy;бен&shy;но
+                        при&shy;хо&shy;ди&shy;лось осте&shy;ре&shy;гать&shy;ся
+                        гру&shy;зо&shy;ви&shy;ко&shy;въ-ав&shy;то&shy;мо&shy;би&shy;лей,
+                        ко&shy;то&shy;рые, невзи&shy;рая на опас&shy;ность, по обык&shy;но&shy;венію
+                        мча&shy;лись безъ фо&shy;на&shy;рей. На пе&shy;ре&shy;крест&shy;кахъ ули&shy;цъ
+                        ло&shy;мо&shy;вое и лег&shy;кое дви&shy;женіе за&shy;дер&shy;жи&shy;ва&shy;лось,
+                        чтобы не вы&shy;звать се&shy;рьез&shy;ны&shy;хъ ка&shy;та&shy;стро&shy;фъ.
+                        Послѣ 7 ве&shy;че&shy;ра, ко&shy;гда въ ма&shy;га&shy;зи&shy;на&shy;хъ бы&shy;лъ
+                        по&shy;га&shy;шенъ свѣтъ, на ули&shy;ца&shy;хъ об&shy;ра&shy;зо&shy;ва&shy;лась
+                        та&shy;кая еги&shy;пет&shy;ская тьма, что улич&shy;ные фо&shy;на&shy;ри
+                        ка&shy;за&shy;лись жал&shy;ки&shy;ми туск&shy;лы&shy;ми ноч&shy;ни&shy;ка&shy;ми.
+                        И толь&shy;ко въ 10 ча&shy;су ве&shy;че&shy;ра ту&shy;манъ разсѣял&shy;ся и
+                        пет&shy;ро&shy;град&shy;цы ста&shy;ли лег&shy;че ды&shy;шать.</p>
+                </article>
+            </section>
         </section>
-    </section>
+    </main>
 </body>
 </html>

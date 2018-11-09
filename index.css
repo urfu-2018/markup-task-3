@@ -1,42 +1,53 @@
-html
-{
-    min-width: 1300px;
-    background-color: darkkhaki;
-}
-
-h1,
-h3
-{
-    text-align: center;
-    column-span: all;
-    font-weight: 500;
-    font-size: 4em;
-    font-family: Arial Black;
-    text-shadow: 1px 1px #492400, -1px -1px #38003a;
-}
-
-h3
-{
-    font-size: 2em;
-}
-
 @font-face
 {
     font-family: OldRussian;
-    src: url(MonomakhUnicode.ttf);
+    src: local('MonomakhUnicode')
+        , url('MonomakhUnicode.woff') format('woff')
+        , url('MonomakhUnicode.ttf') format('truetype')
+        , url('MonomakhUnicode.eot?#iefix') format('embedded-opentype');
+}
+
+html
+{
+    min-width: 1300px;
 }
 
 .main
 {
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: darkkhaki;
+    z-index: -1;
+}
+
+.title,
+.subtitle
+{
+    text-align: center;
+    line-height: .7em;
+    font-weight: 500;
+    font-size: 4em;
+    font-family: Arial Black, serif;
+    text-shadow: 1px 1px #492400, -1px -1px #38003a;
+}
+
+.subtitle
+{
+    font-size: 2em;
+}
+
+.content
+{
     column-count: 3;
     column-rule: 2px solid #000;
-    font-family: Times New Roman;
+    font-family: Times New Roman, serif;
     line-height: 22px;
     margin-left: 30px;
     margin-right: 30px;
 }
 
-p
+.main-text
 {
     font-size: 15px;
     text-align: justify;
@@ -45,75 +56,73 @@ p
     color: #260400;
 }
 
-p:first-of-type:first-letter
+.main-text:first-of-type:first-letter
 {
     font-size: 150%;
     font-weight: 600;
     margin-right: 6px;
 }
 
-q,
-blockquote
+.quote
 {
     font-size: 15px;
-    font-family: Book Antiqua;
+    font-family: Book Antiqua, serif;
     font-style: italic;
     font-weight: 600;
     opacity: .9;
 }
 
-figcaption
+.article-image-caption
 {
     opacity: .7;
-    font-family: Calibri;
+    font-family: Calibri, serif;
 }
 
-aside
+.printing-info
 {
     position: absolute;
     left: -5px;
     top: 600px;
-    font-family: Cousin;
+    font-family: Cousin, serif;
     font-weight: 600;
     font-size: 12px;
     word-break: break-all;
     width: 1ch;
 }
 
-aside > div
+.printing-info > .printing-info-part
 {
     margin: 12px;
     line-height: 12px;
 }
 
-img
+.article-image
 {
     width: 350px;
 }
 
 /*Old font*/
 
-.old-font:checked ~ .main p
+.old-font:checked ~ .main .main-text
 {
-    font-family: OldRussian;
+    font-family: OldRussian, serif;
 }
 
-.old-font:checked ~ .main h1,
-.old-font:checked ~ .main h3
+.old-font:checked ~ .main .title,
+.old-font:checked ~ .main .subtitle
 {
-    font-family: Lobster;
+    font-family: Lobster, serif;
 }
 
-.old-font:checked ~ .main q,
-.old-font:checked ~ .main blockquote
+.old-font:checked ~ .main .quote
 {
-    font-family: Bad Script;
+    font-family: Bad Script, serif;
     font-style: normal;
 }
 
-.old-font:checked ~ .main figcaption
+.old-font:checked ~ .main .article-image-caption
 {
-    font-family: Comfortaa;
+    font-family: Comfortaa, serif;
 }
 
 /* Night mode */
@@ -124,32 +133,36 @@ img
     opacity: .8;
 }
 
-.night-mode:checked ~ .main h1,
-.night-mode:checked ~ .main h3,
-.night-mode:checked ~ .main p,
-.night-mode:checked ~ .main q,
-.night-mode:checked ~ .main blockquote,
-.night-mode:checked ~ .main figcaption
+.night-mode:checked ~ .mode-label
+{
+    color: wheat;
+}
+
+.night-mode:checked ~ .main .title,
+.night-mode:checked ~ .main .subtitle,
+.night-mode:checked ~ .main .main-text,
+.night-mode:checked ~ .main .quote,
+.night-mode:checked ~ .main .article-image-caption,
+.night-mode:checked ~ .main .printing-info
 {
     color: wheat;
 }
 
 /* Big letters*/
 
-.big-letters:checked ~ .main p,
-.big-letters:checked ~ .main q,
-.big-letters:checked ~ .main blockquote
+.big-letters:checked ~ .main .main-text,
+.big-letters:checked ~ .main .quote
 {
     font-size: 1.5em;
     line-height: 1.5em;
 }
 
-.big-letters:checked ~ .main h1
+.big-letters:checked ~ .main .title
 {
     font-size: 6em;
 }
 
-.big-letters:checked ~ .main h3
+.big-letters:checked ~ .main .subtitle
 {
     font-size: 3em;
 }
