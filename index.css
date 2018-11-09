@@ -35,34 +35,40 @@ main
     overflow: auto;
 }
 
-input[id='zoom-normal']:checked ~ main
+ul
+{
+    list-style-type: none;
+    padding: 0;
+}
+
+input[id='zoom-normal']:checked ~ .site
 {
     font-size: 1em;
 }
 
-input[id='zoom-large']:checked ~ main
+input[id='zoom-large']:checked ~ .site
 {
     font-size: 1.5em;
 }
 
-input[id='light-theme']:checked ~ main
+input[id='light-theme']:checked ~ .site
 {
     background-color: white;
     color: #000;
 }
 
-input[id='dark-theme']:checked ~ main
+input[id='dark-theme']:checked ~ .site
 {
     background-color: #000;
     color: white;
 }
 
-input[id='serif-font']:checked ~ main
+input[id='serif-font']:checked ~ .site
 {
     font-family: 'Podkova', serif;
 }
 
-input[id='sanserif-font']:checked ~ main
+input[id='sanserif-font']:checked ~ .site
 {
     font-family: 'Didact Gothic', sans-serif;
 }
@@ -80,6 +86,7 @@ input[id='sanserif-font']:checked ~ main
 {
     margin-top: 10px;
     text-align: center;
+    font-size: 23px;
 }
 
 .header-title
@@ -109,53 +116,58 @@ input[id='sanserif-font']:checked ~ main
 
 }
 
-.paper-colon
+.paper-column
+{
+    width: 40%;
+}
+
+.paper-column,
+.paper-column-2
 {
     padding: 10px;
+    box-sizing: border-box;
     display: inline-block;
-    width: 40%;
-    height: 100%;
     float: left;
 }
 
-.paper-colon-title
+.paper-column-title
 {
     font-size: 30px;
 }
 
-.paper-colon-img
+.paper-column-img
 {
     width: 100%;
-    height: 600px;
+    max-height: 600px;
+    min-height: 200px;
 }
 
-.paper-colon-img-caption
+.paper-column-img-caption
 {
     color: grey;
     text-align: center;
     margin-top: 10px;
 }
 
-.paper-colon p:first-letter
+.paper-column p:first-letter,
+.paper-column-2 p:first-letter
 {
     font-size: 2em;
 }
 
-.paper-colon:last-of-type
-{
-    border-right: grey 1px solid;
-}
-
 .ads
 {
+    display: inline-block;
     padding: 30px;
+    box-sizing: border-box;
     float: right;
     height: 100%;
+    width: 20%;
 }
 
 .banner
 {
-    width: 200px;
+    width: 100%;
 }
 
 .banner-img
@@ -170,7 +182,23 @@ input[id='sanserif-font']:checked ~ main
 
 .notation
 {
+    font-family: 'Book Antiqua';
     padding: 10px;
     border: 2px grey solid;
     text-align: center;
+}
+
+.paper-column-2
+{
+    max-width: 80%;
+    margin: 0;
+    display: inline-block;
+}
+
+.vertical
+{
+    display: inline-block;
+    width: 1em;
+    line-height: 1em;
+    font-size: 22px;
 }
