@@ -47,6 +47,12 @@ html
     margin-right: 30px;
 }
 
+.column-split
+{
+    column-count: 2;
+    column-rule: 2px dotted #000;
+}
+
 .main-text
 {
     font-size: 15px;
