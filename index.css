@@ -1,21 +1,5 @@
 @font-face
 {
-    src: url(fonts/amigos.ttf);
-    font-family: Amigos;
-}
-@font-face
-{
-    src: url(fonts/CooperBlackCBT-Italic.otf);
-    font-family: CooperBlackCBT-Italic;
-}
-@font-face
-{
-    src: url(fonts/Comic\ Nefors\ SemiBold.ttf);
-    font-family: Comic Nefors SemiBold;
-}
-
-@font-face
-{
     src: url(fonts/OldEnglishD.ttf);
     font-family: OldEnglishD;
 }
@@ -57,7 +41,7 @@ hr
     width: 60%;
     margin: 0 10%;
     display: inline-block;
-    text-align: center; 
+    text-align: center;
 }
 
 .top_angle
@@ -140,7 +124,7 @@ hr
 .vertical-China
 {
     float: left;
-    margin-right: 5px; 
+    margin-right: 5px;
     font-size: 28px;
     border: 1px solid black;
 }
