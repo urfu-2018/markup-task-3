@@ -34,23 +34,23 @@ input[id='theme'] + label
 }
 
 input[id='theme']:checked ~ main .newspaper,
-input[id='theme']:checked ~ main header,
-input[id='theme']:checked ~ main .advertisment,
-input[id='theme']:checked ~ main footer
+input[id='theme']:checked ~ main .newspaper-header,
+input[id='theme']:checked ~ main .additional-info,
+input[id='theme']:checked ~ main .newspaper-footer
 {
     background-color: #000;
     color: #fff;
 }
 
-input[id='theme']:checked ~ main header img,
+input[id='theme']:checked ~ main .newspaper-header img,
 input[id='theme']:checked ~ main .horoscope img
 {
     filter: invert(100%);
 }
 
-input[id='theme']:checked ~ main header,
+input[id='theme']:checked ~ main .newspaper-header,
 input[id='theme']:checked ~ main .header-title,
-input[id='theme']:checked ~ main footer
+input[id='theme']:checked ~ main .newspaper-footer
 {
     border-color: #fff;
 }
@@ -102,13 +102,13 @@ input[id='size']:checked ~ main .newspaper h2 span
     font-size: 100px;
 }
 
-header
+.newspaper-header
 {
     border-top: 3px solid #000;
     border-bottom: 3px solid #000;
 }
 
-header img
+.newspaper-header img
 {
     float: left;
     padding: 20px 40px 0 30px;
@@ -146,12 +146,12 @@ header img
     content: '🟎';
 }
 
-.advertisment
+.additional-info
 {
     padding: 10px;
 }
 
-.advertisment div
+.additional-info div
 {
     vertical-align: top;
     display: inline-block;
@@ -160,7 +160,7 @@ header img
     height: 150px;
 }
 
-.advertisment .edition
+.additional-info .edition
 {
     padding: 20px 0 0;
     margin: 0 40px 0 0;
@@ -319,7 +319,7 @@ body
     padding: 0 10px 0 0;
 }
 
-footer
+.newspaper-footer
 {
     margin: 0 0 3px;
     vertical-align: top;
@@ -327,7 +327,7 @@ footer
     border-bottom: 5px double #000;
 }
 
-footer p
+.newspaper-footer p
 {
     font: bold 16px 'Garamond, arial';
     padding: 5px;
