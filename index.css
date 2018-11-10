@@ -74,7 +74,7 @@ input[id='font']:checked ~ main .newspaper h2 span
     font-size: 100px;
 }
 
-input[id='font']:checked ~ main .article-section
+input[id='font']:checked ~ main .newspaper-section
 {
     font: normal 14px 'Arial', sans-serif;
 }
@@ -90,7 +90,7 @@ input[id='size'] + label
     content: url('./images/magick_zoom.png');
 }
 
-input[id='size']:checked ~ main .article-section
+input[id='size']:checked ~ main .newspaper-section
 {
     font-size: .85em;
 }
@@ -285,7 +285,7 @@ body
     border: 3px solid #000;
 }
 
-.article-section
+.newspaper-section
 {
     vertical-align: top;
     display: inline-block;
@@ -295,7 +295,7 @@ body
     font: normal 16px 'Garamond, arial';
 }
 
-.article-section p span
+.newspaper-section p span
 {
     font-weight: 700;
     font-size: 1.2em;
