@@ -1,31 +1,51 @@
-.headline-font
+.headline
 {
     font-family: 'Diplomata', cursive;
     font-size: 60px;
 }
 
-.reclame-font
+.reclame
 {
     font-family: 'Gloria Hallelujah', cursive;
     font-size: 20px;
 }
 
-table
+.newspaper-hat
 {
     width: 100%;
 }
 
-.info-font
+.info
 {
     font-size: 25px;
     font-family: 'Acme', sans-serif;
     border-bottom: 3px double;
 }
 
-.header-blocks
+.header-block-left,
+.header-block-right
 {
+    margin-top: 13px;
+    text-align: center;
+    height: 80px;
     width: 170px;
     border: 2px solid;
+}
+
+.header-block-left
+{
+    float: left;
+}
+
+.header-block-right
+{
+    float: right;
+}
+
+.header-block-center
+{
+    overflow: hidden;
+    text-align: center;
 }
 
 .date
@@ -34,16 +54,16 @@ table
     border-bottom: 1px solid;
 }
 
-.second-headline-font
+.headline-2
 {
     font-family: 'Bitter', serif;
     text-align: center;
-    margin-top: -5%;
+    margin-top: -3%;
     font-size: 60px;
     word-spacing: 45px;
 }
 
-.second-headline-font-2
+.headline-3
 {
     font-family: 'Satisfy', cursive;
     text-align: center;
@@ -53,23 +73,24 @@ table
     border-bottom: 4px double;
 }
 
-.two-columns-with-content
+.two-columns-with-content,
+.three-columns-with-content
 {
     margin-top: -50px;
-    width: 27%;
     column-count: 2;
     float: left;
-    padding: 10px;
     column-rule: 1px solid;
 }
 
-.free-columns-with-content
+.two-columns-with-content
 {
-    margin-top: -50px;
+    width: 27%;
+    padding: 10px;
+}
+
+.three-columns-with-content
+{
     width: 40%;
-    column-count: 2;
-    float: left;
-    column-rule: 1px solid;
     border-left: 1px solid;
     border-right: 1px solid;
     padding: 5px;
@@ -128,7 +149,7 @@ hr
     width: 200px;
 }
 
-.big-letter
+.first-big-letter::first-letter
 {
     font-size: 23px;
     font-weight: bold;
@@ -139,7 +160,7 @@ hr
     font-weight: bold;
 }
 
-.Donald-img
+.donald-img
 {
     width: 150px;
     padding: 4px;
