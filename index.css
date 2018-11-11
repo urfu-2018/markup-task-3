@@ -1,19 +1,20 @@
-/* Please do not use this import in production.
-You could download this font from here https://fontstorage.com/font/stalinist */
-@import 'http://fonts.fontstorage.com/import/stalinist.css';
-/*
-	Stalinist One, 400
-*/
-@import 'http://fonts.fontstorage.com/import/codenewroman.css';
+@font-face
+{
+    font-family: Stalinist One;
+    src: url('Stalinist.ttf') format('truetype');
+}
 
-/*
-	Code New Roman, 400, 400 italic, 700
-*/
+@font-face
+{
+    font-family: Code New Roman;
+    src: url('cnr.otf') format('opentype');
+}
 
-@import 'http://fonts.fontstorage.com/import/ardeco.css';
-/*
-	Ardeco, 400
-*/
+@font-face
+{
+    font-family: Ardeco;
+    src: url('Ardeco.ttf') format('truetype');
+}
 
 body
 {
@@ -27,14 +28,12 @@ body
     width: 100%;
 }
 
-/*todo:начинается с одной буквы*/
-
-.magic2::first-letter
+.sahalin::first-letter
 {
     font-size: 3em;
 }
 
-.magic1
+.sovetskii
 {
     left: 130px;
     top: 20px;
@@ -47,7 +46,7 @@ h1
     font-size: 35px;
 }
 
-h4
+h2
 {
     font-family: 'Stalinist One';
     position: absolute;
@@ -73,18 +72,11 @@ h4
     font-size: .9em;
 }
 
-.info ul
+.info
 {
-    list-style-type: none;
+    float: right;
     font-family: 'Code New Roman';
     padding: 0;
-
-}
-
-.info.i1,
-.info.i2
-{
-    position: absolute;
 }
 
 hr
@@ -103,19 +95,26 @@ hr
     font-family: 'Ardeco';
 }
 
-h2
+h3
 {
     text-align: center;
 }
 
-article p
+.section p
 {
     text-align: justify;
     hyphens: manual;
     text-indent: 5%;
 }
 
-img
+.section p:first-letter
+{
+    font-size: 1.5em;
+    font-weight: bold;
+
+}
+
+.portrait
 {
     width: 100%;
 }
