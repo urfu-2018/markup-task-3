@@ -16,14 +16,12 @@
     src: url('fonts/OldNewspaperTypes.ttf');
 }
 
-main
+.page
 {
     width: 100%;
-    display: flex;
+    display: inline-block;
     padding: 0 5px 10px 10px;
-    flex-direction: column;
-    box-sizing: border-box;
-    background: url(images/paper_texture1289.jpg) no-repeat center;
+    background: rgba(185, 167, 147, 0.781);
     font-family: OldEnglish;
     font-size: 3ex;
 }
@@ -33,45 +31,35 @@ main
     font-family: NYText;
 }
 
-.page-header h1
+h1
 {
     text-align: center;
-    flex-basis: 50px;
     margin-bottom: 5px;
     border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
     font-size: 300%;
-}
-
-.page-header div
-{
-    border-bottom: 1px solid #000;
-    hyphens: auto;
 }
 
 .date
 {
     text-align: center;
+    border-bottom: 1px solid #000;
 }
 
-.page-content
-{
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    -moz-hyphens: auto;
-    hyphens: auto;
-}
 
-.page-content > div
+.left-side,
+.middle,
+.right-side-1,
+.right-side-2
 {
     height: 100%;
     float: left;
     padding: 3px 6px;
     box-sizing: border-box;
     border-right: 2px solid black;
-    margin: 0%;
 }
 
-.page-content > div:last-of-type
+.right-side-2
 {
     border-right: none;
 }
@@ -83,15 +71,15 @@ p::first-letter
     font-size: 150%;
 }
 
-.left-side
+.left-side,
+.right-side-1,
+.right-side-2
 {
-    float: left;
     width: 20%;
 }
 
 .middle
 {
-    float: center;
     width: 40%;
 }
 
@@ -100,30 +88,19 @@ p::first-letter
     width: 100%;
 }
 
-.right-side-1
-{
-    float: right;
-    width: 20%;
-}
-
-.right-side-2
-{
-    float: right;
-    width: 20%;
-}
-
-.happy-mrs-kennedy-content
+.middle-article
 {
     column-count: 2;
     column-rule: 2px dotted black;
 }
 
-p.caption
+.caption
 {
     border-bottom: 1px solid #000;
 }
 
-.switch-font:checked ~ .page-content
+.switch-font:checked ~ .page-content,
+.switch-font:checked ~ .page-content p::first-letter
 {
     font-family: OldEnglish;
 }
@@ -131,11 +108,6 @@ p.caption
 .switch-font:checked ~ header
 {
     font-family: NYText;
-}
-
-.switch-font:checked ~ .page-content p::first-letter
-{
-    font-family: OldEnglish;
 }
 
 .switch-font-size:checked ~ .page-content
@@ -155,28 +127,22 @@ p.caption
     border-right: 1px solid #fff;
 }
 
-.switch-color:checked ~ .page-content div
+.switch-color:checked ~ .page-content .left-side,
+.switch-color:checked ~ .page-content .middle,
+.switch-color:checked ~ .page-content .right-side-1,
+.switch-color:checked ~ .page-content .right-side-2
 {
+    background: #000;
     border-right: 1px solid #fff;
 }
 
-.switch-color:checked ~ .page-content div:last-of-type
-{
-    border-right: 1px solid #000;
-}
-
-.switch-color:checked ~ .page-header
-{
-    color: #fff;
-    background: #000;
-    border-bottom: 1px solid #fff;
-}
-
+.switch-color:checked ~ .page-header,
 .switch-color:checked ~ .page-header h1
 {
     color: #fff;
     background: #000;
     border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
 }
 
 .switch-color:checked ~ .page-content p::first-letter
