@@ -21,7 +21,7 @@
     width: 100%;
     display: inline-block;
     padding: 0 5px 10px 10px;
-    background: rgba(185, 167, 147, 0.781);
+    background: rgba(185, 167, 147, .78);
     font-family: OldEnglish;
     font-size: 3ex;
 }
@@ -29,6 +29,13 @@
 .page-content
 {
     font-family: NYText;
+}
+
+.color,
+.font,
+.font-size
+{
+    cursor: pointer;
 }
 
 h1
@@ -45,7 +52,6 @@ h1
     text-align: center;
     border-bottom: 1px solid #000;
 }
-
 
 .left-side,
 .middle,
@@ -99,58 +105,56 @@ p::first-letter
     border-bottom: 1px solid #000;
 }
 
-.switch-font:checked ~ .page-content,
-.switch-font:checked ~ .page-content p::first-letter
+.switch-font:checked ~ .page .page-content,
+.switch-font:checked ~ .page .page-content p::first-letter
 {
     font-family: OldEnglish;
 }
 
-.switch-font:checked ~ header
+.switch-font:checked ~ .page header
 {
     font-family: NYText;
 }
 
-.switch-font-size:checked ~ .page-content
+.switch-font-size:checked ~ .page .page-content
 {
     font-size: 90%;
 }
 
-.switch-font-size:checked ~ .page-header
+.switch-font-size:checked ~ .page .page-header
 {
     font-size: 110%;
 }
 
-.switch-color:checked ~ .page-content
+.switch-color:checked ~ .page
 {
     color: #fff;
     background: #000;
     border-right: 1px solid #fff;
 }
 
-.switch-color:checked ~ .page-content .left-side,
-.switch-color:checked ~ .page-content .middle,
-.switch-color:checked ~ .page-content .right-side-1,
-.switch-color:checked ~ .page-content .right-side-2
+.switch-color:checked ~ .page .page-content .left-side,
+.switch-color:checked ~ .page .page-content .middle,
+.switch-color:checked ~ .page .page-content .right-side-1,
+.switch-color:checked ~ .page .page-content .right-side-2
 {
-    background: #000;
     border-right: 1px solid #fff;
 }
 
-.switch-color:checked ~ .page-header,
-.switch-color:checked ~ .page-header h1
+.switch-color:checked ~ .page .page-header,
+.switch-color:checked ~ .page .page-header h1
 {
     color: #fff;
-    background: #000;
     border-bottom: 1px solid #fff;
     border-top: 1px solid #fff;
 }
 
-.switch-color:checked ~ .page-content p::first-letter
+.switch-color:checked ~ .page .page-content p::first-letter
 {
     border: .5px solid #fff;
 }
 
-.switch-color:checked ~ .page-content .caption
+.switch-color:checked ~ .page .page-content .caption
 {
     border-bottom: .5px solid #fff;
 }

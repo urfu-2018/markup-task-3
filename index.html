@@ -6,19 +6,23 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <input id="switch-color" class="switch-color" type="checkbox" hidden>
+    <input id="switch-font" class="switch-font" type="checkbox" hidden>
+    <input id="switch-font-size" class="switch-font-size" type="checkbox" hidden>
     <main class="page">
-        <h3>Magic buttons. Try it!</h3>
-        <input class="switch-color" type="checkbox">Change color
-        <input class="switch-font" type="checkbox">Change font
-        <input class="switch-font-size" type="checkbox">Change font size
-
+        <h2>Magic buttons. Try it!</h2>
+        <nav class="switcher">
+            <label for="switch-color" class="color">Change color</label>
+            <label for="switch-font" class="font">Change font</label>
+            <label for="switch-font-size" class="font-size">Change font size</label>
+        </nav>
         <header class="page-header">
             <h1>YATimes</h1>
             <div class="date">YEKATERINBURG, MONDAY, OCTOBER, 22, 1985</div>
         </header>
-            <article class="page-content">
-                <div class="left-side">
-                    <h3>BUNKER RESUMES TALKS WITH THIEU ON BOMBING HALT</h3>
+            <section class="page-content">
+                <article class="left-side">
+                    <h2>BUNKER RESUMES TALKS WITH THIEU ON BOMBING HALT</h2>
                     <p>
                         Officials Confirm That They Conferred for Hour but Are Silent on Topics 4TH 
                         MEETING IN 5 DAYS South Vietnamese Say That the Sessions Were Started at 
@@ -33,8 +37,8 @@
                     <p>
                         United states confirmed...
                     </p>
-                </div>
-                <div class="middle">
+                </article>
+                <article class="middle">
                     <img src="images/jackie_o.jpg" alt="caption">
                     <p class="caption">'Very Happy' Mrs. Kennedy and Onassis Married</p>
                     <section class="middle-article">
@@ -49,8 +53,8 @@
                             the cypress trees on the island of Skorpios.
                         </p>
                     </section>
-                </div>
-                <div class="right-side-1">
+                </article>
+                <article class="right-side-1">
                     <h2>H. R. Leary, 82, A Commissioner Of Police, Dies</h2>
                     <p>
                         Howard R. Leary, the Police Commissioner of New York City from 1966
@@ -65,8 +69,8 @@
                         and named Police Commissioner by John V. Lindsay shortly after he
                         became Mayor. Four years later Mr. Leary resigned.
                     </p>
-                </div>
-                <div class="right-side-2">
+                </article>
+                <article class="right-side-2">
                     <h2>EFFORTS TO HALT TEACHERS' STRIKE IN CITY COLLAPSE</h2>
                     <p>
                         Lindsay Plan to Shut Down J.H.S. 271 Is Spurned by Union as Only Temporary
@@ -80,8 +84,8 @@
                         Mayor Lindsay warned that the school crisis had created "intolerable racial
                         and religious tension."
                     </p>
-                </div>
-            </article>
+                </article>
+            </section>
     </main>
 </body>
 </html>
