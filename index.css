@@ -79,7 +79,13 @@ input[id='sanserif-font']:checked ~ .site
     position: fixed;
     top: 50%;
     left: 0;
-    background-color: rgba(178, 178, 178, .5);
+    background-color: rgb(178, 178, 178);
+    opacity: .3;
+}
+
+.manipulation:hover
+{
+    opacity: 1;
 }
 
 .manipulation-item-label
@@ -101,11 +107,13 @@ input[id='sanserif-font']:checked ~ .site
     border-bottom: 1px grey solid;
     font-style: italic;
     padding: 5px;
+    text-align: center;
 }
 
-.paper-info-sponsor
+.paper-info-date
 {
-    margin-left: 30%;
+    display: inline;
+    float: left;
 }
 
 .divider
@@ -113,7 +121,6 @@ input[id='sanserif-font']:checked ~ .site
     width: 40px;
     color: grey;
     margin: 20px auto;
-
 }
 
 .paper-column
