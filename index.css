@@ -44,12 +44,7 @@ main
     font-size: 90%;
 }
 
-article
-{
-    height: 1000px;
-}
-
-.news-colum-2-2
+.news-colum-2
 {
     column-count: 2;
     column-rule: 1px solid gray;
@@ -61,7 +56,7 @@ p:first-letter
     font-size: 200%;
 }
 
-.verical-txt
+.vertical-text
 {
     font-size: 34px;
     font-family: Arial, Helvetica, sans-serif;
@@ -75,21 +70,21 @@ p:first-letter
     margin: 10px;
 }
 
-.name-paper-state
-{
-    font-family: Impact, 'Arial Narrow Bold', sans-serif;
-    font-style: italic;
-    font-stretch: condensed;
-    border: 1px solid;
-    padding: 5px;
-}
-
-.name-paper-state-2
+.newspaper-article-title
 {
     font-family: 'Roboto Slab', serif;
     font-style: italic;
     font-stretch: condensed;
     border: 4px double;
+    padding: 5px;
+}
+
+.newspaper-article-title-two
+{
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    font-stretch: condensed;
+    border: 1px solid;
     padding: 5px;
 }
 
