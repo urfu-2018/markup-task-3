@@ -1,11 +1,11 @@
 :root
 {
     --main-title-font-family: arial, helvetica, sans-serif;
-    --paper-background: white;
-    --paper-color: black;
-    --paper-size: 16px;
+    --paper-background: #fff;
+    --paper-color: #000;
+    --paper-font-size: 16px;
     --border-dashed: gainsboro dashed 3px;
-    --border-color: black;
+    --border-color: #000;
     --article--content-font: 'Amatic SC', normal;
     --article--material-font: 'Material Icons', normal;
     --hieght--upright-small-font: 100px;
@@ -20,15 +20,15 @@
 
 .invert-colors:checked ~ .paper
 {
-    --paper-color: white;
-    --border-color: white;
+    --paper-color: #fff;
+    --border-color: #fff;
     --border-dashed: blueviolet dashed 3px;
-    --paper-background: black;
+    --paper-background: #000;
 }
 
 .small-font:checked ~ .paper
 {
-    --paper-size: 8px;
+    --paper-font-size: 8px;
     --hieght--upright-small-font: 50px;
 }
 
@@ -37,17 +37,17 @@
     background: var(--paper-background);
     color: var(--paper-color);
     border: 1px solid var(--border-color);
-    font-size: var(--paper-size);
+    font-size: var(--paper-font-size);
 }
 
-h1
+.paper__title
 {
     font: 70px 'Lobster', cursive;
     text-align: center;
     margin: 0;
 }
 
-aside
+.paper__aside
 {
     display: inline-block;
     height: 100%;
@@ -59,10 +59,10 @@ aside
 body
 {
     margin: 0;
-    font-size: var(--paper-size);
+    font-size: var(--paper-font-size);
 }
 
-main
+.paper__main
 {
     border: solid var(--border-color) 1px;
     display: inline-block;
@@ -72,47 +72,44 @@ main
 .paper__description
 {
     column-count: 3;
-    border-color: var(--border-color);
-    border-top-width: 2px;
-    border-top-style: solid;
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
+    border-top: 2px solid var(--border-color);
+    border-bottom: 2px solid var(--border-color);
     font-family: 'Arbutus Slab', serif;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.1em;
 }
 
-.paper__description__number
+.paper-description__number
 {
     margin: 0;
     text-align: left;
 }
 
-.paper__description__date
+.paper-description__date
 {
     margin: 0;
     text-align: center;
 }
 
-.paper__description__seria
+.paper-description__seria
 {
     margin: 0;
     text-align: right;
 }
 
-.newspaperArticle_dashed
+.newspaper-article_dashed
 {
     border: var(--border-dashed);
 }
 
-.newspaperArticle__title
+.newspaper-article__title
 {
     font-family: var(--main-title-font-family);
     font-size: 1.25em;
 }
 
-.columns__header__logo
+.columns-header__logo
 {
     display: inline-block;
     background-image: url('https://lh3.googleusercontent.com/zQcyzBFlezJyBZpK83m9IscWfALWf9BqXMQe0oWGGrAAyg6PHqY7yhhf_wkwgZVPQyZl=s128');
@@ -120,37 +117,48 @@ main
     height: 128px;
 }
 
-.newspaperArticle__title_center
+.newspaper-article__title_center
 {
     text-align: center;
     vertical-align: middle;
 }
 
-.newspaperArticle__content::first-letter
+.newspaper-article__content::first-letter
 {
     font-size: 150%;
     text-shadow: 2px 2px;
 }
 
-.newspaperArticle__title_doubleBorder
+.newspaper-article__title_doubleBorder
 {
     border: dashed 3px var(--border-color);
 
 }
 
-.newspaperArticle__title_upright
+.title__content_upright
 {
-    font-size: .9em;
-    position: relative;
-    height: var(--hieght--upright-small-font);
+    display: inline-block;
+    font-size: 2em;
+    text-align: center;
+    width: calc(100% - (.7em + 1px));
+    vertical-align: middle;
 }
 
-.newspaperArticle__content
+.newspaper-article__title_upright
+{
+    position: relative;
+    font-size: .9em;
+    word-wrap: break-word;
+    height: 100%;
+
+}
+
+.newspaper-article__content
 {
     font-family: var(--article--content-font);
 }
 
-.newspaperArticle__content_material
+.newspaper-article__content_material
 {
     font-family: var(--article--material-font);
 }
@@ -161,7 +169,7 @@ main
     right: 0;
     top: 0;
     height: 100%;
-    font-size: .5em;
+    font-size: .7em;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     writing-mode: vertical-lr;
