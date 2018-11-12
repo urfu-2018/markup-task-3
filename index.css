@@ -5,7 +5,7 @@ body
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.paper-title
+.paper-name
 {
     font-size: 45px;
     text-align: center;
@@ -21,7 +21,7 @@ body
 {
     column-count: 3;
     text-align: center;
-    border: 1px solid;
+    border: 1px solid ;
     font: 12pt sans-serif;
     font-size: 12px;
 }
@@ -35,7 +35,7 @@ body
     font: 12pt Georgia;
 }
 
-.сreating-columns
+.body-paper
 {
     columns: 200px 3;
     column-rule: 1px solid gray;
@@ -79,7 +79,7 @@ p:first-letter
     padding: 5px;
 }
 
-.newspaper-article-headline
+.newspaper-article-subtitle
 {
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
     font-style: italic;
@@ -88,46 +88,46 @@ p:first-letter
     padding: 5px;
 }
 
-input[class='input-night']:checked ~ .сreating-columns
+input[class='input-night']:checked ~ .body-paper
 {
     color: #fff;
     background: #000;
 }
 
-input[class='input-night']:checked ~ .newspaper-hat
+input[class='input-night']:checked ~ .hat-paper
 {
     color: #fff;
     background: #000;
 }
 
-input[class='input-day']:checked ~ .сreating-columns
+input[class='input-day']:checked ~ .body-paper
 {
     color: #000;
     background: #eee8aa;
 }
 
-input[class='input-day']:checked ~ .newspaper-hat
+input[class='input-day']:checked ~ .hat-paper
 {
     color: #000;
     background: #eee8aa;
 }
 
-input[class='input-night']:checked ~ .paper-title
+input[class='input-night']:checked ~ .paper-name
 {
     border: 4px double #fff;
 }
 
-input[class='input-default-font-size']:checked ~ .сreating-columns
+input[class='input-default-font-size']:checked ~ .body-paper
 {
     font-size: 90%;
 }
 
-input[class='input-average-font-size']:checked ~ .сreating-columns
+input[class='input-average-font-size']:checked ~ .body-paper
 {
     font-size: 100%;
 }
 
-input[class='input-big-font-size']:checked ~ .сreating-columns
+input[class='input-big-font-size']:checked ~ .body-paper
 {
     font-size: 110%;
 }
