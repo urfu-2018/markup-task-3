@@ -1,20 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&subset=cyrillic');
 
-body {
+body
+{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.paper-title {
+.paper-title
+{
     font-size: 45px;
     text-align: center;
 }
 
-.paper-slogan {
+.paper-slogan
+{
     text-align: center;
     border: 1px solid;
 }
 
-.paper-info {
+.paper-info
+{
     column-count: 3;
     text-align: center;
     border: 1px solid;
@@ -22,7 +26,8 @@ body {
     font-size: 12px;
 }
 
-.paper-header {
+.paper-header
+{
     columns: 200px 3;
     margin-left: auto;
     margin-right: auto;
@@ -30,7 +35,8 @@ body {
     font: 12pt Georgia;
 }
 
-.сreating-columns {
+.сreating-columns
+{
     columns: 200px 3;
     column-rule: 1px solid gray;
     margin: auto;
@@ -38,17 +44,20 @@ body {
     font-size: 90%;
 }
 
-.news-colum-2 {
+.news-colum-2
+{
     column-count: 2;
     column-rule: 1px solid gray;
 }
 
-p:first-letter {
+p:first-letter
+{
     font-family: 'Times New Roman', Times, serif;
     font-size: 200%;
 }
 
-.vertical-text {
+.vertical-text
+{
     font-size: 34px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -61,7 +70,8 @@ p:first-letter {
     margin: 10px;
 }
 
-.newspaper-article-title {
+.newspaper-article-title
+{
     font-family: 'Roboto Slab', serif;
     font-style: italic;
     font-stretch: condensed;
@@ -69,7 +79,8 @@ p:first-letter {
     padding: 5px;
 }
 
-.newspaper-article-headline {
+.newspaper-article-headline
+{
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
     font-style: italic;
     font-stretch: condensed;
@@ -77,38 +88,46 @@ p:first-letter {
     padding: 5px;
 }
 
-input[class='input-night']:checked ~ .сreating-columns {
+input[class='input-night']:checked ~ .сreating-columns
+{
     color: #fff;
     background: #000;
 }
 
-input[class='input-night']:checked ~ .newspaper-hat {
+input[class='input-night']:checked ~ .newspaper-hat
+{
     color: #fff;
     background: #000;
 }
 
-input[class='input-day']:checked ~ .сreating-columns {
+input[class='input-day']:checked ~ .сreating-columns
+{
     color: #000;
     background: #eee8aa;
 }
 
-input[class='input-day']:checked ~ .newspaper-hat {
+input[class='input-day']:checked ~ .newspaper-hat
+{
     color: #000;
     background: #eee8aa;
 }
 
-input[class='input-night']:checked ~ .paper-title {
+input[class='input-night']:checked ~ .paper-title
+{
     border: 4px double #fff;
 }
 
-input[class='input-default-font-size']:checked ~ .сreating-columns {
+input[class='input-default-font-size']:checked ~ .сreating-columns
+{
     font-size: 90%;
 }
 
-input[class='input-average-font-size']:checked ~ .сreating-columns {
+input[class='input-average-font-size']:checked ~ .сreating-columns
+{
     font-size: 100%;
 }
 
-input[class='input-big-font-size']:checked ~ .сreating-columns {
+input[class='input-big-font-size']:checked ~ .сreating-columns
+{
     font-size: 110%;
 }
