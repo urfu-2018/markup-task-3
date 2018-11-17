@@ -181,46 +181,50 @@ hr
     font-size: 12px;
 }
 
-input[id='black']:checked ~ section article
+input[id='black']:checked ~ .newspaper .two-columns-with-content,
+input[id='black']:checked ~ .newspaper .three-columns-with-content,
+input[id='black']:checked ~ .newspaper .two-last-columns-with-content
 {
     color: #fff;
     background: #000;
 }
 
-input[id='black']:checked ~ section
+input[id='black']:checked ~ .newspaper
 {
     color: #fff;
     background: #000;
 }
 
-input[id='old']:checked ~ section article
+input[id='old']:checked ~ .newspaper .two-columns-with-content,
+input[id='old']:checked ~ .newspaper .three-columns-with-content,
+input[id='old']:checked ~ .newspaper .two-last-columns-with-content
 {
     color: #000;
     background: #fbdf56;
 }
 
-input[id='old']:checked ~ section
+input[id='old']:checked ~ .newspaper
 {
     color: #000;
     background: #fbdf56;
 }
 
-input[id='normal']:checked ~ section article p
+input[id='normal']:checked ~ .newspaper article .newspaper-contents
 {
     font-size: 18px;
 }
 
-input[id='big']:checked ~ section article p
+input[id='big']:checked ~ .newspaper article .newspaper-contents
 {
     font-size: 21px;
 }
 
-input[id='cursive']:checked ~ section article p
+input[id='cursive']:checked ~ .newspaper article .newspaper-contents
 {
     font-family: 'Satisfy', cursive;
 }
 
-input[id='sans-serif']:checked ~ section article p
+input[id='sans-serif']:checked ~ .newspaper article .newspaper-contents
 {
     font-family: 'Arial', sans-serif;
 }
