@@ -1,60 +1,194 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>Задача «DeLorean DMC-12»</title>
     <link href="https://fonts.googleapis.com/css?family=Jacques+Francois+Shadow" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <input name="background" type="radio" value="light" id="light-bg" checked>
-    <input name="background" type="radio" value="dark" id="dark-bg">
-    <input name="font-size" type="radio" value="small" id="small-fs">
-    <input name="font-size" type="radio" value="normal" id="normal-fs" checked>
-    <input name="font-size" type="radio" value="big" id="big-fs">
-    <input name="font-family" type="radio" value="serif" id="serif-ff">
-    <input name="font-family" type="radio" value="sans-serif" id="sans-serif-ff" checked>
-    <div class="newspaper">
-        <div class="settings">
-            <div>
-                <p>Фон:</p>
-                <label for="light-bg">Светлый</label>
-                <label for="dark-bg">Темный</label>
-            </div>
-            <div>
-                <p>Размер шрифта:</p>
-                <label for="small-fs">Маленький</label>
-                <label for="normal-fs">Средний</label>
-                <label for="big-fs">Большой</label>
-            </div>
-            <div>
-                <p>Тип шрифта</p>
-                <label for="serif-ff">С засечками</label>
-                <label for="sans-serif-ff">Без засечек</label>
-            </div>
+<input name="background" type="radio" value="light" id="light-bg" class="settings-input" checked>
+<input name="background" type="radio" value="dark" id="dark-bg" class="settings-input">
+<input name="font-size" type="radio" value="small" id="small-fs" class="settings-input">
+<input name="font-size" type="radio" value="normal" id="normal-fs" class="settings-input" checked>
+<input name="font-size" type="radio" value="big" id="big-fs" class="settings-input">
+<input name="font-family" type="radio" value="serif" id="serif-ff" class="settings-input" checked>
+<input name="font-family" type="radio" value="sans-serif" id="sans-serif-ff" class="settings-input">
+<div class="newspaper">
+    <aside class="settings">
+        <div class="setting">
+            <h3>Фон:</h3>
+            <ul>
+                <li><label for="light-bg" class="light-btn">Светлый</label></li>
+                <li><label for="dark-bg" class="dark-btn">Темный</label></li>
+            </ul>
         </div>
-        <header class="title">
-            Спорт Экспресс
-        </header>
-        <header class="info">
+        <div class="setting">
+            <h3>Размер шрифта:</h3>
+            <ul>
+                <li><label for="small-fs" class="small-btn">Маленький</label></li>
+                <li><label for="normal-fs" class="normal-btn">Средний</label></li>
+                <li><label for="big-fs" class="big-btn">Большой</label></li>
+            </ul>
+        </div>
+        <div class="setting">
+            <h3>Тип шрифта:</h3>
+            <ul>
+                <li><label for="serif-ff" class="serif-btn">С засечками</label></li>
+                <li><label for="sans-serif-ff" class="sans-serif-btn">Без засечек</label></li>
+            </ul>
+        </div>
+    </aside>
+    <header>
+        <h1>Спорт Экспресс</h1>
+        <div class="info">
             <p>21 октября, воскресенье</p>
             <p>www.sportexpress.ru</p>
             <p>2018 год, №120(1000)</p>
-        </header>
-        <main>
-            <article class="mini">
+        </div>
+    </header>
+    <main>
+        <div class="left">
+            <article class="main-article">
+                <h2>
+                    "Россия в волейболе должна быть такой же сильной, какой она была всегда"
+                </h2>
+                <figure>
+                    <img src="kosheleva.jpg" alt="kosheleva">
+                    <figcaption>Татьяна Кошелева</figcaption>
+                </figure>
+                <article>
+                    <p>
+                        Доигровщица сборной России <span class="highlight-item_red">Татьяна Кошелева</span>
+                        отметила,
+                        что национальная команда должна быть такой же сильной, как и раньше.
+                    </p>
+                    <p>
+                        Волейболистки сборной России заняли восьмое место на чемпионате мира-2018 в Японии.
+                        Кошелева пропустила турнир из-за травмы колена, а еще один лидер российской команды
+                        Наталия Гончарова досрочно завершила турнир из-за травмы плеча.
+                    </p>
+                    <blockquote>
+                        Мне лично очень печально и больно. Я знаю, что такое сборная России,
+                        я 12 лет подряд играла в национальной команде. У нас никогда не было низких задач.
+                        Мы – и я сейчас говорю в целом о нашей
+                        российской команде – должны видеть свои ошибки, понимать,
+                        какой прогресс происходит в мировом волейболе, и следовать этим тенденциям.
+                    </blockquote>
+                    <p>
+                        Если бы не моя травма и травма Наталии (Гончаровой), я уверена,
+                        что мы могли бы бороться за медали на этом чемпионате мира.
+                        Восьмое место, конечно, не место России на этом турнире.
+                        Россия в волейболе должна быть такой же сильной, какой она была всегда.
+                    </p>
+                </article>
+            </article>
+            <div class="left-columns">
+                <article>
+                    <h2>
+                        "Эти девочки еще и в Токио зажгут!" Гендиректор ВФВ - о победе на юношеской Олимпиаде
+                    </h2>
+                    <figure>
+                        <img src="beach-volley.png" alt="beach volleyball">
+                        <figcaption>Мария Бочарова и Мария Воронина.</figcaption>
+                    </figure>
+                    <div class="interview">
+                        <p>
+                            Россиянки Мария Бочарова и Мария Воронина стали победителями турнира по пляжному
+                            волейболу  на юношеской Олимпиаде, которая проходит в Буэнос-Айресе. Российская
+                            пара считалась одним из основных фаворитов, так как является действующим
+                            победителем чемпионатов мира и Европы, причем даже в категории U-20, в которой
+                            они могут выступать еще два сезона. Об успехе пары рассказал генеральный директор
+                            Всероссийской федерации волейбола Андрей Горбенко, который курирует пляжный
+                            волейбол.
+                        </p>
+                        <p class="question">
+                            – Когда отправляли пару в Буэнос-Айрес, ждали именно победы?
+                        </p>
+                        <p class="answer">
+                            – Скорее, рассчитывали на медали любого достоинства, большие надежды на них
+                            возлагали. Все же наши девочки уже многого добились, выигрывали чемпионаты мира
+                            и Европы по своему возрасту и даже среди более старших. Первое место нас
+                            очень порадовало.
+                        </p>
+                        <p class="question">
+                            – Где готовились Бочарова и Воронина?
+                        </p>
+                        <p class="answer">
+                            – Они ведь привлекаются уже в основную сборную, по сути дела, это уже наша вторая
+                            пара. Так что часть подготовки они вели с главной командой, но основной этап
+                            подготовки прошел в Обнинске, где они и выступают. Там они работали со
+                            своим тренером Дмитрием Федотовым.
+                        </p>
+                        <p class="question">
+                            – То, что девушки тренируются вместе со старшими коллегами, помогает потом в
+                            играх  со сверстницами?
+                        </p>
+                        <p class="answer">
+                            – Безусловно. Чем сильнее соперники на тренировке, тем проще затем в играх.
+                            Две Маши уже проявили себя и на взрослом уровне, на этапах чемпионата России
+                            они не раз становились призерами,  а в Липецке в прошлом году победили.
+                            Они уже готовы конкурировать со старшими.
+                        </p>
+                        <p class="question">
+                            – В чем уникальность этой пары?
+                        </p>
+                        <p class="answer">
+                            – Прежде всего, стоит отметить, что девочки прекрасно подготовлены функционально.
+                            Конечно, они талантливы, но основное – они полностью выкладываются на
+                            тренировках под руководством отличного тренера. Талант плюс работа –
+                            это и есть универсальный рецепт. У них в Обнинске отличные условия,
+                            к тому же обе сразу начали готовиться в пляжном волейболе.
+                        </p>
+                        <p class="question">
+                            – Получается, больше шансов в "пляжке" у тех, кто занимается ей изначально?
+                        </p>
+                        <p class="answer">
+                            – Есть множество примеров, когда игроки были успешными и в классике, и в пляжном
+                            волейболе.
+                            Тот же Карч Кирай, главный тренер сборной США. Конечно, лучше начинать готовиться
+                            в "пляжке",
+                            но и переход из классики вполне возможен.
+                        </p>
+                        <p class="question">
+                            – Пара Бочарова – Воронина получит какое-то финансовое вознаграждение
+                            от федерации?
+                        </p>
+                        <p class="answer">
+                            – Безусловно.
+                        </p>
+                        <p class="question">
+                            – Вы сказали, что девочки уже высоко котируются в России даже среди взрослых.
+                            То есть через два года…
+                        </p>
+                        <p class="answer">
+                            – … У них будут все шансы зажечь на Олимпийских играх в Токио. Но для этого
+                            сначала нужно выиграть внутреннюю конкуренцию. Все зависит только
+                            от самих спортсменок, насколько правильно
+                            они будут работать в то время, что осталось до Токио.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <div class="center">
+            <p>breaking news breaking news</p>
+        </div>
+        <div class="right">
+            <article class="mini-article">
                 <h2>Фанаты "Зенита" поддерживают Кокорина. Но что не так с майкой?</h2>
                 <p>
-                    Во время матча 11-го тура премьер-лиги между <span class="club">"Динамо"</span> и
-                    <span class="club">"Зенитом"</span> в секторе петербургских
+                    Во время матча 11-го тура премьер-лиги между <span class="highlight-item_blue">"Динамо"
+                    </span> и <span class="highlight-item_blue">"Зенитом"</span> в секторе петербургских
                     болельщиков появилась футболка в поддержку нападающего
-                    <span class="sportsman">Александра Кокорина.</span> На ней написано
+                    <span class="highlight-item_red">Александра Кокорина.</span> На ней написано
                     "Саша, мы с тобой", однако болельщики закрепили ее вверх ногами.
                 </p>
                 <p>
                     Напомним, что Александр Кокорин находится в СИЗО.
-                    Он вместе с братом Кириллом и полузащитником <span class="club">"Краснодара"</span>
-                    <span class="sportsman">Павлом Мамаевым</span>
+                    Он вместе с братом Кириллом и полузащитником <span class="highlight-item_blue">
+                    "Краснодара"</span> <span class="highlight-item_red">Павлом Мамаевым</span>
                     обвиняется в избиении нескольких человек.
                 </p>
                 <figure>
@@ -62,12 +196,12 @@
                     <figcaption>Перевернутая футболка поддержки Кокорина</figcaption>
                 </figure>
             </article>
-            <article class="mini">
+            <article class="mini-article">
                 <h2>Австралийский клуб предложил Болту полноценный контракт</h2>
                 <p>
-                    Австралийский клуб  <span class="club">"Сентрал Кост Маринерс"</span>
-                    предложил ямайцу <span class="sportsman">Усэйну Болту</span> полноценный контракт.
-                    Об этом ESPN рассказал агент 32-летнего спортсмена Рики Симмс.
+                    Австралийский клуб  <span class="highlight-item_blue">"Сентрал Кост Маринерс"</span>
+                    предложил ямайцу <span class="highlight-item_red">Усэйну Болту</span> полноценный
+                    контракт. Об этом ESPN рассказал агент 32-летнего спортсмена Рики Симмс.
                 </p>
                 <p>
                     Напомним, что восьмикратный олимпийский чемпион в спринте решил начать профессиональную
@@ -81,29 +215,30 @@
                     на два года.
                 </p>
             </article>
-            <article class="mini">
+            <article class="mini-article">
                 <h2>Игрок "Зенита" удален в первом тайме впервые за пять лет</h2>
                 <p>
-                    Нападающий <span class="club">"Зенита"</span> <span class="sportsman">Себастьян
-                    Дриусси</span>
+                    Нападающий <span class="highlight-item_blue">"Зенита"</span>
+                    <span class="highlight-item_red">Себастьян Дриусси</span>
                     получил вторую желтую карточку на 37-й минуте гостевого матча
-                    с <span class="club">"Динамо"</span> и стал первым за пять лет зенитовцем,
-                    удаленным в первом тайме встречи чемпионата России.
+                    с <span class="highlight-item_blue">"Динамо"</span> и стал первым за
+                    пять лет зенитовцем, удаленным в первом тайме встречи чемпионата России.
                 </p>
                 <p>
-                    3 августа 2013 года бразилец <span class="sportsman">Халк</span> умудрился получить два
-                    предупреждения в течение 26-й минуты игры
-                    с "Волгой" Нижнем Новгороде. Тот матч завершился победой питерского клуба со счетом 3:1.
+                    3 августа 2013 года бразилец <span class="highlight-item_red">Халк</span>
+                    умудрился получить два предупреждения в течение 26-й минуты игры
+                    с "Волгой" Нижнем Новгороде. Тот матч завершился победой питерского
+                    клуба со счетом 3:1.
                 </p>
             </article>
-            <article class="mini">
+            <article class="mini-article">
                 <h2>Шарапова потеряет технического спонсора после 20 лет сотрудничества</h2>
                 <figure>
                     <img src="sharapova.png" alt="sharapova">
                     <figcaption>Мария Шарапова</figcaption>
                 </figure>
                 <p>
-                    Контракт россиянки <span class="sportsman">Марии Шараповой</span>
+                    Контракт россиянки <span class="highlight-item_red">Марии Шараповой</span>
                     и Nike не будет продлен после 20-ти летнего сотрудничества,
                     информирует The Sun.
                 </p>
@@ -125,11 +260,12 @@
                     в китайском Шэньчжэне.
                 </p>
             </article>
-            <article class="mini">
+            <article class="mini-article">
                 <h2>Семин недоволен насыщенностью календаря "Локомотива"</h2>
                 <p>
-                    Главный тренер <span class="club">"Локомотива"</span> <span class="sportsman">Юрий Семин
-                </span> после победы над <span class="club">"Ростовом"</span> (2:1) не согласился с мнением
+                    Главный тренер <span class="highlight-item_blue">"Локомотива"</span>
+                    <span class="highlight-item_red">Юрий Семин</span> после победы над
+                    <span class="highlight-item_blue">"Ростовом"</span> (2:1) не согласился с мнением
                     о том, что его команда лучше играла без чистых нападающих.
                 </p>
                 <p class="question">
@@ -143,117 +279,207 @@
                 </p>
                 <p class="answer">
                     - Ну, это вам показалось. Нет четырех игроков, но я не жалуюсь, а констатирую факт.
-                    Нет <span class="sportsman">Фарфана</span>, <span class="sportsman">Смолова</span>,
-                    <span class="sportsman">Рыбуса</span> и <span class="sportsman">Эдера</span>.
-                    Плюс, сейчас нет <span class="sportsman">Чорлуки</span>. Даже пять!
+                    Нет <span class="highlight-item_red">Фарфана</span>,
+                    <span class="highlight-item_red">Смолова</span>,
+                    <span class="highlight-item_red">Рыбуса</span> и
+                    <span class="highlight-item_red">Эдера</span>.
+                    Плюс, сейчас нет <span class="highlight-item_red">Чорлуки</span>. Даже пять!
                     Но я не жалуюсь. Пять игроков нет.
 
                     Сейчас у нас 13 дней, за которые мы должны провести 5 игр. Я опять не жалуюсь.
                     Ни в коем случае. Но это нормально, или нет? Я считаю, что это ненормально.
                 </p>
             </article>
-            <article>
-                <h2>"Эти девочки еще и в Токио зажгут!" Гендиректор ВФВ - о победе на юношеской Олимпиаде
-                </h2>
-                <figure>
-                    <img src="beach-volley.png" alt="beach volleyball">
-                    <figcaption>Мария Бочарова и Мария Воронина.</figcaption>
-                </figure>
-                <p>
-                    Россиянки Мария Бочарова и Мария Воронина стали победителями турнира по пляжному
-                    волейболу  на юношеской Олимпиаде, которая проходит в Буэнос-Айресе. Российская пара
-                    считалась одним из основных фаворитов, так как является действующим победителем
-                    чемпионатов мира и Европы, причем даже в категории U-20, в которой они могут выступать
-                    еще два сезона. Об успехе пары рассказал генеральный директор Всероссийской федерации
-                    волейбола Андрей Горбенко, который курирует пляжный волейбол.
-                </p>
-                <p class="question">
-                    – Когда отправляли пару в Буэнос-Айрес, ждали именно победы?
-                </p>
-                <p class="answer">
-                    – Скорее, рассчитывали на медали любого достоинства, большие надежды на них возлагали.
-                    Все же наши девочки уже многого добились, выигрывали чемпионаты мира и Европы по
-                    своему возрасту и даже среди более старших. Первое место нас очень порадовало.
-                </p>
-                <p class="question">
-                    – Где готовились Бочарова и Воронина?
-                </p>
-                <p class="answer">
-                    – Они ведь привлекаются уже в основную сборную, по сути дела, это уже наша вторая пара.
-                    Так что часть подготовки они вели с главной командой, но основной этап подготовки прошел
-                    в Обнинске, где они и выступают. Там они работали со своим тренером Дмитрием Федотовым.
-                </p>
-                <p class="question">
-                    – То, что девушки тренируются вместе со старшими коллегами, помогает потом в играх
-                    со сверстницами?
-                </p>
-                <p class="answer">
-                    – Безусловно. Чем сильнее соперники на тренировке, тем проще затем в играх. Две Маши
-                    уже проявили себя и на взрослом уровне, на этапах чемпионата России они не раз
-                    становились призерами,  а в Липецке в прошлом году победили. Они уже готовы конкурировать
-                    со старшими.
-                </p>
-                <p class="question">
-                    – В чем уникальность этой пары?
-                </p>
-                <p class="answer">
-                    – Прежде всего, стоит отметить, что девочки прекрасно подготовлены функционально.
-                    Конечно, они талантливы, но основное – они полностью выкладываются на тренировках
-                    под руководством отличного тренера. Талант плюс работа – это и есть универсальный рецепт.
-                    У них в Обнинске отличные условия, к тому же обе сразу начали готовиться в пляжном
-                    волейболе.
-                </p>
-                <p class="question">
-                    – Получается, больше шансов в "пляжке" у тех, кто занимается ей изначально?
-                </p>
-                <p class="answer">
-                    – Есть множество примеров, когда игроки были успешными и в классике, и в пляжном
-                    волейболе.
-                    Тот же Карч Кирай, главный тренер сборной США. Конечно, лучше начинать готовиться
-                    в "пляжке",
-                    но и переход из классики вполне возможен.
-                </p>
-                <p class="question">
-                    – Пара Бочарова – Воронина получит какое-то финансовое вознаграждение от федерации?
-                </p>
-                <p class="answer">
-                    – Безусловно.
-                </p>
-                <p class="question">
-                    – Вы сказали, что девочки уже высоко котируются в России даже среди взрослых.
-                    То есть через два года…
-                </p>
-                <p class="answer">
-                    – … У них будут все шансы зажечь на Олимпийских играх в Токио. Но для этого сначала нужно
-                    выиграть внутреннюю конкуренцию. Все зависит только от самих спортсменок, насколько
-                    правильно
-                    они будут работать в то время, что осталось до Токио.
-                </p>
-            </article>
-            <article>
+            <article class="game-results">
                 <h2>Результаты матчей от 20 октября</h2>
                 <h3>Волейбол</h3>
-                <div>
-                    <img src="superliga.png" alt="superliga">
-                    <img src="volley-13.png" alt="volley-13">
-                    <img src="volley-16.png" alt="volley-16">
-                    <img src="volley-19.png" alt="volley-19">
+                <div class="table volley-table">
+                    <h3>Россия (М). Суперлига</h3>
+                    <div class="time">
+                        <p>13:00</p>
+                        <p>завершен</p>
+                    </div>
+                    <div class="teams">
+                        <p>Кузбасс</p>
+                        <p>Ярославич</p>
+                    </div>
+                    <div class="volley-scores">
+                        <div class="volley-score">
+                            <p>3</p>
+                            <p>0</p>
+                        </div>
+                        <div class="volley-score">
+                            <p>25</p>
+                            <p>23</p>
+                        </div>
+                        <div class="volley-score">
+                            <p>25</p>
+                            <p>16</p>
+                        </div>
+                        <div class="volley-score">
+                            <p>25</p>
+                            <p>13</p>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <p>16:00</p>
+                        <p>завершен</p>
+                    </div>
+                    <div class="teams">
+                        <p>Газпром-Югра</p>
+                        <p>Локомотив Н</p>
+                    </div>
+                    <div class="volley-scores">
+                        <div class="volley-score">
+                            <p>2</p>
+                            <p>3</p>
+                        </div>
+                        <div class="volley-score">
+                            <p>19</p>
+                            <p>25</p>
+                        </div>
+                        <div class="volley-score">
+                            <p>25</p>
+                            <p>23</p>
+                        </div>
+                        <div class="volley-score">
+                            <p>19</p>
+                            <p>25</p>
+                        </div>
+                        <div class="volley-score">
+                            <p>25</p>
+                            <p>21</p>
+                        </div>
+                        <div class="volley-score">
+                            <p>11</p>
+                            <p>15</p>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <p>19:00</p>
+                        <p>завершен</p>
+                    </div>
+                    <div class="teams">
+                        <p>Зенит СПБ</p>
+                        <p>Самотлор</p>
+                    </div>
+                    <div class="volley-scores">
+                        <div class="volley-score">
+                            <p>3</p>
+                            <p>0</p>
+                        </div>
+                        <div class="volley-score">
+                            <p>25</p>
+                            <p>12</p>
+                        </div>
+                        <div class="volley-score">
+                            <p>25</p>
+                            <p>18</p>
+                        </div>
+                        <div class="volley-score">
+                            <p>25</p>
+                            <p>20</p>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <img src="champ.png" alt="championship">
-                    <img src="volley-11.png" alt="volley-11">
-                    <img src="volley-134.png" alt="volley-134">
+                <div class="table volley-table">
+                    <h3>Чемпионат мира (Ж)</h3>
+                    <div class="time">
+                        <p>11:20</p>
+                        <p>завершен</p>
+                    </div>
+                    <div class="teams">
+                        <p>Голландия</p>
+                        <p>Китай</p>
+                    </div>
+                    <div class="volley-scores">
+                        <div class="volley-score">
+                            <p>0</p>
+                            <p>3</p>
+                        </div>
+                        <div class="volley-score">
+                            <p>23</p>
+                            <p>25</p>
+                        </div>
+                        <div class="volley-score">
+                            <p>20</p>
+                            <p>25</p>
+                        </div>
+                        <div class="volley-score">
+                            <p>14</p>
+                            <p>25</p>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <p>13:40</p>
+                        <p>завершен</p>
+                    </div>
+                    <div class="teams">
+                        <p>Сербия</p>
+                        <p>Италия</p>
+                    </div>
+                    <div class="volley-scores">
+                        <div class="volley-score">
+                            <p>3</p>
+                            <p>2</p>
+                        </div>
+                        <div class="volley-score">
+                            <p>21</p>
+                            <p>25</p>
+                        </div>
+                        <div class="volley-score">
+                            <p>25</p>
+                            <p>15</p>
+                        </div>
+                        <div class="volley-score">
+                            <p>23</p>
+                            <p>25</p>
+                        </div>
+                        <div class="volley-score">
+                            <p>25</p>
+                            <p>20</p>
+                        </div>
+                        <div class="volley-score">
+                            <p>15</p>
+                            <p>12</p>
+                        </div>
+                    </div>
                 </div>
                 <h3>Баскетбол</h3>
-                <div>
-                    <img src="nba.png" alt="nba">
-                    <img src="bask20.png" alt="basket-20">
-                    <img src="bask23.png" alt="basket-23">
-                    <img src="bask30.png" alt="basket-30">
-                    <img src="bask33.png" alt="basket-33">
+                <div class="table basket-table">
+                    <h3>НБА</h3>
+                    <div class="time">
+                        <p>02:00</p>
+                        <p>завершен</p>
+                    </div>
+                    <p>Орландо</p>
+                    <p>88:120</p>
+                    <p>Шарлотт</p>
+                    <div class="time">
+                        <p>02:30</p>
+                        <p>завершен</p>
+                    </div>
+                    <p>Бруклин</p>
+                    <p>107:105</p>
+                    <p>Нью-Йорк</p>
+                    <div class="time">
+                        <p>03:00</p>
+                        <p>завершен</p>
+                    </div>
+                    <p>Новый Орлеан</p>
+                    <p>149:129</p>
+                    <p>Сакраменто</p>
+                    <div class="time">
+                        <p>03:30</p>
+                        <p>завершен</p>
+                    </div>
+                    <p>Милуоки</p>
+                    <p>118:101</p>
+                    <p>Индиана</p>
                 </div>
             </article>
-        </main>
-    </div>
+        </div>
+    </main>
+</div>
 </body>
 </html>

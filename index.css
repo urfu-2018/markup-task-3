@@ -1,6 +1,5 @@
 .newspaper
 {
-    width: 98%;
     margin: auto;
     font-size: 10px;
     padding: 10px;
@@ -8,34 +7,52 @@
 
 .newspaper .settings
 {
-    margin-bottom: 20px;
     font-size: 1.6em;
     position: fixed;
     background-color: white;
 }
 
-.newspaper .settings div
+.newspaper .settings .setting
 {
     display: inline-block;
-    margin-right: 20px;
+    vertical-align: top;
+    margin: 0 10px;
 }
 
-.newspaper .settings p
+.newspaper .settings h3
 {
-    margin: 0;
-    margin-bottom: 5px;
+    margin: 10px 0;
 }
 
-.newspaper header.title
+.newspaper .settings ul
 {
-    margin-top: .5em;
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 10px;
+}
+
+.newspaper .settings li
+{
+    display: inline;
+}
+
+.newspaper .settings label
+{
+    display: inline-block;
+    padding: 5px;
+}
+
+.newspaper header h1
+{
+    margin: 80px 0 10px;
     font-size: 100px;
+    font-weight: normal;
     text-align: center;
     text-transform: uppercase;
     font-family: Verdana;
 }
 
-.newspaper header.info
+.newspaper header .info
 {
     display: flex;
     justify-content: space-between;
@@ -57,9 +74,14 @@ input[value='light']:checked ~ .newspaper .settings
 }
 
 input[value='light']:checked ~ .newspaper article:nth-child(3n-1),
-input[value='light']:checked ~ .newspaper header.info
+input[value='light']:checked ~ .newspaper header .info
 {
     border-color: black;
+}
+
+input[value='light']:checked ~ .newspaper .table
+{
+    background: #e0dada;
 }
 
 input[value='dark']:checked ~ .newspaper
@@ -74,9 +96,14 @@ input[value='dark']:checked ~ .newspaper .settings
 }
 
 input[value='dark']:checked ~ .newspaper article:nth-child(3n-1),
-input[value='dark']:checked ~ .newspaper header.info
+input[value='dark']:checked ~ .newspaper header .info
 {
     border-color: white;
+}
+
+input[value='dark']:checked ~ .newspaper .table
+{
+    background: darkgray;
 }
 
 input[value='small']:checked ~ .newspaper
@@ -99,41 +126,116 @@ input[value='serif']:checked ~ .newspaper
     font-family: 'Times New Roman', serif;
 }
 
+input[value='serif']:checked ~ .newspaper .center p
+{
+    font-family: monospace;
+}
+
+input[value='serif']:checked ~ .newspaper h2,
+input[value='serif']:checked ~ .newspaper h3
+{
+    font-family: 'Lucida Console', monospace;
+}
+
 input[value='sans-serif']:checked ~ .newspaper
 {
     font-family: 'Tahoma', sans-serif;
 }
 
-input
+input[value='sans-serif']:checked ~ .newspaper .center p
+{
+    font-family: 'Lucida Console', monospace;
+}
+
+input[value='sans-serif']:checked ~ .newspaper h2,
+input[value='sans-serif']:checked ~ .newspaper h3
+{
+    font-family: 'Open Sans', sans-serif;
+}
+
+input[value='light']:checked ~ .newspaper .light-btn,
+input[value='dark']:checked ~ .newspaper .dark-btn,
+input[value='small']:checked ~ .newspaper .small-btn,
+input[value='normal']:checked ~ .newspaper .normal-btn,
+input[value='big']:checked ~ .newspaper .big-btn,
+input[value='serif']:checked ~ .newspaper .serif-btn,
+input[value='sans-serif']:checked ~ .newspaper .sans-serif-btn
+{
+    background: crimson;
+}
+
+.settings-input
 {
     display: none;
 }
 
 .newspaper main
 {
-    column-count: 5;
+    display: flex;
+    justify-content: space-between;
+}
+
+.newspaper .left
+{
+    width: 43%;
+}
+
+.newspaper .center
+{
+    width: 4%;
+    order: 1;
+}
+
+.newspaper .center p
+{
+    width: 1px;
+    word-wrap: break-word;
+    font-size: 6em;
+    text-transform: uppercase;
+    margin: 0 .15em;
+}
+
+.newspaper .right
+{
+    width: 53%;
+}
+
+.newspaper .main-article img
+{
+    width: 95%;
+}
+
+.newspaper .left-columns
+{
+    column-count: 2;
+}
+
+.newspaper .right
+{
+    column-count: 3;
+}
+
+.newspaper blockquote
+{
+    font-size: 1.6em;
+    font-style: italic;
 }
 
 .newspaper article
 {
-    padding: 0 5px;
+    padding: 5px;
     margin-bottom: 10px;
     hyphens: auto;
 }
 
-.newspaper article.mini
+.newspaper article.mini-article
 {
     display: inline-block;
 }
 
-.newspaper article p:first-of-type:first-letter
+.newspaper article > p:first-of-type:first-letter
 {
     font-size: 2.2em;
-}
-
-.newspaper article p:first-of-type:first-line
-{
-    line-height: .6em;
 }
 
 .newspaper article:nth-child(3n-1)
@@ -145,17 +247,19 @@ input
 .newspaper article h3
 {
     font-size: 2.6em;
-    hyphens: none;
-    font-family: 'Lucida Console';
+    hyphens: auto;
+    margin: 0;
+    margin-bottom: 10px;
 }
 
 .newspaper article h3
 {
     font-size: 2.2em;
     text-align: center;
+    margin: 15px 0 10px;
 }
 
-.newspaper article div
+.newspaper article:not(.game-results) div
 {
     margin-top: 1.5em;
 }
@@ -163,6 +267,7 @@ input
 .newspaper article p
 {
     font-size: 1.8em;
+    margin: 12px 0;
 }
 
 .newspaper article figure
@@ -193,12 +298,80 @@ input
     text-indent: 10px;
 }
 
-.newspaper article span.club
+.newspaper article span.highlight-item_blue
 {
     color: blue;
 }
 
-.newspaper article span.sportsman
+.newspaper article span.highlight-item_red
 {
     color: red;
+}
+
+.newspaper .table
+{
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-column-gap: 5px;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+.newspaper .volley-table
+{
+    grid-template-columns: 2fr 3fr 3fr;
+}
+
+.newspaper .basket-table
+{
+    grid-template-columns: 3fr 3fr 2fr 3fr;
+}
+
+.newspaper .volley-table h3
+{
+    grid-column: 1/4;
+}
+
+.newspaper .basket-table h3
+{
+    grid-column: 1/5;
+}
+
+.newspaper .table p
+{
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.newspaper .time
+{
+    align-self: center;
+    margin-left: 5px;
+}
+
+.newspaper .teams
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.newspaper .volley-scores
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.newspaper .volley-score
+{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.newspaper .volley p
+{
+    margin: 0;
+    font-size: 12px;
 }
