@@ -86,17 +86,22 @@ main
 main > div
 {
     float: left;
-    width: 23.86%;
+    width: calc(100vw/4.5);
     height: min-content;
     overflow: hidden;
     padding: .5%;
-    border-right: 3px solid black;
-    border-bottom: 3px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.col1
+{
+    margin-left: .8%;
 }
 
 .col4
 {
-    border-right: 0 !important;
+    border-right: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     line-height: 158.9%;
     font-size: 100%;
@@ -105,7 +110,7 @@ main > div
 
 .col4 > p
 {
-    hyphens: auto;
+    hyphens: manual;
 }
 
 .col1 > p
@@ -133,6 +138,7 @@ main > div
     line-height: 99.5%;
     letter-spacing: -1px;
     font-size: 100%;
+    border-right: 0;
 }
 
 .col2 > p
