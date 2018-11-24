@@ -1,10 +1,22 @@
+/*ФОН*/
+
 body
 {
     background: url('https://cdn1.savepice.ru/uploads/2018/10/21/881a5cbf0624ee66a20ce705a7d169a3-full.jpg');
     background-size: 45%;
 }
 
-.sportIMG
+/*ЗАГОЛОВОК*/
+
+.head-txt
+{
+    border: 3px solid black;
+    word-spacing: 40px;
+    letter-spacing: 20px;
+    font: normal 900 45px/1 Times, 'URW Palladio L', ultra-condensed;
+}
+
+.head-img
 {
     max-height: 100%;
     max-width: 100%;
@@ -12,35 +24,47 @@ body
     margin: auto;
 }
 
-.column
+/*ВЕРХНЯЯ ЧАСТЬ*/
+
+.top-content
+{
+    display: flex;
+    align-content: flex-end;
+}
+
+/*ФЛЕКСЫ В ВЕРХНЕЙ ЧАСТИ*/
+
+.container-columns-before-pic
+{
+    width: 40%;
+    border-left: 2px solid #000;
+    margin-left: 10px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.columns-before-pic
 {
     text-align: justify;
-    float: left;
-    width: 100%;
-    columns: 5 100px;
+    columns: 2 100px;
     column-rule: 2px solid #000;
-    column-gap: 15px;
-}
-
-.columnBOX
-{
-    position: relative;
-    text-align: justify;
-    margin-left: 31%;
-    width: 69%;
-    columns: 3 100px;
-    column-rule: 1px dashed #000;
     column-gap: 20px;
-    border: 1px dashed #000;
 }
 
-h1
+.container-for-pic
 {
-    border: 3px solid black;
-    word-spacing: 40px;
-    letter-spacing: 20px;
-    font: normal 900 45px/1 Times, 'URW Palladio L', ultra-condensed;
+    width: 80%;
+    align-self: center;
 }
+
+.pic-after-columns
+{
+    text-align: center;
+    width: 100%;
+}
+
+/*ПРОДОЛЖЕНИЕ ВЕРХНЕЙ ЧАСТИ*/
 
 .intro
 {
@@ -49,20 +73,47 @@ h1
     font: normal 30px/1 SansSerif, 'Gill Sans', sans-serif;
 }
 
-.firstLetterIntro
+.intro:first-letter,
+.column-top p:nth-child(5):first-letter,
+.column-top p:nth-child(14):first-letter,
+.columns-before-pic p:first-child:first-letter
 {
     margin-left: 15px;
     font: normal 900 35px/1 Times, 'Times New Roman', serif;
 }
 
-.basic
+.basic-txt-top
 {
     margin-top: 2px;
-    word-spacing: 10px;
+    word-spacing: 7px;
     font: normal 500 16px/1 SansSerif, 'Verdana', serif;
 }
 
-.basicBOX
+.basic-txt-top:first-letter
+{
+    margin-left: 15px;
+}
+
+.column-top
+{
+    text-align: justify;
+    width: 60%;
+    columns: 3 100px;
+    column-rule: 2px solid #000;
+    column-gap: 20px;
+}
+
+/*НИЖНЯЯ ЧАСТЬ*/
+
+.bottom-content
+{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-around;
+}
+
+.basic-txt-bottom
 {
     margin-top: 3px;
     word-spacing: 7px;
@@ -74,41 +125,49 @@ h1
     font-family: Snell Roundhand, cursive;
 }
 
-.firstLetterSUPERBOX
+.basic-txt-bottom:first-letter
 {
-    margin-left: 20px;
+    margin-left: 15px;
+}
+
+.column-bottom p:first-child:first-letter
+{
+    margin-left: 50px;
     font-weight: 700;
-    font-variant: normal;
-    font-style: italic;
     font-size: 30px;
-    font-family: Snell Roundhand, cursive;
 }
 
-.firstLetterBOX
+.column-bottom
 {
-    margin-left: 15px;
-    line-height: 1;
-    font-weight: 200;
-    font-variant: normal;
-    font-style: italic;
-    font-size: 18px;
-    font-family: Snell Roundhand, cursive;
+    position: relative;
+    text-align: justify;
+    width: 69%;
+    columns: 3 100px;
+    column-rule: 1px dashed #000;
+    column-gap: 20px;
+    border: 1px dashed #000;
 }
 
-.firstLetterBasic
+.vertical-box__text
 {
-    margin-left: 15px;
+    margin-left: 0;
+    font: normal 900 40px/1 Monospaced, 'DejaVu Sans Mono', monospace;
 }
 
-.star
+.vertical-box__text p
 {
-    margin-top: -5px;
-    margin-bottom: -5px;
-    margin-left: 20%;
-    font-size: xx-large;
+    width: 40px;
 }
 
-.rightIMG
+.boxer-img img
+{
+    width: 100%;
+    margin-right: 30px;
+}
+
+/*КАРТИНКИ И ЗВЁЗДОЧКИ*/
+
+.sport-img
 {
     width: 100%;
     margin: 5px auto;
@@ -117,7 +176,7 @@ h1
     top: 28%;
 }
 
-.rightSign
+.sign-for-pic
 {
     text-align: justify;
     font: italic 200 16px/1 Monospaced, 'FreeMono', monospace;
@@ -125,32 +184,10 @@ h1
     margin: 10px auto;
 }
 
-.box
+.star
 {
-    float: left;
-    margin-left: 15px;
-    font: normal 900 40px/1 Monospaced, 'DejaVu Sans Mono', monospace;
-}
-
-.box > div:first-of-type
-{
-    float: left;
-}
-
-.box > div > p
-{
-    margin-bottom: 40px;
-}
-
-.box > div:last-of-type
-{
-    margin-left: 15px;
-    float: right;
-}
-
-.sector
-{
-    margin-bottom: 50px;
-    margin-top: 50px;
-
+    margin-top: -5px;
+    margin-bottom: -5px;
+    margin-left: 20%;
+    font-size: xx-large;
 }
