@@ -8,43 +8,30 @@
 </head>
 
 <body>
-    Режим чтения:
-    <input type="radio" id="night-mode" name="reading-mode" value="night-mode">
+    <span class="settings reading-mode">Режим чтения:</span>
+    <input type="radio" id="night-mode" name="reading-mode">
     <label for="night-mode">Ночной режим</label>
-    <input type="radio" id="day-mode" name="reading-mode" value="day-mode" checked="checked">
+    <input type="radio" id="day-mode" name="reading-mode" checked>
     <label for="day-mode">Дневной режим</label>
     <br>
-    Стиль текста:
-    <input type="radio" id="Times-New-Roman-style" name="text-style-mode" value="Times-New-Roman-style"
-        checked="checked">
+    <span class="settings text-style-mode">Стиль текста:</span>
+    <input type="radio" id="Times-New-Roman-style" name="text-style-mode" checked>
     <label for="Times-New-Roman-style">Times New Roman</label>
-    <input type="radio" id="Arial-style" name="text-style-mode" value="Arial-style">
+    <input type="radio" id="Arial-style" name="text-style-mode">
     <label for="Arial-style">Arial</label>
     <br>
-    Размер шрифта:
-    <input type="radio" id="small-text-size" name="font-size-mode" value="small-text-size">
+    <span class="settings font-size-mode">Размер шрифта:</span>
+    <input type="radio" id="small-text-size" name="font-size-mode">
     <label for="small-text-size">Маленький шрифт</label>
-    <input 
-        type="radio" 
-        id="middle-text-size" 
-        name="font-size-mode" 
-        value="middle-text-size" 
-        checked="checked"
-    >
+    <input type="radio" id="middle-text-size" name="font-size-mode" checked>
     <label for="middle-text-size">Средний шрифт</label>
-    <input type="radio" id="big-text-size" name="font-size-mode" value="big-text-size">
+    <input type="radio" id="big-text-size" name="font-size-mode">
     <label for="big-text-size">Большой шрифт</label>
 
-    <header>
-        <div class="left-top-angle top-angle">
-            <p>№29</p>
-        </div>
-        <div class="title">
-            <h1>MORNING NEWS</h1>
-        </div>
-        <div class="right-top-angle top-angle">
-            <p>№29</p>
-        </div>
+    <header class="headline">
+        <p class="news-issue left-top-decoration">№29</p>
+        <h1 class="headline__title">morning news</h1>
+        <p class="news-issue right-top-decoration">№29</p>
         <hr>
         <section class="info-about-newspaper">
             <p class="info-about-issue-date">Thursday october, 21 1965</p>
@@ -54,11 +41,9 @@
         <hr>
     </header>
     <main class="newspaper-content">
-        <article class="about-whiles">
-            <header>
-                <h2 class="whiles-headline">Do whales sleep?</h2>
-            </header>
-            <section class="whiles-content">
+        <article class="news-article article-1">
+            <h2 class="article-title article-1__title">Do whales sleep?</h2>
+            <section class="article-1__content">
                 <p>
                     Whales are mammals, so in many ways, they are just like human beings. The most important
                     difference
@@ -90,11 +75,9 @@
             </section>
 
         </article>
-        <article class="about-Earth-day">
-            <header>
-                <h2 class="Earthday-headline">Earth Day</h2>
-            </header>
-            <section class="Earthday-content">
+        <article class="news-article article-2">
+            <h2 class="article-title article-2__title">Earth Day</h2>
+            <section class="article-2__content">
                 <p>
                     Many countries around the world celebrate Earth Day. It is a day that is meant to raise
                     awareness
@@ -121,12 +104,10 @@
                 </p>
             </section>
         </article>
-        <article class="about-Great-Chinese-wall">
-            <header>
-                <h2 class="China-headline">The Great wall of China</h2>
-            </header>
-            <section class="Chinese-wall-content">
-                <div class="vertical-subscription vertical-China">China</div>
+        <article class="news-article article-3">
+            <h2 class="article-title article-3__title">The Great wall of China</h2>
+            <section class="article-3__content">
+                <div class="vertical-subscription article-3_vertical_text">China</div>
                 <p>The Great Wall of China, one of the greatest wonders of the world, was first built between
                     220–206
                     BC. In fact, it began as independent walls for different states when it was first built,
@@ -158,11 +139,9 @@
                     height.</p>
             </section>
         </article>
-        <article class="about-World-Water-day">
-            <header>
-                <h2 class="Waterday-headline">World Water day</h2>
-            </header>
-            <section class="Waterday-content">
+        <article class="news-article article-4">
+            <h2 class="article-title article-4__title">World Water day</h2>
+            <section class="article-4__content">
                 <p>
                     World Water Day is observed on March 22 since 1993. It was declared as such by the United
                     Nations

@@ -4,26 +4,6 @@
     font-family: OldEnglishD;
 }
 
-h1
-{
-    text-align: center;
-    margin: 5px 20px;
-    font-size: 60px;
-    font-style: oblique;
-    font-family: OldEnglishD;
-}
-
-h2
-{
-    font-family: OldEnglishD;
-    margin: 5px;
-}
-
-h2::first-letter
-{
-    font-size: 40px;
-}
-
 body
 {
     margin: 0;
@@ -36,47 +16,54 @@ hr
     margin: 15px 0;
 }
 
-.title
+.headline
 {
-    width: 60%;
-    margin: 0 10%;
-    display: inline-block;
+    margin-top: 50px;
+    padding: 0 10px;
     text-align: center;
 }
 
-.top-angle
+.headline__title
 {
-    width: 8%;
-    height: 8%;
-    border: 5px double black;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 10px;
+
+    font-size: 60px;
+    font-style: oblique;
+    font-family: OldEnglishD;
+    text-transform: uppercase;
 }
 
-.left-top-angle
+.news-issue
+{
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+
+    margin: 0 auto;
+    border: 5px double black;
+
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.left-top-decoration
 {
     float: left;
 }
 
-.right-top-angle
+.right-top-decoration
 {
     float: right;
 }
 
-.top-angle > p
-{
-    text-align: center;
-    font: 28px bold;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin: 20px 0;
-}
-
-.info-about-newspaper
-{
-    column-count: 3;
-}
-
 .info-about-newspaper > p
 {
-    width: 100%;
+    width: 32%;
     display: inline-block;
     font-size: 20px;
     text-decoration-line: underline;
@@ -113,7 +100,18 @@ hr
     column-count: 4;
 }
 
-.Earthday-content
+.article-title
+{
+    font-family: OldEnglishD;
+    margin: 5px;
+}
+
+.article-title::first-letter
+{
+    font-size: 40px;
+}
+
+.article-2__content
 {
     padding: 0 5px;
     border: 3px dashed;
@@ -121,7 +119,7 @@ hr
     column-rule: 1px ridge black;
 }
 
-.vertical-China
+.article-3_vertical_text
 {
     float: left;
     margin-right: 5px;
@@ -129,7 +127,7 @@ hr
     border: 1px solid black;
 }
 
-.Waterday-content
+.article-4__content
 {
     padding: 0 5px;
     border: 7px ridge;
@@ -152,13 +150,14 @@ article > section > p:first-child::first-letter
     width: 100%;
 }
 
-.whiles-headline,
-.China-headline
+.article-1__title,
+.article-3__title
 {
     border-bottom: 4px dotted;
 }
 
-input[value='night-mode']:checked ~ .newspaper-content
+input[id='night-mode']:checked ~ .newspaper-content,
+input[id='night-mode']:checked ~ .headline
 {
     background-color: black;
     color: white;
@@ -166,7 +165,8 @@ input[value='night-mode']:checked ~ .newspaper-content
     border-color: white;
 }
 
-input[value='day-mode']:checked ~ .newspaper-content
+input[id='day-mode']:checked ~ .newspaper-content,
+input[id='day-mode']:checked ~ .headline
 {
     background: white;
     color: black;
@@ -174,32 +174,32 @@ input[value='day-mode']:checked ~ .newspaper-content
     border-color: black;
 }
 
-input[value='Times-New-Roman-style']:checked ~ .newspaper-content
+input[id='Times-New-Roman-style']:checked ~ .newspaper-content,
+input[id='Times-New-Roman-style']:checked ~ .headline
 {
     font-family: 'Times New Roman', Times, serif;
 }
 
-input[value='Arial-style']:checked ~ .newspaper-content
+input[id='Arial-style']:checked ~ .newspaper-content,
+input[id='Arial-style']:checked ~ .headline
 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-input[value='small-text-size']:checked ~ .newspaper-content
+input[id='small-text-size']:checked ~ .newspaper-content,
+input[id='small-text-size']:checked ~ .headline
 {
     font-size: 14px;
 }
 
-input[value='middle-text-size']:checked ~ .newspaper-content
+input[id='middle-text-size']:checked ~ .newspaper-content,
+input[id='middle-text-size']:checked ~ .headline
 {
     font-size: 16px;
 }
 
-input[value='big-text-size']:checked ~ .newspaper-content
+input[id='big-text-size']:checked ~ .newspaper-content,
+input[id='big-text-size']:checked ~ .headline
 {
     font-size: 18px;
-}
-
-body > header
-{
-    margin-top: 50px;
 }
