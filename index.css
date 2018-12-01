@@ -1,6 +1,6 @@
 .newspaper
 {
-    font: 14%, Times New Roman, Times, serif;
+    font: 16px, "Times New Roman", Times, serif;
     color: grey;
     margin-top: 5%;
     width: 900px;
@@ -19,7 +19,7 @@
 .newspaper-header-pad
 {
     border-top: solid 1px #ccc;
-    border-bottom: solid 1.2px #ccc;
+    border-bottom: solid 1px #ccc;
     column-count: 5;
     column-gap: 3.3em;
     white-space: nowrap;
@@ -88,8 +88,8 @@
     margin-right: 20px;
     font-size: 2em;
     padding: 5px;
-    border-top: solid .3px #ccc;
-    border-bottom: solid .4px #ccc;
+    border-top: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
 }
 
 .content-author
@@ -126,14 +126,14 @@
 
 .today-part
 {
-    border-top: solid 1.2px #ccc;
+    border-top: solid 1px #ccc;
 }
 
 .box
 {
     margin-top: 3px;
     padding: 25px;
-    border: solid 1.2px #ccc;
+    border: solid 1px #ccc;
 }
 
 .verse
@@ -150,7 +150,7 @@
 h1
 {
     font-size: 5em;
-    border-bottom: solid 1.2px #ccc;
+    border-bottom: solid 1px #ccc;
     text-transform: uppercase;
     text-align: center;
     margin: 5px;
