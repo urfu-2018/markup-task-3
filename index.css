@@ -15,6 +15,12 @@ input[id='bigger_font']:checked ~ .container
     font-size: 260%;
 }
 
+.sub-title
+{
+    font-size: .3em;
+
+}
+
 input[id='bigger_font']:checked ~ section.first_column,
 section.counter-list
 {
@@ -26,13 +32,9 @@ section.counter-list
     font-size: 200%;
 }
 
-input[id='another_font']:checked ~ .container.fatface,
-input[id='another_font']:checked ~ .container .fatface,
-input[id='another_font']:checked ~ .container .gothic,
-input[id='another_font']:checked ~ .container .gabriola,
-input[id='another_font']:checked ~ .container .oldface
+input[id='another_font']:checked ~ .container
 {
-    font-family: Arial sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container
@@ -48,15 +50,33 @@ input[id='another_font']:checked ~ .container .oldface
 
 }
 
-.container h1
+header
 {
-    letter-spacing: 4px;
-    word-spacing: 60px;
-    text-transform: capitalize;
+    position: relative;
 }
 
-.container h3,
-h6
+.price
+{
+    width: .3em;
+    font-family: Calibri, monospace;
+    word-wrap: break-word;
+    text-align: center;
+    font-size: .4em;
+    text-transform: lowercase;
+    float: right;
+    position: absolute;
+    right: 20px;
+    top: 0;
+}
+
+h1
+{
+    letter-spacing: 4px;
+    text-transform: capitalize;
+    margin: 0 50px;
+}
+
+h2
 {
     text-transform: capitalize;
     word-spacing: 6px;
@@ -70,7 +90,16 @@ h6
     text-transform: capitalize;
     border-bottom: 5px double black;
     border-top: 5px double black;
+}
 
+figcaption
+{
+    font-size: .6em;
+}
+
+figcaption > .word
+{
+    text-transform: uppercase;
 }
 
 .left,
@@ -109,9 +138,10 @@ img
     text-align: left;
 }
 
-.first_column h4
+.first_column .contents
 {
     text-align: center;
+    font-size: 20px;
 }
 
 .counter-list
@@ -127,7 +157,7 @@ img
     text-transform: capitalize;
 }
 
-.counter-list p:after
+.counter-list p::after
 {
     content: '..................................................';
     display: block;
@@ -135,13 +165,13 @@ img
     overflow: hidden;
 }
 
-p span:first-of-type
+.counter-list > p span:first-of-type
 {
     float: left;
     margin-right: 10px;
 }
 
-p span:last-of-type
+.counter-list > p span:last-of-type
 {
     float: right;
     margin-left: 10px;
@@ -199,16 +229,16 @@ p span:last-of-type
     font-size: .6em;
 }
 
-.second_column h4
+.second_column > .outlook
 {
     font-size: 1em;
     text-align: center;
 }
 
-.qu
+.quote
 {
     column-span: all;
-    font-size: .8em;
+    font-size: .6em;
     font-weight: bold;
 }
 
@@ -216,7 +246,6 @@ p span:last-of-type
 {
     display: table-cell;
     float: left;
-
 }
 
 .third_column img
@@ -225,23 +254,22 @@ p span:last-of-type
     height: 300px;
 }
 
-.third_column p
+.third_column pre
 {
     text-align: center;
     word-spacing: 2px;
     font-size: 1em;
     font-weight: bold;
     text-transform: capitalize;
-
 }
 
-.third_column p:first-letter
+.third_column pre::first-letter
 {
     font-family: 'Old English Text MT', sans-serif;
     font-size: 2em;
 }
 
-.dno p
+.footer p
 {
     font-size: .4em;
     border-top: 1px solid black;
