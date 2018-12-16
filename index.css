@@ -18,29 +18,29 @@
     font-family: 'Agency FB', sans-serif;
 }
 
-#font-opt-mono:checked ~ main.content
+.monospace:checked ~ main.content
 {
     font-family: monospace;
 }
 
-#color-opt-black:checked ~ header
+.black:checked ~ header
 {
     background-color: black;
     color: white;
 }
 
-#color-opt-black:checked ~ main.content
+.black:checked ~ main.content
 {
     background-color: black;
     color: white;
 }
 
-#size-opt-small:checked ~ main.content
+.small:checked ~ main.content
 {
     font-size: .8em;
 }
 
-#size-opt-large:checked ~ main.content
+.large:checked ~ main.content
 {
     font-size: 1.2em;
 }
