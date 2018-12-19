@@ -1,6 +1,7 @@
 @font-face
 {
     font-family: old-font;
+    font-display: auto;
     src: url(fonts/font.ttf);
 }
 
