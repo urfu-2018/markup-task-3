@@ -116,7 +116,7 @@ main > div
 .col1 > p
 {
     column-count: 2;
-    word-spacing: -5px;
+    word-spacing: -1px;
     column-rule: 2px solid black;
     hyphens: auto;
     line-height: 125.1%;
