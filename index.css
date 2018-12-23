@@ -295,3 +295,11 @@ span.event
     display: inline-block;
     width: 30vw;
 }
+
+.beauty
+{
+    width: .8em;  
+    text-align: center; 
+    font: Consolas, Monaco, monospace; 
+    word-wrap: break-word;
+}
