@@ -233,7 +233,7 @@ span.event
     font-weight: bolder;
 }
 
-.hystory
+.history
 {
     display: inline-block;
     position: relative;
@@ -242,14 +242,14 @@ span.event
     background: rgba(255, 222, 173, .2);
 }
 
-.hystory h5
+.history h5
 {
     font-family: Flavius;
     font-size: 25px;
     text-align: center;
 }
 
-.content-hystory
+.content-history
 {
     font-family: Flavius;
     font-size: 18px;
