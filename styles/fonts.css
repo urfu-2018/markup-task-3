@@ -4,3 +4,38 @@
     font-weight: 400;
     src: url('./fonts/OldeEnglish.ttf') format('truetype');
 }
+
+@font-face
+{
+    font-family: 'Cheltenham';
+    font-weight: 400;
+    src: url('./fonts/cheltenham-normal-400.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Cheltenham Italic';
+    font-weight: 400;
+    src: url('./fonts/cheltenham-italic-400.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Imperial';
+    font-weight: 500;
+    src: url('./fonts/imperial-normal-500.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Magsans';
+    font-weight: 500;
+    src: url('./fonts/magsans-normal-500.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Schnyder Scond';
+    font-weight: 600;
+    src: url('./fonts/schnyder-scond-normal-600.ttf') format('truetype');
+}

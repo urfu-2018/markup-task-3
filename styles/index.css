@@ -42,7 +42,7 @@ blockquote p::after
 
 .article1
 {
-    width: 280px;
+    width: 256px;
     text-align: justify;
     padding-right: 2px;
     border-right: 1px solid #000;
@@ -52,32 +52,35 @@ blockquote p::after
 .article1-picture
 {
     margin: 0;
-    padding-right: 10px;
+    padding-right: 8px;
 }
 
 .article1-img
 {
-    width: 270px;
+    width: 250px;
 }
 
 .article1-imgcaption
 {
-    font-size: 8px;
+    font-family: 'Magsans';
+    font-size: 6px;
     text-align: right;
     font-weight: bold;
 }
 
 h2
 {
+    font-family: 'Cheltenham';
+    font-size: 24px;
     margin: 0;
 }
 
 h5
 {
+    font-family: 'Cheltenham';
     margin: 0;
     font-size: 12px;
-    text-align: justify; /* не работает, взм сделаю просто текст
-    по центру или хз */
+    text-align: center;
 }
 
 .border-line-for-column-2
@@ -88,6 +91,7 @@ h5
 
 .article-autor
 {
+    font-family: 'Cheltenham';
     text-align: center;
     margin: 0;
     font-size: 12px;
@@ -96,8 +100,9 @@ h5
 
 .article-autor-description
 {
+    font-family: 'Cheltenham';
     text-align: center;
-    margin-top: 4px;
+    margin: 4px 0 0;
     font-size: 8px;
 }
 
@@ -111,7 +116,7 @@ h5
 .left-column
 {
     float: left;
-    width: 138px;
+    width: 126px;
     padding-right: 1px;
     padding-bottom: 4px;
     border-right: 1px solid #000;
@@ -121,12 +126,13 @@ h5
 {
     padding-left: 2px;
     float: right;
-    width: 138px;
+    width: 126px;
 }
 
 .column-content
 {
+    font-family: 'Imperial';
     text-indent: 12px;
     margin: 0;
-    font-size: 12px;
+    font-size: 10px;
 }
