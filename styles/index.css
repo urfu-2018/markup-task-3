@@ -44,23 +44,27 @@ blockquote p::after
 {
     width: 280px;
     text-align: justify;
+    padding-right: 2px;
+    border-right: 1px solid #000;
     border-bottom: 1px solid #000;
 }
 
 .article1-picture
 {
     margin: 0;
+    padding-right: 10px;
 }
 
 .article1-img
 {
-    width: 280px;
+    width: 270px;
 }
 
 .article1-imgcaption
 {
-    font-size: 12px;
+    font-size: 8px;
     text-align: right;
+    font-weight: bold;
 }
 
 h2
@@ -78,6 +82,7 @@ h5
 
 .border-line-for-column-2
 {
+    color: #000;
     width: 140px;
 }
 
@@ -96,11 +101,19 @@ h5
     font-size: 8px;
 }
 
+.article1-columns
+{
+    content: '';
+    clear: both;
+    display: table;
+}
+
 .left-column
 {
     float: left;
     width: 138px;
     padding-right: 1px;
+    padding-bottom: 4px;
     border-right: 1px solid #000;
 }
 
