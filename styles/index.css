@@ -44,6 +44,7 @@ blockquote p::after
 {
     width: 280px;
     text-align: justify;
+    border-bottom: 1px solid #000;
 }
 
 .article1-picture
@@ -100,11 +101,11 @@ h5
     float: left;
     width: 138px;
     padding-right: 1px;
+    border-right: 1px solid #000;
 }
 
 .right-column
 {
-    border-left: 1px solid #000;
     padding-left: 2px;
     float: right;
     width: 138px;
