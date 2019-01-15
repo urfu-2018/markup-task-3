@@ -46,12 +46,73 @@ blockquote p::after
     text-align: justify;
 }
 
+.article1-picture
+{
+    margin: 0;
+}
+
 .article1-img
 {
     width: 280px;
 }
 
+.article1-imgcaption
+{
+    font-size: 12px;
+    text-align: right;
+}
+
 h2
 {
     margin: 0;
+}
+
+h5
+{
+    margin: 0;
+    font-size: 12px;
+    text-align: justify; /* не работает, взм сделаю просто текст
+    по центру или хз */
+}
+
+.border-line-for-column-2
+{
+    width: 140px;
+}
+
+.article-autor
+{
+    text-align: center;
+    margin: 0;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.article-autor-description
+{
+    text-align: center;
+    margin-top: 4px;
+    font-size: 8px;
+}
+
+.left-column
+{
+    float: left;
+    width: 138px;
+    padding-right: 1px;
+}
+
+.right-column
+{
+    border-left: 1px solid #000;
+    padding-left: 2px;
+    float: right;
+    width: 138px;
+}
+
+.column-content
+{
+    text-indent: 12px;
+    margin: 0;
+    font-size: 12px;
 }
