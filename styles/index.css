@@ -17,6 +17,7 @@ blockquote p::after
 
 .slogan-text
 {
+    font-family: 'Imperial';
     text-align: center;
 }
 
@@ -32,6 +33,12 @@ blockquote p::after
 .weather
 {
     display: inline-block;
+}
+
+.weather-headline
+{
+    font-family: 'Magsans';
+    font-weight: 1000;
 }
 
 .line-information
@@ -135,4 +142,12 @@ h5
     text-indent: 12px;
     margin: 0;
     font-size: 10px;
+    hyphens: auto;
+}
+
+.left-column .column-content:nth-child(1)::first-letter
+{
+    font-size: 20px;
+    float: left;
+    margin: 0 4px 2px 0;
 }
