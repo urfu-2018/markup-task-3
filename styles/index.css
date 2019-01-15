@@ -1,0 +1,57 @@
+.slogan
+{
+    border: 2px solid #000;
+    width: 200px;
+    display: inline-block;
+}
+
+blockquote p::before
+{
+    content: '\201C';
+}
+
+blockquote p::after
+{
+    content: '\201D';
+}
+
+.slogan-text
+{
+    text-align: center;
+}
+
+.newspaper-name
+{
+    display: inline-block;
+    font-family: 'Olde English';
+    font-size: 90px;
+    color: rgb(22, 21, 21);
+    margin: 0;
+}
+
+.weather
+{
+    display: inline-block;
+}
+
+.line-information
+{
+    display: inline-block;
+    margin: 0;
+}
+
+.article1
+{
+    width: 280px;
+    text-align: justify;
+}
+
+.article1-img
+{
+    width: 280px;
+}
+
+h2
+{
+    margin: 0;
+}
