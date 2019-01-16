@@ -121,14 +121,16 @@ blockquote p::after
     font-family: 'Cheltenham Italic';
     font-weight: bold;
     width: 18%;
+    margin: 4px 0;
 }
 
 .meta-info__item_type_copyright
 {
-    font-size: 10px;
+    font-size: 8px;
     font-family: 'Imperial';
     font-weight: bold;
     width: 20%;
+    margin: 4px 0;
 }
 
 .meta-info__item_type_geotime
@@ -137,14 +139,16 @@ blockquote p::after
     font-family: 'Cheltenham Italic';
     font-weight: bold;
     width: 25%;
+    margin: 4px 0;
 }
 
 .meta-info__item_type_region-description
 {
-    font-size: 10px;
+    font-size: 8px;
     font-family: 'Imperial';
     font-weight: bold;
     width: 18%;
+    margin: 4px 0;
 }
 
 .meta-info__item_type_region
@@ -152,8 +156,8 @@ blockquote p::after
     font-size: 14px;
     font-family: 'Cheltenham';
     font-weight: bold;
-    margin-left: 100px;
     width: 5%;
+    margin: 0 0 0 100px;
 }
 
 .meta-info__item_type_cost
@@ -161,6 +165,7 @@ blockquote p::after
     font-size: 14px;
     font-family: 'Cheltenham Italic';
     font-weight: bold;
+    margin: 4px 0;
 }
 
 .newspaper__content
