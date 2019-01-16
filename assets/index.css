@@ -78,7 +78,7 @@ blockquote p::after
     display: inline-block;
     position: absolute;
     top: 45px;
-    right: 132px;
+    margin-left: 86px;
 }
 
 .weather-headline
@@ -104,6 +104,7 @@ blockquote p::after
 .meta-info
 {
     font-size: 0;
+    width: 1200;
 }
 
 .meta-info__item
