@@ -1,3 +1,35 @@
+h2
+{
+    font-family: 'Cheltenham';
+    font-size: 24px;
+    margin: 0;
+    text-align: justify;
+}
+
+h3
+{
+    text-align: justify;
+    font-family: 'Schnyder Scond';
+    font-size: 20px;
+    margin: 0;
+}
+
+h4
+{
+    text-align: center;
+    font-family: 'Magsans';
+    font-size: 14px;
+    margin: 0;
+}
+
+h5
+{
+    font-family: 'Cheltenham';
+    margin: 2px 0;
+    font-size: 12px;
+    text-align: center;
+}
+
 .newspaper
 {
     margin: 50px 120px 0;
@@ -164,22 +196,6 @@ blockquote p::after
     font-weight: bold;
 }
 
-h2
-{
-    font-family: 'Cheltenham';
-    font-size: 24px;
-    margin: 0;
-    text-align: justify;
-}
-
-h5
-{
-    font-family: 'Cheltenham';
-    margin: 2px 0;
-    font-size: 12px;
-    text-align: center;
-}
-
 .border-line-for-column-2
 {
     color: #000;
@@ -255,27 +271,11 @@ h5
     vertical-align: top;
 }
 
-h3
-{
-    text-align: justify;
-    font-family: 'Schnyder Scond';
-    font-size: 20px;
-    margin: 0;
-}
-
 .border-line-for-column
 {
     width: 64px;
     margin-top: 8px;
     margin-bottom: 10px;
-}
-
-h4
-{
-    text-align: center;
-    font-family: 'Magsans';
-    font-size: 14px;
-    margin: 0;
 }
 
 .center-articles
