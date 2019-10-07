@@ -1,0 +1,117 @@
+.main {
+    column-count: 4;
+    column-gap: 0.5rem;
+    column-rule: 2px solid black;
+    text-align: justify;
+    position: relative;
+    font: 1em Georgia;
+}
+
+body {
+    background-color:rgba(230, 231, 147, 0.527); /* Цвет фона веб-страницы */
+} 
+
+.quote {
+    font: bold 1em "NewYorkFont";
+}
+h1 {
+    text-align: center;
+    font: bold 60px "NewYorkFont";
+    margin-bottom: 25px;
+    margin-top: 5px;
+}
+
+p {
+    margin-top: 2px;
+    margin-bottom: 15px;
+}
+
+p::first-letter {
+    font: bold 25px Times;
+}
+
+h2 {
+    margin-bottom: 2px;
+    margin-top: 2px;
+    word-spacing: 1.5em;
+}
+
+h3 {
+margin-top: 7px;
+text-align: center;
+position: relative;
+font: italic bold 38px Times New Roman;
+margin-bottom: 6px;
+}
+
+hr {
+    border: none; /* Убираем границу */
+    background-color: black; /* Цвет линии */
+    height: 1px; /* Толщина линии */
+    margin: 4px 0;
+} 
+
+h4 {
+    font: 12px Arial;
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative;
+    top: 14px;
+}
+
+.leftPart {
+    position: relative;
+    left: -400px;
+    text-align: left;
+}
+
+.rightPart {
+    position: relative;
+    left: 400px;
+    text-align: left;
+}
+
+.rightHeadBlock {
+    position: absolute; /* Абсолютное позиционирование */
+    left: 1250px; /* Положение левого края */
+    top: 10px; /* Положение верхнего края */
+    width: 220px; /* Ширина слоя */
+    height: 100px;
+    border: solid 1px #000; /* Параметры рамки */
+    font: 18px "NewYorkFont";
+}
+
+.leftHeadBlock {
+    position: absolute; /* Абсолютное позиционирование */
+    left: 50px; /* Положение левого края */
+    top: 10px; /* Положение верхнего края */
+    width: 220px;
+    height: 100px;
+    border: solid 1px #000; /* Параметры рамки */
+    font: 18px "NewYorkFont";
+    text-align: center;
+}
+
+img {
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding: 5px;
+    width: 345px;
+    height: 250px;
+    float: right; /* Выравнивание по правому краю  */ 
+    margin: 7px 7px 7px 7px; /* Отступы вокруг картинки */
+}
+
+@font-face {
+    font-family: "NewYorkFont"; 
+    src: url("fonts/8967.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Porcelain"; 
+    src: url("fonts/8967.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
